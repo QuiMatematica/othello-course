@@ -1,0 +1,112 @@
+:root {
+  /* The size of the squares in the Othello board.  Many other things are
+   * computed relative to this size, which will change in certain screen
+   * layouts and sizes. */
+  --square-size: 2em;
+}
+
+/* ===============
+ * The game board.
+ * =============== */
+
+.gameBoardContainer{
+    display: flex;
+}
+
+.gameBoard {
+  /* The game board is an 8x8 grid. */
+  display: grid;
+  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+
+  /* The border around the whole board. */
+  border: 1px solid black;
+
+  /* The .spot elements will be positioned absolutely within this board. */
+  position: relative;
+}
+
+/* Any container that holds a stone, including a square in the board. */
+.stone-container {
+  width: var(--square-size);
+  height: var(--square-size);
+
+  /* For the score board stones, we need to make sure the size of the container
+   * is properly constrained.  Otherwise, display: inline would make the SVG
+   * inside blow up and escape the width & height above. */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* The score board stones have text overlayed with absolute positioning. */
+  position: relative;
+}
+
+.square {
+  /* The squares are all green with a black border. */
+  background-color: green;
+  border: 1px solid black;
+
+  /* The size of the squares should include the border, or else the overall
+   * board might be too big. */
+  box-sizing: border-box;
+
+  /* Fixes minor positioning weirdness for svg at zoom */
+  line-height: 0;
+}
+
+/* Any container that holds a stone, including a square in the board. */
+.reference-container {
+  width: var(--square-size);
+  height: var(--square-size);
+
+  /* For the score board stones, we need to make sure the size of the container
+   * is properly constrained.  Otherwise, display: inline would make the SVG
+   * inside blow up and escape the width & height above. */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* The score board stones have text overlayed with absolute positioning. */
+  position: relative;
+}
+
+.boardBorder {
+  /* The squares are all green with a black border. */
+  background-color: brown;
+  border: 0px;
+
+  /* The size of the squares should include the border, or else the overall
+   * board might be too big. */
+  box-sizing: border-box;
+
+  /* Fixes minor positioning weirdness for svg at zoom */
+  line-height: 0;
+}
+
+.spot {
+  /* A "dot" at the corners of certain parts of the board.  This base class
+   * contains everything but the actual positions. */
+  position: absolute;
+  width: .5em;
+  height: .5em;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/* The positions of specific spots. */
+#spot-0 {
+  left: calc(var(--square-size) * 3 - .25em);
+  top: calc(var(--square-size) * 3 - .25em);
+}
+#spot-1 {
+  left: calc(var(--square-size) * 7 - .25em);
+  top: calc(var(--square-size) * 3 - .25em);
+}
+#spot-2 {
+  left: calc(var(--square-size) * 3 - .25em);
+  top: calc(var(--square-size) * 7 - .25em);
+}
+#spot-3 {
+  left: calc(var(--square-size) * 7 - .25em);
+  top: calc(var(--square-size) * 7 - .25em);
+}

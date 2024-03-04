@@ -24,6 +24,8 @@ export default class Board {
     gameBoard;
     grid = [];
     turn;
+    gameOver;
+    passCount;
 
     letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', '']
 
@@ -81,7 +83,6 @@ export default class Board {
                 // moves for the next player.
                 div.addEventListener('animationend', () => {
                     animatingFlip = false;
-                    // markValidMoves();
                 });
 
                 // Add the stone itself, which will not show up until a black or white
@@ -135,17 +136,22 @@ export default class Board {
         this.grid[4][4].classList.add('white');
 
         this.turn = 'black';
+        this.gameOver = false;
+        this.passCount = 0;
     }
 
     playStone(x, y) {
+        // Ignore clicks if game is over.
+        if (this.gameOver) {
+            return false;
+        }
+
         // Ignore clicks on invalid squares.
         if (!this.isValidPlay(x, y, this.turn)) {
-            console.log('invalid play', x, y, this.turn);
             return false;
         }
 
         // Place the stone by adding the relevant color class.
-        console.log('play', x, y, this.turn);
         const playSquare = this.grid[y][x];
         playSquare.classList.add(this.turn);
 
@@ -178,15 +184,13 @@ export default class Board {
         // Set this flag to indicate that we're animating the flip now.
         animatingFlip = true;
         this.nextTurn();
+        this.checkValidMoves();
         return true;
     }
 
     nextTurn() {
         console.log("cambio turno")
-        // unmarkValidMoves();
-        // scoreElements[turn].container.classList.remove('turn');
         this.turn = Board.oppositeColor(this.turn);
-        // scoreElements[turn].container.classList.add('turn');
     }
 
     isValidPlay(x, y, color) {
@@ -271,6 +275,59 @@ export default class Board {
     // True if the square belongs to that player.
     static isColor(div, color) {
         return div.classList.contains(color);
+    }
+
+    checkValidMoves() {
+        // If the game is over, don't do anything.
+        if (this.gameOver) {
+            return;
+        }
+
+        // If someone is out of pieces, the game is over.
+        if (this.gameBoard.querySelector('.black') == null ||
+            this.gameBoard.querySelector('.white') == null) {
+            this.endGame();
+            return;
+        }
+
+        // If both players had to pass, nobody can move and the game is over.
+        if (this.passCount >= 2) {
+            this.endGame();
+            return;
+        }
+
+        const foundAValidMove = this.findAValidMove()
+
+        // If there are no valid moves, then the current player must pass.
+        if (foundAValidMove) {
+            this.passCount = 0;
+        } else {
+            this.passCount++;
+            this.onPass();
+        }
+    }
+
+    findAValidMove() {
+        // Find and mark all the valid moves in the game board.
+        for (let y = 0; y < 8; ++y) {
+            for (let x = 0; x < 8; ++x) {
+                if (this.isValidPlay(x, y, this.turn)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    onPass() {
+        console.log('pass', this.turn);
+
+        this.nextTurn();
+        this.checkValidMoves();
+    }
+
+    endGame() {
+        this.gameOver = true;
     }
 
 }

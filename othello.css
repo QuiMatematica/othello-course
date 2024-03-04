@@ -19,7 +19,7 @@
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
   /* The border around the whole board. */
-  border: 1px solid black;
+  border: 0px solid black;
 
   /* The .spot elements will be positioned absolutely within this board. */
   position: relative;
@@ -72,7 +72,7 @@
 
 .boardBorder {
   /* The squares are all green with a black border. */
-  background-color: brown;
+  background-color: white;
   border: 0px;
 
   /* The size of the squares should include the border, or else the overall
@@ -275,4 +275,14 @@ svg {
 
 .bailed {
   filter: drop-shadow(-1vmin 1vmin 1vmin green);
+}
+
+.turn-wrapper {
+  width: calc(10 * var(--square-size));
+  line-height: var(--square-size);
+}
+
+.turn-text {
+  font-size: var(--square-size);
+  text-align: center;
 }

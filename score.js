@@ -9,12 +9,26 @@ export default class Score {
     // Score container and scoreSpan elements, indexed by color (white/black).
     scoreElements = {};
 
+    turnElement;
+
     constructor(container, board) {
         this.container = container;
         this.board = board;
         // Create the score board.
         this.scoreElements.black = this.createScore('black');
         this.scoreElements.white = this.createScore('white');
+        this.createTurnText();
+    }
+
+    createTurnText() {
+        const div = document.createElement('div');
+        div.classList.add('turn-wrapper')
+        this.container.appendChild(div);
+
+        this.turnElement = document.createElement('div');
+        this.turnElement.classList.add('turn-text')
+        div.appendChild(this.turnElement)
+        this.turnElement.innerHTML = 'Mossa al nero';
     }
 
     // Create and return score container elements for the given color.
@@ -73,7 +87,17 @@ export default class Score {
 
         // If the board is full, the game is over.
         if (scores.black + scores.white == 64) {
-            endGame();
+            this.board.endGame();
+        }
+
+        if (this.board.gameOver) {
+            this.turnElement.innerHTML = 'Partita terminata';
+        }
+        else if (this.board.turn == 'white') {
+            this.turnElement.innerHTML = 'Mossa al bianco';
+        }
+        else {
+            this.turnElement.innerHTML = 'Mossa al nero';
         }
     }
 

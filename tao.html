@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title>TAO test page</title>
     <link rel="stylesheet" href="othello.css">
-    <script src="othello.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', init);
+    <script type="module" src="othello.js"></script>
+    <script type="module">
+        import { init } from "./othello.js";
+        document.addEventListener('DOMContentLoaded', init);
     </script>
 </head>
 <body>

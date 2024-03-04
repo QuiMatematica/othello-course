@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+    <link rel="StyleSheet" href="../tutorial-screen.css" type="text/css" media="screen">
+	<link rel="StyleSheet" href="../tutorial-print.css" type="text/css" media="print">
+	<title>Othello: corso interattivo - Le regole</title>
+</head>
+
+<body>
+    <div id="titolo">Othello: corso interattivo</div>
+    <div id="intestazione">
+	  <div class="navigazione">
+	    <a href="../index.html">Home</a>
+		-> <a href="index.html">Il gioco</a>
+		-> Le regole
+	  </div>
+	  <div class="voltapagina">
+	    <a href="index.html" title="Il gioco">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a>
+		| <a href="Precisazioni.html" title="Precisazioni">&gt;&gt;</a>
+	  </div>
+	</div>
+
+<div id="articolo">
+
+    <h1>Le regole</h1>
+
+	<h2>Situazione iniziale</h2>
+
+	<p>Si gioca in due, su una scacchiera 8x8, solitamente verde, con 64 pedine
+	bicolori, bianche su un lato e nere sull'altro. Un giocatore ha il nero,
+	l'avversario il bianco (se non siete
+	d'accordo lanciate in aria una pedina).</p>
+
+	<p>Una pedina apparterr&agrave; al giocatore nero quando mostrer&agrave; la faccia nera e,
+	viceversa, apparterr&agrave; al bianco quando mostrer&agrave; la faccia bianca.</p>
+
+	<p>La disposizione iniziale delle pedine sulla scacchiera &egrave; quella mostrata
+	dal diagramma 1; inizia a giocare il nero.
+	</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="---------------------------O#------#O---------------------------">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	<br>
+	Diagramma 1: la posizione iniziale: mossa al nero.
+	</p>
+
+	<h2>La mossa</h2>
+
+	<p>Al proprio turno, ogni giocatore poggia una pedina, con la faccia del
+	proprio colore rivolta verso l'alto, su una casella ancora vuota,
+	adiacente a una pedina avversaria.
+	Le pedine avversarie imprigionate (in orizzontale, verticale o diagonale)
+	tra la pedina appena posata e quelle proprie gi� presenti vengono
+	girate, diventando cos� del colore di chi ha appena giocato.</p>
+
+	<p>Per esempio, al suo primo turno, il giocatore nero pone una pedina
+	in D3. In tale modo rimane imprigionata la pedina bianca D4 (e nessun'altra):
+	questa pedina viene girata e diventa nera, come nel diagramma 2.</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="-------------------#-------##------#O---------------------------">
+        Mi dispiace, ma il tuo browser non supporta le Applet Java.
+    </applet>
+	<br>
+	Diagramma 2: il nero ha mosso in D3 e ha girato la pedina in D4.
+	</p>
+
+	<p>Il diagramma 3 mostra una situazione pi� avanzata della precedente:
+	il nero gioca in C5, imprigionando e girando ben 9 pedine bianche; si giunge
+	alla posizione del diagramma 4.</p>
+
+	<p align="center">
+	<table border="0" width="90%">
+	  <tr><td align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="-######---###O----O#O#----OOOO-----O#O#---OO#O#---O##----####---">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+      </td>
+	  <td align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="-######---####----####----##OO----###O#---###O#---###----####---">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	  </td></tr>
+	  <tr><td align="center">
+		Diagramma 3: mossa al nero.
+      </td>
+	  <td align="center">
+		Diagramma 4: mossa al bianco.
+	  </td></tr>
+	</table>
+	</p>
+
+	<p>Ogni giocatore, al proprio turno, &egrave; obbligato a giocare
+	posando una pedina in maniera da imprigionare almeno un disco
+	avversario; non pu&ograve; porre una pedina in una casella senza girare dischi
+	avversari, n&egrave; girare meno pedine di quelle richieste, n&egrave; rinunciare alla mossa.
+	Inoltre le pedine non possono essere tolte, n&grave; mangiate, n&egrave; spostate.</p>
+
+	<p>Nel caso in cui un giocatore non avesse mosse legali, deve passare, e tocca
+	nuovamente all'avversario. Per esempio, nel diagramma 5 il nero ha appena
+	giocato in G8; il bianco non ha alcuna mossa legale, quindi passa.</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="-------------------OOOOO--OO###O--O##OOO-OOO#O----####---######-">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	<br>
+	Diagramma 5: il bianco non ha mosse legali e passa.
+	</p>
+
+	<p>Il gioco prosegue fino all'esaurimento delle mosse legali per entrambi i
+	giocatori. In genere ci&ograve; capita dopo aver riempito interamente di pedine
+	la scacchiera, ma si possono presentare situazioni in cui ci sono caselle
+	libere e nessuno dei due giocatori pu� muovere.
+	</p>
+
+	<h2>Scopo del gioco</h2>
+
+	<p><b>Vince il giocatore che, dopo che � stata giocata l'ultima mossa legale,
+	ha pi&ugrave; pedine dell'avversario.</b> In caso di un numero uguale di pedine,
+	la partita &egrave; dichiarata patta.</p>
+
+	<p>Per esempio, nella situazione del diagramma 6, il nero vince per 35 a 29.</p>
+
+	<p align="center">
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="O#######OO######OOO#####OO#O####OOO#O###OO#O#O##OO##O#O#OOOOOOOO">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	<br>
+	Diagramma 6: la partita � finita: il nero vince per 35 a 29.
+	</p>
+
+	<p>La differenza di pedine pu� essere una misura della vittoria: se ad esempio
+	tra due giocatori due partite terminano col risultato di 37 a 27 e di 20 a 44,
+	si pu� dire che, a parit&agrave; di numero di vittorie, il secondo giocatore vince
+	per differenza pedine.</p>
+
+	<p>Se un giocatore elimina tutte le pedine avversarie in un qualunque
+	momento dell'incontro &egrave; dichiarato vincitore per 64 a 0.</p>
+
+	<p>Se rimangono delle caselle libere, vengono assegnate al vincitore, in modo che
+	la somma dei punti faccia sempre 64.</p>
+
+</div>
+
+    <div id="pie-di-pagina">
+	  <div class="voltapagina">
+	    <a href="index.html" title="Il gioco">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a>
+		| <a href="Precisazioni.html" title="Precisazioni">&gt;&gt;</a>
+	  </div>
+	</div>
+
+</body>
+</html>

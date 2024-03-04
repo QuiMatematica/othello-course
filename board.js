@@ -1,5 +1,21 @@
 export let animatingFlip = false;
 
+export function createStone() {
+    const xmlns = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(xmlns, 'svg');
+    svg.setAttributeNS(null, 'viewBox', '0 0 100 100');
+
+    // The circle of the stone itself.
+    const circle = document.createElementNS(xmlns, 'circle');
+    circle.classList.add('stone');
+    circle.setAttributeNS(null, 'cx', '50');
+    circle.setAttributeNS(null, 'cy', '50');
+    circle.setAttributeNS(null, 'r', '45');
+    svg.appendChild(circle);
+
+    return svg;
+}
+
 export default class Board {
 
     container;
@@ -70,7 +86,7 @@ export default class Board {
 
                 // Add the stone itself, which will not show up until a black or white
                 // class is added to the square.
-                div.appendChild(this.createStone());
+                div.appendChild(createStone());
 
                 // Add the square to the DOM and to the 2D array.
                 this.gameBoard.appendChild(div);
@@ -100,22 +116,6 @@ export default class Board {
             spot.id = 'spot-' + x;
             this.gameBoard.appendChild(spot);
         }
-    }
-
-    createStone() {
-        const xmlns = 'http://www.w3.org/2000/svg';
-        const svg = document.createElementNS(xmlns, 'svg');
-        svg.setAttributeNS(null, 'viewBox', '0 0 100 100');
-
-        // The circle of the stone itself.
-        const circle = document.createElementNS(xmlns, 'circle');
-        circle.classList.add('stone');
-        circle.setAttributeNS(null, 'cx', '50');
-        circle.setAttributeNS(null, 'cy', '50');
-        circle.setAttributeNS(null, 'r', '45');
-        svg.appendChild(circle);
-
-        return svg;
     }
 
     resetGame() {

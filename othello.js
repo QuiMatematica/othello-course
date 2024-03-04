@@ -3,6 +3,8 @@
 import Board from './board.js';
 import { animatingFlip } from './board.js';
 
+import Score from './score.js'
+
 const boards = []
 
 export function init() {
@@ -18,11 +20,14 @@ class FreeGameBoard {
     container;
     counter;
     board;
+    score;
 
     constructor(container, counter) {
         this.container = container;
         this.counter = counter;
         this.board = new Board(container, counter, freeGameBoardOnClick)
+        this.score = new Score(container, this.board);
+        this.score.takeScore();
     }
 
 }
@@ -42,11 +47,10 @@ function freeGameBoardOnClick(event) {
     const div = event.currentTarget;
     const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
     console.log("click on ", counter, x, y);
-    const aBoard = boards[counter]
-    const ok = aBoard.board.playStone(parseInt(x), parseInt(y))
-
-    // If the play was valid, update the score and switch turns.
-    // if (ok) {
-        // takeScore();
-    // }
+    const freeGameBoard = boards[counter]
+    const ok = freeGameBoard.board.playStone(parseInt(x), parseInt(y));
+    // If the play was valid, update the score.
+    if (ok) {
+        freeGameBoard.score.takeScore();
+    }
 }

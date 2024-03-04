@@ -201,3 +201,101 @@ svg {
     stroke: white;
   }
 }
+
+/* ====================================
+ * The score board and status displays.
+ * ==================================== */
+
+#scoreBoard {
+  margin-bottom: 1vmin;
+}
+
+.score-wrapper {
+  /* A wrapper for the score of an individual player. */
+  display: inline-block;
+  width: calc(5 * var(--square-size));
+  text-align: center;
+
+  /* Fixes some weirdness with sizing of text in edge cases */
+  line-height: 0;
+}
+
+.score-text {
+  /* Make sure the score text aligns well with the stone. */
+  display: inline-block;
+  vertical-align: baseline;
+  font-size: var(--square-size);
+  line-height: var(--square-size);
+}
+
+/* Add a colon before the score. */
+.score-text:before {
+  content: ":";
+}
+
+/* Class attached to the stone in the score panel of the player whose turn it
+ * is. */
+.turn {
+  filter: drop-shadow(-1vmin 1vmin 1vmin blue);
+}
+
+/* The message container shows some status text on top of the stone. */
+.msg-container {
+  position: absolute;
+  display: inline-block;
+  font-size: calc(0.3 * var(--square-size));
+  font-weight: bold;
+}
+
+/* The white stone will have messages in black text, and vice-versa. */
+.white .msg-container {
+  color: black;
+}
+.black .msg-container {
+  color: white;
+}
+
+/* Use classes on the score-board stone to show the various status messages in
+ * the message container. */
+.pass .msg-container:before {
+  content: "PASS";
+}
+.win .msg-container:before {
+  content: "WIN";
+}
+.tie .msg-container:before {
+  content: "TIE";
+}
+.bailed .msg-container:before {
+  content: "GONE";
+}
+
+/* These states will show change the color of the shadow behind the score board
+ * stone. */
+.tie,
+.win {
+  filter: drop-shadow(-1vmin 1vmin 1vmin red);
+}
+
+.bailed {
+  filter: drop-shadow(-1vmin 1vmin 1vmin green);
+}
+
+/* A class applied temporarily to the score text to animate it when it changes.
+ * The class is removed again when the animation is complete. */
+.animated-text {
+  animation: animate-text 0.6s ease-in-out;
+}
+
+/* Pulse the text a little bigger to draw the eye. */
+@keyframes animate-text {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.4, 1.4);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

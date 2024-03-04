@@ -44,12 +44,6 @@ export default class Score {
         scoreSpan.classList.add('score-text');
         span.appendChild(scoreSpan);
 
-        // When the animation on the score text is over, remove the animation class,
-        // so that it can be added again when the score changes.
-        scoreSpan.addEventListener('animationend', () => {
-            scoreSpan.classList.remove('animated-text');
-        });
-
         // Return the container and score span.
         return {
             container: stoneContainer,
@@ -75,7 +69,6 @@ export default class Score {
 
         for (const color in scores) {
             this.scoreElements[color].scoreSpan.textContent = scores[color];
-            this.scoreElements[color].scoreSpan.classList.add('animated-text');
         }
 
         // If the board is full, the game is over.

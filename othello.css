@@ -147,10 +147,10 @@ svg {
  * change. There are separate animations for black & white because you can't
  * use CSS filters to change the stroke and fill colors in an SVG. */
 .black.flip .stone {
-  animation: flip-black 1s ease-in-out;
+  animation: flip-black .5s ease-in-out;
 }
 .white.flip .stone {
-  animation: flip-white 1s ease-in-out;
+  animation: flip-white .5s ease-in-out;
 }
 
 /* Flip from black to white by shrinking horizontally, then expanding back out
@@ -226,11 +226,7 @@ svg {
   vertical-align: baseline;
   font-size: var(--square-size);
   line-height: var(--square-size);
-}
-
-/* Add a colon before the score. */
-.score-text:before {
-  content: ":";
+  margin: 0 10px;
 }
 
 /* Class attached to the stone in the score panel of the player whose turn it
@@ -279,23 +275,4 @@ svg {
 
 .bailed {
   filter: drop-shadow(-1vmin 1vmin 1vmin green);
-}
-
-/* A class applied temporarily to the score text to animate it when it changes.
- * The class is removed again when the animation is complete. */
-.animated-text {
-  animation: animate-text 0.6s ease-in-out;
-}
-
-/* Pulse the text a little bigger to draw the eye. */
-@keyframes animate-text {
-  0% {
-    transform: scale(1, 1);
-  }
-  50% {
-    transform: scale(1.4, 1.4);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
 }

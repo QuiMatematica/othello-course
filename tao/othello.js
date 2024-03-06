@@ -8,11 +8,35 @@ import Score from './score.js'
 const boards = []
 
 export function init() {
-    const matches = document.querySelectorAll('.freeGameBoard');
-    matches.forEach((item) => {
+    document.querySelectorAll('.staticBoard').forEach((item) => {
+        const staticBoard = new StaticBoard(item, boards.length);
+        boards.push(staticBoard);
+    });
+    document.querySelectorAll('.freeGameBoard').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
         boards.push(freeGame);
     });
+}
+
+class StaticBoard{
+
+    container;
+    counter;
+    board;
+    score;
+
+    constructor(container, counter) {
+        this.container = container;
+        this.counter = counter;
+        this.board = new Board(container, counter, staticBoardOnClick)
+        this.score = new Score(container, this.board);
+        this.score.takeScore();
+    }
+
+}
+
+function staticBoardOnClick(event) {
+    return;
 }
 
 class FreeGameBoard {
@@ -33,11 +57,6 @@ class FreeGameBoard {
 }
 
 function freeGameBoardOnClick(event) {
-//        // Ignore if the game is over.
-//        if (gameOver) {
-//            return;
-//        }
-
     // Ignore if we're still animating the last move.
     if (animatingFlip) {
         return;

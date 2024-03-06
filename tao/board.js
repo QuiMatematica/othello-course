@@ -22,6 +22,7 @@ export default class Board {
     counter;
     gameBoardContainer;
     gameBoard;
+    starting_grid = [];
     grid = [];
     turn;
     gameOver;
@@ -41,8 +42,45 @@ export default class Board {
         this.gameBoard.classList.add('gameBoard');
         this.gameBoardContainer.appendChild(this.gameBoard)
 
+        this.get_starting_grid(container);
+
         this.createBoard(onClickCallback)
         this.resetGame()
+    }
+
+    get_starting_grid(container) {
+        if (container.dataset.hasOwnProperty('r1')) {
+            for (let x = 0; x < 8; x++) {
+                const row = [];
+                this.starting_grid.push(row);
+                const row_data = container.dataset['r' + (x + 1).toString()];
+                for (let y = 0; y < 8; y++) {
+                    const cell_data = row_data.charAt(y);
+                    if (cell_data == '#') {
+                        row.push('black');
+                    }
+                    else if (cell_data == 'O') {
+                        row.push('white');
+                    }
+                    else {
+                        row.push('empty');
+                    }
+                }
+            }
+        }
+        else {
+            for (let x = 0; x < 8; x++) {
+                const row = [];
+                this.starting_grid.push(row);
+                for (let y = 0; y < 8; y++) {
+                    row.push('empty');
+                }
+            }
+            this.starting_grid[3][3] = 'white'
+            this.starting_grid[4][4] = 'white'
+            this.starting_grid[3][4] = 'black'
+            this.starting_grid[4][3] = 'black'
+        }
     }
 
     createBoard(onClickCallback) {
@@ -129,11 +167,13 @@ export default class Board {
             div.classList.remove('flip');
         }
 
-        // Set the initial 4 stones.
-        this.grid[3][3].classList.add('white');
-        this.grid[3][4].classList.add('black');
-        this.grid[4][3].classList.add('black');
-        this.grid[4][4].classList.add('white');
+        for (let x = 0; x < 8; x++) {
+            for (let y = 0; y < 8; y++) {
+                if (this.starting_grid[x][y] != 'empty') {
+                    this.grid[x][y].classList.add(this.starting_grid[x][y]);
+                }
+            }
+        }
 
         this.turn = 'black';
         this.gameOver = false;

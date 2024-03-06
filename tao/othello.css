@@ -5,6 +5,11 @@
   --square-size: 2em;
 }
 
+.staticBoard {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
 /* ===============
  * The game board.
  * =============== */
@@ -220,12 +225,26 @@ svg {
   line-height: 0;
 }
 
+/* Any container that holds a stone, including a square in the board. */
+.score-stone-container {
+  width: calc(var(--square-size) / 2);
+  height: calc(var(--square-size) / 2);
+
+  /* For the score board stones, we need to make sure the size of the container
+   * is properly constrained.  Otherwise, display: inline would make the SVG
+   * inside blow up and escape the width & height above. */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  /* The score board stones have text overlayed with absolute positioning. */
+  position: relative;
+}
+
 .score-text {
   /* Make sure the score text aligns well with the stone. */
   display: inline-block;
   vertical-align: baseline;
-  font-size: var(--square-size);
-  line-height: var(--square-size);
   margin: 0 10px;
 }
 
@@ -279,10 +298,8 @@ svg {
 
 .turn-wrapper {
   width: calc(10 * var(--square-size));
-  line-height: var(--square-size);
 }
 
 .turn-text {
-  font-size: var(--square-size);
   text-align: center;
 }

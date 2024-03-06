@@ -40,7 +40,7 @@ export default class Score {
 
         // The container for the stone in the score board.
         const stoneContainer = document.createElement('span');
-        stoneContainer.classList.add('stone-container');
+        stoneContainer.classList.add('score-stone-container');
         stoneContainer.classList.add(color);
         span.appendChild(stoneContainer);
 

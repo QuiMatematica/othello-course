@@ -5,6 +5,11 @@
     <link rel="StyleSheet" href="../tutorial-screen.css" type="text/css" media="screen">
 	<link rel="StyleSheet" href="../tutorial-print.css" type="text/css" media="print">
 	<title>Othello: corso interattivo - Le regole</title>
+	<link rel="stylesheet" href="../tao/othello.css">
+    <script type="module">
+        import { init } from "../tao/othello.js";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
 </head>
 
 <body>
@@ -40,17 +45,13 @@
 	dal diagramma 1; inizia a giocare il nero.
 	</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="---------------------------O#------#O---------------------------">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 1: la posizione iniziale: mossa al nero.
-	</p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"></div>
+			<br>
+			Diagramma 1: la posizione iniziale.
+		</div>
+	</div>
 
 	<h2>La mossa</h2>
 
@@ -65,17 +66,22 @@
 	in D3. In tale modo rimane imprigionata la pedina bianca D4 (e nessun'altra):
 	questa pedina viene girata e diventa nera, come nel diagramma 2.</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="-------------------#-------##------#O---------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 2: il nero ha mosso in D3 e ha girato la pedina in D4.
-	</p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--------"
+				 data-r2="--------"
+				 data-r3="---#----"
+				 data-r4="---##---"
+				 data-r5="---#O---"
+				 data-r6="--------"
+				 data-r7="--------"
+				 data-r8="--------"
+			></div>
+			<br>
+			Diagramma 2: il nero ha mosso in D3 e ha girato la pedina in D4.
+		</div>
+	</div>
 
 	<p>Il diagramma 3 mostra una situazione pi� avanzata della precedente:
 	il nero gioca in C5, imprigionando e girando ben 9 pedine bianche; si giunge

@@ -1,10 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML>
 
-<html>
+<html lang="it">
 <head>
     <link rel="StyleSheet" href="../tutorial-screen.css" type="text/css" media="screen">
 	<link rel="StyleSheet" href="../tutorial-print.css" type="text/css" media="print">
 	<title>Othello: corso interattivo - Precisazioni</title>
+	<link rel="stylesheet" href="../tao/othello.css">
+    <script type="module">
+        import { init } from "../tao/othello.js";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
 </head>
 
 <body>
@@ -17,7 +22,6 @@
 	  </div>
 	  <div class="voltapagina">
 	    <a href="LeRegole.html" title="Le regole">&lt;&lt;</a>
-		| <a href="javascript:self.print()">stampa</a>
 		| <a href="../index.html" title="Home">&gt;&gt;</a>
 	  </div>
 	</div>
@@ -28,129 +32,141 @@
 
 	<h2>Sul significato di "muovere"</h2>
 
-	<p>Nelle pagine di questo corso userò molto spesso il verbo "muovere".
+	<p>Nelle pagine di questo corso userï¿½ molto spesso il verbo "muovere".
 	Questo non deve confonderti le idee: le pedine non vengono mai spostate, ma solo
 	appoggiate e girate. Quindi quando si parla di "mossa" o di "muovere" in
-	verità si intende appoggiare una pedina nella casella indicata e girare le
+	verit&agrave; si intende appoggiare una pedina nella casella indicata e girare le
 	pedine imprigionate.</p>
 
 	<h2>Quali pedine sono imprigionate?</h2>
 
-	<p>Se capita di imprigionare più pedine, stai attento che la fila da
+	<p>Se capita di imprigionare pi&ugrave; pedine, stai attento che la fila da
 	capovolgere deve essere continua e formata di dischi dello stesso colore.</p>
 
 	<p>I diagrammi 1, 2, 3 e 4 presentano delle posizioni impossibili, ma utili per
 	comprendere gli effetti di una mossa. Nella situazione del diagramma 1, il
 	nero gioca in B4, girando le tre pedine bianche (diagramma 2).</p>
 
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="--------------------------OOO#----------------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="-------------------------#####----------------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 1: mossa al nero.
-      </td>
-	  <td align="center">
-		Diagramma 2: effetto della mossa.
-	  </td></tr>
-	</table>
-	</p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--------"
+				 data-r2="--------"
+				 data-r3="--------"
+				 data-r4="--OOO#--"
+				 data-r5="--------"
+				 data-r6="--------"
+				 data-r7="--------"
+				 data-r8="--------"
+			></div>
+			<br>
+			Diagramma 1: prima della mossa.
+		</div>
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--------"
+				 data-r2="--------"
+				 data-r3="--------"
+				 data-r4="-#####--"
+				 data-r5="--------"
+				 data-r6="--------"
+				 data-r7="--------"
+				 data-r8="--------"
+				 data-turn="white"
+			></div>
+			<br>
+			Diagramma 2: dopo la mossa.
+		</div>
+	</div>
 
 	<p>
 	Invece, nella situazione del diagramma 3, facendo la stessa mossa il nero
-	può capovolgere solo il disco in C4 (diagramma 4).
+	pu&ograve; capovolgere solo il disco in C4 (diagramma 4).
 	</p>
 
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="--------------------------O#O#----------------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="-------------------------###O#----------------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 3: mossa al nero.
-      </td>
-	  <td align="center">
-		Diagramma 4: effetto della mossa.
-	  </td></tr>
-	</table>
-	</p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--------"
+				 data-r2="--------"
+				 data-r3="--------"
+				 data-r4="--O#O#--"
+				 data-r5="--------"
+				 data-r6="--------"
+				 data-r7="--------"
+				 data-r8="--------"
+			></div>
+			<br>
+			Diagramma 3: prima della mossa.
+		</div>
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--------"
+				 data-r2="--------"
+				 data-r3="--------"
+				 data-r4="-###O#--"
+				 data-r5="--------"
+				 data-r6="--------"
+				 data-r7="--------"
+				 data-r8="--------"
+				 data-turn="white"
+			></div>
+			<br>
+			Diagramma 4: dopo la mossa.
+		</div>
+	</div>
 
     <h2>Finali con caselle vuote</h2>
 
-	<p>Osserva la posizione del diagramma 5. L'ultima mossa è stata del bianco
+	<p>Osserva la posizione del diagramma 5. L'ultima mossa &egrave; stata del bianco
 	in H2, toccherebbe al nero, quindi, ma...</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="--#####---OOOO-O#OOOOOOO#OOOOOOO#OOOOOOO#OOOOOOO#-OOOO--#-OOOOO-">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 5: il bianco ha mosso in H2.
-	</p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--#####-"
+				 data-r2="--OOOO-O"
+				 data-r3="#OOOOOOO"
+				 data-r4="#OOOOOOO"
+				 data-r5="#OOOOOOO"
+				 data-r6="#OOOOOOO"
+				 data-r7="#-OOOO--"
+				 data-r8="#-OOOOO-"
+			></div>
+			<br>
+			Diagramma 5: il bianco ha mosso in H2.
+		</div>
+	</div>
 
-	<p>Né il bianco né il nero hanno mosse legali a disposizione, quindi
-	nessuno dei due può giocare.
-	Sebbene la scacchiera non sia piena, la partita è conclusa. Dal momento che le caselle vuote
-	vengono assegnate al vincitore, il punteggio finanel è di 53 a 11 per il Bianco.</p>
+	<p>N&egrave; il bianco n&egrave; il nero hanno mosse legali a disposizione, quindi
+	nessuno dei due pu&ograve; giocare.
+	Sebbene la scacchiera non sia piena, la partita &egrave; conclusa. Dal momento che le caselle vuote
+	vengono assegnate al vincitore, il punteggio finane &egrave; di 53 a 11 per il Bianco.</p>
 
 	<h2>Finali per 64 a 0</h2>
 
-	<p>Un caso particolare di partita finita "in anticipo" è quello in cui
+	<p>Un caso particolare di partita finita "in anticipo" &egrave; quello in cui
 	tutte le pedine diventano dello stesso colore. Guardiamo, per esempio, la
 	partita del diagramma 6: per muovere avanti o indietro premi sui pulsanti
 	corrispondenti.</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="390"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="match">
-    	<param name="matchFile" value="diamante.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 6: il nero vince 64 a 0.
-	</p>
+<!--	TODO: funzione matchFile -->
+<!--	<p align="center">-->
+<!--    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="390"-->
+<!--            code="it.claudiosignorini.tao.TaoApplet.class"-->
+<!--            hspace="0" vspace="0" align="top">-->
+<!--    	<param name="function" value="match">-->
+<!--    	<param name="matchFile" value="diamante.txt">-->
+<!--        Mi dispiace: il tuo browser non supporta le Applet Java.-->
+<!--    </applet>-->
+<!--	<br>-->
+<!--	Diagramma 6: il nero vince 64 a 0.-->
+<!--	</p>-->
 
 	<p>All'ultima mossa tutte le pedine sono diventate nere. Nessuno dei due
-	giocatori può più muovere, il bianco perché non ha più pedine con cui
-	fare sponda, il nero perché non ha più pedine avversarie da girare. La
-	partita è conclusa.</p>
+	giocatori pu&ograve; pi&ugrave; muovere, il bianco perch&egrave; non ha pi&ugrave; pedine con cui
+	fare sponda, il nero perch&egrave; non ha pi&ugrave; pedine avversarie da girare. La
+	partita &egrave; conclusa.</p>
 
 	<p>Al giocatore vincente (quello che ha tutte le pedine del proprio colore,
 	ovviamente) viene dato il punteggio massimo, 64 a 0, come se tutte le
@@ -162,53 +178,54 @@
 	disposizione 4 possibili caselle: D3, C4, F5, E6.
 	</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="---------------------------O#------#O---------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 7: mossa al nero.
-	</p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"></div>
+			<br>
+			Diagramma 7: mossa al nero.
+		</div>
+	</div>
 
 	<p>
-	Supponiamo che giochi D3: appoggerà in D3 una pedina rivolta in maniera da
-	mostrare la faccia nera e girerà quella in D4 in modo che risulti anch'essa
-	nera. Il disco in D4 viene capovolto perché rimasto imprigionato fra le due
-	pedine nere, in D3 ed in D5! La posizione sulla scacchiera, diventerà quella
+	Supponiamo che giochi D3: appogger&agrave; in D3 una pedina rivolta in maniera da
+	mostrare la faccia nera e girer&agrave; quella in D4 in modo che risulti anch'essa
+	nera. Il disco in D4 viene capovolto perchï¿½ rimasto imprigionato fra le due
+	pedine nere, in D3 e in D5! La posizione sulla scacchiera, diventer&agrave; quella
 	del diagramma 8.
 	</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="-------------------#-------##------#O---------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 8: il nero ha giocato il D3.
-	</p>
+		<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="staticBoard"
+				 data-r1="--------"
+				 data-r2="--------"
+				 data-r3="---#----"
+				 data-r4="---##---"
+				 data-r5="---#O---"
+				 data-r6="--------"
+				 data-r7="--------"
+				 data-r8="--------"
+				 data-turn="white"
+			></div>
+			<br>
+			Diagramma 8: il nero ha giocato in D3.
+		</div>
+	</div>
 
 	<p>Dopo poche partite ti renderai conto che la prima mossa,
-	in realtà, è una sola: le quattro possibilità del nero danno luogo a quattro
-	posizioni perfettamente simmetriche, e giocare una o l'altra è solo una
+	in realt&agrave;, &egrave; una sola: le quattro possibilit&agrave; del nero danno luogo a quattro
+	posizioni perfettamente simmetriche, e giocare una o l'altra &egrave; solo una
 	questione di gusto personale.</p>
 
-	<p>Subito dopo la prima, però, il bianco può giocare in 3 caselle, C3, C5 o E3.
+	<p>Subito dopo la prima, per&ograve;, il bianco pu&ograve; giocare in 3 caselle, C3, C5 o E3.
 	Queste tre mosse danno luogo a tre situazioni diverse e da questo punto in
-	poi, ogni partita sarà diversa dalle altre!</p>
+	poi, ogni partita sar&agrave; diversa dalle altre!</p>
 
 </div>
 
     <div id="pie-di-pagina">
 	  <div class="voltapagina">
 	    <a href="LeRegole.html" title="Le regole">&lt;&lt;</a>
-		| <a href="javascript:self.print()">stampa</a>
 		| <a href="../index.html" title="Home">&gt;&gt;</a>
 	  </div>
 	</div>

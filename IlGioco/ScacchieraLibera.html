@@ -1,10 +1,15 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE HTML>
 
 <html>
 <head>
     <link rel="StyleSheet" href="../tutorial-screen.css" type="text/css" media="screen">
 	<link rel="StyleSheet" href="../tutorial-print.css" type="text/css" media="print">
 	<title>Othello: corso interattivo - Scacchiera libera</title>
+	<link rel="stylesheet" href="../tao/othello.css">
+    <script type="module">
+        import { init } from "../tao/othello.js";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
 </head>
 
 <body>
@@ -20,21 +25,18 @@
 
 <div id="articolo">
 
+<!--	TODO: inserire la pagina nei menÃ¹ e nella navigazione -->
+
     <h1>Scacchiera libera</h1>
 
-	<p>La scacchiera qui sotto ti permette di giocare con libertà. Clicca sulle
+	<p>La scacchiera qui sotto ti permette di giocare con libert&agrave;. Clicca sulle
 	caselle per muovere. Sono possibili solo mosse legali. Buon divertimento!!!</p>
 
-	<p align="center">
-    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="302"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="free">
-        <param name="color" value="black">
-        <param name="position" value="---------------------------O#------#O---------------------------">
-        Mi dispiace, ma il tuo browser non supporta le Applet Java.
-    </applet>
-    </p>
+	<div class="diagram-wrapper">
+		<div class="diagram">
+			<div class="freeGameBoard" id="board1"></div>
+		</div>
+	</div>
 
 </div>
 

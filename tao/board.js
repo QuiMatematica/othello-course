@@ -23,6 +23,7 @@ export default class Board {
     gameBoardContainer;
     gameBoard;
     starting_grid = [];
+    starting_turn;
     grid = [];
     turn;
     gameOver;
@@ -67,6 +68,12 @@ export default class Board {
                     }
                 }
             }
+            if (container.dataset.hasOwnProperty('turn')) {
+                this.starting_turn = container.dataset['turn'];
+            }
+            else {
+                this.starting_turn = 'black';
+            }
         }
         else {
             for (let x = 0; x < 8; x++) {
@@ -80,6 +87,7 @@ export default class Board {
             this.starting_grid[4][4] = 'white'
             this.starting_grid[3][4] = 'black'
             this.starting_grid[4][3] = 'black'
+            this.starting_turn = 'black';
         }
     }
 
@@ -175,7 +183,7 @@ export default class Board {
             }
         }
 
-        this.turn = 'black';
+        this.turn = this.starting_turn;
         this.gameOver = false;
         this.passCount = 0;
     }

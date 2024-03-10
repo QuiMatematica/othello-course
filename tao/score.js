@@ -1,19 +1,18 @@
-import Board from './board.js';
+import { WHITE } from './position.js';
+import { BLACK } from './position.js';
 import { createStone } from './board.js';
 
 export default class Score {
 
     container;
-    board;
 
     // Score container and scoreSpan elements, indexed by color (white/black).
     scoreElements = {};
 
     turnElement;
 
-    constructor(container, board) {
+    constructor(container) {
         this.container = container;
-        this.board = board;
         // Create the score board.
         this.scoreElements.black = this.createScore('black');
         this.scoreElements.white = this.createScore('white');
@@ -66,34 +65,17 @@ export default class Score {
     }
 
     // Count the stones on the board and update the score text.
-    takeScore() {
-        const scores = { black: 0, white: 0 };
-
-        for (let y = 0; y < 8; ++y) {
-            for (let x = 0; x < 8; ++x) {
-                if (this.board.grid[y][x].classList.contains('black')) {
-                    scores.black += 1;
-                }
-
-                if (this.board.grid[y][x].classList.contains('white')) {
-                    scores.white += 1;
-                }
-            }
-        }
+    takeScore(position) {
+        const scores = position.countStones();
 
         for (const color in scores) {
             this.scoreElements[color].scoreSpan.textContent = scores[color];
         }
 
-        // If the board is full, the game is over.
-        if (scores.black + scores.white == 64) {
-            this.board.endGame();
-        }
-
-        if (this.board.gameOver) {
+        if (position.gameOver) {
             this.turnElement.innerHTML = 'Partita terminata';
         }
-        else if (this.board.turn == 'white') {
+        else if (position.turn == WHITE) {
             this.turnElement.innerHTML = 'Mossa al bianco';
         }
         else {

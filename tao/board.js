@@ -1,3 +1,7 @@
+import { WHITE } from './position.js';
+import { BLACK } from './position.js';
+import { EMPTY } from './position.js';
+
 export let animatingFlip = false;
 
 export function createStone() {
@@ -22,12 +26,7 @@ export default class Board {
     counter;
     gameBoardContainer;
     gameBoard;
-    starting_grid = [];
-    starting_turn;
     grid = [];
-    turn;
-    gameOver;
-    passCount;
 
     letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', '']
 
@@ -43,52 +42,7 @@ export default class Board {
         this.gameBoard.classList.add('gameBoard');
         this.gameBoardContainer.appendChild(this.gameBoard)
 
-        this.get_starting_grid(container);
-
         this.createBoard(onClickCallback)
-        this.resetGame()
-    }
-
-    get_starting_grid(container) {
-        if (container.dataset.hasOwnProperty('r1')) {
-            for (let x = 0; x < 8; x++) {
-                const row = [];
-                this.starting_grid.push(row);
-                const row_data = container.dataset['r' + (x + 1).toString()];
-                for (let y = 0; y < 8; y++) {
-                    const cell_data = row_data.charAt(y);
-                    if (cell_data == '#') {
-                        row.push('black');
-                    }
-                    else if (cell_data == 'O') {
-                        row.push('white');
-                    }
-                    else {
-                        row.push('empty');
-                    }
-                }
-            }
-            if (container.dataset.hasOwnProperty('turn')) {
-                this.starting_turn = container.dataset['turn'];
-            }
-            else {
-                this.starting_turn = 'black';
-            }
-        }
-        else {
-            for (let x = 0; x < 8; x++) {
-                const row = [];
-                this.starting_grid.push(row);
-                for (let y = 0; y < 8; y++) {
-                    row.push('empty');
-                }
-            }
-            this.starting_grid[3][3] = 'white'
-            this.starting_grid[4][4] = 'white'
-            this.starting_grid[3][4] = 'black'
-            this.starting_grid[4][3] = 'black'
-            this.starting_turn = 'black';
-        }
     }
 
     createBoard(onClickCallback) {
@@ -174,140 +128,47 @@ export default class Board {
             div.classList.remove('white');
             div.classList.remove('flip');
         }
-
-        for (let x = 0; x < 8; x++) {
-            for (let y = 0; y < 8; y++) {
-                if (this.starting_grid[x][y] != 'empty') {
-                    this.grid[x][y].classList.add(this.starting_grid[x][y]);
-                }
-            }
-        }
-
-        this.turn = this.starting_turn;
-        this.gameOver = false;
-        this.passCount = 0;
     }
 
-    playStone(x, y) {
-        // Ignore clicks if game is over.
-        if (this.gameOver) {
-            return false;
-        }
-
-        // Ignore clicks on invalid squares.
-        if (!this.isValidPlay(x, y, this.turn)) {
-            return false;
-        }
-
-        // Place the stone by adding the relevant color class.
-        const playSquare = this.grid[y][x];
-        playSquare.classList.add(this.turn);
-
-        // Remove the "last play" indicator if there's one out there.
-        const last = this.gameBoard.querySelector('.last');
-        if (last) {
-            last.classList.remove('last');
-        }
-        // Add the "last play" indicator to this newly-played square.
-        playSquare.classList.add('last');
-
-        // Flip over the opponent's pieces in every valid direction.
-        for (const [dx, dy] of Board.allDirections()) {
-            if (this.isValidInDirection(x, y, dx, dy, this.turn)) {
-                for (const div of this.scanDirection(x, y, dx, dy)) {
-                    // Stop on your own color.
-                    if (Board.isColor(div, this.turn)) {
-                      break;
-                    }
-
-                    // Use the "flip" class to start the animation, and change the color
-                    // class to the new color.
-                    div.classList.add('flip');
-                    div.classList.add(this.turn);
-                    div.classList.remove(Board.oppositeColor(this.turn));
+    setPosition(position) {
+        this.resetGame();
+        for (let x = 0; x < 8; x++) {
+            for (let y = 0; y < 8; y++) {
+                const color = position.grid[y][x];
+                if (color == WHITE) {
+                    this.grid[y][x].classList.add('white');
+                }
+                else if (color == BLACK) {
+                    this.grid[y][x].classList.add('black');
                 }
             }
+        }
+    }
+
+    playPosition(position) {
+        // Place the stone by adding the relevant color class.
+        const playSquare = this.grid[position.played.y][position.played.x];
+        playSquare.classList.add(Board.getColor(position.prevPosition.turn));
+
+        for (const flipped of position.flipped) {
+            const div = this.grid[flipped.y][flipped.x];
+            div.classList.add('flip');
+            div.classList.add(Board.getColor(position.prevPosition.turn));
+            div.classList.remove(Board.getColor(-position.prevPosition.turn));
         }
 
         // Set this flag to indicate that we're animating the flip now.
         animatingFlip = true;
-        this.nextTurn();
-        this.checkValidMoves();
-        return true;
     }
 
-    nextTurn() {
-        console.log("cambio turno")
-        this.turn = Board.oppositeColor(this.turn);
-    }
-
-    isValidPlay(x, y, color) {
-        // If it's not empty, it's not a valid play.
-        if (!Board.isEmpty(this.grid[y][x])) {
-            return false;
+    static getColor(positionColor) {
+        if (positionColor == WHITE) {
+            return 'white';
         }
-
-        // A valid play at x,y must be able to flip stones in some direction.
-        for (const [dx, dy] of Board.allDirections()) {
-            if (this.isValidInDirection(x, y, dx, dy, color)) {
-                return true;
-            }
+        else if (positionColor == BLACK) {
+            return 'black';
         }
-        return false;
-    }
-
-    isValidInDirection(x, y, dx, dy, color) {
-        let first = true;
-
-        for (const div of this.scanDirection(x, y, dx, dy)) {
-            // If the first square in direction dx,dy is not the opposite player's,
-            // then this is not a valid play based on that direction.
-            if (first) {
-                if (!Board.isColor(div, Board.oppositeColor(color))) {
-                    return false;
-                }
-
-                first = false;
-            }
-
-            // If the next square is empty, we failed to find another stone in our
-            // color, so this is not a valid play based on that direction.
-            if (Board.isEmpty(div)) {
-                return false;
-            }
-
-            // Once we find a stone of our own color after some number of the
-            // opponent's stones, this is a valid play in this direction.
-            if (Board.isColor(div, color)) {
-                return true;
-            }
-        }
-
-        // If we reach the end of the board without finding our own color, this is
-        // not a valid play based on that direction.
-        return false;
-    }
-
-    static *allDirections() {
-        for (const dx of [-1, 0, 1]) {
-            for (const dy of [-1, 0, 1]) {
-                // Never yield direction [0, 0] (in place)
-                if (dx || dy) {
-                    yield [dx, dy];
-                }
-            }
-        }
-    }
-
-    // A generator that yields board squares starting at x,y and moving in the
-    // direction dx,dy, excluding the starting position at x,y.
-    *scanDirection(x, y, dx, dy) {
-        x += dx;
-        y += dy;
-
-        for (; y >= 0 && y <= 7 && x >= 0 && x <= 7; y += dy, x += dx) {
-            yield this.grid[y][x];
-        }
+        return null;
     }
 
     // Returns the opposite of a player's color.
@@ -323,59 +184,6 @@ export default class Board {
     // True if the square belongs to that player.
     static isColor(div, color) {
         return div.classList.contains(color);
-    }
-
-    checkValidMoves() {
-        // If the game is over, don't do anything.
-        if (this.gameOver) {
-            return;
-        }
-
-        // If someone is out of pieces, the game is over.
-        if (this.gameBoard.querySelector('.black') == null ||
-            this.gameBoard.querySelector('.white') == null) {
-            this.endGame();
-            return;
-        }
-
-        // If both players had to pass, nobody can move and the game is over.
-        if (this.passCount >= 2) {
-            this.endGame();
-            return;
-        }
-
-        const foundAValidMove = this.findAValidMove()
-
-        // If there are no valid moves, then the current player must pass.
-        if (foundAValidMove) {
-            this.passCount = 0;
-        } else {
-            this.passCount++;
-            this.onPass();
-        }
-    }
-
-    findAValidMove() {
-        // Find and mark all the valid moves in the game board.
-        for (let y = 0; y < 8; ++y) {
-            for (let x = 0; x < 8; ++x) {
-                if (this.isValidPlay(x, y, this.turn)) {
-                    return true;
-                }
-            }
-        }
-        return false;
-    }
-
-    onPass() {
-        console.log('pass', this.turn);
-
-        this.nextTurn();
-        this.checkValidMoves();
-    }
-
-    endGame() {
-        this.gameOver = true;
     }
 
 }

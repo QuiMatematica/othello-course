@@ -303,3 +303,11 @@ svg {
 .turn-text {
   text-align: center;
 }
+
+/* ======================
+ * Controlli.
+ * ====================== */
+
+.button-wrapper {
+    margin: 5px;
+}

@@ -100,7 +100,8 @@ class MatchFileBoard {
     container;
     counter;
 
-    position;
+    startPosition;
+    currentPosition;
     board;
     score;
 
@@ -108,19 +109,40 @@ class MatchFileBoard {
         this.container = container;
         this.counter = counter;
 
-        this.position = getStartingPosition();
+        this.startPosition = getStartingPosition();
+        this.currentPosition = this.startPosition;
         // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
         this.board = new Board(container, counter, staticBoardOnClick)
-        this.board.setPosition(this.position);
+        this.board.setPosition(this.startPosition);
         this.score = new Score(container, this.board);
-        this.score.takeScore(this.position);
+        this.score.takeScore(this.startPosition);
+
+        const begin = document.createElement("button");
+        begin.dataset.counter = this.counter;
+        begin.appendChild(document.createTextNode("|<"));
+        begin.addEventListener('click', matchOnBeginClick);
+
+        const prev = document.createElement("button");
+        prev.dataset.counter = this.counter;
+        prev.appendChild(document.createTextNode("<"));
+        prev.addEventListener('click', matchOnPrevClick);
 
         const next = document.createElement("button");
+        next.dataset.counter = this.counter;
         next.appendChild(document.createTextNode(">"));
+        next.addEventListener('click', matchOnNextClick);
+
+        const end = document.createElement("button");
+        end.dataset.counter = this.counter;
+        end.appendChild(document.createTextNode(">|"));
+        end.addEventListener('click', matchOnEndClick);
 
         const div = document.createElement("div");
         div.classList.add("button-wrapper")
+        div.appendChild(begin);
+        div.appendChild(prev);
         div.appendChild(next);
+        div.appendChild(end);
 
         this.container.appendChild(div);
 
@@ -128,11 +150,72 @@ class MatchFileBoard {
         let json;
         fetch(matchFile)
             .then((response) => response.json())
-            .then((json) => readMatch(json));
+            .then((json) => this.readMatch(json));
     }
 
     readMatch(json) {
-
+        var curPosition = this.startPosition;
+        json.moves.forEach((move) => {
+            const square = Square.fromString(move);
+            const nextPosition = curPosition.playStone(square)
+            curPosition = nextPosition;
+        });
     }
 
+}
+
+function matchOnNextClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    const nextPosition = matchFileBoard.currentPosition.nextPosition;
+    if (nextPosition != null) {
+        matchFileBoard.board.playPosition(nextPosition);
+        matchFileBoard.score.takeScore(nextPosition);
+        matchFileBoard.currentPosition = nextPosition;
+    }
+}
+
+function matchOnPrevClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    const prevPosition = matchFileBoard.currentPosition.prevPosition;
+    if (prevPosition != null) {
+        matchFileBoard.board.setPosition(prevPosition);
+        matchFileBoard.score.takeScore(prevPosition);
+        matchFileBoard.currentPosition = prevPosition;
+    }
+}
+
+function matchOnBeginClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    var curPosition = matchFileBoard.currentPosition;
+    var prevPosition = curPosition.prevPosition;
+    if (prevPosition != null) {
+        while (prevPosition != null) {
+            curPosition = prevPosition;
+            prevPosition = curPosition.prevPosition;
+        }
+        matchFileBoard.board.setPosition(curPosition);
+        matchFileBoard.score.takeScore(curPosition);
+        matchFileBoard.currentPosition = curPosition;
+    }
+}
+
+function matchOnEndClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    var curPosition = matchFileBoard.currentPosition;
+    if (curPosition.nextPosition != null) {
+        while (curPosition.nextPosition != null) {
+            curPosition = curPosition.nextPosition;
+        }
+        matchFileBoard.board.setPosition(curPosition);
+        matchFileBoard.score.takeScore(curPosition);
+        matchFileBoard.currentPosition = curPosition;
+    }
 }

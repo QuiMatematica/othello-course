@@ -23,37 +23,42 @@ export function getStartingPosition() {
 }
 
 export function getPosition(container) {
-    const grid = [];
-    for (let x = 0; x < 8; x++) {
-        const row = [];
-        grid.push(row);
-        const row_data = container.dataset['r' + (x + 1).toString()];
-        for (let y = 0; y < 8; y++) {
-            const cell_data = row_data.charAt(y);
-            if (cell_data == '#') {
-                row.push(BLACK);
-            }
-            else if (cell_data == 'O') {
-                row.push(WHITE);
-            }
-            else {
-                row.push(EMPTY);
+    if (container.dataset.hasOwnProperty('r1')) {
+        const grid = [];
+        for (let x = 0; x < 8; x++) {
+            const row = [];
+            grid.push(row);
+            const row_data = container.dataset['r' + (x + 1).toString()];
+            for (let y = 0; y < 8; y++) {
+                const cell_data = row_data.charAt(y);
+                if (cell_data == '#') {
+                    row.push(BLACK);
+                }
+                else if (cell_data == 'O') {
+                    row.push(WHITE);
+                }
+                else {
+                    row.push(EMPTY);
+                }
             }
         }
-    }
-    let turn;
-    if (container.dataset.hasOwnProperty('turn')) {
-        if (container.dataset['turn'] == 'white') {
-            turn = WHITE;
+        let turn;
+        if (container.dataset.hasOwnProperty('turn')) {
+            if (container.dataset['turn'] == 'white') {
+                turn = WHITE;
+            }
+            else {
+                turn = BLACK;
+            }
         }
         else {
             turn = BLACK;
         }
+        return new Position(grid, turn);
     }
     else {
-        turn = BLACK;
+        return getStartingPosition();
     }
-    return new Position(grid, turn)
 }
 
 export default class Position {
@@ -98,7 +103,7 @@ export default class Position {
 
         // If someone is out of pieces, the game is over.
         if (scores.black == 0 || scores.white == 0) {
-            gameOver = true;
+            this.gameOver = true;
             return;
         }
 

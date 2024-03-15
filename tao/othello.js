@@ -99,40 +99,22 @@ class MatchFileBoard {
 
     container;
     counter;
+
+    position;
     board;
     score;
 
     constructor(container, counter) {
         this.container = container;
         this.counter = counter;
+
+        this.position = getStartingPosition();
         // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
         this.board = new Board(container, counter, staticBoardOnClick)
+        this.board.setPosition(this.position);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.position);
-        this.match = new Match(container)
-    }
 
-}
-
-class Match {
-
-    container;
-
-    constructor(container) {
-        this.container = container;
-        const matchFile = container.dataset['file'];
-        let json;
-        fetch(matchFile)
-            .then((response) => response.json())
-            .then((json) => readMatch(json));
-        this.buildControls();
-    }
-
-    readMatch(json) {
-
-    }
-
-    buildControls() {
         const next = document.createElement("button");
         next.appendChild(document.createTextNode(">"));
 
@@ -141,6 +123,16 @@ class Match {
         div.appendChild(next);
 
         this.container.appendChild(div);
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => readMatch(json));
+    }
+
+    readMatch(json) {
+
     }
 
 }

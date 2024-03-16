@@ -25,45 +25,6 @@ export function getStartingPosition() {
     return new Position(grid, turn)
 }
 
-export function getPosition(container) {
-    if (container.dataset.hasOwnProperty('r1')) {
-        const grid = [];
-        for (let x = 0; x < 8; x++) {
-            const row = [];
-            grid.push(row);
-            const row_data = container.dataset['r' + (x + 1).toString()];
-            for (let y = 0; y < 8; y++) {
-                const cell_data = row_data.charAt(y);
-                if (cell_data == '#') {
-                    row.push(BLACK);
-                }
-                else if (cell_data == 'O') {
-                    row.push(WHITE);
-                }
-                else {
-                    row.push(EMPTY);
-                }
-            }
-        }
-        let turn;
-        if (container.dataset.hasOwnProperty('turn')) {
-            if (container.dataset['turn'] == 'white') {
-                turn = WHITE;
-            }
-            else {
-                turn = BLACK;
-            }
-        }
-        else {
-            turn = BLACK;
-        }
-        return new Position(grid, turn);
-    }
-    else {
-        return getStartingPosition();
-    }
-}
-
 export default class Position {
 
     grid;
@@ -84,6 +45,114 @@ export default class Position {
         // TODO: controllare se il turno è valido e se la partita è finita
         this.checkValidMoves();
         this.comment = null;
+    }
+
+    static getEmptyPosition() {
+        const grid = [];
+        for (let x = 0; x < 8; x++) {
+            const row = [];
+            grid.push(row);
+            for (let y = 0; y < 8; y++) {
+                row.push(EMPTY);
+            }
+        }
+        const turn = BLACK;
+        return new Position(grid, turn)
+    }
+
+    static getStartingPosition() {
+        const grid = [];
+        for (let x = 0; x < 8; x++) {
+            const row = [];
+            grid.push(row);
+            for (let y = 0; y < 8; y++) {
+                row.push(EMPTY);
+            }
+        }
+        grid[3][3] = WHITE;
+        grid[4][4] = WHITE;
+        grid[3][4] = BLACK;
+        grid[4][3] = BLACK;
+        const turn = BLACK;
+        return new Position(grid, turn)
+    }
+
+    static getPositionFromDataset(container) {
+        if (container.dataset.hasOwnProperty('r1')) {
+            const grid = [];
+            for (let x = 0; x < 8; x++) {
+                const row = [];
+                grid.push(row);
+                const row_data = container.dataset['r' + (x + 1).toString()];
+                for (let y = 0; y < 8; y++) {
+                    const cell_data = row_data.charAt(y);
+                    if (cell_data == '#') {
+                        row.push(BLACK);
+                    }
+                    else if (cell_data == 'O') {
+                        row.push(WHITE);
+                    }
+                    else {
+                        row.push(EMPTY);
+                    }
+                }
+            }
+            let turn;
+            if (container.dataset.hasOwnProperty('turn')) {
+                if (container.dataset['turn'] == 'white') {
+                    turn = WHITE;
+                }
+                else {
+                    turn = BLACK;
+                }
+            }
+            else {
+                turn = BLACK;
+            }
+            return new Position(grid, turn);
+        }
+        else {
+            return Position.getStartingPosition();
+        }
+    }
+
+    static getPositionFromJSON(json) {
+        if (json.position != null) {
+            const grid = [];
+            for (let x = 0; x < 8; x++) {
+                const row = [];
+                grid.push(row);
+                const row_data = json.position[x];
+                for (let y = 0; y < 8; y++) {
+                    const cell_data = row_data.charAt(y);
+                    if (cell_data == '#') {
+                        row.push(BLACK);
+                    }
+                    else if (cell_data == 'O') {
+                        row.push(WHITE);
+                    }
+                    else {
+                        row.push(EMPTY);
+                    }
+                }
+            }
+            let turn;
+            if (json.turn != null) {
+                if (json.turn == 'white') {
+                    turn = WHITE;
+                }
+                else {
+                    turn = BLACK;
+                }
+            }
+            else {
+                turn = BLACK;
+            }
+            return new Position(grid, turn);
+        }
+        else {
+            return Position.getStartingPosition();
+        }
     }
 
     countStones() {

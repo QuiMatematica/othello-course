@@ -1,8 +1,6 @@
 'use strict';
 
 import Position from './position.js';
-import { getPosition } from './position.js';
-import { getStartingPosition } from './position.js';
 import { Square } from './position.js';
 
 import Board from './board.js';
@@ -40,7 +38,7 @@ class StaticBoard {
         this.container = container;
         this.counter = counter;
 
-        this.position = getPosition(container);
+        this.position = Position.getPositionFromDataset(container);
         this.board = new Board(container, counter, staticBoardOnClick)
         this.board.setPosition(this.position);
         this.score = new Score(container, this.board);
@@ -97,7 +95,6 @@ function freeGameBoardOnClick(event) {
 
 class MatchFileBoard {
 
-    startPosition;
     currentPosition;
     board;
     score;
@@ -105,13 +102,12 @@ class MatchFileBoard {
     comment;
 
     constructor(container, counter) {
-        this.startPosition = getStartingPosition();
-        this.currentPosition = this.startPosition;
+        this.currentPosition = Position.getEmptyPosition();
         // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
-        this.board = new Board(container, counter, staticBoardOnClick)
-        this.board.setPosition(this.startPosition);
+        this.board = new Board(container, counter, staticBoardOnClick);
+        this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
-        this.score.takeScore(this.startPosition);
+        this.score.takeScore(this.currentPosition);
         this.controls = new MatchControls(container, counter);
         this.comment = new PositionComment(container);
 
@@ -123,14 +119,18 @@ class MatchFileBoard {
     }
 
     readMatch(json) {
-        var curPosition = this.startPosition;
+        this.currentPosition = Position.getPositionFromJSON(json);
+        var curPosition = this.currentPosition;
         json.moves.forEach((move) => {
             const square = Square.fromString(move);
             const nextPosition = curPosition.playStone(square)
             curPosition = nextPosition;
             curPosition.comment = json[move];
         });
-        this.controls.update(this.startPosition);
+        this.board.setPosition(this.currentPosition);
+        this.score.takeScore(this.currentPosition);
+        this.controls.update(this.currentPosition);
+        this.comment.setComment(this.currentPosition);
     }
 
 }
@@ -192,12 +192,12 @@ class PositionComment {
         container.appendChild(this.div)
     }
 
-    setComment(comment) {
-        if (comment == null) {
+    setComment(position) {
+        if (position.comment == null) {
             this.div.innerHTML = "";
         }
         else {
-            this.div.innerHTML = comment;
+            this.div.innerHTML = position.comment;
         }
     }
 
@@ -211,7 +211,7 @@ function matchOnNextClick(event) {
     if (nextPosition != null) {
         matchFileBoard.board.playPosition(nextPosition);
         matchFileBoard.score.takeScore(nextPosition);
-        matchFileBoard.comment.setComment(nextPosition.comment);
+        matchFileBoard.comment.setComment(nextPosition);
         matchFileBoard.controls.update(nextPosition);
         matchFileBoard.currentPosition = nextPosition;
     }
@@ -225,7 +225,7 @@ function matchOnPrevClick(event) {
     if (prevPosition != null) {
         matchFileBoard.board.setPosition(prevPosition);
         matchFileBoard.score.takeScore(prevPosition);
-        matchFileBoard.comment.setComment(prevPosition.comment);
+        matchFileBoard.comment.setComment(prevPosition);
         matchFileBoard.controls.update(prevPosition);
         matchFileBoard.currentPosition = prevPosition;
     }
@@ -244,7 +244,7 @@ function matchOnBeginClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setComment(curPosition.comment);
+        matchFileBoard.comment.setComment(curPosition);
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
@@ -261,7 +261,7 @@ function matchOnEndClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setComment(curPosition.comment);
+        matchFileBoard.comment.setComment(curPosition);
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }

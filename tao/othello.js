@@ -97,19 +97,14 @@ function freeGameBoardOnClick(event) {
 
 class MatchFileBoard {
 
-    container;
-    counter;
-
     startPosition;
     currentPosition;
     board;
     score;
+    controls;
     comment;
 
     constructor(container, counter) {
-        this.container = container;
-        this.counter = counter;
-
         this.startPosition = getStartingPosition();
         this.currentPosition = this.startPosition;
         // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
@@ -117,37 +112,8 @@ class MatchFileBoard {
         this.board.setPosition(this.startPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.startPosition);
-
-        const begin = document.createElement("button");
-        begin.dataset.counter = this.counter;
-        begin.appendChild(document.createTextNode("|<"));
-        begin.addEventListener('click', matchOnBeginClick);
-
-        const prev = document.createElement("button");
-        prev.dataset.counter = this.counter;
-        prev.appendChild(document.createTextNode("<"));
-        prev.addEventListener('click', matchOnPrevClick);
-
-        const next = document.createElement("button");
-        next.dataset.counter = this.counter;
-        next.appendChild(document.createTextNode(">"));
-        next.addEventListener('click', matchOnNextClick);
-
-        const end = document.createElement("button");
-        end.dataset.counter = this.counter;
-        end.appendChild(document.createTextNode(">|"));
-        end.addEventListener('click', matchOnEndClick);
-
-        const div = document.createElement("div");
-        div.classList.add("button-wrapper")
-        div.appendChild(begin);
-        div.appendChild(prev);
-        div.appendChild(next);
-        div.appendChild(end);
-
-        this.container.appendChild(div);
-
-        this.comment = new PositionComment(this.container);
+        this.controls = new MatchControls(container, counter);
+        this.comment = new PositionComment(container);
 
         const matchFile = container.dataset['file'];
         let json;
@@ -164,6 +130,54 @@ class MatchFileBoard {
             curPosition = nextPosition;
             curPosition.comment = json[move];
         });
+        this.controls.update(this.startPosition);
+    }
+
+}
+
+class MatchControls {
+
+    begin;
+    prev;
+    next;
+    end;
+
+    constructor(container, counter) {
+        this.begin = document.createElement("button");
+        this.begin.dataset.counter = counter;
+        this.begin.appendChild(document.createTextNode("|<"));
+        this.begin.addEventListener('click', matchOnBeginClick);
+
+        this.prev = document.createElement("button");
+        this.prev.dataset.counter = counter;
+        this.prev.appendChild(document.createTextNode("<"));
+        this.prev.addEventListener('click', matchOnPrevClick);
+
+        this.next = document.createElement("button");
+        this.next.dataset.counter = counter;
+        this.next.appendChild(document.createTextNode(">"));
+        this.next.addEventListener('click', matchOnNextClick);
+
+        this.end = document.createElement("button");
+        this.end.dataset.counter = counter;
+        this.end.appendChild(document.createTextNode(">|"));
+        this.end.addEventListener('click', matchOnEndClick);
+
+        const div = document.createElement("div");
+        div.classList.add("button-wrapper")
+        div.appendChild(this.begin);
+        div.appendChild(this.prev);
+        div.appendChild(this.next);
+        div.appendChild(this.end);
+
+        container.appendChild(div);
+    }
+
+    update(position) {
+        this.begin.disabled = (position.prevPosition == null);
+        this.prev.disabled = (position.prevPosition == null);
+        this.next.disabled = (position.nextPosition == null);
+        this.end.disabled = (position.nextPosition == null);
     }
 
 }
@@ -198,6 +212,7 @@ function matchOnNextClick(event) {
         matchFileBoard.board.playPosition(nextPosition);
         matchFileBoard.score.takeScore(nextPosition);
         matchFileBoard.comment.setComment(nextPosition.comment);
+        matchFileBoard.controls.update(nextPosition);
         matchFileBoard.currentPosition = nextPosition;
     }
 }
@@ -211,6 +226,7 @@ function matchOnPrevClick(event) {
         matchFileBoard.board.setPosition(prevPosition);
         matchFileBoard.score.takeScore(prevPosition);
         matchFileBoard.comment.setComment(prevPosition.comment);
+        matchFileBoard.controls.update(prevPosition);
         matchFileBoard.currentPosition = prevPosition;
     }
 }
@@ -229,6 +245,7 @@ function matchOnBeginClick(event) {
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
         matchFileBoard.comment.setComment(curPosition.comment);
+        matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
 }
@@ -245,6 +262,7 @@ function matchOnEndClick(event) {
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
         matchFileBoard.comment.setComment(curPosition.comment);
+        matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
 }

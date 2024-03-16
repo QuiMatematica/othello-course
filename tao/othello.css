@@ -10,6 +10,10 @@
     margin-bottom: 1em;
 }
 
+.matchFileBoard {
+    background-color: #ddd;
+}
+
 /* ===============
  * The game board.
  * =============== */
@@ -76,8 +80,6 @@
 }
 
 .boardBorder {
-  /* The squares are all green with a black border. */
-  background-color: white;
   border: 0px;
 
   /* The size of the squares should include the border, or else the overall
@@ -310,4 +312,13 @@ svg {
 
 .button-wrapper {
     margin: 5px;
+}
+
+/* ======================
+ * Commento.
+ * ====================== */
+
+.comment-text {
+    width: calc(10 * var(--square-size));
+    height: calc(5 * var(--square-size));
 }

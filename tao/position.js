@@ -68,6 +68,7 @@ export default class Position {
 
     grid;
     turn;
+    comment;
     played;
     flipped;
     gameOver;
@@ -82,6 +83,7 @@ export default class Position {
         this.passCount = 0;
         // TODO: controllare se il turno è valido e se la partita è finita
         this.checkValidMoves();
+        this.comment = null;
     }
 
     countStones() {

@@ -104,6 +104,7 @@ class MatchFileBoard {
     currentPosition;
     board;
     score;
+    comment;
 
     constructor(container, counter) {
         this.container = container;
@@ -146,6 +147,8 @@ class MatchFileBoard {
 
         this.container.appendChild(div);
 
+        this.comment = new PositionComment(this.container);
+
         const matchFile = container.dataset['file'];
         let json;
         fetch(matchFile)
@@ -159,7 +162,29 @@ class MatchFileBoard {
             const square = Square.fromString(move);
             const nextPosition = curPosition.playStone(square)
             curPosition = nextPosition;
+            curPosition.comment = json[move];
         });
+    }
+
+}
+
+class PositionComment {
+
+    div;
+
+    constructor(container) {
+        this.div = document.createElement("div");
+        this.div.classList.add('comment-text');
+        container.appendChild(this.div)
+    }
+
+    setComment(comment) {
+        if (comment == null) {
+            this.div.innerHTML = "";
+        }
+        else {
+            this.div.innerHTML = comment;
+        }
     }
 
 }
@@ -172,6 +197,7 @@ function matchOnNextClick(event) {
     if (nextPosition != null) {
         matchFileBoard.board.playPosition(nextPosition);
         matchFileBoard.score.takeScore(nextPosition);
+        matchFileBoard.comment.setComment(nextPosition.comment);
         matchFileBoard.currentPosition = nextPosition;
     }
 }
@@ -184,6 +210,7 @@ function matchOnPrevClick(event) {
     if (prevPosition != null) {
         matchFileBoard.board.setPosition(prevPosition);
         matchFileBoard.score.takeScore(prevPosition);
+        matchFileBoard.comment.setComment(prevPosition.comment);
         matchFileBoard.currentPosition = prevPosition;
     }
 }
@@ -201,6 +228,7 @@ function matchOnBeginClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
+        matchFileBoard.comment.setComment(curPosition.comment);
         matchFileBoard.currentPosition = curPosition;
     }
 }
@@ -216,6 +244,7 @@ function matchOnEndClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
+        matchFileBoard.comment.setComment(curPosition.comment);
         matchFileBoard.currentPosition = curPosition;
     }
 }

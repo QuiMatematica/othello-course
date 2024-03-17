@@ -320,5 +320,8 @@ svg {
 
 .comment-text {
     width: calc(10 * var(--square-size));
-    height: calc(5 * var(--square-size));
+}
+
+.comment-text-small {
+    height: calc(1 * var(--square-size));
 }

@@ -64,7 +64,7 @@ class FreeGameBoard {
         this.container = container;
         this.counter = counter;
 
-        this.position = getStartingPosition();
+        this.position = Position.getStartingPosition();
         this.board = new Board(container, counter, freeGameBoardOnClick)
         this.board.setPosition(this.position);
         this.score = new Score(container, this.board);
@@ -119,12 +119,13 @@ class MatchFileBoard {
     }
 
     readMatch(json) {
+//    TODO: turno della posizione di partenza
         this.currentPosition = Position.getPositionFromJSON(json);
+        this.currentPosition.comment = json['00'];
         var curPosition = this.currentPosition;
         json.moves.forEach((move) => {
             const square = Square.fromString(move);
-            const nextPosition = curPosition.playStone(square)
-            curPosition = nextPosition;
+            curPosition = curPosition.playStone(square)
             curPosition.comment = json[move];
         });
         this.board.setPosition(this.currentPosition);
@@ -189,6 +190,8 @@ class PositionComment {
     constructor(container) {
         this.div = document.createElement("div");
         this.div.classList.add('comment-text');
+        console.log(container.dataset['size']);
+        this.div.classList.add('comment-text-' + container.dataset['size']);
         container.appendChild(this.div)
     }
 

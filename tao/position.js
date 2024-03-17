@@ -117,6 +117,7 @@ export default class Position {
     }
 
     static getPositionFromJSON(json) {
+        var position;
         if (json.position != null) {
             const grid = [];
             for (let x = 0; x < 8; x++) {
@@ -148,11 +149,12 @@ export default class Position {
             else {
                 turn = BLACK;
             }
-            return new Position(grid, turn);
+            position = new Position(grid, turn);
         }
         else {
-            return Position.getStartingPosition();
+            position = Position.getStartingPosition();
         }
+        return position;
     }
 
     countStones() {

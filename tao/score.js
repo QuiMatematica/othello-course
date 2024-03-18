@@ -12,17 +12,20 @@ export default class Score {
     turnElement;
 
     constructor(container) {
-        this.container = container;
+        const div = document.createElement('div');
+        div.classList.add('score-container');
+        container.appendChild(div);
+
         // Create the score board.
-        this.scoreElements.black = this.createScore('black');
-        this.scoreElements.white = this.createScore('white');
-        this.createTurnText();
+        this.scoreElements.black = this.createScore('black', div);
+        this.scoreElements.white = this.createScore('white', div);
+        this.createTurnText(container);
     }
 
-    createTurnText() {
+    createTurnText(container) {
         const div = document.createElement('div');
-        div.classList.add('turn-wrapper')
-        this.container.appendChild(div);
+        div.classList.add('turn-wrapper');
+        container.appendChild(div);
 
         this.turnElement = document.createElement('div');
         this.turnElement.classList.add('turn-text')
@@ -31,11 +34,11 @@ export default class Score {
     }
 
     // Create and return score container elements for the given color.
-    createScore(color) {
+    createScore(color, scoreContainer) {
         // The container for this player's score.
         const span = document.createElement('span');
         span.classList.add('score-wrapper');
-        this.container.appendChild(span);
+        scoreContainer.appendChild(span);
 
         // The container for the stone in the score board.
         const stoneContainer = document.createElement('span');
@@ -46,11 +49,6 @@ export default class Score {
         // The stone itself.
         const stone = createStone();
         stoneContainer.appendChild(stone);
-
-        // Add a message container on top of the stone.
-        const msgContainer = document.createElement('div');
-        msgContainer.classList.add('msg-container');
-        stoneContainer.appendChild(msgContainer);
 
         // A span to contain the actual numerical score.
         const scoreSpan = document.createElement('span');

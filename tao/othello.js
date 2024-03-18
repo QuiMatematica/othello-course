@@ -119,7 +119,6 @@ class MatchFileBoard {
     }
 
     readMatch(json) {
-//    TODO: turno della posizione di partenza
         this.currentPosition = Position.getPositionFromJSON(json);
         this.currentPosition.comment = json['00'];
         var curPosition = this.currentPosition;
@@ -128,6 +127,12 @@ class MatchFileBoard {
             curPosition = curPosition.playStone(square)
             curPosition.comment = json[move];
         });
+        if (!json.controls.previous) {
+            this.controls.removePrevious();
+        }
+        if (!json.controls.last) {
+            this.controls.removeLast();
+        }
         this.board.setPosition(this.currentPosition);
         this.score.takeScore(this.currentPosition);
         this.controls.update(this.currentPosition);
@@ -141,7 +146,7 @@ class MatchControls {
     begin;
     prev;
     next;
-    end;
+    last;
 
     constructor(container, counter) {
         this.begin = document.createElement("button");
@@ -159,17 +164,17 @@ class MatchControls {
         this.next.appendChild(document.createTextNode(">"));
         this.next.addEventListener('click', matchOnNextClick);
 
-        this.end = document.createElement("button");
-        this.end.dataset.counter = counter;
-        this.end.appendChild(document.createTextNode(">|"));
-        this.end.addEventListener('click', matchOnEndClick);
+        this.last = document.createElement("button");
+        this.last.dataset.counter = counter;
+        this.last.appendChild(document.createTextNode(">|"));
+        this.last.addEventListener('click', matchOnEndClick);
 
         const div = document.createElement("div");
         div.classList.add("button-wrapper")
         div.appendChild(this.begin);
         div.appendChild(this.prev);
         div.appendChild(this.next);
-        div.appendChild(this.end);
+        div.appendChild(this.last);
 
         container.appendChild(div);
     }
@@ -178,7 +183,15 @@ class MatchControls {
         this.begin.disabled = (position.prevPosition == null);
         this.prev.disabled = (position.prevPosition == null);
         this.next.disabled = (position.nextPosition == null);
-        this.end.disabled = (position.nextPosition == null);
+        this.last.disabled = (position.nextPosition == null);
+    }
+
+    removePrevious() {
+        this.prev.remove();
+    }
+
+    removeLast() {
+        this.last.remove();
     }
 
 }
@@ -190,8 +203,6 @@ class PositionComment {
     constructor(container) {
         this.div = document.createElement("div");
         this.div.classList.add('comment-text');
-        console.log(container.dataset['size']);
-        this.div.classList.add('comment-text-' + container.dataset['size']);
         container.appendChild(this.div)
     }
 

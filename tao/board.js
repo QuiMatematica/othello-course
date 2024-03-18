@@ -35,7 +35,7 @@ export default class Board {
         this.counter = counter;
 
         this.gameBoardContainer = document.createElement('div');
-        this.gameBoardContainer.classList.add('gameBoardContainer')
+        this.gameBoardContainer.classList.add('game-board-container')
         this.container.appendChild(this.gameBoardContainer)
 
         this.gameBoard = document.createElement('div');

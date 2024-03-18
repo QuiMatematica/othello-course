@@ -1,0 +1,9 @@
+{
+  "moves": ["D3"],
+  "00": "Posizione di partenza.",
+  "D3": "Il nero ha posizionato una pedina in D3 e gira la pedina in D4.",
+  "controls": {
+    "previous": false,
+    "last": false
+  }
+}

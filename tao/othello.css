@@ -6,19 +6,25 @@
 }
 
 .staticBoard {
-    display: inline-block;
-    margin-bottom: 1em;
+    width: calc(10 * var(--square-size));
+    background-color: #ddd;
+    margin: auto;
+    padding: .5em;
 }
 
 .matchFileBoard {
+    width: calc(10 * var(--square-size));
     background-color: #ddd;
+    margin: auto;
+    padding: .5em;
 }
 
 /* ===============
  * The game board.
  * =============== */
 
-.gameBoardContainer{
+.game-board-container{
+    width: calc(10 * var(--square-size));
     display: flex;
 }
 
@@ -213,8 +219,8 @@ svg {
  * The score board and status displays.
  * ==================================== */
 
-#scoreBoard {
-  margin-bottom: 1vmin;
+.score-container {
+    width: calc(10 * var(--square-size));
 }
 
 .score-wrapper {
@@ -256,47 +262,9 @@ svg {
   filter: drop-shadow(-1vmin 1vmin 1vmin blue);
 }
 
-/* The message container shows some status text on top of the stone. */
-.msg-container {
-  position: absolute;
-  display: inline-block;
-  font-size: calc(0.3 * var(--square-size));
-  font-weight: bold;
-}
-
-/* The white stone will have messages in black text, and vice-versa. */
-.white .msg-container {
-  color: black;
-}
-.black .msg-container {
-  color: white;
-}
-
-/* Use classes on the score-board stone to show the various status messages in
- * the message container. */
-.pass .msg-container:before {
-  content: "PASS";
-}
-.win .msg-container:before {
-  content: "WIN";
-}
-.tie .msg-container:before {
-  content: "TIE";
-}
-.bailed .msg-container:before {
-  content: "GONE";
-}
-
-/* These states will show change the color of the shadow behind the score board
- * stone. */
-.tie,
-.win {
-  filter: drop-shadow(-1vmin 1vmin 1vmin red);
-}
-
-.bailed {
-  filter: drop-shadow(-1vmin 1vmin 1vmin green);
-}
+/* ======================
+ * Turno.
+ * ====================== */
 
 .turn-wrapper {
   width: calc(10 * var(--square-size));
@@ -311,6 +279,7 @@ svg {
  * ====================== */
 
 .button-wrapper {
+    width: calc(10 * var(--square-size));
     margin: 5px;
 }
 
@@ -320,8 +289,4 @@ svg {
 
 .comment-text {
     width: calc(10 * var(--square-size));
-}
-
-.comment-text-small {
-    height: calc(1 * var(--square-size));
 }

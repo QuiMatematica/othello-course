@@ -127,11 +127,13 @@ class MatchFileBoard {
             curPosition = curPosition.playStone(square)
             curPosition.comment = json[move];
         });
-        if (!json.controls.previous) {
-            this.controls.removePrevious();
-        }
-        if (!json.controls.last) {
-            this.controls.removeLast();
+        if (json.controls != null) {
+            if (!json.controls.previous) {
+                this.controls.removePrevious();
+            }
+            if (!json.controls.last) {
+                this.controls.removeLast();
+            }
         }
         this.board.setPosition(this.currentPosition);
         this.score.takeScore(this.currentPosition);

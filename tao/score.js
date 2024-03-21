@@ -24,7 +24,7 @@ export default class Score {
 
     createTurnText(container) {
         const div = document.createElement('div');
-        div.classList.add('turn-wrapper');
+        div.classList.add('turn-container');
         container.appendChild(div);
 
         this.turnElement = document.createElement('div');

@@ -11,15 +11,17 @@ import Score from './score.js'
 const boards = []
 
 export function init() {
-    document.querySelectorAll('.staticBoard').forEach((item) => {
+    loadSectionIndex();
+
+    document.querySelectorAll('.static-board').forEach((item) => {
         const staticBoard = new StaticBoard(item, boards.length);
         boards.push(staticBoard);
     });
-    document.querySelectorAll('.freeGameBoard').forEach((item) => {
+    document.querySelectorAll('.free-game-board').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
         boards.push(freeGame);
     });
-    document.querySelectorAll('.matchFileBoard').forEach((item) => {
+    document.querySelectorAll('.match-file-board').forEach((item) => {
         const freeGame = new MatchFileBoard(item, boards.length);
         boards.push(freeGame);
     });
@@ -151,34 +153,50 @@ class MatchControls {
     last;
 
     constructor(container, counter) {
+//    <button type="button" class="btn btn-primary">Left</button>
         this.begin = document.createElement("button");
+        this.begin.classList.add("btn");
+        this.begin.classList.add("btn-primary");
         this.begin.dataset.counter = counter;
         this.begin.appendChild(document.createTextNode("|<"));
         this.begin.addEventListener('click', matchOnBeginClick);
 
         this.prev = document.createElement("button");
+        this.prev.classList.add("btn");
+        this.prev.classList.add("btn-primary");
         this.prev.dataset.counter = counter;
         this.prev.appendChild(document.createTextNode("<"));
         this.prev.addEventListener('click', matchOnPrevClick);
 
         this.next = document.createElement("button");
+        this.next.classList.add("btn");
+        this.next.classList.add("btn-primary");
         this.next.dataset.counter = counter;
         this.next.appendChild(document.createTextNode(">"));
         this.next.addEventListener('click', matchOnNextClick);
 
         this.last = document.createElement("button");
+        this.last.classList.add("btn");
+        this.last.classList.add("btn-primary");
         this.last.dataset.counter = counter;
         this.last.appendChild(document.createTextNode(">|"));
         this.last.addEventListener('click', matchOnEndClick);
 
-        const div = document.createElement("div");
-        div.classList.add("button-wrapper")
-        div.appendChild(this.begin);
-        div.appendChild(this.prev);
-        div.appendChild(this.next);
-        div.appendChild(this.last);
+        const buttonGroup = document.createElement("div");
+        buttonGroup.classList.add("btn-group");
+        buttonGroup.classList.add("btn-group-sm");
+        buttonGroup.setAttribute("role", "group");
+        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
+        buttonGroup.appendChild(this.begin);
+        buttonGroup.appendChild(this.prev);
+        buttonGroup.appendChild(this.next);
+        buttonGroup.appendChild(this.last);
 
-        container.appendChild(div);
+        const buttonsContainer = document.createElement("div");
+        buttonsContainer.classList.add("text-center");
+        buttonsContainer.appendChild(buttonGroup);
+
+        container.appendChild(buttonsContainer);
     }
 
     update(position) {
@@ -204,7 +222,7 @@ class PositionComment {
 
     constructor(container) {
         this.div = document.createElement("div");
-        this.div.classList.add('comment-text');
+        this.div.classList.add('text-center');
         container.appendChild(this.div)
     }
 
@@ -281,4 +299,225 @@ function matchOnEndClick(event) {
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
+}
+
+function loadSectionIndex() {
+    const sectionIndex = "index.json";
+    let json;
+    fetch(sectionIndex)
+        .then((response) => response.json())
+        .then((json) => initPage(json));
+}
+
+function initHeader() {
+    const brand = document.createElement("a");
+    brand.classList.add("navbar-brand")
+    brand.classList.add("h1")
+    brand.setAttribute("href", "../index.html");
+    brand.innerHTML = "Othello: corso interattivo";
+
+    const togglerIcon = document.createElement("span");
+    togglerIcon.classList.add("navbar-toggler-icon");
+
+    const toggler = document.createElement("button");
+    toggler.classList.add("navbar-toggler");
+    toggler.setAttribute("type", "button");
+    toggler.dataset.bsToggle = "collapse";
+    toggler.dataset.bsTarget = "#navbarNavAltMarkup";
+    toggler.setAttribute("aria-controls", "navbarNavAltMarkup");
+    toggler.setAttribute("aria-expanded", "false");
+    toggler.setAttribute("aria-label", "Attiva menu");
+    toggler.append(togglerIcon);
+
+    const menu_1 = document.createElement("a");
+    menu_1.classList.add("nav-link");
+    menu_1.classList.add("active");
+    menu_1.setAttribute("aria-current", "page");
+    menu_1.setAttribute("href", "index.html");
+    menu_1.innerHTML = "Il gioco";
+
+    const menu_2 = document.createElement("a");
+    menu_2.classList.add("nav-link");
+    menu_2.classList.add("disabled");
+    menu_2.setAttribute("href", "#");
+    menu_2.innerHTML = "Strategie base";
+
+    const menu_3 = document.createElement("a");
+    menu_3.classList.add("nav-link");
+    menu_3.classList.add("disabled");
+    menu_3.setAttribute("href", "#");
+    menu_3.innerHTML = "Tutte le strategie";
+
+    const menu = document.createElement("div");
+    menu.classList.add("navbar-nav");
+    menu.append(menu_1);
+    menu.append(menu_2);
+    menu.append(menu_3);
+
+    const collapse = document.createElement("div");
+    collapse.classList.add("collapse");
+    collapse.classList.add("navbar-collapse");
+    collapse.setAttribute("id", "navbarNavAltMarkup");
+    collapse.append(menu);
+
+    const container = document.createElement("div");
+    container.classList.add("container-xxl");
+    container.append(brand);
+    container.append(toggler);
+    container.append(collapse);
+
+    const nav = document.createElement("nav");
+    nav.classList.add("navbar");
+    nav.classList.add("navbar-expand-lg");
+    nav.classList.add("bg-primary");
+    nav.dataset.bsTheme = "dark";
+    nav.append(container);
+
+    document.body.prepend(nav);
+
+}
+
+function initOffcanvas(json, currentPageIndex) {
+    const offcanvas = document.createElement("div");
+    offcanvas.classList.add("offcanvas");
+    offcanvas.classList.add("offcanvas-start");
+    offcanvas.setAttribute("tabindex", "-1");
+    offcanvas.setAttribute("id", "section-index");
+    offcanvas.setAttribute("aria-labelledby", "offcanvasLabel");
+    document.body.prepend(offcanvas);
+
+    const offcanvasHeader = document.createElement("div");
+    offcanvasHeader.classList.add("offcanvas-header");
+    offcanvas.append(offcanvasHeader);
+
+    const offcanvasTitle = document.createElement("h5");
+    offcanvasTitle.classList.add("offcanvas-title");
+    offcanvasTitle.setAttribute("id", "offcanvasLabel");
+    offcanvasTitle.innerHTML = json.title;
+    offcanvasHeader.append(offcanvasTitle);
+
+    const dismissButton = document.createElement("button");
+    dismissButton.setAttribute("type", "button");
+    dismissButton.classList.add("btn-close");
+    dismissButton.dataset.bsDismiss = "offcanvas";
+    dismissButton.setAttribute("aria-label", "Chiudi");
+    offcanvasHeader.append(dismissButton);
+
+    const offcanvasBody = document.createElement("div");
+    offcanvasBody.classList.add("offcanvas-body");
+    offcanvas.append(offcanvasBody);
+
+    const ul = document.createElement("ul");
+    ul.classList.add("navbar-nav");
+    ul.classList.add("justify-content-end");
+    ul.classList.add("flex-grow-1");
+    ul.classList.add("pe-3");
+    offcanvasBody.append(ul);
+
+    for (var i = 0; i < json.pages.length; i++) {
+        const item = json.pages[i];
+        const li = document.createElement("li");
+        li.classList.add("nav-item");
+        ul.append(li);
+
+        const a = document.createElement("a");
+        a.classList.add("nav-link");
+        if (i == currentPageIndex) {
+            a.classList.add("active");
+            a.setAttribute("aria-current", "page")
+            a.setAttribute("href", "#");
+        }
+        else {
+            a.setAttribute("href", item.href);
+        }
+
+        a.innerHTML = item.title;
+        li.append(a);
+    }
+
+}
+
+function buildPreviousNext(previous, symbol, page) {
+    const li = document.createElement("li");
+    li.classList.add("page-item");
+
+    const a = document.createElement("a");
+    a.classList.add("page-link");
+    a.setAttribute("href", page.href);
+    a.setAttribute("aria-label", "Previous");
+    li.append(a);
+
+    const span_1 = document.createElement("span");
+    span_1.classList.add("px-1");
+    span_1.setAttribute("aria-hidden", "true");
+    span_1.innerHTML = symbol;
+
+    const span_2 = document.createElement("span");
+    span_2.classList.add("sr-only");
+    span_2.innerHTML = page.title;
+
+    if (previous) {
+        a.append(span_1);
+        a.append(span_2);
+    }
+    else {
+        a.append(span_2);
+        a.append(span_1);
+    }
+
+    return li;
+}
+
+function buildOffcanvasButton() {
+    const li = document.createElement("li");
+    li.classList.add("page-item");
+
+    const a = document.createElement("a");
+    a.classList.add("page-link");
+    a.dataset.bsToggle = "offcanvas";
+    a.setAttribute("href", "#section-index")
+    a.setAttribute("role", "button")
+    a.setAttribute("aria-controls", "offcanvasExample");
+    a.innerHTML = "Indice";
+    li.append(a);
+
+    return li;
+}
+
+function buildPagination(json, prevPage, nextPage) {
+    const nav = document.createElement("nav");
+
+    const ul = document.createElement("ul");
+    ul.classList.add("pagination");
+    ul.classList.add("justify-content-center");
+    nav.append(ul);
+
+    if (prevPage != null) {
+        ul.append(buildPreviousNext(true, "&laquo;", prevPage));
+    }
+    ul.append(buildOffcanvasButton());
+    if (nextPage != null) {
+        ul.append(buildPreviousNext(false, "&raquo;", nextPage));
+    }
+
+    return nav;
+}
+
+function initPage(json) {
+    const filename = window.location.pathname.split("/").pop();
+    const pageIndex = json.pages.findIndex(x => x.href == filename);
+    var prevPage = null;
+    var nextPage = null;
+    if (pageIndex > 0) {
+        prevPage = json.pages[pageIndex - 1];
+    }
+    if (pageIndex < json.pages.length - 1) {
+        nextPage = json.pages[pageIndex + 1];
+    }
+
+    initOffcanvas(json, pageIndex);
+    initHeader();
+
+    document.getElementById("othello-content").prepend(buildPagination(json, prevPage, nextPage));
+    document.getElementById("othello-content").append(buildPagination(json, prevPage, nextPage));
 }

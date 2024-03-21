@@ -5,18 +5,29 @@
   --square-size: 2em;
 }
 
-.staticBoard {
-    width: calc(10 * var(--square-size));
-    background-color: #ddd;
-    margin: auto;
-    padding: .5em;
+.board-card {
+    width: calc(11 * var(--square-size));
 }
 
-.matchFileBoard {
+.static-board {
     width: calc(10 * var(--square-size));
     background-color: #ddd;
     margin: auto;
-    padding: .5em;
+    padding-bottom: .5em;
+}
+
+.match-file-board {
+    width: calc(10 * var(--square-size));
+    background-color: #ddd;
+    margin: auto;
+    padding-bottom: .5em;
+}
+
+.free-game-board {
+    width: calc(10 * var(--square-size));
+    background-color: #ddd;
+    margin: auto;
+    padding-bottom: .5em;
 }
 
 /* ===============
@@ -266,7 +277,7 @@ svg {
  * Turno.
  * ====================== */
 
-.turn-wrapper {
+.turn-container {
   width: calc(10 * var(--square-size));
 }
 
@@ -278,7 +289,7 @@ svg {
  * Controlli.
  * ====================== */
 
-.button-wrapper {
+.buttons-container {
     width: calc(10 * var(--square-size));
     margin: 5px;
 }
@@ -287,6 +298,6 @@ svg {
  * Commento.
  * ====================== */
 
-.comment-text {
+.comment-container {
     width: calc(10 * var(--square-size));
 }

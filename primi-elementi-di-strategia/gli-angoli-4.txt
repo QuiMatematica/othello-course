@@ -1,0 +1,9 @@
+! Righe che iniziano con "!" sono commentate
+# BLACK Nero
+# WHITE Bianco
+# START_POSITION --###-----####----#O##OO--#O#O#O--#OOOOO----OOOO---OOO-----OO---
+# START_COLOR white
+G2 Confidando che l'avversario non riesce ad andare nell'angolo, il bianco gioca in una casella X.
+F8 Il nero si procura la pedina F3, che gli consentirà di conquistare l'angolo.\Il bianco non nessuna possibilità di rigirare tale pedina.
+B6
+H1 Il nero conquista l'angolo.

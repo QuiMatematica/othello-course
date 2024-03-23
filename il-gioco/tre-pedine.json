@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--------",
+    "--OOO#--",
+    "--------",
+    "--------",
+    "--------",
+    "--------"
+  ],
+  "moves": ["B4"],
+  "00": "Prima della mossa in B4.",
+  "B4": "Effetto della mossa in B4.",
+  "controls": {
+    "previous": false,
+    "last": false
+  }
+
+}

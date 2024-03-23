@@ -1,0 +1,21 @@
+{
+  "title": "Il gioco",
+  "pages": [
+    {
+      "href": "index.html",
+      "title": "Introduzione"
+    },
+    {
+      "href": "le-regole.html",
+      "title": "Le regole"
+    },
+    {
+      "href": "precisazioni.html",
+      "title": "Precisazioni"
+    },
+    {
+      "href": "scacchiera-libera.html",
+      "title": "Scacchiera libera"
+    }
+  ]
+}

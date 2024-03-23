@@ -1,0 +1,21 @@
+{
+  "position": [
+    "--#####-",
+    "--OOOO--",
+    "#OOOOO##",
+    "#OOOO#O#",
+    "#OOO#OOO",
+    "#OOOOOOO",
+    "#-OOOO-O",
+    "#-OOOOO-"
+  ],
+  "turn": "white",
+  "moves": ["H2"],
+  "00": "Prima della mossa in H2.",
+  "H2": "Effetto della mossa in H2.",
+  "controls": {
+    "previous": false,
+    "last": false
+  }
+
+}

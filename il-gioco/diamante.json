@@ -1,0 +1,7 @@
+{
+  "moves": ["F5", "D6", "C5", "F4", "E3", "F6", "G5", "E6", "E7"],
+  "D6": "Apertura perpendicolare.",
+  "G5": "Sta per scattare la trappola.",
+  "E6": "Pessima scelta!",
+  "E7": "Il nero vince 64 a 0."
+}

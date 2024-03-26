@@ -309,7 +309,7 @@ function loadSectionIndex() {
         .then((json) => initPage(json));
 }
 
-function initHeader() {
+function initHeader(currentPageIndex) {
     const brand = document.createElement("a");
     brand.classList.add("navbar-brand")
     brand.classList.add("h1")
@@ -333,7 +333,12 @@ function initHeader() {
     menu_1.classList.add("nav-link");
     menu_1.classList.add("active");
     menu_1.setAttribute("aria-current", "page");
-    menu_1.setAttribute("href", "index.html");
+    if (currentPageIndex == -1) {
+        menu_1.setAttribute("href", "#");
+    }
+    else {
+        menu_1.setAttribute("href", "index.html");
+    }
     menu_1.innerHTML = "Il gioco";
 
     const menu_2 = document.createElement("a");
@@ -393,8 +398,19 @@ function initOffcanvas(json, currentPageIndex) {
     const offcanvasTitle = document.createElement("h5");
     offcanvasTitle.classList.add("offcanvas-title");
     offcanvasTitle.setAttribute("id", "offcanvasLabel");
-    offcanvasTitle.innerHTML = json.title;
     offcanvasHeader.append(offcanvasTitle);
+
+    const aTitle = document.createElement("a");
+    aTitle.classList.add("nav-link");
+    if (currentPageIndex == -1) {
+        aTitle.setAttribute("href", "#");
+        aTitle.dataset.bsDismiss = "offcanvas";
+    }
+    else {
+        aTitle.setAttribute("href", json.href);
+    }
+    aTitle.innerHTML = json.title;
+    offcanvasTitle.append(aTitle);
 
     const dismissButton = document.createElement("button");
     dismissButton.setAttribute("type", "button");
@@ -426,6 +442,7 @@ function initOffcanvas(json, currentPageIndex) {
             a.classList.add("active");
             a.setAttribute("aria-current", "page")
             a.setAttribute("href", "#");
+            a.dataset.bsDismiss = "offcanvas";
         }
         else {
             a.setAttribute("href", item.href);
@@ -506,17 +523,21 @@ function buildPagination(json, prevPage, nextPage) {
 function initPage(json) {
     const filename = window.location.pathname.split("/").pop();
     const pageIndex = json.pages.findIndex(x => x.href == filename);
+    // se non lo trova => pageIndex == -1
     var prevPage = null;
     var nextPage = null;
     if (pageIndex > 0) {
         prevPage = json.pages[pageIndex - 1];
+    }
+    else if (pageIndex == 0) {
+        prevPage = json;
     }
     if (pageIndex < json.pages.length - 1) {
         nextPage = json.pages[pageIndex + 1];
     }
 
     initOffcanvas(json, pageIndex);
-    initHeader();
+    initHeader(pageIndex);
 
     document.getElementById("othello-content").prepend(buildPagination(json, prevPage, nextPage));
     document.getElementById("othello-content").append(buildPagination(json, prevPage, nextPage));

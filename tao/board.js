@@ -186,4 +186,26 @@ export default class Board {
         return div.classList.contains(color);
     }
 
+    addCSquares(add) {
+        this.addLetter(0, 1, "C");
+        this.addLetter(1, 0, "C");
+        this.addLetter(0, 6, "C");
+        this.addLetter(1, 7, "C");
+        this.addLetter(7, 1, "C");
+        this.addLetter(6, 0, "C");
+        this.addLetter(7, 6, "C");
+        this.addLetter(6, 7, "C");
+    }
+
+    addXSquares(add) {
+        this.addLetter(1, 1, "X");
+        this.addLetter(1, 6, "X");
+        this.addLetter(6, 1, "X");
+        this.addLetter(6, 6, "X");
+    }
+
+    addLetter(x, y, letter) {
+        this.grid[x][y].innerHTML = "<p class=\"fw-bold m-0 fs-4\">" + letter + "</p>";
+    }
+
 }

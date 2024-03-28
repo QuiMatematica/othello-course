@@ -124,6 +124,15 @@ class MatchFileBoard {
         this.score.takeScore(this.currentPosition);
         this.controls.update(this.currentPosition);
         this.comment.setComment(this.currentPosition);
+
+        if (json.add != null) {
+            if (json.add["c-squares"]) {
+                this.board.addCSquares();
+            }
+            if (json.add["x-squares"]) {
+                this.board.addXSquares();
+            }
+        }
     }
 
 }

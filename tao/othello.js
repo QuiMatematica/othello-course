@@ -122,19 +122,28 @@ class MatchFileBoard {
 
     readMatch(json) {
         this.currentPosition = Position.getPositionFromJSON(json);
-        this.currentPosition.comment = json['00'];
+        this.currentPosition.comment = json.comment;
         var curPosition = this.currentPosition;
-        json.moves.forEach((move) => {
-            const square = Square.fromString(move);
-            curPosition = curPosition.playStone(square)
-            curPosition.comment = json[move];
-        });
+        if (json.moves != null) {
+            json.moves.forEach((move) => {
+                const square = Square.fromString(move.move);
+                curPosition = curPosition.playStone(square)
+                curPosition.comment = move.comment;
+            });
+            if (json.moves.length < 2) {
+                this.controls.prev.remove();
+                this.controls.last.remove();
+            }
+        }
+        else {
+            this.controls.buttonsContainer.remove();
+        }
         if (json.controls != null) {
             if (!json.controls.previous) {
-                this.controls.removePrevious();
+                this.controls.prev.remove();
             }
             if (!json.controls.last) {
-                this.controls.removeLast();
+                this.controls.last.remove();
             }
         }
         this.board.setPosition(this.currentPosition);
@@ -147,19 +156,20 @@ class MatchFileBoard {
 
 class MatchControls {
 
-    begin;
+    buttonsContainer;
+    first;
     prev;
     next;
     last;
 
     constructor(container, counter) {
 //    <button type="button" class="btn btn-primary">Left</button>
-        this.begin = document.createElement("button");
-        this.begin.classList.add("btn");
-        this.begin.classList.add("btn-primary");
-        this.begin.dataset.counter = counter;
-        this.begin.appendChild(document.createTextNode("|<"));
-        this.begin.addEventListener('click', matchOnBeginClick);
+        this.first = document.createElement("button");
+        this.first.classList.add("btn");
+        this.first.classList.add("btn-primary");
+        this.first.dataset.counter = counter;
+        this.first.appendChild(document.createTextNode("|<"));
+        this.first.addEventListener('click', matchOnFirstClick);
 
         this.prev = document.createElement("button");
         this.prev.classList.add("btn");
@@ -187,31 +197,23 @@ class MatchControls {
         buttonGroup.classList.add("btn-group-sm");
         buttonGroup.setAttribute("role", "group");
         buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
-        buttonGroup.appendChild(this.begin);
+        buttonGroup.appendChild(this.first);
         buttonGroup.appendChild(this.prev);
         buttonGroup.appendChild(this.next);
         buttonGroup.appendChild(this.last);
 
-        const buttonsContainer = document.createElement("div");
-        buttonsContainer.classList.add("text-center");
-        buttonsContainer.appendChild(buttonGroup);
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
 
-        container.appendChild(buttonsContainer);
+        container.appendChild(this.buttonsContainer);
     }
 
     update(position) {
-        this.begin.disabled = (position.prevPosition == null);
+        this.first.disabled = (position.prevPosition == null);
         this.prev.disabled = (position.prevPosition == null);
         this.next.disabled = (position.nextPosition == null);
         this.last.disabled = (position.nextPosition == null);
-    }
-
-    removePrevious() {
-        this.prev.remove();
-    }
-
-    removeLast() {
-        this.last.remove();
     }
 
 }
@@ -265,7 +267,7 @@ function matchOnPrevClick(event) {
     }
 }
 
-function matchOnBeginClick(event) {
+function matchOnFirstClick(event) {
     const div = event.currentTarget;
     const counter = div.dataset.counter;
     const matchFileBoard = boards[counter];

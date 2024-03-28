@@ -10,26 +10,43 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../tao/othello.css#20240323">
-    <script type="module">
-        import { init } from "../tao/othello.js#20240323";
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
 </head>
 
 <body>
+
+<div class="offcanvas offcanvas-start show" tabindex="-1" id="section-index" aria-labelledby="offcanvasLabel" aria-modal="true" role="dialog">
+	<div class="offcanvas-header">
+		<h4 class="offcanvas-title" id="offcanvasLabel"><a class="nav-link" href="index.html">Il gioco</a></h4>
+		<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Chiudi"></button>
+	</div>
+	<div class="offcanvas-body">
+		<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+			<li class="nav-item">
+				<a class="nav-link" href="le-regole.html">Le regole</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="precisazioni.html">Precisazioni</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="scacchiera-libera.html">Scacchiera libera</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
 	<div id="othello-content" class="container-xxl mt-4">
 		<h1>Il gioco</h1>
 
-		<p>Othello &egrave; un gioco semplice e affascinante: bastano pochi minuti per imparare le
+		<p>Othello &egrave; un gioco semplice ed affascinante: bastano pochi minuti per imparare le
 		regole e subito sarai pronto per sfidare i tuoi amici in partite
-		mozzafiato! Ti accorgerai presto di quanto, giocando a Othello, sia importante stare
+		mozzafiato! Ti accorgerai presto di quanto, giocando ad Othello, sia importante stare
 		attenti e pronti a qualsiasi sorpresa fino all'ultima mossa!</p>
 
 		<p>Imprigiona i dischi avversari fra uno dei tuoi dischi gi&agrave; posati e
 		quello che metti sulla scacchiera, capovolgili per renderli tuoi e
 		cerca di averne pi&ugrave; dell'avversario a fine partita!</p>
 
-		<p>Othello &egrave; stato inventato, come variante del più antico gioco inglese Reversi,
+		<p>Othello &egrave; stato inventato, come variante dell'antico gioco inglese Reversi,
 		dal nipponico Goro Hasegawa nel 1971; da allora il gioco si &egrave; diffuso in
 		tutto il mondo, coinvolgendo sempre pi&ugrave; appassionati; sono stati indetti
 		tutti gli anni i Campionati del Mondo e i Campionati delle diverse nazioni,

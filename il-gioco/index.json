@@ -1,10 +1,7 @@
 {
+  "href": "index.html",
   "title": "Il gioco",
   "pages": [
-    {
-      "href": "index.html",
-      "title": "Introduzione"
-    },
     {
       "href": "le-regole.html",
       "title": "Le regole"

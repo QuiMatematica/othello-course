@@ -4,33 +4,33 @@ import { createStone } from './board.js';
 
 export default class Score {
 
-    container;
-
-    // Score container and scoreSpan elements, indexed by color (white/black).
+    scoreContainer;
     scoreElements = {};
 
+    turnContainer;
     turnElement;
 
     constructor(container) {
-        const div = document.createElement('div');
-        div.classList.add('score-container');
-        container.appendChild(div);
+        this.scoreContainer = document.createElement('div');
+        this.scoreContainer.classList.add('score-container');
+        container.appendChild(this.scoreContainer);
 
         // Create the score board.
-        this.scoreElements.black = this.createScore('black', div);
-        this.scoreElements.white = this.createScore('white', div);
+        this.scoreElements.black = this.createScore('black', this.scoreContainer);
+        this.scoreElements.white = this.createScore('white', this.scoreContainer);
         this.createTurnText(container);
     }
 
     createTurnText(container) {
-        const div = document.createElement('div');
-        div.classList.add('turn-container');
-        container.appendChild(div);
-
         this.turnElement = document.createElement('div');
-        this.turnElement.classList.add('turn-text')
-        div.appendChild(this.turnElement)
+        this.turnElement.classList.add('turn-text');
         this.turnElement.innerHTML = 'Mossa al nero';
+
+        this.turnContainer = document.createElement('div');
+        this.turnContainer.classList.add('turn-container');
+        this.turnContainer.appendChild(this.turnElement);
+
+        container.appendChild(this.turnContainer);
     }
 
     // Create and return score container elements for the given color.

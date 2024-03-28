@@ -119,6 +119,12 @@ class MatchFileBoard {
             if (!json.controls.last) {
                 this.controls.last.remove();
             }
+            if (!json.controls.score) {
+                this.score.scoreContainer.remove();
+            }
+            if (!json.controls.turn) {
+                this.score.turnContainer.remove();
+            }
         }
         this.board.setPosition(this.currentPosition);
         this.score.takeScore(this.currentPosition);

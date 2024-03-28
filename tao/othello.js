@@ -13,10 +13,6 @@ const boards = []
 export function init() {
     loadSectionIndex();
 
-    document.querySelectorAll('.static-board').forEach((item) => {
-        const staticBoard = new StaticBoard(item, boards.length);
-        boards.push(staticBoard);
-    });
     document.querySelectorAll('.free-game-board').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
         boards.push(freeGame);
@@ -25,28 +21,6 @@ export function init() {
         const freeGame = new MatchFileBoard(item, boards.length);
         boards.push(freeGame);
     });
-}
-
-class StaticBoard {
-
-    container;
-    counter;
-
-    position;
-    board;
-    score;
-
-    constructor(container, counter) {
-        this.container = container;
-        this.counter = counter;
-
-        this.position = Position.getPositionFromDataset(container);
-        this.board = new Board(container, counter, staticBoardOnClick)
-        this.board.setPosition(this.position);
-        this.score = new Score(container, this.board);
-        this.score.takeScore(this.position);
-    }
-
 }
 
 function staticBoardOnClick(event) {

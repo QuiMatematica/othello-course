@@ -8,5 +8,9 @@
     "--------",
     "--------",
     "--OOOOO-"
-  ]
+  ],
+  "controls": {
+    "score": false,
+    "turn": false
+  }
 }

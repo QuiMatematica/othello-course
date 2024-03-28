@@ -9,6 +9,10 @@
     "--------",
     "--------"
   ],
+  "controls": {
+    "score": false,
+    "turn": false
+  },
   "add": {
     "x-squares": true,
     "c-squares": true

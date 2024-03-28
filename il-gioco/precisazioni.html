@@ -9,9 +9,9 @@
 		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../tao/othello.css#20240323">
+	<link rel="stylesheet" href="../tao/othello.css#20240328">
     <script type="module">
-        import { init } from "../tao/othello.js#20240323";
+        import { init } from "../tao/othello.js#20240328";
         document.addEventListener('DOMContentLoaded', init);
     </script>
 </head>
@@ -39,7 +39,7 @@
 
 		<div class="card mx-auto board-card">
 			<div class="card-body">
-				<div class="match-file-board" data-file="tre-pedine.json"></div>
+				<div class="match-file-board" data-file="precisazioni-tre-pedine.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 1: il nero gira tre pedine.
@@ -53,7 +53,7 @@
 
 		<div class="card mx-auto board-card">
 			<div class="card-body">
-				<div class="match-file-board" data-file="una-pedina.json"></div>
+				<div class="match-file-board" data-file="precisazioni-una-pedina.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 2: il nero gira una sola pedina.
@@ -67,7 +67,7 @@
 
 		<div class="card mx-auto board-card">
 			<div class="card-body">
-				<div class="match-file-board" data-file="finale-con-caselle-vuote.json"></div>
+				<div class="match-file-board" data-file="precisazioni-finale-con-caselle-vuote.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 3: il bianco muove in H2.
@@ -87,7 +87,7 @@
 
 		<div class="card mx-auto board-card">
 			<div class="card-body">
-				<div class="match-file-board" data-file="diamante.json"></div>
+				<div class="match-file-board" data-file="precisazioni-diamante.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 4: il nero vince 64 a 0.
@@ -111,7 +111,7 @@
 
 		<div class="card mx-auto board-card">
 			<div class="card-body">
-				<div class="static-board"></div>
+				<div class="match-file-board" data-file="precisazioni-posizione-iniziale.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 5: mossa al nero.
@@ -128,17 +128,7 @@
 
 		<div class="card mx-auto board-card">
 			<div class="card-body">
-				<div class="static-board"
-					 data-r1="--------"
-					 data-r2="--------"
-					 data-r3="---#----"
-					 data-r4="---##---"
-					 data-r5="---#O---"
-					 data-r6="--------"
-					 data-r7="--------"
-					 data-r8="--------"
-					 data-turn="white"
-				></div>
+				<div class="match-file-board" data-file="precisazioni-prima-mossa-in-D3.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 6: il nero ha giocato in D3.

@@ -1,0 +1,35 @@
+{
+  "moves": [
+    {
+      "move": "F5"
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "G5",
+      "comment": "Sta per scattare la trappola."
+    },
+    {
+      "move": "E6",
+      "comment": "Pessima scelta!"
+    },
+    {
+      "move": "E7",
+      "comment": "Il nero vince 64 a 0."
+    }
+  ]
+}

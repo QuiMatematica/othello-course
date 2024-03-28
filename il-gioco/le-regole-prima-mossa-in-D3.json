@@ -1,0 +1,10 @@
+{
+  "comment": "Posizione di partenza.",
+  "moves":
+  [
+    {
+      "move": "D3",
+      "comment": "Il nero ha posizionato una pedina in D3 e gira la pedina in D4."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Quante pedine vengono girate</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../tao/othello.css#20240328">
+    <script type="module">
+        import { init } from "../tao/othello.js#20240328";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Quante pedine vengono girate</h1>
+
+		<h2>Quiz</h2>
+
+		<p>Nel diagramma 1 giochi con il nero e devi giocare tre mosse in modo da girare
+		il maggior numero di pedine possibile.</p>
+
+		<p align="center">
+		<applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="380"
+				code="it.claudiosignorini.tao.TaoApplet.class"
+				hspace="0" vspace="0" align="top">
+			<param name="function" value="sequence">
+			<param name="sequenceFile" value="QuantePedineGirare1.txt">
+			Mi dispiace: il tuo browser non supporta le Applet Java.
+		</applet>
+		<br>
+		Diagramma 1: girare il maggior numero di pedine possibile.
+		</p>
+
+		<p>Come presto capirai, all'inizio del gioco non &egrave; buona norma girare tante pedine,
+		quanto piuttosto mantenere poche pedine compatte al centro della scacchiera. Quello
+		che ti invito a fare adesso, quindi, &egrave; esattamente il contrario di prima: giocare tre
+		mosse nel diagramma 2 in modo da girare il minor numero di pedine possibile.</p>
+
+		<p align="center">
+		<applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="380"
+				code="it.claudiosignorini.tao.TaoApplet.class"
+				hspace="0" vspace="0" align="top">
+			<param name="function" value="sequence">
+			<param name="sequenceFile" value="QuantePedineGirare2.txt">
+			Mi dispiace: il tuo browser non supporta le Applet Java.
+		</applet>
+		<br>
+		Diagramma 2: girare il minor numero di pedine possibile.
+		</p>
+
+	</div>
+
+</body>
+</html>

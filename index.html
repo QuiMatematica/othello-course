@@ -9,7 +9,6 @@
 		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="tao/othello.css#20240328">
 </head>
 
 <body>
@@ -17,22 +16,11 @@
 	<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
 		<div class="container-xxl">
 			<a class="navbar-brand h1" href="#">Othello: corso interattivo</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Attiva menu">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav">
-					<a class="nav-link" href="il-gioco/index.html">Il gioco</a>
-					<a class="nav-link disabled" href="#">Strategie base</a>
-					<a class="nav-link disabled" href="#">Tutte le strategie</a>
-				</div>
-			</div>
 		</div>
 	</nav>
 
 	<div id="othello-content" class="container-xxl">
-
-		<div class="row align-items-start">
+		<div class="row">
 			<div class="col-lg-2 bg-primary-subtle text-center">
 				<a class="" href="http://www.fngo.it">
 					<img class="mt-3" src="images/fngologo.gif" width="126" height="123" alt="Federazione Nazionale Gioco Othello">
@@ -40,30 +28,71 @@
 				<h5>Federazione Nazionale Gioco Othello</h5>
 				<a class="nav-link mb-3" href="presentazione-del-corso.html">Presentazione del corso</a>
 			</div>
-
-			<div class="col-lg-10 py-3 px-5 border-end">
-
-				<h1 class="">Othello: corso interattivo</h1>
-
-				<h2 class="mt-5">::
-					<a class="link-underline link-underline-opacity-0" href="il-gioco/index.html">Il gioco</a>
-				</h2>
-
-				<nav class="nav">
-					<a class="nav-link" href="il-gioco/le-regole.html">Regole</a>
-					<a class="nav-link" href="il-gioco/precisazioni.html">Precisazioni</a>
-					<a class="nav-link" href="il-gioco/scacchiera-libera.html">Scacchiera libera</a>
-				</nav>
-
-				<h2 class="mt-5">:: Primi elementi di strategia</h2>
-				<p>In preparazione</p>
-
-				<h2 class="mt-5">:: Tutte le strategie</h2>
-				<p>In preparazione</p>
+			<div class="col-lg-10 py-3 px-5">
+				<div id="index-content" class="row"></div>
 			</div>
-
 		</div>
 	</div>
+
+	<script>
+		function initPage(page, ul) {
+			const li = document.createElement("li");
+			li.classList.add("nav-item");
+			ul.append(li);
+
+			const a = document.createElement("a");
+			a.classList.add("link-dark");
+			a.classList.add("link-offset-2");
+			a.classList.add("link-underline-opacity-0");
+			a.classList.add("link-underline-opacity-100-hover");
+			a.setAttribute("href", page.href);
+			a.innerHTML = page.title;
+			li.append(a);
+		}
+
+		function initSection(section) {
+			const div = document.createElement("div");
+			div.classList.add("col-lg-3");
+			div.classList.add("py-3");
+			document.getElementById("index-content").append(div);
+
+			const ul = document.createElement("ul");
+			ul.classList.add("nav");
+			ul.classList.add("flex-column");
+			div.append(ul);
+
+			const li = document.createElement("li");
+			li.classList.add("nav-item");
+			ul.append(li);
+
+			const h4 = document.createElement("h4");
+			li.append(h4);
+
+			const a = document.createElement("a");
+			a.classList.add("link-dark");
+			a.classList.add("link-offset-2");
+			a.classList.add("link-underline-opacity-0");
+			a.classList.add("link-underline-opacity-100-hover");
+			a.setAttribute("href", section.href);
+			a.innerHTML = section.title;
+			h4.append(a);
+
+			const ul2 = document.createElement("ul");
+			li.append(ul2);
+
+			section.pages.forEach((page) => initPage(page, ul2));
+		}
+
+		function initIndex(json) {
+			json.sections.forEach((section) => initSection(section));
+		}
+
+		const index = "index.json";
+		let json;
+		fetch(index)
+			.then((response) => response.json())
+			.then((json) => initIndex(json));
+	</script>
 
 </body>
 </html>

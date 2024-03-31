@@ -11,7 +11,7 @@ import Score from './score.js'
 const boards = []
 
 export function init() {
-    loadSectionIndex();
+    loadIndex();
 
     document.querySelectorAll('.free-game-board').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
@@ -277,75 +277,24 @@ function matchOnEndClick(event) {
     }
 }
 
-function loadSectionIndex() {
-    const sectionIndex = "index.json";
+function loadIndex() {
+    const sectionIndex = "../index.json";
     let json;
     fetch(sectionIndex)
         .then((response) => response.json())
         .then((json) => initPage(json));
 }
 
-function initHeader(currentPageIndex) {
+function initHeader() {
     const brand = document.createElement("a");
     brand.classList.add("navbar-brand")
     brand.classList.add("h1")
     brand.setAttribute("href", "../index.html");
     brand.innerHTML = "Othello: corso interattivo";
 
-    const togglerIcon = document.createElement("span");
-    togglerIcon.classList.add("navbar-toggler-icon");
-
-    const toggler = document.createElement("button");
-    toggler.classList.add("navbar-toggler");
-    toggler.setAttribute("type", "button");
-    toggler.dataset.bsToggle = "collapse";
-    toggler.dataset.bsTarget = "#navbarNavAltMarkup";
-    toggler.setAttribute("aria-controls", "navbarNavAltMarkup");
-    toggler.setAttribute("aria-expanded", "false");
-    toggler.setAttribute("aria-label", "Attiva menu");
-    toggler.append(togglerIcon);
-
-    const menu_1 = document.createElement("a");
-    menu_1.classList.add("nav-link");
-    menu_1.classList.add("active");
-    menu_1.setAttribute("aria-current", "page");
-    if (currentPageIndex == -1) {
-        menu_1.setAttribute("href", "#");
-    }
-    else {
-        menu_1.setAttribute("href", "index.html");
-    }
-    menu_1.innerHTML = "Il gioco";
-
-    const menu_2 = document.createElement("a");
-    menu_2.classList.add("nav-link");
-    menu_2.classList.add("disabled");
-    menu_2.setAttribute("href", "#");
-    menu_2.innerHTML = "Strategie base";
-
-    const menu_3 = document.createElement("a");
-    menu_3.classList.add("nav-link");
-    menu_3.classList.add("disabled");
-    menu_3.setAttribute("href", "#");
-    menu_3.innerHTML = "Tutte le strategie";
-
-    const menu = document.createElement("div");
-    menu.classList.add("navbar-nav");
-    menu.append(menu_1);
-    menu.append(menu_2);
-    menu.append(menu_3);
-
-    const collapse = document.createElement("div");
-    collapse.classList.add("collapse");
-    collapse.classList.add("navbar-collapse");
-    collapse.setAttribute("id", "navbarNavAltMarkup");
-    collapse.append(menu);
-
     const container = document.createElement("div");
     container.classList.add("container-xxl");
     container.append(brand);
-    container.append(toggler);
-    container.append(collapse);
 
     const nav = document.createElement("nav");
     nav.classList.add("navbar");
@@ -358,7 +307,43 @@ function initHeader(currentPageIndex) {
 
 }
 
-function initOffcanvas(json, currentPageIndex) {
+function addPage(page, ul) {
+    const li = document.createElement("li");
+    li.classList.add("nav-item");
+    ul.append(li);
+
+    const a = document.createElement("a");
+    a.classList.add("link-dark");
+    a.classList.add("link-offset-2");
+    a.classList.add("link-underline-opacity-0");
+    a.classList.add("link-underline-opacity-100-hover");
+    a.setAttribute("href", "../" + page.href);
+    a.innerHTML = page.title;
+    li.append(a);
+}
+
+function addSection(section, ul) {
+    const li = document.createElement("li");
+    li.classList.add("nav-item");
+    li.classList.add("pb-3");
+    ul.append(li);
+
+    const a = document.createElement("a");
+    a.classList.add("link-dark");
+    a.classList.add("link-offset-2");
+    a.classList.add("link-underline-opacity-0");
+    a.classList.add("link-underline-opacity-100-hover");
+    a.setAttribute("href", "../" + section.href);
+    a.innerHTML = section.title;
+    li.append(a);
+
+    const ul2 = document.createElement("ul");
+    li.append(ul2);
+
+    section.pages.forEach((page) => addPage(page, ul2));
+}
+
+function initOffcanvas(json) {
     const offcanvas = document.createElement("div");
     offcanvas.classList.add("offcanvas");
     offcanvas.classList.add("offcanvas-start");
@@ -378,14 +363,8 @@ function initOffcanvas(json, currentPageIndex) {
 
     const aTitle = document.createElement("a");
     aTitle.classList.add("nav-link");
-    if (currentPageIndex == -1) {
-        aTitle.setAttribute("href", "#");
-        aTitle.dataset.bsDismiss = "offcanvas";
-    }
-    else {
-        aTitle.setAttribute("href", json.href);
-    }
-    aTitle.innerHTML = json.title;
+    aTitle.setAttribute("href", json.href);
+    aTitle.innerHTML = "Indice";
     offcanvasTitle.append(aTitle);
 
     const dismissButton = document.createElement("button");
@@ -400,34 +379,11 @@ function initOffcanvas(json, currentPageIndex) {
     offcanvas.append(offcanvasBody);
 
     const ul = document.createElement("ul");
-    ul.classList.add("navbar-nav");
-    ul.classList.add("justify-content-end");
-    ul.classList.add("flex-grow-1");
-    ul.classList.add("pe-3");
+    ul.classList.add("nav");
+    ul.classList.add("flex-column");
     offcanvasBody.append(ul);
 
-    for (var i = 0; i < json.pages.length; i++) {
-        const item = json.pages[i];
-        const li = document.createElement("li");
-        li.classList.add("nav-item");
-        ul.append(li);
-
-        const a = document.createElement("a");
-        a.classList.add("nav-link");
-        if (i == currentPageIndex) {
-            a.classList.add("active");
-            a.setAttribute("aria-current", "page")
-            a.setAttribute("href", "#");
-            a.dataset.bsDismiss = "offcanvas";
-        }
-        else {
-            a.setAttribute("href", item.href);
-        }
-
-        a.innerHTML = item.title;
-        li.append(a);
-    }
-
+    json.sections.forEach((section) => addSection(section, ul))
 }
 
 function buildPreviousNext(previous, symbol, page) {
@@ -436,7 +392,7 @@ function buildPreviousNext(previous, symbol, page) {
 
     const a = document.createElement("a");
     a.classList.add("page-link");
-    a.setAttribute("href", page.href);
+    a.setAttribute("href", "../" + page.href);
     a.setAttribute("aria-label", "Previous");
     li.append(a);
 
@@ -497,24 +453,40 @@ function buildPagination(json, prevPage, nextPage) {
 }
 
 function initPage(json) {
-    const filename = window.location.pathname.split("/").pop();
-    const pageIndex = json.pages.findIndex(x => x.href == filename);
+    const urlSplitted = window.location.pathname.split("/")
+    const fileName = urlSplitted.pop();
+    const sectionName = urlSplitted.pop();
+    const sectionIndex = json.sections.findIndex(x => x.href == sectionName + "/index.html");
+    const section = json.sections[sectionIndex];
+    const pageIndex = section.pages.findIndex(x => x.href == sectionName + "/" + fileName);
     // se non lo trova => pageIndex == -1
     var prevPage = null;
     var nextPage = null;
     if (pageIndex > 0) {
-        prevPage = json.pages[pageIndex - 1];
+        prevPage = section.pages[pageIndex - 1];
     }
     else if (pageIndex == 0) {
-        prevPage = json;
+        prevPage = section;
     }
-    if (pageIndex < json.pages.length - 1) {
-        nextPage = json.pages[pageIndex + 1];
+    else {
+        if (sectionIndex > 0) {
+            const prevSection = json.sections[sectionIndex - 1];
+            prevPage = prevSection.pages[prevSection.pages.length - 1];
+        }
+    }
+    if (pageIndex < section.pages.length - 1) {
+        nextPage = section.pages[pageIndex + 1];
+    }
+    else {
+        if (sectionIndex < json.sections.length - 1) {
+            nextPage = json.sections[sectionIndex + 1];
+        }
     }
 
-    initOffcanvas(json, pageIndex);
-    initHeader(pageIndex);
+    initOffcanvas(json);
+    initHeader();
 
-    document.getElementById("othello-content").prepend(buildPagination(json, prevPage, nextPage));
-    document.getElementById("othello-content").append(buildPagination(json, prevPage, nextPage));
+    const othelloContent = document.getElementById("othello-content");
+    othelloContent.prepend(buildPagination(json, prevPage, nextPage));
+    othelloContent.append(buildPagination(json, prevPage, nextPage));
 }

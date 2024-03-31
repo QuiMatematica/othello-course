@@ -4,8 +4,9 @@ import { EMPTY } from './position.js';
 
 export let animatingFlip = false;
 
+const xmlns = 'http://www.w3.org/2000/svg';
+
 export function createStone() {
-    const xmlns = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(xmlns, 'svg');
     svg.setAttributeNS(null, 'viewBox', '0 0 100 100');
 
@@ -209,7 +210,27 @@ export default class Board {
     }
 
     addLetter(x, y, letter) {
-        this.grid[y][x].innerHTML = "<p class=\"fw-bold m-0 fs-4\">" + letter + "</p>";
+        const square = this.grid[y][x];
+
+        const textNode = document.createTextNode(letter); // last/deepest child
+
+        const textElement = document.createElementNS(xmlns, 'text'); // first/deepest parent
+
+        if (Board.isColor(square, "black")) {
+            textElement.setAttributeNS(null, 'fill', 'white');
+            textElement.setAttributeNS(null, 'stroke', 'white');
+        }
+        else {
+            textElement.setAttributeNS(null, 'fill', 'black');
+            textElement.setAttributeNS(null, 'stroke', 'black');
+        }
+        textElement.setAttributeNS(null, 'x', '50');
+        textElement.setAttributeNS(null, 'y', '55');
+        textElement.setAttributeNS(null, 'alignment-baseline', "middle");
+        textElement.setAttributeNS(null, 'text-anchor', "middle");
+        textElement.setAttributeNS(null, 'font-size', 80);
+        textElement.append(textNode);
+        square.firstChild.append(textElement); // append deepest child to first parent
     }
 
 }

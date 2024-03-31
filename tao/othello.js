@@ -77,20 +77,18 @@ class ClickOnBoard {
     }
 
     checkClick(square) {
-        if (this.board.isSquareEmpty(square.x, square.y)) {
-            if (this.clicked.findIndex(c => (c.x == square.x && c.y == square.y)) == -1) {
-                const squareIndex = this.correct.findIndex(c => (c.x == square.x && c.y == square.y));
-                if (squareIndex > -1) {
-                    this.board.addLetter(square.x, square.y, "&#10003;");
-                    this.correctCount++;
-                    const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
-                    this.comment.setComment(cmd);
-                }
-                else {
-                    this.board.addLetter(square.x, square.y, "&#10007;");
-                }
-                this.clicked.push(square);
+        if (this.clicked.findIndex(c => (c.x == square.x && c.y == square.y)) == -1) {
+            const squareIndex = this.correct.findIndex(c => (c.x == square.x && c.y == square.y));
+            if (squareIndex > -1) {
+                this.board.addLetter(square.x, square.y, String.fromCharCode(10003));
+                this.correctCount++;
+                const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
+                this.comment.setComment(cmd);
             }
+            else {
+                this.board.addLetter(square.x, square.y, String.fromCharCode(10007));
+            }
+            this.clicked.push(square);
         }
     }
 

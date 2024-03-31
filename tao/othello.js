@@ -18,13 +18,91 @@ export function init() {
         boards.push(freeGame);
     });
     document.querySelectorAll('.match-file-board').forEach((item) => {
-        const freeGame = new MatchFileBoard(item, boards.length);
-        boards.push(freeGame);
+        const matchFile = new MatchFileBoard(item, boards.length);
+        boards.push(matchFile);
     });
+    document.querySelectorAll('.click-on-board').forEach((item) => {
+        const clickOn = new ClickOnBoard(item, boards.length);
+        boards.push(clickOn);
+    });
+
 }
 
 function staticBoardOnClick(event) {
     return;
+}
+
+class ClickOnBoard {
+
+    container;
+    counter;
+
+    position;
+    board;
+    comment;
+
+    correct;
+    correctCount;
+    clicked;
+
+    constructor(container, counter) {
+        this.currentPosition = Position.getEmptyPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, clickOnClick);
+        this.board.setPosition(this.currentPosition);
+        this.comment = new PositionComment(container);
+
+        this.correct = [];
+        this.clicked = [];
+        this.correctCount = 0;
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        this.currentPosition = Position.getPositionFromJSON(json);
+        this.board.setPosition(this.currentPosition);
+
+        json.correct.forEach((notation) => {
+            const square = Square.fromString(notation);
+            this.correct.push(square);
+        })
+
+        const cmd = "Risposte corrette: 0<br>Risposte attese: " + this.correct.length;
+        this.comment.setComment(cmd);
+    }
+
+    checkClick(square) {
+        if (this.board.isSquareEmpty(square.x, square.y)) {
+            if (this.clicked.findIndex(c => (c.x == square.x && c.y == square.y)) == -1) {
+                const squareIndex = this.correct.findIndex(c => (c.x == square.x && c.y == square.y));
+                if (squareIndex > -1) {
+                    this.board.addLetter(square.x, square.y, "&#10003;");
+                    this.correctCount++;
+                    const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
+                    this.comment.setComment(cmd);
+                }
+                else {
+                    this.board.addLetter(square.x, square.y, "&#10007;");
+                }
+                this.clicked.push(square);
+            }
+        }
+    }
+
+}
+
+function clickOnClick(event) {
+    // Find the coordinates of the clicked square.
+    const div = event.currentTarget;
+    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
+    const clickOnBoard = boards[counter];
+    const square = new Square(parseInt(x), parseInt(y));
+    clickOnBoard.checkClick(square);
 }
 
 class FreeGameBoard {
@@ -129,7 +207,7 @@ class MatchFileBoard {
         this.board.setPosition(this.currentPosition);
         this.score.takeScore(this.currentPosition);
         this.controls.update(this.currentPosition);
-        this.comment.setComment(this.currentPosition);
+        this.comment.setPositionComment(this.currentPosition);
 
         if (json.add != null) {
             if (json.add["c-squares"]) {
@@ -152,7 +230,6 @@ class MatchControls {
     last;
 
     constructor(container, counter) {
-//    <button type="button" class="btn btn-primary">Left</button>
         this.first = document.createElement("button");
         this.first.classList.add("btn");
         this.first.classList.add("btn-primary");
@@ -217,7 +294,16 @@ class PositionComment {
         container.appendChild(this.div)
     }
 
-    setComment(position) {
+    setComment(comment) {
+        if (comment == null) {
+            this.div.innerHTML = "";
+        }
+        else {
+            this.div.innerHTML = comment;
+        }
+    }
+
+    setPositionComment(position) {
         if (position.comment == null) {
             this.div.innerHTML = "";
         }
@@ -236,7 +322,7 @@ function matchOnNextClick(event) {
     if (nextPosition != null) {
         matchFileBoard.board.playPosition(nextPosition);
         matchFileBoard.score.takeScore(nextPosition);
-        matchFileBoard.comment.setComment(nextPosition);
+        matchFileBoard.comment.setPositionComment(nextPosition);
         matchFileBoard.controls.update(nextPosition);
         matchFileBoard.currentPosition = nextPosition;
     }
@@ -250,7 +336,7 @@ function matchOnPrevClick(event) {
     if (prevPosition != null) {
         matchFileBoard.board.setPosition(prevPosition);
         matchFileBoard.score.takeScore(prevPosition);
-        matchFileBoard.comment.setComment(prevPosition);
+        matchFileBoard.comment.setPositionComment(prevPosition);
         matchFileBoard.controls.update(prevPosition);
         matchFileBoard.currentPosition = prevPosition;
     }
@@ -269,7 +355,7 @@ function matchOnFirstClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setComment(curPosition);
+        matchFileBoard.comment.setPositionComment(curPosition);
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
@@ -286,7 +372,7 @@ function matchOnEndClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setComment(curPosition);
+        matchFileBoard.comment.setPositionComment(curPosition);
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }

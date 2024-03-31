@@ -9,7 +9,7 @@
     width: calc(11 * var(--square-size));
 }
 
-.static-board {
+.click-on-board {
     width: calc(10 * var(--square-size));
     background-color: #ddd;
     margin: auto;

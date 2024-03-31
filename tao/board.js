@@ -176,6 +176,10 @@ export default class Board {
         return color == 'white' ? 'black' : 'white';
     }
 
+    isSquareEmpty(x, y) {
+        return Board.isEmpty(this.grid[y][x]);
+    }
+
     // True if the square is empty.
     static isEmpty(div) {
         return !div.classList.contains('black') && !div.classList.contains('white');
@@ -205,7 +209,7 @@ export default class Board {
     }
 
     addLetter(x, y, letter) {
-        this.grid[x][y].innerHTML = "<p class=\"fw-bold m-0 fs-4\">" + letter + "</p>";
+        this.grid[y][x].innerHTML = "<p class=\"fw-bold m-0 fs-4\">" + letter + "</p>";
     }
 
 }

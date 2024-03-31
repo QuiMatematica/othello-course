@@ -1,0 +1,78 @@
+{
+	"sections": [
+		{
+			"href": "il-gioco/index.html",
+			"title": "Il gioco",
+			"pages": [
+				{
+					"href": "il-gioco/le-regole.html",
+					"title": "Le regole"
+				},
+				{
+					"href": "il-gioco/precisazioni.html",
+					"title": "Precisazioni"
+				},
+				{
+					"href": "il-gioco/scacchiera-libera.html",
+					"title": "Scacchiera libera"
+				}
+			]
+		},
+		{
+			"href": "#",
+			"title": "Piccoli quiz per cominciare",
+			"pages": [
+				{
+					"href": "#",
+					"title": "Le mosse legali"
+				},
+				{
+					"href": "#",
+					"title": "Le pedine da girare"
+				},
+				{
+					"href": "#",
+					"title": "Quante pedine vengono girate?"
+				},
+				{
+					"href": "#",
+					"title": "Per ottenere una pedina"
+				},
+				{
+					"href": "#",
+					"title": "Togliere una mossa"
+				},
+				{
+					"href": "#",
+					"title": "Ottenere una mossa"
+				},
+				{
+					"href": "#",
+					"title": "Finali con caselle vuote"
+				}
+			]
+		},
+		{
+			"href": "#",
+			"title": "Primi elementi di strategia",
+			"pages": [
+				{
+					"href": "#",
+					"title": "Le notazioni"
+				},
+				{
+					"href": "#",
+					"title": "Gli angoli"
+				},
+				{
+					"href": "#",
+					"title": "Il centro"
+				},
+				{
+					"href": "#",
+					"title": "Quante pedine?"
+				}
+			]
+		}
+	]
+}

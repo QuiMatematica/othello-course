@@ -25,11 +25,207 @@ export function init() {
         const clickOn = new ClickOnBoard(item, boards.length);
         boards.push(clickOn);
     });
-
+    document.querySelectorAll('.sequence-board').forEach((item) => {
+        const sequence = new SequenceBoard(item, boards.length);
+        boards.push(sequence);
+    });
 }
 
 function staticBoardOnClick(event) {
     return;
+}
+
+class SequenceBoard {
+
+    currentPosition;
+    board;
+    score;
+    controls;
+    comment;
+    humanColor;
+
+    constructor(container, counter) {
+        this.currentPosition = Position.getEmptyPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, sequenceBoardOnClick);
+        this.board.setPosition(this.currentPosition);
+        this.score = new Score(container, this.board);
+        this.score.takeScore(this.currentPosition);
+        this.controls = new SequenceControls(container, counter);
+        this.comment = new PositionComment(container);
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        this.currentPosition = Position.getPositionFromJSON(json);
+        this.currentPosition.comment = json.comment;
+        this.humanColor = this.currentPosition.turn;
+        var curPosition = this.currentPosition;
+
+        json.moves.forEach((move) => {
+            const square = Square.fromString(move.move);
+            curPosition = curPosition.playStone(square)
+            curPosition.comment = move.comment;
+        });
+        if (json.moves.length < 2) {
+            this.controls.prev.remove();
+            this.controls.last.remove();
+        }
+
+        this.board.setPosition(this.currentPosition);
+        this.score.takeScore(this.currentPosition);
+        this.controls.update(this.currentPosition, this.humanColor);
+        this.comment.setPositionComment(this.currentPosition);
+    }
+
+    moveComputer() {
+        const nextPosition = this.currentPosition.nextPosition;
+        if (nextPosition != null) {
+            this.board.playPosition(nextPosition);
+            this.score.takeScore(nextPosition);
+            this.comment.setPositionComment(nextPosition);
+            this.controls.update(nextPosition, this.humanColor);
+            this.currentPosition = nextPosition;
+        }
+    }
+
+    moveHuman(square) {
+        if (this.currentPosition.turn == this.humanColor) {
+            const expected = this.currentPosition.nextPosition.played;
+            if (square.x == expected.x && square.y == expected.y) {
+                const nextPosition = this.currentPosition.nextPosition;
+                this.board.playPosition(nextPosition);
+                this.score.takeScore(nextPosition);
+                this.comment.setPositionComment(nextPosition);
+                this.controls.update(nextPosition, this.humanColor);
+                this.currentPosition = nextPosition;
+            }
+            else {
+                this.comment.setComment("Mossa sbagliata.");
+            }
+        }
+    }
+
+    goToPreviousPosition() {
+        const prevPosition = this.currentPosition.prevPosition;
+        if (prevPosition != null) {
+            this.board.setPosition(prevPosition);
+            this.score.takeScore(prevPosition);
+            this.comment.setPositionComment(prevPosition);
+            this.controls.update(prevPosition, this.humanColor);
+            this.currentPosition = prevPosition;
+        }
+    }
+
+    goToFirstPosition() {
+        var curPosition = this.currentPosition;
+        var prevPosition = curPosition.prevPosition;
+        if (prevPosition != null) {
+            while (prevPosition != null) {
+                curPosition = prevPosition;
+                prevPosition = curPosition.prevPosition;
+            }
+            this.board.setPosition(curPosition);
+            this.score.takeScore(curPosition);
+            this.comment.setPositionComment(curPosition);
+            this.controls.update(curPosition, this.humanColor);
+            this.currentPosition = curPosition;
+        }
+    }
+
+}
+
+class SequenceControls {
+
+    buttonsContainer;
+    first;
+    prev;
+    computer;
+
+    constructor(container, counter) {
+        this.first = document.createElement("button");
+        this.first.classList.add("btn");
+        this.first.classList.add("btn-primary");
+        this.first.dataset.counter = counter;
+        this.first.appendChild(document.createTextNode("|<"));
+        this.first.addEventListener('click', sequenceOnFirstClick);
+
+        this.prev = document.createElement("button");
+        this.prev.classList.add("btn");
+        this.prev.classList.add("btn-primary");
+        this.prev.dataset.counter = counter;
+        this.prev.appendChild(document.createTextNode("<"));
+        this.prev.addEventListener('click', sequenceOnPrevClick);
+
+        this.computer = document.createElement("button");
+        this.computer.classList.add("btn");
+        this.computer.classList.add("btn-primary");
+        this.computer.dataset.counter = counter;
+        this.computer.appendChild(document.createTextNode("Muove il computer"));
+        this.computer.addEventListener('click', sequenceOnComputerClick);
+
+        const buttonGroup = document.createElement("div");
+        buttonGroup.classList.add("btn-group");
+        buttonGroup.classList.add("btn-group-sm");
+        buttonGroup.setAttribute("role", "group");
+        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
+        buttonGroup.appendChild(this.first);
+        buttonGroup.appendChild(this.prev);
+        buttonGroup.appendChild(this.computer);
+
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
+
+        container.appendChild(this.buttonsContainer);
+    }
+
+    update(position, humanColor) {
+        this.first.disabled = (position.prevPosition == null);
+        this.prev.disabled = (position.prevPosition == null);
+        this.computer.disabled = (position.nextPosition == null || position.turn == humanColor);
+    }
+
+}
+
+function sequenceOnFirstClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const sequenceBoard = boards[counter];
+    sequenceBoard.goToFirstPosition();
+}
+
+function sequenceOnPrevClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const sequenceBoard = boards[counter];
+    sequenceBoard.goToPreviousPosition();
+}
+
+function sequenceOnComputerClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const sequenceBoard = boards[counter];
+    sequenceBoard.moveComputer();
+}
+
+function sequenceBoardOnClick(event) {
+    // Ignore if we're still animating the last move.
+    if (animatingFlip) {
+        return;
+    }
+
+    // Find the coordinates of the clicked square.
+    const div = event.currentTarget;
+    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
+    const sequenceBoard = boards[counter];
+    const square = new Square(parseInt(x), parseInt(y));
+    sequenceBoard.moveHuman(square);
 }
 
 class ClickOnBoard {

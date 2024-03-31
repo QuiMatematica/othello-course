@@ -1,0 +1,5 @@
+# BLACK Nero
+# WHITE Bianco
+# START_POSITION -OOOOOO---OOO#--###O#O--###OOOO-###O##OO###OO#OO--##OO#--######-
+# START_COLOR black
+h4 Il nero gira D4 per impedire all'avversario la mossa in H8.

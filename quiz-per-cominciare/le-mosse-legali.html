@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Le mosse legali</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../tao/othello.css#20240328">
+    <script type="module">
+        import { init } from "../tao/othello.js#20240328";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Le mosse legali</h1>
+
+		<h2>Teoria</h2>
+
+		<p>Riassumendo, &egrave; possibile giocare una pedina in una casella se:</p>
+
+		<ul>
+			<li>la casella &egrave; libera;</li>
+			<li>la casella &egrave; adiacente a una pedina di colore avversario;</li>
+			<li>&egrave; presente almeno un disco avversario incastrato tra la pedina
+			che si vuole porre e quelle gi&agrave; presenti del proprio colore.</li>
+		</ul>
+
+		<p>In ogni posizione scorri con gli occhi il
+		perimetro della formazione di pedine per trovare tutte le mosse consentite al
+		colore giocante.</p>
+
+		<p>Per esempio, nella posizione del diagramma 1, il bianco ha le seguenti mosse
+		a disposizione: A3, A4, A5, A6, B3, E1, F1, G2, G3, G5 e G6.</p>
+
+		<p>Non è una mossa legale C3, perch&eacute; la casella non è libera.</p>
+
+		<p>Non è una mossa legale C2, perché non c'&egrave; alcuna pedina avversario adiacente.</p>
+
+		<p>Non è una mossa legale H4, perché non c'&egrave; alcuna pedina avversario incastrata.</p>
+
+		<div class="card mx-auto board-card">
+			<div class="card-body">
+				<div class="match-file-board" data-file="le-mosse-legali-esempio.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 1: esempio.
+			</div>
+		</div>
+
+		<p>Come in molti altri giochi, una volta appoggiata una pedina non ci si pu&ograve;
+		ripensare e ritirare la mossa. Tanto pi&ugrave; che, in Othello, a ogni mossa
+		sono molte le pedine coinvolte. Bisogna quindi pensare bene prima di
+		muovere.</p>
+
+		<h2>Quiz</h2>
+
+		<p>Nei diagrammi seguenti clicca su tutte le caselle in cui il colore indicato
+		nella didascalia pu&ograve; giocare.</p>
+
+		<p align="center">
+		<applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+				code="it.claudiosignorini.tao.TaoApplet.class"
+				hspace="0" vspace="0" align="top">
+				<param name="function" value="check">
+				<param name="position" value="--------------------------###------#O---------------------------">
+				<param name="check" value="c3c5e3">
+			</applet>
+		<br>
+		Diagramma 2: clicca le mosse legali del bianco.
+		</p>
+
+		<p align="center">
+		<applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+				code="it.claudiosignorini.tao.TaoApplet.class"
+				hspace="0" vspace="0" align="top">
+				<param name="function" value="check">
+				<param name="position" value="-------------------###-----##O----##OO-----OOO------------------">
+				<param name="check" value="c2d2e2f2c3b4c4b5">
+			</applet>
+		<br>
+		Diagramma 3: clicca le mosse legali del bianco.
+		</p>
+
+		<p align="center">
+		<applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+				code="it.claudiosignorini.tao.TaoApplet.class"
+				hspace="0" vspace="0" align="top">
+				<param name="function" value="check">
+				<param name="position" value="-------------------#O-----OOOOO---###O##--##O##----O#O----OOO---">
+				<param name="check" value="d2e2f2b3c3f3g3b5c7g7f8g8">
+			</applet>
+		<br>
+		Diagramma 4: clicca le mosse legali del nero.
+		</p>
+
+	</div>
+
+</body>
+</html>

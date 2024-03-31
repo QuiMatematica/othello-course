@@ -1,0 +1,5 @@
+# BLACK Nero
+# WHITE Bianco
+# START_POSITION --OO#-----OOOOO#--#OOO##--OOOO##--#O####---OO###-------#--------
+# START_COLOR black
+B4 Il nero gira la pedina in E4 che gli consentirà poi di giocare in H1.

@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <link rel="StyleSheet" href="../tutorial-screen.css" type="text/css" media="screen">
+	<link rel="StyleSheet" href="../tutorial-print.css" type="text/css" media="print">
+	<title>Othello: corso interattivo - Per ottenere una pedina</title>
+</head>
+
+<body>
+    <div id="titolo">Othello: corso interattivo</div>
+    <div id="intestazione">
+	  <div class="navigazione">
+	    <a href="../index.html">Home</a>
+		-> <a href="index.html">Piccoli quiz per cominciare</a>
+		-> Per ottenere una pedina
+	  </div>
+	  <div class="voltapagina">
+	    <a href="QuantePedineGirare.html" title="Quante pedine vengono girate">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a> 
+		| <a href="TogliereUnaMossa.html" title="Togliere una mossa">&gt;&gt;</a>
+	  </div>
+	</div>
+	
+<div id="articolo">
+
+<h1>Per ottenere una pedina</h1>
+
+    <h2>Teoria</h2>
+
+	<p>Talvolta può succedere che si voglia ottenere una determinata pedina
+	per particolari scopi. Bisogna allora capire qual'è la mossa giusta che
+	consente di ottenerla. Nel diagramma 1 il nero desidera conquistare la
+	pedina in E5: per farlo deve giocare in F6.</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="-----------#-----###OOO---##OO----OOOO----OOO-----O-------------">
+        Il tuo browser non supporta le Applet Java.
+    </applet>
+	<br>
+	Diagramma 1: mossa al nero.
+	</p>
+
+    <h2>Quiz</h2>
+
+    <p>Nel diagramma 2 muove il bianco. Gioca la mossa che permette di ottenere
+    la pedina in E5.</p>
+
+  	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="380"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="sequence">
+    	<param name="sequenceFile" value="PerOttenereUnaPedina1.txt">
+        </applet>
+	<br>
+	Diagramma 2.
+	</p>
+	
+	<p>Nel diagramma 3 muove il bianco. Quali mosse ha a disposizione per conquistare
+	la pedina C4? Clicca su tutte le caselle in cui può giocare per ottenere ciò.</p>
+    
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+            <param name="function" value="check">
+            <param name="position" value="-----------#O--#-###O###--##O###--O#O###--OOOO##--O----#--------">
+            <param name="check" value="a2c2b4b5">
+        </applet>
+	<br>
+	Diagramma 3.
+	</p>
+	
+	<p>Nel diagramma 4, invece, giochi con il nero e devi muovere in modo da 
+	conquistare la pedina F4 senza però girare la pedina in E4.</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="380"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="sequence">
+    	<param name="sequenceFile" value="PerOttenereUnaPedina2.txt">
+        </applet>
+	<br>
+	Diagramma 4.
+	</p>
+
+
+</div>
+
+    <div id="pie-di-pagina">
+	  <div class="voltapagina">
+	    <a href="QuantePedineGirare.html" title="Quante pedine vengono girate">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a> 
+		| <a href="TogliereUnaMossa.html" title="Togliere una mossa">&gt;&gt;</a>
+	  </div>
+	</div>
+
+</body>
+</html>

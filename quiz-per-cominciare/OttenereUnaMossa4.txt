@@ -1,0 +1,6 @@
+# BLACK studente
+# WHITE Tao
+# START_POSITION -------------------##------##O----#O#O----OOOO-----O------------
+# START_COLOR black
+# START_COMMENT Obiettivo: ottenere la mossa in C4.
+e7 Giusto: la pedina voltata in E6 può essere di sponda per giocare in C4.

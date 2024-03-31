@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <link rel="StyleSheet" href="../tutorial-screen.css" type="text/css" media="screen">
+	<link rel="StyleSheet" href="../tutorial-print.css" type="text/css" media="print">
+	<title>Othello: corso interattivo - Le pedine da girare</title>
+
+<script language="javascript">
+    function risp1() { alert("Fuochino... Le mosse giocate non sono 36!") }
+    function risp2() { alert("Esatto! Le mosse giocate sono 32 perch� dal totale delle pedine vanno tolte le 4 pedine di partenza.") }
+    function risp3() { alert("Sbagliatissimo!!! Il numero di pedine non centra niente nei turni!!!") }
+</script>
+
+</head>
+
+<body>
+    <div id="titolo">Othello: corso interattivo</div>
+    <div id="intestazione">
+	  <div class="navigazione">
+	    <a href="../index.html">Home</a>
+		-> <a href="index.html">Piccoli quiz per cominciare</a>
+		-> Le pedine da girare
+	  </div>
+	  <div class="voltapagina">
+	    <a href="le-mosse-legali.html" title="Le mosse legali">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a> 
+		| <a href="QuantePedineGirare.html" title="Quante pedine vengono girate">&gt;&gt;</a>
+	  </div>
+	</div>
+	
+<div id="articolo">
+
+<h1>Le pedine da girare</h1>
+
+	<p>Pi� spiacevole del non notare qualche mossa � dimenticarsi di girare
+	qualche pedina in una mossa appena giocata. Qualora succeda � buona
+	educazione dell'avversario far notare l'errore e chiederne la correzione.
+	Tanto pi� che questo potrebbe andargli a vantaggio...</p>
+
+	<p>Bisogna quindi allenare bene l'occhio in modo che veda subito quali pedine 
+	vanno girate. Quando poi si muove tieni bene a mente dove � stata appoggiata 
+	la pedina e verifica con attenzione tutte e otto le direzioni.</p>
+
+	<p>Solo per le prime partite, pu� essere utile appoggiare un dito sulla pedina
+	appena giocata. Questa pratica non deve per� diventare abitudine: le regole da torneo
+	impongono, infatti, di eseguire le mosse con una mano sola.</p>
+
+	<p>Esempio: nella situazione del diagramma 1 tocca al nero.
+	Se giocher� in F2 si dovranno girare le seguenti pedine: E2 e D2; E3 e D4; F3, F4, F5 ed F6.</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="--#####---#OO----OOOOO#--OOOOOO--O#O#OO-OO##OOO---#-##----------">
+        Mi dispiace, ma il tuo browser non supporta le Applet Java.
+    </applet>
+	<br>
+	Diagramma 1: mossa al nero.
+	</p>
+
+	<p>Domanda: Sapendo che nessun giocatore, finora, ha dovuto passare,
+	perch� nella situazione del diagramma 1 tocca al nero?</p>
+
+	<p><form name="problem">
+	<input type="radio" onclick="javascript:risp1()">
+	Perch� sono state giocate 36 mosse e l'ultima, essendo pari, � stata del bianco.
+	<br>
+	<input type="radio" onclick="javascript:risp2()">
+	Perch� sono state giocate 32 mosse e l'ultima, essendo pari, � stata del bianco.
+	<br>
+	<input type="radio" onclick="javascript:risp3()">
+	Perch� il bianco ha pi� pedine quindi deve passare il turno.
+	</form></p>
+
+    <h2>Quiz</h2>
+
+  	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+            <param name="function" value="check">
+            <param name="position" value="-------------------###-----##O----##OO-----OOO------------------">
+            <param name="check" value="f3">
+        </applet>
+	<br>
+	Diagramma 2: il bianco muove in F2. Clicca sulle pedine da girare.
+	</p>
+
+  	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+            <param name="function" value="check">
+            <param name="position" value="------------OO------OOOO---#OOO---###O#----OOO#-----------------">
+            <param name="check" value="e4f5">
+        </applet>
+	<br>
+	Diagramma 3: il nero muove in D3. Clicca sulle pedine da girare.
+	</p>
+
+	<p align="center">
+    <applet codebase=".." archive="Tao.jar" name="TaoApplet" width="241" height="290"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+            <param name="function" value="check">
+            <param name="position" value="--#--#----O#-#-OOOO###OO-O#O#OOO-###OOOOOO###O-----#OO----------">
+            <param name="check" value="d2d3c4b5e3e4f3">
+        </applet>
+	<br>
+	Diagramma 4: il bianco muove in E2. Clicca sulle pedine da girare.
+	</p>
+
+
+</div>
+
+    <div id="pie-di-pagina">
+	  <div class="voltapagina">
+	    <a href="le-mosse-legali.html" title="Le mosse legali">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a> 
+		| <a href="QuantePedineGirare.html" title="Quante pedine vengono girate">&gt;&gt;</a>
+	  </div>
+	</div>
+
+</body>
+</html>

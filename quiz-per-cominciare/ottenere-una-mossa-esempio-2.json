@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--OO#---",
+    "--OOOOO#",
+    "--#OOO##",
+    "--OOOO##",
+    "--#O####",
+    "---OO###",
+    "-------#",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B4",
+      "comment": "Il nero gira la pedina in E4 che gli consentirà di giocare in H1."
+    }
+  ]
+}

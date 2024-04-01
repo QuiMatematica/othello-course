@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--OOOOOO",
+    "#OOOOOOO",
+    "##OOOOOO",
+    "###OO##O",
+    "#####O#O",
+    "##O#OOOO",
+    "#####OOO",
+    "######OO"
+  ],
+  "turn": "black",
+  "comment": "Il nero muove e vince la partita in 1 mossa.",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il nero vince 32 a 31."
+    }
+  ]
+}

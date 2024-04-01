@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--OO###O",
+    "--O#O#OO",
+    "--OOO#OO",
+    "--OOO#O-",
+    "---OOO--",
+    "-----O--"
+  ],
+  "turn": "white",
+  "comment": "Il bianco muove e vince la partita in 1 mossa.",
+  "moves": [
+    {
+      "move": "F2",
+      "comment": "Complimenti! Hai vinto 64 a 0."
+    }
+  ]
+}

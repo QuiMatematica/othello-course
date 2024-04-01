@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---###--",
+    "--O##-O-",
+    "-OOOOO--",
+    "--#OOO--",
+    "--------",
+    "--------"
+  ],
+  "comment": "Obiettivo: per tre mosse girare il maggior numero di pedine possibile.",
+  "moves": [
+    {
+      "move": "G6",
+      "comment": "Corretto: hai girato 4 pedine. Premi su 'Muove il computer'."
+    },
+    {
+      "move": "C3",
+      "comment": "Tocca a te."
+    },
+    {
+      "move": "A5",
+      "comment": "Corretto: hai girato altre 4 pedine. Premi su 'Muove il computer'."
+    },
+    {
+      "move": "F2",
+      "comment": "Tocca a te."
+    },
+    {
+      "move": "G1",
+      "comment": "Esatto! Hai girato altre 3 pedine. Hai superato il quiz."
+    }
+  ]
+}

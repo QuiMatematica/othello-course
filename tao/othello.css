@@ -9,7 +9,14 @@
     width: calc(11 * var(--square-size));
 }
 
-.static-board {
+.sequence-board {
+    width: calc(10 * var(--square-size));
+    background-color: #ddd;
+    margin: auto;
+    padding-bottom: .5em;
+}
+
+.click-on-board {
     width: calc(10 * var(--square-size));
     background-color: #ddd;
     margin: auto;

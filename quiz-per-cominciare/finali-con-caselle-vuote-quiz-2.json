@@ -1,0 +1,21 @@
+{
+  "position":
+    [
+      "-OOOOO--",
+      "--O##--#",
+      "OOOO##O#",
+      "OOO#O#O#",
+      "OO#OO#O#",
+      "O#OOO#O#",
+      "O-OOOO--",
+      "-OOOOO--"
+    ],
+  "turn": "white",
+  "comment": "Il bianco muove e vince la partita in 1 mossa.",
+  "moves": [
+    {
+      "move": "F2",
+      "comment": "Complimenti! Hai vinto 59 a 5. Ricorda che le caselle vuote vengono assegnate al vincitore."
+    }
+  ]
+}

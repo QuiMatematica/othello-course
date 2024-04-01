@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--OO#---",
+    "--OOOOO#",
+    "--#OOO##",
+    "--OOOO##",
+    "--#O####",
+    "---OO###",
+    "-------#",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "C6",
+      "comment": "La pedina posta in C6 consentirà di giocare in H1."
+    }
+  ]
+}

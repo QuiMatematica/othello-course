@@ -1,6 +1,0 @@
-# BLACK studente
-# WHITE Tao
-# START_POSITION ----------------O-OO----OOO#OO-#OOOOOO##OO##OOO#O-#O##----####--
-# START_COLOR black
-# START_COMMENT Obiettivo: conquistare la pedina F4 senza girare E4.
-g3 Bravo, ci sei riuscito!

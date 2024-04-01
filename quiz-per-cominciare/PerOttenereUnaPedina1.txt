@@ -1,6 +1,0 @@
-# BLACK Tao
-# WHITE studente
-# START_POSITION -------------O---O###O----O####---OO#O----O###----O###----####--
-# START_COLOR white
-# START_COMMENT Obiettivo: conquistare la pedina E5.
-g3 Bravo! Oltre a F4 e D6 hai girato anche E5.

@@ -74,7 +74,7 @@ class SequenceBoard {
         });
         if (json.moves.length < 2) {
             this.controls.prev.remove();
-            this.controls.last.remove();
+            this.controls.computer.remove();
         }
 
         this.board.setPosition(this.currentPosition);

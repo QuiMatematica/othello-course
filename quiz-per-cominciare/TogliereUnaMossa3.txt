@@ -1,6 +1,0 @@
-# BLACK studente
-# WHITE Tao
-# START_POSITION ----------##O----##OOO---##OOO----#OO###--#OO##---##OO---###----
-# START_COLOR black
-# START_COMMENT Obiettivo: togliere all'avversario la mossa in G4.
-g8 Esatto!

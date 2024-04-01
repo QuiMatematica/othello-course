@@ -1,6 +1,0 @@
-# BLACK studente
-# WHITE Tao
-# START_POSITION ---O-#----OO#--O---O#O#O-##OO#OOOOOO#O#OOOO#O#O---#OOO---#-OOOO-
-# START_COLOR black
-# START_COMMENT Obiettivo: togliere all'avversario la mossa in H6.
-c1 Esatto!

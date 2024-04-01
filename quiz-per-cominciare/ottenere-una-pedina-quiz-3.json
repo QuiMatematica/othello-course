@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "O-OO----",
+    "OOO#OO-#",
+    "OOOOOO##",
+    "OO##OOO#",
+    "O-#O##--",
+    "--####--"
+  ],
+  "comment": "Obiettivo: conquistare la pedina F4 senza girare E4.",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G3",
+      "comment": "Bravo, ci sei riuscito! Hai superato il quiz."
+    }
+  ]
+}

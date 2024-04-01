@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--####--",
+    "#-####-O",
+    "#####OOO",
+    "##OOOOOO",
+    "#OO#OOOO",
+    "#O##OOOO",
+    "-------O",
+    "--------"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: per tre mosse girare il minor numero di pedine possibile.",
+  "moves": [
+    {
+      "move": "E7",
+      "comment": "Corretto: hai girato una sola pedina. Premi su 'Muove il computer'."
+    },
+    {
+      "move": "D7",
+      "comment": "Tocca a te."
+    },
+    {
+      "move": "C8",
+      "comment": "Corretto: hai girato una sola pedina. Premi su 'Muove il computer'."
+    },
+    {
+      "move": "G2",
+      "comment": "Tocca a te. Adesso è un po' più difficile"
+    },
+    {
+      "move": "C7",
+      "comment": "Bravissimo! Questa è l'unica mossa che gira solo 2 pedine. Hai superato il quiz."
+    }
+  ]
+}

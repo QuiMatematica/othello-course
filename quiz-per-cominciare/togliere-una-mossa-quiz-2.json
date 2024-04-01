@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--##O---",
+    "-##OOO--",
+    "-##OOO--",
+    "--#OO###",
+    "--#OO##-",
+    "--##OO--",
+    "-###----"
+  ],
+  "comment": "Obiettivo: togliere all'avversario la mossa in G4.",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Esatto! Hai superato il quiz."
+    }
+  ]
+}

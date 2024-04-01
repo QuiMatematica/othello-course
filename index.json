@@ -19,57 +19,57 @@
 			]
 		},
 		{
-			"href": "#",
+			"href": "quiz-per-cominciare/index.html",
 			"title": "Piccoli quiz per cominciare",
 			"pages": [
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/le-mosse-legali.html",
 					"title": "Le mosse legali"
 				},
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/le-pedine-da-girare.html",
 					"title": "Le pedine da girare"
 				},
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/quante-pedine-girare.html",
 					"title": "Quante pedine vengono girate?"
 				},
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/ottenere-una-pedina.html",
 					"title": "Per ottenere una pedina"
 				},
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/togliere-una-mossa.html",
 					"title": "Togliere una mossa"
 				},
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/ottenere-una-mossa.html",
 					"title": "Ottenere una mossa"
 				},
 				{
-					"href": "#",
+					"href": "quiz-per-cominciare/finali-con-caselle-vuote.html",
 					"title": "Finali con caselle vuote"
 				}
 			]
 		},
 		{
-			"href": "#",
+			"href": "primi-elementi-di-strategia/index.html",
 			"title": "Primi elementi di strategia",
 			"pages": [
 				{
-					"href": "#",
+					"href": "primi-elementi-di-strategia/le-notazioni.html",
 					"title": "Le notazioni"
 				},
 				{
-					"href": "#",
+					"href": "primi-elementi-di-strategia/gli-angoli.html",
 					"title": "Gli angoli"
 				},
 				{
-					"href": "#",
+					"href": "primi-elementi-di-strategia/il-centro.html",
 					"title": "Il centro"
 				},
 				{
-					"href": "#",
+					"href": "primi-elementi-di-strategia/quante-pedine.html",
 					"title": "Quante pedine?"
 				}
 			]

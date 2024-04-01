@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--#O----",
+    "--##-O--",
+    "OO##O---",
+    "O##OO---",
+    "O#-#O---",
+    "O-------",
+    "--------"
+  ],
+  "comment": "Obiettivo: ottenere la mossa in C6.",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "F4",
+      "comment": "Giusto: la pedina voltata in E4 può essere di sponda per giocare in C6. La mossa F5 non è giusta perché gira anche la pedina in D5, impedendo così la mossa in C6."
+    }
+  ]
+}

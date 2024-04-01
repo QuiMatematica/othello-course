@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---##---",
+    "---##O--",
+    "--#O#O--",
+    "--OOOO--",
+    "---O----",
+    "--------"
+  ],
+  "comment": "Obiettivo: ottenere la mossa in C4.",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E7",
+      "comment": "Giusto: la pedina voltata in E6 può essere di sponda per giocare in C4."
+    }
+  ]
+}

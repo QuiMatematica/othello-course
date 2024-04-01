@@ -1,6 +1,0 @@
-# BLACK studente
-# WHITE Tao
-# START_POSITION ----------#O------##-O--OO##O---O##OO---O#-#O---O---------------
-# START_COLOR black
-# START_COMMENT Obiettivo: ottenere la mossa in C6.
-f4 Giusto: la pedina voltata in E4 può essere di sponda per giocare in C6. La mossa F5 non è giusta perché gira anche la pedina in D5, impedendo così la mossa in C6.

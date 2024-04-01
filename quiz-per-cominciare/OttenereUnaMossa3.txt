@@ -1,6 +1,0 @@
-# BLACK studente
-# WHITE Tao
-# START_POSITION -------------------##------##O----#OOO----OO-O------------------
-# START_COLOR black
-# START_COMMENT Obiettivo: ottenere la mossa in C4.
-e6 Giusto: la pedina posizionata può essere di sponda per giocare in C4. Però il bianco ha la possibilità di girarla giocando, per esempio, in D7. Vedere diagramma 4.

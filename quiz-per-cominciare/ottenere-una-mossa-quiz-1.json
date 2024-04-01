@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---##---",
+    "---##O--",
+    "--#OOO--",
+    "--OO-O--",
+    "--------",
+    "--------"
+  ],
+  "comment": "Obiettivo: ottenere la mossa in C4.",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E6",
+      "comment": "Giusto: la pedina posizionata può essere di sponda per giocare in C4. Però il bianco ha la possibilità di girarla giocando, per esempio, in D7. Vedi il diagramma 4."
+    }
+  ]
+}

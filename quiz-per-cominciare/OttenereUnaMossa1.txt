@@ -1,5 +1,0 @@
-# BLACK Nero
-# WHITE Bianco
-# START_POSITION --OO#-----OOOOO#--#OOO##--OOOO##--#O####---OO###-------#--------
-# START_COLOR black
-c6 La pedina posta in C6 consentirà poi di giocare in H1.

@@ -416,6 +416,12 @@ class MatchFileBoard {
             if (json.add["x-squares"]) {
                 this.board.addXSquares();
             }
+            if (json.add["squares"] != null) {
+                json.add.squares.forEach((entry) => {
+                    const square = Square.fromString(entry.square);
+                    this.board.addLetter(square.x, square.y, entry.value);
+                });
+            }
         }
     }
 

@@ -1,6 +1,0 @@
-# BLACK studente
-# WHITE Tao
-# START_POSITION --OOOOOO#OOOOOOO##OOOOOO###OO##O#####O#O##O#OOOO#####OOO######OO
-# START_COLOR black
-# START_COMMENT Il nero muove e vince la partita in 1 mossa.
-a1. Il nero vince 32 a 31.

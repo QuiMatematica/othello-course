@@ -1,6 +1,0 @@
-# BLACK TAO
-# WHITE studente
-# START_POSITION ------------------OO###O--O#O#OO--OOO#OO--OOO#O----OOO-------O--
-# START_COLOR white
-# START_COMMENT Il bianco muove e vince la partita in 1 mossa.
-f2 Complimenti! Hai vinto 64 a 0.

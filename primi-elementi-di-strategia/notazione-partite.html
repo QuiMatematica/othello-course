@@ -1,0 +1,145 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+    <link rel="StyleSheet" href="../../tutorial-screen.css" type="text/css" media="screen">
+	<link rel="StyleSheet" href="../../tutorial-print.css" type="text/css" media="print">
+	<title>Othello: corso interattivo - Per registrare le partite</title>
+</head>
+
+<body>
+    <div id="titolo">Othello: corso interattivo</div>
+    <div id="intestazione">
+	  <div class="navigazione">
+	    <a href="../../index.html">Home</a>
+		-> <a href="../index.html">Strategie fondamentali</a>
+		-> <a href="index.html">Le notazioni</a>
+		-> Per registrare le partite
+	  </div>
+	  <div class="voltapagina">
+	    <a href="notazione-caselle.html" title="Per indicare le caselle">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a>
+		| <a href="../LePedineStabili/index.html" title="Le pedine stabili">&gt;&gt;</a>
+	  </div>
+	</div>
+
+<div id="articolo">
+
+	<h1>Per registrare le partite</h1>
+
+	<p>Per registrare una partita � sufficiente ricordare in quale casella � stata eseguita ciascuna
+	mossa. Esiste, infatti, una corrispondenza (biunivoca) tra una mossa e la casella in cui �
+	stata giocata.
+	Tutto il resto (ovvero le pedine che sono state girate) viene di conseguenza.</p>
+
+	<h2>Il referto</h2>
+
+	<p>La prima modalit� consiste nel disegnare una scacchiera con le quattro pedine iniziali.
+	Su ciascuna casella viene indicato il numero progressivo della mossa che � stata giocata in
+	quello stesso spazio.</p>
+
+	<p>Per esempio: se alla prima mossa il giocatore nero muove in F5, nella stessa casella
+	F5 si scrive un "1". Se il giocatore bianco risponde in F6, si riporta nella
+	medesima casella il numero "2". E cos� via.</p>
+
+	<p>Talvolta si cerchiano le mosse del bianco per distinguerle da quelle del nero, ma non �
+	necessario. Se poi il referto
+	� stato generato graficamente con un computer, si suole scrivere il numero
+	su una pedina del colore di chi ha giocato la mossa.</p>
+
+	<p>Nel diagramma 1 � riportato il referto di una partita. Il diagramma 2 � una scacchiera
+	attiva libera. Prova a ricostruire la partita, se la seguirai correttamente otterrai
+	il medesimo risultato.</p>
+
+	<p align="center">
+	<table border="0" width="90%">
+	  <tr><td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="300"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="report">
+        <param name="report" value="|54|27|22|23|53|28|46|60|32|55|9|14|17|41|48|58|21|8|3|4|15|19|40|59|25|12|5|W0|B0|6|42|47|31|16|7|B0|W0|1|26|52|24|13|11|2|10|20|29|30|57|39|18|36|37|38|44|51|56|45|33|34|35|43|50|49|">
+        <param name="blackName" value="nero">
+        <param name="whiteName" value="bianco">
+        <param name="blackDiscs" value="30">
+        <param name="whiteDiscs" value="34">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+      </td>
+	  <td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="300"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="free">
+		<param name="color" value="black">
+        <param name="position" value="---------------------------O#------#O---------------------------">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	  </td></tr>
+	  <tr><td align="center">
+		Diagramma 1: un referto.
+      </td>
+	  <td align="center">
+		Diagramma 2: scacchiera libera: ricostruisci la partita.
+	  </td></tr>
+	</table>
+	</p>
+
+    <p>Questa modalit� � quella utilizzata normalmente nei tornei.</p>
+
+	<h2>Sequenze di coordinate</h2>
+
+	<p>La seconda notazione consiste nel riportare la sequenza delle coordinate in cui sono
+	avvenute le mosse. Questa modalit� viene solitamente utilizzata quando si vuole
+	descrivere l'evoluzione di una partita da una situazione intermedia.</p>
+
+	<p>Per esempio: nella posizione del diagramma 3 tocca al bianco muovere. Con la sequenza
+	D3, C4, F4 si giunge alla posizione del diagramma 4. Ovviamente le mosse vanno fatte a colori
+	alternati (a meno che un giocatore non debba passare).</p>
+
+	<p align="center">
+	<table border="0" width="90%">
+	  <tr><td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="------------------#--------##------O##-----O--------------------">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+      </td>
+	  <td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+        <param name="function" value="static">
+        <param name="position" value="------------------#O------###O-----OO#-----O--------------------">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	  </td></tr>
+	  <tr><td align="center">
+		Diagramma 3: mossa al bianco.
+      </td>
+	  <td align="center">
+		Diagramma 4: dopo D3, C4, F4.
+	  </td></tr>
+	</table>
+	</p>
+
+	<h2>Le pedine non girate</h2>
+
+	<p>Entrambi i metodi presentati sono carenti da un certo punto di vista: se ad una mossa non sono state
+	girate tutte le pedine previste dalle regole, non � pi� possibile ricostruire la partita.
+	Per fortuna tali situazioni sono rare, quindi non vengono neanche considerate.</p>
+
+</div>
+
+    <div id="pie-di-pagina">
+	  <div class="voltapagina">
+	    <a href="notazione-caselle.html" title="Per indicare le caselle">&lt;&lt;</a>
+		| <a href="javascript:self.print()">stampa</a>
+		| <a href="../LePedineStabili/index.html" title="Le pedine stabili">&gt;&gt;</a>
+	  </div>
+	</div>
+</body>
+</html>

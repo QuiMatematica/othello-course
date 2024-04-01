@@ -191,6 +191,28 @@ export default class Board {
         return div.classList.contains(color);
     }
 
+    addASquares(add) {
+        this.addLetter(0, 3, "A");
+        this.addLetter(3, 0, "A");
+        this.addLetter(0, 4, "A");
+        this.addLetter(3, 7, "A");
+        this.addLetter(7, 3, "A");
+        this.addLetter(4, 0, "A");
+        this.addLetter(7, 4, "A");
+        this.addLetter(4, 7, "A");
+    }
+
+    addBSquares(add) {
+        this.addLetter(0, 2, "B");
+        this.addLetter(2, 0, "B");
+        this.addLetter(0, 5, "B");
+        this.addLetter(2, 7, "B");
+        this.addLetter(7, 2, "B");
+        this.addLetter(5, 0, "B");
+        this.addLetter(7, 5, "B");
+        this.addLetter(5, 7, "B");
+    }
+
     addCSquares(add) {
         this.addLetter(0, 1, "C");
         this.addLetter(1, 0, "C");

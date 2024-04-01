@@ -404,6 +404,12 @@ class MatchFileBoard {
         this.comment.setPositionComment(this.currentPosition);
 
         if (json.add != null) {
+            if (json.add["a-squares"]) {
+                this.board.addASquares();
+            }
+            if (json.add["b-squares"]) {
+                this.board.addBSquares();
+            }
             if (json.add["c-squares"]) {
                 this.board.addCSquares();
             }

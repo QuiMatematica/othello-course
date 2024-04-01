@@ -1,0 +1,22 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------"
+  ],
+  "controls": {
+    "previous": false,
+    "next": false
+  },
+  "add": {
+    "a-squares": true,
+    "b-squares": true,
+    "c-squares": true,
+    "x-squares": true
+  }
+}

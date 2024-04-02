@@ -121,13 +121,19 @@ export default class Board {
     }
 
     resetGame() {
-        console.log('Resetting game');
-
-        // Remove any state classes from the game board.
         for (const div of this.gameBoard.querySelectorAll('.square')) {
             div.classList.remove('black');
             div.classList.remove('white');
             div.classList.remove('flip');
+        }
+    }
+
+    setStone(x, y, color) {
+        if (color == WHITE) {
+            this.grid[y][x].classList.add('white');
+        }
+        else if (color == BLACK) {
+            this.grid[y][x].classList.add('black');
         }
     }
 
@@ -191,6 +197,28 @@ export default class Board {
         return div.classList.contains(color);
     }
 
+    addASquares(add) {
+        this.addLetter(0, 3, "A");
+        this.addLetter(3, 0, "A");
+        this.addLetter(0, 4, "A");
+        this.addLetter(3, 7, "A");
+        this.addLetter(7, 3, "A");
+        this.addLetter(4, 0, "A");
+        this.addLetter(7, 4, "A");
+        this.addLetter(4, 7, "A");
+    }
+
+    addBSquares(add) {
+        this.addLetter(0, 2, "B");
+        this.addLetter(2, 0, "B");
+        this.addLetter(0, 5, "B");
+        this.addLetter(2, 7, "B");
+        this.addLetter(7, 2, "B");
+        this.addLetter(5, 0, "B");
+        this.addLetter(7, 5, "B");
+        this.addLetter(5, 7, "B");
+    }
+
     addCSquares(add) {
         this.addLetter(0, 1, "C");
         this.addLetter(1, 0, "C");
@@ -228,9 +256,19 @@ export default class Board {
         textElement.setAttributeNS(null, 'y', '55');
         textElement.setAttributeNS(null, 'alignment-baseline', "middle");
         textElement.setAttributeNS(null, 'text-anchor', "middle");
-        textElement.setAttributeNS(null, 'font-size', 80);
+        if (letter.length == 1) {
+            textElement.setAttributeNS(null, 'font-size', 80);
+        }
+        else {
+            textElement.setAttributeNS(null, 'font-size', 60);
+        }
         textElement.append(textNode);
         square.firstChild.append(textElement); // append deepest child to first parent
+    }
+
+    removeLetter(x, y) {
+        const square = this.grid[y][x];
+        square.getElementsByTagName("text").item(0).remove();
     }
 
 }

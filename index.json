@@ -57,8 +57,12 @@
 			"title": "Primi elementi di strategia",
 			"pages": [
 				{
-					"href": "primi-elementi-di-strategia/le-notazioni.html",
-					"title": "Le notazioni"
+					"href": "primi-elementi-di-strategia/notazione-caselle.html",
+					"title": "Per indicare le caselle"
+				},
+				{
+					"href": "primi-elementi-di-strategia/notazione-partite.html",
+					"title": "Per registrare le partite"
 				},
 				{
 					"href": "primi-elementi-di-strategia/gli-angoli.html",

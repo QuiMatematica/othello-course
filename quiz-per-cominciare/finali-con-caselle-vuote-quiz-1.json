@@ -14,7 +14,7 @@
   "moves": [
     {
       "move": "A1",
-      "comment": "Il nero vince 32 a 31."
+      "comment": "Il nero vince 33 a 31. La casella vuota va al vincitore."
     }
   ]
 }

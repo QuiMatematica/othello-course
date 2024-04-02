@@ -218,7 +218,6 @@ export default class Position {
     }
 
     playStone(square) {
-        console.log("playStone", square.toString());
         const x = square.x;
         const y = square.y;
         // Don't play if game is over.
@@ -266,18 +265,6 @@ export default class Position {
         this.nextPosition.prevPosition = this;
 
         return this.nextPosition;
-    }
-
-    copyGrid() {
-        const grid = [];
-        for (let x = 0; x < 8; x++) {
-            const row = [];
-            grid.push(row);
-            for (let y = 0; y < 8; y++) {
-                row.push(this.grid[y][x]);
-            }
-        }
-        return grid;
     }
 
     isValidPlay(x, y) {
@@ -359,22 +346,6 @@ export default class Position {
                 }
             }
         }
-    }
-
-    log() {
-        this.logGrid("position", this.grid);
-    }
-
-    logGrid(msg, grid) {
-        let str = "";
-        for (let x = 0; x < 8; x++) {
-            for (let y = 0; y < 8; y++) {
-                if (grid[y][x] != EMPTY) {
-                    str += new Square(x, y).toString() + "=" + grid[y][x] + "; ";
-                }
-            }
-        }
-        console.log(msg, str);
     }
 
 }

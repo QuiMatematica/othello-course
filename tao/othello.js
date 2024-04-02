@@ -29,10 +29,49 @@ export function init() {
         const sequence = new SequenceBoard(item, boards.length);
         boards.push(sequence);
     });
+    document.querySelectorAll('.referee-board').forEach((item) => {
+        const referee = new RefereeBoard(item, boards.length);
+        boards.push(referee);
+    });
 }
 
 function staticBoardOnClick(event) {
     return;
+}
+
+class RefereeBoard {
+
+    board;
+    score;
+
+    constructor(container, counter) {
+        const emptyPosition = Position.getStartingPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, staticBoardOnClick);
+        this.board.setPosition(emptyPosition);
+        this.score = new Score(container, this.board);
+        this.score.takeScore(emptyPosition);
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        var position = Position.getStartingPosition();
+        const txt = json.txt;
+        for (var i = 0; i*2 < txt.length; i++) {
+            const s = txt.substring(i*2, i*2 + 2);
+            const square = Square.fromString(s);
+            this.board.setStone(square.x, square.y, position.turn);
+            this.board.addLetter(square.x, square.y, (i + 1).toString());
+            position = position.playStone(square);
+        }
+        this.score.takeScore(position);
+    }
+
 }
 
 class SequenceBoard {
@@ -236,6 +275,7 @@ class ClickOnBoard {
     position;
     board;
     comment;
+    controls;
 
     correct;
     correctCount;
@@ -247,6 +287,7 @@ class ClickOnBoard {
         this.board = new Board(container, counter, clickOnClick);
         this.board.setPosition(this.currentPosition);
         this.comment = new PositionComment(container);
+        this.controls = new ClickOnControls(container, counter);
 
         this.correct = [];
         this.clicked = [];
@@ -268,8 +309,8 @@ class ClickOnBoard {
             this.correct.push(square);
         })
 
-        const cmd = "Risposte corrette: 0<br>Risposte attese: " + this.correct.length;
-        this.comment.setComment(cmd);
+        this.updateComment();
+        this.controls.reset.disabled = true;
     }
 
     checkClick(square) {
@@ -278,14 +319,29 @@ class ClickOnBoard {
             if (squareIndex > -1) {
                 this.board.addLetter(square.x, square.y, String.fromCharCode(10003));
                 this.correctCount++;
-                const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
-                this.comment.setComment(cmd);
+                this.updateComment();
             }
             else {
                 this.board.addLetter(square.x, square.y, String.fromCharCode(10007));
             }
             this.clicked.push(square);
+            this.controls.reset.disabled = false;
         }
+    }
+
+    reset() {
+        this.clicked.forEach((square) => {
+            this.board.removeLetter(square.x, square.y);
+        });
+        this.updateComment();
+        this.clicked = [];
+        this.correctCount = 0;
+        this.controls.reset.disabled = true;
+    }
+
+    updateComment() {
+        const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
+        this.comment.setComment(cmd);
     }
 
 }
@@ -297,6 +353,42 @@ function clickOnClick(event) {
     const clickOnBoard = boards[counter];
     const square = new Square(parseInt(x), parseInt(y));
     clickOnBoard.checkClick(square);
+}
+
+function resetClickOnClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const clickOnBoard = boards[counter];
+    clickOnBoard.reset();
+}
+
+class ClickOnControls {
+
+    buttonsContainer;
+    reset;
+
+    constructor(container, counter) {
+        this.reset = document.createElement("button");
+        this.reset.classList.add("btn");
+        this.reset.classList.add("btn-primary");
+        this.reset.dataset.counter = counter;
+        this.reset.appendChild(document.createTextNode("Ricomincia"));
+        this.reset.addEventListener('click', resetClickOnClick);
+
+        const buttonGroup = document.createElement("div");
+        buttonGroup.classList.add("btn-group");
+        buttonGroup.classList.add("btn-group-sm");
+        buttonGroup.setAttribute("role", "group");
+        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
+        buttonGroup.appendChild(this.reset);
+
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
+
+        container.appendChild(this.buttonsContainer);
+    }
+
 }
 
 class FreeGameBoard {
@@ -404,11 +496,23 @@ class MatchFileBoard {
         this.comment.setPositionComment(this.currentPosition);
 
         if (json.add != null) {
+            if (json.add["a-squares"]) {
+                this.board.addASquares();
+            }
+            if (json.add["b-squares"]) {
+                this.board.addBSquares();
+            }
             if (json.add["c-squares"]) {
                 this.board.addCSquares();
             }
             if (json.add["x-squares"]) {
                 this.board.addXSquares();
+            }
+            if (json.add["squares"] != null) {
+                json.add.squares.forEach((entry) => {
+                    const square = Square.fromString(entry.square);
+                    this.board.addLetter(square.x, square.y, entry.value);
+                });
             }
         }
     }
@@ -656,11 +760,7 @@ function initOffcanvas(json) {
     offcanvasTitle.setAttribute("id", "offcanvasLabel");
     offcanvasHeader.append(offcanvasTitle);
 
-    const aTitle = document.createElement("a");
-    aTitle.classList.add("nav-link");
-    aTitle.setAttribute("href", json.href);
-    aTitle.innerHTML = "Indice";
-    offcanvasTitle.append(aTitle);
+    offcanvasTitle.innerHTML = "Indice";
 
     const dismissButton = document.createElement("button");
     dismissButton.setAttribute("type", "button");
@@ -730,6 +830,7 @@ function buildOffcanvasButton() {
 
 function buildPagination(json, prevPage, nextPage) {
     const nav = document.createElement("nav");
+    nav.classList.add("my-3");
 
     const ul = document.createElement("ul");
     ul.classList.add("pagination");

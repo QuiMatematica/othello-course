@@ -266,4 +266,9 @@ export default class Board {
         square.firstChild.append(textElement); // append deepest child to first parent
     }
 
+    removeLetter(x, y) {
+        const square = this.grid[y][x];
+        square.getElementsByTagName("text").item(0).remove();
+    }
+
 }

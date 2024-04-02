@@ -275,6 +275,7 @@ class ClickOnBoard {
     position;
     board;
     comment;
+    controls;
 
     correct;
     correctCount;
@@ -286,6 +287,7 @@ class ClickOnBoard {
         this.board = new Board(container, counter, clickOnClick);
         this.board.setPosition(this.currentPosition);
         this.comment = new PositionComment(container);
+        this.controls = new ClickOnControls(container, counter);
 
         this.correct = [];
         this.clicked = [];
@@ -307,8 +309,8 @@ class ClickOnBoard {
             this.correct.push(square);
         })
 
-        const cmd = "Risposte corrette: 0<br>Risposte attese: " + this.correct.length;
-        this.comment.setComment(cmd);
+        this.updateComment();
+        this.controls.reset.disabled = true;
     }
 
     checkClick(square) {
@@ -317,14 +319,29 @@ class ClickOnBoard {
             if (squareIndex > -1) {
                 this.board.addLetter(square.x, square.y, String.fromCharCode(10003));
                 this.correctCount++;
-                const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
-                this.comment.setComment(cmd);
+                this.updateComment();
             }
             else {
                 this.board.addLetter(square.x, square.y, String.fromCharCode(10007));
             }
             this.clicked.push(square);
+            this.controls.reset.disabled = false;
         }
+    }
+
+    reset() {
+        this.clicked.forEach((square) => {
+            this.board.removeLetter(square.x, square.y);
+        });
+        this.updateComment();
+        this.clicked = [];
+        this.correctCount = 0;
+        this.controls.reset.disabled = true;
+    }
+
+    updateComment() {
+        const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
+        this.comment.setComment(cmd);
     }
 
 }
@@ -336,6 +353,42 @@ function clickOnClick(event) {
     const clickOnBoard = boards[counter];
     const square = new Square(parseInt(x), parseInt(y));
     clickOnBoard.checkClick(square);
+}
+
+function resetClickOnClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const clickOnBoard = boards[counter];
+    clickOnBoard.reset();
+}
+
+class ClickOnControls {
+
+    buttonsContainer;
+    reset;
+
+    constructor(container, counter) {
+        this.reset = document.createElement("button");
+        this.reset.classList.add("btn");
+        this.reset.classList.add("btn-primary");
+        this.reset.dataset.counter = counter;
+        this.reset.appendChild(document.createTextNode("Ricomincia"));
+        this.reset.addEventListener('click', resetClickOnClick);
+
+        const buttonGroup = document.createElement("div");
+        buttonGroup.classList.add("btn-group");
+        buttonGroup.classList.add("btn-group-sm");
+        buttonGroup.setAttribute("role", "group");
+        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
+        buttonGroup.appendChild(this.reset);
+
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
+
+        container.appendChild(this.buttonsContainer);
+    }
+
 }
 
 class FreeGameBoard {
@@ -777,6 +830,7 @@ function buildOffcanvasButton() {
 
 function buildPagination(json, prevPage, nextPage) {
     const nav = document.createElement("nav");
+    nav.classList.add("my-3");
 
     const ul = document.createElement("ul");
     ul.classList.add("pagination");

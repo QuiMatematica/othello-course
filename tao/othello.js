@@ -29,10 +29,49 @@ export function init() {
         const sequence = new SequenceBoard(item, boards.length);
         boards.push(sequence);
     });
+    document.querySelectorAll('.referee-board').forEach((item) => {
+        const referee = new RefereeBoard(item, boards.length);
+        boards.push(referee);
+    });
 }
 
 function staticBoardOnClick(event) {
     return;
+}
+
+class RefereeBoard {
+
+    board;
+    score;
+
+    constructor(container, counter) {
+        const emptyPosition = Position.getStartingPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, staticBoardOnClick);
+        this.board.setPosition(emptyPosition);
+        this.score = new Score(container, this.board);
+        this.score.takeScore(emptyPosition);
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        var position = Position.getStartingPosition();
+        const txt = json.txt;
+        for (var i = 0; i*2 < txt.length; i++) {
+            const s = txt.substring(i*2, i*2 + 2);
+            const square = Square.fromString(s);
+            this.board.setStone(square.x, square.y, position.turn);
+            this.board.addLetter(square.x, square.y, (i + 1).toString());
+            position = position.playStone(square);
+        }
+        this.score.takeScore(position);
+    }
+
 }
 
 class SequenceBoard {
@@ -668,11 +707,7 @@ function initOffcanvas(json) {
     offcanvasTitle.setAttribute("id", "offcanvasLabel");
     offcanvasHeader.append(offcanvasTitle);
 
-    const aTitle = document.createElement("a");
-    aTitle.classList.add("nav-link");
-    aTitle.setAttribute("href", json.href);
-    aTitle.innerHTML = "Indice";
-    offcanvasTitle.append(aTitle);
+    offcanvasTitle.innerHTML = "Indice";
 
     const dismissButton = document.createElement("button");
     dismissButton.setAttribute("type", "button");

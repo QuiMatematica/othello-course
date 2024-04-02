@@ -121,13 +121,19 @@ export default class Board {
     }
 
     resetGame() {
-        console.log('Resetting game');
-
-        // Remove any state classes from the game board.
         for (const div of this.gameBoard.querySelectorAll('.square')) {
             div.classList.remove('black');
             div.classList.remove('white');
             div.classList.remove('flip');
+        }
+    }
+
+    setStone(x, y, color) {
+        if (color == WHITE) {
+            this.grid[y][x].classList.add('white');
+        }
+        else if (color == BLACK) {
+            this.grid[y][x].classList.add('black');
         }
     }
 
@@ -250,7 +256,12 @@ export default class Board {
         textElement.setAttributeNS(null, 'y', '55');
         textElement.setAttributeNS(null, 'alignment-baseline', "middle");
         textElement.setAttributeNS(null, 'text-anchor', "middle");
-        textElement.setAttributeNS(null, 'font-size', 80);
+        if (letter.length == 1) {
+            textElement.setAttributeNS(null, 'font-size', 80);
+        }
+        else {
+            textElement.setAttributeNS(null, 'font-size', 60);
+        }
         textElement.append(textNode);
         square.firstChild.append(textElement); // append deepest child to first parent
     }

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Quante pedine?</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../tao/othello.css#20240323">
+    <script type="module">
+        import { init } from "../tao/othello.js#20240323";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+        <h1>Quante pedine?</h1>
+
+        <p>Se è vero che obiettivo del gioco è avere il maggior numero di pedine possibile,
+        non è detto che per raggiungerlo sia necessario girare fin da subito tante
+        pedine! Anzi: l'esperienza dei giocatori bravi dice che <b>all'inizio è
+        meglio avere poche pedine</b>: questo faciliterà il compito di girarne tante
+        verso la fine.</p>
+
+        <p>La logica è questa: per muovere devi appoggiarti alle pedine dell'avversario. Quindi
+        se vuoi avere tante mosse è necessario che l'avversario abbia tante pedine. Ma se ne ha tante
+        lui, ne avrai poche tu.</p>
+
+        <h2>Esempio</h2>
+
+        <p>Consideriamo la posizione del diagramma 1, in cui tocca al Nero. Questi ha le seguenti mosse:
+        A2, B2, G2, A3, G3, H3, H4, G5, G6, A7, B7, E7, F7, G7. Escludiamo A2, B2, G2, A7, B7 e G7 perché
+        sono pericolose per gli angoli. Potremo anche escludere altre mosse perché non controllano
+        sufficientemente il centro. Riteniamo che la mossa migliore sia A3 perché mantiene le pedine
+        compatte e centrali e gira una sola pedina.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="quante-pedine-esempio.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 1.
+			</div>
+		</div>
+
+    </div>
+
+</body>
+</html>

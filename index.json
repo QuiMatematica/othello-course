@@ -1,0 +1,82 @@
+{
+	"sections": [
+		{
+			"href": "il-gioco/index.html",
+			"title": "Il gioco",
+			"pages": [
+				{
+					"href": "il-gioco/le-regole.html",
+					"title": "Le regole"
+				},
+				{
+					"href": "il-gioco/precisazioni.html",
+					"title": "Precisazioni"
+				},
+				{
+					"href": "il-gioco/scacchiera-libera.html",
+					"title": "Scacchiera libera"
+				}
+			]
+		},
+		{
+			"href": "quiz-per-cominciare/index.html",
+			"title": "Piccoli quiz per cominciare",
+			"pages": [
+				{
+					"href": "quiz-per-cominciare/le-mosse-legali.html",
+					"title": "Le mosse legali"
+				},
+				{
+					"href": "quiz-per-cominciare/le-pedine-da-girare.html",
+					"title": "Le pedine da girare"
+				},
+				{
+					"href": "quiz-per-cominciare/quante-pedine-girare.html",
+					"title": "Quante pedine vengono girate?"
+				},
+				{
+					"href": "quiz-per-cominciare/ottenere-una-pedina.html",
+					"title": "Per ottenere una pedina"
+				},
+				{
+					"href": "quiz-per-cominciare/togliere-una-mossa.html",
+					"title": "Togliere una mossa"
+				},
+				{
+					"href": "quiz-per-cominciare/ottenere-una-mossa.html",
+					"title": "Ottenere una mossa"
+				},
+				{
+					"href": "quiz-per-cominciare/finali-con-caselle-vuote.html",
+					"title": "Finali con caselle vuote"
+				}
+			]
+		},
+		{
+			"href": "primi-elementi-di-strategia/index.html",
+			"title": "Primi elementi di strategia",
+			"pages": [
+				{
+					"href": "primi-elementi-di-strategia/notazione-caselle.html",
+					"title": "Per indicare le caselle"
+				},
+				{
+					"href": "primi-elementi-di-strategia/notazione-partite.html",
+					"title": "Per registrare le partite"
+				},
+				{
+					"href": "primi-elementi-di-strategia/gli-angoli.html",
+					"title": "Gli angoli"
+				},
+				{
+					"href": "primi-elementi-di-strategia/il-centro.html",
+					"title": "Il centro"
+				},
+				{
+					"href": "primi-elementi-di-strategia/quante-pedine.html",
+					"title": "Quante pedine?"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--OOO---",
+    "--OOO--O",
+    "--####OO",
+    "--O###OO",
+    "--O###OO",
+    "--OOO#O-",
+    "---O#O#-",
+    "----OO--"
+  ],
+  "comment": "Obiettivo: togliere all'avversario la mossa in H6.",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "F2",
+      "comment": "Esatto! Hai superato il quiz."
+    }
+  ]
+}

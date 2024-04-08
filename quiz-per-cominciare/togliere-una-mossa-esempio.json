@@ -1,0 +1,19 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "--OOO#--",
+    "###O#O--",
+    "###OOOO-",
+    "###O##OO",
+    "###OO#OO",
+    "--##OO#-",
+    "-######-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H4",
+      "comment": "Il nero gira D4 per impedire all'avversario la mossa in H8."
+    }
+  ]
+}

@@ -3,18 +3,18 @@
     "--------",
     "--------",
     "--------",
-    "--O#O#--",
+    "--------",
     "--------",
     "--------",
     "--------",
     "--------"
   ],
-  "moves": ["B4"],
-  "00": "Prima della mossa in B4.",
-  "B4": "Effetto della mossa in B4.",
   "controls": {
-    "previous": false,
-    "last": false
+    "score": false,
+    "turn": false
+  },
+  "add": {
+    "x-squares": true,
+    "c-squares": true
   }
-
 }

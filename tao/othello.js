@@ -11,46 +11,384 @@ import Score from './score.js'
 const boards = []
 
 export function init() {
-    loadSectionIndex();
+    loadIndex();
 
-    document.querySelectorAll('.static-board').forEach((item) => {
-        const staticBoard = new StaticBoard(item, boards.length);
-        boards.push(staticBoard);
-    });
     document.querySelectorAll('.free-game-board').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
         boards.push(freeGame);
     });
     document.querySelectorAll('.match-file-board').forEach((item) => {
-        const freeGame = new MatchFileBoard(item, boards.length);
-        boards.push(freeGame);
+        const matchFile = new MatchFileBoard(item, boards.length);
+        boards.push(matchFile);
+    });
+    document.querySelectorAll('.click-on-board').forEach((item) => {
+        const clickOn = new ClickOnBoard(item, boards.length);
+        boards.push(clickOn);
+    });
+    document.querySelectorAll('.sequence-board').forEach((item) => {
+        const sequence = new SequenceBoard(item, boards.length);
+        boards.push(sequence);
+    });
+    document.querySelectorAll('.referee-board').forEach((item) => {
+        const referee = new RefereeBoard(item, boards.length);
+        boards.push(referee);
     });
 }
 
-class StaticBoard {
+function staticBoardOnClick(event) {
+    return;
+}
+
+class RefereeBoard {
+
+    board;
+    score;
+
+    constructor(container, counter) {
+        const emptyPosition = Position.getStartingPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, staticBoardOnClick);
+        this.board.setPosition(emptyPosition);
+        this.score = new Score(container, this.board);
+        this.score.takeScore(emptyPosition);
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        var position = Position.getStartingPosition();
+        const txt = json.txt;
+        for (var i = 0; i*2 < txt.length; i++) {
+            const s = txt.substring(i*2, i*2 + 2);
+            const square = Square.fromString(s);
+            this.board.setStone(square.x, square.y, position.turn);
+            this.board.addLetter(square.x, square.y, (i + 1).toString());
+            position = position.playStone(square);
+        }
+        this.score.takeScore(position);
+    }
+
+}
+
+class SequenceBoard {
+
+    currentPosition;
+    board;
+    score;
+    controls;
+    comment;
+    humanColor;
+
+    constructor(container, counter) {
+        this.currentPosition = Position.getEmptyPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, sequenceBoardOnClick);
+        this.board.setPosition(this.currentPosition);
+        this.score = new Score(container, this.board);
+        this.score.takeScore(this.currentPosition);
+        this.controls = new SequenceControls(container, counter);
+        this.comment = new PositionComment(container);
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        this.currentPosition = Position.getPositionFromJSON(json);
+        this.currentPosition.comment = json.comment;
+        this.humanColor = this.currentPosition.turn;
+        var curPosition = this.currentPosition;
+
+        json.moves.forEach((move) => {
+            const square = Square.fromString(move.move);
+            curPosition = curPosition.playStone(square)
+            curPosition.comment = move.comment;
+        });
+        if (json.moves.length < 2) {
+            this.controls.prev.remove();
+            this.controls.computer.remove();
+        }
+
+        this.board.setPosition(this.currentPosition);
+        this.score.takeScore(this.currentPosition);
+        this.controls.update(this.currentPosition, this.humanColor);
+        this.comment.setPositionComment(this.currentPosition);
+    }
+
+    moveComputer() {
+        const nextPosition = this.currentPosition.nextPosition;
+        if (nextPosition != null) {
+            this.board.playPosition(nextPosition);
+            this.score.takeScore(nextPosition);
+            this.comment.setPositionComment(nextPosition);
+            this.controls.update(nextPosition, this.humanColor);
+            this.currentPosition = nextPosition;
+        }
+    }
+
+    moveHuman(square) {
+        if (this.currentPosition.turn == this.humanColor) {
+            const expected = this.currentPosition.nextPosition.played;
+            if (square.x == expected.x && square.y == expected.y) {
+                const nextPosition = this.currentPosition.nextPosition;
+                this.board.playPosition(nextPosition);
+                this.score.takeScore(nextPosition);
+                this.comment.setPositionComment(nextPosition);
+                this.controls.update(nextPosition, this.humanColor);
+                this.currentPosition = nextPosition;
+            }
+            else {
+                this.comment.setComment("Mossa sbagliata.");
+            }
+        }
+    }
+
+    goToPreviousPosition() {
+        const prevPosition = this.currentPosition.prevPosition;
+        if (prevPosition != null) {
+            this.board.setPosition(prevPosition);
+            this.score.takeScore(prevPosition);
+            this.comment.setPositionComment(prevPosition);
+            this.controls.update(prevPosition, this.humanColor);
+            this.currentPosition = prevPosition;
+        }
+    }
+
+    goToFirstPosition() {
+        var curPosition = this.currentPosition;
+        var prevPosition = curPosition.prevPosition;
+        if (prevPosition != null) {
+            while (prevPosition != null) {
+                curPosition = prevPosition;
+                prevPosition = curPosition.prevPosition;
+            }
+            this.board.setPosition(curPosition);
+            this.score.takeScore(curPosition);
+            this.comment.setPositionComment(curPosition);
+            this.controls.update(curPosition, this.humanColor);
+            this.currentPosition = curPosition;
+        }
+    }
+
+}
+
+class SequenceControls {
+
+    buttonsContainer;
+    first;
+    prev;
+    computer;
+
+    constructor(container, counter) {
+        this.first = document.createElement("button");
+        this.first.classList.add("btn");
+        this.first.classList.add("btn-primary");
+        this.first.dataset.counter = counter;
+        this.first.appendChild(document.createTextNode("|<"));
+        this.first.addEventListener('click', sequenceOnFirstClick);
+
+        this.prev = document.createElement("button");
+        this.prev.classList.add("btn");
+        this.prev.classList.add("btn-primary");
+        this.prev.dataset.counter = counter;
+        this.prev.appendChild(document.createTextNode("<"));
+        this.prev.addEventListener('click', sequenceOnPrevClick);
+
+        this.computer = document.createElement("button");
+        this.computer.classList.add("btn");
+        this.computer.classList.add("btn-primary");
+        this.computer.dataset.counter = counter;
+        this.computer.appendChild(document.createTextNode("Muove il computer"));
+        this.computer.addEventListener('click', sequenceOnComputerClick);
+
+        const buttonGroup = document.createElement("div");
+        buttonGroup.classList.add("btn-group");
+        buttonGroup.classList.add("btn-group-sm");
+        buttonGroup.setAttribute("role", "group");
+        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
+        buttonGroup.appendChild(this.first);
+        buttonGroup.appendChild(this.prev);
+        buttonGroup.appendChild(this.computer);
+
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
+
+        container.appendChild(this.buttonsContainer);
+    }
+
+    update(position, humanColor) {
+        this.first.disabled = (position.prevPosition == null);
+        this.prev.disabled = (position.prevPosition == null);
+        this.computer.disabled = (position.nextPosition == null || position.turn == humanColor);
+    }
+
+}
+
+function sequenceOnFirstClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const sequenceBoard = boards[counter];
+    sequenceBoard.goToFirstPosition();
+}
+
+function sequenceOnPrevClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const sequenceBoard = boards[counter];
+    sequenceBoard.goToPreviousPosition();
+}
+
+function sequenceOnComputerClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const sequenceBoard = boards[counter];
+    sequenceBoard.moveComputer();
+}
+
+function sequenceBoardOnClick(event) {
+    // Ignore if we're still animating the last move.
+    if (animatingFlip) {
+        return;
+    }
+
+    // Find the coordinates of the clicked square.
+    const div = event.currentTarget;
+    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
+    const sequenceBoard = boards[counter];
+    const square = new Square(parseInt(x), parseInt(y));
+    sequenceBoard.moveHuman(square);
+}
+
+class ClickOnBoard {
 
     container;
     counter;
 
     position;
     board;
-    score;
+    comment;
+    controls;
+
+    correct;
+    correctCount;
+    clicked;
 
     constructor(container, counter) {
-        this.container = container;
-        this.counter = counter;
+        this.currentPosition = Position.getEmptyPosition();
+        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
+        this.board = new Board(container, counter, clickOnClick);
+        this.board.setPosition(this.currentPosition);
+        this.comment = new PositionComment(container);
+        this.controls = new ClickOnControls(container, counter);
 
-        this.position = Position.getPositionFromDataset(container);
-        this.board = new Board(container, counter, staticBoardOnClick)
-        this.board.setPosition(this.position);
-        this.score = new Score(container, this.board);
-        this.score.takeScore(this.position);
+        this.correct = [];
+        this.clicked = [];
+        this.correctCount = 0;
+
+        const matchFile = container.dataset['file'];
+        let json;
+        fetch(matchFile)
+            .then((response) => response.json())
+            .then((json) => this.readMatch(json));
+    }
+
+    readMatch(json) {
+        this.currentPosition = Position.getPositionFromJSON(json);
+        this.board.setPosition(this.currentPosition);
+
+        json.correct.forEach((notation) => {
+            const square = Square.fromString(notation);
+            this.correct.push(square);
+        })
+
+        this.updateComment();
+        this.controls.reset.disabled = true;
+    }
+
+    checkClick(square) {
+        if (this.clicked.findIndex(c => (c.x == square.x && c.y == square.y)) == -1) {
+            const squareIndex = this.correct.findIndex(c => (c.x == square.x && c.y == square.y));
+            if (squareIndex > -1) {
+                this.board.addLetter(square.x, square.y, String.fromCharCode(10003));
+                this.correctCount++;
+                this.updateComment();
+            }
+            else {
+                this.board.addLetter(square.x, square.y, String.fromCharCode(10007));
+            }
+            this.clicked.push(square);
+            this.controls.reset.disabled = false;
+        }
+    }
+
+    reset() {
+        this.clicked.forEach((square) => {
+            this.board.removeLetter(square.x, square.y);
+        });
+        this.updateComment();
+        this.clicked = [];
+        this.correctCount = 0;
+        this.controls.reset.disabled = true;
+    }
+
+    updateComment() {
+        const cmd = "Risposte corrette: " + this.correctCount + "<br>Risposte attese: " + this.correct.length;
+        this.comment.setComment(cmd);
     }
 
 }
 
-function staticBoardOnClick(event) {
-    return;
+function clickOnClick(event) {
+    // Find the coordinates of the clicked square.
+    const div = event.currentTarget;
+    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
+    const clickOnBoard = boards[counter];
+    const square = new Square(parseInt(x), parseInt(y));
+    clickOnBoard.checkClick(square);
+}
+
+function resetClickOnClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const clickOnBoard = boards[counter];
+    clickOnBoard.reset();
+}
+
+class ClickOnControls {
+
+    buttonsContainer;
+    reset;
+
+    constructor(container, counter) {
+        this.reset = document.createElement("button");
+        this.reset.classList.add("btn");
+        this.reset.classList.add("btn-primary");
+        this.reset.dataset.counter = counter;
+        this.reset.appendChild(document.createTextNode("Ricomincia"));
+        this.reset.addEventListener('click', resetClickOnClick);
+
+        const buttonGroup = document.createElement("div");
+        buttonGroup.classList.add("btn-group");
+        buttonGroup.classList.add("btn-group-sm");
+        buttonGroup.setAttribute("role", "group");
+        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
+        buttonGroup.appendChild(this.reset);
+
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
+
+        container.appendChild(this.buttonsContainer);
+    }
+
 }
 
 class FreeGameBoard {
@@ -122,44 +460,80 @@ class MatchFileBoard {
 
     readMatch(json) {
         this.currentPosition = Position.getPositionFromJSON(json);
-        this.currentPosition.comment = json['00'];
+        this.currentPosition.comment = json.comment;
         var curPosition = this.currentPosition;
-        json.moves.forEach((move) => {
-            const square = Square.fromString(move);
-            curPosition = curPosition.playStone(square)
-            curPosition.comment = json[move];
-        });
+        if (json.moves != null) {
+            json.moves.forEach((move) => {
+                const square = Square.fromString(move.move);
+                curPosition = curPosition.playStone(square)
+                curPosition.comment = move.comment;
+            });
+            if (json.moves.length < 2) {
+                this.controls.prev.remove();
+                this.controls.last.remove();
+            }
+        }
+        else {
+            this.controls.buttonsContainer.remove();
+        }
         if (json.controls != null) {
             if (!json.controls.previous) {
-                this.controls.removePrevious();
+                this.controls.prev.remove();
             }
             if (!json.controls.last) {
-                this.controls.removeLast();
+                this.controls.last.remove();
+            }
+            if (!json.controls.score) {
+                this.score.scoreContainer.remove();
+            }
+            if (!json.controls.turn) {
+                this.score.turnContainer.remove();
             }
         }
         this.board.setPosition(this.currentPosition);
         this.score.takeScore(this.currentPosition);
         this.controls.update(this.currentPosition);
-        this.comment.setComment(this.currentPosition);
+        this.comment.setPositionComment(this.currentPosition);
+
+        if (json.add != null) {
+            if (json.add["a-squares"]) {
+                this.board.addASquares();
+            }
+            if (json.add["b-squares"]) {
+                this.board.addBSquares();
+            }
+            if (json.add["c-squares"]) {
+                this.board.addCSquares();
+            }
+            if (json.add["x-squares"]) {
+                this.board.addXSquares();
+            }
+            if (json.add["squares"] != null) {
+                json.add.squares.forEach((entry) => {
+                    const square = Square.fromString(entry.square);
+                    this.board.addLetter(square.x, square.y, entry.value);
+                });
+            }
+        }
     }
 
 }
 
 class MatchControls {
 
-    begin;
+    buttonsContainer;
+    first;
     prev;
     next;
     last;
 
     constructor(container, counter) {
-//    <button type="button" class="btn btn-primary">Left</button>
-        this.begin = document.createElement("button");
-        this.begin.classList.add("btn");
-        this.begin.classList.add("btn-primary");
-        this.begin.dataset.counter = counter;
-        this.begin.appendChild(document.createTextNode("|<"));
-        this.begin.addEventListener('click', matchOnBeginClick);
+        this.first = document.createElement("button");
+        this.first.classList.add("btn");
+        this.first.classList.add("btn-primary");
+        this.first.dataset.counter = counter;
+        this.first.appendChild(document.createTextNode("|<"));
+        this.first.addEventListener('click', matchOnFirstClick);
 
         this.prev = document.createElement("button");
         this.prev.classList.add("btn");
@@ -187,31 +561,23 @@ class MatchControls {
         buttonGroup.classList.add("btn-group-sm");
         buttonGroup.setAttribute("role", "group");
         buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
-        buttonGroup.appendChild(this.begin);
+        buttonGroup.appendChild(this.first);
         buttonGroup.appendChild(this.prev);
         buttonGroup.appendChild(this.next);
         buttonGroup.appendChild(this.last);
 
-        const buttonsContainer = document.createElement("div");
-        buttonsContainer.classList.add("text-center");
-        buttonsContainer.appendChild(buttonGroup);
+        this.buttonsContainer = document.createElement("div");
+        this.buttonsContainer.classList.add("text-center");
+        this.buttonsContainer.appendChild(buttonGroup);
 
-        container.appendChild(buttonsContainer);
+        container.appendChild(this.buttonsContainer);
     }
 
     update(position) {
-        this.begin.disabled = (position.prevPosition == null);
+        this.first.disabled = (position.prevPosition == null);
         this.prev.disabled = (position.prevPosition == null);
         this.next.disabled = (position.nextPosition == null);
         this.last.disabled = (position.nextPosition == null);
-    }
-
-    removePrevious() {
-        this.prev.remove();
-    }
-
-    removeLast() {
-        this.last.remove();
     }
 
 }
@@ -226,7 +592,16 @@ class PositionComment {
         container.appendChild(this.div)
     }
 
-    setComment(position) {
+    setComment(comment) {
+        if (comment == null) {
+            this.div.innerHTML = "";
+        }
+        else {
+            this.div.innerHTML = comment;
+        }
+    }
+
+    setPositionComment(position) {
         if (position.comment == null) {
             this.div.innerHTML = "";
         }
@@ -245,7 +620,7 @@ function matchOnNextClick(event) {
     if (nextPosition != null) {
         matchFileBoard.board.playPosition(nextPosition);
         matchFileBoard.score.takeScore(nextPosition);
-        matchFileBoard.comment.setComment(nextPosition);
+        matchFileBoard.comment.setPositionComment(nextPosition);
         matchFileBoard.controls.update(nextPosition);
         matchFileBoard.currentPosition = nextPosition;
     }
@@ -259,13 +634,13 @@ function matchOnPrevClick(event) {
     if (prevPosition != null) {
         matchFileBoard.board.setPosition(prevPosition);
         matchFileBoard.score.takeScore(prevPosition);
-        matchFileBoard.comment.setComment(prevPosition);
+        matchFileBoard.comment.setPositionComment(prevPosition);
         matchFileBoard.controls.update(prevPosition);
         matchFileBoard.currentPosition = prevPosition;
     }
 }
 
-function matchOnBeginClick(event) {
+function matchOnFirstClick(event) {
     const div = event.currentTarget;
     const counter = div.dataset.counter;
     const matchFileBoard = boards[counter];
@@ -278,7 +653,7 @@ function matchOnBeginClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setComment(curPosition);
+        matchFileBoard.comment.setPositionComment(curPosition);
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
@@ -295,81 +670,30 @@ function matchOnEndClick(event) {
         }
         matchFileBoard.board.setPosition(curPosition);
         matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setComment(curPosition);
+        matchFileBoard.comment.setPositionComment(curPosition);
         matchFileBoard.controls.update(curPosition);
         matchFileBoard.currentPosition = curPosition;
     }
 }
 
-function loadSectionIndex() {
-    const sectionIndex = "index.json";
+function loadIndex() {
+    const sectionIndex = "../index.json";
     let json;
     fetch(sectionIndex)
         .then((response) => response.json())
         .then((json) => initPage(json));
 }
 
-function initHeader(currentPageIndex) {
+function initHeader() {
     const brand = document.createElement("a");
     brand.classList.add("navbar-brand")
     brand.classList.add("h1")
     brand.setAttribute("href", "../index.html");
     brand.innerHTML = "Othello: corso interattivo";
 
-    const togglerIcon = document.createElement("span");
-    togglerIcon.classList.add("navbar-toggler-icon");
-
-    const toggler = document.createElement("button");
-    toggler.classList.add("navbar-toggler");
-    toggler.setAttribute("type", "button");
-    toggler.dataset.bsToggle = "collapse";
-    toggler.dataset.bsTarget = "#navbarNavAltMarkup";
-    toggler.setAttribute("aria-controls", "navbarNavAltMarkup");
-    toggler.setAttribute("aria-expanded", "false");
-    toggler.setAttribute("aria-label", "Attiva menu");
-    toggler.append(togglerIcon);
-
-    const menu_1 = document.createElement("a");
-    menu_1.classList.add("nav-link");
-    menu_1.classList.add("active");
-    menu_1.setAttribute("aria-current", "page");
-    if (currentPageIndex == -1) {
-        menu_1.setAttribute("href", "#");
-    }
-    else {
-        menu_1.setAttribute("href", "index.html");
-    }
-    menu_1.innerHTML = "Il gioco";
-
-    const menu_2 = document.createElement("a");
-    menu_2.classList.add("nav-link");
-    menu_2.classList.add("disabled");
-    menu_2.setAttribute("href", "#");
-    menu_2.innerHTML = "Strategie base";
-
-    const menu_3 = document.createElement("a");
-    menu_3.classList.add("nav-link");
-    menu_3.classList.add("disabled");
-    menu_3.setAttribute("href", "#");
-    menu_3.innerHTML = "Tutte le strategie";
-
-    const menu = document.createElement("div");
-    menu.classList.add("navbar-nav");
-    menu.append(menu_1);
-    menu.append(menu_2);
-    menu.append(menu_3);
-
-    const collapse = document.createElement("div");
-    collapse.classList.add("collapse");
-    collapse.classList.add("navbar-collapse");
-    collapse.setAttribute("id", "navbarNavAltMarkup");
-    collapse.append(menu);
-
     const container = document.createElement("div");
     container.classList.add("container-xxl");
     container.append(brand);
-    container.append(toggler);
-    container.append(collapse);
 
     const nav = document.createElement("nav");
     nav.classList.add("navbar");
@@ -382,7 +706,43 @@ function initHeader(currentPageIndex) {
 
 }
 
-function initOffcanvas(json, currentPageIndex) {
+function addPage(page, ul) {
+    const li = document.createElement("li");
+    li.classList.add("nav-item");
+    ul.append(li);
+
+    const a = document.createElement("a");
+    a.classList.add("link-dark");
+    a.classList.add("link-offset-2");
+    a.classList.add("link-underline-opacity-0");
+    a.classList.add("link-underline-opacity-100-hover");
+    a.setAttribute("href", "../" + page.href);
+    a.innerHTML = page.title;
+    li.append(a);
+}
+
+function addSection(section, ul) {
+    const li = document.createElement("li");
+    li.classList.add("nav-item");
+    li.classList.add("pb-3");
+    ul.append(li);
+
+    const a = document.createElement("a");
+    a.classList.add("link-dark");
+    a.classList.add("link-offset-2");
+    a.classList.add("link-underline-opacity-0");
+    a.classList.add("link-underline-opacity-100-hover");
+    a.setAttribute("href", "../" + section.href);
+    a.innerHTML = section.title;
+    li.append(a);
+
+    const ul2 = document.createElement("ul");
+    li.append(ul2);
+
+    section.pages.forEach((page) => addPage(page, ul2));
+}
+
+function initOffcanvas(json) {
     const offcanvas = document.createElement("div");
     offcanvas.classList.add("offcanvas");
     offcanvas.classList.add("offcanvas-start");
@@ -400,17 +760,7 @@ function initOffcanvas(json, currentPageIndex) {
     offcanvasTitle.setAttribute("id", "offcanvasLabel");
     offcanvasHeader.append(offcanvasTitle);
 
-    const aTitle = document.createElement("a");
-    aTitle.classList.add("nav-link");
-    if (currentPageIndex == -1) {
-        aTitle.setAttribute("href", "#");
-        aTitle.dataset.bsDismiss = "offcanvas";
-    }
-    else {
-        aTitle.setAttribute("href", json.href);
-    }
-    aTitle.innerHTML = json.title;
-    offcanvasTitle.append(aTitle);
+    offcanvasTitle.innerHTML = "Indice";
 
     const dismissButton = document.createElement("button");
     dismissButton.setAttribute("type", "button");
@@ -424,34 +774,11 @@ function initOffcanvas(json, currentPageIndex) {
     offcanvas.append(offcanvasBody);
 
     const ul = document.createElement("ul");
-    ul.classList.add("navbar-nav");
-    ul.classList.add("justify-content-end");
-    ul.classList.add("flex-grow-1");
-    ul.classList.add("pe-3");
+    ul.classList.add("nav");
+    ul.classList.add("flex-column");
     offcanvasBody.append(ul);
 
-    for (var i = 0; i < json.pages.length; i++) {
-        const item = json.pages[i];
-        const li = document.createElement("li");
-        li.classList.add("nav-item");
-        ul.append(li);
-
-        const a = document.createElement("a");
-        a.classList.add("nav-link");
-        if (i == currentPageIndex) {
-            a.classList.add("active");
-            a.setAttribute("aria-current", "page")
-            a.setAttribute("href", "#");
-            a.dataset.bsDismiss = "offcanvas";
-        }
-        else {
-            a.setAttribute("href", item.href);
-        }
-
-        a.innerHTML = item.title;
-        li.append(a);
-    }
-
+    json.sections.forEach((section) => addSection(section, ul))
 }
 
 function buildPreviousNext(previous, symbol, page) {
@@ -460,7 +787,7 @@ function buildPreviousNext(previous, symbol, page) {
 
     const a = document.createElement("a");
     a.classList.add("page-link");
-    a.setAttribute("href", page.href);
+    a.setAttribute("href", "../" + page.href);
     a.setAttribute("aria-label", "Previous");
     li.append(a);
 
@@ -503,6 +830,7 @@ function buildOffcanvasButton() {
 
 function buildPagination(json, prevPage, nextPage) {
     const nav = document.createElement("nav");
+    nav.classList.add("my-3");
 
     const ul = document.createElement("ul");
     ul.classList.add("pagination");
@@ -521,24 +849,40 @@ function buildPagination(json, prevPage, nextPage) {
 }
 
 function initPage(json) {
-    const filename = window.location.pathname.split("/").pop();
-    const pageIndex = json.pages.findIndex(x => x.href == filename);
+    const urlSplitted = window.location.pathname.split("/")
+    const fileName = urlSplitted.pop();
+    const sectionName = urlSplitted.pop();
+    const sectionIndex = json.sections.findIndex(x => x.href == sectionName + "/index.html");
+    const section = json.sections[sectionIndex];
+    const pageIndex = section.pages.findIndex(x => x.href == sectionName + "/" + fileName);
     // se non lo trova => pageIndex == -1
     var prevPage = null;
     var nextPage = null;
     if (pageIndex > 0) {
-        prevPage = json.pages[pageIndex - 1];
+        prevPage = section.pages[pageIndex - 1];
     }
     else if (pageIndex == 0) {
-        prevPage = json;
+        prevPage = section;
     }
-    if (pageIndex < json.pages.length - 1) {
-        nextPage = json.pages[pageIndex + 1];
+    else {
+        if (sectionIndex > 0) {
+            const prevSection = json.sections[sectionIndex - 1];
+            prevPage = prevSection.pages[prevSection.pages.length - 1];
+        }
+    }
+    if (pageIndex < section.pages.length - 1) {
+        nextPage = section.pages[pageIndex + 1];
+    }
+    else {
+        if (sectionIndex < json.sections.length - 1) {
+            nextPage = json.sections[sectionIndex + 1];
+        }
     }
 
-    initOffcanvas(json, pageIndex);
-    initHeader(pageIndex);
+    initOffcanvas(json);
+    initHeader();
 
-    document.getElementById("othello-content").prepend(buildPagination(json, prevPage, nextPage));
-    document.getElementById("othello-content").append(buildPagination(json, prevPage, nextPage));
+    const othelloContent = document.getElementById("othello-content");
+    othelloContent.prepend(buildPagination(json, prevPage, nextPage));
+    othelloContent.append(buildPagination(json, prevPage, nextPage));
 }

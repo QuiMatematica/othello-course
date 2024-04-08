@@ -4,8 +4,9 @@ import { EMPTY } from './position.js';
 
 export let animatingFlip = false;
 
+const xmlns = 'http://www.w3.org/2000/svg';
+
 export function createStone() {
-    const xmlns = 'http://www.w3.org/2000/svg';
     const svg = document.createElementNS(xmlns, 'svg');
     svg.setAttributeNS(null, 'viewBox', '0 0 100 100');
 
@@ -120,13 +121,19 @@ export default class Board {
     }
 
     resetGame() {
-        console.log('Resetting game');
-
-        // Remove any state classes from the game board.
         for (const div of this.gameBoard.querySelectorAll('.square')) {
             div.classList.remove('black');
             div.classList.remove('white');
             div.classList.remove('flip');
+        }
+    }
+
+    setStone(x, y, color) {
+        if (color == WHITE) {
+            this.grid[y][x].classList.add('white');
+        }
+        else if (color == BLACK) {
+            this.grid[y][x].classList.add('black');
         }
     }
 
@@ -176,6 +183,10 @@ export default class Board {
         return color == 'white' ? 'black' : 'white';
     }
 
+    isSquareEmpty(x, y) {
+        return Board.isEmpty(this.grid[y][x]);
+    }
+
     // True if the square is empty.
     static isEmpty(div) {
         return !div.classList.contains('black') && !div.classList.contains('white');
@@ -184,6 +195,80 @@ export default class Board {
     // True if the square belongs to that player.
     static isColor(div, color) {
         return div.classList.contains(color);
+    }
+
+    addASquares(add) {
+        this.addLetter(0, 3, "A");
+        this.addLetter(3, 0, "A");
+        this.addLetter(0, 4, "A");
+        this.addLetter(3, 7, "A");
+        this.addLetter(7, 3, "A");
+        this.addLetter(4, 0, "A");
+        this.addLetter(7, 4, "A");
+        this.addLetter(4, 7, "A");
+    }
+
+    addBSquares(add) {
+        this.addLetter(0, 2, "B");
+        this.addLetter(2, 0, "B");
+        this.addLetter(0, 5, "B");
+        this.addLetter(2, 7, "B");
+        this.addLetter(7, 2, "B");
+        this.addLetter(5, 0, "B");
+        this.addLetter(7, 5, "B");
+        this.addLetter(5, 7, "B");
+    }
+
+    addCSquares(add) {
+        this.addLetter(0, 1, "C");
+        this.addLetter(1, 0, "C");
+        this.addLetter(0, 6, "C");
+        this.addLetter(1, 7, "C");
+        this.addLetter(7, 1, "C");
+        this.addLetter(6, 0, "C");
+        this.addLetter(7, 6, "C");
+        this.addLetter(6, 7, "C");
+    }
+
+    addXSquares(add) {
+        this.addLetter(1, 1, "X");
+        this.addLetter(1, 6, "X");
+        this.addLetter(6, 1, "X");
+        this.addLetter(6, 6, "X");
+    }
+
+    addLetter(x, y, letter) {
+        const square = this.grid[y][x];
+
+        const textNode = document.createTextNode(letter); // last/deepest child
+
+        const textElement = document.createElementNS(xmlns, 'text'); // first/deepest parent
+
+        if (Board.isColor(square, "black")) {
+            textElement.setAttributeNS(null, 'fill', 'white');
+            textElement.setAttributeNS(null, 'stroke', 'white');
+        }
+        else {
+            textElement.setAttributeNS(null, 'fill', 'black');
+            textElement.setAttributeNS(null, 'stroke', 'black');
+        }
+        textElement.setAttributeNS(null, 'x', '50');
+        textElement.setAttributeNS(null, 'y', '55');
+        textElement.setAttributeNS(null, 'alignment-baseline', "middle");
+        textElement.setAttributeNS(null, 'text-anchor', "middle");
+        if (letter.length == 1) {
+            textElement.setAttributeNS(null, 'font-size', 80);
+        }
+        else {
+            textElement.setAttributeNS(null, 'font-size', 60);
+        }
+        textElement.append(textNode);
+        square.firstChild.append(textElement); // append deepest child to first parent
+    }
+
+    removeLetter(x, y) {
+        const square = this.grid[y][x];
+        square.getElementsByTagName("text").item(0).remove();
     }
 
 }

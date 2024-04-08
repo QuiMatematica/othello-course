@@ -9,11 +9,12 @@
     "--O##---",
     "-####---"
   ],
-  "moves": ["C5"],
-  "00": "Il nero sta per giocare in C5. Quali pedine girerà?",
-  "C5": "Il nero ha posizionato una pedina in C5 e ha girato 9 pedine.",
-  "controls": {
-    "previous": false,
-    "last": false
-  }
+  "comment": "Il nero sta per giocare in C5. Quali pedine girerà?",
+  "moves":
+  [
+    {
+      "move": "C5",
+      "comment": "Il nero ha posizionato una pedina in C5 e ha girato 9 pedine."
+    }
+  ]
 }

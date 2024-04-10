@@ -46,7 +46,6 @@ class RefereeBoard {
 
     constructor(container, counter) {
         const emptyPosition = Position.getStartingPosition();
-        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
         this.board = new Board(container, counter, staticBoardOnClick);
         this.board.setPosition(emptyPosition);
         this.score = new Score(container, this.board);
@@ -85,7 +84,6 @@ class SequenceBoard {
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
-        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
         this.board = new Board(container, counter, sequenceBoardOnClick);
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
@@ -283,7 +281,6 @@ class ClickOnBoard {
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
-        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
         this.board = new Board(container, counter, clickOnClick);
         this.board.setPosition(this.currentPosition);
         this.comment = new PositionComment(container);
@@ -443,7 +440,6 @@ class MatchFileBoard {
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
-        // staticBoardOnClick perché non deve esserci interazione sulla scacchiera
         this.board = new Board(container, counter, staticBoardOnClick);
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);

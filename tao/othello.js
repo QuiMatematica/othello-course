@@ -673,7 +673,7 @@ function matchOnEndClick(event) {
 }
 
 function loadIndex() {
-    const sectionIndex = "../index.json";
+    const sectionIndex = "../index.json#20240410";
     let json;
     fetch(sectionIndex)
         .then((response) => response.json())

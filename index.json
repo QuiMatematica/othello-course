@@ -77,6 +77,16 @@
 					"title": "Quante pedine?"
 				}
 			]
+		},
+		{
+			"href": "strategie-fondamentali/index.html",
+			"title": "Strategie fondamentali",
+			"pages": [
+				{
+					"href": "strategie-fondamentali/pedine-stabili.html",
+					"title": "Le pedine stabili"
+				}
+			]
 		}
 	]
 }

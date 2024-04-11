@@ -1,0 +1,30 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "OOO#OOOO",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "-OOOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco passa ancora."
+    },
+    {
+      "move": "H8",
+      "comment": "Stiamo per giungere alla fine."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero vince 40 a 24"
+    }
+  ]
+}

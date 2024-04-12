@@ -1,0 +1,30 @@
+{
+  "position": [
+    "--###---",
+    "--####--",
+    "--#O##OO",
+    "--#O#O#O",
+    "--#OOOOO",
+    "----OOOO",
+    "---OOO--",
+    "---OO---"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Confidando che l'avversario non riesce ad andare nell'angolo, il bianco gioca in una casella X."
+    },
+    {
+      "move": "F8",
+      "comment": "Il nero si procura la pedina F3, che gli consentirà di conquistare l'angolo.<br>Il bianco non nessuna possibilità di rigirare tale pedina."
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero conquista l'angolo."
+    }
+  ]
+}

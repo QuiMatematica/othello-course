@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "OOO####O",
+    "-OOO#O#O",
+    "-#OOO##O",
+    "--O#O#OO",
+    "--O#O#OO",
+    "---OOOO-"
+  ],
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Il nero conquista la sua prima pedina stabile."
+    },
+    {
+      "move": "A6"
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero conquista sei pedine stabili sulla colonna H."
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero conquista cinque pedine stabili sulla riga 8. Inoltre anche G7 e G6 diventano stabili."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero conquista un'altra pedina stabile in B8. Da qui in poi sarà molto facile ottenere la vittoria."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "OOO##OOO",
+    "OOO###OO",
+    "OOO#OO#O",
+    "O#O####O",
+    "O-OO#O--",
+    "-OOOOO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero gioca in una casella X."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco conquista l'angolo ma..."
+    },
+    {
+      "move": "G8",
+      "comment": "... il nero si incastra nella casella rimasta libera. Tale pedina non può più essere girata, quindi è stabile! Inoltre ora il nero può prendere l'angolo sud ovest."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco compatta il lato est: 6 pedine stabili."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo e 7 pedine stabili."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco occupa la casella libera."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero si prende il lato ovest e altre 6 pedine stabili. La posizione è favorevole per il nero."
+    }
+  ]
+}

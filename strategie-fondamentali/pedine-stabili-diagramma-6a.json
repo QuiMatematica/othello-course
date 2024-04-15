@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--######",
+    "--O#####",
+    "--OOOO#-",
+    "-OO###O-",
+    "--#OOO--",
+    "--OOO---"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco non conosce l'importanza degli angoli e muove in una casella X."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero conquista la sua prima pedina stabile. Inoltre, nelle mosse successive, potrà giocare in G8, F8, in B8 e in H7 estendendo il numero di pedine stabili."
+    }
+  ]
+}

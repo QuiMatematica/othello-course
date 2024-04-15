@@ -1,0 +1,45 @@
+{
+  "position": [
+    "#OOOOOO-",
+    "OOOOOO-O",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "OOOOOOOO",
+    "--------"
+  ],
+  "moves": [
+    {
+      "move": "H1"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "C8"
+    },
+    {
+      "move": "D8"
+    },
+    {
+      "move": "E8"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "F8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H8",
+      "comment": "Nessuna delle pedine bianche era stabile."
+    }
+  ]
+}

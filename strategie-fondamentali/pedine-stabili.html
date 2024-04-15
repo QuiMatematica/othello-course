@@ -1,0 +1,247 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Le pedine stabili</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../tao/othello.css#20240410">
+    <script type="module">
+        import { init } from "../tao/othello.js#20240410";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Le pedine stabili</h1>
+
+		<h2>La tecnica della massimizzazione</h2>
+
+		<p>Nell'Othello vince il giocatore che, al termine delle mosse
+		legali, ha il maggior numero di pedine.</p>
+
+		<p>Attenzione: per determinare il vincitore, le pedine vanno contate "al termine delle mosse legali".
+			Non è richiesto che durante tutta la partita si abbia il maggior numero di pedine.</p>
+
+		<p>Eppure i principianti tendono a trasformare
+		questo obiettivo "a lungo termine" in un obiettivo "a breve termine": a ogni mossa
+		girano quante più pedine possibili. Questa è chiamata <b>tecnica della
+		massimizzazione</b>.</p>
+
+		<p>Dopo un po' di partite con giocatori più esperti si comprende, tuttavia, che questa
+		non è la strategia migliore.</p>
+
+		<p>Un classico esempio è quello del diagramma 1. Il bianco ha 59 pedine,
+		mentre il nero ne ha solo una. Chi vincerà?</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-1.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 1: il nero muove e...
+			</div>
+		</div>
+
+		<p>Il nero vince per 40 a 24!</p>
+
+		<p>Questo è chiaramente un esempio estremo, ma è comunque indicativo. E deve farci riflettere.</p>
+
+		<ul>
+		  <li>Perché il nero ha potuto girare tutte quelle pedine?</li>
+		  <li>&Egrave; possibile, in qualche modo, garantirsi che alcune pedine non vengano più girate?</li>
+		</ul>
+
+		<h2>Le pedine stabili</h2>
+
+		<p>Nota questo fatto:
+			<u>una pedina posizionata in un angolo non può più essere girata</u>.
+		Infatti non è possibile imprigionarla tra due pedine avversarie
+		sulla stessa riga, colonna o diagonale.</p>
+
+		<p>Inoltre, una volta che un angolo è occupato da una pedina, anche le pedine
+		adiacenti orizzontalmente o verticalmente del medesimo colore non possono essere girate.
+			Per esempio: tutte le pedine mostrate nel diagramma 2 non possono essere girate.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-2.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 2: pedine stabili.
+			</div>
+		</div>
+
+		<div class="card border-primary mb-3">
+			<div class="card-header">Definizione</div>
+			<div class="card-body">
+				<p class="card-text">Chiamiamo <b>stabili</b> le pedine che non possono essere girate.</p>
+			</div>
+		</div>
+
+		<p>Le pedine posizionate negli angoli sono sempre stabili, grazie alla loro particolare posizione sulla
+		tavola.</p>
+
+		<p>Altre pedine possono diventare stabili, per esempio se adiacenti a un angolo. Hai già visto il diagramma 2
+		in cui tutte le pedine sono stabile. Ma ne possiamo aggiungere altre: anche tutte le pedine del diagramma 3
+		sono stabili.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-3a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 3: pedine stabili.
+			</div>
+		</div>
+
+		<p>Ma attenzione: non è sempre facile capire se una pedina è stabile o meno. Per esempio,
+			la pedina G2 del diagramma 4 non è stabile perché può ancora essere girata con
+		la mossa H3 del bianco. La stessa cosa vale per B3: può essere girata dal bianco muovendo in A4.
+			Sono stabili, invece, tutte le pedine nere della colonna H.
+			Come pure sono stabili le pedine nere della colonna A e la pedina in B1.
+			Anche le pedine C1, D1, E1 ed F1 sono stabili: anche se non sono
+		appoggiate a un angolo di uguale colore non possono essere girate.
+		Non sono stabili, infine, le pedine bianche della riga 8: possono essere girate dal nero muovendo in B8
+		(e diventano stabili).</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-4a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 4: la pedina G2 non è stabile.
+			</div>
+		</div>
+
+		<p>Mettiti alla prova con il conteggio di pedine stabili. Nella posizione del diagramma 5, il nero ha un'unica
+		pedina che, essendo in un angolo, è stabile. Sapresti dire quante delle ?? pedine bianche sono stabili?</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-5.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 5: quante pedine stabili ha il bianco? (Esempio di Alessandro Di Mattei.)
+			</div>
+		</div>
+
+		<p>Per tornare all'esempio iniziale, quello del diagramma 1, il bianco ha perso perché aveva molte pedine
+			instabili, che il nero è riuscito a girare in poche mosse.</p>
+
+		<div class="card border-primary mb-3">
+			<div class="card-header">Strategia</div>
+			<div class="card-body">
+				<p class="card-text">Non preoccuparti di massimizzare il numero di pedine del tuo colore.
+				Preoccupati di <b>massimizzare il numero di pedine stabili</b>.</p>
+			</div>
+		</div>
+
+		<p>Quindi <b>gli angoli sono caselle strategicamente molto importanti</b>.
+			Se conquistati, possono aiutarti a raggiungere la vittoria.</p>
+
+		<p>Attenzione: "possono aiutarti". Dopotutto un angolo è un'unica pedina che conta per 1 ai fini del
+		punteggio. Ma se partendo da un angolo riesci a estendere il controllo su tutta la tavola, conquisterai
+		la vittoria facilmente.</p>
+
+		<p>Per esempio, nella
+		situazione del diagramma 6, il nero può muovere nell'angolo H8; nella sua mossa successiva
+		potrà poi giocare in H2, conquistando altre 6 pedine stabili; dopo ancora può giocare in C8
+		e conquistare altre 5 pedine stabili.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-5a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 6: il nero può conquistare delle pedine stabili.
+			</div>
+		</div>
+
+		<h1>Le caselle X e C</h1>
+
+		<p>Per non cedere all'avversario gli angoli, è necessario
+		giocare con molta attenzione nelle caselle X e nelle caselle C.</p>
+
+		<p>Per esempio, se nella situazione del diagramma 7 il bianco gioca in B7, il nero potrà
+		conquistare l'angolo A8.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-6a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 7: mossa al bianco.
+			</div>
+		</div>
+
+		<p>A volte una mossa in una casella X (o una casella C) può sembrarti sicura perché l'avversario non
+			ha accesso all'angolo. Ma è possibile
+		che questi riesca in una o più mosse a procurarsi le pedine necessarie per raggiungerlo.</p>
+
+		<p>Nel diagramma 8 il bianco gioca in G2, rassicurato dal fatto che il nero non può andare nell'angolo. Ma...</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-7a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 8: conquista di un angolo.
+			</div>
+		</div>
+
+		<p>Anche muovere in una casella C, specie se isolata, è un notevole rischio. Nel diagramma
+		9 il nero ha appena giocato nella casella B1, evidentemente non si è accorto che
+		il bianco infatti ha la certezza di occupare l'angolo A1 in due mosse.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-8a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 9: conquista di un angolo.
+			</div>
+		</div>
+
+		<h2>Sacrifici e vantaggi</h2>
+
+		<p>Riassumo gli ultimi punti cui siamo arrivati.</p>
+
+		<ul>
+			<li>Gli angoli e le pedine adiacenti a essi sono stabili.</li>
+			<li>Quindi, conquistare un angolo è strategicamente importante.</li>
+			<li>Quindi, può essere pericoloso giocare nelle caselle X e nelle caselle C.</li>
+		</ul>
+
+		<p>Attenzione però: non è vero in assoluto che conquistare un angolo porti alla vittoria,
+		come non è vero in assoluto che giocare in una casella X porti alla sconfitta.</p>
+
+		<p>Spesso può essere estremamente vantaggioso sacrificare un angolo per ottenere dei vantaggi
+		maggiori, soprattutto se in termini di pedine stabili.</p>
+
+		<p>Guarda, per esempio, la partita di diagramma 10.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-9.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 10: sacrificio di un angolo in cambio di pedine stabili.
+			</div>
+		</div>
+
+		<p>La mossa che il nero ha giocato è un attacco alle cinque pedine bianche
+		del lato sud. Nell'Othello, quasi tutti gli attacchi prevedono il sacrificio di un angolo
+		in cambio di un considerevole numero di pedine stabili (o di una posizione migliore).</p>
+
+	</div>
+
+</body>
+</html>

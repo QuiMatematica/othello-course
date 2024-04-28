@@ -1,0 +1,20 @@
+{
+  "position": [
+    "-#####--",
+    "#-####--",
+    "#####OOO",
+    "##OO#O#O",
+    "#OO##OOO",
+    "#OOOO-OO",
+    "---OO---",
+    "--------"
+  ],
+  "turn": "black",
+  "comment": "Obiettivo: chiudere il gioco al bianco.",
+  "moves": [
+    {
+      "move": "A7",
+      "comment": "Bravissimo: ora il bianco ha due mosse: B2 che cede l'angolo A1 e B7 che cede l'angolo A8."
+    }
+  ]
+}

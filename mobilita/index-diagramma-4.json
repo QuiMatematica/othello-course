@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--------",
+    "-----O-O",
+    "---##OOO",
+    "--O#OO#O",
+    "--O##O#O",
+    "--OOO#OO",
+    "--####-O",
+    "-#####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C3",
+      "comment": "Obiettivo di questa mossa è attaccare il lato sud. Cedendo l'angolo H8 il bianco perde tutto il lato est, ma conquista molte pedine stabili a sud. &Egrave; la sua unica speranza di poter ottenere qualcosa da questa partita."
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco attacca il lato sud. Al momento il nero non ha la possibilità di accedere all'angolo H8."
+    },
+    {
+      "move": "B4",
+      "comment": "Il nero cerca un accesso all'angolo."
+    },
+    {
+      "move": "A4",
+      "comment": "Il bianco toglie l'accesso all'angolo. Il nero è ancora in vantaggio, ma dovrà stare molto attento a non perderlo."
+    }
+  ]
+}

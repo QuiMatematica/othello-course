@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--------",
+    "-----O-O",
+    "---##OOO",
+    "--###O#O",
+    "--##O#OO",
+    "--OO##OO",
+    "--OOO#--",
+    "--OOOOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E2"
+    },
+    {
+      "move": "D1",
+      "comment": "Ora il nero ha 7 mosse; il bianco 8 mosse."
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "B7",
+      "comment": "Questa mossa può sorprendere perché sembra cedere l'angolo, ma..."
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero ora è costretto a giocare A7, B8 o H7: tutte le mosse cedono un angolo! Malgrado il bianco abbia occupato due caselle X non si trova in una situazione pericolosa."
+    }
+  ]
+}

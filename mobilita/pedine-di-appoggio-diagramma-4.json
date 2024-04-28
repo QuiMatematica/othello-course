@@ -1,0 +1,33 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OOO-",
+    "---OO#O#",
+    "--OO##O#",
+    "--O##OO#",
+    "--#OO#-#",
+    "--####--"
+  ],
+  "turn": "white",
+  "comment": "Conteggio per il bianco:<br>Numero di mosse = 4.<br>Pedine di appoggio = 2.",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Numero di mosse = 2.<br>Pedine di appoggio = 1.<br>La perdita di una pedina di appoggio ha causato la perdita di due mosse in un colpo solo!"
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero non offre nuove pedine di appoggio, quindi neanche mosse.<br>Numero di mosse = 2.<br>Pedine di appoggio = 1."
+    },
+    {
+      "move": "B7",
+      "comment": "Numero di mosse = 0.<br>Pedine di appoggio = 0.<br>Se il nero non gli offre nuove pedine di appoggio al prossimo turno dovrà passare."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero riesce a non dare nuove pedine di appoggio al bianco: questi deve passare!"
+    }
+  ]
+}
+

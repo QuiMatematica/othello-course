@@ -1,0 +1,45 @@
+{
+  "position":
+    [
+      "--OOOO--",
+      "O-OOOO--",
+      "O#####--",
+      "O##OO#--",
+      "O##OO#--",
+      "OO###---",
+      "--#-----",
+      "--------"
+    ],
+  "turn": "white",
+  "comment": "Compito: riduci la mobilità del nero in modo da costringerlo a passare entro 3 mosse.",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Bravo: il nero non ha accesso all'angolo e dovrà giocare in una casella C."
+    },
+    {
+      "move": "B1",
+      "comment": "Prima mossa"
+    },
+    {
+      "move": "A1",
+      "comment": "Ok!"
+    },
+    {
+      "move": "G2",
+      "comment": "Seconda mossa"
+    },
+    {
+      "move": "G1",
+      "comment": "Bravissimo: questo era il passaggio più difficile."
+    },
+    {
+      "move": "A7",
+      "comment": "Terza mossa. Adesso dovresti bloccarmi del tutto..."
+    },
+    {
+      "move": "A8",
+      "comment": "Complimenti: ci sei riuscito! Non ho più mosse a disposizione e devo passare."
+    }
+  ]
+}

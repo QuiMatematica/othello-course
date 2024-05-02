@@ -94,8 +94,8 @@
 			</div>
 		</div>
 
-		<p>Nel diagramma 4 ho cambiato il colore di una sola pedina. Ora il bianco
-		ha comunque 4 mosse, ma solo 2 pedine di appoggio: avrà solo due mosse
+		<p>Rispetto al precedente, nel diagramma 4 cambia colore una sola pedina. Il bianco
+		ha comunque 4 mosse a disposizione, ma solo 2 pedine di appoggio: avrà solo due mosse
 		prima di dover passare.</p>
 
 		<div class="card mx-auto board-card my-3">
@@ -107,63 +107,27 @@
 			</div>
 		</div>
 
-		<p>A questo punto si potrebbe pensare che le pedine di appoggio siano
-		più importanti della mobilità. Questo non è vero in assoluto: a parità di
-		pedine di appoggio è possibile che una mossa in più faccia la differenza.</p>
-
-		<p>Confrontiamo per esempio i diagramma 5 e 6. In entrambi i casi il bianco ha
-		3 pedine di appoggio a disposizione, ma nel primo diagramma le mosse a sua
-		disposizione sono 4, nel secondo solo 3. Ha perso la mossa B6 che era
-		l'unica non pericolosa.</p>
-
-		<div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-
-                <div class="card mx-auto board-card my-3">
-					<div class="card-body">
-						<div class="match-file-board" data-file="pedine-di-appoggio-diagramma-5.json"></div>
-					</div>
-					<div class="card-footer text-body-secondary text-center">
-						Diagramma 5: 4 mosse a disposizione.
-					</div>
-				</div>
-
-            </div>
-            <div class="col">
-
-                <div class="card mx-auto board-card my-3">
-					<div class="card-body">
-						<div class="match-file-board" data-file="pedine-di-appoggio-diagramma-6.json"></div>
-					</div>
-					<div class="card-footer text-body-secondary text-center">
-						Diagramma 6: 3 mosse a disposizione.
-					</div>
-				</div>
-
-            </div>
-        </div>
-
 		<h2>Massimizzare la mobilità</h2>
 
-		<p>Osserviamo il diagramma 7: è una posizione d'apertura molto conosciuta e
-		considerata ben bilanciata.</p>
+		<p>Osserva il diagramma 5: è una posizione d'apertura molto conosciuta e
+		considerata bilanciata.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="pedine-di-appoggio-diagramma-7.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 7: l'apertura Tamenori.
+				Diagramma 5: l'apertura Tamenori.
 			</div>
 		</div>
 
-		<p>Confrontiamo le mosse A6 e B6. Se il bianco gioca A6, utilizza la
-		pedina di appoggio B5 e in una mossa successiva potrebbe giocare B6,
-		utilizzando la pedina di appoggio C6. Se, invece, il bianco gioca B6,
+		<p>Confrontiamo le mosse A6 e B6. Se il bianco gioca A6 utilizza la
+		pedina di appoggio B5, e in una mossa successiva potrà giocare B6
+		utilizzando la pedina di appoggio C6. Se, invece, il bianco gioca B6
 		gira sia la pedina B5 sia la pedina C6 e successivamente non potrà
 		più giocare in A6. Con questa seconda mossa, cioè, si è "bruciato" una
 		pedina di appoggio in più. Tra le due mosse è, quindi, sicuramente migliore
-		la A6.</p>
+		A6.</p>
 
 		<p>Tornando ai concetti di pedine esterne e interne possiamo notare che ogni
 		pedina esterna è potenzialmente una pedina di appoggio per le mosse avversarie.
@@ -173,72 +137,51 @@
 		<p>Al contrario, le pedine interne non possono diventare pedine di appoggio.
 		Inoltre ciascuna pedina interna può mettere a disposizione del giocatore fino
 		a 8 mosse possibili, aumentando così la sua mobilità. Facendo ancora
-		riferimento al diagramma 7, il nero ha 2 pedine interne (C4 e D4) che, da
+		riferimento al diagramma 5, il nero ha due pedine interne (C4 e D4) che, da
 		sole, permettono 7 mosse (A2, A4, E2 e F7 la prima pedina; D1, B2 e D7 la seconda);
-		il bianco ha 1 pedina interna (D5) che permette 4 mosse (A5, B7, F3, G5).</p>
+		il bianco ha una pedina interna (D5) che permette 4 mosse (A5, B7, F3, G5).</p>
 
-		<p>Riassumendo: per cercare di massimizzare la propria mobilità bisogna:</p>
+		<p>Riassumendo: </p>
 
-		<ul>
-		  <li>utilizzare meno pedine di appoggio possibile (preferibilmente
-		  una sola);</li>
-		  <li>aumentare il numero delle proprie pedine interne;</li>
-		  <li>limitare il numero delle proprie pedine esterne, soprattutto se sono
-		  di appoggio alle mosse avversarie.</p>
-		</ul>
-
-		<p>Quindi, se sei indeciso tra due mosse, scegli quella che gira meno pedine
-		di appoggio possibile, in modo da non diminuire la tua mobilità futura.</p>
+		<div class="card border-primary mb-3">
+			<div class="card-header">Strategia</div>
+			<div class="card-body">
+				<p class="card-text">Per massimizzare la mobilità devi:</p>
+				<ul>
+					<li>utilizzare poche pedine di appoggio (preferibilmente
+					una sola);</li>
+					<li>aumentare il numero delle tue pedine interne;</li>
+					<li>limitare il numero delle tue pedine esterne, soprattutto se sono
+					di appoggio per l'avversario.</p>
+				</ul>
+			</div>
+		</div>
 
 		<h2>Tocca a te</h2>
 
-		<p>Nel diagramma 8, seleziona le pedine di appoggio a disposizione del
-		giocatore bianco.</p>
+		<p>Nel diagramma 6, seleziona le pedine di appoggio per il bianco.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="click-on-board" data-file="pedine-di-appoggio-quiz-1.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 8: seleziona le pedine di appoggio per il bianco.
+				Diagramma 6: seleziona le pedine di appoggio per il bianco.
 			</div>
 		</div>
 
-		<p>Nel diagramma 9 giochi con il bianco. Il nero ha poca mobilità: devi
-		sfruttare questo vantaggio e costringere l'avversario a passare entro tre mosse.</p>
-
-		<div class="card mx-auto board-card my-3">
-			<div class="card-body">
-				<div class="sequence-board" data-file="pedine-di-appoggio-quiz-2.json"></div>
-			</div>
-			<div class="card-footer text-body-secondary text-center">
-				Diagramma 9: costringi l'avversario a passare.
-			</div>
-		</div>
-
-		<p>Nel diagramma 10 giochi con il bianco. Devi gioca la mossa che non cede
-		angoli all'avversario e che utilizza il minor numero di pedine di appoggio
-		possibile.</p>
+		<p>Nel diagramma 7 giochi con il bianco. Escludi subito le mosse che
+			cedono un angolo all'avversario. Tra le mosse rimaste,
+			gioca quella che utilizza il minor numero di pedine di appoggio.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="sequence-board" data-file="pedine-di-appoggio-quiz-3.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 10: risparmia pedine di appoggio.
+				Diagramma 7.
 			</div>
 		</div>
-
-		<p align="center">
-		<applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="380"
-				code="it.claudiosignorini.tao.TaoApplet.class"
-				hspace="0" vspace="0" align="top">
-			<param name="function" value="sequence">
-			<param name="sequenceFile" value="UnaTecnicaSemplice1.txt">
-			Mi dispiace: il tuo browser non supporta le Applet Java.
-		</applet>
-		<br>
-		</p>
 
 	</div>
 

@@ -87,6 +87,20 @@
 					"title": "Le pedine stabili"
 				}
 			]
+		},
+		{
+			"href": "mobilita/index.html",
+			"title": "La mobilità",
+			"pages": [
+				{
+					"href": "mobilita/pedine-di-appoggio.html",
+					"title": "Le pedine di appoggio"
+				},
+				{
+					"href": "mobilita/muri.html",
+					"title": "I muri"
+				}
+			]
 		}
 	]
 }

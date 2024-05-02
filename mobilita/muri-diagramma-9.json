@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--OOOOO#",
+    "--##O##-",
+    "--#O#O#-",
+    "--####O-",
+    "--##OO--",
+    "----OOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "D8",
+      "comment": "Il nero minaccia l'angolo H8. Il bianco può salvarsi muovendo in C8, ma..."
+    },
+    {
+      "move": "C8",
+      "comment": " ... si forma un lungo muro bianco. Il nero ne può approfittare e, giocando sul lato est, potrà presto ottenere l'angolo H8."
+    },
+    {
+      "move": "H6"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "H4"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero ha ottenuto con poco sforzo la possibilità di accedere a due angoli. La partita è già vinta!"
+    }
+  ]
+}
+

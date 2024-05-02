@@ -15,7 +15,7 @@
   "moves": [
     {
       "move": "C2",
-      "comment": "Complimenti: hai girato solo una pedina di appoggio. Tutte le altre mosse ne giravano almeno due (o cedevano un angolo al bianco)."
+      "comment": "Complimenti: hai girato solo una pedina di appoggio. Tutte le altre mosse ne giravano almeno due (o cedevano un angolo al nero)."
     }
   ]
 }

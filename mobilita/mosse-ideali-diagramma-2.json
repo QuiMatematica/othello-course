@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----#---",
+    "---##O--",
+    "--###O--",
+    "--O##O--",
+    "---O##--",
+    "--OO-##-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C7",
+      "comment": "Il bianco ha girato le pedina E5 e D6."
+    }
+  ]
+}

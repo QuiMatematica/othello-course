@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---##---",
+    "---##O--",
+    "--#OO#--",
+    "--OO----",
+    "--------",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "F3",
+      "comment": "Il bianco ha girato solo la pedina E4 che è diventata interna. Inoltre ha aggiunto una sola pedina di appoggio al nero."
+    }
+  ]
+}

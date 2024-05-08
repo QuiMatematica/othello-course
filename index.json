@@ -101,12 +101,24 @@
 					"title": "I muri"
 				},
 				{
+					"href": "mobilita/evaporazione.html",
+					"title": "Evaporazione"
+				},
+				{
 					"href": "mobilita/compattezza.html",
 					"title": "La compattezza"
 				},
 				{
 					"href": "mobilita/mosse-ideali.html",
 					"title": "Le mosse ideali"
+				},
+				{
+					"href": "mobilita/togliere-mosse.html",
+					"title": "Togliere mosse all'avversario"
+				},
+				{
+					"href": "mobilita/usare-caselle-x.html",
+					"title": "Usare caselle X per la mobilità"
 				}
 			]
 		}

@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Usare caselle X per la mobilità</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../tao/othello.css#20240410">
+    <script type="module">
+        import { init } from "../tao/othello.js#20240410";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Usare caselle X per la mobilità</h1>
+
+		<p>La posizione del diagramma 2 è tratta dalla partita del
+		Campionato del Mondo del 1984 tra il giapponese Taniguchi e il francese Ralle,
+		vinta da quest'ultimo per 48 a 15 (esempio tratto da un articolo del 1988
+		del maestro Mauro Perotti). Tocca al nero che ha 8 mosse a disposizione,
+		mentre il bianco ne ha 9. La mobilità sembra praticamente pari. Eppure il nero
+		riuscirà presto a chiudere il gioco all'avversario.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="togliere-mosse-diagramma-2.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 2: Taniguchi - Ralle (Campionato del Mondo 1984)
+			</div>
+		</div>
+
+		<p>Come mai una situazione che sembrava equilibrata, in verità è
+		stata così disastrosa per il nero?</p>
+
+		<p>Il motivo è che il conteggio fatto non distingueva le mosse sicure
+		da quelle pericolose. Nella posizione di partenza ben quattro delle otto mosse
+		del nero erano pericolose (G2, B7, G7 e H7). E, a ogni mossa successiva,
+		il nero perde una mossa sicura e mantiene solo quelle pericolose.</p>
+
+		<p>Nello stimare la mobilità di un giocatore, quindi, è necessario anche
+		tener conto di quali mosse sono pericolose. Minimizzare la mobilità
+		dell'avversario non significa necessariamente ridurre il suo numero di mosse,
+		ma anche solo ridurre il numero delle sue mosse non pericolose.</p>
+
+		<p>Nel diagramma 7 giochi con il bianco. Il nero ha poca mobilità: devi
+		sfruttare questo vantaggio e costringere l'avversario a passare entro tre mosse.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="sequence-board" data-file="pedine-di-appoggio-quiz-2.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 9: costringi l'avversario a passare.
+			</div>
+		</div>
+
+
+	</div>
+
+</body>
+</html>

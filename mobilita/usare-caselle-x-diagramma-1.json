@@ -1,0 +1,42 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "O-O##O-O",
+    "OO##O##O",
+    "OOOO##OO",
+    "OOO###OO",
+    "OO##O#OO",
+    "-####O-O",
+    "-OOOOOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Sebbene sia una mossa in una casella X, questa G2 non è assolutamente pericolosa. Il bianco non ha nessuna possibilità di tagliare la diagonale e gli rimangono solo 3 mosse che cedono tutte un angolo."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero ne approfitta subito."
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco non ha più mosse."
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G7"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--OO-#--",
+    "-##O##--",
+    "--#O###-",
+    "--##O###",
+    "--#####-",
+    "-#####--",
+    "--###---",
+    "--#-----"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: chiudere del tutto il gioco del nero.",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Esatto. Ora il nero ha una sola mossa e non è certo buona."
+    },
+    {
+      "move": "E1",
+      "comment": "E adesso tu come rispondi?"
+    },
+    {
+      "move": "G1",
+      "comment": "Bravissimo. Il nero passa e non ti rimane che scegliere come accedere all'angolo A1."
+    }
+  ]
+}

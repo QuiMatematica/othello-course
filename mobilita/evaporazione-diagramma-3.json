@@ -1,0 +1,209 @@
+{
+  "moves": [
+    {
+      "move": "F5"
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "F3",
+      "comment": "Il carattere del nero comincia a palesarsi."
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "E6",
+      "comment": "Prova a contare quante mosse ha a disposizione il bianco e quante ne ha il nero."
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "C4",
+      "comment": "Riprova ora a fare il conteggio delle mosse a disposizione."
+    },
+    {
+      "move": "E7",
+      "comment": "Il bianco è disposto a rimanere con un'unica pedina."
+    },
+    {
+      "move": "E8"
+    },
+    {
+      "move": "C3",
+      "comment": "Tra le tre mosse a disposizione, il bianco sceglie quella che gira meno pedine, puntando anche a stare al centro della formazione."
+    },
+    {
+      "move": "F7"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "B4",
+      "comment": "Nuovamente il bianco è disposto a rimanere con un'unica pedina, ma non è un problema, anzi!"
+    },
+    {
+      "move": "A4"
+    },
+    {
+      "move": "C7"
+    },
+    {
+      "move": "B5"
+    },
+    {
+      "move": "A6",
+      "comment": "Il bianco imposta ora un nuovo stile di gioco. Sempre senza esagerare nella quantità di pedine, cerca di spostare l'azione sul bordo. Il nero, proprio perché ha poca mobilità, rischia di dover cedere un angolo. Il bianco invece non ha problemi: anche si trovasse chiuso ad ovest, può sempre giocare ad est, senza rischio di dover cedere angoli o posizioni favorevoli."
+    },
+    {
+      "move": "C8"
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "A3"
+    },
+    {
+      "move": "G4",
+      "comment": "Apparentemente questa mossa non è eccellente, perché sfonda il muro nero. Ma il bianco la compie ormai certo che il nero risponderà il H4."
+    },
+    {
+      "move": "H4",
+      "comment": "Infatti..."
+    },
+    {
+      "move": "D3",
+      "comment": "E adesso il bianco fa questa mossa in cui gira una sola pedina."
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "D7",
+      "comment": "Il bianco deve aprire da qualche parte, ma lo fa nel modo meno indolore possibile."
+    },
+    {
+      "move": "C2",
+      "comment": "Prova a contare quante mosse hanno i due colori a disposizione."
+    },
+    {
+      "move": "A7",
+      "comment": "La trappola sta per chiudersi."
+    },
+    {
+      "move": "D8"
+    },
+    {
+      "move": "F8",
+      "comment": "Facciamo sbilanciare il nero a sud."
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "A5",
+      "comment": "E attacco!"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero non ha più mosse. Comincia a passare e adesso il bianco farà man bassa di pedine stabili."
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H7",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "H6"
+    },
+    {
+      "move": "G6"
+    },
+    {
+      "move": "G5",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "G3"
+    },
+    {
+      "move": "H2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Completato il bordo est, adesso occupiamoci del nord."
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "F2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "G1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "D1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "B2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A2"
+    }
+  ]
+}

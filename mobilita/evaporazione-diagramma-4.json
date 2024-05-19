@@ -1,28 +1,39 @@
 {
   "position": [
-    "--OO-#--",
-    "-##O##--",
-    "--#O###-",
-    "--##O###",
-    "--#####-",
-    "-#####--",
-    "--###---",
-    "--#-----"
+    "--------",
+    "--------",
+    "----O---",
+    "--OOO#--",
+    "--OO##--",
+    "--O#OO--",
+    "--OOO---",
+    "-OOOOOO-"
   ],
-  "turn": "white",
-  "comment": "Obiettivo: chiudere del tutto il gioco del nero.",
+  "turn": "black",
   "moves": [
     {
-      "move": "B1",
-      "comment": "Esatto. Ora il nero ha una sola mossa e non è certo buona."
+      "move": "F7",
+      "comment": "Il nero pensa di giocare bene l'evaporazione, invece ha sbagliato mossa."
+    },
+    {
+      "move": "F3",
+      "comment": "Forse il bianco se n'è accorto o forse ha solo cercato di girare più pedine possibili, ma ora ha la possibilità di vincere per 64 a 0. Qualunque mossa faccia il nero, il bianco può girargli tutte le pedine."
+    },
+    {
+      "move": "D3",
+      "comment": "Il nero prova a sopravvivere."
+    },
+    {
+      "move": "D2",
+      "comment": "Ma il bianco gli mangia tutte le pedine."
+    },
+    {
+      "move": "E2",
+      "comment": "Ormai è finita."
     },
     {
       "move": "E1",
-      "comment": "E adesso tu come rispondi?"
-    },
-    {
-      "move": "G1",
-      "comment": "Bravissimo. Il nero passa e non ti rimane che scegliere come accedere all'angolo A1."
+      "comment": "Il bianco vince 64 a 0."
     }
   ]
 }

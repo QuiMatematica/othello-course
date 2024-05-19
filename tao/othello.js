@@ -11,8 +11,6 @@ import Score from './score.js'
 const boards = []
 
 export function init() {
-    loadIndex();
-
     document.querySelectorAll('.free-game-board').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
         boards.push(freeGame);

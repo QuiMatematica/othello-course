@@ -1,0 +1,26 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--O#----",
+    "--OO#O--",
+    "--O###--",
+    "---#----",
+    "--------",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "D2",
+      "comment": "Mossa di attesa."
+    },
+    {
+      "move": "F3"
+    },
+    {
+      "move": "D7",
+      "comment": "Muri contrapposti."
+    }
+  ]
+}

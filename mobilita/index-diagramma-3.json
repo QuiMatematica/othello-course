@@ -1,0 +1,78 @@
+{
+  "position": [
+    "--------",
+    "-----O-O",
+    "---OOOOO",
+    "--O#OO#O",
+    "--O##O#O",
+    "--OOO#OO",
+    "--####-O",
+    "-#####--"
+  ],
+  "turn": "white",
+  "comment": "Il bianco a una sola mossa a disposizione: G8.",
+  "moves": [
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero stabilizza il lato sud e si prepara a conquistare anche il lato est.<br>Il bianco ha di nuovo una sola mossa a disposizione."
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero conquista il lato est. Il bianco non ha mosse a disposizione e passa."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo A8 e si prepara a prendere tutta la riga 7."
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero prende tutta la riga 7: sono tutte pedine stabili. Il bianco non ha mosse e passa nuovamente. La vittoria è già in mano al nero che può vincere per 64 a 0."
+    },
+    {
+      "move": "A6"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "A5"
+    },
+    {
+      "move": "A4"
+    },
+    {
+      "move": "A3"
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "B5"
+    },
+    {
+      "move": "E2",
+      "comment": "Il nero vince 64 a 0."
+    }
+  ]
+}

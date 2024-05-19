@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--#O----",
+    "-OOOOO--",
+    "--O###--",
+    "---O----",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B3",
+      "comment": "Il nero offre al bianco una mossa ideale in B5."
+    },
+    {
+      "move": "B5",
+      "comment": "Il bianco esegue la mossa ideale."
+    },
+    {
+      "move": "C6",
+      "comment": "Il nero risponde con questa mossa che prende una pedina interna e un miglior controllo del centro."
+    },
+    {
+      "move": "E6"
+    },
+    {
+      "move": "E3",
+      "comment": "Il nero ha un buon controllo del centro."
+    }
+  ]
+}

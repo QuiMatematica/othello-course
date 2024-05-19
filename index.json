@@ -87,6 +87,44 @@
 					"title": "Le pedine stabili"
 				}
 			]
+		},
+		{
+			"href": "mobilita/index.html",
+			"title": "La mobilità",
+			"pages": [
+				{
+					"href": "mobilita/pedine-di-appoggio.html",
+					"title": "Le pedine di appoggio"
+				},
+				{
+					"href": "mobilita/muri.html",
+					"title": "I muri"
+				},
+				{
+					"href": "mobilita/evaporazione.html",
+					"title": "Evaporazione"
+				},
+				{
+					"href": "mobilita/compattezza.html",
+					"title": "La compattezza"
+				},
+				{
+					"href": "mobilita/mosse-ideali.html",
+					"title": "Le mosse ideali"
+				},
+				{
+					"href": "mobilita/togliere-mosse.html",
+					"title": "Togliere mosse all'avversario"
+				},
+				{
+					"href": "mobilita/usare-caselle-x.html",
+					"title": "Usare caselle X per la mobilità"
+				},
+				{
+					"href": "mobilita/classificazione-delle-mosse.html",
+					"title": "Classificazione delle mosse"
+				}
+			]
 		}
 	]
 }

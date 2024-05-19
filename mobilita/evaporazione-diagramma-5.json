@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----O---",
+    "--OOO#--",
+    "--OO##--",
+    "--O#OO--",
+    "--OOO---",
+    "-OOOOOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "D3",
+      "comment": "Il nero si mette in salvo dalla sovra-evaporazione."
+    },
+    {
+      "move": "D2",
+      "comment": "Il bianco continua a girare più pedine possibili."
+    },
+    {
+      "move": "C3",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "B4",
+      "comment": "Il nero si mette nuovamente in salvo dalla sovra-evaporazione attraversando le pedine dell'avversario."
+    }
+  ]
+}

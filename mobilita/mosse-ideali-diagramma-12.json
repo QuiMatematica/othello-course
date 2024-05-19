@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "--OO-#--",
+    "-##O##--",
+    "--###O--",
+    "---##O--",
+    "---O#---",
+    "--------",
+    "--------"
+  ],
+  "turn": "white",
+  "comment": "Compito: gioca al posto della mossa ideale del nero.",
+  "moves": [
+    {
+      "move": "B4",
+      "comment": "Bravissimo: questa è la mossa giusta. Vediamo ora come prosegue il gioco. Il nero ha una mossa ideale in C5."
+    },
+    {
+      "move": "C5",
+      "comment": "Il nero ha eseguito la mossa ideale."
+    },
+    {
+      "move": "E2",
+      "comment": "Esatto: hai giocato una mossa ideale! Complimenti!"
+    }
+  ]
+}

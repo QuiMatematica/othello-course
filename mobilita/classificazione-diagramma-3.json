@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "---O----",
+    "--OO----",
+    "-####O--",
+    "-#####--",
+    "-O-#----",
+    "--------",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C6",
+      "comment": "Mossa centrale che prepara una mossa ideale in E3. Il nero potrebbe difendersi o con la rischiosissima e sconsigliabile mossa in A7, oppure giocando in E2, ma così facendo si annullerebbe la sua mossa ideale in B3."
+    }
+  ]
+}

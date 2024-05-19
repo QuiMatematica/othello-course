@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Per ottenere una pedina</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../tao/othello.css#20240410">
+    <script type="module">
+        import { init } from "../tao/othello.js#20240410";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Per ottenere una pedina</h1>
+
+		<h2>Teoria</h2>
+
+		<p>Talvolta pu&ograve; succedere che si voglia ottenere una determinata pedina
+		per particolari scopi. Bisogna allora capire qual &egrave; la mossa giusta che
+		consente di ottenerla. Nel diagramma 1 il nero desidera conquistare la
+		pedina in E5: per farlo deve giocare in F6.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="ottenere-una-pedina-esempio.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 1.
+			</div>
+		</div>
+
+		<h2>Quiz</h2>
+
+		<p>Nel diagramma 2 muove il bianco. Gioca la mossa che permette di ottenere
+		la pedina in E5.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="sequence-board" data-file="ottenere-una-pedina-quiz-1.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 2.
+			</div>
+		</div>
+
+		<p>Nel diagramma 3 muove il bianco. Quali mosse ha a disposizione per conquistare
+		la pedina C4? Clicca su tutte le caselle in cui pu&ograve; giocare per ottenere ci&ograve;.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="click-on-board" data-file="ottenere-una-pedina-quiz-2.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 3.
+			</div>
+		</div>
+
+		<p>Nel diagramma 4, invece, giochi con il nero e devi muovere in modo da
+		conquistare la pedina F4 senza per&ograve; girare la pedina in E4.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="sequence-board" data-file="ottenere-una-pedina-quiz-3.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 4.
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

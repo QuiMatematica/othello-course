@@ -824,7 +824,7 @@ function buildPreviousNext(previous, symbol, page) {
 
     const a = document.createElement("a");
     a.classList.add("page-link");
-    a.setAttribute("href", "../" + page.href);
+    a.setAttribute("href", page.href);
     a.setAttribute("aria-label", "Previous");
     li.append(a);
 
@@ -921,7 +921,7 @@ function initPage(json) {
     const section = json.sections[sectionIndex];
 
     let chapterIndex = -1;
-    let chapter;
+    let chapter = null;
     let pageIndex = -1;
     if (chapterName != null) {
         chapterIndex = section.chapters.findIndex(x => x.href == chapterName + "/");
@@ -941,20 +941,27 @@ function initPage(json) {
     }
     else if (pageIndex == 0) {
         // sei alla prima pagina di un capitolo
-        if (chapterIndex > 0) {
-            prevChapter = section.chapters[chapterIndex - 1];
-            prevPage = prevChapter.pages.slice(-1);
-        }
-        else {
-            prevPage = section
-        }
+        prevPage = chapter;
+        chapter.href = "chapter.html";
     }
     else {
-        if (sectionIndex > 0) {
-            // sei nell'introduzione di una sezione, e non è la prima sezione
-            const prevSection = json.sections[sectionIndex - 1];
-            const prevChapter = prevSection.chapters.slice(-1);
-            prevPage = prevSection.pages.slice(-1);
+        if (chapterIndex > 0) {
+            // sei nell'introduzione di un capitolo, e non è il primo capitolo della sezione
+            const prevChapter = section.chapters[chapterIndex - 1];
+            prevPage = prevChapter.pages[prevChapter.pages.length - 1];
+            prevPage.href = "../" + prevChapter.href + prevPage.href;
+        }
+        else if (chapterIndex == 0) {
+            // sei nell'introduzione del primo capitolo della sezione
+            prevPage = section;
+            prevPage.href = "../section.html";
+        }
+        else if (sectionIndex > 0) {
+             // sei nell'introduzione di una sezione, e non è la prima sezione
+             const prevSection = json.sections[sectionIndex - 1];
+             const prevChapter = prevSection.chapters[prevSection.chapters.length - 1];
+             prevPage = prevChapter.pages[prevChapter.pages.length - 1];
+             prevPage.href = "../" + prevSection.href + prevChapter.href + prevPage.href;
         }
         // altrimenti sei nell'introduzione della prima sezione o in una pagina ignota all'indice
     }

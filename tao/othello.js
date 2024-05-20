@@ -672,11 +672,16 @@ function matchOnEndClick(event) {
     }
 }
 
-function initHeader() {
+function initHeader(inChapter) {
     const brand = document.createElement("a");
-    brand.classList.add("navbar-brand")
-    brand.classList.add("h1")
-    brand.setAttribute("href", "../index.html");
+    brand.classList.add("navbar-brand");
+    brand.classList.add("h1");
+    if (inChapter) {
+        brand.setAttribute("href", "../../index.html");
+    }
+    else {
+        brand.setAttribute("href", "../index.html");
+    }
     brand.innerHTML = "Othello: corso interattivo";
 
     const container = document.createElement("div");
@@ -932,7 +937,7 @@ function initPage(json) {
     }
 
     initOffcanvas(json, inChapter);
-    initHeader();
+    initHeader(inChapter);
 
     var prevPage = null;
     var nextPage = null;

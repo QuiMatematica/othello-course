@@ -971,14 +971,23 @@ function initPage(json) {
             nextPage = chapter.pages[pageIndex + 1];
         }
         else {
+            // sei nell'ultima pagina di un capitolo
             if (chapterIndex < section.chapters.length - 1) {
-                nextPage = section.chapters[chapterIndex + 1].pages[0];
+                // il capitolo non è l'ultimo della sezione
+                nextPage = section.chapters[chapterIndex + 1];
+                nextPage.href = "../" + nextPage.href + "chapter.html";
+            }
+            else if (sectionIndex < json.sections.length - 1) {
+                // il capitolo è l'ultimo della sezione, ma non sei nell'ultima sezione
+                nextPage = json.sections[sectionIndex + 1];
+                nextPage.href = "../../" + nextPage.href + "section.html";
             }
         }
     }
     else {
         // sei all'inizio di una sezione
-        nextPage = section.chapters[0].pages[0]
+        nextPage = section.chapters[0]
+        nextPage.href = nextPage.href + "chapter.html";
     }
 
     const othelloContent = document.getElementById("othello-content");

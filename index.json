@@ -1,128 +1,148 @@
 {
 	"sections": [
 		{
-			"href": "il-gioco/index.html",
-			"title": "Il gioco",
-			"pages": [
+			"title": "Livello base",
+			"href": "base/",
+			"chapters": [
 				{
-					"href": "il-gioco/le-regole.html",
-					"title": "Le regole"
+					"href": "il-gioco/",
+					"title": "Il gioco",
+					"pages": [
+						{
+							"href": "le-regole.html",
+							"title": "Le regole"
+						},
+						{
+							"href": "precisazioni.html",
+							"title": "Precisazioni"
+						},
+						{
+							"href": "gioco-libero.html",
+							"title": "Gioco libero"
+						}
+					]
 				},
 				{
-					"href": "il-gioco/precisazioni.html",
-					"title": "Precisazioni"
+					"href": "quiz-per-cominciare/",
+					"title": "Piccoli quiz per cominciare",
+					"pages": [
+						{
+							"href": "le-mosse-legali.html",
+							"title": "Le mosse legali"
+						},
+						{
+							"href": "le-pedine-da-girare.html",
+							"title": "Le pedine da girare"
+						},
+						{
+							"href": "quante-pedine-girare.html",
+							"title": "Quante pedine vengono girate?"
+						},
+						{
+							"href": "ottenere-una-pedina.html",
+							"title": "Per ottenere una pedina"
+						},
+						{
+							"href": "togliere-una-mossa.html",
+							"title": "Togliere una mossa"
+						},
+						{
+							"href": "ottenere-una-mossa.html",
+							"title": "Ottenere una mossa"
+						},
+						{
+							"href": "finali-con-caselle-vuote.html",
+							"title": "Finali con caselle vuote"
+						}
+					]
 				},
 				{
-					"href": "il-gioco/gioco-libero.html",
-					"title": "Gioco libero"
+					"href": "primi-elementi-di-strategia/",
+					"title": "Primi elementi di strategia",
+					"pages": [
+						{
+							"href": "notazione-caselle.html",
+							"title": "Per indicare le caselle"
+						},
+						{
+							"href": "notazione-partite.html",
+							"title": "Per registrare le partite"
+						},
+						{
+							"href": "gli-angoli.html",
+							"title": "Gli angoli"
+						},
+						{
+							"href": "il-centro.html",
+							"title": "Il centro"
+						},
+						{
+							"href": "quante-pedine.html",
+							"title": "Quante pedine?"
+						}
+					]
 				}
 			]
 		},
 		{
-			"href": "quiz-per-cominciare/index.html",
-			"title": "Piccoli quiz per cominciare",
-			"pages": [
+			"title": "Livello intermedio",
+			"href": "intermedio/",
+			"chapters": [
 				{
-					"href": "quiz-per-cominciare/le-mosse-legali.html",
-					"title": "Le mosse legali"
+					"title": "Le pedine stabili",
+					"href": "pedine-stabili/",
+					"pages": [
+						{
+							"href": "pedine-stabili.html",
+							"title": "Gli angoli e le altre pedine stabili"
+						},
+						{
+							"href": "caselle-x-c.html",
+							"title": "Le caselle X e C"
+						},
+						{
+							"href": "sacrifici-e-vantaggi.html",
+							"title": "Sacrifici e vantaggi"
+						}
+					]
 				},
 				{
-					"href": "quiz-per-cominciare/le-pedine-da-girare.html",
-					"title": "Le pedine da girare"
-				},
-				{
-					"href": "quiz-per-cominciare/quante-pedine-girare.html",
-					"title": "Quante pedine vengono girate?"
-				},
-				{
-					"href": "quiz-per-cominciare/ottenere-una-pedina.html",
-					"title": "Per ottenere una pedina"
-				},
-				{
-					"href": "quiz-per-cominciare/togliere-una-mossa.html",
-					"title": "Togliere una mossa"
-				},
-				{
-					"href": "quiz-per-cominciare/ottenere-una-mossa.html",
-					"title": "Ottenere una mossa"
-				},
-				{
-					"href": "quiz-per-cominciare/finali-con-caselle-vuote.html",
-					"title": "Finali con caselle vuote"
-				}
-			]
-		},
-		{
-			"href": "primi-elementi-di-strategia/index.html",
-			"title": "Primi elementi di strategia",
-			"pages": [
-				{
-					"href": "primi-elementi-di-strategia/notazione-caselle.html",
-					"title": "Per indicare le caselle"
-				},
-				{
-					"href": "primi-elementi-di-strategia/notazione-partite.html",
-					"title": "Per registrare le partite"
-				},
-				{
-					"href": "primi-elementi-di-strategia/gli-angoli.html",
-					"title": "Gli angoli"
-				},
-				{
-					"href": "primi-elementi-di-strategia/il-centro.html",
-					"title": "Il centro"
-				},
-				{
-					"href": "primi-elementi-di-strategia/quante-pedine.html",
-					"title": "Quante pedine?"
-				}
-			]
-		},
-		{
-			"href": "strategie-fondamentali/index.html",
-			"title": "Strategie fondamentali",
-			"pages": [
-				{
-					"href": "strategie-fondamentali/pedine-stabili.html",
-					"title": "Le pedine stabili"
-				}
-			]
-		},
-		{
-			"href": "mobilita/index.html",
-			"title": "La mobilità",
-			"pages": [
-				{
-					"href": "mobilita/pedine-di-appoggio.html",
-					"title": "Le pedine di appoggio"
-				},
-				{
-					"href": "mobilita/muri.html",
-					"title": "I muri"
-				},
-				{
-					"href": "mobilita/evaporazione.html",
-					"title": "Evaporazione"
-				},
-				{
-					"href": "mobilita/compattezza.html",
-					"title": "La compattezza"
-				},
-				{
-					"href": "mobilita/mosse-ideali.html",
-					"title": "Le mosse ideali"
-				},
-				{
-					"href": "mobilita/togliere-mosse.html",
-					"title": "Togliere mosse all'avversario"
-				},
-				{
-					"href": "mobilita/usare-caselle-x.html",
-					"title": "Usare caselle X per la mobilità"
-				},
-				{
-					"href": "mobilita/classificazione-delle-mosse.html",
-					"title": "Classificazione delle mosse"
+					"href": "mobilita/",
+					"title": "La mobilità",
+					"pages": [
+						{
+							"href": "pedine-di-appoggio.html",
+							"title": "Le pedine di appoggio"
+						},
+						{
+							"href": "muri.html",
+							"title": "I muri"
+						},
+						{
+							"href": "evaporazione.html",
+							"title": "Evaporazione"
+						},
+						{
+							"href": "compattezza.html",
+							"title": "La compattezza"
+						},
+						{
+							"href": "mosse-ideali.html",
+							"title": "Le mosse ideali"
+						},
+						{
+							"href": "togliere-mosse.html",
+							"title": "Togliere mosse all'avversario"
+						},
+						{
+							"href": "usare-caselle-x.html",
+							"title": "Usare caselle X per la mobilità"
+						},
+						{
+							"href": "classificazione-delle-mosse.html",
+							"title": "Classificazione delle mosse"
+						}
+					]
 				}
 			]
 		}

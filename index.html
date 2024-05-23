@@ -35,7 +35,7 @@
 	</div>
 
 	<script>
-		function initPage(page, ul) {
+		function initPage(section, chapter, page, ul) {
 			const li = document.createElement("li");
 			li.classList.add("nav-item");
 			ul.append(li);
@@ -45,12 +45,30 @@
 			a.classList.add("link-offset-2");
 			a.classList.add("link-underline-opacity-0");
 			a.classList.add("link-underline-opacity-100-hover");
-			a.setAttribute("href", page.href);
+			a.setAttribute("href", section.href + chapter.href + page.href);
 			a.innerHTML = page.title;
 			li.append(a);
 		}
 
 		function initSection(section) {
+			const h1 = document.createElement("h1");
+			document.getElementById("index-content").append(h1);
+
+			const a = document.createElement("a");
+			a.classList.add("link-dark");
+			a.classList.add("link-offset-2");
+			a.classList.add("link-underline-opacity-0");
+			a.classList.add("link-underline-opacity-100-hover");
+			a.setAttribute("href", section.href + "section.html");
+			a.innerHTML = section.title;
+			h1.append(a);
+
+			section.chapters.forEach((chapter) => initChapter(section, chapter));
+
+			document.getElementById("index-content").append(document.createElement("hr"));
+		}
+
+		function initChapter(section, chapter) {
 			const div = document.createElement("div");
 			div.classList.add("col-lg-3");
 			div.classList.add("py-3");
@@ -73,14 +91,14 @@
 			a.classList.add("link-offset-2");
 			a.classList.add("link-underline-opacity-0");
 			a.classList.add("link-underline-opacity-100-hover");
-			a.setAttribute("href", section.href);
-			a.innerHTML = section.title;
+			a.setAttribute("href", section.href + chapter.href + "chapter.html");
+			a.innerHTML = chapter.title;
 			h4.append(a);
 
 			const ul2 = document.createElement("ul");
 			li.append(ul2);
 
-			section.pages.forEach((page) => initPage(page, ul2));
+			chapter.pages.forEach((page) => initPage(section, chapter, page, ul2));
 		}
 
 		function initIndex(json) {

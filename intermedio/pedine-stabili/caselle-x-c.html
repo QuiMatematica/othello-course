@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Le pedine stabili</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../tao/othello.css#20240410">
+    <script type="module">
+        import { init } from "../../tao/othello.js#20240410";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Le caselle X e C</h1>
+
+		<p>Per non cedere all'avversario gli angoli, è necessario
+		giocare con molta attenzione nelle caselle X e nelle caselle C.</p>
+
+		<p>Per esempio, se nella situazione del diagramma 1 il bianco gioca in B7, il nero potrà
+		conquistare l'angolo A8.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-6a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 1: mossa al bianco.
+			</div>
+		</div>
+
+		<p>A volte una mossa in una casella X (o una casella C) può sembrarti sicura perché l'avversario non
+			ha accesso all'angolo. Ma è possibile
+		che questi riesca in una o più mosse a procurarsi le pedine necessarie per raggiungerlo.</p>
+
+		<p>Nel diagramma 2 il bianco gioca in G2, rassicurato dal fatto che il nero non può andare nell'angolo. Ma...</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-7a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 2: conquista di un angolo.
+			</div>
+		</div>
+
+		<p>Anche muovere in una casella C, specie se isolata, è un notevole rischio. Nel diagramma
+		3 il nero ha appena giocato nella casella B1, evidentemente non si è accorto che
+		il bianco infatti ha la certezza di occupare l'angolo A1 in due mosse.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="pedine-stabili-diagramma-8a.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 3: conquista di un angolo.
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>

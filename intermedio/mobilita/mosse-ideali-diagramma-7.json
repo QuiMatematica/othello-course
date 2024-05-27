@@ -3,18 +3,14 @@
     "--------",
     "--------",
     "----#---",
-    "---#OO--",
-    "--#OO#--",
-    "--OO----",
+    "---##O--",
+    "--#O##--",
+    "--OO#---",
     "--------",
     "--------"
   ],
   "turn": "black",
   "moves": [
-    {
-      "move": "E6",
-      "comment": "Il nero si procura la mosa ideale in C4."
-    },
     {
       "move": "D3",
       "comment": "Il bianco gira la pedina in D4: adesso la mossa C4 non è più ideale perché gira due pedine ed una di queste non è interna."

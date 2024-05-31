@@ -106,7 +106,7 @@ class SequenceBoard {
 
         json.moves.forEach((move) => {
             const square = Square.fromString(move.move);
-            curPosition = curPosition.playStone(square)
+            curPosition = curPosition.playStone(square);
             curPosition.comment = move.comment;
         });
         if (json.moves.length < 2) {
@@ -125,7 +125,12 @@ class SequenceBoard {
         if (nextPosition != null) {
             this.board.playPosition(nextPosition);
             this.score.takeScore(nextPosition);
-            this.comment.setPositionComment(nextPosition);
+             if (nextPosition.nextPosition == null && nextPosition.comment == null) {
+                this.comment.setComment("<span class=\"fw-bold\">Sequenza terminata.</span>");
+            }
+            else {
+                this.comment.setPositionComment(nextPosition);
+            }
             this.controls.update(nextPosition, this.humanColor);
             this.currentPosition = nextPosition;
         }
@@ -138,12 +143,24 @@ class SequenceBoard {
                 const nextPosition = this.currentPosition.nextPosition;
                 this.board.playPosition(nextPosition);
                 this.score.takeScore(nextPosition);
-                this.comment.setPositionComment(nextPosition);
+                if (nextPosition.nextPosition == null && nextPosition.comment == null) {
+                    this.comment.setComment("<span class=\"fw-bold\">Sequenza terminata.</span>");
+                }
+                else {
+                    this.comment.setPositionComment(nextPosition);
+                }
                 this.controls.update(nextPosition, this.humanColor);
                 this.currentPosition = nextPosition;
             }
             else {
-                this.comment.setComment("Mossa sbagliata.");
+                const correctPosition = this.currentPosition.nextPosition;
+                const wrongPosition = this.currentPosition.playStone(square);
+                this.board.playPosition(wrongPosition);
+                this.score.takeScore(wrongPosition);
+                this.controls.wrong();
+                this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span>");
+                this.currentPosition.nextPosition = correctPosition;
+                this.currentPosition = wrongPosition;
             }
         }
     }
@@ -226,6 +243,12 @@ class SequenceControls {
         this.first.disabled = (position.prevPosition == null);
         this.prev.disabled = (position.prevPosition == null);
         this.computer.disabled = (position.nextPosition == null || position.turn == humanColor);
+    }
+
+    wrong(position, humanColor) {
+        this.first.disabled = false;
+        this.prev.disabled = false;
+        this.computer.disabled = true;
     }
 
 }

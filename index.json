@@ -143,6 +143,28 @@
 							"title": "Classificazione delle mosse"
 						}
 					]
+				},
+				{
+					"href": "apertura/",
+					"title": "L'apertura",
+					"pages": [
+						{
+							"href": "prima-mossa.html",
+							"title": "La prima mossa"
+						},
+						{
+							"href": "seconda-mossa.html",
+							"title": "La seconda mossa"
+						},
+						{
+							"href": "diagonale.html",
+							"title": "Aperture basate sulla diagonale"
+						},
+						{
+							"href": "perpendicolare.html",
+							"title": "Apertura basate sulla perpendicolare"
+						}
+					]
 				}
 			]
 		}

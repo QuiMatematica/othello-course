@@ -1,0 +1,36 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "F5"
+    },
+    {
+      "move": "E6",
+      "comment": "Apertura &quot;Tigre&quot;."
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E7"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "C4",
+      "comment": "Posizione ben bilanciata in cui si gioca per il controllo del centro."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "B4",
+      "comment": "Apertura &quot;Heath&quot;.<br>Il nero sbilancia subito il gioco verso il bordo. E' un'apertura che ha molte linee bilanciate, quindi piuttosto complessa da conoscere bene."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "A4"
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E6"
+    },
+    {
+      "move": "B5"
+    },
+    {
+      "move": "A5"
+    },
+    {
+      "move": "A6"
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "F3",
+      "comment": "Ci sono già tre pedine sul bordo e il bianco ha un piccolo muro ad est. Il nero cercherà di chiudere il gioco insistendo nella zona nord-ovest."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "F5"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "B5",
+      "comment": "Apertura &quot;Rose&quot;."
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "E6",
+      "comment": "Variante &quot;Muri rotanti&quot;."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "B4",
+      "comment": "Qualcuno prima o poi smetterà di far girare i muri, e comincerà la lotta per il centro."
+    }
+  ]
+}

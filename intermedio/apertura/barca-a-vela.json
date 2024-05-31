@@ -1,0 +1,57 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "D6",
+      "comment": "L'apertura &quot;Mucca&quot;."
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "F5",
+      "comment": "Variante &quot;Rose-v-Toth&quot;."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "G4",
+      "comment": "Variante &quot;Tanida&quot;."
+    },
+    {
+      "move": "D7",
+      "comment": "La variante &quot;Barca a vela&quot;.<br>Il bianco imposta una posizione muro-contro-muro, che il nero è costretto a sfondare fin da subito."
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "C7"
+    },
+    {
+      "move": "B4"
+    },
+    {
+      "move": "B5"
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "E3",
+      "comment": "Si giunge ad una posizione equilibrata, in cui il nero cercherà di ottenere qualche vantaggio sfruttando il lato ovest, mentre il bianco cercherà di mantenere il controllo del centro."
+    }
+  ]
+}

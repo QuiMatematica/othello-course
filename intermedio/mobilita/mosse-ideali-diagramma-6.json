@@ -3,18 +3,14 @@
     "--------",
     "--------",
     "----#---",
-    "---#OO--",
-    "--#OO#--",
-    "--OO----",
+    "---##O--",
+    "--#O##--",
+    "--OO#---",
     "--------",
     "--------"
   ],
   "turn": "black",
   "moves": [
-    {
-      "move": "E6",
-      "comment": "Il nero si procura la mosa ideale in C4."
-    },
     {
       "move": "F7",
       "comment": "Il bianco gira la pedine E6, impedendo così la mossa ideale."

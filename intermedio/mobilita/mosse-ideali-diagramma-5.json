@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----#---",
+    "---##O--",
+    "--#O##--",
+    "--OO#---",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "C4",
+      "comment": "Il bianco gioca al posto del nero: quest'ultimo non ha più la propria mossa ideale."
+    }
+  ]
+}

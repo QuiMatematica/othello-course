@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<html lang="it">
+<head>
+	<title>Othello: corso interattivo - Per indicare le caselle</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../tao/othello.css#20240323">
+    <script type="module">
+        import { init } from "../../tao/othello.js#20240323";
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</head>
+
+<body>
+
+	<div id="othello-content" class="container-xxl mt-4">
+
+		<h1>Per indicare le caselle</h1>
+
+		<h2>Le coordinate</h2>
+
+		<p>Il modo più usato per indicare una casella è il sistema delle coordinate.
+		Data la sua semplicità, ho usata questo metodo fin dalla prime pagine di questo corso.
+		Per completezza ne riporto qui la spiegazione.</p>
+
+		<p>La tavola è divisa in otto colonne e otto righe. A ogni colonna è associata
+		una lettera, da sinistra verso destra, dalla 'A' alla 'H'. Le righe vengono
+		invece numerate, dall'alto verso il basso. Per indicare una casella basta trovare
+		la lettera della colonna e il numero della riga a cui appartiene. Quindi la casella in alto a
+		sinistra si chiama "A1", mentre quella in basso a destra si chiama "H8". Come se fosse
+		una battaglia navale.</p>
+
+		<p>Tutti i diagrammi di questo corso riportano le coordinate sul bordo della tavola
+		(diagramma 1).</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="notazione-caselle-vuota.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 1: le coordinate.
+			</div>
+		</div>
+
+		<p>Se giochi a scacchi sicuramente ti sarai reso conto che nell'Othello i numeri delle righe sono contrari:
+		negli scacchi vanno dal basso verso l'alto (più precisamente: dal bianco verso il nero), mentre nell'Othello
+		vanno dall'alto verso il basso.</p>
+
+		<h2>Le caselle "speciali"</h2>
+
+		<p>Durante il corso ti accorgerai che alcune caselle hanno un ruolo privilegiato
+		rispetto ad altre. Per questo è stata introdotta un'apposita notazione che ho
+		riportata nel diagramma 2.</p>
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="notazione-caselle-abcx.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 2: le caselle A, B, C e X.
+			</div>
+		</div>
+
+		<p>Le caselle adiacenti diagonalmente agli angoli (B2, G2, B7 e G7) sono
+		indicate come "caselle X", mentre le caselle adiacenti orizzontalmente e
+		verticalmente sono indicate come "caselle C". Il contesto permetterà di chiarire
+		di quale particolare casella si sta parlando.</p>
+
+		<h2>Le zone</h2>
+
+		<p>Per indicare le zone della tavola, intese come gruppo di caselle più o meno
+		definito, si usano le indicazioni tipiche
+		della bussola. Per esempio: l'area vicina al bordo H1 è chiamata "angolo di nord est";
+		il bordo superiore "bordo nord".</p>
+
+	</div>
+
+</body>
+</html>

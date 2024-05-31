@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----#---",
+    "---#OO--",
+    "--#OO#--",
+    "--OO----",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E6",
+      "comment": "Il nero si procura la mosa ideale in C4."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--##O#--",
+    "O-##OO--",
+    "OOOO#OO#",
+    "O#O#O#OO",
+    "O###O#OO",
+    "OOOOOO##",
+    "--OO##--",
+    "--O#-#--"
+  ],
+  "turn": "black",
+  "comment": "Il nero muove e vince.",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Corretto: il nero gioca nello spazio dispari a nord-ovest."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1",
+      "comment": "Corretto. Il finale perfetto conduce al risultato 38-26."
+    }
+  ]
+}

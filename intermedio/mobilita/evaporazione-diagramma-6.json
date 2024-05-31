@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "------O-",
+    "---OOO#-",
+    "---OOOO-",
+    "---O#OO-",
+    "----OO--",
+    "-----O--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H6",
+      "comment": "Il nero si mette in salvo dalla sovra-evaporazione appoggiandosi al bordo."
+    }
+  ]
+}

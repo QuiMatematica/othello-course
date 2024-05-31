@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----O---",
+    "--OOO#--",
+    "--OO##--",
+    "--O#OO--",
+    "--OOO---",
+    "-OOOOOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Il nero pensa di giocare bene l'evaporazione, invece ha sbagliato mossa."
+    },
+    {
+      "move": "F3",
+      "comment": "Forse il bianco se n'è accorto o forse ha solo cercato di girare più pedine possibili, ma ora ha la possibilità di vincere per 64 a 0. Qualunque mossa faccia il nero, il bianco può girargli tutte le pedine."
+    },
+    {
+      "move": "D3",
+      "comment": "Il nero prova a sopravvivere."
+    },
+    {
+      "move": "D2",
+      "comment": "Ma il bianco gli mangia tutte le pedine."
+    },
+    {
+      "move": "E2",
+      "comment": "Ormai è finita."
+    },
+    {
+      "move": "E1",
+      "comment": "Il bianco vince 64 a 0."
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "position": [
+    "--------",
+    "-----#--",
+    "#######O",
+    "#OO##OOO",
+    "#O#O##OO",
+    "#O##O#OO",
+    "#-OOOO--",
+    "-#-OOO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco non ha subito accesso all'angolo H8. Il nero spera, con questa mossa, di indurre il bianco a giocare a nord per ottenere l'accesso all'angolo."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco si guarda bene dall'offrire nuove pedine di appoggio al nero, anche a costo di costruire un cinque sul lato est."
+    },
+    {
+      "move": "C8",
+      "comment": "Non c'è molto di meglio per il nero. Ma questa mossa è interessante per quanto riguarda la parità (la vedremo più avanti)."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero chiude la zona a sud-ovest costringendo il bianco a giocare altrove."
+    },
+    {
+      "move": "E1",
+      "comment": "Il bianco si rassegna a giocare a nord, ma lo fa girando una sola pedina esterna."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero approfitta subito della nuova pedina di appoggio."
+    },
+    {
+      "move": "E2",
+      "comment": "Il bianco gioca ancora a nord, ma sempre cercando di offrire poche pedine di appoggio."
+    },
+    {
+      "move": "C2",
+      "comment": "Questa mossa gira solo una pedina d'appoggio: le altre rimangono disponibili per le prossime mosse."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "C1",
+      "comment": "Di nuovo il nero utilizza una sola pedina d'appoggio."
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "G8",
+      "comment": "Anche questa mossa è guidata dal principio della parità. Nota: il nero non può giocare nell'angolo sud-est. Il bianco dovrà giocarci per primo e il nero potrà rispondere assicurandosi le ultime pedine della zona."
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "H8"
+    }
+  ]
+}

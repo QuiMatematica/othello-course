@@ -1,0 +1,94 @@
+{
+  "position": [
+    "--O--O--",
+    "--OOOO--",
+    "OO###O--",
+    "O###OO--",
+    "OOO#O---",
+    "OOO#O-#-",
+    "--####--",
+    "-######-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Mossa pericolosa obbligata."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero conquista la pedina C3 che gli permetterà di accedere all'angolo e consente all'avversario la sola mossa in D1."
+    },
+    {
+      "move": "D1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero conquista l'angolo. Ora il bianco ha a disposizione solo due mosse. Le mosse successive sono un'ipotetica prosecuzione della partita: se il nero non fa gravi errori, avrà la vittoria facilmente."
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "F5"
+    },
+    {
+      "move": "G3"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "G4"
+    },
+    {
+      "move": "H4"
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H6"
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "H8"
+    }
+  ]
+}

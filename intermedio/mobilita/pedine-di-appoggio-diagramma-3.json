@@ -1,0 +1,40 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OOO-",
+    "---OO#O#",
+    "--OO####",
+    "--O##O##",
+    "--#OO#-#",
+    "--####--"
+  ],
+  "turn": "white",
+  "comment": "Mosse del bianco = 4.<br>Pedine esterne nere = 3.",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il bianco ha usato una pedina esterna nera.<br>Mosse del bianco = 3.<br>Pedine esterne nere = 2."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero riesce a non aumentare il numero di pedine esterne, quindi il bianco non guadagna nuove mosse.<br>Mosse del bianco = 3.<br>Pedine esterne nere = 2."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco ha usato un'altra pedina esterna nera.<br>Mosse del bianco = 2.<br>Pedine esterne nere = 1."
+    },
+    {
+      "move": "H3",
+      "comment": "Ancora una volta il nero non aggiunge pedine esterne.<br>Mosse del bianco = 2.<br>Pedine esterne nere = 1."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco utilizza l'ultima pedina esterna.<br>Mosse del bianco = 0.<br>Pedine esterne nere = 0.<br>Se il nero non gli offre nuove Pedine esterne nere, al prossimo turno il bianco dovrà passare."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero riesce a non dare nuove pedine esterne: il bianco deve passare!"
+    }
+  ]
+}

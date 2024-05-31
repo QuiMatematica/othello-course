@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----#O--",
+    "--##O##-",
+    "--####OO",
+    "--O##OO-",
+    "---#----",
+    "--------"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: gioca al posto della mossa ideale del nero.",
+  "moves": [
+    {
+      "move": "D3",
+      "comment": "Bravo: hai giocato dove il nero aveva la sua mossa ideale."
+    }
+  ]
+}

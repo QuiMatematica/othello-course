@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--####--",
+    "--#O##--",
+    "--OOO#--",
+    "--OOOO--",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Il nero allunga il muro e gira ben tre pedine."
+    },
+    {
+      "move": "E7",
+      "comment": "Il bianco non si preoccupa della quantità di pedine, anzi comincia a giocare 'al risparmio', cercando di girarne poche."
+    },
+    {
+      "move": "E8",
+      "comment": "Il nero prende altre 3 pedine. Prima di cliccare sulla mossa successiva, prova a pensare dove giocheresti tu."
+    },
+    {
+      "move": "B4",
+      "comment": "L'obiettivo del nero è chiaro: girare poche pedine."
+    },
+    {
+      "move": "A3",
+      "comment": "Mentre il nero continua a girarne tante."
+    },
+    {
+      "move": "D2",
+      "comment": "Il bianco è stato costretto a sfondare il muro, ma lo fa nel punto in cui gira meno pedine."
+    },
+    {
+      "move": "D1",
+      "comment": "Il bianco è rimasto con due sole pedine. Non è preoccupato, anzi! Tuttavia ora è meglio cambiare strategia. E più sotto vedremo perché."
+    }
+  ]
+}

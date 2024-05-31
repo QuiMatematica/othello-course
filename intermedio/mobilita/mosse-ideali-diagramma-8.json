@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--O##---",
+    "-###OO--",
+    "####OOOO",
+    "-#OOOO--",
+    "--##OO--",
+    "-###-O--"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: blocca la mossa ideale del nero.",
+  "moves": [
+    {
+      "move": "B3",
+      "comment": "Esatto! Questa mossa è buona anche perché è una \"mossa tranquilla\": conquisti due pedine interne! Inoltre non vai ad incrementare il tuo muro ad est."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----#---",
+    "---##O--",
+    "--#O##--",
+    "--OO#---",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Il bianco gira la pedine E6, impedendo così la mossa ideale."
+    },
+    {
+      "move": "E7",
+      "comment": "Il nero si procura nuovamente la pedine sponda..."
+    },
+    {
+      "move": "F6",
+      "comment": "... e il bianco gliela porta via per la seconda volta. A questo punto il nero deve rinunciare perché non riesce più ad ottenere la pedina E6."
+    }
+  ]
+}

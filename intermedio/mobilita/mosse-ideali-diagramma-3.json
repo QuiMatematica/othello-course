@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--------",
+    "--#-----",
+    "-O##----",
+    "--O##O--",
+    "--#O##--",
+    "---OO---",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "comment": "Obiettivo: gioca una mossa ideale.",
+  "moves": [
+    {
+      "move": "C6",
+      "comment": "Bravo! Hai girato la pedina D5 che è diventata interna."
+    }
+  ]
+}

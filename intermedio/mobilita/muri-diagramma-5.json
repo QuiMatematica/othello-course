@@ -1,0 +1,73 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C5",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "F5"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "B5",
+      "comment": "Le mosse finora giocate rappresentano l'apertura Rose. Già si intravvede che i giocatori stanno costruendo due muri opposti."
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "E6",
+      "comment": "Ecco: entrambi i giocatori hanno un muro. Adesso cercheranno di allugare il meno possibile il proprio e il più possibile quello dell'avversario."
+    },
+    {
+      "move": "D2",
+      "comment": "Per evitare di allungare troppo il proprio muro: ciascuno aggiunge una o due pedine al massimo al muro."
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "B3",
+      "comment": "Intuisci perché rotanti? &Egrave; come se i muri girassero uno attorno all'altro..."
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "B4"
+    },
+    {
+      "move": "G3"
+    },
+    {
+      "move": "A6"
+    },
+    {
+      "move": "F3"
+    },
+    {
+      "move": "B6",
+      "comment": "Il gioco potrebbe andare avanti ancora... Ma a questo punto (o anche qualche mossa prima) uno dei due giocatori smette di ruotare e sfonda il muro avversario."
+    }
+  ]
+}

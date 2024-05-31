@@ -672,19 +672,16 @@ function matchOnEndClick(event) {
     }
 }
 
-function loadIndex() {
-    const sectionIndex = "../index.json#20240410";
-    let json;
-    fetch(sectionIndex)
-        .then((response) => response.json())
-        .then((json) => initPage(json));
-}
-
-function initHeader() {
+function initHeader(inChapter) {
     const brand = document.createElement("a");
-    brand.classList.add("navbar-brand")
-    brand.classList.add("h1")
-    brand.setAttribute("href", "../index.html");
+    brand.classList.add("navbar-brand");
+    brand.classList.add("h1");
+    if (inChapter) {
+        brand.setAttribute("href", "../../index.html");
+    }
+    else {
+        brand.setAttribute("href", "../index.html");
+    }
     brand.innerHTML = "Othello: corso interattivo";
 
     const container = document.createElement("div");
@@ -702,7 +699,7 @@ function initHeader() {
 
 }
 
-function addPage(page, ul) {
+function addPage(section, chapter, page, ul, inChapter) {
     const li = document.createElement("li");
     li.classList.add("nav-item");
     ul.append(li);
@@ -712,12 +709,22 @@ function addPage(page, ul) {
     a.classList.add("link-offset-2");
     a.classList.add("link-underline-opacity-0");
     a.classList.add("link-underline-opacity-100-hover");
-    a.setAttribute("href", "../" + page.href);
+
+    let pageHref;
+    if (inChapter) {
+        pageHref = "../../";
+    }
+    else {
+        pageHref = "../";
+    }
+    pageHref += section.href + chapter.href + page.href;
+
+    a.setAttribute("href", pageHref);
     a.innerHTML = page.title;
     li.append(a);
 }
 
-function addSection(section, ul) {
+function addChapter(section, chapter, ul, inChapter) {
     const li = document.createElement("li");
     li.classList.add("nav-item");
     li.classList.add("pb-3");
@@ -728,17 +735,61 @@ function addSection(section, ul) {
     a.classList.add("link-offset-2");
     a.classList.add("link-underline-opacity-0");
     a.classList.add("link-underline-opacity-100-hover");
-    a.setAttribute("href", "../" + section.href);
-    a.innerHTML = section.title;
+
+    let chapterHref;
+    if (inChapter) {
+        chapterHref = "../../";
+    }
+    else {
+        chapterHref = "../";
+    }
+    chapterHref += section.href + chapter.href + "chapter.html";
+
+    a.setAttribute("href", chapterHref);
+    a.innerHTML = chapter.title;
     li.append(a);
 
     const ul2 = document.createElement("ul");
     li.append(ul2);
 
-    section.pages.forEach((page) => addPage(page, ul2));
+    chapter.pages.forEach((page) => addPage(section, chapter, page, ul2, inChapter));
 }
 
-function initOffcanvas(json) {
+function addSection(section, offcanvasBody, inChapter) {
+    const h5 = document.createElement("h5");
+    offcanvasBody.append(h5);
+
+    const a = document.createElement("a");
+    a.classList.add("link-dark");
+    a.classList.add("link-offset-2");
+    a.classList.add("link-underline-opacity-0");
+    a.classList.add("link-underline-opacity-100-hover");
+
+    let sectionHref;
+    if (inChapter) {
+        sectionHref = "../../";
+    }
+    else {
+        sectionHref = "../";
+    }
+    sectionHref += section.href + "section.html";
+
+    a.setAttribute("href", sectionHref);
+    a.innerHTML = section.title;
+    h5.append(a);
+
+
+    const ul = document.createElement("ul");
+    ul.classList.add("nav");
+    ul.classList.add("flex-column");
+    offcanvasBody.append(ul);
+
+    section.chapters.forEach((chapter) => addChapter(section, chapter, ul, inChapter))
+
+    offcanvasBody.append(document.createElement("hr"))
+}
+
+function initOffcanvas(json, inChapter) {
     const offcanvas = document.createElement("div");
     offcanvas.classList.add("offcanvas");
     offcanvas.classList.add("offcanvas-start");
@@ -769,12 +820,7 @@ function initOffcanvas(json) {
     offcanvasBody.classList.add("offcanvas-body");
     offcanvas.append(offcanvasBody);
 
-    const ul = document.createElement("ul");
-    ul.classList.add("nav");
-    ul.classList.add("flex-column");
-    offcanvasBody.append(ul);
-
-    json.sections.forEach((section) => addSection(section, ul))
+    json.sections.forEach((section) => addSection(section, offcanvasBody, inChapter))
 }
 
 function buildPreviousNext(previous, symbol, page) {
@@ -783,7 +829,7 @@ function buildPreviousNext(previous, symbol, page) {
 
     const a = document.createElement("a");
     a.classList.add("page-link");
-    a.setAttribute("href", "../" + page.href);
+    a.setAttribute("href", page.href);
     a.setAttribute("aria-label", "Previous");
     li.append(a);
 
@@ -844,41 +890,112 @@ function buildPagination(json, prevPage, nextPage) {
     return nav;
 }
 
+function loadIndex() {
+    const urlSplitted = window.location.pathname.split("/")
+    const fileName = urlSplitted.pop();
+    let indexHref;
+    if (fileName == "section.html") {
+        indexHref = "../index.json#20240531";
+    }
+    else {
+        indexHref = "../../index.json#20240531";
+    }
+
+    let json;
+    fetch(indexHref)
+        .then((response) => response.json())
+        .then((json) => initPage(json));
+}
+
 function initPage(json) {
     const urlSplitted = window.location.pathname.split("/")
     const fileName = urlSplitted.pop();
-    const sectionName = urlSplitted.pop();
-    const sectionIndex = json.sections.findIndex(x => x.href == sectionName + "/index.html");
+    let sectionName;
+    let chapterName;
+    let inChapter = false;
+    if (fileName == "section.html") {
+        sectionName = urlSplitted.pop();
+    }
+    else {
+        chapterName = urlSplitted.pop();
+        sectionName = urlSplitted.pop();
+        inChapter = true;
+    }
+
+    const sectionIndex = json.sections.findIndex(x => x.href == sectionName + "/");
     const section = json.sections[sectionIndex];
-    const pageIndex = section.pages.findIndex(x => x.href == sectionName + "/" + fileName);
-    // se non lo trova => pageIndex == -1
+
+    let chapterIndex = -1;
+    let chapter = null;
+    let pageIndex = -1;
+    if (chapterName != null) {
+        chapterIndex = section.chapters.findIndex(x => x.href == chapterName + "/");
+        chapter = section.chapters[chapterIndex];
+
+        pageIndex = chapter.pages.findIndex(x => x.href == fileName);
+        // se non lo trova => pageIndex == -1
+    }
+
+    initOffcanvas(json, inChapter);
+    initHeader(inChapter);
+
     var prevPage = null;
     var nextPage = null;
     if (pageIndex > 0) {
-        prevPage = section.pages[pageIndex - 1];
+        prevPage = chapter.pages[pageIndex - 1];
     }
     else if (pageIndex == 0) {
-        prevPage = section;
+        // sei alla prima pagina di un capitolo
+        prevPage = chapter;
+        chapter.href = "chapter.html";
     }
     else {
-        if (sectionIndex > 0) {
-            const prevSection = json.sections[sectionIndex - 1];
-            prevPage = prevSection.pages[prevSection.pages.length - 1];
+        if (chapterIndex > 0) {
+            // sei nell'introduzione di un capitolo, e non è il primo capitolo della sezione
+            const prevChapter = section.chapters[chapterIndex - 1];
+            prevPage = prevChapter.pages[prevChapter.pages.length - 1];
+            prevPage.href = "../" + prevChapter.href + prevPage.href;
         }
-    }
-    if (pageIndex < section.pages.length - 1) {
-        nextPage = section.pages[pageIndex + 1];
-    }
-    else {
-        if (sectionIndex < json.sections.length - 1) {
-            nextPage = json.sections[sectionIndex + 1];
+        else if (chapterIndex == 0) {
+            // sei nell'introduzione del primo capitolo della sezione
+            prevPage = section;
+            prevPage.href = "../section.html";
         }
+        else if (sectionIndex > 0) {
+             // sei nell'introduzione di una sezione, e non è la prima sezione
+             const prevSection = json.sections[sectionIndex - 1];
+             const prevChapter = prevSection.chapters[prevSection.chapters.length - 1];
+             prevPage = prevChapter.pages[prevChapter.pages.length - 1];
+             prevPage.href = "../" + prevSection.href + prevChapter.href + prevPage.href;
+        }
+        // altrimenti sei nell'introduzione della prima sezione o in una pagina ignota all'indice
     }
 
-    initOffcanvas(json);
-    initHeader();
+    if (chapter != null) {
+        if (pageIndex < chapter.pages.length - 1) {
+            nextPage = chapter.pages[pageIndex + 1];
+        }
+        else {
+            // sei nell'ultima pagina di un capitolo
+            if (chapterIndex < section.chapters.length - 1) {
+                // il capitolo non è l'ultimo della sezione
+                nextPage = section.chapters[chapterIndex + 1];
+                nextPage.href = "../" + nextPage.href + "chapter.html";
+            }
+            else if (sectionIndex < json.sections.length - 1) {
+                // il capitolo è l'ultimo della sezione, ma non sei nell'ultima sezione
+                nextPage = json.sections[sectionIndex + 1];
+                nextPage.href = "../../" + nextPage.href + "section.html";
+            }
+        }
+    }
+    else {
+        // sei all'inizio di una sezione
+        nextPage = section.chapters[0]
+        nextPage.href = nextPage.href + "chapter.html";
+    }
 
     const othelloContent = document.getElementById("othello-content");
-    othelloContent.prepend(buildPagination(json, prevPage, nextPage));
-    othelloContent.append(buildPagination(json, prevPage, nextPage));
+    othelloContent.prepend(buildPagination(json, prevPage, nextPage, inChapter));
+    othelloContent.append(buildPagination(json, prevPage, nextPage, inChapter));
 }

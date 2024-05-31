@@ -895,10 +895,10 @@ function loadIndex() {
     const fileName = urlSplitted.pop();
     let indexHref;
     if (fileName == "section.html") {
-        indexHref = "../index.json#20240410";
+        indexHref = "../index.json#20240531";
     }
     else {
-        indexHref = "../../index.json#20240410";
+        indexHref = "../../index.json#20240531";
     }
 
     let json;

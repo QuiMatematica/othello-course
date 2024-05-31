@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "-------#",
+    "--OOOOO#",
+    "--OOOO##",
+    "--OO#O##",
+    "--O##OO#",
+    "---#OO-#",
+    "---####-"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: guadagna un tempo di gioco.",
+  "moves": [
+    {
+      "move": "C8",
+      "comment": "Bravo: ora il nero è obbligato a difendermi."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero prende in B8."
+    },
+    {
+      "move": "C7",
+      "comment": "Complimenti: hai guadagnato il tuo tempo di gioco ed ora il nero deve sfondare il tuo muro."
+    }
+  ]
+}

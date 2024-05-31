@@ -1,0 +1,8 @@
+# BLACK nero
+# WHITE bianco
+# START_POSITION -----------------OO-#---#O#OOOO-O#####--OOOOOO----#OO-----#-----
+A7
+E2
+A3
+G6
+A2

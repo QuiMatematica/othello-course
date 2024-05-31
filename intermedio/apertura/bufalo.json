@@ -1,0 +1,36 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "F6",
+      "comment": "Apertura &quot;Bufalo&quot;.<br>Anche questa apertura si presenta come un muro-contro-muro."
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "B4"
+    },
+    {
+      "move": "D6",
+      "comment": "Il muro contro muro termina e comincia la lotta per la mobilità."
+    }
+  ]
+}

@@ -484,7 +484,7 @@ class MatchFileBoard {
         if (json.moves != null) {
             json.moves.forEach((move) => {
                 const square = Square.fromString(move.move);
-                curPosition = curPosition.playStone(square)
+                curPosition = curPosition.playStone(square);
                 curPosition.comment = move.comment;
             });
             if (json.moves.length < 2) {
@@ -918,10 +918,10 @@ function loadIndex() {
     const fileName = urlSplitted.pop();
     let indexHref;
     if (fileName == "section.html") {
-        indexHref = "../index.json#20240531";
+        indexHref = "../index.json#20240601";
     }
     else {
-        indexHref = "../../index.json#20240531";
+        indexHref = "../../index.json#20240601";
     }
 
     let json;

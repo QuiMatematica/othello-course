@@ -461,7 +461,7 @@ class MatchFileBoard {
         if (json.moves != null) {
             json.moves.forEach((move) => {
                 const square = Square.fromString(move.move);
-                curPosition = curPosition.playStone(square)
+                curPosition = curPosition.playStone(square);
                 curPosition.comment = move.comment;
             });
             if (json.moves.length < 2) {

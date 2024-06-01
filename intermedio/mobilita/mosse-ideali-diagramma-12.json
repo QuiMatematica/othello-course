@@ -10,7 +10,7 @@
     "--------"
   ],
   "turn": "white",
-  "comment": "Compito: gioca al posto della mossa ideale del nero.",
+  "comment": "Compito: blocca la mossa ideale del nero.",
   "moves": [
     {
       "move": "B4",

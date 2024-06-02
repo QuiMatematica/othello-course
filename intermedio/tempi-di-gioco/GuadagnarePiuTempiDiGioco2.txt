@@ -1,8 +1,0 @@
-# BLACK Tao
-# WHITE studente
-# START_POSITION -------------O----####OO--OO###---O####---O##OOO----O#-----O----
-# START_COLOR white
-# START_COMMENT Compito: guadagna due tempi di gioco.
-H5 Bravo! Infatti io non riesco a giocare in H4
-F8
-H4 Complimenti: hai guadagnato due tempi di gioco e il quattro sul bordo est!

@@ -165,6 +165,20 @@
 							"title": "Apertura basate sulla perpendicolare"
 						}
 					]
+				},
+				{
+					"href": "tempi-di-gioco/",
+					"title": "I tempi di gioco",
+					"pages": [
+						{
+							"href": "un-tempo.html",
+							"title": "Guadagnare un tempo di gioco"
+						},
+						{
+							"href": "piu-tempi.html",
+							"title": "Guadagnare più tempi di gioco"
+						}
+					]
 				}
 			]
 		}

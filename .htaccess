@@ -12,7 +12,7 @@
 </IfModule>
 
 # Disabilita la cache per i file dinamici (PHP, CGI, etc.)
-<FilesMatch "\.(php|cgi|pl|htm|html|js|css)$">
+<FilesMatch "\.(php|cgi|pl|htm|html|js|css|json)$">
     FileETag None
     <IfModule mod_headers.c>
         Header unset ETag

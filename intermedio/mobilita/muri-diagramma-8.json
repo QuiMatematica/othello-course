@@ -9,5 +9,11 @@
     "--------",
     "--------"
   ],
-  "turn": "white"
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A6",
+      "comment": "Il bianco ha girato tutte le pedine della riga 6 formando un muro."
+    }
+  ]
 }

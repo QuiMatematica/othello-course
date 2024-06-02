@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--####--",
+    "--####--",
+    "--#O#---",
+    "--#O#O--",
+    "--#OOO--",
+    "--#OOO--",
+    "--#OOO--",
+    "-####---"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "F3",
+      "comment": "Il bianco collega le sue pedine sulla colonna F alla pedina nera F2. Ora, se il nero giocasse in F8, formerebbe un lungo muro."
+    }
+  ]
+}
+

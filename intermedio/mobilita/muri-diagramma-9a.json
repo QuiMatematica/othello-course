@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--#OO#--",
+    "--###O--",
+    "--#O#O--",
+    "--#O#O--",
+    "--#OOO--",
+    "--#OO#--",
+    "--#OOO--",
+    "--###---"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G5",
+      "comment": "Il bianco gira la pedina F6. Ora, se il nero giocasse in F8, formerebbe un lungo muro.<br>Anche G6 sarebbe altrettanto validada."
+    }
+  ]
+}
+

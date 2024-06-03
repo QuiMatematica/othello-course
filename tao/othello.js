@@ -700,10 +700,10 @@ function initHeader(inChapter) {
     brand.classList.add("navbar-brand");
     brand.classList.add("h1");
     if (inChapter) {
-        brand.setAttribute("href", "../../index.html");
+        brand.setAttribute("href", "../../index.php");
     }
     else {
-        brand.setAttribute("href", "../index.html");
+        brand.setAttribute("href", "../index.php");
     }
     brand.innerHTML = "Othello: corso interattivo";
 

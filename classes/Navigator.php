@@ -79,7 +79,11 @@ class Navigator {
         }
 
         if ($this->chapter != null) {
-            if ($pageIndex < count($this->chapter['pages']) - 1) {
+            if ($pageIndex === false) {
+                // sei nell'introduzione di un capitolo
+                $this->nextPage = $this->chapter['pages'][0];
+            }
+            else if ($pageIndex < count($this->chapter['pages']) - 1) {
                 $this->nextPage = $this->chapter['pages'][$pageIndex + 1];
             }
             else {

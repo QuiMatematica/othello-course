@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
     <?php
     include '../../classes/Navigator.php';
 
@@ -20,8 +21,11 @@
     $navigator->header();
     $navigator->offcanvas();
     ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
         <?php $navigator->pagination() ?>
+
 		<h1>Il gioco</h1>
 
 		<p>Othello &egrave; un gioco semplice e affascinante: bastano pochi minuti per imparare le
@@ -38,7 +42,9 @@
 		tutto il mondo, coinvolgendo sempre pi&ugrave; appassionati; sono stati indetti
 		tutti gli anni i Campionati del Mondo e i Campionati delle diverse nazioni,
 		fra cui i Campionati Italiani.</p>
+
         <?php $navigator->pagination() ?>
+
 	</div>
 </body>
 </html>

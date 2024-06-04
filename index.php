@@ -39,7 +39,7 @@
                         $section_href = $section['href'];
                         $title = $section['title'];
                         $a_class = "class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'";
-                        echo "<h1><a {$a_class} href='{$section_href}section.html'>{$title}</a></h1>";
+                        echo "<h1><a {$a_class} href='{$section_href}section.php'>{$title}</a></h1>";
 
                         foreach ($section['chapters'] as $chapter) {
                             $chapter_href = $chapter['href'];
@@ -49,7 +49,7 @@
                             echo "<ul class='nav flex-column'>";
                             echo "<li class='nav-item'>";
                             echo "<h4>";
-                            echo "<a {$a_class} href='{$section_href}{$chapter_href}chapter.html'>{$title}</a>";
+                            echo "<a {$a_class} href='{$section_href}{$chapter_href}chapter.php'>{$title}</a>";
                             echo "</h4>";
                             echo "<ul>";
 

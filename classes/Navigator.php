@@ -51,10 +51,10 @@ class Navigator {
         if ($pageIndex > 0) {
             $this->prevPage = $this->chapter['pages'][$pageIndex - 1];
         }
-        else if ($pageIndex == 0) {
+        else if ($pageIndex === 0) {
             // sei alla prima pagina di un capitolo
             $this->prevPage = $this->chapter;
-            $this->chapter['href'] = 'chapter.php';
+            $this->prevPage['href'] = 'chapter.php';
         }
         else {
             if ($chapterIndex > 0) {
@@ -63,7 +63,7 @@ class Navigator {
                 $this->prevPage = $prevChapter['pages'][count($prevChapter['pages']) - 1];
                 $this->prevPage['href'] = '../' . $prevChapter['href'] . $this->prevPage['href'];
             }
-            else if ($chapterIndex == 0) {
+            else if ($chapterIndex === 0) {
                 // sei nell'introduzione del primo capitolo della sezione
                 $this->prevPage = $this->section;
                 $this->prevPage['href'] = '../section.php';
@@ -99,7 +99,7 @@ class Navigator {
         else {
             // sei all'inizio di una sezione
             $this->nextPage = $this->section['chapters'][0];
-            $this->nextPage['href'] = 'chapter.php';
+            $this->nextPage['href'] = $this->nextPage['href'] . 'chapter.php';
         }
     }
 

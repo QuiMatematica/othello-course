@@ -18,7 +18,8 @@
 
     $navigator = new Navigator();
 
-    $navigator->initHeader();
+    $navigator->header();
+    $navigator->offcanvas();
     ?>
 
 	<div id="othello-content" class="container-xxl mt-4">

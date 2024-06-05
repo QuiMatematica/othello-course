@@ -9,21 +9,30 @@
 		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../../tao/othello.css">
-    <script type="module">
-        import { init } from "../../tao/othello.js";
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
 </head>
 
 <body>
+
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>Piccoli quiz per cominciare</h1>
 
 		<p>Questo capitolo contiene dei piccoli quiz finalizzati a prendere confidenza
 		con le regole del gioco.</p>
-    
+
+        <?php $navigator->pagination() ?>
+
 	</div>
 
 </body>

@@ -18,7 +18,18 @@
 
 <body>
 
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>Togliere una mossa</h1>
 
@@ -76,6 +87,8 @@
     			Diagramma 3: togli all'avversario la mossa in H6.
 			</div>
 		</div>
+
+        <?php $navigator->pagination() ?>
 
 	</div>
 

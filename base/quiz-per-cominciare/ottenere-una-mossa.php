@@ -18,7 +18,18 @@
 
 <body>
 
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>Ottenere una mossa</h1>
 
@@ -110,6 +121,8 @@
 				Diagramma 5: il nero muove e ottiene la possibilit&agrave; di giocare in C6.
 			</div>
 		</div>
+
+        <?php $navigator->pagination() ?>
 
 	</div>
 

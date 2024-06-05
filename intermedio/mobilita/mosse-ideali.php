@@ -18,7 +18,18 @@
 
 <body>
 
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>Le mosse ideali</h1>
 
@@ -216,6 +227,8 @@
 				Diagramma 12: offri una mossa ideale per ottenere una mossa ideale.
 			</div>
 		</div>
+
+        <?php $navigator->pagination() ?>
 
 	</div>
 

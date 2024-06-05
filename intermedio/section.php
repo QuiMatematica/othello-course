@@ -9,16 +9,22 @@
 		  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../tao/othello.css">
-    <script type="module">
-        import { init } from "../tao/othello.js";
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
 </head>
 
 <body>
 
+    <?php
+    include '../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
         <h1>Livello intermedio</h1>
 
@@ -26,14 +32,16 @@
         dell'Othello. In particolare parleremo di:</p>
 
         <ul>
-            <li><a href="pedine-stabili/chapter.html">pedine stabili</a>: l'importanza strategica degli angoli:</li>
-            <li><a href="mobilita/chapter.html">mobilità</a>: perché è importante avere tante mosse a disposizione;</li>
+            <li><a href="pedine-stabili/chapter.php">pedine stabili</a>: l'importanza strategica degli angoli:</li>
+            <li><a href="mobilita/chapter.php">mobilità</a>: perché è importante avere tante mosse a disposizione;</li>
 <!--            <li>bordi: come sfruttarli e come attaccarli;</li>-->
 <!--            <li>tempi di gioco: come gestire zone ristrette della scacchiera;</li>-->
 <!--            <li>apertura: come giocare le prime mosse di ogni partita;</li>-->
 <!--            <li>parità: perché è importante muovere per ultimo;</li>-->
 <!--            <li>finale: cos'è il finale perfetto e come si trova.</li>-->
         </ul>
+
+        <?php $navigator->pagination() ?>
 
     </div>
 

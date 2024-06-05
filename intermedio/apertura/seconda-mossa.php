@@ -18,7 +18,18 @@
 
 <body>
 
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>La seconda mossa</h1>
 
@@ -93,6 +104,9 @@
 		<p>Nelle prossime due pagine ti presento alcune aperture tra le
 		più giocate. Usale come base per iniziare a giocare
 		e per i tuoi successivi studi.</p>
+
+        <?php $navigator->pagination() ?>
+
 	</div>
 
 </body>

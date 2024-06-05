@@ -18,7 +18,18 @@
 
 <body>
 
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>Classificazione delle mosse</h1>
 
@@ -30,13 +41,13 @@
 		<h2>Mosse ideali</h2>
 
 		<p>Di questo tipo di mosse si parla più estesamente nella
-		<a href="mosse-ideali.html">pagina precedente</a>, a cui si rimanda.</p>
+		<a href="mosse-ideali.php">pagina precedente</a>, a cui si rimanda.</p>
 
 		<h2>Mosse difensive</h2>
 
 		<p>Sono mosse che impediscono all'avversario di poter giocare una mossa ideale.
 		Anche di queste si è già parlato nella
-		<a href="mosse-ideali.html">pagina precedente</a>.
+		<a href="mosse-ideali.php">pagina precedente</a>.
 
 		<h2>Mosse offensive</h2>
 
@@ -116,6 +127,8 @@
 				Diagramma 4: una mossa centrale, difensiva e offensiva.
 			</div>
 		</div>
+
+        <?php $navigator->pagination() ?>
 
 	</div>
 

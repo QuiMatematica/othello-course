@@ -27,31 +27,31 @@
 					"title": "Piccoli quiz per cominciare",
 					"pages": [
 						{
-							"href": "le-mosse-legali.html",
+							"href": "le-mosse-legali.php",
 							"title": "Le mosse legali"
 						},
 						{
-							"href": "le-pedine-da-girare.html",
+							"href": "le-pedine-da-girare.php",
 							"title": "Le pedine da girare"
 						},
 						{
-							"href": "quante-pedine-girare.html",
+							"href": "quante-pedine-girare.php",
 							"title": "Quante pedine vengono girate?"
 						},
 						{
-							"href": "ottenere-una-pedina.html",
+							"href": "ottenere-una-pedina.php",
 							"title": "Per ottenere una pedina"
 						},
 						{
-							"href": "togliere-una-mossa.html",
+							"href": "togliere-una-mossa.php",
 							"title": "Togliere una mossa"
 						},
 						{
-							"href": "ottenere-una-mossa.html",
+							"href": "ottenere-una-mossa.php",
 							"title": "Ottenere una mossa"
 						},
 						{
-							"href": "finali-con-caselle-vuote.html",
+							"href": "finali-con-caselle-vuote.php",
 							"title": "Finali con caselle vuote"
 						}
 					]
@@ -61,23 +61,23 @@
 					"title": "Primi elementi di strategia",
 					"pages": [
 						{
-							"href": "notazione-caselle.html",
+							"href": "notazione-caselle.php",
 							"title": "Per indicare le caselle"
 						},
 						{
-							"href": "notazione-partite.html",
+							"href": "notazione-partite.php",
 							"title": "Per registrare le partite"
 						},
 						{
-							"href": "gli-angoli.html",
+							"href": "gli-angoli.php",
 							"title": "Gli angoli"
 						},
 						{
-							"href": "il-centro.html",
+							"href": "il-centro.php",
 							"title": "Il centro"
 						},
 						{
-							"href": "quante-pedine.html",
+							"href": "quante-pedine.php",
 							"title": "Quante pedine?"
 						}
 					]
@@ -93,15 +93,15 @@
 					"href": "pedine-stabili/",
 					"pages": [
 						{
-							"href": "pedine-stabili.html",
+							"href": "pedine-stabili.php",
 							"title": "Gli angoli e le altre pedine stabili"
 						},
 						{
-							"href": "caselle-x-c.html",
+							"href": "caselle-x-c.php",
 							"title": "Le caselle X e C"
 						},
 						{
-							"href": "sacrifici-e-vantaggi.html",
+							"href": "sacrifici-e-vantaggi.php",
 							"title": "Sacrifici e vantaggi"
 						}
 					]
@@ -111,35 +111,35 @@
 					"title": "La mobilità",
 					"pages": [
 						{
-							"href": "pedine-esterne.html",
+							"href": "pedine-esterne.php",
 							"title": "Le pedine esterne"
 						},
 						{
-							"href": "muri.html",
+							"href": "muri.php",
 							"title": "I muri"
 						},
 						{
-							"href": "evaporazione.html",
+							"href": "evaporazione.php",
 							"title": "Evaporazione"
 						},
 						{
-							"href": "compattezza.html",
+							"href": "compattezza.php",
 							"title": "La compattezza"
 						},
 						{
-							"href": "mosse-ideali.html",
+							"href": "mosse-ideali.php",
 							"title": "Le mosse ideali"
 						},
 						{
-							"href": "togliere-mosse.html",
+							"href": "togliere-mosse.php",
 							"title": "Togliere mosse all'avversario"
 						},
 						{
-							"href": "usare-caselle-x.html",
+							"href": "usare-caselle-x.php",
 							"title": "Usare caselle X per la mobilità"
 						},
 						{
-							"href": "classificazione-delle-mosse.html",
+							"href": "classificazione-delle-mosse.php",
 							"title": "Classificazione delle mosse"
 						}
 					]
@@ -149,19 +149,19 @@
 					"title": "L'apertura",
 					"pages": [
 						{
-							"href": "prima-mossa.html",
+							"href": "prima-mossa.php",
 							"title": "La prima mossa"
 						},
 						{
-							"href": "seconda-mossa.html",
+							"href": "seconda-mossa.php",
 							"title": "La seconda mossa"
 						},
 						{
-							"href": "diagonale.html",
+							"href": "diagonale.php",
 							"title": "Aperture basate sulla diagonale"
 						},
 						{
-							"href": "perpendicolare.html",
+							"href": "perpendicolare.php",
 							"title": "Aperture basate sulla perpendicolare"
 						}
 					]
@@ -171,11 +171,11 @@
 					"title": "I tempi di gioco",
 					"pages": [
 						{
-							"href": "un-tempo.html",
+							"href": "un-tempo.php",
 							"title": "Guadagnare un tempo di gioco"
 						},
 						{
-							"href": "piu-tempi.html",
+							"href": "piu-tempi.php",
 							"title": "Guadagnare più tempi di gioco"
 						}
 					]

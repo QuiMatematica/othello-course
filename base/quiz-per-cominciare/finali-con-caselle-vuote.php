@@ -18,7 +18,18 @@
 
 <body>
 	
+    <?php
+    include '../../classes/Navigator.php';
+
+    $navigator = new Navigator();
+
+    $navigator->header();
+    $navigator->offcanvas();
+    ?>
+
 	<div id="othello-content" class="container-xxl mt-4">
+
+        <?php $navigator->pagination() ?>
 
 		<h1>Finali con caselle vuote</h1>
 
@@ -75,6 +86,8 @@
     			Diagramma 4: il bianco muove e vince 64 a 0.
 			</div>
 		</div>
+
+        <?php $navigator->pagination() ?>
 
 	</div>
 

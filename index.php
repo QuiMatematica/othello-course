@@ -28,7 +28,7 @@
 					<img class="mt-3" src="images/fngologo.gif" width="126" height="123" alt="Federazione Nazionale Gioco Othello">
 				</a>
 				<h5>Federazione Nazionale Gioco Othello</h5>
-				<a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="presentazione-del-corso.html">Presentazione del corso</a>
+				<a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="presentazione-del-corso.php">Presentazione del corso</a>
 			</div>
 			<div class="col-lg-10 py-3 px-5">
 				<div id="index-content" class="row">

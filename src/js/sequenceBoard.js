@@ -34,7 +34,7 @@ export default class SequenceBoard {
         this.currentPosition = Position.getPositionFromJSON(json);
         this.currentPosition.comment = json.comment;
         this.humanColor = this.currentPosition.turn;
-        var curPosition = this.currentPosition;
+        let curPosition = this.currentPosition;
 
         json.moves.forEach((move) => {
             const square = Square.fromString(move.move);
@@ -52,19 +52,23 @@ export default class SequenceBoard {
         this.comment.setPositionComment(this.currentPosition);
     }
 
-    moveComputer() {
+    goToNextPosition() {
         const nextPosition = this.currentPosition.nextPosition;
-        if (nextPosition != null) {
-            this.board.playPosition(nextPosition);
-            this.score.takeScore(nextPosition);
-             if (nextPosition.nextPosition == null && nextPosition.comment == null) {
-                this.comment.setComment("<span class=\"fw-bold\">Sequenza terminata.</span>");
-            }
-            else {
-                this.comment.setPositionComment(nextPosition);
-            }
-            this.controls.update(nextPosition, this.humanColor);
-            this.currentPosition = nextPosition;
+        this.board.playPosition(nextPosition);
+        this.score.takeScore(nextPosition);
+         if (nextPosition.nextPosition == null && nextPosition.comment == null) {
+            this.comment.setComment("<span class=\"fw-bold\">Sequenza terminata.</span>");
+        }
+        else {
+            this.comment.setPositionComment(nextPosition);
+        }
+        this.controls.update(nextPosition, this.humanColor);
+        this.currentPosition = nextPosition;
+    }
+
+    moveComputer() {
+        if (this.currentPosition.nextPosition != null) {
+            this.goToNextPosition();
         }
     }
 
@@ -72,27 +76,22 @@ export default class SequenceBoard {
         if (this.currentPosition.turn === this.humanColor) {
             const expected = this.currentPosition.nextPosition.played;
             if (square.x === expected.x && square.y === expected.y) {
-                const nextPosition = this.currentPosition.nextPosition;
-                this.board.playPosition(nextPosition);
-                this.score.takeScore(nextPosition);
-                if (nextPosition.nextPosition == null && nextPosition.comment == null) {
-                    this.comment.setComment("<span class=\"fw-bold\">Sequenza terminata.</span>");
-                }
-                else {
-                    this.comment.setPositionComment(nextPosition);
-                }
-                this.controls.update(nextPosition, this.humanColor);
-                this.currentPosition = nextPosition;
+                this.goToNextPosition();
             }
             else {
                 const correctPosition = this.currentPosition.nextPosition;
                 const wrongPosition = this.currentPosition.playStone(square);
-                this.board.playPosition(wrongPosition);
-                this.score.takeScore(wrongPosition);
-                this.controls.wrong();
-                this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span>");
-                this.currentPosition.nextPosition = correctPosition;
-                this.currentPosition = wrongPosition;
+                if (wrongPosition != null) {
+                    this.board.playPosition(wrongPosition);
+                    this.score.takeScore(wrongPosition);
+                    this.controls.wrong();
+                    this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span>");
+                    this.currentPosition.nextPosition = correctPosition;
+                    this.currentPosition = wrongPosition;
+                }
+                else {
+                    this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa non legale.</span>");
+                }
             }
         }
     }

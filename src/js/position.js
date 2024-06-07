@@ -35,8 +35,7 @@ export default class Position {
                 row.push(EMPTY);
             }
         }
-        const turn = BLACK;
-        return new Position(grid, turn)
+        return new Position(grid, BLACK)
     }
 
     static getStartingPosition() {
@@ -52,12 +51,11 @@ export default class Position {
         grid[4][4] = WHITE;
         grid[3][4] = BLACK;
         grid[4][3] = BLACK;
-        const turn = BLACK;
-        return new Position(grid, turn)
+        return new Position(grid, BLACK)
     }
 
     static getPositionFromJSON(json) {
-        var position;
+        let position;
         if (json.position != null) {
             const grid = [];
             for (let x = 0; x < 8; x++) {

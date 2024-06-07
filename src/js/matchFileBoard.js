@@ -1,8 +1,11 @@
-import Position, {Square} from "./position";
+import Position from "./position";
 import Board from "./board";
 import Score from "./score";
+import MatchControls from "./matchControls";
+import PositionComment from "./positionComment";
+import Square from "./square";
 
-class MatchFileBoard {
+export default class MatchFileBoard {
 
     currentPosition;
     board;
@@ -12,7 +15,7 @@ class MatchFileBoard {
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
-        this.board = new Board(container, counter, staticBoardOnClick);
+        this.board = new Board(container, counter, matchFileBoardOnClick);
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);
@@ -84,4 +87,7 @@ class MatchFileBoard {
         }
     }
 
+}
+
+function matchFileBoardOnClick(event) {
 }

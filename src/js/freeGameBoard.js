@@ -1,7 +1,8 @@
-import Position, {Square} from "./position";
-import Board, {animatingFlip} from "./board";
+import Position from "./position";
+import Board from "./board";
 import Score from "./score";
-import {boards} from "./page";
+import {animatingFlip, boards} from "./page";
+import Square from "./square";
 
 export default class FreeGameBoard {
 

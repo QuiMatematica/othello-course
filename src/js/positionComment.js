@@ -1,4 +1,4 @@
-class PositionComment {
+export default class PositionComment {
 
     div;
 

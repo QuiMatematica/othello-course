@@ -1,29 +1,8 @@
+import Square from "./square";
+
 export const EMPTY = 0;
 export const WHITE = 1;
 export const BLACK = -1;
-
-const LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
-const NUMBERS = ['1', '2', '3', '4', '5', '6', '7', '8']
-
-const FROM_LETTERS = {'A': 0, 'B': 1, 'C': 2, 'D': 3, 'E': 4, 'F': 5, 'G': 6, 'H': 7}
-const FROM_NUMBERS = {'1': 0, '2': 1, '3': 2, '4': 3, '5': 4, '6': 5, '7': 6, '8': 7}
-
-export function getStartingPosition() {
-    const grid = [];
-    for (let x = 0; x < 8; x++) {
-        const row = [];
-        grid.push(row);
-        for (let y = 0; y < 8; y++) {
-            row.push(EMPTY);
-        }
-    }
-    grid[3][3] = WHITE;
-    grid[4][4] = WHITE;
-    grid[3][4] = BLACK;
-    grid[4][3] = BLACK;
-    const turn = BLACK;
-    return new Position(grid, turn)
-}
 
 export default class Position {
 
@@ -77,45 +56,6 @@ export default class Position {
         return new Position(grid, turn)
     }
 
-    static getPositionFromDataset(container) {
-        if (container.dataset.hasOwnProperty('r1')) {
-            const grid = [];
-            for (let x = 0; x < 8; x++) {
-                const row = [];
-                grid.push(row);
-                const row_data = container.dataset['r' + (x + 1).toString()];
-                for (let y = 0; y < 8; y++) {
-                    const cell_data = row_data.charAt(y);
-                    if (cell_data == '#') {
-                        row.push(BLACK);
-                    }
-                    else if (cell_data == 'O') {
-                        row.push(WHITE);
-                    }
-                    else {
-                        row.push(EMPTY);
-                    }
-                }
-            }
-            let turn;
-            if (container.dataset.hasOwnProperty('turn')) {
-                if (container.dataset['turn'] == 'white') {
-                    turn = WHITE;
-                }
-                else {
-                    turn = BLACK;
-                }
-            }
-            else {
-                turn = BLACK;
-            }
-            return new Position(grid, turn);
-        }
-        else {
-            return Position.getStartingPosition();
-        }
-    }
-
     static getPositionFromJSON(json) {
         var position;
         if (json.position != null) {
@@ -126,10 +66,10 @@ export default class Position {
                 const row_data = json.position[x];
                 for (let y = 0; y < 8; y++) {
                     const cell_data = row_data.charAt(y);
-                    if (cell_data == '#') {
+                    if (cell_data === '#') {
                         row.push(BLACK);
                     }
-                    else if (cell_data == 'O') {
+                    else if (cell_data === 'O') {
                         row.push(WHITE);
                     }
                     else {
@@ -139,7 +79,7 @@ export default class Position {
             }
             let turn;
             if (json.turn != null) {
-                if (json.turn == 'white') {
+                if (json.turn === 'white') {
                     turn = WHITE;
                 }
                 else {
@@ -162,11 +102,11 @@ export default class Position {
 
         for (let y = 0; y < 8; ++y) {
             for (let x = 0; x < 8; ++x) {
-                if (this.grid[y][x] == BLACK) {
+                if (this.grid[y][x] === BLACK) {
                     scores.black += 1;
                 }
 
-                if (this.grid[y][x] == WHITE) {
+                if (this.grid[y][x] === WHITE) {
                     scores.white += 1;
                 }
             }
@@ -178,7 +118,7 @@ export default class Position {
         const scores = this.countStones();
 
         // If someone is out of pieces, the game is over.
-        if (scores.black == 0 || scores.white == 0) {
+        if (scores.black === 0 || scores.white === 0) {
             this.gameOver = true;
             return;
         }
@@ -243,7 +183,7 @@ export default class Position {
             if (this.isValidInDirection(x, y, dx, dy)) {
                 for (const [nx,ny] of Position.scanDirection(x, y, dx, dy)) {
                     // Stop on your own color.
-                    if (this.grid[ny][nx] == this.turn) {
+                    if (this.grid[ny][nx] === this.turn) {
                         break;
                     }
                     nextGrid[ny][nx] = this.turn;
@@ -269,7 +209,7 @@ export default class Position {
 
     isValidPlay(x, y) {
         // If it's not empty, it's not a valid play.
-        if (this.grid[y][x] != EMPTY) {
+        if (this.grid[y][x] !== EMPTY) {
             return false;
         }
 
@@ -301,7 +241,7 @@ export default class Position {
             // If the first square in direction dx,dy is not the opposite player's,
             // then this is not a valid play based on that direction.
             if (first) {
-                if (this.grid[ny][nx] != -this.turn) {
+                if (this.grid[ny][nx] !== -this.turn) {
                     return false;
                 }
 
@@ -310,13 +250,13 @@ export default class Position {
 
             // If the next square is empty, we failed to find another stone in our
             // color, so this is not a valid play based on that direction.
-            if (this.grid[ny][nx] == EMPTY) {
+            if (this.grid[ny][nx] === EMPTY) {
                 return false;
             }
 
             // Once we find a stone of our own color after some number of the
             // opponent's stones, this is a valid play in this direction.
-            if (this.grid[ny][nx] == this.turn) {
+            if (this.grid[ny][nx] === this.turn) {
                 return true;
             }
         }
@@ -346,27 +286,6 @@ export default class Position {
                 }
             }
         }
-    }
-
-}
-
-export class Square {
-    x;
-    y;
-
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    toString() {
-        return LETTERS[this.x] + NUMBERS[this.y];
-    }
-
-    static fromString(str) {
-        const x = FROM_LETTERS[str.charAt(0)];
-        const y = FROM_NUMBERS[str.charAt(1)];
-        return new Square(x, y);
     }
 
 }

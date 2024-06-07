@@ -1,25 +1,10 @@
 import { WHITE } from './position.js';
 import { BLACK } from './position.js';
-import { EMPTY } from './position.js';
-
-export let animatingFlip = false;
+import {createStone} from "./page";
+import {animatingFlip} from "./page";
 
 const xmlns = 'http://www.w3.org/2000/svg';
 
-export function createStone() {
-    const svg = document.createElementNS(xmlns, 'svg');
-    svg.setAttributeNS(null, 'viewBox', '0 0 100 100');
-
-    // The circle of the stone itself.
-    const circle = document.createElementNS(xmlns, 'circle');
-    circle.classList.add('stone');
-    circle.setAttributeNS(null, 'cx', '50');
-    circle.setAttributeNS(null, 'cy', '50');
-    circle.setAttributeNS(null, 'r', '45');
-    svg.appendChild(circle);
-
-    return svg;
-}
 
 export default class Board {
 
@@ -129,10 +114,10 @@ export default class Board {
     }
 
     setStone(x, y, color) {
-        if (color == WHITE) {
+        if (color === WHITE) {
             this.grid[y][x].classList.add('white');
         }
-        else if (color == BLACK) {
+        else if (color === BLACK) {
             this.grid[y][x].classList.add('black');
         }
     }
@@ -142,10 +127,10 @@ export default class Board {
         for (let x = 0; x < 8; x++) {
             for (let y = 0; y < 8; y++) {
                 const color = position.grid[y][x];
-                if (color == WHITE) {
+                if (color === WHITE) {
                     this.grid[y][x].classList.add('white');
                 }
-                else if (color == BLACK) {
+                else if (color === BLACK) {
                     this.grid[y][x].classList.add('black');
                 }
             }
@@ -169,10 +154,10 @@ export default class Board {
     }
 
     static getColor(positionColor) {
-        if (positionColor == WHITE) {
+        if (positionColor === WHITE) {
             return 'white';
         }
-        else if (positionColor == BLACK) {
+        else if (positionColor === BLACK) {
             return 'black';
         }
         return null;
@@ -180,11 +165,7 @@ export default class Board {
 
     // Returns the opposite of a player's color.
     static oppositeColor(color) {
-        return color == 'white' ? 'black' : 'white';
-    }
-
-    isSquareEmpty(x, y) {
-        return Board.isEmpty(this.grid[y][x]);
+        return color === 'white' ? 'black' : 'white';
     }
 
     // True if the square is empty.
@@ -197,7 +178,7 @@ export default class Board {
         return div.classList.contains(color);
     }
 
-    addASquares(add) {
+    addASquares() {
         this.addLetter(0, 3, "A");
         this.addLetter(3, 0, "A");
         this.addLetter(0, 4, "A");
@@ -208,7 +189,7 @@ export default class Board {
         this.addLetter(4, 7, "A");
     }
 
-    addBSquares(add) {
+    addBSquares() {
         this.addLetter(0, 2, "B");
         this.addLetter(2, 0, "B");
         this.addLetter(0, 5, "B");
@@ -219,7 +200,7 @@ export default class Board {
         this.addLetter(5, 7, "B");
     }
 
-    addCSquares(add) {
+    addCSquares() {
         this.addLetter(0, 1, "C");
         this.addLetter(1, 0, "C");
         this.addLetter(0, 6, "C");
@@ -230,7 +211,7 @@ export default class Board {
         this.addLetter(6, 7, "C");
     }
 
-    addXSquares(add) {
+    addXSquares() {
         this.addLetter(1, 1, "X");
         this.addLetter(1, 6, "X");
         this.addLetter(6, 1, "X");
@@ -256,7 +237,7 @@ export default class Board {
         textElement.setAttributeNS(null, 'y', '55');
         textElement.setAttributeNS(null, 'alignment-baseline', "middle");
         textElement.setAttributeNS(null, 'text-anchor', "middle");
-        if (letter.length == 1) {
+        if (letter.length === 1) {
             textElement.setAttributeNS(null, 'font-size', 80);
         }
         else {

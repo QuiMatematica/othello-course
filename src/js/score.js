@@ -1,6 +1,5 @@
 import { WHITE } from './position.js';
-import { BLACK } from './position.js';
-import { createStone } from './board.js';
+import { createStone } from './page.js';
 
 export default class Score {
 
@@ -73,7 +72,7 @@ export default class Score {
         if (position.gameOver) {
             this.turnElement.innerHTML = 'Partita terminata';
         }
-        else if (position.turn == WHITE) {
+        else if (position.turn === WHITE) {
             this.turnElement.innerHTML = 'Mossa al bianco';
         }
         else {

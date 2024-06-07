@@ -1,4 +1,6 @@
-class MatchControls {
+import {boards} from "./page";
+
+export default class MatchControls {
 
     buttonsContainer;
     first;
@@ -60,3 +62,69 @@ class MatchControls {
     }
 
 }
+
+
+function matchOnNextClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    const nextPosition = matchFileBoard.currentPosition.nextPosition;
+    if (nextPosition != null) {
+        matchFileBoard.board.playPosition(nextPosition);
+        matchFileBoard.score.takeScore(nextPosition);
+        matchFileBoard.comment.setPositionComment(nextPosition);
+        matchFileBoard.controls.update(nextPosition);
+        matchFileBoard.currentPosition = nextPosition;
+    }
+}
+
+function matchOnPrevClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    const prevPosition = matchFileBoard.currentPosition.prevPosition;
+    if (prevPosition != null) {
+        matchFileBoard.board.setPosition(prevPosition);
+        matchFileBoard.score.takeScore(prevPosition);
+        matchFileBoard.comment.setPositionComment(prevPosition);
+        matchFileBoard.controls.update(prevPosition);
+        matchFileBoard.currentPosition = prevPosition;
+    }
+}
+
+function matchOnFirstClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    var curPosition = matchFileBoard.currentPosition;
+    var prevPosition = curPosition.prevPosition;
+    if (prevPosition != null) {
+        while (prevPosition != null) {
+            curPosition = prevPosition;
+            prevPosition = curPosition.prevPosition;
+        }
+        matchFileBoard.board.setPosition(curPosition);
+        matchFileBoard.score.takeScore(curPosition);
+        matchFileBoard.comment.setPositionComment(curPosition);
+        matchFileBoard.controls.update(curPosition);
+        matchFileBoard.currentPosition = curPosition;
+    }
+}
+
+function matchOnEndClick(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    const matchFileBoard = boards[counter];
+    var curPosition = matchFileBoard.currentPosition;
+    if (curPosition.nextPosition != null) {
+        while (curPosition.nextPosition != null) {
+            curPosition = curPosition.nextPosition;
+        }
+        matchFileBoard.board.setPosition(curPosition);
+        matchFileBoard.score.takeScore(curPosition);
+        matchFileBoard.comment.setPositionComment(curPosition);
+        matchFileBoard.controls.update(curPosition);
+        matchFileBoard.currentPosition = curPosition;
+    }
+}
+

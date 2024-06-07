@@ -1,6 +1,6 @@
     <?php
         if ($_SERVER['HTTP_HOST'] == 'othello.quimatematica.it') {
-            include 'google-tag.php';
+            include '../../google-tag.php';
         }
     ?>
 

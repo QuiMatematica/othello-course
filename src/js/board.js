@@ -1,10 +1,6 @@
 import { WHITE } from './position.js';
 import { BLACK } from './position.js';
-import {createStone} from "./page";
-import {animatingFlip} from "./page";
-
-const xmlns = 'http://www.w3.org/2000/svg';
-
+import {createStone, setAnimatingFlip, xmlns} from "./page";
 
 export default class Board {
 
@@ -68,7 +64,7 @@ export default class Board {
                 // When the flip animation ends, update the flip state and mark the valid
                 // moves for the next player.
                 div.addEventListener('animationend', () => {
-                    animatingFlip = false;
+                    setAnimatingFlip(false);
                 });
 
                 // Add the stone itself, which will not show up until a black or white
@@ -150,7 +146,7 @@ export default class Board {
         }
 
         // Set this flag to indicate that we're animating the flip now.
-        animatingFlip = true;
+        setAnimatingFlip(true);
     }
 
     static getColor(positionColor) {

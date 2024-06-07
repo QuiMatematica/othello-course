@@ -1,7 +1,7 @@
 import Position from "./position";
 import Board from "./board";
 import Score from "./score";
-import {animatingFlip, boards} from "./page";
+import {boards, isAnimatingFlip} from "./page";
 import Square from "./square";
 
 export default class FreeGameBoard {
@@ -28,7 +28,7 @@ export default class FreeGameBoard {
 
 function freeGameBoardOnClick(event) {
     // Ignore if we're still animating the last move.
-    if (animatingFlip) {
+    if (isAnimatingFlip()) {
         return;
     }
 

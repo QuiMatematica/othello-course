@@ -1,6 +1,16 @@
 export const boards = []
 
-export let animatingFlip = false;
+let animatingFlip = false;
+
+export function isAnimatingFlip() {
+    return animatingFlip;
+}
+
+export function setAnimatingFlip(value) {
+    animatingFlip = value;
+}
+
+export const xmlns = 'http://www.w3.org/2000/svg';
 
 export function createStone() {
     const svg = document.createElementNS(xmlns, 'svg');

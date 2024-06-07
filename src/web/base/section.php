@@ -2,7 +2,7 @@
 
 <html lang="it">
 <head>
-    <?php include '../header.php' ?>
+    <?php include '../section/header.php' ?>
 </head>
 
 <body>

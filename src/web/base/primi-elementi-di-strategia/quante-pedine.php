@@ -2,12 +2,7 @@
 
 <html lang="it">
 <head>
-    <?php include '../../header.php' ?>
-	<link rel="stylesheet" href="../../../tao/othello.css">
-    <script type="module">
-        import { init } from "../../../tao/othello.js";
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
+    <?php include '../../section/chapter/header.php' ?>
 </head>
 
 <body>

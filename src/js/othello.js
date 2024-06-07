@@ -7,10 +7,10 @@ import Board from './board.js';
 import { animatingFlip } from './board.js';
 
 import Score from './score.js'
+import FreeGameBoard from "./freeGameBoard";
+import {boards} from "./page";
 
-const boards = []
-
-function init() {
+export function init() {
     document.querySelectorAll('.free-game-board').forEach((item) => {
         const freeGame = new FreeGameBoard(item, boards.length);
         boards.push(freeGame);
@@ -31,9 +31,8 @@ function init() {
         const referee = new RefereeBoard(item, boards.length);
         boards.push(referee);
     });
+    console.log("init(): fine")
 }
-
-module.exports = init;
 
 function staticBoardOnClick(event) {
 }
@@ -51,7 +50,6 @@ class RefereeBoard {
         this.score.takeScore(emptyPosition);
 
         const matchFile = container.dataset['file'];
-        let json;
         fetch(matchFile)
             .then((response) => response.json())
             .then((json) => this.readMatch(json));
@@ -91,7 +89,6 @@ class SequenceBoard {
         this.comment = new PositionComment(container);
 
         const matchFile = container.dataset['file'];
-        let json;
         fetch(matchFile)
             .then((response) => response.json())
             .then((json) => this.readMatch(json));
@@ -241,10 +238,10 @@ class SequenceControls {
     update(position, humanColor) {
         this.first.disabled = (position.prevPosition == null);
         this.prev.disabled = (position.prevPosition == null);
-        this.computer.disabled = (position.nextPosition == null || position.turn == humanColor);
+        this.computer.disabled = (position.nextPosition == null || position.turn === humanColor);
     }
 
-    wrong(position, humanColor) {
+    wrong() {
         this.first.disabled = false;
         this.prev.disabled = false;
         this.computer.disabled = true;
@@ -289,9 +286,6 @@ function sequenceBoardOnClick(event) {
 
 class ClickOnBoard {
 
-    container;
-    counter;
-
     position;
     board;
     comment;
@@ -313,7 +307,6 @@ class ClickOnBoard {
         this.correctCount = 0;
 
         const matchFile = container.dataset['file'];
-        let json;
         fetch(matchFile)
             .then((response) => response.json())
             .then((json) => this.readMatch(json));
@@ -333,8 +326,8 @@ class ClickOnBoard {
     }
 
     checkClick(square) {
-        if (this.clicked.findIndex(c => (c.x == square.x && c.y == square.y)) == -1) {
-            const squareIndex = this.correct.findIndex(c => (c.x == square.x && c.y == square.y));
+        if (this.clicked.findIndex(c => (c.x === square.x && c.y === square.y)) === -1) {
+            const squareIndex = this.correct.findIndex(c => (c.x === square.x && c.y === square.y));
             if (squareIndex > -1) {
                 this.board.addLetter(square.x, square.y, String.fromCharCode(10003));
                 this.correctCount++;
@@ -410,225 +403,8 @@ class ClickOnControls {
 
 }
 
-class FreeGameBoard {
 
-    container;
-    counter;
 
-    position;
-    board;
-    score;
-
-    constructor(container, counter) {
-        this.container = container;
-        this.counter = counter;
-
-        this.position = Position.getStartingPosition();
-        this.board = new Board(container, counter, freeGameBoardOnClick)
-        this.board.setPosition(this.position);
-        this.score = new Score(container, this.board);
-        this.score.takeScore(this.position);
-    }
-
-}
-
-function freeGameBoardOnClick(event) {
-    // Ignore if we're still animating the last move.
-    if (animatingFlip) {
-        return;
-    }
-
-    // Find the coordinates of the clicked square.
-    const div = event.currentTarget;
-    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
-    const freeGameBoard = boards[counter];
-    const square = new Square(parseInt(x), parseInt(y));
-    const nextPosition = freeGameBoard.position.playStone(square);
-    // If the play was valid, update the score.
-    if (nextPosition != null) {
-        freeGameBoard.position = nextPosition;
-        freeGameBoard.board.playPosition(freeGameBoard.position);
-        freeGameBoard.score.takeScore(freeGameBoard.position);
-    }
-}
-
-class MatchFileBoard {
-
-    currentPosition;
-    board;
-    score;
-    controls;
-    comment;
-
-    constructor(container, counter) {
-        this.currentPosition = Position.getEmptyPosition();
-        this.board = new Board(container, counter, staticBoardOnClick);
-        this.board.setPosition(this.currentPosition);
-        this.score = new Score(container, this.board);
-        this.score.takeScore(this.currentPosition);
-        this.controls = new MatchControls(container, counter);
-        this.comment = new PositionComment(container);
-
-        const matchFile = container.dataset['file'];
-        let json;
-        fetch(matchFile)
-            .then((response) => response.json())
-            .then((json) => this.readMatch(json));
-    }
-
-    readMatch(json) {
-        this.currentPosition = Position.getPositionFromJSON(json);
-        this.currentPosition.comment = json.comment;
-        var curPosition = this.currentPosition;
-        if (json.moves != null) {
-            json.moves.forEach((move) => {
-                const square = Square.fromString(move.move);
-                curPosition = curPosition.playStone(square);
-                curPosition.comment = move.comment;
-            });
-            if (json.moves.length < 2) {
-                this.controls.prev.remove();
-                this.controls.last.remove();
-            }
-        }
-        else {
-            this.controls.buttonsContainer.remove();
-        }
-        if (json.controls != null) {
-            if (!json.controls.previous) {
-                this.controls.prev.remove();
-            }
-            if (!json.controls.last) {
-                this.controls.last.remove();
-            }
-            if (!json.controls.score) {
-                this.score.scoreContainer.remove();
-            }
-            if (!json.controls.turn) {
-                this.score.turnContainer.remove();
-            }
-        }
-        this.board.setPosition(this.currentPosition);
-        this.score.takeScore(this.currentPosition);
-        this.controls.update(this.currentPosition);
-        this.comment.setPositionComment(this.currentPosition);
-
-        if (json.add != null) {
-            if (json.add["a-squares"]) {
-                this.board.addASquares();
-            }
-            if (json.add["b-squares"]) {
-                this.board.addBSquares();
-            }
-            if (json.add["c-squares"]) {
-                this.board.addCSquares();
-            }
-            if (json.add["x-squares"]) {
-                this.board.addXSquares();
-            }
-            if (json.add["squares"] != null) {
-                json.add.squares.forEach((entry) => {
-                    const square = Square.fromString(entry.square);
-                    this.board.addLetter(square.x, square.y, entry.value);
-                });
-            }
-        }
-    }
-
-}
-
-class MatchControls {
-
-    buttonsContainer;
-    first;
-    prev;
-    next;
-    last;
-
-    constructor(container, counter) {
-        this.first = document.createElement("button");
-        this.first.classList.add("btn");
-        this.first.classList.add("btn-primary");
-        this.first.dataset.counter = counter;
-        this.first.appendChild(document.createTextNode("|<"));
-        this.first.addEventListener('click', matchOnFirstClick);
-
-        this.prev = document.createElement("button");
-        this.prev.classList.add("btn");
-        this.prev.classList.add("btn-primary");
-        this.prev.dataset.counter = counter;
-        this.prev.appendChild(document.createTextNode("<"));
-        this.prev.addEventListener('click', matchOnPrevClick);
-
-        this.next = document.createElement("button");
-        this.next.classList.add("btn");
-        this.next.classList.add("btn-primary");
-        this.next.dataset.counter = counter;
-        this.next.appendChild(document.createTextNode(">"));
-        this.next.addEventListener('click', matchOnNextClick);
-
-        this.last = document.createElement("button");
-        this.last.classList.add("btn");
-        this.last.classList.add("btn-primary");
-        this.last.dataset.counter = counter;
-        this.last.appendChild(document.createTextNode(">|"));
-        this.last.addEventListener('click', matchOnEndClick);
-
-        const buttonGroup = document.createElement("div");
-        buttonGroup.classList.add("btn-group");
-        buttonGroup.classList.add("btn-group-sm");
-        buttonGroup.setAttribute("role", "group");
-        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
-        buttonGroup.appendChild(this.first);
-        buttonGroup.appendChild(this.prev);
-        buttonGroup.appendChild(this.next);
-        buttonGroup.appendChild(this.last);
-
-        this.buttonsContainer = document.createElement("div");
-        this.buttonsContainer.classList.add("text-center");
-        this.buttonsContainer.appendChild(buttonGroup);
-
-        container.appendChild(this.buttonsContainer);
-    }
-
-    update(position) {
-        this.first.disabled = (position.prevPosition == null);
-        this.prev.disabled = (position.prevPosition == null);
-        this.next.disabled = (position.nextPosition == null);
-        this.last.disabled = (position.nextPosition == null);
-    }
-
-}
-
-class PositionComment {
-
-    div;
-
-    constructor(container) {
-        this.div = document.createElement("div");
-        this.div.classList.add('text-center');
-        container.appendChild(this.div)
-    }
-
-    setComment(comment) {
-        if (comment == null) {
-            this.div.innerHTML = "";
-        }
-        else {
-            this.div.innerHTML = comment;
-        }
-    }
-
-    setPositionComment(position) {
-        if (position.comment == null) {
-            this.div.innerHTML = "";
-        }
-        else {
-            this.div.innerHTML = position.comment;
-        }
-    }
-
-}
 
 function matchOnNextClick(event) {
     const div = event.currentTarget;

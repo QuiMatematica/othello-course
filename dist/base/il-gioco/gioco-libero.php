@@ -3,10 +3,6 @@
 <html lang="it">
 <head>
     <?php include '../../header-chapter.php' ?>
-	<link rel="stylesheet" href="../../css/othello.css">
-    <script type="text/javascript" src="../../js/tao.js">
-        document.addEventListener('DOMContentLoaded', init);
-    </script>
 </head>
 
 <body>

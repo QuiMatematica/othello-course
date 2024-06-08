@@ -62,7 +62,7 @@
 
 		<p>Tornando alla posizione del diagramma 1, purtroppo tocca al bianco. Egli ha già una bassa mobilità. Ogni
 		mossa va solo a peggiorare la situazione. Nel diagramma 2 puoi vedere una possibile
-		continuazione della partita, e ti viene mostrato il conteggio delle mosse del bianco e delle pedine estern
+		continuazione della partita, e ti viene mostrato il conteggio delle mosse del bianco e delle pedine esterne
 		del nero.</p>
 
 		<div class="card mx-auto board-card my-3">

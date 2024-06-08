@@ -30,7 +30,7 @@
 
 		<p>In verità, come presto capirai, non è questa la strategia migliore. All'inizio della partita, più che badare
 			alla quantità di pedine, è necessario badare alla quantità di mosse a disposizione. E, per avere tante mosse,
-			può essere opportuno, all'inizio della partita, avere poche pedine e mantenerle compatte al centro della
+			all'inizio della partita è meglio avere poche pedine e mantenerle compatte al centro della
 			tavola. Il problema della quantità di pedine viene rimandato alle ultime mosse.
 			Riprenderemo questo concetto nella pagina riguardante la mobilità.
 

@@ -22,10 +22,10 @@
 
 		<h1>Gli angoli</h1>
 
-		<p>La prima fondamentale strategia che ogni giocatori di Othello deve conoscere riguarda
+		<p>La prima fondamentale strategia che ogni giocatore di Othello deve conoscere riguarda
 		l'importanza degli <b>angoli</b>!</p>
 
-		<p>Le regole affermano che una pedina pu&ograve; essere girata se pu&ograve; essere incastrata (in orizzonale,
+		<p>Le regole affermano che una pedina pu&ograve; essere girata se pu&ograve; essere incastrata (in orizzontale,
 		verticale o diagonale) tra due pedine avversarie. La pedina nera in B2 del diagramma 1 pu&ograve;
 		essere voltata se incastrata, per esempio, tra due pedine bianche in A3 e C1 (una presente
 		e una posizionata in una mossa). La pedina bianca in H2 pu&ograve; essere voltata se incastrata, per
@@ -46,7 +46,7 @@
 
 		<p>Ma se le pedine negli angoli sono sicuramente stabili anche altre lo possono diventare.
 		Per esempio tutte le pedine nere della riga 1 del diagramma 2 sono stabili, grazie al fatto
-		che sono appoggiate ad una pedina posta nell'angolo. E anche tutte le pedine bianche a sud
+		che sono appoggiate a una pedina posta nell'angolo. E anche tutte le pedine bianche a sud
 		est sono stabili, per lo stesso identico motivo.</p>
 
 		<div class="card mx-auto board-card my-3">

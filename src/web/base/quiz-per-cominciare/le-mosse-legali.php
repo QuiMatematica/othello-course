@@ -24,13 +24,13 @@
 
 		<h2>Teoria</h2>
 
-		<p>Riassumendo, &egrave; possibile giocare una pedina in una casella se:</p>
+		<p>Riassumendo, è possibile giocare una pedina in una casella se:</p>
 
 		<ul>
-			<li>la casella &egrave; libera;</li>
-			<li>la casella &egrave; adiacente a una pedina di colore avversario;</li>
-			<li>&egrave; presente almeno un disco avversario incastrato tra la pedina
-			che si vuole porre e quelle gi&agrave; presenti del proprio colore.</li>
+			<li>la casella è libera;</li>
+			<li>la casella è adiacente a una pedina di colore avversario;</li>
+            <li>è possibile incastrare almeno una pedina avversaria tra la pedina che si vuole porre
+            e quelle già presenti del proprio colore.</li>
 		</ul>
 
 		<p>In ogni posizione scorri con gli occhi il

@@ -1,5 +1,11 @@
 export const boards = []
 
+export function getBoard(event) {
+    const div = event.currentTarget;
+    const counter = div.dataset.counter;
+    return boards[counter];
+}
+
 let animatingFlip = false;
 
 export function isAnimatingFlip() {

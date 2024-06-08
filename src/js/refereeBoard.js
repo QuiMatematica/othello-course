@@ -13,6 +13,7 @@ export default class RefereeBoard {
         this.board = new Board(container, counter, staticBoardOnClick);
         this.board.setPosition(emptyPosition);
         this.score = new Score(container, this.board);
+        this.score.turnContainer.remove();
         this.score.takeScore(emptyPosition);
 
         const matchFile = container.dataset['file'];

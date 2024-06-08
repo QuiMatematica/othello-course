@@ -1,48 +1,18 @@
-import {boards} from "./page";
+import {getBoard} from "./page";
+import Controls from "./controls";
 
-export default class SequenceControls {
+export default class SequenceControls extends Controls {
 
-    buttonsContainer;
-    first;
-    prev;
     computer;
 
     constructor(container, counter) {
-        this.first = document.createElement("button");
-        this.first.classList.add("btn");
-        this.first.classList.add("btn-primary");
-        this.first.dataset.counter = counter;
-        this.first.appendChild(document.createTextNode("|<"));
-        this.first.addEventListener('click', sequenceOnFirstClick);
+        super(container, counter);
+        this.addFirstButton().addPrevButton().addComputerButton();
+    }
 
-        this.prev = document.createElement("button");
-        this.prev.classList.add("btn");
-        this.prev.classList.add("btn-primary");
-        this.prev.dataset.counter = counter;
-        this.prev.appendChild(document.createTextNode("<"));
-        this.prev.addEventListener('click', sequenceOnPrevClick);
-
-        this.computer = document.createElement("button");
-        this.computer.classList.add("btn");
-        this.computer.classList.add("btn-primary");
-        this.computer.dataset.counter = counter;
-        this.computer.appendChild(document.createTextNode("Muove il computer"));
-        this.computer.addEventListener('click', sequenceOnComputerClick);
-
-        const buttonGroup = document.createElement("div");
-        buttonGroup.classList.add("btn-group");
-        buttonGroup.classList.add("btn-group-sm");
-        buttonGroup.setAttribute("role", "group");
-        buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
-        buttonGroup.appendChild(this.first);
-        buttonGroup.appendChild(this.prev);
-        buttonGroup.appendChild(this.computer);
-
-        this.buttonsContainer = document.createElement("div");
-        this.buttonsContainer.classList.add("text-center");
-        this.buttonsContainer.appendChild(buttonGroup);
-
-        container.appendChild(this.buttonsContainer);
+    addComputerButton() {
+        this.computer = this.createButton("Muove il computer", onComputerClick);
+        return this;
     }
 
     update(position, humanColor) {
@@ -59,23 +29,6 @@ export default class SequenceControls {
 
 }
 
-function sequenceOnFirstClick(event) {
-    const div = event.currentTarget;
-    const counter = div.dataset.counter;
-    const sequenceBoard = boards[counter];
-    sequenceBoard.goToFirstPosition();
-}
-
-function sequenceOnPrevClick(event) {
-    const div = event.currentTarget;
-    const counter = div.dataset.counter;
-    const sequenceBoard = boards[counter];
-    sequenceBoard.goToPreviousPosition();
-}
-
-function sequenceOnComputerClick(event) {
-    const div = event.currentTarget;
-    const counter = div.dataset.counter;
-    const sequenceBoard = boards[counter];
-    sequenceBoard.moveComputer();
+function onComputerClick(event) {
+    getBoard(event).moveComputer();
 }

@@ -22,7 +22,7 @@
 
         <h1>La mobilità</h1>
 
-        <p>Confronta le posizioni dei diagrammi 1 e 2. Se tu fosse il bianco quale delle due posizioni preferiresti?</p>
+        <p>Confronta le posizioni dei diagrammi 1 e 2. Se tu fossi il bianco quale delle due posizioni preferiresti?</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">

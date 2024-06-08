@@ -2,7 +2,6 @@ import {boards} from "./page";
 
 export default class MatchControls {
 
-    buttonsContainer;
     first;
     prev;
     next;
@@ -47,11 +46,11 @@ export default class MatchControls {
         buttonGroup.appendChild(this.next);
         buttonGroup.appendChild(this.last);
 
-        this.buttonsContainer = document.createElement("div");
-        this.buttonsContainer.classList.add("text-center");
-        this.buttonsContainer.appendChild(buttonGroup);
+        let buttonsContainer = document.createElement("div");
+        buttonsContainer.classList.add("text-center");
+        buttonsContainer.appendChild(buttonGroup);
 
-        container.appendChild(this.buttonsContainer);
+        container.appendChild(buttonsContainer);
     }
 
     update(position) {
@@ -68,63 +67,27 @@ function matchOnNextClick(event) {
     const div = event.currentTarget;
     const counter = div.dataset.counter;
     const matchFileBoard = boards[counter];
-    const nextPosition = matchFileBoard.currentPosition.nextPosition;
-    if (nextPosition != null) {
-        matchFileBoard.board.playPosition(nextPosition);
-        matchFileBoard.score.takeScore(nextPosition);
-        matchFileBoard.comment.setPositionComment(nextPosition);
-        matchFileBoard.controls.update(nextPosition);
-        matchFileBoard.currentPosition = nextPosition;
-    }
+    matchFileBoard.goToNextPosition();
 }
 
 function matchOnPrevClick(event) {
     const div = event.currentTarget;
     const counter = div.dataset.counter;
     const matchFileBoard = boards[counter];
-    const prevPosition = matchFileBoard.currentPosition.prevPosition;
-    if (prevPosition != null) {
-        matchFileBoard.board.setPosition(prevPosition);
-        matchFileBoard.score.takeScore(prevPosition);
-        matchFileBoard.comment.setPositionComment(prevPosition);
-        matchFileBoard.controls.update(prevPosition);
-        matchFileBoard.currentPosition = prevPosition;
-    }
+    matchFileBoard.goToPreviousPosition();
 }
 
 function matchOnFirstClick(event) {
     const div = event.currentTarget;
     const counter = div.dataset.counter;
     const matchFileBoard = boards[counter];
-    var curPosition = matchFileBoard.currentPosition;
-    var prevPosition = curPosition.prevPosition;
-    if (prevPosition != null) {
-        while (prevPosition != null) {
-            curPosition = prevPosition;
-            prevPosition = curPosition.prevPosition;
-        }
-        matchFileBoard.board.setPosition(curPosition);
-        matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setPositionComment(curPosition);
-        matchFileBoard.controls.update(curPosition);
-        matchFileBoard.currentPosition = curPosition;
-    }
+    matchFileBoard.goToFirstPosition();
 }
 
 function matchOnEndClick(event) {
     const div = event.currentTarget;
     const counter = div.dataset.counter;
     const matchFileBoard = boards[counter];
-    var curPosition = matchFileBoard.currentPosition;
-    if (curPosition.nextPosition != null) {
-        while (curPosition.nextPosition != null) {
-            curPosition = curPosition.nextPosition;
-        }
-        matchFileBoard.board.setPosition(curPosition);
-        matchFileBoard.score.takeScore(curPosition);
-        matchFileBoard.comment.setPositionComment(curPosition);
-        matchFileBoard.controls.update(curPosition);
-        matchFileBoard.currentPosition = curPosition;
-    }
+    matchFileBoard.goToLastPosition();
 }
 

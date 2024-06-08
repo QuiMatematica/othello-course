@@ -32,7 +32,7 @@ export default class SequenceBoard {
 
     readMatch(json) {
         this.currentPosition = Position.getPositionFromJSON(json);
-        this.currentPosition.comment = json.comment;
+
         this.humanColor = this.currentPosition.turn;
         let curPosition = this.currentPosition;
 

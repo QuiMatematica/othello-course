@@ -2,7 +2,6 @@ import {boards} from "./page";
 
 export default class SequenceControls {
 
-    buttonsContainer;
     first;
     prev;
     computer;
@@ -38,11 +37,11 @@ export default class SequenceControls {
         buttonGroup.appendChild(this.prev);
         buttonGroup.appendChild(this.computer);
 
-        this.buttonsContainer = document.createElement("div");
-        this.buttonsContainer.classList.add("text-center");
-        this.buttonsContainer.appendChild(buttonGroup);
+        let buttonsContainer = document.createElement("div");
+        buttonsContainer.classList.add("text-center");
+        buttonsContainer.appendChild(buttonGroup);
 
-        container.appendChild(this.buttonsContainer);
+        container.appendChild(buttonsContainer);
     }
 
     update(position, humanColor) {

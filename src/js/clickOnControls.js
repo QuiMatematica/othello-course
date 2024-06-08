@@ -2,7 +2,6 @@ import {boards} from "./page";
 
 export default class ClickOnControls {
 
-    buttonsContainer;
     reset;
 
     constructor(container, counter) {
@@ -20,11 +19,11 @@ export default class ClickOnControls {
         buttonGroup.setAttribute("aria-label", "Gruppo di controlli");
         buttonGroup.appendChild(this.reset);
 
-        this.buttonsContainer = document.createElement("div");
-        this.buttonsContainer.classList.add("text-center");
-        this.buttonsContainer.appendChild(buttonGroup);
+        let buttonsContainer = document.createElement("div");
+        buttonsContainer.classList.add("text-center");
+        buttonsContainer.appendChild(buttonGroup);
 
-        container.appendChild(this.buttonsContainer);
+        container.appendChild(buttonsContainer);
     }
 
 }

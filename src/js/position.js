@@ -92,6 +92,7 @@ export default class Position {
         else {
             position = Position.getStartingPosition();
         }
+        position.comment = json.comment;
         return position;
     }
 

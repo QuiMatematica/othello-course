@@ -1,9 +1,9 @@
 import Position from "./position";
 import Board from "./board";
 import Score from "./score";
-import MatchControls from "./matchControls";
 import PositionComment from "./positionComment";
 import Square from "./square";
+import Controls from "./controls";
 
 export default class MatchFileBoard {
 
@@ -27,32 +27,30 @@ export default class MatchFileBoard {
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);
+        if (json.controls != null) {
+            if (!json.controls.score) {
+                this.score.scoreContainer.remove();
+            }
+            if (!json.controls.turn) {
+                this.score.turnContainer.remove();
+            }
+        }
 
-        let curPosition = this.currentPosition;
         if (json.moves != null) {
-            this.controls = new MatchControls(container, counter);
+            let curPosition = this.currentPosition;
             json.moves.forEach((move) => {
                 const square = Square.fromString(move.move);
                 curPosition = curPosition.playStone(square);
                 curPosition.comment = move.comment;
             });
-            if (json.moves.length < 2) {
-                this.controls.prev.remove();
-                this.controls.last.remove();
+            this.controls = new Controls(container, counter);
+            this.controls.addFirstButton();
+            if (json.moves.length > 1) {
+                this.controls.addPrevButton();
             }
-            if (json.controls != null) {
-                if (!json.controls.previous) {
-                    this.controls.prev.remove();
-                }
-                if (!json.controls.last) {
-                    this.controls.last.remove();
-                }
-                if (!json.controls.score) {
-                    this.score.scoreContainer.remove();
-                }
-                if (!json.controls.turn) {
-                    this.score.turnContainer.remove();
-                }
+            this.controls.addNextButton();
+            if (json.moves.length > 1) {
+                this.controls.addLastButton();
             }
             this.controls.update(this.currentPosition);
         }

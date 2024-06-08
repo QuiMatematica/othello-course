@@ -10,8 +10,6 @@
     "--------"
   ],
   "controls": {
-    "previous": false,
-    "next": false
   },
   "add": {
     "a-squares": true,

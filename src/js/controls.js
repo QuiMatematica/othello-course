@@ -1,4 +1,4 @@
-import {boards} from "./page";
+import {getBoard} from "./page";
 
 export default class Controls {
 
@@ -32,29 +32,26 @@ export default class Controls {
         button.dataset.counter = this.counter;
         button.appendChild(document.createTextNode(text));
         button.addEventListener('click', listener);
+        this.buttonGroup.appendChild(button);
         return button;
     }
     addFirstButton() {
         this.first = this.createButton("|<", onFirstClick);
-        this.buttonGroup.appendChild(this.first);
         return this;
     }
 
     addPrevButton() {
         this.prev = this.createButton("<", onPrevClick);
-        this.buttonGroup.appendChild(this.prev);
         return this;
     }
 
     addNextButton() {
         this.next = this.createButton(">", onNextClick);
-        this.buttonGroup.appendChild(this.next);
         return this;
     }
 
     addLastButton() {
         this.last = this.createButton(">|", onLastClick);
-        this.buttonGroup.appendChild(this.last);
         return this;
     }
 
@@ -65,12 +62,6 @@ export default class Controls {
         this.last.disabled = (position.nextPosition == null);
     }
 
-}
-
-function getBoard(event) {
-    const div = event.currentTarget;
-    const counter = div.dataset.counter;
-    return boards[counter];
 }
 
 function onNextClick(event) {

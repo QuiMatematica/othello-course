@@ -56,10 +56,18 @@ export default class Controls {
     }
 
     update(position) {
-        this.first.disabled = (position.prevPosition == null);
-        this.prev.disabled = (position.prevPosition == null);
-        this.next.disabled = (position.nextPosition == null);
-        this.last.disabled = (position.nextPosition == null);
+        if (this.first != null) {
+            this.first.disabled = (position.prevPosition == null);
+        }
+        if (this.prev != null) {
+            this.prev.disabled = (position.prevPosition == null);
+        }
+        if (this.next != null) {
+            this.next.disabled = (position.nextPosition == null);
+        }
+        if (this.last != null) {
+            this.last.disabled = (position.nextPosition == null);
+        }
     }
 
 }

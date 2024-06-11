@@ -1,0 +1,42 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "C4",
+      "comment": "Apertura &quot;Inoue&quot;."
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "B4"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "B5"
+    },
+    {
+      "move": "A6",
+      "comment": "Il bianco cerca di portare il gioco sul bordo per evitare di dover sfondare il muro nero."
+    }
+  ]
+}

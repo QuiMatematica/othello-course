@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--------",
+    "-----O--",
+    "--####OO",
+    "--OO###-",
+    "--O####-",
+    "--O##OOO",
+    "----O#--",
+    "---O----"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: guadagna due tempi di gioco.",
+  "moves": [
+    {
+      "move": "H5",
+      "comment": "Bravo! Il nero non riesce a giocare in H4."
+    },
+    {
+      "move": "F8"
+    },
+    {
+      "move": "H4",
+      "comment": "Complimenti: hai guadagnato due tempi di gioco e il quattro sul bordo est!"
+    }
+  ]
+}

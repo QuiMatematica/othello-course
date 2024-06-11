@@ -1,0 +1,55 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura &quot;Mucca&quot;."
+    },
+    {
+      "move": "E3",
+      "comment": "Variante &quot;Camino&quot;.<br>Il bianco prende tante pedine, ma imposta un muro-contro-muro. Al nero conviene seguire la stessa logica."
+    },
+    {
+      "move": "F5"
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "F3"
+    },
+    {
+      "move": "B5"
+    },
+    {
+      "move": "E6"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "E2",
+      "comment": "Il nero dovrebbe cercare di non sfondare il muro a est. Il bianco dovrà sfruttare molto bene i lati nord e ovest per non trovarsi chiuso."
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+	"sections": [
+		{
+			"title": "Livello base",
+			"href": "base/",
+			"chapters": [
+				{
+					"href": "il-gioco/",
+					"title": "Il gioco",
+					"pages": [
+						{
+							"href": "le-regole.php",
+							"title": "Le regole"
+						},
+						{
+							"href": "precisazioni.php",
+							"title": "Precisazioni"
+						},
+						{
+							"href": "gioco-libero.php",
+							"title": "Gioco libero"
+						}
+					]
+				},
+				{
+					"href": "quiz-per-cominciare/",
+					"title": "Piccoli quiz per cominciare",
+					"pages": [
+						{
+							"href": "le-mosse-legali.php",
+							"title": "Le mosse legali"
+						},
+						{
+							"href": "le-pedine-da-girare.php",
+							"title": "Le pedine da girare"
+						},
+						{
+							"href": "quante-pedine-girare.php",
+							"title": "Quante pedine vengono girate?"
+						},
+						{
+							"href": "ottenere-una-pedina.php",
+							"title": "Per ottenere una pedina"
+						},
+						{
+							"href": "togliere-una-mossa.php",
+							"title": "Togliere una mossa"
+						},
+						{
+							"href": "ottenere-una-mossa.php",
+							"title": "Ottenere una mossa"
+						},
+						{
+							"href": "finali-con-caselle-vuote.php",
+							"title": "Finali con caselle vuote"
+						}
+					]
+				},
+				{
+					"href": "primi-elementi-di-strategia/",
+					"title": "Primi elementi di strategia",
+					"pages": [
+						{
+							"href": "notazione-caselle.php",
+							"title": "Per indicare le caselle"
+						},
+						{
+							"href": "notazione-partite.php",
+							"title": "Per registrare le partite"
+						},
+						{
+							"href": "gli-angoli.php",
+							"title": "Gli angoli"
+						},
+						{
+							"href": "il-centro.php",
+							"title": "Il centro"
+						},
+						{
+							"href": "quante-pedine.php",
+							"title": "Quante pedine?"
+						}
+					]
+				}
+			]
+		},
+		{
+			"title": "Livello intermedio",
+			"href": "intermedio/",
+			"chapters": [
+				{
+					"title": "Le pedine stabili",
+					"href": "pedine-stabili/",
+					"pages": [
+						{
+							"href": "pedine-stabili.php",
+							"title": "Gli angoli e le altre pedine stabili"
+						},
+						{
+							"href": "caselle-x-c.php",
+							"title": "Le caselle X e C"
+						},
+						{
+							"href": "sacrifici-e-vantaggi.php",
+							"title": "Sacrifici e vantaggi"
+						}
+					]
+				},
+				{
+					"href": "mobilita/",
+					"title": "La mobilità",
+					"pages": [
+						{
+							"href": "pedine-esterne.php",
+							"title": "Le pedine esterne"
+						},
+						{
+							"href": "muri.php",
+							"title": "I muri"
+						},
+						{
+							"href": "evaporazione.php",
+							"title": "Evaporazione"
+						},
+						{
+							"href": "compattezza.php",
+							"title": "La compattezza"
+						},
+						{
+							"href": "mosse-ideali.php",
+							"title": "Le mosse ideali"
+						},
+						{
+							"href": "togliere-mosse.php",
+							"title": "Togliere mosse all'avversario"
+						},
+						{
+							"href": "usare-caselle-x.php",
+							"title": "Usare caselle X per la mobilità"
+						},
+						{
+							"href": "classificazione-delle-mosse.php",
+							"title": "Classificazione delle mosse"
+						}
+					]
+				},
+				{
+					"href": "apertura/",
+					"title": "L'apertura",
+					"pages": [
+						{
+							"href": "prima-mossa.php",
+							"title": "La prima mossa"
+						},
+						{
+							"href": "seconda-mossa.php",
+							"title": "La seconda mossa"
+						},
+						{
+							"href": "diagonale.php",
+							"title": "Aperture basate sulla diagonale"
+						},
+						{
+							"href": "perpendicolare.php",
+							"title": "Aperture basate sulla perpendicolare"
+						}
+					]
+				},
+				{
+					"href": "tempi-di-gioco/",
+					"title": "I tempi di gioco",
+					"pages": [
+						{
+							"href": "un-tempo.php",
+							"title": "Guadagnare un tempo di gioco"
+						},
+						{
+							"href": "piu-tempi.php",
+							"title": "Guadagnare più tempi di gioco"
+						}
+					]
+				}
+			]
+		}
+	]
+}

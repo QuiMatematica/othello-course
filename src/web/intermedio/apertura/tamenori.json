@@ -1,0 +1,58 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C5"
+    },
+    {
+      "move": "F6"
+    },
+    {
+      "move": "F5"
+    },
+    {
+      "move": "E6",
+      "comment": "Apertura &quot;Tigre&quot;."
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "F7"
+    },
+    {
+      "move": "G6"
+    },
+    {
+      "move": "C4",
+      "comment": "Apertura &quot;Tamenori&quot;."
+    },
+    {
+      "move": "C6"
+    },
+    {
+      "move": "E7"
+    },
+    {
+      "move": "D7"
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "C8"
+    },
+    {
+      "move": "H6",
+      "comment": "Malgrado i due accessi ai bordi, è un'apertura che gioca sul controllo del centro."
+    }
+  ]
+}

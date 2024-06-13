@@ -21,7 +21,6 @@ export default class Position {
         this.turn = turn;
         this.gameOver = false;
         this.passCount = 0;
-        // TODO: controllare se il turno è valido e se la partita è finita
         this.checkValidMoves();
         this.comment = null;
     }
@@ -93,6 +92,25 @@ export default class Position {
             position = Position.getStartingPosition();
         }
         position.comment = json.comment;
+
+        if (json.moves != null) {
+            let curPosition = position;
+            json.moves.forEach((move) => {
+                const square = Square.fromString(move.move);
+                curPosition = curPosition.playStone(square);
+                curPosition.comment = move.comment;
+            });
+        }
+        else if (json.txt != null) {
+            let curPosition = position;
+            const txt = json.txt;
+            for (let i = 0; i * 2 < txt.length; i++) {
+                const s = txt.substring(i * 2, i * 2 + 2);
+                const square = Square.fromString(s);
+                curPosition = curPosition.playStone(square);
+            }
+        }
+
         return position;
     }
 

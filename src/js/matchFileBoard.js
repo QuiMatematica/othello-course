@@ -36,20 +36,14 @@ export default class MatchFileBoard {
             }
         }
 
-        if (json.moves != null) {
-            let curPosition = this.currentPosition;
-            json.moves.forEach((move) => {
-                const square = Square.fromString(move.move);
-                curPosition = curPosition.playStone(square);
-                curPosition.comment = move.comment;
-            });
+        if (this.currentPosition.nextPosition != null) {
             this.controls = new Controls(container, counter);
             this.controls.addFirstButton();
-            if (json.moves.length > 1) {
+            if (this.currentPosition.nextPosition.nextPosition != null) {
                 this.controls.addPrevButton();
             }
             this.controls.addNextButton();
-            if (json.moves.length > 1) {
+            if (this.currentPosition.nextPosition.nextPosition != null) {
                 this.controls.addLastButton();
             }
             this.controls.update(this.currentPosition);

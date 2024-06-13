@@ -1,7 +1,6 @@
 import Position from "./position";
 import Board from "./board";
 import Score from "./score";
-import Square from "./square";
 
 export default class RefereeBoard {
 
@@ -23,14 +22,14 @@ export default class RefereeBoard {
     }
 
     readMatch(json) {
-        let position = Position.getStartingPosition();
-        const txt = json.txt;
-        for (let i = 0; i*2 < txt.length; i++) {
-            const s = txt.substring(i*2, i*2 + 2);
-            const square = Square.fromString(s);
+        let position = Position.getPositionFromJSON(json);
+        let i = 0;
+        while (position.nextPosition != null) {
+            const square = position.nextPosition.played;
             this.board.setStone(square.x, square.y, position.turn);
             this.board.addLetter(square.x, square.y, (i + 1).toString());
-            position = position.playStone(square);
+            position = position.nextPosition;
+            i++;
         }
         this.score.takeScore(position);
     }

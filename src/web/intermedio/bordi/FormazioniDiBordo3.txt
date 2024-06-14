@@ -1,0 +1,6 @@
+# BLACK nero
+# WHITE bianco
+# START_POSITION ---------------------O----OO##---OO#O#---O####----OOO#---OOO----
+# START_COLOR black
+E8 Il nero forza il tre sbilanciato.
+F8 Il bianco decide di muovere in F8 per non perdere l'angolo A8. Così facendo, però, crea un muro lungo la colonna F che molto probabilmente risulterà decisivo ai fini del risultato finale.

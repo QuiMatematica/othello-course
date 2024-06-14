@@ -1,6 +1,7 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const GenerateSitemapPlugin = require('./GenerateSitemapPlugin');
 
 module.exports = {
     entry: './src/js/othello.js',
@@ -14,6 +15,10 @@ module.exports = {
             patterns: [
                 { from: 'src/web', to: '.' }, // Copia tutto il contenuto di src/web in dist
             ],
+        }),
+        new GenerateSitemapPlugin({
+            inputPath: path.resolve(__dirname, 'src/web/index.json'), // Percorso del file JSON di input
+            outputPath: path.resolve(__dirname, 'dist/sitemap.xml'), // Percorso del file di output
         }),
     ],
     mode: 'production'

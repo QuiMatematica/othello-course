@@ -32,6 +32,8 @@ class GeneratePagesPlugin {
             const jsonContent = fs.readFileSync(jsonPath, 'utf8');
             this.json = JSON.parse(jsonContent);
 
+            this.readListOfPages();
+
             // Leggi i file HTML ricorsivamente dal inputDir
             const files = this.readFilesRecursively(inputDir);
 
@@ -42,7 +44,7 @@ class GeneratePagesPlugin {
                 const htmlContent = fs.readFileSync(filePath, 'utf8');
 
                 // Componi l'HTML completo
-                const composedHtml = this.composePage(htmlContent, level);
+                const composedHtml = this.composePage(htmlContent, filePath, level);
 
                 // Determina il percorso del file di output
                 const relativePath = path.relative(inputDir, filePath);
@@ -96,29 +98,60 @@ class GeneratePagesPlugin {
         return offcanvas;
     }
 
-    composePagination() {
-        let pagination = '';
+    composePagination(filePath, prepend) {
+        let indexOfThisPage = -1;
+        for (let i = 0; i < this.pages.length; i++) {
+            console.log('filePath: ' + filePath);
+            console.log('this.pages[i].href: ' + this.pages[i].href);
+            if (filePath.replace(/\\/g, '/').endsWith(this.pages[i].href)) {
+                indexOfThisPage = i;
+                break;
+            }
+        }
+        console.log('indexOfThisPage: ' + indexOfThisPage);
 
-        pagination = `
+        let before = '';
+        if (indexOfThisPage > 0) {
+            before = `
+            <li class='page-item'>
+            <a class='page-link' aria-label='Previous' href='${prepend}${this.pages[indexOfThisPage-1].href}'>
+            <span class='px-1' aria-hidden='true'>&laquo;</span>
+            <span class='sr-only'>${this.pages[indexOfThisPage-1].title}</span>
+            </a>
+            </li>`;
+        }
+
+        let after = '';
+        if (indexOfThisPage < this.pages.length - 1) {
+            after = `
+            <li class='page-item'>
+            <a class='page-link' aria-label='Previous' href='${prepend}${this.pages[indexOfThisPage+1].href}'>
+            <span class='sr-only'>${this.pages[indexOfThisPage+1].title}</span>
+            <span class='px-1' aria-hidden='true'>&raquo;</span>
+            </a>
+            </li>`;
+        }
+
+        return `
         <nav class='my-3'>
         <ul class='pagination justify-content-center'>
-        <li class='pages-item'>
-        <a class='pages-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>
+        ${before}
+        <li class='page-item'>
+        <a class='page-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>
         </li>
+        ${after}
         </ul>
         </nav>`;
-
-        return pagination;
     }
 
-    composePage(htmlContent, level) {
+    composePage(htmlContent, filePath, level) {
         let prepend = '';
         for (let i = 0; i < level; i++) {
             prepend += '../';
         }
 
         const offcanvas = this.composeOffcanvas(prepend);
-        const pagination = this.composePagination();
+        const pagination = this.composePagination(filePath, prepend);
 
         return `<!DOCTYPE HTML>
 <html lang="it">
@@ -157,6 +190,31 @@ ${pagination}
     </div>
 </body>
 </html>`;
+    }
+
+    readListOfPages() {
+        this.pages = [];
+        this.json.sections.forEach(section => {
+            this.pages.push(new Page(section.href + 'section.php', section.title));
+            section.chapters.forEach(chapter => {
+                this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title));
+                chapter.pages.forEach(page => {
+                    this.pages.push(new Page(section.href + chapter.href + page.href, page.title));
+                });
+            });
+        });
+    }
+
+}
+
+class Page {
+
+    href;
+    title;
+
+    constructor(href, title) {
+        this.href = href;
+        this.title = title;
     }
 
 }

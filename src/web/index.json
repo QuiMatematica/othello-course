@@ -179,6 +179,16 @@
 							"title": "Guadagnare più tempi di gioco"
 						}
 					]
+				},
+				{
+					"href": "bordi/",
+					"title": "I bordi",
+					"pages": [
+						{
+							"href": "formazioni-di-bordo.php",
+							"title": "Classificazione delle formazioni di bordo"
+						}
+					]
 				}
 			]
 		}

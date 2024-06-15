@@ -131,15 +131,15 @@ class Navigator {
     }
 
     private function buildPreviousNext($prev) {
-        echo "<li class='pages-item'>";
+        echo "<li class='page-item'>";
         if ($prev) {
-            echo "<a class='pages-link' aria-label='Previous' href='{$this->prevPage['href']}'>";
+            echo "<a class='page-link' aria-label='Previous' href='{$this->prevPage['href']}'>";
             echo "<span class='px-1' aria-hidden='true'>&laquo;</span>";
             echo "<span class='sr-only'>{$this->prevPage['title']}</span>";
             echo "</a>";
         }
         else {
-            echo "<a class='pages-link' aria-label='Next' href='{$this->nextPage['href']}'>";
+            echo "<a class='page-link' aria-label='Next' href='{$this->nextPage['href']}'>";
             echo "<span class='sr-only'>{$this->nextPage['title']}</span>";
             echo "<span class='px-1' aria-hidden='true'>&raquo;</span>";
             echo "</a>";
@@ -148,8 +148,8 @@ class Navigator {
     }
 
     private function buildOffcanvasButton() {
-        echo "<li class='pages-item'>";
-        echo "<a class='pages-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>";
+        echo "<li class='page-item'>";
+        echo "<a class='page-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>";
         echo "</li>";
     }
 

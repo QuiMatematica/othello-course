@@ -134,12 +134,10 @@ class GeneratePagesPlugin {
 
         return `
         <nav class='my-3'>
-        <ul class='pagination justify-content-center'>
-        ${before}
+        <ul class='pagination justify-content-center'>${before}
         <li class='page-item'>
         <a class='page-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>
-        </li>
-        ${after}
+        </li>${after}
         </ul>
         </nav>`;
     }

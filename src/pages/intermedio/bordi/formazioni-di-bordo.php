@@ -4,7 +4,7 @@
 
         <p>Hanno la caratteristica di essere simmetriche rispetto all'asse centrale della tavola
         da gioco e di non essere allargabili. Sono essenzialmente tre (diagramma 1):
-        il "sei" (bordo nord), il "quattro" (bordo sud)e il "due più due" (bordo est).</p>
+        il "sei" (bordo nord), il "quattro" (bordo sud) e il "due più due" (bordo est).</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -45,85 +45,68 @@
         <p>Sono tutte quelle formazioni compatte che comprendono una casella C.</p>
 
         <p>Ci sono numerosi tipi di bordi sbilanciati e ciascuno prende il nome dal
-        numero di pedine coinvolte, anche se la nomenclatura non � sempre rigorosa.
+        numero di pedine coinvolte, anche se la nomenclatura non è sempre rigorosa.
         Nel diagramma 3 si ha nel bordo nord un "cinque", nel bordo
-        ovest un "quattro sbilanciato", nel bordo sud un "quattro + uno" (che � una
-        formazione doppiamente sbilanciata) e sul bordo est un "tre + uno".</p>
+        ovest un "quattro sbilanciato", nel bordo sud un "quattro più uno" (che è una
+        formazione doppiamente sbilanciata) e sul bordo est un "tre più uno".</p>
 
-            <p align="center">
-            <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-                    code="it.claudiosignorini.tao.TaoApplet.class"
-                    hspace="0" vspace="0" align="top">
-                <param name="function" value="static">
-                <param name="position" value="-OOOOO---------#-------##------##-------#------O#--------O-####-">
-                Mi dispiace: il tuo browser non supporta le Applet Java.
-            </applet>
-            <br>
-            Diagramma 3: alcuni tipi di bordi sbilanciati.
-            </p>
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-3.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 3: alcuni tipi di bordi sbilanciati.
+			</div>
+		</div>
 
-        <p>Senza dubbio queste
-        sono le strutture pi� deboli in quanto attaccabili in modo piuttosto elementare. Sono
-        sbilanciati i <b>cinque</b> di cui si � gi� parlato in una
-        <a href="../../PrimiElementiDiStrategia/GliAttacchiAi5/index.html" title="Gli attacchi ai cinque">precedente lezione</a>.</p>
-
-        <p>Un gruppo sbilanciato di meno di cinque pedine � sempre <b>forzabile</b>: se l'avversario
+        <p>Un gruppo sbilanciato di meno di cinque pedine è sempre <b>forzabile</b>: se l'avversario
         occupa la casella immediatamente adiacente a tale gruppo le possibili scelte sono due:
         o rassegnarsi a perdere un angolo o girare l'ultima pedina posata, cosa che spesso
-        comporta effetti collaterali dannosi. Nel diagramma 4 � illustrato un caso del genere.</p>
+        comporta effetti collaterali dannosi. Nel diagramma 4 è illustrato un caso del genere.</p>
 
-            <p align="center">
-            <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
-                    code="it.claudiosignorini.tao.TaoApplet.class"
-                    hspace="0" vspace="0" align="top">
-                <param name="function" value="match">
-                <param name="matchFile" value="FormazioniDiBordo3.txt">
-                Mi dispiace: il tuo browser non supporta le Applet Java.
-            </applet>
-            <br>
-            Diagramma 4: la forzatura di un tre sbilanciato.
-            </p>
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-4.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 4: la forzatura di un tre sbilanciato.
+			</div>
+		</div>
 
         <h2>Formazioni incomplete</h2>
 
-        <p>Sono tutte quelle formazioni che lasciano possibilit� di una mossa a tutti e due i
-        giocatori. L'eventuale chiusura del gruppo gernea, di solito, una struttura debole
+        <p>Sono tutte quelle formazioni che lasciano possibilità di una mossa a tutti e due i
+        giocatori. L'eventuale chiusura del gruppo genera, di solito, una struttura debole
         (cinque, quattro sbilanciato, ...). Il diagramma 5 riproduce una situazione di gioco in
         cui tutti i bordi sono occupati in modo incompleto. Spesso si verifica che se un giocatore
         chiude uno di questi gruppi, immediatamente dopo il suo avversario ne chiude uno analogo.</p>
 
-            <p align="center">
-            <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-                    code="it.claudiosignorini.tao.TaoApplet.class"
-                    hspace="0" vspace="0" align="top">
-                <param name="function" value="static">
-                <param name="position" value="--##OO----O###--OO#OO#OOOOOO#O##O#O#OO#######O##--O##O----##O---">
-                Mi dispiace: il tuo browser non supporta le Applet Java.
-            </applet>
-            <br>
-            Diagramma 5: esempi di formazioni incomplete.
-            </p>
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-5.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 5: esempi di formazioni incomplete.
+			</div>
+		</div>
 
         <h2>Formazioni aperte</h2>
 
         <p>Sono tutti quei gruppi che possono essere allargati solo da chi li possiede. Queste sono
-        senza dubbio le strutture pi� forti in quanto costituiscono un enorme vantaggio in termini
+        senza dubbio le strutture più forti in quanto costituiscono un enorme vantaggio in termini
         di tempi di gioco. Difficilmente realizzabili, costituiscono spesso un elemento
         determinante ai fini del successo finale.</p>
 
         <p>Nel diagramma 6 il bianco possiede un gruppo di questo tipo nel bordo sud. Si vede come
-        il quattro possa essere allargato ad un sei senza che per il nero ci sia possibilit�
-        di replica. In pratica il bianco gode del vantaggio di due tempi di gioco, che potr� far
-        valere nel momento pi� opportuno.</p>
+        il quattro possa essere allargato a un sei senza che per il nero ci sia possibilità
+        di replica. In pratica il bianco gode del vantaggio di due tempi di gioco, che potrà far
+        valere nel momento più opportuno.</p>
 
-            <p align="center">
-            <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-                    code="it.claudiosignorini.tao.TaoApplet.class"
-                    hspace="0" vspace="0" align="top">
-                <param name="function" value="static">
-                <param name="position" value="---------------------#----OO##---OO#O#---O#OO#----OO##---OOOO---">
-                Mi dispiace: il tuo browser non supporta le Applet Java.
-            </applet>
-            <br>
-            Diagramma 6: una formazione aperta.
-            </p>
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-6.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 6: una formazione aperta.
+			</div>
+		</div>

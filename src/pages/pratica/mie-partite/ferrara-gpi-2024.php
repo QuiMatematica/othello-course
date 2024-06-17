@@ -86,3 +86,90 @@
 				<div class="sequence-board" data-file="signorini-foschidamiano-ferrara-gpi-2024-mossa-15.json"></div>
 			</div>
 		</div>
+
+        <h2>Barsotti Paolo - Signorini Claudio</h2>
+
+        <p>Average score lost: 0.93 (0.40, 1.60, 0.80)</p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+
+				<div class="card mx-auto board-card my-3">
+					<div class="card-body">
+						<div class="referee-board" data-file="barsotti-signorini-ferrara-gpi-2024.json"></div>
+					</div>
+				</div>
+
+            </div>
+            <div class="col">
+
+                <div class="card mx-auto board-card my-3">
+					<div class="card-body">
+						<div class="free-game-board"></div>
+					</div>
+				</div>
+
+            </div>
+        </div>
+
+        <h2>Signorini Claudio - Ribaldone Marco</h2>
+
+        <p>Average score lost: 1.67 (1.80, 2.20, 1.00)</p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+
+				<div class="card mx-auto board-card my-3">
+					<div class="card-body">
+						<div class="referee-board" data-file="signorini-ribaldone-ferrara-gpi-2024.json"></div>
+					</div>
+				</div>
+
+            </div>
+            <div class="col">
+
+                <div class="card mx-auto board-card my-3">
+					<div class="card-body">
+						<div class="free-game-board"></div>
+					</div>
+				</div>
+
+            </div>
+        </div>
+
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="sequence-board" data-file="signorini-ribaldone-ferrara-gpi-2024-mossa-43.json"></div>
+			</div>
+		</div>
+
+        <h2>Gigliucci Chiara - Signorini Claudio</h2>
+
+        <p>Average score lost: 3.00 (0.40, 4.40, 4.20)</p>
+
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+
+				<div class="card mx-auto board-card my-3">
+					<div class="card-body">
+						<div class="referee-board" data-file="gigliucci-signorini-ferrara-gpi-2024.json"></div>
+					</div>
+				</div>
+
+            </div>
+            <div class="col">
+
+                <div class="card mx-auto board-card my-3">
+					<div class="card-body">
+						<div class="free-game-board"></div>
+					</div>
+				</div>
+
+            </div>
+        </div>
+
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="sequence-board" data-file="gigliucci-signorini-ferrara-gpi-2024-mossa-42.json"></div>
+			</div>
+		</div>

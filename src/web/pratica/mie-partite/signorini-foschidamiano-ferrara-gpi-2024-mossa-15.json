@@ -1,0 +1,48 @@
+{
+  "position": [
+    "--------",
+    "-----O--",
+    "-###O---",
+    "-OOOOO--",
+    "-OOOO#--",
+    "--#OO---",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "A6",
+      "comment": "In questa apertura l'elemento chiave è la casella B6, in cui il bianco non deve entrare. La mossa A6 serve per avvelenare la mossa.<br>Prova a continuare..."
+    },
+    {
+      "move": "A5"
+    },
+    {
+      "move": "D7",
+      "comment": "Per togliere l'accesso a B6, questa è la mossa migliore, che inoltre compatta le pedine nere.<br>Continua..."
+    },
+    {
+      "move": "E7"
+    },
+    {
+      "move": "F6",
+      "comment": "Esatto: l'obiettivo è sempre lo stesso. Ora attento: il bianco non ha mosse buone per procurarsi l'acceso a B6, quindi gioca altrove..."
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "A4",
+      "comment": "Esatto: prendi un tempo a ovest e ne hai un altro pronto."
+    },
+    {
+      "move": "G6",
+      "comment": "&Egrave; più una mossa d'attesa che un procurarsi l'accesso a B6."
+    },
+    {
+      "move": "B6",
+      "comment": "Secondo tempo di gioco a ovest."
+    }
+  ]
+}

@@ -18,12 +18,14 @@
 
                 <div class="card mx-auto board-card my-3">
 					<div class="card-body">
-						<div class="free-game-board"></div>
+						<div class="match-file-board" data-file="signorini-luzi-ferrara-gpi-2024.json"></div>
 					</div>
 				</div>
 
             </div>
         </div>
+
+        <h3>A te la mossa</h3>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -49,7 +51,7 @@
 
                 <div class="card mx-auto board-card my-3">
 					<div class="card-body">
-						<div class="free-game-board"></div>
+						<div class="match-file-board" data-file="foschitommaso-signorini-ferrara-gpi-2024.json"></div>
 					</div>
 				</div>
 
@@ -74,12 +76,14 @@
 
                 <div class="card mx-auto board-card my-3">
 					<div class="card-body">
-						<div class="free-game-board"></div>
+						<div class="match-file-board" data-file="signorini-foschidamiano-ferrara-gpi-2024.json"></div>
 					</div>
 				</div>
 
             </div>
         </div>
+
+        <h3>A te la mossa</h3>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -105,7 +109,7 @@
 
                 <div class="card mx-auto board-card my-3">
 					<div class="card-body">
-						<div class="free-game-board"></div>
+						<div class="match-file-board" data-file="barsotti-signorini-ferrara-gpi-2024.json"></div>
 					</div>
 				</div>
 
@@ -130,12 +134,14 @@
 
                 <div class="card mx-auto board-card my-3">
 					<div class="card-body">
-						<div class="free-game-board"></div>
+						<div class="match-file-board" data-file="signorini-ribaldone-ferrara-gpi-2024.json"></div>
 					</div>
 				</div>
 
             </div>
         </div>
+
+        <h3>A te la mossa</h3>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -161,12 +167,14 @@
 
                 <div class="card mx-auto board-card my-3">
 					<div class="card-body">
-						<div class="free-game-board"></div>
+						<div class="match-file-board" data-file="gigliucci-signorini-ferrara-gpi-2024.json"></div>
 					</div>
 				</div>
 
             </div>
         </div>
+
+        <h3>A te la mossa</h3>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">

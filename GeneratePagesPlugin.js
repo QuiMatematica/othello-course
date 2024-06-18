@@ -101,15 +101,11 @@ class GeneratePagesPlugin {
     composePagination(filePath, prepend) {
         let indexOfThisPage = -1;
         for (let i = 0; i < this.pages.length; i++) {
-            console.log('filePath: ' + filePath);
-            console.log('this.pages[i].href: ' + this.pages[i].href);
             if (filePath.replace(/\\/g, '/').endsWith(this.pages[i].href)) {
                 indexOfThisPage = i;
                 break;
             }
         }
-        console.log('indexOfThisPage: ' + indexOfThisPage);
-
         let before = '';
         if (indexOfThisPage > 0) {
             before = `

@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--------",
+    "#-##----",
+    "######--",
+    "#O#OOO--",
+    "#O#OOO--",
+    "####O#--",
+    "--#O##--",
+    "-####---"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: attacca il cinque e conquista 7 pedine stabili.",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Bravo: hai attaccato il cinque."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo..."
+    },
+    {
+      "move": "A7",
+      "comment": "... e tu ti incastri nella casella C."
+    },
+    {
+      "move": "G6",
+      "comment": "Il nero non può fare altro che muovere da qualche altra parte."
+    },
+    {
+      "move": "A1",
+      "comment": "Complimenti: hai conquistato sette pedine stabili."
+    }
+  ]
+}

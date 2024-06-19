@@ -1,0 +1,42 @@
+{
+  "position": [
+    "-O---O--",
+    "--OOO#--",
+    "--###O#O",
+    "--OOOO#O",
+    "-OO#O#O-",
+    "--#OO#O-",
+    "--O###-O",
+    "-O-OOO--"
+  ],
+  "moves": [
+    {
+      "move": "C1",
+      "comment": "Il nero minaccia di andare nell'angolo A1."
+    },
+    {
+      "move": "D1",
+      "comment": "Il bianco si difende."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero si incunea e può definitivamente andare nell'angolo A1."
+    },
+    {
+      "move": "B3",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende l'angolo A1."
+    },
+    {
+      "move": "B6",
+      "comment": "Di nuovo il bianco gioca altrove."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero conquista tutto il bordo nord."
+    }
+  ]
+}

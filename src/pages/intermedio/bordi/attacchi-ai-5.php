@@ -21,15 +21,19 @@
 			</div>
 		</div>
 
-	<h2>Come si attacca</h2>
+		<div class="card border-primary mb-3">
+			<div class="card-header">Tattica</div>
+			<div class="card-body">
+				<p class="card-text">Facendo riferimento alla posizione del diagramma 1, l'attacco al cinque consiste in:</p>
+                <ul class="card-text">
+                    <li>il nero (attaccante) gioca nella casella X G7;</li>
+                    <li>il bianco gioca nell'angolo H8;</li>
+                    <li>il nero si incunea nella casella C G8; la pedina posta è stabile;</li>
+                    <li>il nero infine conquista l'angolo A8 e tutto il bordo sud.</li>
+                </ul>
+			</div>
+		</div>
 
-    <p>L'attacco al cinque consiste, nel caso del diagramma 1, in:</p>
-    <ul>
-        <li>giocare nella casella X G7</li>
-        <li>cedere quindi l'angolo H8</li>
-        <li>incunearsi nella casella C G8 (che è stabile)</li>
-        <li>e conquistare poi l'angolo opposto A8.</li>
-    </ul>
     <p>Vedi la sequenza del diagramma 2.</p>
 
         <div class="card mx-auto board-card my-3">
@@ -43,11 +47,11 @@
 
 	<h2>Vantaggi e svantaggi</h2>
 
-	<p>Vantaggio di un attacco al cinque è la conquista di un angolo e di altre 6 pedine stabili;
-	svantaggio la cessione di un angolo che potrebbe essere strategicamente importante.</p>
+    <p>Il vantaggio di un attacco al cinque è la conquista di un angolo e di altre 6 pedine stabili.</p>
+	<p>Lo svantaggio dell'attacco è la cessione di un angolo.</p>
 
-	<p>Il giocatore attaccato non è costretto a prendere l'angolo, ma può aspettare di vedere come evolve la partita.
-        Tuttavia l'attaccante ha già avuto un vantaggio: il guadagno di un
+	<p>Il giocatore attaccato non è costretto a prendere subito l'angolo. Se non lo fa, l'attaccante ha
+        comunque già ottenuto un vantaggio: il guadagno di un
         <a href="../tempi-di-gioco/chapter.php">tempo di gioco</a>.</p>
 
 	<h2>Tocca a te</h2>

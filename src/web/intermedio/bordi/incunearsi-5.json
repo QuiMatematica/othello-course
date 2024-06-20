@@ -1,0 +1,20 @@
+{
+  "position": [
+    "-#------",
+    "--##OO--",
+    "OOOOOO##",
+    "OO#OOOOO",
+    "OOO#OOOO",
+    "OO###O##",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "comment": "Obiettivo: muovi con il nero ma impedisci al bianco di incunearsi.",
+  "moves": [
+    {
+      "move": "E1",
+      "comment": "Corretto: lasciando due caselle libere (un numero pari) il bianco non ha la possibilità di incunearsi. Se gioca C1, tu rispondi D1; se gioca D1, tu rispondi C1."
+    }
+  ]
+}

@@ -29,6 +29,8 @@ di mosse.</p>
 <p>Ora guardiamo il lato est: il nero può fare la stessa manovra?
     Se il nero giocasse in H6, il bianco potrebbe giocare in H5 (diagramma 3).
     E se il nero giocasse in H5, il bianco risponderebbe in H6.</p>
+<p>Il nero non riesce a incunearsi perché ci sono due caselle libere: qualunque delle due scelga, il bianco può
+rispondere nell'altra.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -66,5 +68,19 @@ giocando in D1. Ma, a questo punto il nero può incunearsi in E1. Vedi il diagra
             e si è sbilanciato in una casella C, puoi incunearti e prendere un angolo.</p>
         <p class="card-text">Se il tuo avversario ha lasciato una casella vuota tra due pedine sul bordo,
             ma non si è sbilanciato in una casella C, puoi comunque incunearti e guadagnare un tempo di gioco.</p>
+    </div>
+</div>
+
+<h2>Tocca a te</h2>
+
+<p>Nel diagramma 5 giochi con il nero. A sud non hai mosse a disposizione. Evita di cedere un angolo. Quale mossa
+ti rimane che non permette al bianco di incunearsi?</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="incunearsi-5.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 4: impedire al bianco di incunearsi.
     </div>
 </div>

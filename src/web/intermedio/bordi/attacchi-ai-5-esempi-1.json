@@ -1,0 +1,33 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "#####OOO",
+    "##OO##OO",
+    "##O##OOO",
+    "-#O##OOO",
+    "--OOOO--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca giocando nella casella X."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo. Il nero ora può incunearsi sia sul lato est sia sul lato sud."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero si incunea a sud e il bianco non può salvare il lato est."
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero si incunea anche ad est e nelle prossime due mosse potrà prendere gli angoli A8 e H1."
+    }
+  ]
+}

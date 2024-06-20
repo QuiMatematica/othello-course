@@ -6,9 +6,10 @@
 
     <p>In questa pagina e nelle successive vedremo sempre posizioni in cui le caselle F7 e G6 sono
     occupate. Queste situazioni sono le più comuni e le più facili da analizzare, tanto
-    che riusciremo a formulare alcune <a href="Riassumiamo.html">regolette</a>,
-    seguendo le quali l'attacco funziona sempre. Nella pagina <a href="AltreSituazioni.html">"Altre
-    situazioni"</a> vedremo alcuni esempi in cui tali caselle non sono occupate:
+    che riusciremo a formulare alcune <a href="attacchi-ai-5-riassunto.php">regole</a>,
+    seguendo le quali l'attacco funziona sempre. Nella pagina
+        <a href="attacchi-ai-5-esempi.php">"Gli attacchi ai cinque: altri esempi"</a>
+        vedremo alcuni esempi in cui tali caselle non sono occupate:
     sono posizioni su cui non è possibile estrapolare delle regole generali e vanno analizzate di
     volta in volta.</p>
 

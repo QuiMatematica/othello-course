@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "######OO",
+    "#O####O-",
+    "#OO###O-",
+    "##OO#OO-",
+    "--OOOO-O",
+    "--OOOO--"
+  ],
+  "turn": "black",
+  "comment": "Obiettivo: conquista un angolo in non più di tre mosse.",
+  "moves": [
+    {
+      "move": "H6",
+      "comment": "Corretto: stai minacciando di prendere l'angolo H8."
+    },
+    {
+      "move": "H5",
+      "comment": "Il bianco può solo rimandare l'inevitabile."
+    },
+    {
+      "move": "H4",
+      "comment": "Esatto: ti sei incuneato."
+    },
+    {
+      "move": "F2",
+      "comment": "Non c'è modo per impedire al nero di accedere all'angolo."
+    },
+    {
+      "move": "H8",
+      "comment": "Obiettivo raggiunto."
+    }
+  ]
+}

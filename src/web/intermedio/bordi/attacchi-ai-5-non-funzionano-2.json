@@ -1,0 +1,30 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####OOO",
+    "##OO##OO",
+    "##O##OOO",
+    "-#O##OOO",
+    "--OO#O--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca giocando nella casella X."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo, ma attenzione: il nero ora non può giocare in G8!"
+    },
+    {
+      "move": "H7",
+      "comment": "L'attacco del nero non ha funzionato."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco conquista la casella C e salva il bordo."
+    }
+  ]
+}

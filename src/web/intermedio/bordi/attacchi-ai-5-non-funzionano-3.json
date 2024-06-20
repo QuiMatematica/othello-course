@@ -1,0 +1,27 @@
+{
+  "position": [
+    "-#####--",
+    "--#OOOO-",
+    "-####OOO",
+    "-##OO#OO",
+    "--OOO#OO",
+    "--#OO#OO",
+    "--------",
+    "--------"
+  ],
+  "comment": "Obiettivo: il bianco ha attaccato il tuo cinque, ma tu poi conquistare 7 pedine stabili.",
+  "moves": [
+    {
+      "move": "G1",
+      "comment": "Bravo: malgrado tu abbia giocato nella casella C, il bianco non può prendere l'angolo."
+    },
+    {
+      "move": "B5",
+      "comment": "Il bianco non può fare nulla di particolare."
+    },
+    {
+      "move": "H1",
+      "comment": "Complimenti: ce l'hai fatta! Hai preso tutto il bordo nord!"
+    }
+  ]
+}

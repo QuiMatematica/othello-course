@@ -1,0 +1,34 @@
+{
+  "position": [
+    "-#####--",
+    "--#OOOO#",
+    "-####OO#",
+    "-##OOO##",
+    "--OOO###",
+    "--#OO###",
+    "--------",
+    "--------"
+  ],
+  "comment": "Obiettivo: il bianco ha attaccato il tuo cinque, ma tu hai la possibilità di difenderti, impedendogli di prendere il lato nord.",
+  "moves": [
+    {
+      "move": "C7",
+      "comment": "Corretto: questa è la mossa giusta! Le pedine della colonna G sono diventate tutte nere (a parte quella nella casella X, ovviamente)."
+    },
+    {
+      "move": "B5",
+      "comment": "Il bianco non può farci nulla."
+    },
+    {
+      "move": "H1",
+      "comment": "Hai preso l'angolo e il bianco non ha l'accesso alla casella C."
+    },
+    {
+      "move": "A4"
+    },
+    {
+      "move": "G1",
+      "comment": "Complimenti: obiettivo raggiunto."
+    }
+  ]
+}

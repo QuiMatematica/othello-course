@@ -81,6 +81,39 @@ ti rimane che non permette al bianco di incunearsi?</p>
         <div class="sequence-board" data-file="incunearsi-5.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 4: impedire al bianco di incunearsi.
+        Diagramma 5: impedire al bianco di incunearsi.
+    </div>
+</div>
+
+<p>Nel diagramma 6 giochi con il bianco. Muovi ma facendo attenzione a impedire al nero di incunearsi.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="incunearsi-6.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 6: impedire al nero di incunearsi.
+    </div>
+</div>
+
+<p>Nel diagramma 7 giochi con il bianco. Conquista un angolo in due mosse.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="incunearsi-7.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 7: conquista un angolo in due mosse.
+    </div>
+</div>
+
+<p>Nel diagramma 8 giochi con il nero. Conquista un angolo in non più di tre mosse.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="incunearsi-8.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 8: conquista un angolo in non più di tre mosse.
     </div>
 </div>

@@ -4,13 +4,13 @@
     "--##OO--",
     "OOOOOO##",
     "OO#OOOOO",
-    "OOO#OOOO",
+    "OOO#OOO#",
     "OO###O##",
-    "--------",
+    "--#-----",
     "--------"
   ],
   "turn": "black",
-  "comment": "Obiettivo: muovi con il nero ma impedisci al bianco di incunearsi.",
+  "comment": "Obiettivo: muovi con il nero e impedisci al bianco di incunearsi.",
   "moves": [
     {
       "move": "E1",

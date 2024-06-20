@@ -1,0 +1,30 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####O#O",
+    "##OO###O",
+    "##O##O#O",
+    "-#O##O#O",
+    "--OO#O--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca giocando nella casella X."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco però può giocare in G8 senza girare la pedina avversaria G7."
+    },
+    {
+      "move": "E2",
+      "comment": "L'attacco del nero non ha funzionato."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco conquista l'angolo e altre 6 pedine stabili."
+    }
+  ]
+}

@@ -187,6 +187,22 @@
 						{
 							"href": "formazioni-di-bordo.php",
 							"title": "Classificazione delle formazioni di bordo"
+						},
+						{
+							"href": "incunearsi.php",
+							"title": "Incunearsi"
+						},
+						{
+							"href": "attacchi-ai-5.php",
+							"title": "Gli attacchi ai cinque"
+						},
+						{
+							"href": "attacchi-ai-5-non-funzionano.php",
+							"title": "Gli attacchi ai cinque: quando non funzionano"
+						},
+						{
+							"href": "attacchi-ai-5-funzionano.php",
+							"title": "Gli attacchi ai cinque: quando funzionano"
 						}
 					]
 				}

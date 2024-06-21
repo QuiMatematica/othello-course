@@ -8,14 +8,14 @@ class GeneratePagesPlugin {
     }
 
     // Funzione ricorsiva per leggere i file HTML dalle directory
-    readFilesRecursively(dir, fileList = []) {
+    readFilesRecursively(dir, fileList = [], addFiles = true) {
         const files = fs.readdirSync(dir);
         files.forEach(file => {
             const filePath = path.join(dir, file);
             const stat = fs.statSync(filePath);
             if (stat.isDirectory()) {
                 this.readFilesRecursively(filePath, fileList);
-            } else if (stat.isFile() && path.extname(file) === '.php') {
+            } else if (addFiles && stat.isFile() && path.extname(file) === '.php') {
                 fileList.push(filePath);
             }
         });
@@ -35,7 +35,7 @@ class GeneratePagesPlugin {
             this.readListOfPages();
 
             // Leggi i file HTML ricorsivamente dal inputDir
-            const files = this.readFilesRecursively(inputDir);
+            const files = this.readFilesRecursively(inputDir, [], false);
 
             files.forEach(filePath => {
                 const level = countSlashes(filePath) - countSlashes(inputDir) - 1;

@@ -27,14 +27,14 @@
 
 	<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
 		<div class="container-xxl">
-			<a class="navbar-brand h1" href="#">Othello: corso interattivo</a>
+			<a class="navbar-brand h1" href="/">Othello: corso interattivo</a>
 		</div>
 	</nav>
 
 	<div id="othello-content" class="container-xxl">
 		<div class="row">
 			<div class="col-lg-2 bg-primary-subtle text-center">
-				<a class="" href="http://www.fngo.it">
+				<a class="" href="https://www.fngo.it">
 					<img class="mt-3" src="images/fngologo.gif" width="126" height="123" alt="Federazione Nazionale Gioco Othello">
 				</a>
 				<h5>Federazione Nazionale Gioco Othello</h5>
@@ -42,46 +42,7 @@
 			</div>
 			<div class="col-lg-10 py-3 px-5">
 				<div id="index-content" class="row">
-
-                    <?php
-                    $file = file_get_contents('index.json');
-                    $json = json_decode($file, true);
-
-                    foreach ($json['sections'] as $section) {
-                        $section_href = $section['href'];
-                        $title = $section['title'];
-                        $a_class = "class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover'";
-                        echo "<h1><a {$a_class} href='{$section_href}section.php'>{$title}</a></h1>";
-
-                        foreach ($section['chapters'] as $chapter) {
-                            $chapter_href = $chapter['href'];
-                            $title = $chapter['title'];
-
-                            echo "<div class='col-lg-3 py-3'>";
-                            echo "<ul class='nav flex-column'>";
-                            echo "<li class='nav-item'>";
-                            echo "<h4>";
-                            echo "<a {$a_class} href='{$section_href}{$chapter_href}chapter.php'>{$title}</a>";
-                            echo "</h4>";
-                            echo "<ul>";
-
-                            foreach ($chapter['pages'] as $page) {
-                                $page_href = $page['href'];
-                                $title = $page['title'];
-                                echo "<li class='nav-item'>";
-                                echo "<a {$a_class} href='{$section_href}{$chapter_href}{$page_href}'>{$title}</a>";
-                                echo "</li>";
-                            }
-
-                            echo "</ul>";
-                            echo "</li>";
-                            echo "</ul>";
-                            echo "</div>";
-                        }
-
-                        echo "<hr>";
-                    }
-                    ?>
+                    <!-- REPLACE WITH INDEX -->
                 </div>
             </div>
 		</div>

@@ -1,10 +1,17 @@
         <h1>Classificazione delle formazioni di bordo</h1>
 
-        <h2>Formazioni stabili o bilanciate</h2>
+        <h2>Formazioni stabili (o bilanciate)</h2>
 
-        <p>Hanno la caratteristica di essere simmetriche rispetto all'asse centrale della tavola
-        da gioco e di non essere allargabili. Sono essenzialmente tre (diagramma 1):
-        il "sei" (bordo nord), il "quattro" (bordo sud) e il "due più due" (bordo est).</p>
+		<div class="card border-primary mb-3">
+			<div class="card-header">Definizione</div>
+			<div class="card-body">
+				<p class="card-text">Le <b>formazioni stabili (o bilanciate)</b> sono simmetriche rispetto all'asse orizzontale
+                    o all'asse verticale della tavola da gioco e non sono allargabili.</p>
+			</div>
+		</div>
+
+        <p>Le formazioni stabili possono essere di tre tipi (diagramma 1):
+            il <b>sei</b> (bordo nord), il <b>quattro</b> (bordo sud) e l'<b>uno-due-uno</b> (bordo est).</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -17,16 +24,12 @@
 
         <p>Il <b>sei</b> è una formazione piuttosto forte in quanto è inattaccabile. Tuttavia non è
         facile da realizzare dato il numero elevato di pedine da impiegare. Il suo principale
-        difetto è che cedendo un angolo dei due che giacciono sul lato occupato, si perde
-        immediatamente anche l'altro. Sono in pratica inibite le due caselle X adiacenti al
-        sei.</p>
+        difetto è che perdendo uno dei due angoli adiacenti, si perde
+        immediatamente anche l'altro.</p>
 
-        <p>Il <b>quattro</b> è decisamente più debole, infatti la caselle C che restano libere tra
-        gli angoli e tale struttura possono essere facilmente sfruttate negli attacchi finali
-        per guadagnare o l'intero lato o dei tempi di gioco.
-        Per un esempio si veda il diagramma 2.
-        Il quattro assume sfumature diverse a seconda del colore delle pedine poste sopra le due
-        caselle A. Molto debole è quello composto da tutte pedine dello stesso colore.</p>
+        <p>Il <b>quattro</b> è decisamente più debole, infatti le caselle C adiacenti possono essere
+            facilmente sfruttate negli attacchi per guadagnare l'intero lato o anche solo dei tempi di gioco.
+            Per un esempio si veda il diagramma 2.</p>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -37,7 +40,11 @@
 			</div>
 		</div>
 
-        <p>Il <b>due più due</b> ha caratteristiche simili alla precedente formazione, verrà trattato
+        <p>Il quattro assume sfumature diverse a seconda del colore delle pedine poste sopra le due
+        caselle A. Molto debole è quello composto da tutte pedine dello stesso colore perché
+            risulta più facilmente attaccabile.</p>
+
+        <p>L'<b>uno-due-uno</b> ha caratteristiche simili al quattro. Verrà ripreso nel dettaglio
             nel livello avanzato.</p>
 
         <h2>Formazioni sbilanciate</h2>

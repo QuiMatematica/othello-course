@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Le pedine stabili</h1>
 
 		<p>Nell'Othello vince il giocatore che, al termine delle mosse
@@ -56,10 +34,3 @@
 		  <li>Perché il nero ha potuto girare tutte quelle pedine?</li>
 		  <li>&Egrave; possibile, in qualche modo, garantirsi che alcune pedine non vengano più girate?</li>
 		</ul>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

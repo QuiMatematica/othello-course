@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Guadagnare più tempi di gioco</h1>
 
 		<p>Ovviamente è possibile guadagnare anche più di un tempo di gioco in una regione.
@@ -58,10 +36,3 @@
     			Diagramma 2: guadagna due tempi di gioco e forma un quattro.
 			</div>
 		</div>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

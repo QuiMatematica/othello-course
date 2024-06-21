@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Sacrifici e vantaggi</h1>
 
 		<p>Riassumo gli ultimi punti cui siamo arrivati.</p>
@@ -50,10 +28,3 @@
 		<p>La mossa che il nero ha giocato è un attacco alle cinque pedine bianche
 		del lato sud. Nell'Othello, quasi tutti gli attacchi prevedono il sacrificio di un angolo
 		in cambio di un considerevole numero di pedine stabili (o di una posizione migliore).</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

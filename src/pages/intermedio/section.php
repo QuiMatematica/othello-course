@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../section/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
         <h1>Livello intermedio</h1>
 
         <p>Questa sezione contiene una trattazione completa delle strategie fondamentali
@@ -34,10 +12,3 @@
 <!--            <li>parità: perché è importante muovere per ultimo;</li>-->
 <!--            <li>finale: cos'è il finale perfetto e come si trova.</li>-->
         </ul>
-
-        <?php $navigator->pagination() ?>
-
-    </div>
-
-</body>
-</html>

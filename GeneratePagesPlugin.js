@@ -166,7 +166,7 @@ class GeneratePagesPlugin {
 <body>
     <nav class='navbar navbar-expand-lg bg-primary' data-bs-theme='dark'>
         <div class='container-xxl'>
-            <a class='navbar-brand h1' href='${prepend}index.php'>Othello: corso interattivo</a>
+            <a class='navbar-brand h1' href='${prepend}'>Othello: corso interattivo</a>
         </div>
     </nav>
     <div class='offcanvas offcanvas-start' tabindex='-1' id='section-index' aria-labelledby='offcanvasLabel'>

@@ -108,7 +108,7 @@ class Navigator {
     }
 
     function header() {
-        $index_href = ($this->inChapter) ? '../../index.php' : '../index.php';
+        $index_href = ($this->inChapter) ? '../../' : '../';
         echo "<nav class='navbar navbar-expand-lg bg-primary' data-bs-theme='dark'>";
         echo "<div class='container-xxl'>";
         echo "<a class='navbar-brand h1' href='{$index_href}'>Othello: corso interattivo</a>";

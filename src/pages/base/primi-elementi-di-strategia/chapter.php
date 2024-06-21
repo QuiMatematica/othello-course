@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Primi elementi di strategia</h1>
 
 		<h2>Notazioni</h2>
@@ -45,10 +23,3 @@
 		<p>Comincia a giocare cercando di seguire questi consigli e vedrai che il tuo gioco migliorer&agrave;.</p>
 
 		<p>Buon divertimento!</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

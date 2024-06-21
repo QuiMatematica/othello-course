@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Le regole</h1>
 
 		<h2>Posizione iniziale</h2>
@@ -134,9 +112,3 @@
 
 		<p>Se rimangono delle caselle libere, vengono assegnate al vincitore, in modo che
 		la somma dei punti faccia sempre 64.</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-</body>
-</html>

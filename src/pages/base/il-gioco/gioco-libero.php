@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Gioco libero</h1>
 
 		<p>Puoi utilizzare la tavola che segue per giocare in libertà.
@@ -32,10 +10,3 @@
 		<div class="mx-auto board-card mb-5" style="font-size: 16px">
 			<div class="free-game-board"></div>
 		</div>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

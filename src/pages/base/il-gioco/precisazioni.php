@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Precisazioni</h1>
 
 		<h2>Sul significato di "muovere"</h2>
@@ -144,9 +122,3 @@
 		<p>Subito dopo la prima, per&ograve;, il bianco pu&ograve; giocare in 3 caselle, C3, C5 o E3.
 		Queste tre mosse danno luogo a tre situazioni diverse e da questo punto in
 		poi, ogni partita sar&agrave; diversa dalle altre!</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-</body>
-</html>

@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Per indicare le caselle</h1>
 
 		<h2>Le coordinate</h2>
@@ -77,10 +55,3 @@
 		definito, si usano le indicazioni tipiche
 		della bussola. Per esempio: l'area vicina al bordo H1 è chiamata "angolo di nord est";
 		il bordo superiore "bordo nord".</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Gli angoli</h1>
 
 		<p>La prima fondamentale strategia che ogni giocatore di Othello deve conoscere riguarda
@@ -155,9 +133,3 @@
 
 		<p>Comunque la regola generale &egrave; e rimane sempre quella: <b>giocare in una casella C o in una casella X
 		&egrave; estremamente pericoloso per gli angoli e va fatto solo dopo opportuni controlli</b>.</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-</body>
-</html>

@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Per registrare le partite</h1>
 
 		<p>Per registrare una partita è sufficiente ricordare in quale casella è stata eseguita ciascuna
@@ -98,10 +76,3 @@
 		<p>Entrambi i metodi presentati sono carenti da un certo punto di vista: se a una mossa non sono state
 		girate tutte le pedine previste dalle regole, non è più possibile ricostruire la partita.
 		Per fortuna tali situazioni sono rare, quindi non vengono neanche considerate.</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

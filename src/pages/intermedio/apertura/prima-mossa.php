@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-	
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>La prima mossa</h1>
 
 		<p>Ogni partita di Othello inizia con le quattro pedine posizionate come nel diagramma 1.</p>
@@ -98,10 +76,3 @@
 		determinata sequenza in qualunque posizione si presenti, qualunque sia
 		stata la prima mossa del nero, senza bisogno di allungare il collo o
 		girare la scacchiera (cosa, ovviamente, vietata in torneo).</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

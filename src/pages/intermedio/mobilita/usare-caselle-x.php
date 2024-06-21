@@ -1,31 +1,9 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Usare caselle X per la mobilità</h1>
 
 		<p>Quando la partita è avanzata, le mosse a disposizioni cominciano a essere poche. E
 		se un giocatore ha poca mobilità comincia a trovarsi nei guai. Un modo efficace e,
 		lasciatemelo dire, spettacolare di finire una partita è sfruttare le caselle X
-		per costringere l'avvesario a fare mosse dannose.</p>
+		per costringere l'avversario a fare mosse dannose.</p>
 
 		<p>Nel diagramma 1 si contrappongono un bianco che ha conquistato tutti i bordi, e
 		possiede la maggioranza delle pedine in gioco. Il nero ha poche pedine, ma sono
@@ -93,10 +71,3 @@
 				Diagramma 3: costringi l'avversario a passare.
 			</div>
 		</div>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

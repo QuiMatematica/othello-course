@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>Evaporazione</h1>
 
 		<p>L'obiettivo dell'Othello è terminare la partita con la maggioranza di pedine del proprio colore.
@@ -143,10 +121,3 @@
 				<p class="card-text">Attenzione però a non sovra-evaporare e perdere 64 a 0.</p>
 			</div>
 		</div>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

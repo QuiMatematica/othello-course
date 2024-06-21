@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>I muri</h1>
 
 		<p>Nel diagramma 1 tocca al nero che ha cinque mosse a disposizione: sono
@@ -248,10 +226,3 @@
 				</ul>
 			</div>
 		</div>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

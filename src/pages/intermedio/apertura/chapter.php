@@ -1,25 +1,3 @@
-<!DOCTYPE HTML>
-
-<html lang="it">
-<head>
-    <?php include '../../section/chapter/header.php' ?>
-</head>
-
-<body>
-
-    <?php
-    include '../../classes/Navigator.php';
-
-    $navigator = new Navigator();
-
-    $navigator->header();
-    $navigator->offcanvas();
-    ?>
-
-	<div id="othello-content" class="container-xxl mt-4">
-
-        <?php $navigator->pagination() ?>
-
 		<h1>L'apertura</h1>
 
 		<p>In ogni partita, le prime mosse hanno un ruolo del tutto particolare:
@@ -71,10 +49,3 @@
 		può iniziare il tuo studio personale. Tieni comunque conto che è meglio conoscere
 		a fondo poche aperture (anche solo tre o quattro) e alcune loro varianti, piuttosto
 		che conoscerne molte in modo approssimativo.</p>
-
-        <?php $navigator->pagination() ?>
-
-	</div>
-
-</body>
-</html>

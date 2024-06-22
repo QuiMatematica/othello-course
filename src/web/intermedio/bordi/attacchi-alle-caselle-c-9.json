@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--OOOOO-",
+    "O-O##O--",
+    "-OO#OO--",
+    "-OOO##--",
+    "-OO#O#--",
+    "-O####--",
+    "--------",
+    "--------"
+  ],
+  "comment": "Obiettivo: attacca la casella C isolata.",
+  "moves": [
+    {
+      "move": "A6",
+      "comment": "Bravo! In questa posizione non bastava giocare in A5."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco cerca di disturbare l'azione."
+    },
+    {
+      "move": "A3",
+      "comment": "Bravissimo! Ora l'angolo A1 è sicuramente tuo!!!"
+    },
+    {
+      "move": "A4",
+      "comment": "Anche se il bianco gioca in A4..."
+    },
+    {
+      "move": "A1",
+      "comment": "... tu conquisti l'angolo."
+    }
+  ]
+}

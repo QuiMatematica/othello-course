@@ -1,12 +1,12 @@
 <h1>Gli attacchi alle caselle C isolate</h1>
 
-<p>Parlando delle pedine stabili si è osservato che + pericoloso porre una pedina in una
+<p>Parlando delle pedine stabili si è osservato che è pericoloso porre una pedina in una
 casella C. &Egrave; ancor più pericoloso se la pedina è l'unica del bordo e l'avversario ha
-piena libertà di manovra su tutte le altre caselle.</p>
+piena libertà di manovra in tutte le altre caselle.</p>
 
-<p>Nel diagramma 1 il bianco ha una pedina nella casella C B8 e le rimanenti caselle del bordo
-sud sono vuote. Ora, se il nero gioca in E8 il Bianco non può rispondere né in C8 né in D8. Questo
-è sufficiente per avere garanzia di conquistare l'angolo A8, con la sequenza proposta nel diagramma.</p>
+<p>Nel diagramma 1 il bianco ha una pedina nella casella B8 e le rimanenti caselle del bordo
+sud sono vuote. Se il nero gioca in E8 il bianco non può rispondere né in C8 né in D8. Questo
+è sufficiente al nero per avere garanzia di conquistare l'angolo A8, con la sequenza proposta nel diagramma.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -51,7 +51,7 @@ sud sono vuote. Ora, se il nero gioca in E8 il Bianco non può rispondere né in
         </div>
 
 <p>Se il bianco può rispondere in C8 o in D8,
-allora bisogna modificare l'attacco andando in F8. A questo punto si aprono diverse possibilità.</p>
+allora il nero deve modificare l'attacco andando in F8. A questo punto si aprono diverse possibilità.</p>
 
 <p>Se alla mossa F8 il bianco risponde con C8, allora il nero deve giocare in D8.</p>
 

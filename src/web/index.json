@@ -179,6 +179,48 @@
 							"title": "Guadagnare più tempi di gioco"
 						}
 					]
+				},
+				{
+					"href": "bordi/",
+					"title": "I bordi",
+					"pages": [
+						{
+							"href": "formazioni-di-bordo.php",
+							"title": "Classificazione delle formazioni di bordo"
+						},
+						{
+							"href": "incunearsi.php",
+							"title": "Incunearsi"
+						},
+						{
+							"href": "attacchi-ai-5.php",
+							"title": "Gli attacchi ai cinque"
+						},
+						{
+							"href": "attacchi-ai-5-non-funzionano.php",
+							"title": "Gli attacchi ai cinque: quando non funzionano"
+						},
+						{
+							"href": "attacchi-ai-5-funzionano.php",
+							"title": "Gli attacchi ai cinque: quando funzionano"
+						},
+						{
+							"href": "attacchi-ai-5-riassunto.php",
+							"title": "Gli attacchi ai cinque: riassunto"
+						},
+						{
+							"href": "attacchi-ai-5-esempi.php",
+							"title": "Gli attacchi ai cinque: altri esempi"
+						},
+						{
+							"href": "attacchi-alle-caselle-c.php",
+							"title": "Gli attacchi alle caselle C isolate"
+						},
+						{
+							"href": "attacchi-ai-4-piu-1.php",
+							"title": "Gli attacchi ai quattro più uno"
+						}
+					]
 				}
 			]
 		}

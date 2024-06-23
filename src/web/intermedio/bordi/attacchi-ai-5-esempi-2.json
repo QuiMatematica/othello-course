@@ -1,0 +1,26 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####OOO",
+    "##OO##OO",
+    "##O##OOO",
+    "-#O##OOO",
+    "--OO#O--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Il nero attacca giocando nella casella C."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo, ma ora il nero può incunearsi in G8!"
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero si incunea."
+    }
+  ]
+}

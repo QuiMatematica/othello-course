@@ -98,6 +98,9 @@ export default class Position {
             json.moves.forEach((move) => {
                 const square = Square.fromString(move.move);
                 curPosition = curPosition.playStone(square);
+                if (curPosition == null) {
+                    console.log("La mossa ", move.move, " non è valida.")
+                }
                 curPosition.comment = move.comment;
             });
         }

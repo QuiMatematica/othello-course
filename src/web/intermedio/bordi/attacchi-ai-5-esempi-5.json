@@ -1,0 +1,30 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####OOO",
+    "##OO##OO",
+    "##O##OOO",
+    "-#O##O-O",
+    "--OOO---",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca giocando nella casella X. Il bianco potrebbe anche prendere l'angolo senza immediato pericolo, ma chi riuscirà ad entrare in G8? Meglio aspettare..."
+    },
+    {
+      "move": "G6",
+      "comment": "Il bianco preferisce chiudere uno dei due buchi."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero rinforza l'attacco."
+    },
+    {
+      "move": "F7",
+      "comment": "Il bianco chiude anche l'altro buco e guadagna un tempo di gioco. Il cinque però non è più salvabile. Ora il bianco farà di tutto per posticipare le mosse nelle due caselle rimaste libere."
+    }
+  ]
+}

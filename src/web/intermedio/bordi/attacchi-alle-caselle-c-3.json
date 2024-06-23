@@ -1,0 +1,30 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OO##",
+    "OOO#####",
+    "#OO#####",
+    "##O#OO##",
+    "--OOOO--",
+    "-O------"
+  ],
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "Il nero tenta l'attacco muovendo in E8."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco risponde in D8."
+    },
+    {
+      "move": "C8",
+      "comment": "Anche se il nero gioca in C8..."
+    },
+    {
+      "move": "F8",
+      "comment": "... il bianco può rispondere in F8, prendendo un cinque sul bordo sud."
+    }
+  ]
+}

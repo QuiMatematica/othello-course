@@ -1,0 +1,35 @@
+{
+  "position": [
+    "-O---O--",
+    "--OOO#--",
+    "--###O#O",
+    "--OOOO#O",
+    "-OO#O#O-",
+    "--#OO#O-",
+    "--O###-O",
+    "-O-OOO--"
+  ],
+  "moves":[
+    {
+      "move": "C8",
+      "comment": "Il nero si incunea in C8."
+    },
+    {
+      "move": "B6",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero conquista l'angolo A8."
+    },
+    {
+      "move": "B4",
+      "comment": "Di nuovo il bianco deve giocare altrove."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero conquista tutto il lato sud."
+    }
+  ]
+
+}

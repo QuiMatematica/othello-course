@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--O###--",
+    "--OO##-#",
+    "--OOO##-",
+    "--OO#O#-",
+    "--O#OO#-",
+    "--###O--",
+    "--------",
+    "--------"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: attacca la casella C isolata.",
+  "moves": [
+    {
+      "move": "H5",
+      "comment": "Bravo! Non c'era bisogno di giocare in H6."
+    },
+    {
+      "move": "B6",
+      "comment": "Ora devi chiedere l'attacco."
+    },
+    {
+      "move": "H3",
+      "comment": "Bravissimo!"
+    },
+    {
+      "move": "H4",
+      "comment": "Anche se il nero gioca in H4..."
+    },
+    {
+      "move": "H1",
+      "comment": "... tu puoi prendere l'angolo."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####OOO",
+    "##OO##OO",
+    "##O##O#O",
+    "-#O##O#O",
+    "--OO#O--",
+    "-OOOOO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero gioca nella casella X, consentendo al bianco la conquista dell'angolo.<br>Nota che il bianco non può giocare nè in G8 nè in H7, altrimenti girerebbe la pedina G7 e il nero potrebbe prendere prima l'angolo H8 e poi A8."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco conquista l'angolo."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero si incunea nella casella C."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco riempie lo spazio a sud-est."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero conquista l'angolo A8 e tutto il bordo sud."
+    }
+  ]
+}

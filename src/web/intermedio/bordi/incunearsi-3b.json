@@ -1,0 +1,22 @@
+{
+  "position": [
+    "-O---O--",
+    "--OOO#--",
+    "--###O#O",
+    "--OOOO#O",
+    "-OO#O#O-",
+    "--#OO#O-",
+    "--O###-O",
+    "-O-OOO--"
+  ],
+  "moves": [
+    {
+      "move": "H5",
+      "comment": "Il nero prova a incunearsi..."
+    },
+    {
+      "move": "H6",
+      "comment": "... ma il bianco risponde in H6 salvando il lato est e relativi angoli."
+    }
+  ]
+}

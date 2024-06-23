@@ -45,10 +45,8 @@
 			</div>
 		</div>
 
-	<h2>Vantaggi e svantaggi</h2>
-
-    <p>Il vantaggio di un attacco al cinque è la conquista di un angolo e di altre 6 pedine stabili.</p>
-	<p>Lo svantaggio dell'attacco è la cessione di un angolo.</p>
+    <p>L'attacco a un cinque, se portato a termine correttamente, permette di conquistare un angolo
+        e altre sei pedine stabili sul bordo. Tuttavia è necessario essere disposti a cedere un angolo.</p>
 
 	<p>Il giocatore attaccato non è costretto a prendere subito l'angolo. Se non lo fa, l'attaccante ha
         comunque già ottenuto un vantaggio: il guadagno di un
@@ -56,7 +54,7 @@
 
 	<h2>Tocca a te</h2>
 
-	<p>Nel diagramma 3 giochi con il bianco. Devi attaccare il cinque nero e conquistare 7 pedine stabili.</p>
+	<p>Nel diagramma 3 giochi con il bianco. Devi attaccare il cinque nero e conquistare altre sei pedine stabili.</p>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">

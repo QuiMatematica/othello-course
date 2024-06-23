@@ -38,9 +38,9 @@
 
 	<h2>Tocca a te</h2>
 
-	<p>Nel diagramma successivo tu giochi con il nero. Io ho un cinque sul lato
-	est ed è attaccabile. Tuttavia non hai la possibilità di muovere nella
-	casella X. Devi trovare il modo di potermi attaccare e conquistare il lato
+	<p>Nel diagramma 3 giochi con il nero. Il bianco ha un cinque sul lato
+	est che è attaccabile. Tuttavia non hai la possibilità di muovere nella
+	casella X. Devi trovare il modo di poter attaccare e conquistare il lato
 	est in 7 mosse!</p>
 
         <div class="card mx-auto board-card my-3">

@@ -1,0 +1,47 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "##OOO#OO",
+    "####O#OO",
+    "##O#OOOO",
+    "###OOOOO",
+    "--OOO#--",
+    "-O-####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca da ovest."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero attacca da est."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero si incunea ma gira anche la casella X in B7."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco conquista anche il secondo angolo che gli consente di prendere anche tutto il bordo ovest."
+    },
+    {
+      "move": "A7",
+      "comment": "Per non perdere un ulteriore tempo di gioco al nero conviene giocare questa mossa: il bordo ovest è comunque perso."
+    },
+    {
+      "move": "A2",
+      "comment": "Il bianco prende il bordo ovest."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero si consola con questo tempo di gioco."
+    }
+  ]
+}

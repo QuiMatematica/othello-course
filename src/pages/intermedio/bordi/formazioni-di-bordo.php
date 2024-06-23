@@ -1,59 +1,88 @@
         <h1>Classificazione delle formazioni di bordo</h1>
 
-        <h2>Formazioni stabili (o bilanciate)</h2>
+        <h2>Formazioni bilanciate</h2>
 
 		<div class="card border-primary mb-3">
 			<div class="card-header">Definizione</div>
 			<div class="card-body">
-				<p class="card-text">Le <b>formazioni stabili (o bilanciate)</b> sono simmetriche rispetto all'asse orizzontale
-                    o all'asse verticale della tavola da gioco e non sono allargabili.</p>
+				<p class="card-text">Le <b>formazioni bilanciate</b> sono simmetriche rispetto all'asse orizzontale
+                    o all'asse verticale della tavola da gioco.</p>
 			</div>
 		</div>
-
-        <p>Le formazioni stabili possono essere di tre tipi (diagramma 1):
-            il <b>sei</b> (bordo nord), il <b>quattro</b> (bordo sud) e l'<b>uno-due-uno</b> (bordo est).</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="formazioni-di-bordo-1.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-                Diagramma 1: esempi di formazioni bilanciate.
+                Diagramma 1: un <b>sei</b> sul bordo sud.
 			</div>
 		</div>
 
-        <p>Il <b>sei</b> è una formazione piuttosto forte in quanto è inattaccabile. Tuttavia non è
-        facile da realizzare dato il numero elevato di pedine da impiegare. Il suo principale
-        difetto è che perdendo uno dei due angoli adiacenti, si perde
-        immediatamente anche l'altro.</p>
+        <p>Il <b>sei</b> (diagramma 1) è una formazione piuttosto forte in quanto è difficilmente attaccabile.
+            Tuttavia, se l'avversario riesce a giocare in uno dei due angoli adiacenti, può poi prendere
+            anche l'altro angolo, ottenendo così otto pedine stabili.</p>
 
-        <p>Il <b>quattro</b> è decisamente più debole, infatti le caselle C adiacenti possono essere
-            facilmente sfruttate negli attacchi per guadagnare l'intero lato o anche solo dei tempi di gioco.
-            Per un esempio si veda il diagramma 2.</p>
+        <p>Il sei risulta più forte se si possiede anche il <b>controbordo</b>. I giapponesi chiamano questa formazione
+            la <b>montagna</b> (diagramma 2).</p>
+
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-1b.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 2: una <b>montagna</b> sul bordo sud.
+			</div>
+		</div>
+
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-1c.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 3: un <b>quattro</b> sul bordo sud.
+			</div>
+		</div>
+
+        <p>Il <b>quattro</b> (digramma 3) è più debole rispetto al sei, infatti le caselle C adiacenti possono essere
+            sfruttate in attacchi per guadagnare l'intero lato o anche solo dei tempi di gioco.
+            Nel diagramma 4 hai un esempio di doppio attacco a un quattro.</p>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="formazioni-di-bordo-2.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-                Diagramma 2: un doppio attacco a un quattro.
+                Diagramma 4: un doppio attacco a un quattro.
 			</div>
 		</div>
 
-        <p>Il quattro assume sfumature diverse a seconda del colore delle pedine poste sopra le due
-        caselle A. Molto debole è quello composto da tutte pedine dello stesso colore perché
-            risulta più facilmente attaccabile.</p>
+         <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="formazioni-di-bordo-1d.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+                Diagramma 5: un <b>uno-due-uno</b> sul bordo sud.
+			</div>
+		</div>
 
-        <p>L'<b>uno-due-uno</b> ha caratteristiche simili al quattro. Verrà ripreso nel dettaglio
+        <p>L'<b>uno-due-uno</b> (diagramma 5) ha caratteristiche simili al quattro. La differenza sostanziale è legata alla possibilità
+            del colore delle pedine interne di muovere nelle caselle C. Verrà ripreso nel dettaglio
             nel livello avanzato.</p>
 
         <h2>Formazioni sbilanciate</h2>
 
-        <p>Sono tutte quelle formazioni compatte che comprendono una casella C.</p>
+		<div class="card border-primary mb-3">
+			<div class="card-header">Definizione</div>
+			<div class="card-body">
+				<p class="card-text">Le <b>formazioni sbilanciate</b> sono formazioni che comprendono una
+                    casella C. Fa eccezione il sei che è considerata una formazione bilanciata.</p>
+			</div>
+		</div>
 
         <p>Ci sono numerosi tipi di bordi sbilanciati e ciascuno prende il nome dal
         numero di pedine coinvolte, anche se la nomenclatura non è sempre rigorosa.
-        Nel diagramma 3 si ha nel bordo nord un "cinque", nel bordo
+        Nel diagramma 6 si ha nel bordo nord un "cinque", nel bordo
         ovest un "quattro sbilanciato", nel bordo sud un "quattro più uno" (che è una
         formazione doppiamente sbilanciata) e sul bordo est un "tre più uno".</p>
 
@@ -62,49 +91,62 @@
 				<div class="match-file-board" data-file="formazioni-di-bordo-3.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-                Diagramma 3: alcuni tipi di bordi sbilanciati.
+                Diagramma 6: alcuni tipi di bordi sbilanciati.
 			</div>
 		</div>
 
         <p>Un gruppo sbilanciato di meno di cinque pedine è sempre <b>forzabile</b>: se l'avversario
         occupa la casella immediatamente adiacente a tale gruppo le possibili scelte sono due:
         o rassegnarsi a perdere un angolo o girare l'ultima pedina posata, cosa che spesso
-        comporta effetti collaterali dannosi. Nel diagramma 4 è illustrato un caso del genere.</p>
+        comporta effetti collaterali dannosi. Nel diagramma 7 è illustrato un caso del genere.</p>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="formazioni-di-bordo-4.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-                Diagramma 4: la forzatura di un tre sbilanciato.
+                Diagramma 7: la forzatura di un tre sbilanciato.
 			</div>
 		</div>
 
         <h2>Formazioni incomplete</h2>
 
-        <p>Sono tutte quelle formazioni che lasciano possibilità di una mossa a tutti e due i
-        giocatori. L'eventuale chiusura del gruppo genera, di solito, una struttura debole
-        (cinque, quattro sbilanciato, ...). Il diagramma 5 riproduce una situazione di gioco in
+        <div class="card border-primary mb-3">
+			<div class="card-header">Definizione</div>
+			<div class="card-body">
+				<p class="card-text">Le <b>formazioni incomplete</b> sono formazioni che lasciano possibilità
+                    di una mossa a tutti e due i giocatori.</p>
+			</div>
+		</div>
+
+        <p>Il diagramma 8 riproduce una situazione di gioco in
         cui tutti i bordi sono occupati in modo incompleto. Spesso si verifica che se un giocatore
-        chiude uno di questi gruppi, immediatamente dopo il suo avversario ne chiude uno analogo.</p>
+        completa una di queste formazioni, immediatamente dopo il suo avversario ne chiude una su un altro bordo.</p>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="formazioni-di-bordo-5.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-                Diagramma 5: esempi di formazioni incomplete.
+                Diagramma 8: esempi di formazioni incomplete.
 			</div>
 		</div>
 
         <h2>Formazioni aperte</h2>
 
-        <p>Sono tutti quei gruppi che possono essere allargati solo da chi li possiede. Queste sono
-        senza dubbio le strutture più forti in quanto costituiscono un enorme vantaggio in termini
+        <div class="card border-primary mb-3">
+			<div class="card-header">Definizione</div>
+			<div class="card-body">
+				<p class="card-text">Le <b>formazioni aperte</b> sono formazioni che possono essere allungate
+                    solo da chi li possiede.</p>
+			</div>
+		</div>
+
+        <p>Sono senza dubbio le strutture più forti in quanto costituiscono un enorme vantaggio in termini
         di tempi di gioco. Difficilmente realizzabili, costituiscono spesso un elemento
         determinante ai fini del successo finale.</p>
 
-        <p>Nel diagramma 6 il bianco possiede un gruppo di questo tipo nel bordo sud. Si vede come
+        <p>Nel diagramma 9 il bianco possiede una formazione di questo tipo nel bordo sud. Si vede come
         il quattro possa essere allargato a un sei senza che per il nero ci sia possibilità
         di replica. In pratica il bianco gode del vantaggio di due tempi di gioco, che potrà far
         valere nel momento più opportuno.</p>
@@ -114,6 +156,6 @@
 				<div class="match-file-board" data-file="formazioni-di-bordo-6.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-                Diagramma 6: una formazione aperta.
+                Diagramma 9: una formazione aperta.
 			</div>
 		</div>

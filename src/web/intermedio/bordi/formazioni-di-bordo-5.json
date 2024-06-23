@@ -9,5 +9,15 @@
     "--O##O--",
     "--##O---"
   ],
-  "turn": "white"
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il bianco prende il cinque sul bordo nord."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero prende il cinque sul bordo ovest."
+    }
+  ]
 }

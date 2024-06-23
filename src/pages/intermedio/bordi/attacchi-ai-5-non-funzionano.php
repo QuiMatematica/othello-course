@@ -5,10 +5,10 @@
     il colore attaccato riesce a salvare l'intero lato e a conquistare anche l'angolo ceduto.</p>
 
     <p>In questa pagina e nelle successive vedremo sempre posizioni in cui le caselle F7 e G6 sono
-    occupate. Queste situazioni sono le più comuni e le più facili da analizzare, tanto
+    occupate. Queste situazioni sono le più comuni e le più facili da analizzare tanto
     che riusciremo a formulare alcune <a href="attacchi-ai-5-riassunto.php">regole</a>,
     seguendo le quali l'attacco funziona sempre. Nella pagina
-        <a href="attacchi-ai-5-esempi.php">"Gli attacchi ai cinque: altri esempi"</a>
+        <a href="attacchi-ai-5-esempi.php">Gli attacchi ai cinque: altri esempi</a>
         vedremo alcuni esempi in cui tali caselle non sono occupate:
     sono posizioni su cui non è possibile estrapolare delle regole generali e vanno analizzate di
     volta in volta.</p>
@@ -31,7 +31,7 @@
 		</div>
 
     <p>Cosa è successo? Semplice: siccome tutte le pedine della colonna G sono nere, quando il bianco
-    gioca in G8 non gira la G7. L'angolo non può essere preso dal nero, ma solo dal bianco! L'attacco
+    gioca in G8 non gira la pedina G7. L'angolo non può essere preso dal nero, ma solo dal bianco! L'attacco
     è fallito.</p>
 
     <h2>Tutte le pedine della colonna G sono bianche</h2>

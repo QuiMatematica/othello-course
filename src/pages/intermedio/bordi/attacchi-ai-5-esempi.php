@@ -1,9 +1,5 @@
     <h1>Gli attacchi ai cinque: altri esempi</h1>
 
-	<p>Aggiungo qui altri esempi di attacchi ai cinque. Ancora una volta presento diagrammi
-	il cui sono presenti le pedine in F7 e G6. Per situazioni in cui queste pedine sono assenti,
-	vedi la pagina successiva.</p>
-
 	<h2>Doppio cinque</h2>
 
 	<p>Nel diagramma 1, il bianco ha due cinque: uno sul lato sud e uno sul lato est. Sia la riga
@@ -22,8 +18,8 @@
 	<h2>Attacco da casella C</h2>
 
 	<p>La situazione del diagramma 2 è la stessa che abbiamo visto nella pagina
-	<a href="attacchi-ai-5-non-funzionano.php">"Gli attacchi ai cinque: quando non funzionano"</a>.
-	Abbiamo visto che l'attacco da casella X non funziona, ma è possibile fare un attacco
+	<a href="attacchi-ai-5-non-funzionano.php">Gli attacchi ai cinque: quando non funzionano</a>.
+	L'attacco da casella X non funziona, ma è possibile fare un attacco
 	simile da casella C che, in questo caso, funziona.</p>
 
 		<div class="card mx-auto board-card my-3">
@@ -40,6 +36,9 @@
 	attaccabile da casella C.</p>
 
 	<h2>Doppio cinque e attacco da casella C</h2>
+
+    <p>Se l'attacco da casella C arriva da un bordo con un cinque è ancora più forte: se l'attaccato non prende l'angolo
+    (e perde il cinque attaccato) perde il bordo da cui arriva l'attacco.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -67,14 +66,11 @@
 	<h2>Senza le pedine F7 e G6</h2>
 
 	<p>Se mancano le pedine F7 e G6, l'analisi è
-	più complessa e difficilmente generalizzabile. Ti presento un esempio, senza nessuna pretesa
-	di esaustività</p>
-
-	<p>Se mancano le pedine F7 e G6 l'attacco è fattibile, nel senso che il bianco non ha la
+	più complessa e difficilmente generalizzabile. L'attacco è fattibile, nel senso che il bianco non ha la
 	possibilità di salvare il lato con facilità. Ma tutto dipende da chi giocherà nelle due
 	caselle!</p>
 
-	<p>Il diagramma 5 ne riporta un esempio.</p>
+	<p>Il diagramma 5 riporta un esempio.</p>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">

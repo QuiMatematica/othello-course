@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "###OO#OO",
+    "#O##O#OO",
+    "##O#OOOO",
+    "-O#OOOOO",
+    "--#OO#--",
+    "-O-####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca da ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "A6",
+      "comment": "Il bianco cerca di rimediare procurandosi un accesso a C8."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero può aspettare ancora girando la pedina appena giocata dall'avversario."
+    },
+    {
+      "move": "C2",
+      "comment": "Il bianco non ha altre possibilità che giocare altrove."
+    },
+    {
+      "move": "C8",
+      "comment": "Infine il nero prende tutto il bordo sud!"
+    }
+  ]
+}

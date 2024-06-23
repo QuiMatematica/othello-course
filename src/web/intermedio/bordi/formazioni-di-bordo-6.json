@@ -9,5 +9,19 @@
     "--OO##--",
     "-OOOO---"
   ],
-  "turn": "white"
+  "turn": "white",
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "Il bianco guadagna un primo tempo di gioco."
+    },
+    {
+      "move": "D3",
+      "comment": "Il nero deve giocare altrove."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco guadagna un secondo tempo di gioco."
+    }
+  ]
 }

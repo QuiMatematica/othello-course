@@ -1,0 +1,18 @@
+{
+  "position": [
+    "---O-O--",
+    "--OOOO--",
+    "-##O##--",
+    "-#OO##--",
+    "#-OOO#--",
+    "-----#--",
+    "--------",
+    "--------"
+  ],
+  "moves": [
+    {
+      "move": "E1",
+      "comment": "Il nero si incunea in E1 e guadagna un tempo di gioco."
+    }
+  ]
+}

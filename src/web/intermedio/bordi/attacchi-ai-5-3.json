@@ -10,7 +10,7 @@
     "-####---"
   ],
   "turn": "white",
-  "comment": "Obiettivo: attacca il cinque e conquista 7 pedine stabili.",
+  "comment": "Obiettivo: attacca il cinque e conquista un angolo e altre sei pedine stabili.",
   "moves": [
     {
       "move": "B7",
@@ -30,7 +30,7 @@
     },
     {
       "move": "A1",
-      "comment": "Complimenti: hai conquistato sette pedine stabili."
+      "comment": "Complimenti: hai conquistato un angolo e altre sei pedine stabili."
     }
   ]
 }

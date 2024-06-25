@@ -1,13 +1,13 @@
 {
   "position": [
     "--OOOO--",
-    "--O##O-O",
-    "-OO###OO",
-    "-##OO##O",
-    "-#OO##OO",
-    "OO#O#OO-",
-    "--#O##--",
-    "--####--"
+    "O-O##O-O",
+    "OOO###OO",
+    "O##OO##O",
+    "O#OO##OO",
+    "OO#O#OOO",
+    "O-#O##-O",
+    "-####---"
   ],
   "turn": "black",
   "moves": [
@@ -24,8 +24,8 @@
       "comment": "Il nero guadagna un tempo di gioco."
     },
     {
-      "move": "A3",
-      "comment": "Il bianco gioca altrove."
+      "move": "G8",
+      "comment": "Il bianco è costretto a giocare altrove."
     },
     {
       "move": "B2",
@@ -37,7 +37,7 @@
     },
     {
       "move": "B1",
-      "comment": "Il nero prende sei pedine stabili del lato nord."
+      "comment": "Il nero prende sei pedine stabili del lato nord e guadagna un altro tempo di gioco."
     }
   ]
 }

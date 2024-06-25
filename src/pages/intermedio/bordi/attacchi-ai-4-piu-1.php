@@ -30,7 +30,7 @@ l'angolo H8.</p>
     </div>
 </div>
 
-<p>A prima vista può sembra che l'attacco si risolva in un semplice scambio di angoli, ma
+<p>A prima vista può sembrare che l'attacco si risolva in un semplice scambio di angoli, ma
 non è solo questo. Nel diagramma 1, per esempio, il bianco prende l'angolo per primo; il
 nero ha poi la possibilità di guadagnare due tempi di gioco, il primo in C8, il secondo in
 A8. Fin che il nero prende possesso del bordo, quindi, il bianco è costretto a muovere in

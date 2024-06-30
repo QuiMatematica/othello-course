@@ -160,6 +160,11 @@ class GeneratePagesPlugin {
             description = this.pages[indexOfThisPage].description;
         }
 
+        let keywords = "Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello"
+        if (indexOfThisPage !== -1 && this.pages[indexOfThisPage].keywords != null) {
+            keywords = this.pages[indexOfThisPage].keywords;
+        }
+
         const offcanvas = this.composeOffcanvas(prepend);
         const pagination = this.composePagination(filePath, prepend, indexOfThisPage);
 
@@ -174,6 +179,7 @@ class GeneratePagesPlugin {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="${description}">
+    <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
     <meta property="og:image" content="https://othello.quimatematica.it/images/banner.jpg">
@@ -182,8 +188,8 @@ class GeneratePagesPlugin {
     <meta property="og:locale" content="it_IT" />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" content="othello-test.quimatematica.it">
-    <meta name="twitter:title" content="${title}">
     <meta name="twitter:url" content="${url}">
+    <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
     <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">
     <meta name="author" content="Claudio Signorini">
@@ -219,11 +225,11 @@ ${pagination}
     readListOfPages() {
         this.pages = [];
         this.json.sections.forEach(section => {
-            this.pages.push(new Page(section.href + 'section.php', section.title));
+            this.pages.push(new Page(section.href + 'section.php', section.title, section.description, section.keywords));
             section.chapters.forEach(chapter => {
-                this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title));
+                this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title, chapter.description, chapter.keywords));
                 chapter.pages.forEach(page => {
-                    this.pages.push(new Page(section.href + chapter.href + page.href, page.title));
+                    this.pages.push(new Page(section.href + chapter.href + page.href, page.title, page.description, page.keywords));
                 });
             });
         });
@@ -234,10 +240,14 @@ class Page {
 
     href;
     title;
+    description;
+    keywords;
 
-    constructor(href, title) {
+    constructor(href, title, description, keywords) {
         this.href = href;
         this.title = title;
+        this.description = description;
+        this.keywords = keywords;
     }
 
 }

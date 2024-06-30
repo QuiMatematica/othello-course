@@ -10,7 +10,9 @@
 					"pages": [
 						{
 							"href": "le-regole.php",
-							"title": "Le regole"
+							"title": "Le regole",
+							"description": "Scopri le regole del gioco Othello con il nostro corso interattivo. Diventa un maestro di Othello con lezioni dettagliate e pratiche.",
+							"keywords": "regole Othello, regole dell'Othello, regole del gioco Othello"
 						},
 						{
 							"href": "precisazioni.php",

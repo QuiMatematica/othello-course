@@ -10,7 +10,23 @@
 
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Othello: corso interattivo</title>
+    <meta name="description" content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
+    <meta name="keywords" content="Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello">
+    <meta property="og:title" content="Corso interattivo di Othello">
+    <meta property="og:url" content="https://othello.quimatematica.it">
+    <meta property="og:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
+    <meta property="og:locale" content="it_IT" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="othello-test.quimatematica.it">
+    <meta property="twitter:url" content="https://othello.quimatematica.it">
+    <meta name="twitter:title" content="Corso interattivo di Othello">
+    <meta name="twitter:description" content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
+    <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta name="author" content="Claudio Signorini">
+
+	<title>Corso interattivo di Othello</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
 

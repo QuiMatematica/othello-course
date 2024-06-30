@@ -19,8 +19,8 @@
     <meta property="og:description" content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta property="og:locale" content="it_IT" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="twitter:domain" content="othello-test.quimatematica.it">
-    <meta property="twitter:url" content="https://othello.quimatematica.it">
+    <meta name="twitter:domain" content="othello-test.quimatematica.it">
+    <meta name="twitter:url" content="https://othello.quimatematica.it">
     <meta name="twitter:title" content="Corso interattivo di Othello">
     <meta name="twitter:description" content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">

@@ -98,7 +98,8 @@ class GeneratePagesPlugin {
         return offcanvas;
     }
 
-    composePagination(filePath, prepend) {
+
+    findThisPage(filePath) {
         let indexOfThisPage = -1;
         for (let i = 0; i < this.pages.length; i++) {
             if (filePath.replace(/\\/g, '/').endsWith(this.pages[i].href)) {
@@ -106,6 +107,10 @@ class GeneratePagesPlugin {
                 break;
             }
         }
+        return indexOfThisPage;
+    }
+
+    composePagination(filePath, prepend, indexOfThisPage) {
         let before = '';
         if (indexOfThisPage > 0) {
             before = `
@@ -144,8 +149,19 @@ class GeneratePagesPlugin {
             prepend += '../';
         }
 
+        // Trova la pagina nella lista delle pagine caricate da json
+        const indexOfThisPage = this.findThisPage(filePath);
+
+        const title = indexOfThisPage === -1 ? "Corso interattivo di Othello" : this.pages[indexOfThisPage].title + " @ Corso interattivo di Othello";
+        const url = indexOfThisPage === -1 ? "https://othello.quimatematica.it" : "https://othello.quimatematica.it/" + this.pages[indexOfThisPage].href;
+
+        let description = "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
+        if (indexOfThisPage !== -1 && this.pages[indexOfThisPage].description != null) {
+            description = this.pages[indexOfThisPage].description;
+        }
+
         const offcanvas = this.composeOffcanvas(prepend);
-        const pagination = this.composePagination(filePath, prepend);
+        const pagination = this.composePagination(filePath, prepend, indexOfThisPage);
 
         return `<!DOCTYPE HTML>
 <html lang="it">
@@ -157,7 +173,21 @@ class GeneratePagesPlugin {
     ?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Othello: corso interattivo</title>
+    <meta name="description" content="${description}">
+    <meta property="og:title" content="${title}">
+    <meta property="og:url" content="${url}">
+    <meta property="og:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="${description}">
+    <meta property="og:locale" content="it_IT" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="othello-test.quimatematica.it">
+    <meta name="twitter:title" content="${title}">
+    <meta name="twitter:url" content="${url}">
+    <meta name="twitter:description" content="${description}">
+    <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta name="author" content="Claudio Signorini">
+	<title>${title}</title>
 	<link href="${prepend}css/bootstrap.min.css" rel="stylesheet">
 	<script src="${prepend}js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="${prepend}css/othello.css">
@@ -198,7 +228,6 @@ ${pagination}
             });
         });
     }
-
 }
 
 class Page {

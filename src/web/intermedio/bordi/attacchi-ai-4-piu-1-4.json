@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "###OO#OO",
+    "#O##O#OO",
+    "##O#OOOO",
+    "-O#OOOOO",
+    "--OO##--",
+    "-OO-###-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca da ovest."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero attacca da est."
+    }
+  ]
+}

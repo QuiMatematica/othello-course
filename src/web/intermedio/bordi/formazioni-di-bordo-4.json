@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "-----O--",
+    "--OO##--",
+    "-OO#O#--",
+    "-O####--",
+    "--OOO#--",
+    "-OOO----"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "Il nero forza il tre sbilanciato."
+    },
+    {
+      "move": "F8",
+      "comment": "Il bianco decide di muovere in F8 per non perdere l'angolo A8. Così facendo, però, crea un muro lungo la colonna F che molto probabilmente risulterà decisivo ai fini del risultato finale."
+    }
+  ]
+}

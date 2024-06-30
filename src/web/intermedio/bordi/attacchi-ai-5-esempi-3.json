@@ -1,0 +1,51 @@
+{
+  "position": [
+    "-OOOOO--",
+    "O-###O--",
+    "OO###OOO",
+    "O##O###O",
+    "O###O#OO",
+    "OOO###OO",
+    "O-OOOO-O",
+    "-OOOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Il nero minaccia di prendere l'angolo H8, ma in verità sta attaccando il cinque a nord."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco salva l'angolo H8, ma ora il bordo nord è perso."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero si incunea."
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende l'angolo e ottiene accesso anche all'angolo A8."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo A8. Il bianco ha una sola mossa in G7."
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende un altro angolo e un altro lato. Il bianco passa."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero vince."
+    }
+  ]
+}

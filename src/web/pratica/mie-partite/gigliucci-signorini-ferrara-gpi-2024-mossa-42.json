@@ -1,0 +1,26 @@
+{
+  "position": [
+    "-OOO----",
+    "-OO###--",
+    "OOOO##O-",
+    "OO#OO#OO",
+    "OO#####O",
+    "-###O#OO",
+    "#-###O--",
+    "--#--#--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Controllo della diagonale, che prolunga l'effetto della Stoner-trap ad ovest."
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "A6",
+      "comment": "Completamento della Stoner-trap."
+    }
+  ]
+}

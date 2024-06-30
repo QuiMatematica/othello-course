@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--##OO--",
+    "--O###--",
+    "OO#OO#OO",
+    "OOOO#O##",
+    "O#O#OO##",
+    "#####O##",
+    "--O##O--",
+    "--##O---"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il bianco prende il cinque sul bordo nord."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero prende il cinque sul bordo ovest."
+    }
+  ]
+}

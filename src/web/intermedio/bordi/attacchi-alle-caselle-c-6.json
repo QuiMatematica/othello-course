@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OO##",
+    "OOO#####",
+    "#OO##O##",
+    "###OOO##",
+    "--O#OO--",
+    "-O------"
+  ],
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "Il nero attacca la casella C isolata."
+    },
+    {
+      "move": "E8",
+      "comment": "Il bianco risponde in E8."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero continua l'attacco muovendo in C8."
+    },
+    {
+      "move": "D8",
+      "comment": "Anche se il bianco gioca in D8..."
+    },
+    {
+      "move": "A8",
+      "comment": "... il nero può prendere l'angolo."
+    }
+  ]
+}

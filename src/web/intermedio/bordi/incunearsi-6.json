@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--####--",
+    "--O###-O",
+    "--O###O-",
+    "--O###O-",
+    "--O###O-",
+    "--O####-",
+    "--O###--",
+    "--O##O--"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: muovi con il bianco e impedisci al nero di incunearsi.",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Corretto: avendo lasciato quattro caselle libere (un numero pari) il bianco non ha la possibilità di incunearsi."
+    }
+  ]
+}

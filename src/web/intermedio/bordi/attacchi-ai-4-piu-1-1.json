@@ -1,0 +1,31 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "##O#OOOO",
+    "#O####OO",
+    "##O#OOOO",
+    "-O#OOOOO",
+    "--O#O#--",
+    "-O-####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca da ovest. Se ora il nero prende l'angolo il bianco può incunearsi in C8."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero attacca da est. Se il bianco prende l'angolo il nero può incunearsi in C8."
+    },
+    {
+      "move": "H8",
+      "comment": "Per esempio, il bianco prende l'angolo..."
+    },
+    {
+      "move": "C8",
+      "comment": "... e il nero si incunea. In una mossa successiva potrà poi prendere l'angolo A8."
+    }
+  ]
+}

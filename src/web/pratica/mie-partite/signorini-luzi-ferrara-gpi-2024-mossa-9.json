@@ -1,0 +1,19 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "-----O--",
+    "---OO---",
+    "---O##--",
+    "---O#O--",
+    "---##O--",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "C6",
+      "comment": "Controllo della diagonale D6-E5. La mossa E8 non è più buona per il bianco, mentre lo sarebbe stata dopo G6."
+    }
+  ]
+}

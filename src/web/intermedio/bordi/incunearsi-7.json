@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--####--",
+    "#-##O#--",
+    "-##OO#--",
+    "####O#--",
+    "-##OOO--",
+    "--#OOO--",
+    "--OOOO--",
+    "--OOOO--"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: conquista un angolo in due mosse.",
+  "moves": [
+    {
+      "move": "A3",
+      "comment": "Corretto: tutto inizia con l'incunearsi in A3."
+    },
+    {
+      "move": "B6",
+      "comment": "Il bianco non può fare nulla per contrastare il tuo attacco all'angolo."
+    },
+    {
+      "move": "A1",
+      "comment": "Obiettivo raggiunto."
+    }
+  ]
+}

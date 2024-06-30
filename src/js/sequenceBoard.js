@@ -34,14 +34,8 @@ export default class SequenceBoard {
         this.currentPosition = Position.getPositionFromJSON(json);
 
         this.humanColor = this.currentPosition.turn;
-        let curPosition = this.currentPosition;
 
-        json.moves.forEach((move) => {
-            const square = Square.fromString(move.move);
-            curPosition = curPosition.playStone(square);
-            curPosition.comment = move.comment;
-        });
-        if (json.moves.length < 2) {
+        if (this.currentPosition.nextPosition.nextPosition == null) {
             this.controls.prev.remove();
             this.controls.computer.remove();
         }

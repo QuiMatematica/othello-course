@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--OOOO--",
+    "O-O##O-O",
+    "OOO###OO",
+    "O##OO##O",
+    "O#OO##OO",
+    "OO#O#OOO",
+    "O-#O##-O",
+    "-####---"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero attacca il quattro a nord da est."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero guadagna un tempo di gioco."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero attacco lo stesso quattro da ovest."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero prende sei pedine stabili del lato nord e guadagna un altro tempo di gioco."
+    }
+  ]
+}

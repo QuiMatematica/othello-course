@@ -1,0 +1,27 @@
+{
+  "position": [
+    "#OOO#O--",
+    "#OOO##--",
+    "#O##O##-",
+    "#O###O##",
+    "###OOOO-",
+    "##OOO---",
+    "---OOO--",
+    "--#OO-O-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "&Egrave; una Stoner-trap!"
+    },
+    {
+      "move": "C7",
+      "comment": "Il bianco si procura un accesso all'angolo."
+    },
+    {
+      "move": "F8",
+      "comment": "Bravo: hai completato la Stoner-trap."
+    }
+  ]
+}

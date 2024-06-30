@@ -1,0 +1,42 @@
+{
+  "position": [
+    "--####--",
+    "--#OO#--",
+    "OO###OOO",
+    "OOOOOOOO",
+    "O-OOO#OO",
+    "--OOO#OO",
+    "-------O",
+    "--------"
+  ],
+  "comment": "Obiettivo: trova il modo di attaccare il cinque bianco e conquistare il lato est in 7 mosse.",
+  "moves": [
+    {
+      "move": "B5",
+      "comment": "Bravo! Avevi bisogno di una pedina sulla diagonale che io non potessi girare subito. Questa era l'unica mossa possibile."
+    },
+    {
+      "move": "A6",
+      "comment": "In mancanza di meglio, il bianco gioca sul lato ovest."
+    },
+    {
+      "move": "G2",
+      "comment": "Hai attaccato."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo, con l'intenzione di prendere tutto il lato nord."
+    },
+    {
+      "move": "H2",
+      "comment": "Ti incunei nella casella C."
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "H8",
+      "comment": "Bravissimo, ce l'hai fatta!"
+    }
+  ]
+}

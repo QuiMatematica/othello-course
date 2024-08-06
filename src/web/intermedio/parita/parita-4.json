@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "######OO",
+    "##OOOOOO",
+    "#OOO#OOO",
+    "###O#OOO",
+    "#-#O##--",
+    "--####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B8",
+      "comment": "Ora il nero è chiuso e costretto a giocare una delle mosse perdenti."
+    }
+  ]
+}

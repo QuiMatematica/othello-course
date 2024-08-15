@@ -26,7 +26,7 @@
     <li>la regione formata dalle caselle G8, H7 e H8.</li>
 </ul>
 
-<p>&Egrave; intuitivo osservare come sia interessante per un giocatore poter fare l'ultima mossa in una regione
+<p>Un giocatore ha interesse a poter fare l'ultima mossa in una regione
 chiusa. L'ultima mossa infatti permette di voltare delle pedine nell'intorno di quella regione,
     pedine che difficilmente l'avversario potrà riconquistare muovendo in un'altra regione.</p>
 

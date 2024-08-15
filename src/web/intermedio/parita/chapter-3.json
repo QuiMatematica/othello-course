@@ -1,0 +1,31 @@
+{
+  "position": [
+    "######O-",
+    "##OOOO#-",
+    "##OOOO##",
+    "##OO##O#",
+    "##OO##O#",
+    "##O#OO##",
+    "#OOOOO-#",
+    "OOOOOO--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco vince!"
+    }
+  ]
+}

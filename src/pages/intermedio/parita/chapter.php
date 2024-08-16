@@ -42,3 +42,10 @@ tutto il bordo est. Eppure... guarda nel diagramma 3 cosa succede.</p>
 <p>Al netto di particolari situazioni tattiche (che approfondiremo nel livello avanzato), è diverso
 giocare in una regione dispari (come quella a sud-est) piuttosto che giocare in una regione pari (come
 quella a nord-est). Questa strategia va sotto il nome di <b>parità</b>.</p>
+
+<p>L'importanza della parità aumenta all'avvicinarsi della fina della partita: dopotutto
+è intrinsecamente legata con la quantità di pedine ottenute.
+    L'importanza aumenta, soprattutto, al diminuire di importanza degli altri elementi strategici,
+quali la mobilità o il possesso degli angoli. Possiamo affermare
+che in finale la parità è l'unica strategia che conta. Proprio per questo l'Othello
+è stato definito "il gioco della parità".</p>

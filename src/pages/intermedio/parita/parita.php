@@ -100,9 +100,38 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
         <p class="card-text">Chiamiamo <b>parità</b> questa strategia, ovvero lasciare un numero pari di caselle vuote
         in ciascun regione chiusa a cui l'avversario ha accesso.</p>
         <p class="card-text">Si dice che <b>un colore ha la parità in una regione</b> se ha il vantaggio
-            dell'ultima mossa.</p>
+            dell'ultima mossa in quella stessa regione.</p>
     </div>
 </div>
 
 <p>Per esempio il nero ha la parità nella regione a sud-est: indipendentemente da chi sia di turno ha possibilità
     di ottenere l'ultima mossa.</p>
+
+<h2>Lasciarsi guidare dalla parità</h2>
+
+<p>Un effetto interessante della parità è che quando la ottieni puoi permetterti il lusso di smettere di pensare,
+e lasciarti guidare dalla parità stessa. Guarda il diagramma 3: il bianco ha lasciato all'avversario solo regioni
+pari. Qualunque sia la mossa del nero, il bianco sa già cosa fare: dovrà semplicemente chiudere la regione in cui
+il nero ha giocato.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="parita-3.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 3: lasciarsi guidare dalla parità.
+    </div>
+</div>
+
+<h2>Quiz</h2>
+
+<p>Nel diagramma 4 giochi con il nero. Utilizzare la strategia della parità ti permetterà di vincere la parita.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="parita-4.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 3.
+    </div>
+</div>

@@ -1,25 +1,40 @@
 {
   "position": [
-    "--------",
-    "--------",
-    "######OO",
-    "##OOOOOO",
-    "#OOO#OOO",
-    "###O#OOO",
-    "#-#O##--",
-    "--####--"
+    "-OOOOO--",
+    "-#OO##-O",
+    "O#O#O#OO",
+    "O#OO##OO",
+    "O##O##OO",
+    "O######O",
+    "#####OOO",
+    "OOOOOO-O"
   ],
-  "turn": "white",
+  "turn": "black",
+  "comment": "Utilizzare la strategia della parità e vincere questa partita.",
   "moves": [
     {
-      "move": "B7"
+      "move": "G2",
+      "comment": "Esatto: in questo modo hai lasciato al bianco solo due regioni pari."
     },
     {
-      "move": "A8"
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo."
     },
     {
-      "move": "B8",
-      "comment": "Ora il nero è chiuso e costretto a giocare una delle mosse perdenti."
+      "move": "G1",
+      "comment": "Ti incastri per minacciare l'angolo A1."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco mette in salvo l'angolo A1."
+    },
+    {
+      "move": "A2",
+      "comment": "Prendi molte pedine con questa mossa. E il bianco è costretto a passare."
+    },
+    {
+      "move": "G8",
+      "comment": "Complimenti: hai vinto grazie alla parità."
     }
   ]
 }

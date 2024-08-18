@@ -47,8 +47,8 @@ chiuse formate da un numero pari di caselle vuote.</p>
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text">Chiamiamo <b>regione dispari</b> una regione chiuse formata da un numero dispari di caselle vuote.</p>
-        <p class="card-text">Chiamiamo <b>regione pari</b> una regione chiuse formata da un numero pari di caselle vuote.</p>
+        <p class="card-text">Chiamiamo <b>regione dispari</b> una regione chiusa costituita da un numero dispari di caselle vuote.</p>
+        <p class="card-text">Chiamiamo <b>regione pari</b> una regione chiusa costituita da un numero pari di caselle vuote.</p>
     </div>
 </div>
 
@@ -72,7 +72,7 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
     Il nero non è contento.</li>
     <li>Se il nero gioca a nord-ovest, il bianco ha due regione pari. Non può infatti giocare a sud-est, che sarebbe
         dispari, ma gli è preclusa.
-    E questo è bello per il nero!</li>
+    E il nero è contento!</li>
 </ul>
 
 <p>Nel diagramma 2 vedi l'evoluzione della posizione.</p>
@@ -90,7 +90,7 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
     <div class="card-header">Strategia</div>
     <div class="card-body">
         <p class="card-text">In ciascuna regione chiusa in cui l'avversario può giocare,
-            <b>lasciare un numero pari di caselle vuote</b>.</p>
+            cerca di <b>lasciare un numero pari di caselle vuote</b>.</p>
     </div>
 </div>
 
@@ -98,7 +98,7 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
     <div class="card-header">Definizione</div>
     <div class="card-body">
         <p class="card-text">Chiamiamo <b>parità</b> questa strategia, ovvero lasciare un numero pari di caselle vuote
-        in ciascun regione chiusa a cui l'avversario ha accesso.</p>
+        in ciascun regione chiusa in cui l'avversario ha accesso.</p>
         <p class="card-text">Si dice che <b>un colore ha la parità in una regione</b> se ha il vantaggio
             dell'ultima mossa in quella stessa regione.</p>
     </div>

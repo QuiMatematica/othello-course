@@ -1,6 +1,6 @@
 <h1>Parità e tempi di gioco</h1>
 
-<p>Come hai visto nella <a>pagina precedente</a>, la parità entra principalmente in gioco nella fase del finale,
+<p>Come hai visto nelle pagine precedenti, la parità entra in gioco nella fase del finale,
     quando ci sono poche regioni chiuse
     e bisogna massimizzare il numero di pedine.</p>
 

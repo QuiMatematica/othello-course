@@ -39,7 +39,11 @@ tutto il bordo est. Eppure... guarda nel diagramma 3 cosa succede.</p>
 
 <p>Perché è stato vantaggioso giocare in G7? C'è una strategia che ci può guidare in situazioni simili?</p>
 
-<p>Al netto di particolari situazioni tattiche (che approfondiremo nel livello avanzato), è diverso
+<p>Come vedremo nel capitolo sui finali, l'unico modo per avere certezza su quale sia la mossa giusta
+è contare le pedine che vengono girate a ogni mossa.</p>
+
+<p>Ma in questo capitolo ti mostrerò che è diverso
 giocare in una regione in cui c'è un numero dispari di caselle vuote (come quella a sud-est) piuttosto che giocare
     in una regione in cui c'è un numero pari di caselle vuote (come
-quella a nord-est). Questa strategia va sotto il nome di <b>parità</b>.</p>
+quella a nord-est). Il vantaggio di giocare in una regione "dispari" è che hai la possibilità di giocare
+    per ultimo in quella stessa regione. Questa strategia va sotto il nome di <b>parità</b>.</p>

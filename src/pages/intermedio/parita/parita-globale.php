@@ -39,11 +39,13 @@ mossa gli dà un vantaggio sul nero?</p>
     Ed è innegabile che aver la possibilità di fare l'ultima mossa sia in effetti un vantaggio.</p>
 
 <p>Tuttavia gli studi che si stanno facendo con i computer alla ricerca della partita perfetta stanno indicando
-che l'Othello è un gioco pari. Sono state trovate, infatti, milioni di sequenze di mosse perfette che portano alla parità
-e nessuna che porta alla vincita certa dell'uno o dell'altro colore. (Sul concetto di partita perfetta ci torneremo
+che l'Othello è un gioco pari. Sono state trovate, infatti, milioni di sequenze perfette che portano alla parità
+e nessuna che porta alla vincita certa dell'uno o dell'altro colore. (Sul concetto di partita o sequenza perfetta
+    ci torneremo
 quando parleremo dei finali.)</p>
 
-<p>Questo equilibrio è sicuramente da ricercare nella quantità di mosse da giocare. Se utilizziamo una tavola
+<p>Questo equilibrio è sicuramente da ricercare nel numero di mosse che compone una partita.
+    Se utilizziamo una tavola
 "6 per 6" si giocano solo 32 mosse (36 caselle totali meno le 4 caselle occupate dalla posizione di partenza)
 e le sequenze perfette portano alla vittoria del bianco. Invece con la tavola standard "8 per 8" si giocano
     60 mosse e questa quantità è sufficiente per equilibrare le sorti.</p>
@@ -51,7 +53,7 @@ e le sequenze perfette portano alla vittoria del bianco. Invece con la tavola st
 <h2>Il nero deve giocare diversamente dal bianco?</h2>
 
 <p>Ecco, questa è una domanda molto più interessante. Il nero può tentare di strappare la parità globale
-al bianco e arrogarsi il diritto dell'ultima mossa. Molti degli esempi visti nelle pagine precedenti portavano
+al bianco e arrogarsi il diritto dell'ultima mossa. Alcuni degli esempi visti nelle pagine precedenti portavano
 proprio a questa situazione. Ne faccio solo un altro per rafforzare questo concetto.</p>
 
 <p>Nella posizione del diagramma 2 tocca al nero muovere. Ci sono 6 caselle libere, quindi la parità globale
@@ -82,7 +84,9 @@ anche la parità globale.</p>
 <div class="card border-primary mb-3">
     <div class="card-header">Strategia</div>
     <div class="card-body">
-        <p class="card-text">Se giochi con il bianco, cerca di mantenere la <b>parità globale</b>.</p>
-        <p class="card-text">Se giochi con il nero, cerca di ottenere la <b>parità globale</b>.</p>
+        <p class="card-text">Se giochi con il bianco, cerca di <b>mantenere la parità globale</b>.</p>
+        <p class="card-text">Se giochi con il nero, cerca di <b>ottenere la parità globale</b>.</p>
     </div>
 </div>
+
+<p>Utilizzare al meglio la parità "locale" è uno dei modi per ottenere la parità globale.</p>

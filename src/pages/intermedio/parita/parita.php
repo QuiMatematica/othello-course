@@ -27,7 +27,7 @@
 </ul>
 
 <p>Un giocatore ha interesse a poter fare l'ultima mossa in una regione
-chiusa. L'ultima mossa infatti permette di voltare delle pedine nell'intorno di quella regione,
+chiusa. L'ultima mossa, infatti, permette di voltare pedine che si trovano nelle vicinanze di quella regione,
     pedine che difficilmente l'avversario potrà riconquistare muovendo in un'altra regione.</p>
 
 <p>Nella posizione del diagramma 1 tocca al nero. Dove muoveresti?</p>
@@ -36,12 +36,14 @@ chiusa. L'ultima mossa infatti permette di voltare delle pedine nell'intorno di 
     quindi se il nero muove per primo il bianco avrà la possibilità di compiere l'ultima mossa.</p>
 
 <p>Più interessante è la regione a nord-ovest, perché se il nero gioca per primo rimangono solo due caselle
-    libere, quindi il bianco è svantaggiato a muovere per secondo in quella regione.</p>
+    libere, quindi se il bianco gioca per secondo, il nero può giocare l'ultima mossa.</p>
 
 <p>Lo stesso vale per la regione a sud-est: anche questa regione è formata da tre caselle,
-    quindi il nero avrebbe interesse a giocare per primo per lasciare al bianco una regione di due caselle.</p>
+    quindi il nero avrebbe interesse a giocare per primo: lascia al bianco una regione di due caselle,
+    e conta di poterci muovere per ultimo.</p>
 
-<p>E già intuiamo quanto siano diverse regioni chiuse formate da un numero dispari di caselle vuote e regioni
+<p>Intuiamo quindi che giocare in regioni chiuse formate da un numero dispari di caselle vuote è diverso dal
+    giocare in regioni
 chiuse formate da un numero pari di caselle vuote.</p>
 
 <div class="card border-primary mb-3">
@@ -56,9 +58,11 @@ chiuse formate da un numero pari di caselle vuote.</p>
 di giocare l'ultima mossa in quella regione; se gioco in una regione pari è il mio avversario ad avere la possibilità
 di giocare l'ultima mossa.</p>
 
-<p>Ma tornando al diagramma 1, c'è una profonda differenza tra la regione a nord-ovest e la regione a sud-est.
+<p>Ma, tornando al diagramma 1, la regione a nord-ovest e la regione a sud-est, pur essendo entrambi dispari, non hanno
+    le stesse caratteristiche.
     Nella regione a nord-ovest
-anche il bianco può giocare per primo, mentre nella regione a sud-est non può farlo. Quindi se il nero giocasse
+anche il bianco può giocare per primo, mentre nella regione a sud-est non può farlo: non ha nessuna mossa legale.
+    Quindi se il nero giocasse
 a sud-est, il bianco potrebbe giocare a nord-ovest e lasciare al nero solo regioni pari; se invece
 il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si troverebbe costretto a giocare in
     una delle due regioni pari.</p>
@@ -67,10 +71,11 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
 <ul>
     <li>In questa posizione il nero ha due regioni dispari e una regione pari: è interessato
     a giocare in una delle regioni dispari.</li>
-    <li>Se il nero gioca a sud-est, il bianco ha due regione pari e una regione dispari: può
-    quindi giocare nella regione dispari (nord-ovest) e al nero rimangono tre regioni pari.
+    <li>Se il nero gioca a sud-est, il bianco può giocare in una delle due regione pari oppure nella regione dispari:
+        gli conviene giocare nella dispari (nord-ovest) e al nero rimangono tre regioni pari.
     Il nero non è contento.</li>
-    <li>Se il nero gioca a nord-ovest, il bianco ha due regione pari. Non può infatti giocare a sud-est, che sarebbe
+    <li>Se il nero gioca a nord-ovest, il bianco può giocare solo in una delle due regione pari.
+        Non può infatti giocare a sud-est, che sarebbe
         dispari, ma gli è preclusa.
     E il nero è contento!</li>
 </ul>
@@ -89,8 +94,9 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
 <div class="card border-primary mb-3">
     <div class="card-header">Strategia</div>
     <div class="card-body">
-        <p class="card-text">In ciascuna regione chiusa in cui l'avversario può giocare,
-            cerca di <b>lasciare un numero pari di caselle vuote</b>.</p>
+        <p class="card-text">
+            Cerca di <b>lasciare un numero pari di caselle vuote</b> in ciascuna regione chiusa
+            in cui l'avversario può giocare.</p>
     </div>
 </div>
 
@@ -104,7 +110,7 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
     </div>
 </div>
 
-<p>Per esempio il nero ha la parità nella regione a sud-est: indipendentemente da chi sia di turno ha possibilità
+<p>Per esempio il nero ha la parità nella regione a sud-est: indipendentemente da chi sia di turno ha la possibilità
     di ottenere l'ultima mossa.</p>
 
 <h2>Lasciarsi guidare dalla parità</h2>
@@ -125,13 +131,25 @@ il nero ha giocato.</p>
 
 <h2>Quiz</h2>
 
-<p>Nel diagramma 4 giochi con il nero. Utilizzare la strategia della parità ti permetterà di vincere la parita.</p>
+<p>Nel diagramma 4 giochi con il nero. Utilizzare la strategia della parità ti permetterà di vincere la partita.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
         <div class="sequence-board" data-file="parita-4.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 3.
+        Diagramma 4.
+    </div>
+</div>
+
+<p>Anche nel diagramma 5 giochi con il nero. E anche in questo caso la parità
+    ti permetterà di vincere la partita.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="parita-5.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 5.
     </div>
 </div>

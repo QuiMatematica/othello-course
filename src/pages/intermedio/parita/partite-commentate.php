@@ -92,10 +92,10 @@ entrare, per il momento, nel dettaglio delle sequenze giocabili:</p>
 
 <p>Non mi sembra che ci siano altri elementi strategici da prendere in considerazione. Per
 esempio, non esistono rischi di controllo delle diagonali da parte di nessuno dei giocatori
-perchè la pedina nera in D5 e quella bianca in E5 non potranno più cambiare colore.</p>
+perché la pedina nera in D5 e quella bianca in E5 non potranno più cambiare colore.</p>
 
 <p>Qual è la mossa giusta? Il diagramma 3 riporta la sequenza giocata da Caspard. Il
-diagramma 4 riporta la sequenza derivante dalla giusta scelta.</p>
+diagramma 4 riporta la sequenza derivante dalla scelta corretta.</p>
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
     <div class="col">

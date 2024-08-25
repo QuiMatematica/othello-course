@@ -143,3 +143,17 @@ completamente compromessa.</p>
         Diagramma 8: vincere con la parità.
     </div>
 </div>
+
+<h2>Tocca a te</h2>
+
+<p>Nel diagramma 9 giochi con il bianco. Gioca la mossa che ti permette, utilizzando la parità, di ottenere un tempo
+di gioco.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="parita-e-tempi-di-gioco-9.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 9.
+    </div>
+</div>

@@ -129,7 +129,7 @@ il nero ha giocato.</p>
     </div>
 </div>
 
-<h2>Quiz</h2>
+<h2>Tocca a te</h2>
 
 <p>Nel diagramma 4 giochi con il nero. Utilizzare la strategia della parità ti permetterà di vincere la partita.</p>
 

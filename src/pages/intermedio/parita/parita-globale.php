@@ -27,8 +27,13 @@ vuota. Ma se queste due situazioni non avvengono il bianco ha la parità fin dal
 </div>
 
 <p>All'inizio della partita la parità globale è al bianco. E questa situazione (sempre al netto delle due
-    eccezioni riportate sopra) rimane inalterata per tutta la partita: il nero giocherà sempre in uno spazio pari,
-mentre il bianco giocherà sempre in uno spazio dispari.</p>
+    eccezioni riportate sopra) rimarrà inalterata per tutta la partita: quando sarà di turno il nero ci sarà un numero
+    pari di caselle vuote; quando sarà di turno il bianco ci sarà un numero dispari di caselle vuote.</p>
+
+<p>Inoltre, all'avanzare della partita, cominceranno a formarsi delle regioni chiuse, che potranno essere pari
+o dispari. Ma quando sarà di turno il nero ci sarà sempre un numero pari di spazi dispari (e zero è un numero pari).
+E quando sarà di turno il bianco ci sarà sempre un numero dispari di spazi dispari: quindi il bianco avrà sempre almeno
+uno spazio dispari a disposizione.</p>
 
 <h2>Il bianco parte avvantaggiato?</h2>
 

@@ -17,7 +17,29 @@ E la mossa è al nero. Questo significa che il bianco ha la parità?</p>
 
 <p>Ci sono due eccezioni: uno dei giocatori è costretto a passare, oppure la partita finisce con qualche casella
 vuota. Ma se queste due situazioni non avvengono il bianco ha la parità fin dalla prima mossa, perché ha la
-    possibilità (speranza?) di giocare l'ultima mossa.</p>
+    possibilità di giocare l'ultima mossa.</p>
+
+<div class="card border-primary mb-3">
+    <div class="card-header">Definizione</div>
+    <div class="card-body">
+        <p class="card-text">Chiamiamo <b>parità naturale</b> la possibilità per il bianco di giocare l'ultima mossa
+            delle partite che si concludono alla sessantesima mossa e senza salti di turno.</p>
+    </div>
+</div>
+
+<p>La parità <b>naturale</b> è, per definizione, del bianco. Se non si presentano le due
+    eccezioni riportate sopra, la situazione rimarrà inalterata per tutta la partita:
+    quando sarà di turno il nero ci sarà un numero pari di caselle vuote,
+    quando sarà di turno il bianco ci sarà un numero dispari di caselle vuote.</p>
+
+<p>Inoltre, all'avanzare della partita, cominceranno a formarsi delle regioni chiuse, che potranno essere pari
+o dispari. Ma quando sarà di turno il nero ci sarà sempre un numero pari di spazi dispari (e zero è un numero pari).
+E quando sarà di turno il bianco ci sarà sempre un numero dispari di spazi dispari: quindi il bianco avrà sempre almeno
+uno spazio dispari a disposizione.</p>
+
+<p>Tuttavia i due eventi "eccezionali", il salto di turno e la fine anticipata, possono comunque accadere.
+In questi casi non è detto che sia il bianco a giocare l'ultima mossa. In particolare con un salto di turno
+(o più genericamente, con un numero dispari di salti di turno) sarà il nero a compiere l'ultima mossa.</p>
 
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
@@ -26,14 +48,11 @@ vuota. Ma se queste due situazioni non avvengono il bianco ha la parità fin dal
     </div>
 </div>
 
-<p>All'inizio della partita la parità globale è al bianco. E questa situazione (sempre al netto delle due
-    eccezioni riportate sopra) rimarrà inalterata per tutta la partita: quando sarà di turno il nero ci sarà un numero
-    pari di caselle vuote; quando sarà di turno il bianco ci sarà un numero dispari di caselle vuote.</p>
+<p>Il nero può ottenere la parità <b>globale</b> solo se uno dei due colori passa il turno oppure la partita finisce
+con delle caselle vuote (e l'ultima mossa è del nero).</p>
 
-<p>Inoltre, all'avanzare della partita, cominceranno a formarsi delle regioni chiuse, che potranno essere pari
-o dispari. Ma quando sarà di turno il nero ci sarà sempre un numero pari di spazi dispari (e zero è un numero pari).
-E quando sarà di turno il bianco ci sarà sempre un numero dispari di spazi dispari: quindi il bianco avrà sempre almeno
-uno spazio dispari a disposizione.</p>
+<p>Chiaramente, se il nero ottiene la parità globale, le considerazioni numeriche riportate sopra devono cambiare
+colore di riferimento.</p>
 
 <h2>Il bianco parte avvantaggiato?</h2>
 
@@ -78,6 +97,12 @@ E la vittoria.</p>
         Diagramma 2: la parità globale.
     </div>
 </div>
+
+<p>Torna alla posizione di partenza del diagramma 2. In una posizione come questa la parità globale è ancora di
+diritto in mano al bianco: infatti è di turno il nero e c'è un numero pari di caselle vuote. Tuttavia il nero ha
+la certezza matematica di poter giocare l'ultima mossa, grazie al fatto che l'avversario non può giocare nella
+regione a sud-est. Quindi possiamo già affermare che la parità globale è potenzialmente in mano al nero.
+Sarà bravura del giocatore convertire questa parità potenziale in una parità globale attuale.</p>
 
 <h2>Come giocare con il bianco e con il nero</h2>
 

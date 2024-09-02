@@ -129,27 +129,68 @@ il nero ha giocato.</p>
     </div>
 </div>
 
-<h2>Tocca a te</h2>
+<h2>Controesempio</h2>
 
-<p>Nel diagramma 4 giochi con il nero. Utilizzare la strategia della parità ti permetterà di vincere la partita.</p>
+<p>Purtroppo anche la parità non è vincente al 100%: ci sono situazioni in cui giocare seguendo la parità porta
+alla sconfitta. I diagrammi 4 e 5 partono dalla stessa situazione. Nel diagramma 4 il bianco gioca come prima mossa
+G8, seguendo la strategia della parità. Ma dopo l'immediata risposta H8 capisce subito di aver sbagliato: ha perso
+la parità (può giocare solo in regioni pari) e ha concesso al nero troppe pedine stabili. Nel diagramma 5, invece,
+cerca di sfruttare meglio la situazione, in particolare il cinque sul bordo ovest.</p>
 
-<div class="card mx-auto board-card my-3">
-    <div class="card-body">
-        <div class="sequence-board" data-file="parita-4.json"></div>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+
+        <div class="card mx-auto board-card my-3">
+            <div class="card-body">
+                <div class="match-file-board" data-file="parita-4.json"></div>
+            </div>
+            <div class="card-footer text-body-secondary text-center">
+                Diagramma 4.
+            </div>
+        </div>
+
     </div>
-    <div class="card-footer text-body-secondary text-center">
-        Diagramma 4.
+    <div class="col">
+
+        <div class="card mx-auto board-card my-3">
+            <div class="card-body">
+                <div class="match-file-board" data-file="parita-5.json"></div>
+            </div>
+            <div class="card-footer text-body-secondary text-center">
+                Diagramma 5.
+            </div>
+        </div>
+
     </div>
 </div>
 
-<p>Anche nel diagramma 5 giochi con il nero. E anche in questo caso la parità
+
+<p>Nella sequenza del diagramma 5 ci sono diversi elementi strategici che hanno permesso al bianco di vincere:
+un attacco al cinque, il controllo di un controbordo e due buchi neri. Sono tutti elementi che forse ancora non conosci.
+    Porta pazienza e sii perseverante nello studio: man mano che li conoscerai imparerai a sfruttarli e imparerai
+    a valutare correttamente le situazioni.</p>
+
+<h2>Tocca a te</h2>
+
+<p>Nel diagramma 6 giochi con il nero. Utilizzare la strategia della parità ti permetterà di vincere la partita.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="sequence-board" data-file="parita-6.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 6.
+    </div>
+</div>
+
+<p>Anche nel diagramma 7 giochi con il nero. E anche in questo caso la parità
     ti permetterà di vincere la partita.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
-        <div class="sequence-board" data-file="parita-5.json"></div>
+        <div class="sequence-board" data-file="parita-7.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 5.
+        Diagramma 7.
     </div>
 </div>

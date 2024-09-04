@@ -26,8 +26,8 @@
     <li>la regione formata dalle caselle G8, H7 e H8.</li>
 </ul>
 
-<p>Un giocatore ha interesse a poter fare l'ultima mossa in una regione
-chiusa. L'ultima mossa, infatti, permette di voltare pedine che si trovano nelle vicinanze di quella regione,
+<p>Un giocatore ha interesse a poter fare <u>l'ultima mossa in una regione
+chiusa</u>. L'ultima mossa, infatti, permette di voltare pedine che si trovano nelle vicinanze di quella regione,
     pedine che difficilmente l'avversario potrà riconquistare muovendo in un'altra regione.</p>
 
 <p>Nella posizione del diagramma 1 tocca al nero. Dove muoveresti?</p>
@@ -35,12 +35,13 @@ chiusa. L'ultima mossa, infatti, permette di voltare pedine che si trovano nelle
 <p>Certamente il nero non ha interesse a giocare nella regione a sud-ovest: ci sono solo due caselle libere,
     quindi se il nero muove per primo il bianco avrà la possibilità di compiere l'ultima mossa.</p>
 
-<p>Più interessante è la regione a nord-ovest, perché se il nero gioca per primo rimangono solo due caselle
-    libere, quindi se il bianco gioca per secondo, il nero può giocare l'ultima mossa.</p>
+<p>Più interessante è la regione a nord-ovest, perché se il nero gioca per primo rimarranno solo due caselle
+    libere in cui non potrà muovere: prima o poi il bianco occuperà la seconda casella e il nero potrà giocare
+    l'ultima mossa.</p>
 
-<p>Lo stesso vale per la regione a sud-est: anche questa regione è formata da tre caselle,
-    quindi il nero avrebbe interesse a giocare per primo: lascia al bianco una regione di due caselle,
-    e conta di poterci muovere per ultimo.</p>
+<p>Simile è la regione a sud-est: anche questa è formata da tre caselle,
+    quindi il nero ha interesse a giocarci per primo: al bianco resterà una regione di due caselle,
+    e il nero spera di poterci muovere per ultimo.</p>
 
 <p>Intuiamo quindi che giocare in regioni chiuse formate da un numero dispari di caselle vuote è diverso dal
     giocare in regioni

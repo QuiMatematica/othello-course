@@ -1,0 +1,79 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "O#OOO##O",
+    "O##O#O#O",
+    "OOO#OOOO",
+    "--O##O-O",
+    "-OOOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il nero gioca nello spazio dispari a sud-ovest. Il bianco non può accedere all'angolo A8, quindi è costretto ad aprire il gioco a nord."
+    },
+    {
+      "move": "F2"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "F1",
+      "comment": "Ora il nero ha la parità nello spazio a nord-est, quindi avrà vantaggio a giocare nello spazio dispari a nord-ovest, lasciando così al bianco solo uno spazio pari in cui può giocare."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero continua a giocare secondo parità."
+    },
+    {
+      "move": "A1",
+      "comment": "Ora il nero ha la parità in due regioni."
+    },
+    {
+      "move": "G2",
+      "comment": "Con questa mossa il nero vuole costringere il bianco a prendere l'angolo H1 prima di riempire lo spazio a sud-est."
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "G1"
+    }
+  ]
+}

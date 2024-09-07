@@ -1,0 +1,13 @@
+{
+  "position": [
+    "--OOOO--",
+    "--O###-#",
+    "-OO#####",
+    "OOOOO###",
+    "OOOOOO##",
+    "OOOOOO##",
+    "-O##OOO-",
+    "O###OO--"
+  ],
+  "turn": "black"
+}

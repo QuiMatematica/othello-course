@@ -1,0 +1,49 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-OOOO-#",
+    "########",
+    "#O#OO###",
+    "#O######",
+    "#####O##",
+    "--####-#",
+    "--#OO#--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco ha perso la parità: ora può giocare solo in regioni pari."
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "B2"
+    }
+  ]
+}

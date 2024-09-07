@@ -1,0 +1,66 @@
+{
+  "position": [
+    "--###---",
+    "#-##OOO-",
+    "-##O#OO#",
+    "OO##O#O#",
+    "OO##OO##",
+    "OOOO####",
+    "--O##O-#",
+    "-OOOOO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "A3",
+      "comment": "Questa è la scelta giusta. Proseguiamo ancora di una mossa per capire perché."
+    },
+    {
+      "move": "A1",
+      "comment": "Tornando ancora una volta ai tre punti strategici ci rendiamo conto che il bordo sbilanciato del nero è sparito, ma le due debolezze del bianco (cinque attaccabile e parità perduta) ci sono ancora. In cambio il nero ha dovuto cedere un angolo che comunque, in finale di partita, perde il suo valore. Molto più importante è il fatto di non aver restituito al bianco la parità. Ora il nero deve giocare G7 e delimitare tre spazi pari nei quali giocherà vantaggiosamente per secondo e uno dispari nel quale giocherà due volte."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero gioca in una regione dispari e lascia al bianco solo regioni pari."
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "B2",
+      "comment": "Chiude la regione."
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "H2",
+      "comment": "Ora il nero ha la parità in due regioni, quindi può scegliere quale tenere per fare l'ultima mossa."
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero ha fatto due mosse su tre nella regione a sud-ovest."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "G1",
+      "comment": "Pareggio."
+    }
+  ]
+
+}

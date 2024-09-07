@@ -1,0 +1,35 @@
+{
+  "position": [
+    "######O-",
+    "##OOOO#-",
+    "##OOOO##",
+    "##OO##O#",
+    "##OO##O#",
+    "##O#OO##",
+    "#OOOOO-#",
+    "OOOOOO--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo H1."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero prende tutte le pedine della riga 2."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende tutto il bordo est."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero gira 6 pedine."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco perde."
+    }
+  ]
+}

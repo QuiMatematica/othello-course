@@ -1,0 +1,62 @@
+{
+  "position": [
+    "--OOOO--",
+    "--O###-#",
+    "-OO#####",
+    "OOOOO###",
+    "OOOOOO##",
+    "OOOOOO##",
+    "-O##OOO-",
+    "O###OO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Il nero gioca nello spazio dispari a sud-est, facendolo diventare uno spazio pari."
+    },
+    {
+      "move": "G1",
+      "comment": "Per costringere il nero a giocare in uno dei due spazi in cui ha la parità, il bianco gioca nello spazio dispari a sua disposizione."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero occupa questo spazio dispari e conserva lo spazio a nord-ovest."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo. Ora il nero potrebbe giocare in G8 per chiudere lo spazio dispari, ma ha un'altra possibilità..."
+    },
+    {
+      "move": "A2",
+      "comment": "Con questa mossa il nero fa diventare pari lo spazio a nord-ovest e ottiene la parità nella casella a sud-est. Il bianco è costretto a muovere in uno spazio pari."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco muove in uno spazio pari..."
+    },
+    {
+      "move": "G2",
+      "comment": "... e il nero chiude."
+    },
+    {
+      "move": "A3",
+      "comment": "Il bianco si sposta ad ovest. Il nero ora è obbligato a chiudere in G8."
+    },
+    {
+      "move": "G8",
+      "comment": "Chiusura. La parità ritorna al bianco, ma ormai il vantaggio acquisito dal nero in termini di pedine stabili è insormontabile."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero non ha ottenuto la parità globale, ma grazie alle parità locali ha ottenuto un numero sufficiente di pedine per vincere."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero vince."
+    }
+  ]
+}

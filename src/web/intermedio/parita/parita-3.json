@@ -1,0 +1,38 @@
+{
+  "position": [
+    "--OOOO--",
+    "O##OOOO#",
+    "O##OOOO#",
+    "O##OOO##",
+    "O##OO###",
+    "OO#O##O#",
+    "O-O###-#",
+    "-OOOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    }
+  ]
+}

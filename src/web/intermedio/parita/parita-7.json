@@ -1,0 +1,28 @@
+{
+  "position": [
+    "---##---",
+    "---O##-O",
+    "OO####OO",
+    "OOOOO#O-",
+    "OOO#OOO-",
+    "O#O#O#OO",
+    "--#OO#O-",
+    "-OOOOOOO"
+  ],
+  "turn": "black",
+  "comment": "Utilizzare la strategia della parità e vincere questa partita.",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Esatto: in questo modo hai lasciato al bianco solo tre regioni pari."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "A7",
+      "comment": "Corretto: chiudi la regione a sud-est.<br>Il finale perfetto non è facilissimo, ma ti porta alla vittoria per 38 a 26. Per ora possiamo fermarci qui."
+    }
+  ]
+}

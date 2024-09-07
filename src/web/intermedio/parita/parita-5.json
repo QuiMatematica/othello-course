@@ -1,0 +1,49 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-OOOO-#",
+    "########",
+    "#O#OO###",
+    "#O######",
+    "#####O##",
+    "--####-#",
+    "--#OO#--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8",
+      "comment": "Ora il bianco può giocare tutte e tre le ultime mosse. Questo gli permetterà di vincere."
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "B2"
+    }
+  ]
+}

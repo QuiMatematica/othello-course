@@ -1,0 +1,35 @@
+{
+  "position": [
+    "######O-",
+    "##OOOO#-",
+    "##OOOO##",
+    "##OO##O#",
+    "##OO##O#",
+    "##O#OO##",
+    "#OOOOO-#",
+    "OOOOOO--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco muove in G7."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende l'angolo H1."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco prende 5 pedine."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo H8 e stabilizza il bordo est."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco vince!"
+    }
+  ]
+}

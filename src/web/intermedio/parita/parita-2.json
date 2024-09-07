@@ -1,0 +1,44 @@
+{
+  "position": [
+    "--OOOOOO",
+    "#-OO####",
+    "#####O#O",
+    "###OOO#O",
+    "##OOOO#O",
+    "##OOOOOO",
+    "-OOOOOO-",
+    "-#####--"
+  ],
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il nero gioca in una regione dispari. Il bianco può giocare solo in regioni pari."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo con l'obiettivo di prendere anche tutto il lato ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero gioca in una regione dispari. Al bianco rimane solo una regione pari."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco prende il lato ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero gioca in una regione dispari. Il bianco è costretto a passare. Il nero può giocare nuovamente in una regione dispari e ottiene anche l'ultima mossa."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero vince."
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--OOOOOO",
+    "O-OO####",
+    "O#OOO###",
+    "O#OOO###",
+    "OOOOO###",
+    "OOOOO###",
+    "O-OOOO##",
+    "--OOOOOO"
+  ],
+  "moves": [
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B2",
+      "comment": "Il bianco deve passare. La parità globale va al nero."
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero vince."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "OO######",
+    "OOOOO###",
+    "OO###O##",
+    "OOOOO###",
+    "--#OO#-#",
+    "--####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco gioca in una regione dispari intenzionato ad ottenere un tempo di gioco."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo e stabilizza le pedine sul bordo est.<br>Ora però il bianco non può entrare in G8: la sequenza non ha avuto successo."
+    }
+  ]
+}

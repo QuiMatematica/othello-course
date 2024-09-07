@@ -10,7 +10,9 @@
 					"pages": [
 						{
 							"href": "le-regole.php",
-							"title": "Le regole"
+							"title": "Le regole",
+							"description": "Scopri le regole del gioco Othello con il nostro corso interattivo. Diventa un maestro di Othello con lezioni dettagliate e pratiche.",
+							"keywords": "regole Othello, regole dell'Othello, regole del gioco Othello"
 						},
 						{
 							"href": "precisazioni.php",
@@ -177,6 +179,28 @@
 						{
 							"href": "piu-tempi.php",
 							"title": "Guadagnare più tempi di gioco"
+						}
+					]
+				},
+				{
+					"href": "parita/",
+					"title": "La parità",
+					"pages": [
+						{
+							"href": "parita.php",
+							"title": "Regioni chiuse e parità"
+						},
+						{
+							"href": "parita-globale.php",
+							"title": "La parità globale: il nero e il bianco"
+						},
+						{
+							"href": "partite-commentate.php",
+							"title": "Parità: partite commentate"
+						},
+						{
+							"href": "parita-e-tempi-di-gioco.php",
+							"title": "Parità e tempi di gioco"
 						}
 					]
 				}

@@ -1,0 +1,61 @@
+{
+  "position": [
+    "--###---",
+    "#-##OOO-",
+    "-##O#OO#",
+    "OO##O#O#",
+    "OO##OO##",
+    "OOOO####",
+    "--O##O-#",
+    "-OOOOO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Per capire perché questa mossa è sbagliata andiamo avanti di altre due mosse."
+    },
+    {
+      "move": "A3"
+    },
+    {
+      "move": "A7",
+      "comment": "I tre elementi chiave si sono profondamente modificati: il nero non è più sbilanciato sul bordo ovest (che è diventato un sei), il bianco ha riguadagnato la parità (lo spazio a sud-ovest non è più dispari), il suo cinque è stato ormai attaccato. Da qui in poi la partita si è incanalata sui classici binari di un finale dominato dalla parità del bianco che, a questo punto, gioca nello spazio dispari in B2."
+    },
+    {
+      "move": "B2",
+      "comment": "Il bianco gioca nella regione dispari. Ora il nero ha solo regioni pari."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8",
+      "comment": "Vince il bianco."
+    }
+  ]
+}

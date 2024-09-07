@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "OO######",
+    "OOOOO###",
+    "OO###O##",
+    "OOOOO###",
+    "--#OO#-#",
+    "--####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il bianco gioca in una regione dispari intenzionato ad ottenere un tempo di gioco."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo e stabilizza le pedine sul bordo est e sul bordo sud."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco chiude la regione a sud-est e costringe il nero a giocare una delle rimanente mosse, tutte perdenti."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "O-------",
+    "OO#####-",
+    "O##O####",
+    "O#####O#",
+    "OO##O###",
+    "O-##OO-#",
+    "-#####--"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: utilizzare la parità per ottenere un tempo di gioco e costringere il nero a cedere un angolo.",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Esatto. Hai giocato in una zona dispari. Il nero può prendere l'angolo ma tu potrai giocare per ultimo nella regione."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "G8",
+      "comment": "Esatto. Chiudi la regione. Adesso al nero rimangono solo due mosse: B2 e B7. Obiettivo raggiunto."
+    }
+  ]
+}

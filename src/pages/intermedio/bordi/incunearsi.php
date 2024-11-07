@@ -12,10 +12,10 @@
     </div>
 </div>
 
-<p>Se il nero gioca in C8 nella mossa successiva, qualunque sia la risposta del bianco, potrà prendere A8.
-    La pedina C8, infatti, non può essere girata dal momento che è circondata da due pedine bianche.
-    Si dice che la pedina nera è <b>"incuneata"</b> (in inglese "wedged"). Vedi nel diagramma 2 un possibile sequenza
-di mosse.</p>
+<p>Se il nero gioca in C8, qualunque sia la risposta del bianco, poi può prendere l'angolo A8.
+    La pedina nera in C8, infatti, è incastrata tra due pedine nere e non può essere girata.
+    Si dice che la pedina nera è <b>"incuneata"</b> (in inglese "wedged").
+    Vedi nel diagramma 2 un possibile continuazione della partita.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -26,11 +26,13 @@ di mosse.</p>
     </div>
 </div>
 
-<p>Ora guardiamo il lato est: il nero può fare la stessa manovra?
+<p>Torniamo al diagramma 1 e guardiamo il lato est: il nero può fare la stessa manovra?
     Se il nero gioca in H6, il bianco risponde in H5 (diagramma 3);
     se il nero gioca in H5, il bianco risponde in H6 (diagramma 4). Il nero non riesce a incunearsi perché ci sono
     due caselle libere: qualunque delle due scelga, il bianco può
-rispondere nell'altra.</p>
+rispondere nell'altra.
+&Egrave; lo stesso concetto della parità: se ci sono due caselle libere (o comunque un numero pari
+di caselle libere) alla mossa di un colore l'altro può replicare.</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -72,9 +74,12 @@ giocando in D1. Ma, a questo punto il nero può incunearsi in E1. Vedi il diagra
     </div>
 </div>
 
+<p>Ancora una volta è d'obbligo il confronto con la parità: se ci sono tre caselle libere chi gioca
+per primo gioca anche per ultimo.</p>
+
 <p>Si parla di <b>incunearsi</b> anche quanto l'avversario non si è sbilanciato su una casella C, ma ha lasciato
-    una casella vuota tra due sue pedine sul bordo. Nel diagramma 6 vedi una situazione di questo tipo in cui,
-    visto che il bianco non può rispondere sullo stesso bordo, il nero guadagna un tempo
+    una casella vuota tra due sue pedine sul bordo. Nel diagramma 6 vedi una situazione di questo tipo:
+    il nero gioca in E1, il bianco non può rispondere sullo stesso bordo, e il nero guadagna un tempo
 di gioco.</p>
 
 <div class="card mx-auto board-card my-3">

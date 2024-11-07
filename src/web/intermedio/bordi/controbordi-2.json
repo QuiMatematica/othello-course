@@ -1,0 +1,16 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "--OOOO-#",
+    "------##",
+    "------##",
+    "------##",
+    "------##",
+    "--OOOO--",
+    "--OOOO--"
+  ],
+  "controls": {
+    "score": false,
+    "turn": false
+  }
+}

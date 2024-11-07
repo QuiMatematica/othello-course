@@ -22,8 +22,8 @@
 
 <p>I primi due obiettivi sono già stati trattati nei capitoli precedenti.</p>
 
-<p>In questo capitolo cominceremo ad approcciare il terzo obiettivo:
-dopo una prima presentazione delle diverse formazioni di bordo verranno mostrate
-le forme più semplici di attacchi e trappole.
+<p>In questo capitolo cominceremo ad approcciare il terzo obiettivo con una serie di definizioni
+    e di osservazioni tattiche di natura generale.
+Nei due capitoli successivi verranno mostrate le forme più semplici di attacchi e trappole.
 La trattazione di tutti gli attacchi, per lo meno quelli formalizzati come <i>pattern</i>,
 viene rimandata alla sezione avanzata del corso.</p>

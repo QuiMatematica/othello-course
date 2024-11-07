@@ -4,7 +4,7 @@
 un quattro sbilanciato di un colore, una casella B vuota e la rimanente casella C occupata
 dall'altro colore. Anche queste formazioni possono essere attaccate con una tecnica simile
 a quella usata contro i
-<a href="attacchi-ai-5.php">cinque</a>.
+<a href="../attacchi-ai-5/attacchi-ai-5.php">cinque</a>.
 Bisogna giocare in una casella X (o in una casella C) in modo da offrire un angolo.
 Se l'attaccato prendo l'angolo, l'attaccante si incunea nella casella B rimasta
 libera e conquista l'angolo opposto in una mossa successiva.</p>

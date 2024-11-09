@@ -37,8 +37,7 @@
 
 <p>Il <b>quattro</b> (digramma 3) è più debole rispetto al sei, infatti le caselle C adiacenti
     possono essere
-    sfruttate in attacchi per guadagnare l'intero lato o anche solo dei tempi di gioco.
-    Il diagramma 4 presenta un esempio di doppio attacco a un quattro.</p>
+    sfruttate in attacchi per guadagnare l'intero lato o anche solo dei tempi di gioco.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -48,6 +47,8 @@
         Diagramma 3: un <b>quattro</b> sul bordo sud.
     </div>
 </div>
+
+<p>Il diagramma 4 presenta un esempio di doppio attacco a un quattro.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -77,12 +78,13 @@
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text">Le <b>formazioni sbilanciate</b> sono formazioni che comprendono una
-            casella C. Fa eccezione il sei che è considerata una formazione bilanciata.</p>
+        <p class="card-text">Le <b>formazioni sbilanciate</b> sono formazioni asimmetriche
+            rispetto all'asse orizzontale o all'asse verticale della tavola da gioco, e comprendono
+            almeno una casella C.</p>
     </div>
 </div>
 
-<p>Ci sono numerosi tipi di bordi sbilanciati e ciascuno prende il nome dal
+<p>Ci sono numerose formazioni sbilanciate e ciascuna prende il nome dal
 numero di pedine coinvolte, anche se la nomenclatura non è sempre rigorosa.
 Nel diagramma 6 si ha nel bordo nord un "cinque", nel bordo
 ovest un "quattro sbilanciato", nel bordo sud un "quattro più uno" (che è una
@@ -123,7 +125,8 @@ comporta effetti collaterali dannosi. Nel diagramma 7 è illustrato un caso del 
 
 <p>Il diagramma 8 riproduce una situazione di gioco in
 cui tutti i bordi sono occupati in modo incompleto. Spesso si verifica che se un giocatore
-completa una di queste formazioni, immediatamente dopo il suo avversario ne chiude una su un altro bordo.</p>
+completa una di queste formazioni, immediatamente dopo il suo avversario ne completa una
+    su un altro bordo.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -144,7 +147,7 @@ completa una di queste formazioni, immediatamente dopo il suo avversario ne chiu
     </div>
 </div>
 
-<p>Sono senza dubbio le strutture più forti in quanto costituiscono un enorme vantaggio in termini
+<p>Visto che solo un giocatore può giocarci, costituiscono un enorme vantaggio in termini
 di tempi di gioco. Difficilmente realizzabili, costituiscono spesso un elemento
 determinante ai fini del successo finale.</p>
 

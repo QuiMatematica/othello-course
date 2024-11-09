@@ -74,11 +74,12 @@ giocando in D1. Ma, a questo punto il nero può incunearsi in E1. Vedi il diagra
     </div>
 </div>
 
-<p>Ancora una volta è d'obbligo il confronto con la parità: se ci sono tre caselle libere chi gioca
+<p>Ancora una volta è d'obbligo il confronto con la parità: se ci sono tre caselle libere (un numero
+    dispari) chi gioca
 per primo gioca anche per ultimo.</p>
 
 <p>Si parla di <b>incunearsi</b> anche quanto l'avversario non si è sbilanciato su una casella C, ma ha lasciato
-    una casella vuota tra due sue pedine sul bordo. Nel diagramma 6 vedi una situazione di questo tipo:
+    una casella vuota tra due pedine sul bordo. Nel diagramma 6 vedi una situazione di questo tipo:
     il nero gioca in E1, il bianco non può rispondere sullo stesso bordo, e il nero guadagna un tempo
 di gioco.</p>
 

@@ -14,8 +14,8 @@
 
 <p>Se il nero gioca in C8, qualunque sia la risposta del bianco, poi può prendere l'angolo A8.
     La pedina nera in C8, infatti, è incastrata tra due pedine nere e non può essere girata.
-    Si dice che la pedina nera è <b>"incuneata"</b> (in inglese "wedged").
-    Vedi nel diagramma 2 un possibile continuazione della partita.</p>
+    Si dice che la pedina nera è <b>incuneata</b> (in inglese "wedged").
+    Vedi nel diagramma 2 una possibile continuazione della partita.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">

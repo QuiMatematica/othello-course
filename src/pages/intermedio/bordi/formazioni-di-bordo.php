@@ -35,7 +35,7 @@
     </div>
 </div>
 
-<p>Il <b>quattro</b> (digramma 3) è più debole rispetto al sei, infatti le caselle C adiacenti
+<p>Il <b>quattro</b> (diagramma 3) è più debole rispetto al sei, infatti le caselle C adiacenti
     possono essere
     sfruttate in attacchi per guadagnare l'intero lato o anche solo dei tempi di gioco.</p>
 

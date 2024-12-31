@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--####--",
+    "--OOO#-O",
+    "--O###O-",
+    "--O###O-",
+    "--O###O-",
+    "--O##O#-",
+    "--O###--",
+    "--O##O--"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: gioca la mossa in H7 e rispondi correttamente alla minaccia del nero.",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Corretto."
+    },
+    {
+      "move": "H4",
+      "comment": "Come devi rispondere per vanificare l'attacco del nero?"
+    },
+    {
+      "move": "H6",
+      "comment": "Esatto! H3 avrebbe consegnato l'angolo H1 al nero. Se giocavi H5 il nero poteva incunearsi in H3. Così invece hai stabilizzato la situazione."
+    }
+  ]
+}

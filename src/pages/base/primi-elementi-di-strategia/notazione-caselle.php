@@ -49,6 +49,12 @@
 		verticalmente sono indicate come "caselle C". Il contesto permetterà di chiarire
 		di quale particolare casella si sta parlando.</p>
 
+        <p>Sicuramente avrai notato che le caselle A, B e C non sono in sequenza (anche se sono simmetriche rispetto
+        agli assi della tavola da gioco). L'ordine che è stato scelto vuole essere un'indicazione (molto parziale)
+        della forza delle caselle: è preferibile occupare una casella A che una casella B, ed è preferibile occupare
+        una casella B che una casella C. Tuttavia, come vedremo nel seguito del corso,
+        questa è una strategia molto grossolana.</p>
+
 		<h2>Le zone</h2>
 
 		<p>Per indicare le zone della tavola, intese come gruppo di caselle più o meno

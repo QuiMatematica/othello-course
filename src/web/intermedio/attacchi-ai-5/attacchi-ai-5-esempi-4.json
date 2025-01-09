@@ -12,7 +12,7 @@
   "moves": [
     {
       "move": "H6",
-      "comment": "Il nero gioca nella casella B. Il bianco è costretto ad una scelta: o perdere l'intero lato est o l'intero lato sud."
+      "comment": "Il nero gioca nella casella A. Il bianco è costretto ad una scelta: o perdere l'intero lato est o l'intero lato sud."
     },
     {
       "move": "H8",

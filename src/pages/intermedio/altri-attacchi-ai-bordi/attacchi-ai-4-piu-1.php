@@ -1,12 +1,12 @@
 <h1>Gli attacchi ai quattro più uno</h1>
 
 <p>Il "quattro più uno" è una formazione sbilanciata in cui si ha, su un bordo,
-un quattro sbilanciato di un colore, una casella B vuota e la rimanente casella C occupata
+un quattro sbilanciato di un colore, una casella A vuota e la rimanente casella C occupata
 dall'altro colore. Anche queste formazioni possono essere attaccate con una tecnica simile
 a quella usata contro i
 <a href="../attacchi-ai-5/attacchi-ai-5.php">cinque</a>.
 Bisogna giocare in una casella X (o in una casella C) in modo da offrire un angolo.
-Se l'attaccato prendo l'angolo, l'attaccante si incunea nella casella B rimasta
+Se l'attaccato prendo l'angolo, l'attaccante si incunea nella casella A rimasta
 libera e conquista l'angolo opposto in una mossa successiva.</p>
 
 <p>Il quattro più uno è una formazione doppiamente sbilanciata, quindi l'attacco
@@ -40,7 +40,7 @@ una diversa parte della scacchiera, rischiando di chiudersi il gioco.</p>
 perfettamente. In particolare chi attacca un quattro più uno deve sempre stare attento a
 poter accedere alla casella centrale libera in cui incunearsi. Per esempio, nella
 situazione del diagramma 2 se il bianco attacca giocando in B7 gira anche la pedina
-C7, perdendo l'accesso alla casella B libera. Il nero può dunque prendere l'angolo,
+C7, perdendo l'accesso alla casella A libera. Il nero può dunque prendere l'angolo,
 sicuro che alla mossa successiva potrà giocare anche in C8.</p>
 
 <div class="card mx-auto board-card my-3">

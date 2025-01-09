@@ -188,10 +188,11 @@ quattro situazioni qui proposte.</p>
 <p>Hai visto come devi rispondere alle possibili mosse del nero sul bordo est. Ma se non ti fosse possibile
 rispondere in quei modi?</p>
 
-<p>Le prime due situazioni non creano mai problemi: se il nero gioca in una casella B, allora hai sempre la casella A
-adiacente a disposizione.</p>
+<p>Le prime due situazioni non creano mai problemi: se il nero gioca in una casella A, allora hai sempre la casella B
+adiacente a disposizione. (Per il significato di "casella A" e "casella B" vedi:
+    <a href="../../base/primi-elementi-di-strategia/notazione-caselle.php#caselle_speciali">Per indicare le caselle</a>)</p>
 
-<p>Ma se il nero gioca in una casella A, non è assicurato il fatto che il bianco possa rispondere nella casella B opportuna.
+<p>Ma se il nero gioca in una casella B, non è assicurato il fatto che il bianco possa rispondere nella casella A opportuna.
 Osserva cosa succede nel diagramma 12 in cui, rispetto al diagramma 7, è stata cambiata una sola pedina.</p>
 
 <div class="card mx-auto board-card my-3">

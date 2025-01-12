@@ -18,7 +18,7 @@
 	<h2>Attacco da casella C</h2>
 
 	<p>La situazione del diagramma 2 è la stessa che abbiamo visto nella pagina
-	<a href="attacchi-ai-5-non-funzionano.php">Gli attacchi ai cinque: quando non funzionano</a>.
+	<a href="cinque-non-attaccabili.php">Gli attacchi ai cinque: quando non funzionano</a>.
 	L'attacco da casella X non funziona, ma è possibile fare un attacco
 	simile da casella C che, in questo caso, funziona.</p>
 

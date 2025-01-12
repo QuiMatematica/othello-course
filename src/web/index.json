@@ -221,6 +221,36 @@
 							"title": "Controbordi e formazioni piene"
 						}
 					]
+				},
+				{
+					"href": "attacchi-ai-5/",
+					"title": "Attacchi ai cinque",
+					"pages": [
+						{
+							"href": "definizioni.php",
+							"title": "Definizioni per lo studio dei cinque"
+						},
+						{
+							"href": "cinque-non-attaccabili.php",
+							"title": "Cinque non attaccabili"
+						},
+						{
+							"href": "estrazione.php",
+							"title": "La tecnica dell'estrazione"
+						},
+						{
+							"href": "attacchi-ai-5-funzionano.php",
+							"title": "Cinque attaccabili"
+						},
+						{
+							"href": "attacchi-ai-5-riassunto.php",
+							"title": "Gli attacchi ai cinque: riassunto"
+						},
+						{
+							"href": "attacchi-ai-5-esempi.php",
+							"title": "Gli attacchi ai cinque: altri esempi"
+						}
+					]
 				}
 			]
 		}

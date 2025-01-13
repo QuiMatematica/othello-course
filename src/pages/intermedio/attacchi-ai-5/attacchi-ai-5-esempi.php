@@ -1,9 +1,10 @@
     <h1>Gli attacchi ai cinque: altri esempi</h1>
 
-	<h2>Doppio cinque</h2>
+	<h2>Doppio cinque pieno</h2>
 
 	<p>Nel diagramma 1, il bianco ha due cinque: uno sul lato sud e uno sul lato est. Sia la riga
-	7 che la colonna G sono occupati da pedine bianche. Questa situazione è negativa per
+	7 che la colonna G sono occupati da pedine bianche: entrambi i cinque sono pieni.
+        Questa situazione è negativa per
 	il bianco: il nero riuscirà in poche mosse a conquistare due angoli e ben 14 pedine stabili.</p>
 
 		<div class="card mx-auto board-card my-3">
@@ -17,8 +18,8 @@
 
 	<h2>Attacco da casella C</h2>
 
-	<p>La situazione del diagramma 2 è la stessa che abbiamo visto nella pagina
-	<a href="cinque-non-attaccabili.php">Gli attacchi ai cinque: quando non funzionano</a>.
+	<p>La situazione del diagramma 2 è la stessa che abbiamo visto nella pagina sui
+	<a href="cinque-non-attaccabili.php">cinque non attaccabili</a>.
 	L'attacco da casella X non funziona, ma è possibile fare un attacco
 	simile da casella C che, in questo caso, funziona.</p>
 

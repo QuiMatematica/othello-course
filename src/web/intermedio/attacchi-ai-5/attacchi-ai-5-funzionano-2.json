@@ -21,6 +21,14 @@
     {
       "move": "G8",
       "comment": "L'attacco del nero ha funzionato. Nota che il nero avrebbe potuto anche rimandare tale mossa, tanto il bianco non ha accesso a questa casella!"
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende tutto il bordo sud.<br>Nota che in una mossa successiva il nero può incunearsi anche in H7, ottenendo un tempo di gioco."
     }
   ]
 }

@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "B5",
-      "comment": "Bravo! Avevi bisogno di una pedina sulla diagonale che io non potessi girare subito. Questa era l'unica mossa possibile."
+      "comment": "Bravo! Avevi bisogno di una pedina sulla diagonale che il bianco non potesse girare alla mossa successiva. Questa era l'unica mossa possibile."
     },
     {
       "move": "A6",

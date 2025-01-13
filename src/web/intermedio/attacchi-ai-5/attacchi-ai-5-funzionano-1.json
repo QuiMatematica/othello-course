@@ -13,6 +13,22 @@
     {
       "move": "G7",
       "comment": "Il nero attacca giocando nella casella X. Non viene girata la F7 e il bianco non può giocare in G8! L'attacco ha funzionato!"
+    },
+    {
+      "move": "H8",
+      "comment": "Se il bianco prende l'angolo..."
+    },
+    {
+      "move": "G8",
+      "comment": "... il nero si incunea."
+    },
+    {
+      "move": "H7",
+      "comment": "In questa situazione in bianco può chiudere la regione a sud-est."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende tutto il bordo sud."
     }
   ]
 }

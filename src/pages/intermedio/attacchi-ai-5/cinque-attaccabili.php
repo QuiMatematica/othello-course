@@ -1,13 +1,17 @@
-    <h1>Gli attacchi ai cinque: quando funzionano</h1>
+    <h1>Cinque attaccabili</h1>
 
-    <p>Finora abbiamo prestato attenzione alla colonna G, ma anche la riga 7 è molto importante.
-    Finora nella riga 7 era presente una pedina nera. Proprio per la presenza di tale pedina,
-    quando il nero gioca in G7, viene girata la pedina F7 che permette al bianco di giocare in G8.</p>
+    <p>Finora abbiamo prestato attenzione al controbordo adiacente, la colonna G secondo la nostra posizione di studio.
+        Ma anche il controbordo del cinque, la riga 7, è molto importante.
+        Negli <a href="cinque-non-attaccabili.php">esempi visti finora</a> nella riga 7 era presente almeno una pedina
+        nera. Proprio per la presenza di tale pedina,
+    quando il nero giocava in G7, la pedina F7 diventava nera, e questo permetteva al bianco di giocare in G8.</p>
 
-    <p>Se invece la riga 7 fosse tutta bianca (e solo in questo caso) la pedina F7 rimarrebbe bianca
-    anche dopo l'attacco. E cosa succederebbe?</p>
+    <p>Se invece la riga 7 è tutta bianca, ovvero se il cinque è pieno, la pedina F7 rimane bianca
+    anche dopo l'attacco. E cosa succede?</p>
 
-	<h2>Riga 7 bianca; colonna G nera</h2>
+	<h2>Cinque pieno, controbordo adiacente dell'attaccante</h2>
+
+    <p>Studia la sequenza del diagramma 1.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -19,9 +23,9 @@
 		</div>
 
 	<p>Per parare l'attacco il bianco avrebbe dovuto giocare in G8, ma non può perché la pedina F7 è
-	rimasta bianca. L'attacco ha funzionato, anche se l'intera colonna G è di pedine nere!</p>
+	rimasta bianca. L'attacco ha funzionato, anche se l'intera colonna G era di pedine nere!</p>
 
-	<h2>Riga 7 bianca; colonna G bianca</h2>
+	<h2>Cinque pieno, controbordo adiacente dell'attaccato</h2>
 
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -36,10 +40,17 @@
 	ma, poiché la pedina F7 è rimasta bianca anche dopo l'attacco, il nero ha sempre a disposizione
 	l'accesso a G8.</p>
 
+        <div class="card border-primary mb-3">
+			<div class="card-header">Tattica</div>
+			<div class="card-body">
+				<p class="card-text">Se il cinque è pieno, è sempre attaccabile.</p>
+			</div>
+		</div>
+
 	<h2>Tocca a te</h2>
 
-	<p>Nel diagramma 3 giochi con il nero. Il bianco ha un cinque sul lato
-	est che è attaccabile. Tuttavia non hai la possibilità di muovere nella
+	<p>Nel diagramma 3 giochi con il nero. Il bianco ha un cinque pieno sul lato
+	est, che quindi è attaccabile. Tuttavia non hai la possibilità di muovere nella
 	casella X. Devi trovare il modo di poter attaccare e conquistare il lato
 	est in 7 mosse!</p>
 

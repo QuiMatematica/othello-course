@@ -6,8 +6,8 @@ se il cinque non è pieno ma il controbordo adiacente è occupato solo da pedine
 
 <p>Questo significa che se il controbordo adiacente ha pedine di entrambi i colori, allora è sempre attaccabile?</p>
 
-<p>La risposta è <b>no</b>. Come direbbero i matematici, il fatto che il controbordo adiacente è occupato da
-entrambi i colori è condizioni necessaria ma non sufficiente affinché il cinque sia attaccabile. Cioè
+<p>La risposta è <b>no</b>. Come direbbero i matematici, il fatto che il controbordo adiacente sia occupato da
+    entrambi i colori è <u>condizioni necessaria ma non sufficiente</u> affinché il cinque sia attaccabile. Cioè
 esistono situazioni in cui il controbordo adiacente è misto, ma il cinque non è comunque attaccabile.</p>
 
 <p>Osserva la posizione del diagramma 1.</p>
@@ -41,8 +41,8 @@ ovviamente) la pedina avversaria dalla posizione indesiderata.</p>
     <div class="card border-primary mb-3">
         <div class="card-header">Tattica</div>
         <div class="card-body">
-            <p class="card-text">Se il cinque non è pieno e il controbordo adiacente al cinque è misto,
-                se l'attaccato può estrarre le pedine avversarie dal controbordo adiacente,
+            <p class="card-text">Se il cinque non è pieno, il controbordo adiacente al cinque è misto,
+                e l'attaccato può estrarre le pedine avversarie dal controbordo adiacente,
                 il cinque non è attaccabile.</p>
             <p class="card-text">Se un tuo cinque è stato attaccato verifica se è possibile estrarre le
                 pedine avversarie dal controbordo adiacente.</p>

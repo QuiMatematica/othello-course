@@ -27,6 +27,8 @@
 
 	<h2>Cinque pieno, controbordo adiacente dell'attaccato</h2>
 
+    <p>Studia la sequenza del diagramma 2.</p>
+
         <div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="attacchi-ai-5-funzionano-2.json"></div>

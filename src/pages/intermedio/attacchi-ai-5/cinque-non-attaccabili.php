@@ -5,9 +5,9 @@
 
 	<h2>Le pedine del controbordo adiacente al cinque sono dell'attaccante</h2>
 
-	<p>Il diagramma 1 presenta una situazione molto simile a quella della pagina precedente,
+	<p>Il diagramma 1 presenta una situazione molto simile a quella dell'introduzione,
 	ma tutte le pedine della colonna G (controbordo adiacente) sono nere (colore dell'attaccante).
-        Cosa succede se il nero attacca?</p>
+        Cosa succede se il nero attacca? Studia la sequenza proposta nel diagramma.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
@@ -18,8 +18,8 @@
 			</div>
 		</div>
 
-    <p>Cosa è successo? Semplice: siccome tutte le pedine della colonna G erano nere, quando il bianco
-    ha giocato in G8 non ha girato la pedina G7. Quindi il nero non ha accesso all'angolo! L'attacco
+    <p>Cosa è successo? Semplice: siccome tutte le pedine della colonna G erano nere, il bianco
+    ha potuto giocato in G8 senza girare la pedina G7. Quindi il nero non ha accesso all'angolo! L'attacco
     è fallito.</p>
 
         <div class="card border-primary mb-3">
@@ -34,7 +34,7 @@
     <h2>Le pedine del controbordo adiacente al cinque sono dell'attaccato</h2>
 
     <p>Questa volta, nella situazione del diagramma 2, tutte le pedine della colonna G (controbordo adiacente) sono
-        bianche (colore dell'attaccato).</p>
+        bianche (colore dell'attaccato). Studia la sequenza proposta nel diagramma.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">

@@ -1,0 +1,75 @@
+{
+  "position": [
+    "--#OO#--",
+    "--#OO#-#",
+    "##OOOO##",
+    "#OO##OO#",
+    "#OO##OO#",
+    "##O#OO##",
+    "#-OOOO--",
+    "---OOO--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il bianco gioca in uno spazio dispari."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende l'angolo per salvare il bordo est. Ogni altra mossa sarebbe stata più disastrosa."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco chiude la regione. Ora il nero è costretto a giocare in una nuova regione. Gli rimane un'unica mossa non pericolosa."
+    },
+    {
+      "move": "C8",
+      "comment": "Questa mossa del nero ha aspetti positivi e altri negativi. Da una parte invita il bianco a prende un cinque attaccabile. Ora nella regione pari a nord-ovest solo il bianco può giocare. Però si forma una zona dispari a sud-ovest dove solo il bianco può giocare per primo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco non può accettare il cinque, e deve chiudere la regione a sud-est. Il finale non è facile e richiede tecniche che vedremo meglio nella sezione avanzata. Ma cercherò fin da subito di farti cogliere il senso delle mosse."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero è costretto a prendere l'angolo. Le altre due mosse gli avrebbero fatto perdere tutto il bordo sud."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco si incunea a sud."
+    },
+    {
+      "move": "H7",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "B7",
+      "comment": "L'obiettivo di questa mossa è di ottenere il controllo di tutta la colonna B. Questo permetterà al bianco di salvare un numero sufficiente di pedine."
+    },
+    {
+      "move": "A8",
+      "comment": "Risposta necessaria per non perdere il bordo ovest."
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco è alla disperata ricerca di pedine. Il nero passa."
+    },
+    {
+      "move": "A2",
+      "comment": "Altre pedine per il bianco."
+    },
+    {
+      "move": "A1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B2",
+      "comment": "Ultima possibilità per accumulare pedine."
+    },
+    {
+      "move": "B1",
+      "comment": "Poiché la colonna B è tutta bianca, con questa mossa il nero gira solo due pedine in diagonale. La partita è pari!"
+    }
+  ]
+}

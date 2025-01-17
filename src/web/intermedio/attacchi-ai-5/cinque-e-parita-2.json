@@ -1,0 +1,72 @@
+{
+  "position": [
+    "--#OO#--",
+    "--#OO#-#",
+    "##OOOO##",
+    "#OO##OO#",
+    "#OO##OO#",
+    "##O#OO##",
+    "#-OOOO--",
+    "---OOO--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il bianco attacca il cinque. Ora la regione a nord-ovest è dispari, quindi il nero ha vantaggio a giocarci, anche a costo di perdere il bordo ovest."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A2",
+      "comment": "Il bianco si incunea in A2, ed è costretto a farlo subito altrimenti il nero mette in salvo il bordo ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero chiude la regione a nord-ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco chiude la manovra aggressiva, ma ora si trova in netta difficoltà. Sulla scacchiera ci sono due regioni dispari, sud-ovest e nord-est. Ma il bianco non ha accesso alla regione a sud-ovest. Ha perso la parità. E con essa la partita."
+    },
+    {
+      "move": "G2",
+      "comment": "Il controllo del gioco passa al nero che gioca nella regione dispari."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo H1 e prenderà anche il bordo est, ma non basterà!"
+    },
+    {
+      "move": "G1",
+      "comment": "Ovviamente il nero chiude la regione a nord-est."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco prende il bordo ma poi non ha più mosse. completamente in balia dell'avversario che ha ben due regioni dispari in cui solo lui può giocare per primo."
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "C8",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B8",
+      "comment": "E così chiudiamo a sud-ovest. Il bianco passa."
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "G8",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero gioca l'ultima mossa, si prende il bordo sud e vince la partita."
+    }
+  ]
+}

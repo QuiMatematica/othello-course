@@ -1,6 +1,6 @@
     <h1>Definizioni per lo studio dei cinque</h1>
 
-    <p>Nella <a href="chapter.php">pagina precedente</a> abbiamo visto una caso generale di attacco a un cinque.
+    <p>Nella <a href="chapter.php">pagina precedente</a> abbiamo visto un caso generale di attacco a un cinque.
         Fai però attenzione: <b>non sempre l'attacco funziona</b>, ci sono cioè delle situazioni in cui
     il colore attaccato riesce a salvare l'intero lato e a conquistare anche l'angolo ceduto.
     Dobbiamo quindi imparare a distinguere quando il cinque è attaccabile e quando il cinque non è

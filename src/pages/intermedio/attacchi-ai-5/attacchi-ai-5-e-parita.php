@@ -72,10 +72,10 @@ può giocare nell'area dispari a nord-ovest. E giocandoci inizia l'attacco al ci
     </div>
 </div>
 
-<p>L'attacco del bianco, alla fine, non è servito a nulla se non per giocare in una zona dispari. E il nero ha perso
+<p>L'attacco del bianco, alla fine, non è servito a prendere il cinque, ma per giocare in una zona dispari. E il nero ha perso
 non tanto perché ha sbagliato l'attacco, ma perché era già in una posizione di svantaggio.</p>
 
-<p>Se dopo la mossa B2 del bianco il nero avesse giocato in A1... beh, guarda nel diagramma 6 cosa succede.</p>
+<p>Se dopo la mossa B2 del bianco il nero avesse giocato in A1... beh, guarda nel diagramma 6 cosa sarebbe successo.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -89,7 +89,7 @@ non tanto perché ha sbagliato l'attacco, ma perché era già in una posizione d
 <h2>Confronto</h2>
 
 <p>Nel primo esempio il bianco deve evitare di attaccare perché dovrebbe giocare in una regione pari.
-Nel secondo esempio, invece, il bianco può attaccare, forte anche del fatto che sta giocando in una regione dispari.</p>
+Nel secondo esempio, invece, il bianco può attaccare, perché giocherebbe in una regione dispari.</p>
 
 <p>Nel primo esempio, se il bianco attacca, per il nero è vantaggioso prendere l'angolo anche se perde tutto il bordo ovest,
 tanto gioca la parità in quella regione e mette in salvo il bordo nord. Nel secondo esempio, invece, se il bianco
@@ -97,15 +97,15 @@ tanto gioca la parità in quella regione e mette in salvo il bordo nord. Nel sec
 deve rispondere prendendo l'angolo, altrimenti si trova in ritardo di una mossa rispetto all'attacco a sud.</p>
 
 <p>Ovviamente, proprio perché dobbiamo tenere conto di tutti gli elementi caratterizzanti della posizione, queste
-    osservazioni non sono sempre vere. Talvolta conviene giocare "contro la parità" perché ci saro altri vantaggi
-    da sfruttare. Però, in generale, associare un attacco corretto con la parità è vantaggioso.</p>
+    osservazioni non sono sempre vere. Se ci sono altri vantaggi da sfruttare, può essere conveniente giocare
+    "contro la parità". Però, in generale, associare un attacco corretto con la parità è vantaggioso.</p>
 
 <div class="card border-primary mb-3">
     <div class="card-header">Strategia</div>
     <div class="card-body">
         <p class="card-text">&Egrave; vantaggioso attaccare un cinque se devi giocare in una zona dispari;
             è svantaggioso attaccare un cinque se devi giocare in una zona pari.</p>
-        <p class="card-text">Se sei stato attaccato: è vantaggio prendere l'angolo se è in una zona dispari;
+        <p class="card-text">Se sei stato attaccato: è vantaggioso prendere l'angolo se è in una zona dispari;
         è svantaggioso prendere l'angolo se è in una zona pari.</p>
     </div>
 </div>

@@ -125,7 +125,7 @@ nera in A8, il bianco può rispondere in B7. L'effetto è triplice.</p>
 </div>
 
 <p>In questo terzo esempio ho lasciato l'accesso al bianco in B2, e ho cambiato il colore delle pedine sul bordo ovest,
-assegnandole al colore attaccante. In questo modo, dopo aver preso A1, il bianco non è in grado di allungare il
+assegnandole al colore attaccante. In questo modo, dopo aver preso A1, il nero non è in grado di allungare il
 controllo su tutto il bordo ovest, e perde così un ulteriore tempo di gioco. Guarda nel diagramma 7 cosa succede.</p>
 
 <div class="card mx-auto board-card my-3">

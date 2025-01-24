@@ -247,12 +247,12 @@
 							"title": "Gli attacchi ai cinque: riassunto"
 						},
 						{
-							"href": "attacchi-ai-5-e-parita.php",
-							"title": "Attacchi ai cinque e parità"
-						},
-						{
 							"href": "attacchi-ai-5-esempi.php",
 							"title": "Gli attacchi ai cinque: altri esempi"
+						},
+						{
+							"href": "piu-ampio.php",
+							"title": "Una visione più ampia per gli attacchi ai cinque"
 						}
 					]
 				}

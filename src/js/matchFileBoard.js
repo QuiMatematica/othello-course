@@ -67,8 +67,16 @@ export default class MatchFileBoard {
             }
             if (json.add["squares"] != null) {
                 json.add.squares.forEach((entry) => {
-                    const square = Square.fromString(entry.square);
-                    this.board.addLetter(square.x, square.y, entry.value);
+                    if (entry.square != null) {
+                        const square = Square.fromString(entry.square);
+                        this.board.addLetter(square.x, square.y, entry.value);
+                    }
+                    else {
+                        entry.squares.forEach((sq) => {
+                            const square = Square.fromString(sq);
+                            this.board.addLetter(square.x, square.y, entry.value);
+                        })
+                    }
                 });
             }
         }

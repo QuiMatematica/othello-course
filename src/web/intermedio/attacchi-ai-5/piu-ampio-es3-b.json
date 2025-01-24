@@ -1,0 +1,70 @@
+{
+  "position": [
+    "--------",
+    "#---#--O",
+    "##O###OO",
+    "#OO#OO#O",
+    "##O##O#O",
+    "###OOOOO",
+    "#-O##O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "F2"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco preserva le pedine presenti nella colonna B e nella diagonale C2-F5."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1",
+      "comment": "+4 per il nero."
+    }
+  ]
+}

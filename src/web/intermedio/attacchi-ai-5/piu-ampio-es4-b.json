@@ -1,0 +1,78 @@
+{
+  "position": [
+    "--------",
+    "----#--O",
+    "OOO###OO",
+    "OOO#OO#O",
+    "O#O##O#O",
+    "OO#OOOOO",
+    "--O##O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca nella regione dispari, tanto i bordi sud e ovest sono già compromessi."
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "A7",
+      "comment": "Chiude la regione dispari."
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "F2"
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "E1",
+      "comment": "Nota come da ora in poi il bianco giocherà sempre nella regione dispari."
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "G1",
+      "comment": "+8 per il nero."
+    }
+  ]
+}

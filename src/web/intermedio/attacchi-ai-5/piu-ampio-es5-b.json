@@ -1,0 +1,55 @@
+{
+  "position": [
+    "-#####--",
+    "O-#OO#--",
+    "OOO###OO",
+    "OOO#OO#O",
+    "O#OO#O#O",
+    "OO#OOOOO",
+    "O-O##O--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco chiude la regione a sud-est, ottenendo anche tutte le pedine della riga 7."
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco chiude la regione sud-ovest."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B2",
+      "comment": "E il bianco chiude anche la regione nord-ovest."
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero riesce a vincere solo grazie alla pedine della riga 2 che ha appena voltato."
+    },
+    {
+      "move": "H1",
+      "comment": "+2 per il nero."
+    }
+  ]
+}

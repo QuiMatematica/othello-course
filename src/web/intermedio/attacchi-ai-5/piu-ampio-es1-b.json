@@ -1,7 +1,7 @@
 {
   "position": [
-    "--------",
-    "O---#--O",
+    "-#####--",
+    "O-#OO#-O",
     "OOO###OO",
     "OOO#OO#O",
     "O#O##O#O",
@@ -21,52 +21,29 @@
       "move": "G8"
     },
     {
-      "move": "C2",
-      "comment": "Il bianco non ha più mosse a sud. E' costretto a giocare a nord e lo farà cercando di preservare più a lungo possibile la mobilità."
+      "move": "G1",
+      "comment": "Il bianco non ha più mosse a sud. E' costretto a giocare a nord e lo farà cercando di sfruttare la parità nelle regioni dispari."
     },
     {
-      "move": "A8"
-    },
-    {
-      "move": "D2"
-    },
-    {
-      "move": "A1"
-    },
-    {
-      "move": "E1"
-    },
-    {
-      "move": "B7"
-    },
-    {
-      "move": "F2"
-    },
-    {
-      "move": "B2",
-      "comment": "Il bianco passa: è completamente in balia dell'avversario."
-    },
-    {
-      "move": "B1"
-    },
-    {
-      "move": "C1"
-    },
-    {
-      "move": "D1"
-    },
-    {
-      "move": "F1"
+      "move": "H1",
+      "comment": "Per preservare il bordo nord."
     },
     {
       "move": "G2"
     },
     {
-      "move": "G1"
+      "move": "A8"
     },
     {
-      "move": "H1",
-      "comment": "+32 per il nero."
+      "move": "B2",
+      "comment": "Ultima mossa per il bianco."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B7",
+      "comment": "+16 per il nero."
     }
   ]
 }

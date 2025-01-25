@@ -1,7 +1,7 @@
 {
   "position": [
-    "--------",
-    "O---#--O",
+    "-#####--",
+    "O-#OO#-O",
     "OOO###OO",
     "OOO#OO#O",
     "O#O##O#O",
@@ -20,52 +20,27 @@
       "move": "G8"
     },
     {
-      "move": "C2"
+      "move": "G1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G2"
     },
     {
       "move": "A8"
     },
     {
       "move": "B7",
-      "comment": "Ecco la mossa di differenza rispetto all'esempio precedente."
+      "comment": "Il bianco ha mantenuto la parità nella regione a sud-ovest e la parità globale."
     },
     {
       "move": "A1"
     },
     {
-      "move": "D2"
-    },
-    {
-      "move": "B1"
-    },
-    {
-      "move": "B2"
-    },
-    {
-      "move": "F2"
-    },
-    {
-      "move": "G2",
-      "comment": "Mossa strana, ma è la migliore."
-    },
-    {
-      "move": "C1"
-    },
-    {
-      "move": "D1"
-    },
-    {
-      "move": "E1"
-    },
-    {
-      "move": "F1"
-    },
-    {
-      "move": "H1"
-    },
-    {
-      "move": "G1",
-      "comment": "+16 per il nero."
+      "move": "B2",
+      "comment": "+4 per il bianco. &Egrave; bastato cambiare una pedina per ribaltare il risultato."
     }
   ]
 }

@@ -1,0 +1,46 @@
+{
+  "position": [
+    "-#####--",
+    "O-#OO#-#",
+    "OOO###O#",
+    "OOO#OOO#",
+    "O#OO#OO#",
+    "OO#OOO##",
+    "O-O##O-#",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende il bordo e la parità a nord-est."
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "G1",
+      "comment": "+2 per il bianco."
+    }
+  ]
+}

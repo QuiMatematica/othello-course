@@ -1,7 +1,7 @@
 {
   "position": [
-    "--------",
-    "#---#--O",
+    "-#####--",
+    "#-#OO#-O",
     "##O###OO",
     "#OO#OO#O",
     "##O##O#O",
@@ -20,7 +20,13 @@
       "move": "G8"
     },
     {
-      "move": "C2"
+      "move": "G1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G2"
     },
     {
       "move": "A8"
@@ -29,42 +35,12 @@
       "move": "B7"
     },
     {
-      "move": "C1"
+      "move": "B2",
+      "comment": "Il nero è costretto a giocare in B2."
     },
     {
-      "move": "F2"
-    },
-    {
-      "move": "D2"
-    },
-    {
-      "move": "F1"
-    },
-    {
-      "move": "E1"
-    },
-    {
-      "move": "D1"
-    },
-    {
-      "move": "G1"
-    },
-    {
-      "move": "B1",
-      "comment": "Il bianco preserva le pedine presenti nella colonna B e nella diagonale C2-F5."
-    },
-    {
-      "move": "A1"
-    },
-    {
-      "move": "B2"
-    },
-    {
-      "move": "G2"
-    },
-    {
-      "move": "H1",
-      "comment": "+4 per il nero."
+      "move": "A1",
+      "comment": "Il bianco si riprende tutta la diagonale. +6 per il bianco."
     }
   ]
 }

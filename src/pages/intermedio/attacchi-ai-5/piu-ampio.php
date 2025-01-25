@@ -65,9 +65,8 @@ dalla situazione in termini di punteggio finale della partita nel caso in cui l'
     <li>Il bordo est è già del bianco, quindi prendendo H8 il bianco ottiene solo di stabilizzare quel bordo. Ma
     non avrà accesso all'angolo H1.</li>
     <li>Il bordo ovest è del bianco, quindi prendendo A8 il nero può poi giocare in A1 e ottenere anche tutto il bordo.</li>
-    <li>Inoltre dopo aver preso A8, B7 e A1, il nero può giocare anche in B2, ottenendo tutta la colonna B.</li>
     <li>Nelle regioni interessate dall'attacco il bianco fa solo una mossa: H8.
-        Mentre il nero gioca in G7, G8, A8, B7, A1 e B2. A conti fatti il nero guadagna ben 5 tempi di gioco.</li>
+        Mentre il nero gioca in G7, G8, A8, B7. Il nero guadagna ben 3 tempi di gioco.</li>
 </ul>
 <p>Osserva nel diagramma 3 l'evoluzione della posizione.</p>
 
@@ -80,7 +79,7 @@ dalla situazione in termini di punteggio finale della partita nel caso in cui l'
     </div>
 </div>
 
-<h2>Togliamo qualche vantaggio</h2>
+<h2>Togliamo qualche vantaggio a ovest</h2>
 
 <p>Osserva il diagramma 4.</p>
 
@@ -94,11 +93,10 @@ dalla situazione in termini di punteggio finale della partita nel caso in cui l'
 </div>
 
 <p>Rispetto alla posizione precedente è stato solo cambiato il colore della pedina C6. Così facendo, dopo la mossa
-nera in A8, il bianco può rispondere in B7. L'effetto è triplice.</p>
+nera in A8, il bianco può rispondere in B7. L'effetto è duplice:</p>
 <ul>
-    <li>Il bianco mantiene la parità nella regione a sud-ovest.</li>
-    <li>Il bianco perde un tempo di gioco in meno rispetto alla posizione precedente.</li>
-    <li>Il bianco mantiene delle pedine nella colonna 2, quindi il nero sarà svantaggiato a giocare in B2.</li>
+    <li>il bianco mantiene la parità nella regione a sud-ovest;</li>
+    <li>il bianco perde due tempi di gioco in meno rispetto alla posizione precedente.</li>
 </ul>
 <p>Studia nel diagramma 5 l'evoluzione della posizione.</p>
 
@@ -126,7 +124,8 @@ nera in A8, il bianco può rispondere in B7. L'effetto è triplice.</p>
 
 <p>In questo terzo esempio ho lasciato l'accesso al bianco in B2, e ho cambiato il colore delle pedine sul bordo ovest,
 assegnandole al colore attaccante. In questo modo, dopo aver preso A1, il nero non è in grado di allungare il
-controllo su tutto il bordo ovest, e perde così un ulteriore tempo di gioco. Guarda nel diagramma 7 cosa succede.</p>
+controllo su tutto il bordo ovest, e perde così un ulteriore tempo di gioco. Inoltre quando sarà costretto a giocare
+    a nord-ovest dovrà farlo in B2, consegnando tutta la diagonale A1-H8 al bianco. Guarda nel diagramma 7 cosa succede.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -177,4 +176,68 @@ La regione a sud-est, infatti, è dispari e solo il nero può giocarci. Dovrebbe
 così e utilizzarla per conquistare la parità globale alla fine dela partita. La mossa
 giusta del nero sarebbe B7, proprio per giocare la parità anche in quella piccola regione.</p>
 
+<h2>Togliamo qualche vantaggio a est</h2>
+
+<p>Proviamo adesso a modificare la situazione a est, dapprima cambiando la parità nella zona d'attacco e poi
+cambiando le pedine sul bordo.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="piu-ampio-es5-a.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 10.
+    </div>
+</div>
+
+<p>Ora la regione a sud-est è pari. Quindi dopo l'attacco del nero in G7, la presa dell'angolo in H8 e l'incuneamento
+del nero in G8, sarà il bianco a chiudere la regione muovendo in H8. Il nero ha perso tutti i tempi di gioco
+che aveva negli esempi precedenti e riuscirà a vincere di strettissima misura. Osserva l'evoluzione
+nel diagramma 11.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="piu-ampio-es5-b.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 11: evoluzione del diagramma 10.
+    </div>
+</div>
+
 <hr>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="piu-ampio-es6-a.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 12.
+    </div>
+</div>
+
+<p>Ho ridato la parità al nero nella regione sud-est, ma ora il bordo est è nero. Quando il nero
+accetta l'attacco prendendo l'angolo H8, ottiene l'accesso in H1 e tutto il bordo est.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="piu-ampio-es6-b.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 13: evoluzione del diagramma 12.
+    </div>
+</div>
+
+<h2>Conclusioni</h2>
+
+<p>Questa lunga carrellata di esempi (e per di più non esaustiva) dovrebbe averti convinto che non
+basta attaccare un cinque per vincere una partita. Certo è una manovra tatticamente molto interessante
+e spesso aiuta a concretizzare una posizione di vantaggio o a salvare una situazione critica.</p>
+
+<p>Ma l'attacco va valutato nel contesto più ampio di... tutta la tavola! Abbiamo lavorato solo
+su due regioni d'angolo e tre bordi, ma tutti gli angoli interagiscono e anche il quarto bordo
+conta.</p>
+
+<p>A questo punto è difficile trarre delle regole strategiche o tattiche per riconoscere quando
+attaccare o non attaccare. La situazione va analizzata, di volta in volta, nei suoi elementi caratteristici.</p>
+
+<p>E in questo sta la bravura di un giocare: saper analizzare la situazione nel suo complesso.</p>

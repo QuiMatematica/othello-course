@@ -28,7 +28,7 @@
       "comment": "Il nero gioca nella regione dispari a nord-ovest. Sacrifica il bordo nord, ne otterrà un vantaggio. Tieni d'occhio la colonna A e la diagonale B7-G2."
     },
     {
-      "move": "B1"
+      "move": "A1"
     },
     {
       "move": "A2",
@@ -38,7 +38,7 @@
       "move": "G1"
     },
     {
-      "move": "G7",
+      "move": "G2",
       "comment": "Il nero prende tre pedine sulla riga 2 e costringe il bianco a prendere tutta la diagonale."
     },
     {

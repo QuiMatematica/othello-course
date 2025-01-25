@@ -40,9 +40,10 @@ che attaccarlo, e attaccarlo subito, sia la scelta migliore. Devi vagliare la tu
 e di quale sia l'effetto in termini di vantaggio.</p>
 
 <p>Anche in questa pagina tutti gli esempi vedono un cinque sul bordo sud da B8 a F8. L'attaccante quindi è il nero
-che giocherà in G7. La regione a nord è libera ma un muro bianco sulla riga 3 impedisce al bianco di muoverci.
-Questi, quindi, è costretto a giocare a sud ed è costretto ad attaccare il 5. Misureremo il vantaggio derivante
-dalla situazione in termini di punteggio finale della partita nel caso in cui l'attaccato prenda l'angolo offerto.</p>
+che giocherà in G7. Sul bordo nord è presente un cinque nero.
+    Anche se non sempre saranno le mosse migliore, vedremo il nero attaccare il cinque in G7 e il bianco accettare
+    l'angolo H8 offerto. Misureremo il vantaggio derivante
+dalla situazione in termini di punteggio finale della partita.</p>
 
 <h2>Massimo vantaggio per l'attaccante</h2>
 
@@ -60,13 +61,13 @@ dalla situazione in termini di punteggio finale della partita nel caso in cui l'
 <p>In questa posizione non solo il nero può attaccare il cinque bianco, ma ha anche altri vantaggi.</p>
 <ul>
     <li>La regione di attacco (sud-est) è dispari, quindi sarà il nero a chiuderla giocandovi l'ultima mossa.</li>
-    <li>La regione opposta (sud-ovest) è pari, ma se il nero gioca prima in A8, poi il bianco non potrà giocare in B7.
+    <li>La regione opposta (sud-ovest) è pari. Ma se il nero gioca in A8, poi il bianco non potrà giocare in B7.
     Il nero può giocare entrambe le mosse.</li>
     <li>Il bordo est è già del bianco, quindi prendendo H8 il bianco ottiene solo di stabilizzare quel bordo. Ma
     non avrà accesso all'angolo H1.</li>
     <li>Il bordo ovest è del bianco, quindi prendendo A8 il nero può poi giocare in A1 e ottenere anche tutto il bordo.</li>
     <li>Nelle regioni interessate dall'attacco il bianco fa solo una mossa: H8.
-        Mentre il nero gioca in G7, G8, A8, B7. Il nero guadagna ben 3 tempi di gioco.</li>
+        Mentre il nero gioca in G7, G8, A8 e B7. Il nero guadagna 3 tempi di gioco.</li>
 </ul>
 <p>Osserva nel diagramma 3 l'evoluzione della posizione.</p>
 
@@ -163,19 +164,6 @@ ma almeno non perde altri tempi di gioco. Sequenza nel diagramma 9.</p>
     </div>
 </div>
 
-<p>Ripeto che stiamo forzando il nero ad attaccare il cinque e il bianco a prendere l'angolo.
-    Ma l'attaccante non è costretto a prendere l'angolo. E l'attaccante non è costretto
-    ad attaccare.</p>
-
-<p>Dopo la G2 di attacco del nero, al bianco non conviene prendere l'angolo,
-    ma piuttosto dovrebbe giocare nello
-spazio nord per tentare di bloccare il gioco all'avversario.</p>
-
-<p>E tornando alla posizione di partenza, la mossa migliore del nero non è l'attacco in G7.
-La regione a sud-est, infatti, è dispari e solo il nero può giocarci. Dovrebbe quindi tenerla
-così e utilizzarla per conquistare la parità globale alla fine dela partita. La mossa
-giusta del nero sarebbe B7, proprio per giocare la parità anche in quella piccola regione.</p>
-
 <h2>Togliamo qualche vantaggio a est</h2>
 
 <p>Proviamo adesso a modificare la situazione a est, dapprima cambiando la parità nella zona d'attacco e poi
@@ -191,7 +179,7 @@ cambiando le pedine sul bordo.</p>
 </div>
 
 <p>Ora la regione a sud-est è pari. Quindi dopo l'attacco del nero in G7, la presa dell'angolo in H8 e l'incuneamento
-del nero in G8, sarà il bianco a chiudere la regione muovendo in H8. Il nero ha perso tutti i tempi di gioco
+del nero in G8, sarà il bianco a chiudere la regione muovendo in H7. Il nero ha perso tutti i tempi di gioco
 che aveva negli esempi precedenti e riuscirà a vincere di strettissima misura. Osserva l'evoluzione
 nel diagramma 11.</p>
 
@@ -229,7 +217,7 @@ accetta l'attacco prendendo l'angolo H8, ottiene l'accesso in H1 e tutto il bord
 
 <h2>Conclusioni</h2>
 
-<p>Questa lunga carrellata di esempi (e per di più non esaustiva) dovrebbe averti convinto che non
+<p>Questa lunga (ma non esaustiva) carrellata di esempi dovrebbe averti convinto che non
 basta attaccare un cinque per vincere una partita. Certo è una manovra tatticamente molto interessante
 e spesso aiuta a concretizzare una posizione di vantaggio o a salvare una situazione critica.</p>
 
@@ -240,4 +228,4 @@ conta.</p>
 <p>A questo punto è difficile trarre delle regole strategiche o tattiche per riconoscere quando
 attaccare o non attaccare. La situazione va analizzata, di volta in volta, nei suoi elementi caratteristici.</p>
 
-<p>E in questo sta la bravura di un giocare: saper analizzare la situazione nel suo complesso.</p>
+<p>E in questo sta la bravura di un giocare: avere una visione complessiva del gioco.</p>

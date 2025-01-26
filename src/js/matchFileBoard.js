@@ -79,6 +79,13 @@ export default class MatchFileBoard {
                     }
                 });
             }
+            if (json.add['rects'] != null) {
+                json.add.rects.forEach((entry) => {
+                    const ul = Square.fromString(entry.ul);
+                    const dr = Square.fromString(entry.dr);
+                    this.board.addRect(ul.x, ul.y, dr.x, dr.y, entry.color);
+                })
+            }
         }
     }
 

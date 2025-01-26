@@ -12,22 +12,26 @@
   "controls": {
   },
   "add": {
-    "squares": [
+    "rects": [
       {
-        "squares": ["G7", "G8", "H7", "H8"],
-        "value": "T"
+        "ul": "G7",
+        "dr": "H8",
+        "color": "red"
       },
       {
-        "squares": ["H2", "H3", "H4", "H5", "H6"],
-        "value": "U"
+        "ul": "H2",
+        "dr": "H7",
+        "color": "yellow"
       },
       {
-        "squares": ["B7", "A7", "A8"],
-        "value": "V"
+        "ul": "A7",
+        "dr": "B8",
+        "color": "blue"
       },
       {
-        "squares": ["A2", "A3", "A4", "A5", "A6"],
-        "value": "Z"
+        "ul": "A2",
+        "dr": "A7",
+        "color": "purple"
       }
     ]
   }

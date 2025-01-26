@@ -12,16 +12,16 @@ che attaccarlo, e attaccarlo subito, sia la scelta migliore. Devi vagliare la tu
     <li>Quanto è vantaggioso per il tuo avversario, l'attaccato, prendere l'angolo che stai cedendo?
     Più in dettaglio:
         <ul>
-            <li>Chi ha la parità nella regione di attacco (caselle indicate con la lettera T nel diagramma 1)?</li>
-            <li>Qual è l'effetto della presa dell'angolo sul bordo adiacente (lettera U)?</li>
+            <li>Chi ha la parità nella regione di attacco (regione rossa nel diagramma 1)?</li>
+            <li>Qual è l'effetto della presa dell'angolo sul bordo adiacente (regione gialla)?</li>
             <li>Quanti tempi di gioco guadagna l'avversario?</li>
         </ul>
     </li>
     <li>Quanto è vantaggioso per te, l'attaccante, prendere il cinque e l'angolo?
         Più in dettaglio:
         <ul>
-            <li>Chi ha la parità nella regione opposta all'attacco (lettera V)?</li>
-            <li>Qual è l'effetto della presa dell'angolo sul bordo adiacente (lettera Z)?</li>
+            <li>Chi ha la parità nella regione opposta all'attacco (regione blue)?</li>
+            <li>Qual è l'effetto della presa dell'angolo sul bordo adiacente (regione viola)?</li>
             <li>Quanti tempi di gioco guadagni?</li>
         </ul>
     </li>

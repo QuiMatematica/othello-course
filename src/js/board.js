@@ -248,4 +248,33 @@ export default class Board {
         square.getElementsByTagName("text").item(0).remove();
     }
 
+    addRect(xa, ya, xb, yb, color) {
+        const delta_x = (xb - xa + 1);
+        const delta_y = (yb - ya + 1);
+        const divNode = document.createElement('div');
+        divNode.style.position = 'absolute';
+        divNode.style.display = 'block';
+        divNode.style.left = 'calc(var(--square-size)* ' + (xa + 1) + ')';
+        divNode.style.top = 'calc(var(--square-size)* ' + (ya + 1) + ')';
+        divNode.style.width = 'calc(var(--square-size)* ' + delta_x + ')';
+        divNode.style.height = 'calc(var(--square-size)* ' + delta_y + ')';
+
+        const svg = document.createElementNS(xmlns, 'svg');
+        svg.setAttribute('viewBox', '0 0 ' + (100 * delta_x) + ' ' + (100 * delta_y));
+
+        const rect = document.createElementNS(xmlns, 'rect');
+        rect.setAttribute('width', String(100 * delta_x - 20));
+        rect.setAttribute('height', String(100 * delta_y - 20));
+        rect.setAttribute('x', '10');
+        rect.setAttribute('y', '10');
+        rect.setAttribute('rx', '45');
+        rect.setAttribute('ry', '45');
+        rect.setAttribute('fill', color);
+        rect.setAttribute('opacity', '60%');
+
+        svg.appendChild(rect);
+        divNode.appendChild(svg);
+        this.gameBoard.appendChild(divNode);
+    }
+
 }

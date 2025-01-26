@@ -20,7 +20,7 @@ che attaccarlo, e attaccarlo subito, sia la scelta migliore. Devi vagliare la tu
     <li>Quanto è vantaggioso per te, l'attaccante, prendere il cinque e l'angolo?
         Più in dettaglio:
         <ul>
-            <li>Chi ha la parità nella regione opposta all'attacco (regione blue)?</li>
+            <li>Chi ha la parità nella regione opposta all'attacco (regione blu)?</li>
             <li>Qual è l'effetto della presa dell'angolo sul bordo adiacente (regione viola)?</li>
             <li>Quanti tempi di gioco guadagni?</li>
         </ul>
@@ -124,7 +124,7 @@ nera in A8, il bianco può rispondere in B7. L'effetto è duplice:</p>
 </div>
 
 <p>In questo terzo esempio ho lasciato l'accesso al bianco in B2, e ho cambiato il colore delle pedine sul bordo ovest,
-assegnandole al colore attaccante. In questo modo, dopo aver preso A1, il nero non è in grado di allungare il
+assegnandole al colore attaccante. In questo modo, dopo aver preso A8, il nero non è in grado di allungare il
 controllo su tutto il bordo ovest, e perde così un ulteriore tempo di gioco. Inoltre quando sarà costretto a giocare
     a nord-ovest dovrà farlo in B2, consegnando tutta la diagonale A1-H8 al bianco. Guarda nel diagramma 7 cosa succede.</p>
 

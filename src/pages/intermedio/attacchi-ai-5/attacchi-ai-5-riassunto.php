@@ -1,9 +1,8 @@
     <h1>Gli attacchi ai cinque: riassunto</h1>
 
     <p>Ti ricordo che stiamo parlando di cinque formati da pedine bianche, disposti sul lato sud
-    tra le caselle B8 ed F8; inoltre le caselle F7 e G6 sono occupate da una pedina.
-    L'analisi si basa sul colore del controbordo (riga 7) e del controbordo adiacente (colonna G).
-        Vedi il diagramma 1.</p>
+    tra le caselle B8 ed F8: vedi il diagramma 1. Inoltre le caselle F7 e G6 sono occupate da una pedina.
+    L'analisi si basa sul colore del controbordo (riga 7 - in rosso) e del controbordo adiacente (colonna G - in giallo).</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">

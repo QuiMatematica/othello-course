@@ -12,9 +12,14 @@
   "add": {
     "borders": [
       {
-        "ul": "B8",
-        "dr": "F8",
-        "color": "yellow"
+        "ul": "C7",
+        "dr": "F7",
+        "color": "red"
+      },
+      {
+        "ul": "G3",
+        "dr": "G6",
+        "color": "blue"
       }
     ]
   }

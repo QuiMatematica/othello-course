@@ -27,10 +27,19 @@
         <div class="card border-primary mb-3">
 			<div class="card-header">Definizioni</div>
 			<div class="card-body">
-				<p class="card-text">Le pedine C7, D7, E7 e F7 formano il <b>controbordo</b> del cinque.</p>
+				<p class="card-text">Le pedine C7, D7, E7 e F7 formano il <b>controbordo</b> del cinque (contorno rosso nel diagramma 2).</p>
 				<p class="card-text">Se il controbordo del cinque è occupato da caselle bianche (colore attaccato) si dice
                     che il cinque è <b>pieno</b>.</p>
-				<p class="card-text">Le pedine G6, G5, G4 e G3 formano il <b>controbordo adiacente</b> al cinque.</p>
+				<p class="card-text">Le pedine G6, G5, G4 e G3 formano il <b>controbordo adiacente</b> al cinque (contorno blu nel diagramma 2).</p>
+			</div>
+		</div>
+
+        <div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="attacchi-ai-5-definizioni.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+    			Diagramma 2: controbordo in rosso e controbordo adiacente in blu.
 			</div>
 		</div>
 
@@ -40,7 +49,7 @@
         per individuare facilmente quali cinque sono attaccabili e quali no.</p>
 
     <p>Solo alla <a href="attacchi-ai-5-esempi.php">conclusione del capitolo</a>, invece,
-        vedremo alcune situazioni in cui la casella F7 o la casella G6
+        vedremo una situazione in cui la casella F7 e la casella G6
     non saranno occupate:
     saranno posizioni su cui non sarà possibile estrapolare delle regole generali e andranno analizzate di
     volta in volta.</p>

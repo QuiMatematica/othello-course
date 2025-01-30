@@ -86,6 +86,13 @@ export default class MatchFileBoard {
                     this.board.addRect(ul.x, ul.y, dr.x, dr.y, entry.color);
                 })
             }
+            if (json.add['borders'] != null) {
+                json.add.borders.forEach((entry) => {
+                    const ul = Square.fromString(entry.ul);
+                    const dr = Square.fromString(entry.dr);
+                    this.board.addBorder(ul.x, ul.y, dr.x, dr.y, entry.color);
+                })
+            }
         }
     }
 

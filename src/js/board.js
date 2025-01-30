@@ -251,11 +251,28 @@ export default class Board {
     addRect(xa, ya, xb, yb, color) {
         const delta_x = (xb - xa + 1);
         const delta_y = (yb - ya + 1);
+        const left = xa + 1;
+        const top = ya + 1;
+
+        this.addSvgRect(left, top, delta_x, delta_y, color, true);
+    }
+
+    addBorder(xa, ya, xb, yb, color) {
+        const padding = .15
+        const delta_x = xb - xa + 1 + padding * 2;
+        const delta_y = yb - ya + 1 + padding * 2;
+        const left = xa + 1 - padding;
+        const top = ya + 1 - padding;
+
+        this.addSvgRect(left, top, delta_x, delta_y, color, false);
+    }
+
+    addSvgRect(left, top, delta_x, delta_y, color, to_fill) {
         const divNode = document.createElement('div');
         divNode.style.position = 'absolute';
         divNode.style.display = 'block';
-        divNode.style.left = 'calc(var(--square-size)* ' + (xa + 1) + ')';
-        divNode.style.top = 'calc(var(--square-size)* ' + (ya + 1) + ')';
+        divNode.style.left = 'calc(var(--square-size)* ' + left + ')';
+        divNode.style.top = 'calc(var(--square-size)* ' + top + ')';
         divNode.style.width = 'calc(var(--square-size)* ' + delta_x + ')';
         divNode.style.height = 'calc(var(--square-size)* ' + delta_y + ')';
 
@@ -269,8 +286,15 @@ export default class Board {
         rect.setAttribute('y', '10');
         rect.setAttribute('rx', '45');
         rect.setAttribute('ry', '45');
-        rect.setAttribute('fill', color);
-        rect.setAttribute('opacity', '60%');
+        if (to_fill) {
+            rect.setAttribute('fill', color);
+            rect.setAttribute('opacity', '60%');
+        }
+        else {
+            rect.setAttribute('fill', 'none');
+            rect.setAttribute('stroke', color);
+            rect.setAttribute('stroke-width', '15');
+        }
 
         svg.appendChild(rect);
         divNode.appendChild(svg);

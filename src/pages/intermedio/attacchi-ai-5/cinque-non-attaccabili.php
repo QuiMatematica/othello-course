@@ -19,7 +19,7 @@
 		</div>
 
     <p>Cosa è successo? Semplice: siccome tutte le pedine della colonna G erano nere, il bianco
-    ha potuto giocato in G8 senza girare la pedina G7. Quindi il nero non ha accesso all'angolo! L'attacco
+    ha potuto giocare in G8 senza girare la pedina G7. Quindi il nero non ha accesso all'angolo! L'attacco
     è fallito.</p>
 
         <div class="card border-primary mb-3">

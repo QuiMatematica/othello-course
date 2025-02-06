@@ -215,7 +215,7 @@ class GeneratePagesPlugin {
         </div>
     </div>
 	<div id="othello-content" class="container-xxl mt-4">
-        <button id="shareBtn" class="btn btn-primary share-button">
+        <button id="shareBtn" class="btn btn-light btn-outline-dark share-button">
             <i class="bi bi-share-fill"></i>
         </button>
 ${pagination}

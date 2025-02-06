@@ -59,7 +59,7 @@
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
   /* The border around the whole board. */
-  border: 0px solid black;
+  border: 0 solid black;
 
   /* The .spot elements will be positioned absolutely within this board. */
   position: relative;
@@ -111,7 +111,7 @@
 }
 
 .boardBorder {
-  border: 0px;
+  border: 0;
 
   /* The size of the squares should include the border, or else the overall
    * board might be too big. */

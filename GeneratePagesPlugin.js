@@ -165,8 +165,12 @@ class GeneratePagesPlugin {
             keywords = this.pages[indexOfThisPage].keywords;
         }
 
-        const offcanvas = this.composeOffcanvas(prepend);
-        const pagination = this.composePagination(filePath, prepend, indexOfThisPage);
+        let offcanvas = '';
+        let pagination = '';
+        if (!filePath.endsWith('quiz.php')) {
+            offcanvas = this.composeOffcanvas(prepend);
+            pagination = this.composePagination(filePath, prepend, indexOfThisPage);
+        }
 
         return `<!DOCTYPE HTML>
 <html lang="it">

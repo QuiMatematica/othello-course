@@ -8,6 +8,9 @@ import PositionComment from "./positionComment";
 
 export default class SequenceBoard {
 
+    sequenceFile;
+    sourcePage;
+
     currentPosition;
     board;
     score;
@@ -21,11 +24,21 @@ export default class SequenceBoard {
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);
-        this.controls = new SequenceControls(container, counter);
+
+        this.sequenceFile = container.dataset['file'];
+
+        if (this.sequenceFile === 'by-url') {
+            let url = new URL(window.location.href);
+            this.sequenceFile = "../" + url.searchParams.get("quiz");
+            console.log("Sequence file: " + this.sequenceFile);
+            this.sourcePage = "../" + url.searchParams.get("source");
+            console.log("Source file: " + this.sourcePage);
+        }
+
+        this.controls = new SequenceControls(container, counter, this.sourcePage);
         this.comment = new PositionComment(container);
 
-        const matchFile = container.dataset['file'];
-        fetch(matchFile)
+        fetch(this.sequenceFile)
             .then((response) => response.json())
             .then((json) => this.readMatch(json));
     }
@@ -44,21 +57,51 @@ export default class SequenceBoard {
         this.score.takeScore(this.currentPosition);
         this.controls.update(this.currentPosition, this.humanColor);
         this.comment.setPositionComment(this.currentPosition);
+        this.addHumanComment();
     }
 
     goToNextPosition() {
         const nextPosition = this.currentPosition.nextPosition;
         this.board.playPosition(nextPosition);
         this.score.takeScore(nextPosition);
-         if (nextPosition.nextPosition == null && nextPosition.comment == null) {
-            this.comment.setComment("<span class=\"fw-bold\">Sequenza terminata.</span>");
+        if (nextPosition.nextPosition == null) {
+            // QUIZ TERMINATO
+            this.comment.setPositionComment(nextPosition);
+            this.addFinalComment();
         }
         else {
+            // IN QUIZ NON E' TERMINATO
             this.comment.setPositionComment(nextPosition);
+            if (nextPosition.turn === this.humanColor) {
+                this.addHumanComment();
+            }
+            else {
+                this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br><b>Tocca al tuo avversario.</b><br>Clicca <i class=\"bi bi-caret-right-square\"></i> per vedere la sua mossa.");
+            }
         }
         this.controls.update(nextPosition, this.humanColor);
         this.currentPosition = nextPosition;
     }
+
+    addHumanComment() {
+        this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br><b>Tocca a te e giochi con il " + SequenceBoard.italianColor(this.humanColor) + ".</b><br>Seleziona la tua mossa sulla tavola.");
+    }
+
+    addFinalComment() {
+        let comment = '<br><i class="bi bi-stars"></i><br><b>Quiz terminato.</b><br>';
+        if (this.sourcePage == null) {
+            comment += 'Condividilo cliccando su <i class="bi bi-share"></i>';
+        }
+        else {
+            comment += 'Vai alla pagina che contiene il quiz cliccando su <i class="bi bi-file-earmark"></i>';
+        }
+        this.comment.addComment(comment);
+    }
+
+    static italianColor(color) {
+        return color === 'white' ? 'bianco' : 'nero';
+    }
+
 
     moveComputer() {
         if (this.currentPosition.nextPosition != null) {
@@ -117,6 +160,60 @@ export default class SequenceBoard {
         }
     }
 
+    async share() {
+        const shareData = {
+            title: "Un quiz di Othello",
+            text: "Prova a risolvere questo quiz di Othello!",
+            url: this.getQuizPageHref()
+        };
+
+        if (navigator.share) {
+            // Se supportato (mobile o browser compatibile)
+            try {
+                await navigator.share(shareData);
+                console.log("Contenuto condiviso con successo!");
+            } catch (err) {
+                console.error("Errore nella condivisione:", err);
+            }
+        } else {
+            // Fallback per desktop: apertura client email
+            window.location.href = `mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
+        }
+    }
+
+    getQuizPageHref() {
+        // Ottieni l'URL corrente
+        let url = new URL(window.location.href);
+
+        // Suddividi il percorso in segmenti
+        let pathSegments = url.pathname.split('/').filter(segment => segment !== '');
+
+        // Salva gli ultimi due livelli
+        let savedLevels = pathSegments.slice(-3);
+
+        // Rimuovi gli ultimi tre livelli
+        if (pathSegments.length >= 3) {
+            pathSegments = pathSegments.slice(0, -3);
+        } else {
+            pathSegments = []; // Se ci sono meno di tre livelli, vai alla radice
+        }
+
+        // Aggiungi "quiz.php"
+        pathSegments.push("pratica");
+        pathSegments.push("quiz.php");
+
+        // Ricostruisci il nuovo URL
+        let newUrl = `${url.origin}/${pathSegments.join('/')}?quiz=${savedLevels.slice(0, 2).join('/')}/${this.sequenceFile}&source=${savedLevels.join('/')}`;
+
+        // Stampa il nuovo URL in console
+        console.log(newUrl);
+
+        return newUrl;
+    }
+
+    goToSource() {
+        window.location.href = this.sourcePage;
+    }
 }
 
 function sequenceBoardOnClick(event) {

@@ -14,7 +14,7 @@
   "moves": [
     {
       "move": "E7",
-      "comment": "Corretto: hai girato una sola pedina. Premi su 'Muove il computer'."
+      "comment": "Corretto: hai girato una sola pedina."
     },
     {
       "move": "D7",
@@ -22,7 +22,7 @@
     },
     {
       "move": "C8",
-      "comment": "Corretto: hai girato una sola pedina. Premi su 'Muove il computer'."
+      "comment": "Corretto: hai girato una sola pedina."
     },
     {
       "move": "G2",

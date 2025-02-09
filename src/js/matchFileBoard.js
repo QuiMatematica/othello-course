@@ -49,8 +49,19 @@ export default class MatchFileBoard {
             this.controls.update(this.currentPosition);
         }
 
-        this.comment = new PositionComment(container);
-        this.comment.setPositionComment(this.currentPosition);
+        if (json.controls == null || json.controls.comment == null || json.controls.comment) {
+            if (this.controls == null) {
+                if (this.currentPosition.comment != null) {
+                    this.comment = new PositionComment(container);
+                    this.comment.setPositionComment(this.currentPosition);
+                }
+            }
+            else {
+                this.comment = new PositionComment(container);
+                this.comment.setPositionComment(this.currentPosition);
+                this.addInstructions();
+            }
+        }
 
         if (json.add != null) {
             if (json.add["a-squares"]) {
@@ -102,6 +113,7 @@ export default class MatchFileBoard {
             this.board.playPosition(nextPosition);
             this.score.takeScore(nextPosition);
             this.comment.setPositionComment(nextPosition);
+            this.addInstructions();
             this.controls.update(nextPosition);
             this.currentPosition = nextPosition;
         }
@@ -113,6 +125,7 @@ export default class MatchFileBoard {
             this.board.setPosition(prevPosition);
             this.score.takeScore(prevPosition);
             this.comment.setPositionComment(prevPosition);
+            this.addInstructions();
             this.controls.update(prevPosition);
             this.currentPosition = prevPosition;
         }
@@ -129,6 +142,7 @@ export default class MatchFileBoard {
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
             this.comment.setPositionComment(curPosition);
+            this.addInstructions();
             this.controls.update(curPosition);
             this.currentPosition = curPosition;
         }
@@ -143,9 +157,16 @@ export default class MatchFileBoard {
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
             this.comment.setPositionComment(curPosition);
+            this.addInstructions();
             this.controls.update(curPosition);
             this.currentPosition = curPosition;
         }
+    }
+
+    addInstructions() {
+        let comment = '<br><i class="bi bi-stars"></i><br>';
+        comment += 'Clicca sulle frecce per seguire la sequenza.';
+        this.comment.addComment(comment);
     }
 }
 

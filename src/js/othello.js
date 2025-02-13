@@ -53,4 +53,12 @@ document.getElementById("shareBtn").addEventListener("click", async () => {
         // Fallback per desktop: apertura client email
         window.location.href = `mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
     }
+
+    gtag("event", "share_click", {
+        "event_category": "Interaction",
+        "event_label": "Share page",
+        "page_path": window.location.pathname
+    });
+    console.log("Condivisione registrata su GA.");
+
 });

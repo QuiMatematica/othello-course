@@ -9,6 +9,7 @@ import PositionComment from "./positionComment";
 export default class SequenceBoard {
 
     sequenceFile;
+    quizHref;
     sourcePage;
 
     currentPosition;
@@ -179,6 +180,13 @@ export default class SequenceBoard {
             // Fallback per desktop: apertura client email
             window.location.href = `mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
         }
+
+        gtag("event", "share_click", {
+            "event_category": "Interaction",
+            "event_label": "Share quiz",
+            "page_path": "/" + this.quizHref
+        });
+        console.log("Condivisione registrata su GA.");
     }
 
     getQuizPageHref() {
@@ -202,8 +210,10 @@ export default class SequenceBoard {
         pathSegments.push("pratica");
         pathSegments.push("quiz.php");
 
+        this.quizHref = `${savedLevels.slice(0, 2).join('/')}/${this.sequenceFile}`;
+
         // Ricostruisci il nuovo URL
-        let newUrl = `${url.origin}/${pathSegments.join('/')}?quiz=${savedLevels.slice(0, 2).join('/')}/${this.sequenceFile}&source=${savedLevels.join('/')}`;
+        let newUrl = `${url.origin}/${pathSegments.join('/')}?quiz=${this.quizHref}&source=${savedLevels.join('/')}`;
 
         // Stampa il nuovo URL in console
         console.log(newUrl);

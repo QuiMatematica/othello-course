@@ -99,6 +99,13 @@
                 const mailtoLink = `mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
                 window.location.href = mailtoLink;
             }
+
+            gtag("event", "share_click", {
+                "event_category": "Interaction",
+                "event_label": "Share page",
+                "page_path": window.location.pathname
+            });
+            console.log("Condivisione registrata su GA.");
         });
     </script>
 

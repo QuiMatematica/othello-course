@@ -1,8 +1,15 @@
 <h1>Gli attacchi ai quattro più uno</h1>
 
-<p>Il "quattro più uno" è una formazione sbilanciata in cui si ha, su un bordo,
-un quattro sbilanciato di un colore, una casella A vuota e la rimanente casella C occupata
-dall'altro colore. Anche queste formazioni possono essere attaccate con una tecnica simile
+<div class="card border-primary mb-3">
+    <div class="card-header">Definizione</div>
+    <div class="card-body">
+        <p class="card-text">Chiamiamo <b>quattro più uno</b> una formazione sbilanciata in cui si ha, su un bordo,
+        un quattro sbilanciato di un colore, una casella A vuota e la rimanente casella C occupata
+        dall'altro colore.</p>
+    </div>
+</div>
+
+<p>Queste formazioni possono essere attaccate con una tecnica simile
 a quella usata contro i
 <a href="../attacchi-ai-5/chapter.php">cinque</a>.
 Bisogna giocare in una casella X (o in una casella C) in modo da offrire un angolo.
@@ -14,8 +21,8 @@ può essere fatto sia da un colore da una parte sia dal colore opposto dall'altr
 la situazione più comune: quando un giocatore attacca, l'avversario risponde con l'attacco
 simmetrico.</p>
 
-<p>Il diagramma 1 riporta sul bordo sud un quattro più uno. Il bianco muove per primo che
-attacca giocando in B7, poi il nero risponde contrattaccando dall'altra parte in G7.
+<p>Il diagramma 1 riporta sul bordo sud un quattro più uno. Il bianco muove per primo e
+attacca giocando in B7; poi il nero risponde contrattaccando dall'altra parte in G7.
 Se poi il bianco prende l'angolo H8 il nero può muovere dapprima incuneandosi in C8,
 per poi prendere l'angolo A8. Similmente, a colori inverti, sarebbe successo se il nero
 avesse per primo preso l'angolo A8: il bianco si sarebbe incuneato e avrebbe poi preso
@@ -67,8 +74,15 @@ entrambi gli angoli. Ne è mostrato un esempio nel diagramma 3.</p>
 
 <h2>Gli attacchi ai tre più due</h2>
 
-<p>La formazione del <b>tre più due</b> è composta da un tre sbilanciato di un colore, una casella
-A vuota e un due sbilanciato dell'altro colore. Anche questa formazione è attaccabile
+<div class="card border-primary mb-3">
+    <div class="card-header">Definizione</div>
+    <div class="card-body">
+        <p class="card-text">La formazione del <b>tre più due</b> è composta da un tre sbilanciato di un colore,
+            una casella B vuota e un due sbilanciato dell'altro colore.</p>
+    </div>
+</div>
+
+<p>Anche questa formazione è attaccabile
 similmente ai quattro più uno. Si veda il diagramma 4.</p>
 
 <div class="card mx-auto board-card my-3">

@@ -255,6 +255,20 @@
 							"title": "Una visione più ampia per gli attacchi ai cinque"
 						}
 					]
+				},
+				{
+					"href": "altri-attacchi-ai-bordi/",
+					"title": "Altri attacchi ai bordi",
+					"pages": [
+						{
+							"href": "attacchi-alle-caselle-c.php",
+							"title": "Attacchi alle caselle C isolate"
+						},
+						{
+							"href": "attacchi-ai-4-piu-1.php",
+							"title": "Attacchi ai quattro più uno"
+						}
+					]
 				}
 			]
 		}

@@ -8,8 +8,6 @@
 			</div>
 		</div>
 
-	<p></p>
-
 	<p>Per esempio, il diagramma 1 mostra un cinque sul bordo sud.</p>
 
 		<div class="card mx-auto board-card my-3">

@@ -162,7 +162,7 @@ a sud non è più attaccabile.</p>
 
 <p>Non vi dico il mio stupore quando Paolo ha giocato questa mossa. Subito ho pensato: "Bene,
 adesso attacco la casella isolata. Non posso farlo giocando in H4 (perché il bianco può rispondere
-in H5 o H6, ma anche perché fare un enorme muro a nord). Quindi devo giocare in H3. Ma...</p>
+in H5 o H6, ma anche perché fare un enorme muro a nord). Quindi devo giocare in H3. Ma..."</p>
 
 <p>Se il nero gioca in H3 il cinque a sud diventa pieno e facilmente attaccabile. Quindi
 il bianco può rispondere in G7. Segui nel diagramma 10 una possibile sequenza.</p>
@@ -182,13 +182,13 @@ E da qui la partita ha preso tutto un altro corso.</p>
 
 <p>La morale di questo esempio è, ancora una volta, quella di non concentrarsi su un unico aspetto,
 ma cercare di avere una visione complessiva del gioco. Quella mossa nella casella C è stata una buona
-mossa, perché ha permesso di guadagnare un tempo di gioco, di non chiudersi la mobilità e di preparare
+mossa, perché ha permesso di guadagnare un tempo di gioco, di perdere mobilità e di preparare
 un attacco al cinque a sud. E soprattutto... era una mossa inattesa!</p>
 
 <h2>Tocca a te</h2>
 
-<p>Nel diagramma 8 è di turno il bianco che può attaccare la casella C H2 in
-modo da poter conquistare con certezza l'angolo H1. Nel diagramma 9 il compito è lo
+<p>Nel diagramma 11 è di turno il bianco che può attaccare la casella C H2 in
+modo da poter conquistare con certezza l'angolo H1. Nel diagramma 12 il compito è lo
 stesso, ma è di turno il nero. Attenzione a qual è il tipo di attacco corretto!</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -199,7 +199,7 @@ stesso, ma è di turno il nero. Attenzione a qual è il tipo di attacco corretto
                         <div class="sequence-board" data-file="attacchi-alle-caselle-c-8.json"></div>
                     </div>
                     <div class="card-footer text-body-secondary text-center">
-                        Diagramma 8: il bianco muove e attacca la caselle C isolata.
+                        Diagramma 11: il bianco muove e attacca la caselle C isolata.
                     </div>
                 </div>
 
@@ -211,7 +211,7 @@ stesso, ma è di turno il nero. Attenzione a qual è il tipo di attacco corretto
                         <div class="sequence-board" data-file="attacchi-alle-caselle-c-9.json"></div>
                     </div>
                     <div class="card-footer text-body-secondary text-center">
-                        Diagramma 9: il nero muove e attacca la caselle C isolata.
+                        Diagramma 12: il nero muove e attacca la caselle C isolata.
                     </div>
                 </div>
 

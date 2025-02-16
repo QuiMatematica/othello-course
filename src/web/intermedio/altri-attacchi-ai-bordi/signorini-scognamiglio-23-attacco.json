@@ -9,7 +9,7 @@
     "--#O##-O",
     "-#####--"
   ],
-  "turn": "white",
+  "turn": "black",
   "moves": [
     {
       "move": "H3",

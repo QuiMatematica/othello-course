@@ -72,6 +72,38 @@ entrambi gli angoli. Ne è mostrato un esempio nel diagramma 3.</p>
     </div>
 </div>
 
+<h2>Uno sguardo più ampio</h2>
+
+<p>Non sempre gli attacchi ai quattro più uno si concludono con la presa dell'angolo e l'incuneamento sul bordo.
+I bordi adiacenti possono portare a sequenze diverse e molto spettacolari.</p>
+
+<p>Nella posizione del diagramma 4 è tratta dalla partita tra il tedesco Matthias Berg (con il nero) e l'italiano
+(ma ora residente in Svizzera) Michele Borassi (con il bianco), giocata all'EGP (European Grand Prix) di Cambridge,
+    il 15 febbraio 2025. Siamo alla mossa 39 appena giocata dal nero in G2.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="berg-borassi-39.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 4: Berg - Borassi (Cambridge, 2025).
+    </div>
+</div>
+
+<p>Il bianco ha interesse a prendere l'angolo H8, perché può proseguire la presa lungo il bordo est. Tuttavia se
+gioca subito in H1, il nero risponde F1 guadagnando l'accesso ad A1 e un tempo di gioco. Ma al bianco non dispiace
+se il nero arriva in A1: nel farlo gira anche la pedina B2 bloccandosi l'accesso alla casella A2. Quindi il bianco
+mette in azione un'altra idea. Guarda la sequenza nel diagramma 5.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="berg-borassi-39-seguito.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 5: Berg - Borassi (Cambridge, 2025).
+    </div>
+</div>
+
 <h2>Gli attacchi ai tre più due</h2>
 
 <div class="card border-primary mb-3">

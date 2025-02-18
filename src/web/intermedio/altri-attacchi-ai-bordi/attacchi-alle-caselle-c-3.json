@@ -16,15 +16,11 @@
     },
     {
       "move": "D8",
-      "comment": "Il bianco risponde in D8."
-    },
-    {
-      "move": "C8",
-      "comment": "Anche se il nero gioca in C8..."
+      "comment": "Il bianco risponde in D8.<br>A questo punto il nero non ha modo di accedere con sicurezza all'angolo A8 in poche mosse. Anche giocasse in C8, il bianco potrebbe rispondere in F8 prendendo un cinque.<br>Una possibile prosecuzione potrebbe essere..."
     },
     {
       "move": "F8",
-      "comment": "... il bianco può rispondere in F8, prendendo un cinque sul bordo sud."
+      "comment": "... muovere in F8 per guadagnare un tempo di gioco a sud e impostare altri tipi di attacco."
     }
   ]
 }

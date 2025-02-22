@@ -1,4 +1,4 @@
-import Position from "./position";
+import Position, {WHITE} from "./position";
 import Board from "./board";
 import Score from "./score";
 import {boards, isAnimatingFlip} from "./page";
@@ -100,7 +100,7 @@ export default class SequenceBoard {
     }
 
     static italianColor(color) {
-        return color === 'white' ? 'bianco' : 'nero';
+        return color === WHITE ? 'bianco' : 'nero';
     }
 
 
@@ -140,6 +140,12 @@ export default class SequenceBoard {
             this.board.setPosition(prevPosition);
             this.score.takeScore(prevPosition);
             this.comment.setPositionComment(prevPosition);
+            if (prevPosition.turn === this.humanColor) {
+                this.addHumanComment();
+            }
+            else {
+                this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br><b>Tocca al tuo avversario.</b><br>Clicca <i class=\"bi bi-caret-right-square\"></i> per vedere la sua mossa.");
+            }
             this.controls.update(prevPosition, this.humanColor);
             this.currentPosition = prevPosition;
         }

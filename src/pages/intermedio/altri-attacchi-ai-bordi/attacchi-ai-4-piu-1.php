@@ -90,8 +90,8 @@ I bordi adiacenti possono portare a sequenze diverse e molto spettacolari.</p>
     </div>
 </div>
 
-<p>Il bianco ha interesse a prendere l'angolo H8, perché può proseguire la presa lungo il bordo est. Tuttavia se
-gioca subito in H1, il nero risponde F1 guadagnando l'accesso ad A1 e un tempo di gioco. Ma al bianco non dispiace
+<p>Il bianco ha interesse a prendere l'angolo H1, perché può proseguire la presa lungo il bordo est. Tuttavia se
+gioca subito in H1, il nero risponde F1 guadagnando un tempo di gioco. Inoltre al bianco non dispiace
 se il nero arriva in A1: nel farlo gira anche la pedina B2 bloccandosi l'accesso alla casella A2. Quindi il bianco
 mette in azione un'altra idea. Guarda la sequenza nel diagramma 5.</p>
 

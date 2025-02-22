@@ -12,24 +12,39 @@ piena libertà di manovra in tutte le altre caselle.</p>
     </div>
 </div>
 
+<p>La pericolosità di una casella C isolata è legata al fatto che l'avversario ha ampio spazio di manovra sullo stesso
+bordo e può riuscire a costruire una situazione di "doppia-sponda" che gli garantisca l'accesso all'angolo.
+La "doppia-sponda" è schematizzata nel diagramma 1: il nero ha già l'accesso all'angolo grazie alla sponda in C8;
+    ma anche se toccasse al bianco
+e giocasse in D8, il nero potrebbe utilizzare la seconda sponda in E8.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="attacchi-alle-caselle-c-0.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 1: doppia sponda.
+    </div>
+</div>
+
 <p>Nel diagramma 1 il bianco ha una pedina nella casella B8 e le rimanenti caselle del bordo
 sud sono vuote. Se il nero gioca in E8 il bianco non può rispondere né in C8 né in D8. Questo
-è sufficiente al nero per avere garanzia di conquistare l'angolo A8, con la sequenza proposta nel diagramma.</p>
+è sufficiente al nero per avere garanzia di conquistare l'angolo A8, con la sequenza proposta nel diagramma 2.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="attacchi-alle-caselle-c-1.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-    			Diagramma 1: attacco alla casella C isolata.
+    			Diagramma 2: attacco alla casella C isolata.
 			</div>
 		</div>
 
-<p>La manovra vista nel diagramma 1 è possibile solo se, dopo la mossa in E8, l'attaccato non
+<p>La manovra vista nel diagramma 2 è possibile solo se, dopo la mossa in E8, l'attaccato non
     può muovere in C8 o D8.</p>
 
-<p>Modifichiamo il diagramma 1 in modo da permettere al bianco di giocare in C8 o in D8. Vediamo nei diagrammi
-    2 e 3 come potrebbe difendersi dall'attacco.</p>
+<p>Modifichiamo il diagramma 2 in modo da permettere al bianco di giocare in C8 o in D8. Vediamo nei diagrammi
+    3 e 4 come potrebbe difendersi dall'attacco.</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -39,7 +54,7 @@ sud sono vuote. Se il nero gioca in E8 il bianco non può rispondere né in C8 n
                         <div class="match-file-board" data-file="attacchi-alle-caselle-c-2.json"></div>
                     </div>
                     <div class="card-footer text-body-secondary text-center">
-                        Diagramma 2: dopo E8 il bianco gioca in C8.
+                        Diagramma 3: dopo E8 il bianco gioca in C8.
                     </div>
                 </div>
 
@@ -51,7 +66,7 @@ sud sono vuote. Se il nero gioca in E8 il bianco non può rispondere né in C8 n
 						<div class="match-file-board" data-file="attacchi-alle-caselle-c-3.json"></div>
 					</div>
 					<div class="card-footer text-body-secondary text-center">
-						Diagramma 3: dopo E8 il bianco gioca in D8.
+						Diagramma 4: dopo E8 il bianco gioca in D8.
 					</div>
 				</div>
 
@@ -59,52 +74,57 @@ sud sono vuote. Se il nero gioca in E8 il bianco non può rispondere né in C8 n
         </div>
 
 <p>Se il bianco può rispondere in C8 o in D8,
-allora il nero deve modificare l'attacco andando in F8. A questo punto si aprono diverse possibilità.</p>
+allora il nero deve modificare l'attacco andando in F8.</p>
+<p>A questo punto si aprono diverse possibilità, ma qualunque sia la risposta del bianco il nero avrà la certezza, in
+    poche mosse, di arrivare all'angolo A8.</p>
+<p>Per uno studio prettamente didattico, ti mostro tutte le possibili risposte del bianco e le relative contro-risposte
+del nero. Ma è chiaro che non tutte le mosse sono buone: in una situazione come questa probabilmente la miglior
+risposta del bianco è ... non rispondere, come nel caso mostrato dal diagramma 8.</p>
 
-<p>Se alla mossa F8 il bianco risponde con C8, allora il nero deve giocare in D8.</p>
+<p>Caso 1: se alla mossa F8 il bianco risponde con C8, allora il nero deve giocare in D8.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="attacchi-alle-caselle-c-4.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-    			Diagramma 4: attacco alla casella C isolata.
+    			Diagramma 5: attacco alla casella C isolata.
 			</div>
 		</div>
 
-<p>Se alla mossa F8 il bianco risponde con D8, allora il nero deve giocare in C8.</p>
+<p>Caso 2: se alla mossa F8 il bianco risponde con D8, allora il nero deve giocare in C8.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="attacchi-alle-caselle-c-5.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-    			Diagramma 5: attacco alla casella C isolata.
+    			Diagramma 6: attacco alla casella C isolata.
 			</div>
 		</div>
 
-<p>Se alla mossa F8 il bianco risponde con E8, allora il nero deve rispondere in C8.</p>
+<p>Caso 3: se alla mossa F8 il bianco risponde con E8, allora il nero deve rispondere in C8.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="attacchi-alle-caselle-c-6.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-    			Diagramma 6: attacco alla casella C isolata.
+    			Diagramma 7: attacco alla casella C isolata.
 			</div>
 		</div>
 
-<p>Se alla mossa F8 il bianco non risponde sul lato sud, allora il nero ha due possibilità:
-    o aspetta che il bianco
-giochi sul bordo in una mossa successiva (tornando così a una delle sequenze viste sopra)
-    o forza la mano giocando in D8 (diagramma 7).</p>
+<p>Caso 4: se alla mossa F8 il bianco non risponde sul lato sud, allora il nero ha due possibilità.
+    O aspetta che il bianco
+giochi sul bordo in una mossa successiva (tornando così a una delle sequenze viste sopra).
+    Oppure forza la mano giocando in D8 (diagramma 8).</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
 				<div class="match-file-board" data-file="attacchi-alle-caselle-c-7.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-    			Diagramma 7: attacco alla casella C isolata.
+    			Diagramma 8: attacco alla casella C isolata.
 			</div>
 		</div>
 
@@ -114,7 +134,7 @@ giochi sul bordo in una mossa successiva (tornando così a una delle sequenze vi
 e un bordo intero. Ne potremmo dedurre che non è mai una buona idea giocare in una casella C isolata.
 Ma nell'Othello, ormai l'avrai capito, questi assoluti non valgono.</p>
 
-<p>La posizione del diagramma 8 è tratta da una partita che ho giocato (con il nero) contro il maestro Paolo
+<p>La posizione del diagramma 9 è tratta da una partita che ho giocato (con il nero) contro il maestro Paolo
 Scognamiglio (bianco) su eOthello. Il nero ha appena giocato in B8 prendendo il cinque sul bordo sud. Tocca al bianco.
 Prenditi qualche minuti per analizzare la posizione e scegliere quale mossa potresti giocare.</p>
 
@@ -123,7 +143,7 @@ Prenditi qualche minuti per analizzare la posizione e scegliere quale mossa potr
         <div class="match-file-board" data-file="signorini-scognamiglio-21.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 8: Signorini - Scognamiglio (eOthello): dopo la mossa 21.
+        Diagramma 9: Signorini - Scognamiglio (eOthello): dopo la mossa 21.
     </div>
 </div>
 
@@ -149,14 +169,14 @@ a sud non è più attaccabile.</p>
 
 <p>E H7?</p>
 
-<p>H7 è una pedina C isolata (diagramma 9). Pericolo!!! O no?</p>
+<p>H7 è una pedina C isolata (diagramma 10). Pericolo!!! O no?</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
         <div class="match-file-board" data-file="signorini-scognamiglio-22.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 9: Signorini - Scognamiglio (eOthello): dopo la mossa 22.
+        Diagramma 10: Signorini - Scognamiglio (eOthello): dopo la mossa 22.
     </div>
 </div>
 
@@ -165,14 +185,14 @@ adesso attacco la casella isolata. Non posso farlo giocando in H4 (perché il bi
 in H5 o H6, ma anche perché fare un enorme muro a nord). Quindi devo giocare in H3. Ma..."</p>
 
 <p>Se il nero gioca in H3 il cinque a sud diventa pieno e facilmente attaccabile. Quindi
-il bianco può rispondere in G7. Segui nel diagramma 10 una possibile sequenza.</p>
+il bianco può rispondere in G7. Segui nel diagramma 11 una possibile sequenza.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
         <div class="match-file-board" data-file="signorini-scognamiglio-23-attacco.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 10: Signorini - Scognamiglio (eOthello): possibile continuazione.
+        Diagramma 11: Signorini - Scognamiglio (eOthello): possibile continuazione.
     </div>
 </div>
 
@@ -187,8 +207,8 @@ un attacco al cinque a sud. E soprattutto... era una mossa inattesa!</p>
 
 <h2>Tocca a te</h2>
 
-<p>Nel diagramma 11 è di turno il bianco che può attaccare la casella C H2 in
-modo da poter conquistare con certezza l'angolo H1. Nel diagramma 12 il compito è lo
+<p>Nel diagramma 12 è di turno il bianco che può attaccare la casella C H2 in
+modo da poter conquistare con certezza l'angolo H1. Nel diagramma 13 il compito è lo
 stesso, ma è di turno il nero. Attenzione a qual è il tipo di attacco corretto!</p>
 
         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -199,7 +219,7 @@ stesso, ma è di turno il nero. Attenzione a qual è il tipo di attacco corretto
                         <div class="sequence-board" data-file="attacchi-alle-caselle-c-8.json"></div>
                     </div>
                     <div class="card-footer text-body-secondary text-center">
-                        Diagramma 11: il bianco muove e attacca la caselle C isolata.
+                        Diagramma 12: il bianco muove e attacca la caselle C isolata.
                     </div>
                 </div>
 
@@ -211,7 +231,7 @@ stesso, ma è di turno il nero. Attenzione a qual è il tipo di attacco corretto
                         <div class="sequence-board" data-file="attacchi-alle-caselle-c-9.json"></div>
                     </div>
                     <div class="card-footer text-body-secondary text-center">
-                        Diagramma 12: il nero muove e attacca la caselle C isolata.
+                        Diagramma 13: il nero muove e attacca la caselle C isolata.
                     </div>
                 </div>
 

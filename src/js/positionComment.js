@@ -16,24 +16,29 @@ export default class PositionComment {
     addComment(comment) {
         if (comment != null) {
             this.div.innerHTML += comment;
+            this.div.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
 
     setComment(comment) {
         if (comment == null) {
             this.div.innerHTML = "";
+            this.div.scrollTo({ top: 0, behavior: "smooth" });
         }
         else {
             this.div.innerHTML = comment;
+            this.div.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
 
     setPositionComment(position) {
         if (position.comment == null) {
             this.div.innerHTML = "";
+            this.div.scrollTo({ top: 0, behavior: "smooth" });
         }
         else {
             this.div.innerHTML = position.comment;
+            this.div.scrollTo({ top: 0, behavior: "smooth" });
         }
     }
 

@@ -20,15 +20,16 @@
     },
     {
       "move": "D8",
-      "comment": "Il nero continua l'attacco in D8."
+      "comment": "Il nero continua l'attacco in D8, ottenendo una doppia sponda e l'accesso all'angolo.<br>Anche se il bianco giocasse in E8 il nero potrebbe comunque prendere l'angolo. Ma al bianco non conviene giocare in E8: è una regione dispari che può mantenere per giocare la parità nel finale. Meglio una mossa come..."
     },
     {
-      "move": "E8",
-      "comment": "Anche se il bianco risponde in E8..."
+      "move": "H2",
+      "comment": "Il bianco gioca questa mossa che non offre nuove mosse all'avversario.<br>Anche al nero non conviene giocare subito A8, e tenere tale mossa per il finale. Meglio prima capire come evolve la situazione a nord. Per cui potrebbe giocare..."
     },
     {
-      "move": "A8",
-      "comment": "... il nero può prendere l'angolo."
+      "move": "D3",
+      "comment": "Ora la partita si concentra a nord. Ma prima o poi il nero approfitterà dell'accesso all'angolo, così come il bianco approfitterà della mossa in E8."
     }
+
   ]
 }

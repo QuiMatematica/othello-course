@@ -162,6 +162,12 @@ export default class SequenceBoard {
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
             this.comment.setPositionComment(curPosition);
+            if (curPosition.turn === this.humanColor) {
+                this.addHumanComment();
+            }
+            else {
+                this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br><b>Tocca al tuo avversario.</b><br>Clicca <i class=\"bi bi-caret-right-square\"></i> per vedere la sua mossa.");
+            }
             this.controls.update(curPosition, this.humanColor);
             this.currentPosition = curPosition;
         }

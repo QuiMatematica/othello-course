@@ -269,6 +269,20 @@
 							"title": "Attacchi ai quattro più uno"
 						}
 					]
+				},
+				{
+					"href": "finale/",
+					"title": "I finali",
+					"pages": [
+						{
+							"href": "ultime-due-mosse.php",
+							"title": "Il finale perfetto (1)"
+						},
+						{
+							"href": "tre-o-piu-mosse.php",
+							"title": "Il finale perfetto (2)"
+						}
+					]
 				}
 			]
 		}

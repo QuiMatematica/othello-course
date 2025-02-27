@@ -16,10 +16,23 @@ export default class FreeGameBoard {
     controls;
 
     constructor(container, counter) {
+        const matchFile = container.dataset['file'];
+        if (matchFile == null) {
+            this.readMatch("", container, counter);
+        }
+        else {
+            fetch(matchFile)
+                .then((response) => response.json())
+                .then((json) => this.readMatch(json, container, counter));
+        }
+    }
+
+    readMatch(json, container, counter) {
+        this.currentPosition = Position.getPositionFromJSON(json);
+
         this.container = container;
         this.counter = counter;
 
-        this.currentPosition = Position.getStartingPosition();
         this.board = new Board(container, counter, freeGameBoardOnClick)
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);

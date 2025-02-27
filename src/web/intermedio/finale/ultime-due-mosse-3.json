@@ -1,0 +1,23 @@
+{
+  "position": [
+    "#OOOOOOO",
+    "##OOO##O",
+    "###O##OO",
+    "######OO",
+    "######O#",
+    "####OOO#",
+    "###OO#O-",
+    "OOOOO##-"
+  ],
+  "comment": "Obiettivo: gioca la mossa vincente del nero.",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Bravissimo, infatti..."
+    },
+    {
+      "move": "H7",
+      "comment": "Hai vinto 33 a 31!"
+    }
+  ]
+}

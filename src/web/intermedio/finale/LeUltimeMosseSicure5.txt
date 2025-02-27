@@ -1,0 +1,15 @@
+# BLACK nero
+# WHITE bianco
+# START_POSITION --OOOO--#-#O#O-##O#OOO####OOOO###O#O######OO#OO##-O##O---OOOOOO-
+# START_COLOR white
+g2 Se il bianco gioca in G2...
+b7 ... il nero, avendo un minor numero di mosse sicure, deve bloccare una mossa sicura all'avversario e puntare a recuperare un tempo di gioco a nord-ovest.
+a8 
+b2
+a1
+b1 Il nero guadagna il suo tempo di gioco e costringe l'avversario a passare.
+h7
+g7
+h8 Il nero guadagna un altro tempo di gioco e costringe nuovamente l'avversario a passare. Perde la parità, ma riesce a mantenere l'intero bordo est.
+g1
+h1

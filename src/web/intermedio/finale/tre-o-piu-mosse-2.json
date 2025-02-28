@@ -1,0 +1,28 @@
+{
+  "position": [
+    "########",
+    "#####OO#",
+    "#OO#OOO#",
+    "#O#O#OO#",
+    "####OOO#",
+    "###OOOO#",
+    "-##O####",
+    "--#OOOOO"
+  ],
+  "turn": "white",
+  "comment": "Determina il finale perfetto e giocalo. Riuscirai a vincere questa partita?",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Esatto! Questa mossa porta alla vittoria del bianco."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero limita i danni."
+    },
+    {
+      "move": "A7",
+      "comment": "Bravissimo: hai vinto 33 a 31."
+    }
+  ]
+}

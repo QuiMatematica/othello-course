@@ -1,0 +1,31 @@
+{
+  "position": [
+    "###OOOO#",
+    "--###O##",
+    "OO#O####",
+    "O#OOO#OO",
+    "##OO##OO",
+    "O#OOO#OO",
+    "OO##O#-O",
+    "O#####O-"
+  ],
+  "comment": "Trova la sequenza perfetta che ti porti alla vittoria.",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Esatto: questa è la mossa migliore."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco chiude lo spazio dispari."
+    },
+    {
+      "move": "A2",
+      "comment": "Bravissimo!"
+    },
+    {
+      "move": "B2",
+      "comment": "Complimenti: hai giocato la sequenza perfetta.<br>Ti sei accorto che se iniziavi con A2 la pedina F7 diventava bianca? E questo avrebbe portato ad un pareggio."
+    }
+  ]
+}

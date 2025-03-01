@@ -1,0 +1,55 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-#O#O-#",
+    "#O#OOO##",
+    "##OOOO##",
+    "#O#O####",
+    "##OO#OO#",
+    "#-O##O--",
+    "-OOOOOO-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Se il bianco gioca in B7..."
+    },
+    {
+      "move": "H7",
+      "comment": "... il nero gioca la sua mossa sicura, girando la pedina in G6 e togliendo al bianco la mossa sicura in G2."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco gioca la sua ultima mossa sicura, creando un pericoloso cinque. Il finale è simile al precedente."
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero attacca il cinque minacciando anche l'angolo A8."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo per poter giocare poi in H8."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero si incunea. Il bianco perde la parità perché gli rimangono solo regioni di due caselle. Il finale è tutto per il nero."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco perde."
+    }
+  ]
+}

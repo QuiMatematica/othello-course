@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-#OO#-#",
+    "###OOOO#",
+    "##OO#OO#",
+    "#O######",
+    "#O#O#OO#",
+    "#-O##O--",
+    "-OOOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero gioca la sua mossa sicura, annulla le mosse sicure bianche in B7 e in G1."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "G7"
+    }
+  ]
+}

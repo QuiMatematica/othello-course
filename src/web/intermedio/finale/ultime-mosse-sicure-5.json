@@ -1,0 +1,52 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-#O#O-#",
+    "#O#OOO##",
+    "##OOOO##",
+    "#O#O####",
+    "##OO#OO#",
+    "#-O##O--",
+    "-OOOOOO-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Se il bianco gioca in G2..."
+    },
+    {
+      "move": "B7",
+      "comment": "... il nero, avendo un minor numero di mosse sicure, deve bloccare una mossa sicura all'avversario e puntare a recuperare un tempo di gioco a nord-ovest."
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero guadagna il suo tempo di gioco e costringe l'avversario a passare."
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero guadagna un altro tempo di gioco e costringe nuovamente l'avversario a passare. Perde la parità, ma riesce a mantenere l'intero bordo est."
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "H1"
+    }
+  ]
+}

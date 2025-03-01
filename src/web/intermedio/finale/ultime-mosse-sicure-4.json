@@ -1,0 +1,53 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-#O#O-#",
+    "#O#OOO##",
+    "##OOOO##",
+    "#O#O####",
+    "##OO#OO#",
+    "#-O##O--",
+    "-OOOOOO-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Se il bianco gioca in G2..."
+    },
+    {
+      "move": "H7",
+      "comment": "... il nero potrebbe giocare in H7."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca poi in B7 controllando in questo modo tutta la diagonale."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero deve giocare nello spazio dispari."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco si procura l'accesso all'angolo A8."
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "H1"
+    }
+  ]
+}

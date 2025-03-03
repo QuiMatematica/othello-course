@@ -203,7 +203,7 @@ nel diagramma 11.</p>
     </div>
 </div>
 
-<p>Ho ridato la parità al nero nella regione sud-est, ma ora il bordo est è nero. Quando il nero
+<p>Ho ridato la parità al nero nella regione sud-est, ma ora il bordo est è nero. Quando il bianco
 accetta l'attacco prendendo l'angolo H8, ottiene l'accesso in H1 e tutto il bordo est.</p>
 
 <div class="card mx-auto board-card my-3">

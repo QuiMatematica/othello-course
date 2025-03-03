@@ -1,0 +1,59 @@
+{
+  "position": [
+    "--###O--",
+    "--##OO--",
+    "#OOO####",
+    "#OO#O#O#",
+    "##OOOO##",
+    "###OO#O#",
+    "##OOOO-#",
+    "#O####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il bianco gioca la sua ultima mossa sicura e conquista il lato nord.<br>Ora però tocca al nero che conosce la parità e la sa sfruttare. Il nero sa che non gli conviene giocare a nord-est perché è una regione pari. E non gli conviene giocare a nord-est perché è una regione dispari dove solo lui può giocare per primo."
+    },
+    {
+      "move": "G7",
+      "comment": "A costo di perdere il bordo est, il nero gioca secondo parità.<br>A questo punto al bianco rimangono solo due spazi pari. Anche si ricordasse della parità, è troppo tardi!"
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo H8 per conquistare il bordo est."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero chiude lo spazio dispari."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco prende il bordo est.<br>Ora il nero ha un problema. Per mantenere la parità fino alla fine della partita dovrebbe giocare nella regione a nord-est. Ma non può giocare in G2, perché l'attacco al cinque non funziona e il bianco può rispondere G1. Allora dovrebbe giocare in G1, ma nel farlo rinuncia al bordo nord. In alternativa può rinunciare alla parità globale e giocare la mossa sicura in A2. Il bilancio costi-benefici sembra equivalente. E' il momento giusto di provare a contare: non tutte le sequenze ma solo le due promettenti. La mossa migliore è..."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero rinuncia alla parità globale ma riesce a prendere tutto il bordo nord.<br>La parità torna al bianco che deve sfruttarla, anche se ormai è troppo tardi."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco gioca nella regione dispari."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco chiude la regione a nord-est."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero conquista tutto il bordo nord."
+    },
+    {
+      "move": "B2",
+      "comment": "Il bianco gioca l'ultima mossa ma non basta."
+    }
+  ]
+}

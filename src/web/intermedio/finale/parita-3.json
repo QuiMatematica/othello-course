@@ -1,0 +1,59 @@
+{
+  "position": [
+    "--###O--",
+    "--##OO--",
+    "#OOO####",
+    "#OO#O#O#",
+    "##OOOO##",
+    "###OO#O#",
+    "##OOOO-#",
+    "#O####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco gioca seguendo la parità.<br>Ora il nero ha solo regioni pari in cui giocare. Cosa conviene fare?"
+    },
+    {
+      "move": "G1",
+      "comment": "In questa posizione la cosa migliore è prendere il bordo nord. Il cinque è attaccabile, ma da una regione pari. Infatti al bianco non conviene attaccare, ma di nuovo giocare secondo parità."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco gioca nella regione dispari."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prendo l'angolo."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco chiude la regione a nord-est."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero è costretto di nuovo a giocare in una regione pari."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo ma il suo obiettivo è prendere o le pedine della riga 2 o le pedine della colonna B."
+    },
+    {
+      "move": "A2",
+      "comment": "Al nero conviene questa mossa per poter prendere anche le pedine della diagonale B3-F7."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco chiude la regione a nord-ovest e prende tutte le pedine della colonna B."
+    },
+    {
+      "move": "G8",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende il bordo sud e vince."
+    }
+  ]
+}

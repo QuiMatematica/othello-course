@@ -272,7 +272,7 @@
 				},
 				{
 					"href": "finale/",
-					"title": "I finali",
+					"title": "Il finale",
 					"pages": [
 						{
 							"href": "ultime-due-mosse.php",
@@ -281,6 +281,14 @@
 						{
 							"href": "tre-o-piu-mosse.php",
 							"title": "Il finale perfetto (2)"
+						},
+						{
+							"href": "parita.php",
+							"title": "La parità nel finale"
+						},
+						{
+							"href": "contare.php",
+							"title": "Contare l'indispensabile"
 						},
 						{
 							"href": "sequenze-indipendenti.php",

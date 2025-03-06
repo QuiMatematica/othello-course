@@ -34,7 +34,7 @@ Se invece il nero gioca in H7, questa pedina e la pedina girata (G6) non cambian
 determinazione del finale perfetto.</p>
 
 <p>Ma è ancora più importante determinare quando due sequenze <b>NON sono indipendenti</b>, perché la loro dipendenza
-DEVE essere sfruttata per guadagnare il più possibile di pedine.</p>
+DEVE essere sfruttata per guadagnare il maggior numero possibile di pedine.</p>
 
 <p>Nel diagramma 2 è stata cambiata una sola pedina rispetto al diagramma 1. Prova di nuovo a calcolare il finale
     perfetto.</p>

@@ -1,20 +1,9 @@
 <h1>La parità nel finale</h1>
 
-<p>Abbiamo visto che il finale perfetto è calcolabile matematicamente. Ma per un uomo è difficile poter analizzare e
-contare tutte le sequenze. Abbiamo allora bisogno di strumenti che ci permettano di selezionare le sequenze più
-    vantaggiose. Ci servono delle euristiche.</p>
+<p>Abbiamo visto che il finale perfetto è calcolabile matematicamente. Ma per noi umani è difficile poter analizzare e
+contare tutte le sequenze. Ci servono delle euristiche.</p>
 
-<div class="card border-primary mb-3">
-	<div class="card-header">Definizione</div>
-	<div class="card-body">
-		<p class="card-text">Le euristiche (dal greco heurískein: trovare, scoprire) sono procedimenti mentali
-            intuitivi e sbrigativi, scorciatoie mentali, che permettono di costruire un’idea generica su un argomento
-            senza effettuare troppi sforzi cognitivi. Sono strategie veloci utilizzate di frequente per giungere
-            rapidamente a delle conclusioni.</p>
-	</div>
-</div>
-
-<p>Sicuramente l'euristica che più di tutte domina nei finali è la <b>parità</b>.</p>
+<p>Sicuramente l'euristica che domina nei finali è la <b>parità</b>.</p>
 
 <p>Ne abbiamo già parlato in un <a href="../parita/chapter.php">apposito capitolo</a>: qui ne voglio ribadire
     l'importanza nel finale, ma anche mostrarti come non sempre sia efficace.</p>
@@ -36,8 +25,9 @@ la sequenza perfetta?</p>
 </div>
 
 <p>Supponiamo che il bianco non conosca la parità, o che comunque non sappia sfruttarla bene nel finale.
-Nella posizione del diagramma 1 potrebbe essere portato a cercare una mossa sicura: una mossa che non dia accesso
-all'avversario agli angoli. L'unica mossa di questo tipo è B1, che ha anche il vantaggio di conquistare tutto il bordo
+Nella posizione del diagramma 1 potrebbe essere portato a cercare una <a href="../mobilita/togliere-mosse.php">mossa sicura</a>:
+    una mossa che non permetta all'avversario di accedere a un angolo.
+    L'unica mossa di questo tipo è B1, che ha anche il vantaggio di conquistare tutto il bordo
 nord. Segui la sequenza proposta nel diagramma 2.</p>
 
 <div class="card mx-auto board-card my-3">
@@ -64,3 +54,16 @@ Segui la sequenza nel diagramma 3.</p>
 		Diagramma 3: il bianco conosce la parità e vince.
 	</div>
 </div>
+
+<h2>Quindi?</h2>
+
+<p>Quindi la parità è una tua potente alleata nei finali. Se hai fretta o hai una posizione molto difficile da valutare,
+giocare secondo parità è sicuramente una buona idea.</p>
+
+<p>Però devo anche avvisarti che non è sempre vincente o comunque non ti indica sempre la mossa migliore. Esattamente
+come è successo nel diagramma 2, dove il nero ha dovuto rinunciare alla parità per poter conquistare il lato nord.</p>
+
+<p>Ma di una cosa possiamo essere certi: se il tuo avversario è in gamba, anche lui cercherà di giocare in parità.
+Questo ti permette di capire come potrebbe rispondere alle tue mosse e ti permette di individuare le sequenze
+di finale più probabili. E questo riduce di molto l'eventuale calcolo del finale. Come ti mostrerò nella prossima
+    pagina.</p>

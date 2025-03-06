@@ -33,9 +33,9 @@ ultime mosse.</p>
 <p>In questo capitolo ti presenterò le più semplici e importanti euristiche per il finale:</p>
 <ul>
     <li>la più importante di tutte è la parità, strategia che abbiamo già incontrato e che riprenderemo in una pagina apposita;</li>
-    <li>vedremo quindi come non è necessario contare tutte le possibili sequenze, ma possiamo selezionare quelle più
+    <li>vedremo quindi come non sia necessario contare tutte le possibili sequenze, ma possiamo selezionare quelle più
     probabili e più significative per il finale;</li>
-    <li>vedremo quando sequenze in area diverse sono tra loro dipendenti o indipendenti e come sfruttare questo legame;</li>
+    <li>vedremo quando sequenze in aree diverse sono tra loro dipendenti o indipendenti e come sfruttare questo legame;</li>
     <li>infine faremo qualche riflessione sulle mosse sicure e sulla loro importanza nei finali.</li>
 </ul>
 

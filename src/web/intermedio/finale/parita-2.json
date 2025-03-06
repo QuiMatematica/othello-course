@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "B1",
-      "comment": "Il bianco gioca la sua ultima mossa sicura e conquista il lato nord.<br>Ora però tocca al nero che conosce la parità e la sa sfruttare. Il nero sa che non gli conviene giocare a nord-est perché è una regione pari. E non gli conviene giocare a nord-est perché è una regione dispari dove solo lui può giocare per primo."
+      "comment": "Il bianco gioca la sua ultima mossa sicura e conquista il lato nord.<br>Ora però tocca al nero che conosce la parità e la sa sfruttare. Il nero sa che non gli conviene giocare a nord-est perché è una regione pari. E non gli conviene giocare a nord-ovest perché è una regione dispari dove solo lui può giocare per primo."
     },
     {
       "move": "G7",

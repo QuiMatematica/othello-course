@@ -3,7 +3,7 @@
 <p>In una partita in cui nessun angolo è stato occupato dover muovere è più un imbarazzo
 che un vantaggio: si può giocare solo nelle caselle più vicine agli angoli e può essere
 molto pericoloso farlo. Ma anche tra le ultime mosse ce ne possono essere alcune
-<a href="../ LaMobilita/ChiudereIlGiocoAllAvversario.html">mosse sicure</a>
+<a href="../mobilita/togliere-mosse.php">mosse sicure</a>
 che permettono di giocare senza che l'avversario possa occupare immediatamente un angolo.
 E' evidente che il giocatore che raggiunge questa fase con il maggior numero di mosse
 sicure è avvantaggiato rispetto all'avversario: può giocare più mosse senza correre
@@ -17,8 +17,8 @@ essenzialmente per due ragioni:</p>
   <li>il giocatore con meno mosse sicure non ha nessun interesse a lanciarsi in una
   battaglia fino "all'ultima mossa sicura": egli spesso cercherà di sacrificare subito
   un angolo per recuperare un
-  <a href="../ITempiDiGioco/index.html">tempo di gioco</a>, grazie alla
-  <a href="../LaParita/index.html">parità</a>.</li>
+  <a href="../tempi-di-gioco/chapter.php">tempo di gioco</a>, grazie alla
+  <a href="../parita/chapter.php">parità</a>.</li>
 </ul>
 
 <p>Vediamo alcuni esempi.</p>

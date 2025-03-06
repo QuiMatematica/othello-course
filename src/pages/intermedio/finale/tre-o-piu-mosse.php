@@ -44,7 +44,7 @@ corrispondente e ho riportato nelle foglie il punteggio finale.</p>
 vittoria. Ma come devono comportarsi i giocatori per ottenere il miglior
 risultato possibile?</p>
 
-<p>Per analizzare il finale bisogna ora partire dalle foglie e andare a ritroso 
+<p>Per analizzare il finale bisogna partire dalle foglie e andare a ritroso
 verso la radice.</p>
 
 <p>Partiamo dai nodi AA, AB, BA, BB, CA: in tutte queste posizioni il bianco ha
@@ -120,9 +120,7 @@ sarà indifferente giocare l'una o l'altra.</p>
 l'albero di tutte le mosse possibile e trovare, quindi, la partita "perfetta",
 discostandosi dalla quale non si può (in teoria) ottenere un risultato migliore.
 Perché questo non è ancora stato fatto lo spiego nella
-<a href="complessita-othello.php">prossima pagina</a> che,
-probabilmente, interesserà più gli appassionati di matematica e informatica:
-non sentirti obbligato a leggerla.</p>
+<a href="complessita-othello.php">pagina finale del capitolo</a>.</p>
 
 <h2>Tocca a te</h2>
 

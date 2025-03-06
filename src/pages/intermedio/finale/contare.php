@@ -4,9 +4,9 @@
 di altre. Per cui non è sempre necessario contare tutte le sequenze possibili, ma ci si può limitare a quelle
 più interessanti.</p>
 
-<p>Per mostrarti come fare riprendo due posizioni della pagina precedente.</p>
+<p>Per mostrarti come fare riprendo una posizione della pagina precedente.</p>
 
-<p>Nel diagramma 1 tocca al nero, che ha tre mosse a disposizione: A2, G1 e G2.</p>
+<p>Nel diagramma 1 tocca al nero, che ha quattro mosse a disposizione: A2, B2, G1 e G2.</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">
@@ -20,6 +20,9 @@ più interessanti.</p>
 <p>Abbiamo visto che G2 non è una buona mossa, perché l'attacco al cinque non è efficace e il bianco può rispondere
 in G1 senza voltare la pedina G2, e si tiene H1 per salvare tutto il lato nord. Quindi questa mossa è da escludere:
 rimangono solo due alternative.</p>
+
+<p>Escluderei anche B2 perché rinuncia alla parità globale e permette al bianco di salvare il lato nord. Non c'è
+nessun beneficio nel fare questa mossa.</p>
 
 <p>Dopo G1 è ovvio che il bianco vorrà salvare il lato nord giocando in H1. Dopo queste due mossa in nero deve
 chiudere la regione a nord-est muovendo in G2. A questo punto il bianco passa. A questo punto tocca il nero a nord-ovest
@@ -65,3 +68,17 @@ i tuoi conteggi.</p>
 
 	</div>
 </div>
+
+<p>Contando le due sequenze, e non tutte le sequenze possibili, abbiamo capito che la mossa migliore per il nero è
+A2.</p>
+
+<p>Se le euristiche che abbiamo utilizzato per selezionare le sequenze sono buone (e se le sappiamo applicare
+    correttamente), non abbiamo bisogno di calcolare tutto l'albero delle possibili mosse.</p>
+
+<p>Non solo. Se già una sequenza molto probabile in termini di euristiche è vincente, potremo decidere di giocarla
+senza calcolare il finale per altre sequenze. Dopotutto a noi interessa vincere la partita e non sempre avremo il
+lusso di poter selezionare la mossa più vincente.</p>
+
+<p>Se invece tutte le sequenze che ci sembrano più probabili sono perdenti... beh, o la posizione è matematicamente
+persa, oppure possiamo cercare qualche altra sequenza. Oppure ancora possiamo tentare di rendere il gioco il più
+difficile possibile in modo da indurre l'avversario a sbagliare. Ma questa è tutta un'altra storia...</p>

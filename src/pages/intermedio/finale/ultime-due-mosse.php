@@ -3,28 +3,26 @@
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-        <p class="card-text">Data una posizione, il <b>finale perfetto</b> è la sequenza di mosse che
+        <p class="card-text">In una posizione data, il <b>finale perfetto</b> è la sequenza
+            di mosse che
 garantisce a entrambi i colori il miglior risultato possibile.</p>
 	</div>
 </div>
 
-<p>Per esperienza so che questa definizione lascia molte
-perplessità, ma mostrandoti il meccanismo con cui si calcola il finale perfetto
-penso di riuscire a fartene capire il senso. Partirò dalla
-situazione più semplice in cui solamente
-due caselle sono libere per arrivare subito dopo a
-<a href="tre-o-piu-mosse.php">situazioni più complesse, con tre e più caselle
-libere</a>.</p>
+<p>Se questa definizione ti sembra un po’ astratta, niente paura: vedremo insieme il metodo
+    per calcolarlo, partendo dalla situazione più semplice, con solo due caselle libere,
+    per poi affrontare <a href="tre-o-piu-mosse.php">scenari più complessi con tre o più
+        caselle disponibili</a>.</p>
 
-<p>Come vedremo trovare il finale perfetto è semplice per i
-calcolatori (è solo una questione di calcoli e quindi di tempo), ma per noi uomini
-è più complesso. Però bisogna imparare a farlo almeno per le ultime
-3/4 mosse di ogni partita.</p>
+<p>Per un computer, determinare il finale perfetto è semplice: è solo una questione di calcoli
+    e tempo. Per noi umani, invece, è più difficile, ma è fondamentale imparare a farlo
+    almeno per le ultime 3-4 mosse di ogni partita.</p>
 
-<p>Consideriamo la posizione del diagramma 1. Ci sono due caselle vuote, 
-nessuno ha dovuto passare quindi la mossa è al nero. Il diagramma ti consente
-di giocare liberamente; tornando indietro arriverai 
-sempre alla posizione di partenza.</p>
+<h2>Un esempio pratico</h2>
+
+<p>Osserva la posizione del diagramma 1: ci sono due caselle vuote e tocca al nero.
+    Puoi provare liberamente le mosse nel diagramma; tornando indietro, tornerai sempre alla
+    posizione iniziale.</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">
@@ -35,25 +33,29 @@ sempre alla posizione di partenza.</p>
 	</div>
 </div>
 
-<p>Il nero ha due mosse a disposizione. Se gioca in A8 il bianco deve rispondere
-in A7 e il risultato è pari. Se il nero gioca A7 il bianco deve rispondere
-A8 e il nero vince 33 a 31.</p>
+<p><b>Analisi</b></p>
+<ul>
+    <li>Il nero ha due mosse disponibili: <b>A7</b> e <b>A8</b>.</li>
+    <li>Se gioca in <b>A8</b>, il bianco risponde in <b>A7</b>, e il risultato finale è
+        un pareggio.</li>
+    <li>Se invece gioca in <b>A7</b>, il bianco risponde in <b>A8</b> e il Nero vince
+        <b>33 a 31</b>.</li>
+</ul>
 
-<p>Al nero, quindi, conviene giocare la mossa A7 che gli permette di ottenere 
-il risultato migliore. Il finale perfetto, quindi, è dato dalla sequenza
-A7, A8. Inoltre nella posizione data si può dire che il nero vince 33 a 31,
-perché il finale perfetto porta a questo risultato.</p>
+<p><b>Conclusione</b></p>
+<p>Il Nero deve scegliere la mossa <b>A7</b>, che gli assicura la vittoria.
+    Il <i>finale perfetto</i> per questa posizione è quindi la sequenza <b>A7 → A8</b>.
+    Possiamo inoltre dire che, in questa posizione, il nero <i>vince con il punteggio di 33 a 31</i>,
+    perché il finale perfetto porta esattamente a questo risultato.
 
 <h2>Come calcolare il risultato finale</h2>
 
-<p>Nell'esempio sopra, per determinare il risultato finale abbiamo giocato le 
-pedine e poi contato. Questo, ovviamente, non è possibile in partita perché
-non puoi provare a giocare per poi ritirare le mosse. &Egrave; necessario, quindi,
-un modo per calcolare il risultato senza giocare.</p>
+<p>Nell’esempio precedente, abbiamo contato le pedine dopo aver giocato. Ma in una partita
+    reale, non possiamo testare le mosse e poi annullarle. È quindi necessario un metodo
+    per calcolare il risultato in anticipo.</p>
 
-<p>Il conteggio si basa sulle pedine che vengono girate. Per 
-la prima mossa è banale, per le altre
-bisogna ricordare quali pedine sono state girate nelle mosse precedenti.</p>
+<p>Il segreto sta nel conteggio delle pedine girate. Per la prima mossa è semplice, ma per
+    le successive bisogna ricordare quali pedine sono già state girate.</p>
 
 <p>Ripartiamo dalla posizione iniziale del diagramma 1 che ripeto per comodità
 qui sotto nel diagramma 2.</p>
@@ -75,7 +77,8 @@ possibili.</p>
 il nero ha 34 pedine, il bianco 28. Vediamo insieme cosa succede nella 
 sequenza del finale perfetto.</p>
 
-<p>Se il nero gioca in A7, gira 3 pedine (B7, C7 e D7). Poi il bianco gioca in 
+<p>Se il nero gioca in A7, aggiunge una pedina sulla tavola e gira 3 pedine (B7, C7 e D7).
+    Poi il bianco gioca in
 A8 e gira 5 pedine (B8, C8, B7 che è appena stata girata dal nero, C6 e D5).</p>
 
 <p>Volendo calcolare quante pedine avrà alla fine il nero, bisogna fare questo
@@ -113,8 +116,8 @@ conteggio:</p>
     </table>
 </div>
 
-<p>Nota: alla mossa del nero, oltre alle pedine girate devi contare anche la 
-pedine giocata. Alla mossa del bianco, invece, non sottrai la pedine giocata 
+<p>Nota: alla mossa del nero, oltre alle pedine girate dobbiamo contare anche la
+pedine giocata. Alla mossa del bianco, invece, non sottraiamo la pedina giocata
 perché non era del nero.</p>
 
 <p>Ti suggerisco come esercizio di provare a calcolare il risultato finale

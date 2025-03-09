@@ -24,21 +24,22 @@ il finale perfetto analizzato fin dalla prima mossa.</p>
 
 <h2>60!</h2>
 
-<p>Beh, nella <a href="tre-o-piu-mosse.php">pagina precedente</a> abbiamo capito
-come si calcola il finale perfetto a partire da una mossa. A questo punto
+<p><a href="tre-o-piu-mosse.php">All'inizio di questo capitolo</a> abbiamo capito
+come si calcola il finale perfetto a partire da una posizione. A questo punto
 facciamo queste osservazioni:</p>
 
 <ul>
   <li>all'ultima mossa c'è sempre una sola casella libera, quindi c'è al più
   una sola mossa possibile;</li>
   <li>alla penultima mossa ci sono due caselle libere, quindi ci sono al più
-  due mosse possibili; il numero di sequenze possibili è, quindi, 2;</li>
+  due mosse possibili; il numero massimo di sequenze possibili è, quindi, 2 ⋅ 1 = 2, due per la scelta della penultima
+      casella e una per la scelta-obbligata dell'ultima casella;</li>
   <li>alla terz'ultima mossa ci sono tre caselle libere, quindi ci sono al più
   tre mosse possibili; a ciascuna di queste corrispondo nel turno successivo
-  al più due sequenze, quindi avremo al massimo 3 ⋅ 2 = 6 sequenze;</li>
+  al più due mosse, seguita da una mossa obbligata, quindi avremo al massimo 3 ⋅ 2 ⋅ 1 = 6 sequenze;</li>
   <li>alla quart'ultima mossa ci sono quattro caselle libere, quindi ci sono al più
   quattro mosse possibili; a ciascuna di queste corrispondo nel turno successivo
-  al più sei sequenze, quindi avremo al massimo 4 ⋅ 6 = 24 sequenze;</li>
+  le mosse calcolate al punto precedente, quindi avremo al massimo 4 ⋅ 3 ⋅ 2 ⋅ 1 = 24 sequenze;</li>
   <li>...</li>
 </ul>
 
@@ -54,7 +55,7 @@ possibili è dato da:</p>
 
 <p class="text-center">60!</p>
 
-<p>dove il punto esclativo "!" indica l'operazione di fattoriale.</p>
+<p>dove il punto esclativo "!" indica l'operazione di fattoriale. Quindi il numero di sequenze possibili è "60 fattoriale".</p>
 
 <p>Confessa che muori dalla voglia di sapere quanto fa 60!... Ebbene:</p>
 
@@ -91,7 +92,7 @@ e di molto. Alla prima mossa, quando ci sono 60 caselle libere, abbiamo conteggi
 giocabili.</p>
 
 <p>C'è inoltre una seconda pecca, più sottile. Se potessimo calcolare tutte le mosse,
-troveremmo spesso una stessa posizione in diversi punti dell'albero. In quel
+troveremmo spesso posizioni uguali in nodi diversi dell'albero. In quel
 caso ci sarà sufficiente calcolare le rimanenti mosse una sola volta.</p>
 
 <p>Un conteggio diverso può nascere allora da questa osservazione: se costruiremo
@@ -160,17 +161,19 @@ le quattro pedine iniziali parallele il bianco vince per 19 a 17.</p>
 
 <h2>E se un calcolatore ci riuscisse?...</h2>
 
-<p>Anno 2048, il super-mega calcolatore della NASA trova la partita perfetta
+<p>Anno 2052, un super-mega calcolatore quantistico trova la partita perfetta
 dell'Othello... Fine del gioco?</p>
 
-<p>No, sicuramente no!!! Anche perché se tutti memorizzassero la partita perfetta,
-non appena uno cambiasse mossa (anche alla seconda), andrebbe tutto ricalcolato
-per trovare nuovamente il finale perfetto... E non è certo umanamente possibile memorizzare
-tutti i finali perfetti.</p>
+<p>No, sicuramente no!!! Anche se tutti memorizzassero la partita perfetta,
+non appena uno cambia mossa (anche alla seconda), va rifatto il calcolo
+per trovare il finale perfetto... E non è umanamente possibile memorizzare
+tutti i finali perfetti di tutte le posizioni.</p>
 
-<p>Alcuni giochi più "semplici" dell'Othello sono già stati risolti, come la dama
- e alcune versioni più famose del mancala, eppure sono tuttora giocatissimi!!!</p>
+<p>Alcuni giochi più "semplici" (nel senso che hanno una complessità inferiore) dell'Othello sono già stati risolti, come la dama
+ e alcune versioni più famose del mancala, eppure sono tuttora giocati!!!</p>
 
-<p>Non è stato risolto l'Othello. Non è stato risolto il gioco degli scacchi
+<p>Non è stato risolto l'Othello. Non è stato risolto il gioco degli scacchi.
 E non è ancora stato risolto il Go, che, tra i giochi che conosco, è sicuramente quello con complessità più
 elevata, pari a 3<sup>(19 ⋅ 19)</sup>.</p>
+
+<p>Ma i computer sono ormai imbattibili in tutti questi giochi. E di questo parleremo più avanti in un apposito capitolo.</p>

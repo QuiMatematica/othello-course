@@ -1,4 +1,4 @@
-<h1>Il finale perfetto (1)</h1>
+<h1>Il finale perfetto con due caselle vuote</h1>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>

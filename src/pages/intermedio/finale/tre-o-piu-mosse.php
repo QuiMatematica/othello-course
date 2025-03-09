@@ -1,4 +1,4 @@
-<H1>Il finale perfetto (2)</H1>
+<H1>Il finale perfetto con tre o più caselle vuote</H1>
 
 <p>Complichiamo leggermente la situazione e poniamoci in una situazione in cui 
 ci siano tre caselle vuote: guarda il diagramma 1.</p>

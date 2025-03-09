@@ -276,11 +276,11 @@
 					"pages": [
 						{
 							"href": "ultime-due-mosse.php",
-							"title": "Il finale perfetto (1)"
+							"title": "Il finale perfetto con due caselle vuote"
 						},
 						{
 							"href": "tre-o-piu-mosse.php",
-							"title": "Il finale perfetto (2)"
+							"title": "Il finale perfetto con tre o più caselle vuote"
 						},
 						{
 							"href": "parita.php",
@@ -293,10 +293,6 @@
 						{
 							"href": "sequenze-indipendenti.php",
 							"title": "Sequenze indipendenti e non indipendenti"
-						},
-						{
-							"href": "ultime-mosse-sicure.php",
-							"title": "Le ultime mosse sicure"
 						},
 						{
 							"href": "complessita-othello.php",

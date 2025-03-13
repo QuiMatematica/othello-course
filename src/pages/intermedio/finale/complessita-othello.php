@@ -1,6 +1,6 @@
 <h1>La complessità dell'Othello</h1>
 
-<h2>Cosa intendo per complessità</h2>
+<h2>Cosa intendiamo per complessità</h2>
 
 <p>Il concetto di complessità deriva dal mondo dell'informatica e in particolare
 della "ricerca operativa".</p>
@@ -18,13 +18,18 @@ operazioni devo compiere per verificare se un dato numero <i>x</i> è
 presente tra quelli dati? Nel caso peggiore (ovvero il numero non è presente),
 dovrò eseguire <i>n</i> confronti tra i numeri dell'insieme e <i>x</i>.
 
-<p>Similmente, <b>la complessità dell'Othello è data dal numero
+<p>Se invece i numeri di partenza sono ordinati, possiamo partire dal centro e capire se il numero <i>x</i>
+che cerchiamo si trova nella prima o nella seconda metà dell'elenco. Capito in quale metà si trova, ripetiamo
+il procedimento fino a individuarlo. Il numero di confronti necessari è inferiore, per l'esattezza è al massimo
+log<sub>2</sub><i>n</i>.</p>
+
+<p>Analogamente, <b>la complessità dell'Othello è data dal numero
 di operazioni necessarie per trovare la partita perfetta</b>, quella che rappresenta
-il finale perfetto analizzato fin dalla prima mossa.</p>
+il finale perfetto calcolato dalla prima mossa.</p>
 
 <h2>60!</h2>
 
-<p><a href="tre-o-piu-mosse.php">All'inizio di questo capitolo</a> abbiamo capito
+<p><a href="tre-o-piu-mosse.php">All'inizio di questo capitolo</a> abbiamo visto
 come si calcola il finale perfetto a partire da una posizione. A questo punto
 facciamo queste osservazioni:</p>
 
@@ -43,9 +48,9 @@ facciamo queste osservazioni:</p>
   <li>...</li>
 </ul>
 
-<p>Generalizzando, abbiamo che alla <i>n</i>-esima mossa ci sono
-60 - <i>n</i> caselle vuote (non 64 - n perché si parte con 4 caselle già
-occupate) e quindi 60 - <i>n</i> possibili mosse. Ripetendo a ritroso fino
+<p>Generalizzando, alla <i>n</i>-esima mossa ci sono
+    <b>60 - <i>n</i></b> caselle vuote (non 64 - n perché si parte con 4 caselle già
+    occupate) e quindi <b>60 - <i>n</i></b> possibili mosse. Ripetendo a ritroso fino
 alla prima mossa questo ragionamento abbiamo che il numero totale di sequenze
 possibili è dato da:</p>
 
@@ -65,14 +70,14 @@ possibili è dato da:</p>
 
 <h2>Trovare la partita perfetta (1)</h2>
 
-<p>Immagina ora di avere un calcolatore che riesca a costruire 1000 miliardi di nodi
+<p>Immagina ora di avere un calcolatore in grado di calcolare 1000 miliardi di nodi
 dell'albero delle mosse in un secondo. Per costruire tutto l'albero ci
-impiegherò:</p>
+impiegherà:</p>
 
 <p class="text-center">8,321 ⋅ 10<sup>81</sup> nodi : 10<sup>12</sup> nodi/secondo =
 8,321 ⋅ 10<sup>69</sup> secondi = 2,639 ⋅ 10<sup>62</sup> anni</p>
 
-<p>Uhm... un po' troppo, no?...</p>
+<p>Decisamente troppo tempo!</p>
 
 <p>In effetti questa è la logica del fattoriale: se, per esempio, per calcolare
 l'albero con 15 caselle libere ci metti 1 secondo, per calcolare l'albero con
@@ -91,7 +96,7 @@ e di molto. Alla prima mossa, quando ci sono 60 caselle libere, abbiamo conteggi
 è assai difficile che alla <i>n</i>-esima mossa ci siano 60 - <i>n</i> mosse
 giocabili.</p>
 
-<p>C'è inoltre una seconda pecca, più sottile. Se potessimo calcolare tutte le mosse,
+<p>C'è inoltre un secondo difetto, più sottile. Se potessimo calcolare tutte le mosse,
 troveremmo spesso posizioni uguali in nodi diversi dell'albero. In quel
 caso ci sarà sufficiente calcolare le rimanenti mosse una sola volta.</p>
 
@@ -100,14 +105,19 @@ l'albero delle mosse troveremo sicuramente tutte le posizioni ottenibili.</p>
 
 <p>Proviamo allora a contare le posizioni possibili.</p>
 
-<p>Ciascuna casella può trovarsi in tre possibili stati: vuota, occupata da una
-pedina che mostra il lato nero, occupata da una pedina che mostra il lato bianco.</p>
+<p>Ciascuna casella può trovarsi in tre possibili stati:</p>
+<ul>
+    <li>vuota;</li>
+    <li>occupata da una pedina che mostra il lato nero;</li>
+    <li>occupata da una pedina che mostra il lato bianco.</li>
+</ul>
 
 <p>In un'ipotetica scacchiera di due caselle avremo 9 posizioni possibili: per
 ciascuno degli stati possibili della prima (che sono tre), la seconda ha tre
-stati possibili. 3 ⋅ 3 = 9. In un'ipotetica scacchiera di tre caselle, per ciascuno
+    stati possibili. <b>3 ⋅ 3 = 9</b>.</p>
+<p>In un'ipotetica scacchiera di tre caselle, per ciascuno
 degli stati possibili della prima (che sono sempre tre), le altre due avrebbero
-9 stati possibili, per un totale di 3 ⋅ 9 = 27.</p>
+    9 stati possibili, per un totale di <b>3 ⋅ 9 = 27</b>.</p>
 
 <p>Generalizziamo per una scacchiera di 64 caselle raggiungiamo il numero di:</p>
 
@@ -140,22 +150,22 @@ impiegherebbe:</p>
 <p>Per ora non mi pare il caso di tentare calcoli ancora più precisi. Tanto
 credo che il numero di posizioni possibili sia comunque enorme!</p>
 
-<h2>Othello 6 x 6</h2>
+<h2>Othello 6×6</h2>
 
 <p>E con una scacchiera più piccola? Beh, le cose cambiano molto!</p>
 
-<p>Una variante simpatica dell'Othello é quella di utilizzare una tavola 6 x 6.</p>
+<p>Una variante simpatica dell'Othello é quella di utilizzare una tavola 6×6.</p>
 
 <p>Con il nostro calcolo sovrabbondante il numero di mosse possibili è:</p>
 
-<p class="text-center">3<sup>36</sup> = 150094635296999121</p>
+<p class="text-center">3<sup>36</sup> = 150.094.635.296.999.121</p>
 
 <p>che un (più reale) calcolatore che calcola 1 milione di nodi al secondo
 analizza in:</p>
 
-<p class="text-center">150094635 secondi = 4,8 anni</p>
+<p class="text-center">150.094.635 secondi = 4,8 anni</p>
 
-<p>Beh, dell'Othello 6 ⋅ 6 è stata calcolata la partita perfetta (in meno di 4 anni,
+<p>Beh, dell'Othello 6×6 è stata calcolata la partita perfetta (in meno di 4 anni,
 ovviamente) e si è scoperto che il bianco vince per 20 a 16. Se invece si mettono
 le quattro pedine iniziali parallele il bianco vince per 19 a 17.</p>
 
@@ -176,4 +186,4 @@ tutti i finali perfetti di tutte le posizioni.</p>
 E non è ancora stato risolto il Go, che, tra i giochi che conosco, è sicuramente quello con complessità più
 elevata, pari a 3<sup>(19 ⋅ 19)</sup>.</p>
 
-<p>Ma i computer sono ormai imbattibili in tutti questi giochi. E di questo parleremo più avanti in un apposito capitolo.</p>
+<p>Ma i computer sono ormai imbattibili in tutti questi giochi. E di questo parleremo in un apposito capitolo.</p>

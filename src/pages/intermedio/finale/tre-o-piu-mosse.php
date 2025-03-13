@@ -55,7 +55,7 @@ verso la radice.</p>
 <ul>
     <li>In queste posizioni il bianco ha una sola mossa obbligata.</li>
     <li>Questo significa che, se il bianco arriva in uno di questi nodi, dovrà
-        necessariamente giocare l'unico ramo disponibile.</li>>
+        necessariamente giocare l'unico ramo disponibile.</li>
     <li>Possiamo dunque associare a tali nodi il punteggio finale (figura 2).</li>
 </ul>
 

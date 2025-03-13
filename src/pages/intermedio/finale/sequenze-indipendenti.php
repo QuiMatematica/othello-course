@@ -11,17 +11,23 @@
 	</div>
 </div>
 
-<p>Il compito è sicuramente semplificato per il fatto che il nero ha solo due mosse.
-    E se hai calcolato correttamente ti sarai accorto che sia la mossa A2 sia la mossa H7 conducono alla vittoria del
-nero per 35 a 29. Ma ora riguarda il diagramma. Perché il risultato è lo stesso per entrambi le sequenze?</p>
+<p>Il nero ha solo due mosse a disposizione: <b>A2</b> e <b>H7</b>.</p>
+<p>Se hai calcolato correttamente, avrai capito che entrambe le mosse portano alla vittoria del
+nero per 35 a 29. Ma perché il risultato è lo stesso in entrambe le sequenze?</p>
 
-<p>Se il nero gioca in A2, il bianco risponde in A1 per sfruttare la parità.
-    Se il nero gioca in H7, il bianco risponde in H8 per sfruttare la parità.
-    E queste coppie di botta-risposta avvengono qualunque sia la prima mossa del nero.</p>
+<p>La risposta del bianco è legata alla mossa del nero:</p>
+<ul>
+    <li>se il nero gioca in <b>A2</b>, il bianco risponde in <b>A1</b> per sfruttare la parità;</li>
+    <li>se il nero gioca in <b>H7</b>, il bianco risponde in <b>H8</b> per sfruttare la parità.</li>
+</ul>
 
-<p>Inoltre, ed è qui che volevamo arrivare, le due mosse del nero non si influenzano alcun modo.
-Se il nero gioca in A2, questa pedina e le pedine girate (B3, C4 e D5) non cambiano l'effetto della mossa in H7.
-Se invece il nero gioca in H7, questa pedina e la pedina girata (G6) non cambiano l'effetto della mossa in A6.</p>
+<p>Le due mosse <b>non si influenzano</b>:</p>
+<ul>
+    <li>se il nero gioca in <b>A2</b>, la pedina posizionata e le pedine girate (<b>B3</b>, <b>C4</b> e <b>D5</b>) non
+        cambiano l'effetto della mossa in <b>H7</b>;</li>
+    <li>se il nero gioca in <b>H7</b>, la pedina posizionata e la pedina girata (<b>G6</b>) non cambiano l'effetto
+        della mossa in <b>A6</b>.</li>
+</ul>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
@@ -30,11 +36,11 @@ Se invece il nero gioca in H7, questa pedina e la pedina girata (G6) non cambian
 	</div>
 </div>
 
-<p>&Egrave; importante riconoscere quando due sequenze sono indipendenti perché permettono di semplificare la
-determinazione del finale perfetto.</p>
-
-<p>Ma è ancora più importante determinare quando due sequenze <b>NON sono indipendenti</b>, perché la loro dipendenza
-DEVE essere sfruttata per guadagnare il maggior numero possibile di pedine.</p>
+<p>&Egrave; importante riconoscere se due sequenze sono indipendenti o meno, perchè:</p>
+<ul>
+    <li>se <b>sono indipendenti</b>, il risultato sarà lo stesso qualunque mossa sceglieremo;</li>
+    <li>se <b>non sono indipendenti</b>, possiamo sfruttare questa dipendenza per massimizzare il risultato finale.</li>
+</ul>
 
 <p>Nel diagramma 2 è stata cambiata una sola pedina rispetto al diagramma 1. Prova di nuovo a calcolare il finale
     perfetto.</p>
@@ -48,14 +54,23 @@ DEVE essere sfruttata per guadagnare il maggior numero possibile di pedine.</p>
 	</div>
 </div>
 
-<p>La mossa in H7 conduce alla vittoria del bianco per 33 a 31.
-    Mentre la mossa in A2 conduce alla vittoria del nero per 36 a 28. Perché questa differenza?</p>
+<ul>
+    <li>Se il nero muove in <b>H7</b>, il bianco vince per 33 a 31.</li>
+    <li>Se il nero muove in <b>A2</b>, il nero vince per 36 a 28.</li>
+</ul>
 
-<p>Se il nero gioca in H7, il bianco gioca in H8 per sfruttare la parità. Con questa mossa gira anche la pedina G8.
-Ora il nero gioca in A2, ma volta solo la pedina in A3 e non volta alcuna pedina in diagonale (te ne eri accorto?).</p>
+<p>Perché questa differenza?</p>
 
-<p>Se invece il nero inizia giocando in A2, volta subito le pedine della diagonale B2-F7, pedine che il bianco non riesce
-più a voltare. E saranno queste pedine a garantirgli la vittoria.</p>
+<ul>
+    <li>Se il nero gioca in <b>H7</b>, il bianco gioca in <b>H8</b> per sfruttare la parità. Con questa mossa gira
+        anche la pedina <b>G8</b>. Poi il nero gioca in <b>A2</b>, ma volta solo la pedina in <b>A3</b> e non volta
+        alcuna pedina in diagonale.</li>
+    <li>Se il nero gioca in <b>A2</b>, volta subito le pedine della diagonale <b>B2-F7</b>, pedine che il bianco non riesce
+        più a voltare. E saranno queste pedine a garantirgli la vittoria.</li>
+</ul>
+<p></p>
+
+<p></p>
 
 <p>Volutamente i diagrammi 1 e 2 di questa pagina non sono interattivi e non ti permettono di giocare le mosse per
 vederne l'effetto. Questo perché è importante imparare a valutare queste situazioni senza toccare la scacchiera e

@@ -49,22 +49,22 @@ facciamo queste osservazioni:</p>
 </ul>
 
 <p>Generalizzando, alla <i>n</i>-esima mossa ci sono
-    <b>60 - <i>n</i></b> caselle vuote (non 64 - n perché si parte con 4 caselle già
+    <b>60 - <i>n</i></b> caselle vuote (non 64 - <i>n</i> perché si parte con 4 caselle già
     occupate) e quindi <b>60 - <i>n</i></b> possibili mosse. Ripetendo a ritroso fino
 alla prima mossa questo ragionamento abbiamo che il numero totale di sequenze
 possibili è dato da:</p>
 
-<p class="text-center">60 ⋅ 59 ⋅ 58 ⋅ ... ⋅ 4 ⋅ 3 ⋅ 2 ⋅ 1</p>
+<p class="text-center"><b>60 ⋅ 59 ⋅ 58 ⋅ ... ⋅ 4 ⋅ 3 ⋅ 2 ⋅ 1</b></p>
 
 <p>Questa catene di moltiplicazioni è "sintetizzabile" in:</p>
 
-<p class="text-center">60!</p>
+<p class="text-center"><b>60!</b></p>
 
 <p>dove il punto esclativo "!" indica l'operazione di fattoriale. Quindi il numero di sequenze possibili è "60 fattoriale".</p>
 
 <p>Confessa che muori dalla voglia di sapere quanto fa 60!... Ebbene:</p>
 
-<p class="text-center">60! ≃ 8,321 ⋅ 10<sup>81</sup></p>
+<p class="text-center"><b>60! ≃ 8,321 ⋅ 10<sup>81</sup></b></p>
 
 <p>come dire, un 8 seguito da 81 zeri!!!</p>
 
@@ -75,7 +75,7 @@ dell'albero delle mosse in un secondo. Per costruire tutto l'albero ci
 impiegherà:</p>
 
 <p class="text-center">8,321 ⋅ 10<sup>81</sup> nodi : 10<sup>12</sup> nodi/secondo =
-8,321 ⋅ 10<sup>69</sup> secondi = 2,639 ⋅ 10<sup>62</sup> anni</p>
+8,321 ⋅ 10<sup>69</sup> secondi = <b>2,639 ⋅ 10<sup>62</sup> anni</b></p>
 
 <p>Decisamente troppo tempo!</p>
 
@@ -121,13 +121,13 @@ degli stati possibili della prima (che sono sempre tre), le altre due avrebbero
 
 <p>Generalizziamo per una scacchiera di 64 caselle raggiungiamo il numero di:</p>
 
-<p class="text-center">3<sup>64</sup></p>
+<p class="text-center"><b>3<sup>64</sup></b></p>
 
 <p>stati possibili.</p>
 
 <p>Ok, ok, ti dico subito quanto fa:</p>
 
-<p class="text-center">3<sup>64</sup> = 3,434  ⋅ 10<sup>30</sup></p>
+<p class="text-center"><b>3<sup>64</sup> = 3,434  ⋅ 10<sup>30</sup></b></p>
 
 <p>Molti meno rispetto a quelli precedenti... ma pur sempre tantissimi!</p>
 
@@ -143,7 +143,7 @@ miliardi di posizioni in un secondo, per calcolare tutte le posizioni possibili
 impiegherebbe:</p>
 
 <p class="text-center">3,434 ⋅ 10<sup>30</sup> nodi : 10<sup>12</sup> nodi/secondo =
-3,434 ⋅ 10<sup>18</sup> secondi = 1,089 ⋅ 10<sup>11</sup> anni</p>
+3,434 ⋅ 10<sup>18</sup> secondi = <b>1,089 ⋅ 10<sup>11</sup> anni</b></p>
 
 <p>Molto meglio... :-) Ma ancora troppo!!!</p>
 
@@ -158,12 +158,12 @@ credo che il numero di posizioni possibili sia comunque enorme!</p>
 
 <p>Con il nostro calcolo sovrabbondante il numero di mosse possibili è:</p>
 
-<p class="text-center">3<sup>36</sup> = 150.094.635.296.999.121</p>
+<p class="text-center"><b>3<sup>36</sup> = 150.094.635.296.999.121</b></p>
 
 <p>che un (più reale) calcolatore che calcola 1 milione di nodi al secondo
 analizza in:</p>
 
-<p class="text-center">150.094.635 secondi = 4,8 anni</p>
+<p class="text-center">150.094.635 secondi = <b>4,8 anni</b></p>
 
 <p>Beh, dell'Othello 6×6 è stata calcolata la partita perfetta (in meno di 4 anni,
 ovviamente) e si è scoperto che il bianco vince per 20 a 16. Se invece si mettono

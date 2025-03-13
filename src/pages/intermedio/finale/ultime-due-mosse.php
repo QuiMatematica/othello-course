@@ -77,9 +77,9 @@ possibili.</p>
 il nero ha 34 pedine, il bianco 28. Vediamo insieme cosa succede nella 
 sequenza del finale perfetto.</p>
 
-<p>Se il nero gioca in A7, aggiunge una pedina sulla tavola e gira 3 pedine (B7, C7 e D7).
+<p>Se il nero gioca in <b>A7</b>, aggiunge una pedina sulla tavola e gira 3 pedine (<b>B7</b>, <b>C7</b> e <b>D7</b>).
     Poi il bianco gioca in
-A8 e gira 5 pedine (B8, C8, B7 che è appena stata girata dal nero, C6 e D5).</p>
+<b>A8</b> e gira 5 pedine (<b>B8</b>, <b>C8</b>, <b>B7</b> che è appena stata girata dal nero, <b>C6</b> e <b>D5</b>).</p>
 
 <p>Volendo calcolare quante pedine avrà alla fine il nero, bisogna fare questo
 conteggio:</p>
@@ -121,7 +121,7 @@ pedine giocata. Alla mossa del bianco, invece, non sottraiamo la pedina giocata
 perché non era del nero.</p>
 
 <p>Ti suggerisco come esercizio di provare a calcolare il risultato finale
-per l'altra sequenza di mosse (A8, A7). Sai già che deve risultare un pareggio.</p>
+per l'altra sequenza di mosse (<b>A8 → A7</b>). Sai già che deve risultare un pareggio.</p>
 
 <h2>Tocca a te</h2>
 

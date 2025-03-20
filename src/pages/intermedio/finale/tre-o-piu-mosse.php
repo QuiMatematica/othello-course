@@ -68,7 +68,7 @@ verso la radice.</p>
 	</div>
 </div>
 
-<h3>Analisi dei noi A, B e C</h3>
+<h3>Analisi dei nodi A, B e C</h3>
 <ul>
     <li><b>Nodo A:</b> il nero ha due possibilità:
         <ul>
@@ -128,6 +128,56 @@ verso la radice.</p>
 		Figura 2: analisi del primo livello e finale perfetto.
 	</div>
 </div>
+
+<h2>Come un essere umano calcola il finale perfetto</h2>
+
+<p>Il procedimento che ti ho spiegato rispecchia il modo in cui i computer calcolano il finale perfetto.</p>
+<p>Per sintetizzare, il processo usato dai computer è di tipo <i>bottom-up</i>, perché parte dal fondo dell'albero
+delle mosse e confronta i risultati delle singole sequenze risalendo l'albero.</p>
+
+<p>Noi esseri umani abbiamo bisogno di un processo equivalente, ma che sia maggiormente alla nostra portata.
+Un processo che non ci costringa a ricordare tutte le alternative. Abbiamo bisogno di un processo <i>top-down</i>:
+che parta dall'alto (la posizione che abbiamo davanti) e ci permetta di capire il risultato finale.</p>
+
+<p>Per comodità di analisi riporto nel diagramma 2 la stessa posizione del diagramma 1, ma questa volta non potrai
+giocare le mosse e proveremo a capire il finale perfetto del bianco senza giocare le mosse.</p>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="free-game-board" data-file="tre-o-piu-mosse-1.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 2: mossa al bianco.
+	</div>
+</div>
+
+<p>Tocca al bianco; ci sono tre caselle vuote; e il bianco può giocare in tutte e tre le caselle. Analizziamo le
+alternative una alla volta.</p>
+
+<ul>
+    <li>Il bianco gioca in <b>G1</b>. Contiamo quante pedine ottiene con questa mossa: aggiunge una pedina e ne volta
+        una (<b>F1</b>). Quindi <b>+2</b>. Tocca al nero che ha due alternative.
+        <ul>
+            <li>Il nero gioca in <b>G2</b>. Il bianco perde le pedine da <b>G3</b> a <b>G7</b>, quindi <b>-5</b>.
+                Tocca al bianco che ha la mossa obbligata.
+                <ul>
+                    <li>Il bianco gioca in <b>H1</b>. Aggiunge una pedina e volta pedine in verticale e in diagonale:
+                        <b>+7</b>. Sommiamo le variazioni: <b>+2 -5 +7 = +4</b>.</li>
+                </ul>
+            </li>
+            <li>Il nero gioca in <b>H1</b>. Il bianco perde le pedine da <b>B2</b> a <b>G2</b>, quindi <b>-6</b>.
+                Tocca al bianco che ha la mossa obbligata.
+                <ul>
+                    <li>Il bianco gioca in <b>G2</b>. Aggiunge una pedina e volta pedine in orizzontale e in diagonale:
+                        <b>+5</b>. Sommiamo le variazioni: <b>+2 -6 +5 = +1</b>.</li>
+                </ul>
+            </li>
+            <li>Tra le due alternative il nero sceglie quella più vantaggiosa per lui, quindi sceglie di muovere in
+            <b>H1</b>. Quindi la mossa <b>G1</b> del bianco consente di guadagnare 1 pedina rispetto alla situazione
+                attuale: troppo poco per vincere.</li>
+        </ul>
+    </li>
+</ul>
 
 <h2>Il finale perfetto con più caselle vuote</h2>
 

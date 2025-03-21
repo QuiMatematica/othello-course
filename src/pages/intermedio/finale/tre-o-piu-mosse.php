@@ -140,11 +140,11 @@ Un processo che non ci costringa a ricordare tutte le alternative. Abbiamo bisog
 che parta dall'alto (la posizione che abbiamo davanti) e ci permetta di capire il risultato finale.</p>
 
 <p>Per comodità di analisi riporto nel diagramma 2 la stessa posizione del diagramma 1, ma questa volta non potrai
-giocare le mosse e proveremo a capire il finale perfetto del bianco senza giocare le mosse.</p>
+giocare le mosse e proveremo a capire il finale perfetto del bianco senza piazzare nè girare le pedine.</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">
-		<div class="free-game-board" data-file="tre-o-piu-mosse-1.json"></div>
+		<div class="match-file-board" data-file="tre-o-piu-mosse-1.json"></div>
 	</div>
 	<div class="card-footer text-body-secondary text-center">
 		Diagramma 2: mossa al bianco.
@@ -154,37 +154,93 @@ giocare le mosse e proveremo a capire il finale perfetto del bianco senza giocar
 <p>Tocca al bianco; ci sono tre caselle vuote; e il bianco può giocare in tutte e tre le caselle. Analizziamo le
 alternative una alla volta.</p>
 
+<div class="border-start border-4 border-primary ps-3">
+    <p>Il bianco gioca in <b>G1</b>.</p>
+    <p>
+        Contiamo quante pedine ottiene il bianco con questa mossa:
+        aggiunge la pedina <b>G1</b> e volta la pedina in <b>F1</b>.
+        Quindi <b>+2</b>.</p>
+    <p>Tocca al nero che ha due alternative: <b>G2</b> e <b>H1</b>.</p>
+
+    <p>Se il nero gioca in <b>G2</b>, il bianco perde le pedine da <b>G3</b> a <b>G7</b>, quindi <b>-5</b>.
+        Tocca al bianco che ha una mossa obbligata in <b>H1</b>.
+        Con questa mossa piazza una pedina e volta 2 pedine in verticale e 4 in diagonale; quindi questa mossa vale <b>+7</b>.
+        Quindi con la sequenza <b>G1 → G2 → H1</b> il bianco guadagna <b>+2 -5 +7 = +4</b> pedine rispetto alla posizione di partenza.</p>
+
+    <p>Se invece il nero gioca in <b>H1</b>, il bianco perde le pedine da <b>B1</b> a <b>G1</b>, quindi <b>-6</b>.
+        Tocca al bianco che ha la mossa obbligata in <b>G2</b>.
+        Con questa mossa piazza una pedina e volta una pedina in orizzontale e 3 in diagonale; quindi questa mossa vale <b>+5</b>.
+        Quindi con la sequenza <b>G1 → H1 → G2</b> il bianco guadagna <b>+2 -6 +5 = +1</b> pedina rispetto alla posizione di partenza..</p>
+
+    <p>Tra le due alternative il nero deve scegliere quella più vantaggiosa per lui, quindi sceglierà di muovere in <b>H1</b>.
+        Quindi, giocando in <b>G1</b>, il bianco guadagnerà 1 pedina rispetto alla situazione attuale. Al momento ha 30 pedine,
+        quindi perderebbe per 33 a 31.</p>
+</div>
+
+<p>Con la prima mossa analizzata il bianco non vince, quindi è necessario che proceda con le altre possibilità.</p>
+
+<div class="border-start border-4 border-primary ps-3">
+    <p>Il bianco gioca in <b>G2</b>.</p>
+    <p>
+        Contiamo quante pedine ottiene il bianco con questa mossa:
+        aggiunge la pedina <b>G2</b> e volta le pedina <b>F2</b>, <b>F3</b>, <b>E4</b> e <b>D5</b>.
+        Quindi <b>+5</b>.</p>
+    <p>Tocca al nero che ha due alternative: <b>G1</b> e <b>H1</b>.</p>
+
+    <p>Se il nero gioca in <b>G1</b>, il bianco perde le pedine da <b>G2</b> a <b>G7</b> e la pedina <b>F2</b>, quindi <b>-7</b>.
+        Tocca al bianco che ha una mossa obbligata in <b>H1</b>.
+        Con questa mossa piazza una pedina e volta 2 pedine in verticale, 2 in orizzontale e una in diagonale; quindi questa mossa vale <b>+6</b>.
+        Quindi con la sequenza <b>G2 → G1 → H1</b> il bianco guadagna <b>+5 -7 +6 = +4</b> pedine rispetto alla posizione di partenza.</p>
+
+    <p>Se invece il nero gioca in <b>H1</b>, il bianco perde le pedine da <b>C6</b> a <b>G2</b>, quindi <b>-5</b>.
+        Tocca al bianco che ha la mossa obbligata in <b>G1</b>.
+        Con questa mossa piazza una pedina e volta una pedina in orizzontale e una in verticale; quindi questa mossa vale <b>+3</b>.
+        Quindi con la sequenza <b>G2 → H1 → G1</b> il bianco guadagna <b>+5 -5 +3 = +3</b> pedine rispetto alla posizione di partenza.</p>
+
+    <p>Tra le due alternative il nero deve scegliere quella più vantaggiosa per lui, quindi sceglierà di muovere in <b>H1</b>.
+        Quindi, giocando in <b>G2</b>, il bianco guadagnerà 3 pedine rispetto alla situazione attuale.
+        Al momento ha 30 pedine, quindi vincerà per 33 a 31.</p>
+</div>
+
+<p>Il nero ha trovato una mossa che gli garantisce la vittoria. Se si accontenta di vincere, può giocare <b>G2</b> e prepararsi a esultare.</p>
+
+<p>Tuttavia se vuole la certezza di aver scelto la mossa matematica migliore, deve analizzare anche l'ultima alterntiva.</p>
+
+<div class="border-start border-4 border-primary ps-3">
+    <p>Il bianco gioca in <b>H1</b>.</p>
+    <p>
+        Contiamo quante pedine ottiene il bianco con questa mossa:
+        aggiunge la pedina <b>H1</b> e volta le pedina <b>H2</b> e <b>H3</b>.
+        Quindi <b>+3</b>.</p>
+    <p>Tocca al nero che ha un'unica alternativa: <b>G2</b>.</p>
+
+    <p>Il nero gioca in <b>G2</b>; il bianco perde le pedine da <b>G3</b> a <b>G7</b>, quindi <b>-5</b>.
+        Tocca al bianco che ha una mossa obbligata in <b>G1</b>.
+        Con questa mossa piazza una pedina e volta solo la pedina <b>F1</b>; quindi questa mossa vale <b>+2</b>.
+        Quindi con la sequenza <b>H1 → G2 → G1</b> il bianco guadagna <b>+3 -5 +2 = 0</b> pedine rispetto alla posizione di partenza.</p>
+
+    <p>Quindi, giocando in <b>H1</b>, il bianco non guadagna pedine rispetto alla situazione attuale.
+        Al momento ha 30 pedine che non sono abbastanza per vincere.</p>
+</div>
+
+<p>Quindi è confermato: la mossa perfetta per il bianco è <b>G2</b>, che gli permette di vincere per 33 a 31.</p>
+
+<h2>Conclusioni</h2>
+
+<p><b>Attenzione!</b> Questo è il procedimento per calcolare il finale perfetto partendo una posizione e analizzando
+tutte le possibile sequenze. <b>Ma non è sempre necessario fare tutto questo lavoro.</b></p>
 <ul>
-    <li>Il bianco gioca in <b>G1</b>. Contiamo quante pedine ottiene con questa mossa: aggiunge una pedina e ne volta
-        una (<b>F1</b>). Quindi <b>+2</b>. Tocca al nero che ha due alternative.
-        <ul>
-            <li>Il nero gioca in <b>G2</b>. Il bianco perde le pedine da <b>G3</b> a <b>G7</b>, quindi <b>-5</b>.
-                Tocca al bianco che ha la mossa obbligata.
-                <ul>
-                    <li>Il bianco gioca in <b>H1</b>. Aggiunge una pedina e volta pedine in verticale e in diagonale:
-                        <b>+7</b>. Sommiamo le variazioni: <b>+2 -5 +7 = +4</b>.</li>
-                </ul>
-            </li>
-            <li>Il nero gioca in <b>H1</b>. Il bianco perde le pedine da <b>B2</b> a <b>G2</b>, quindi <b>-6</b>.
-                Tocca al bianco che ha la mossa obbligata.
-                <ul>
-                    <li>Il bianco gioca in <b>G2</b>. Aggiunge una pedina e volta pedine in orizzontale e in diagonale:
-                        <b>+5</b>. Sommiamo le variazioni: <b>+2 -6 +5 = +1</b>.</li>
-                </ul>
-            </li>
-            <li>Tra le due alternative il nero sceglie quella più vantaggiosa per lui, quindi sceglie di muovere in
-            <b>H1</b>. Quindi la mossa <b>G1</b> del bianco consente di guadagnare 1 pedina rispetto alla situazione
-                attuale: troppo poco per vincere.</li>
-        </ul>
-    </li>
+    <li>Se hai accumulato <u>un buon vantaggio</u> rispetto all'avversario, ti basta trovare una sequenza vincente e giocare quella.
+    Possiamo lasciare la perfezione ai computer... e ai giapponesi!</li>
+    <li>Se hai accumulato <u>poco vantaggio</u>, potresti utilizzare dei trucchi (in gergo matematico: <i>euristiche</i>)
+    per evitare di dover analizzare tutte le possibili sequenze. Li vedremo nelle prossime pagine.</li>
+    <li>Ma se la posizione è <u>molto equilibrata</u>... ahimè: non c'è altro da fare che calcolare tutte le sequenze.</li>
 </ul>
 
-<h2>Il finale perfetto con più caselle vuote</h2>
-
-<p>Ora che hai capito il metodo, possiamo applicarlo a qualsiasi numero di caselle vuote.
+<p>Ora che hai capito il metodo, puoi applicarlo a qualsiasi numero di caselle vuote.
     Naturalmente, più caselle libere ci sono, più grande sarà l’albero delle mosse.</p>
 
-<p>Gli umani trovano difficile analizzare alberi con più di 5-6 mosse.
+<p>Noi umani troviamo difficile analizzare alberi con più di 5-6 mosse.
 I computer, invece, possono calcolare finali perfetti con 20-25 caselle libere in pochi secondi.
 Ecco perché è così difficile battere un software nel finale di partita!</p>
 
@@ -198,7 +254,7 @@ Ecco perché è così difficile battere un software nel finale di partita!</p>
 
 <h2>Tocca a te</h2>
 
-<p>Il diagramma 2 mostra una posizione tratta dal libro di Brian Rose.
+<p>Il diagramma 3 mostra una posizione tratta dal libro di Brian Rose.
     Prenditi tutto il tempo necessario per costruire il diagramma di tutte le sequenze e
     determina il finale perfetto.
 E poi giocalo. Riuscirai a vincere questa partita?</p>
@@ -208,6 +264,6 @@ E poi giocalo. Riuscirai a vincere questa partita?</p>
 		<div class="sequence-board" data-file="tre-o-piu-mosse-2.json"></div>
 	</div>
 	<div class="card-footer text-body-secondary text-center">
-		Diagramma 2: trova il finale perfetto e giocalo.
+		Diagramma 3: trova il finale perfetto e giocalo.
 	</div>
 </div>

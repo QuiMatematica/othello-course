@@ -10,7 +10,7 @@ export default class SequenceControls extends Controls {
 
     constructor(container, counter, sourceFile) {
         super(container, counter);
-        this.addFirstButton().addPrevButton().addComputerButton().addShareButton();
+        this.addFirstButton().addComputerButton().addShareButton();
         if (sourceFile != null) {
             this.addGoToSourceButton();
         }
@@ -37,7 +37,7 @@ export default class SequenceControls extends Controls {
 
     update(position, humanColor) {
         this.first.disabled = (position.prevPosition == null);
-        this.prev.disabled = (position.prevPosition == null);
+        // this.prev.disabled = (position.prevPosition == null);
         this.computer.disabled = (position.nextPosition == null || position.turn === humanColor);
         // if (this.showComputerTooltip && !this.computer.disabled) {
         //     const tooltip = new bootstrap.Tooltip(this.computer);
@@ -55,7 +55,7 @@ export default class SequenceControls extends Controls {
 
     wrong() {
         this.first.disabled = false;
-        this.prev.disabled = false;
+        // this.prev.disabled = false;
         this.computer.disabled = true;
     }
 

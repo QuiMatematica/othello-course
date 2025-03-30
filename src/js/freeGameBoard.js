@@ -44,7 +44,7 @@ export default class FreeGameBoard {
     }
 
     move(square) {
-        const nextPosition = this.currentPosition.playStone(square);
+        const nextPosition = this.currentPosition.playStone(square, false);
         // If the play was valid, update the score.
         if (nextPosition != null) {
             this.currentPosition = nextPosition;

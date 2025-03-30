@@ -19,6 +19,8 @@ export default class SequenceBoard {
     comment;
     humanColor;
 
+    errorState;
+
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
         this.board = new Board(container, counter, sequenceBoardOnClick);
@@ -48,6 +50,7 @@ export default class SequenceBoard {
         this.currentPosition = Position.getPositionFromJSON(json);
 
         this.humanColor = this.currentPosition.turn;
+        this.errorState = false;
 
         if (this.currentPosition.nextPosition.nextPosition == null) {
             this.controls.prev.remove();
@@ -68,10 +71,15 @@ export default class SequenceBoard {
         if (nextPosition.nextPosition == null) {
             // QUIZ TERMINATO
             this.comment.setPositionComment(nextPosition);
-            this.addFinalComment();
+            if (this.errorState) {
+                this.addFinalErrorComment();
+            }
+            else {
+                this.addFinalComment();
+            }
         }
         else {
-            // IN QUIZ NON E' TERMINATO
+            // IL QUIZ NON E' TERMINATO
             this.comment.setPositionComment(nextPosition);
             if (nextPosition.turn === this.humanColor) {
                 this.addHumanComment();
@@ -99,6 +107,11 @@ export default class SequenceBoard {
         this.comment.addComment(comment);
     }
 
+    addFinalErrorComment() {
+        let comment = '<br><i class="bi bi-stars"></i><br><b>Analisi terminata.</b><br>Clicca <i class="bi bi-chevron-bar-left"></i> per riprovare.';
+        this.comment.addComment(comment);
+    }
+
     static italianColor(color) {
         return color === WHITE ? 'bianco' : 'nero';
     }
@@ -117,21 +130,47 @@ export default class SequenceBoard {
                 this.goToNextPosition();
             }
             else {
-                const correctPosition = this.currentPosition.nextPosition;
-                const wrongPosition = this.currentPosition.playStone(square);
+                this.errorState = true;
+                // Cerchiamo la mossa sbagliata tra gli errori caricati
+                let wrongPosition = this.currentPosition.searchError(square);
                 if (wrongPosition != null) {
-                    this.board.playPosition(wrongPosition);
-                    this.score.takeScore(wrongPosition);
-                    this.controls.wrong();
-                    this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span>");
-                    this.currentPosition.nextPosition = correctPosition;
-                    this.currentPosition = wrongPosition;
+                    console.log("Trovato errore tra quelli presenti nel file!");
+                    this.errorMove(wrongPosition);
                 }
                 else {
-                    this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa non legale.</span>");
+                    console.log("NON Trovato errore tra quelli presenti nel file!");
+                    const wrongPosition = this.currentPosition.playStone(square, true);
+                    if (wrongPosition == null) {
+                        // L'utente ha selezionato una mossa non valida.
+                        this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa non legale.</span>");
+                        this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br>");
+                        this.comment.addComment(this.currentPosition.comment);
+                        this.addHumanComment();
+                    } else {
+                        this.errorMove(wrongPosition);
+                    }
                 }
             }
         }
+    }
+
+    errorMove(wrongPosition) {
+        this.board.playPosition(wrongPosition);
+        this.score.takeScore(wrongPosition);
+        this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span><br>");
+        if (wrongPosition.comment != null) {
+            this.comment.addComment(wrongPosition.comment);
+            this.comment.addComment("<br><i class=\"bi bi-stars\"></i>");
+            if (wrongPosition.nextPosition != null) {
+                this.comment.addComment("<br>Clicca <i class=\"bi bi-caret-right-square\"></i> per analizzare l'errore.")
+            }
+            else{
+                this.comment.addComment("<br>Clicca <i class=\"bi bi-chevron-bar-left\"></i> per riprovare.");
+            }
+        }
+
+        this.controls.update(wrongPosition, null);
+        this.currentPosition = wrongPosition;
     }
 
     goToPreviousPosition() {
@@ -171,6 +210,7 @@ export default class SequenceBoard {
             this.controls.update(curPosition, this.humanColor);
             this.currentPosition = curPosition;
         }
+        this.errorState = false;
     }
 
     async share() {

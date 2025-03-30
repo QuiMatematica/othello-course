@@ -16,6 +16,8 @@ export default class Position {
     nextPosition;
     prevPosition;
 
+    errors;
+
     constructor(grid, turn) {
         this.grid = grid;
         this.turn = turn;
@@ -23,6 +25,7 @@ export default class Position {
         this.passCount = 0;
         this.checkValidMoves();
         this.comment = null;
+        this.errors = [];
     }
 
     static getEmptyPosition() {
@@ -94,15 +97,7 @@ export default class Position {
         position.comment = json.comment;
 
         if (json.moves != null) {
-            let curPosition = position;
-            json.moves.forEach((move) => {
-                const square = Square.fromString(move.move);
-                curPosition = curPosition.playStone(square);
-                if (curPosition == null) {
-                    console.log("La mossa ", move.move, " non è valida.")
-                }
-                curPosition.comment = move.comment;
-            });
+            Position.loadSequenzeFromJSON(position, json.moves);
         }
         else if (json.txt != null) {
             let curPosition = position;
@@ -110,11 +105,39 @@ export default class Position {
             for (let i = 0; i * 2 < txt.length; i++) {
                 const s = txt.substring(i * 2, i * 2 + 2);
                 const square = Square.fromString(s);
-                curPosition = curPosition.playStone(square);
+                curPosition = curPosition.playStone(square, false);
             }
         }
 
         return position;
+    }
+
+    static loadSequenzeFromJSON(curPosition, moves) {
+        moves.forEach((move) => {
+            Position.loadErrorSequenceFromJSON(curPosition, move);
+            const square = Square.fromString(move.move);
+            curPosition = curPosition.playStone(square, false);
+            if (curPosition == null) {
+                console.log("La mossa ", move.move, " non è valida.")
+            }
+            curPosition.comment = move.comment;
+        });
+    }
+
+    static loadErrorSequenceFromJSON(curPosition, move) {
+        if (move.errors != null) {
+            move.errors.forEach((error) => {
+                const square = Square.fromString(error.move);
+                curPosition = curPosition.playStone(square, true);
+                if (curPosition == null) {
+                    console.log("La mossa ", move.move, " (letta da errore) non è valida.")
+                }
+                curPosition.comment = error.comment;
+                if (error.moves != null) {
+                    Position.loadSequenzeFromJSON(curPosition, error.moves);
+                }
+            });
+        }
     }
 
     countStones() {
@@ -177,7 +200,7 @@ export default class Position {
         this.checkValidMoves();
     }
 
-    playStone(square) {
+    playStone(square, isError) {
         const x = square.x;
         const y = square.y;
         // Don't play if game is over.
@@ -216,15 +239,38 @@ export default class Position {
         const nextTurn = - this.turn;
 
         // Build the next position.
-        this.nextPosition = new Position(nextGrid, nextTurn);
+        let next = new Position(nextGrid, nextTurn);
         // Save the played position
-        this.nextPosition.played = new Square(x, y);
+        next.played = new Square(x, y);
         // Save the flipped stones
-        this.nextPosition.flipped = flipped;
+        next.flipped = flipped;
         // Link the next position to this one.
-        this.nextPosition.prevPosition = this;
+        next.prevPosition = this;
 
-        return this.nextPosition;
+        if (isError) {
+            // Add this position as error
+            this.errors.push(next);
+        }
+        else {
+            // Link this position to the next
+            this.nextPosition = next;
+        }
+
+        return next;
+    }
+
+    searchError(move) {
+        let found = null;
+        console.log("Entro in searchError")
+        this.errors.forEach((error) => {
+            console.log("Confronto " + move + " con " + error.played);
+            if (move.x === error.played.x && move.y === error.played.y) {
+                console.log("Restituisco l'errore trovato");
+                found = error;
+            }
+        });
+        console.log("Esco da searchError: " + found);
+        return found;
     }
 
     isValidPlay(x, y) {

@@ -128,13 +128,13 @@ export default class Position {
         if (move.errors != null) {
             move.errors.forEach((error) => {
                 const square = Square.fromString(error.move);
-                curPosition = curPosition.playStone(square, true);
-                if (curPosition == null) {
+                const errorPosition = curPosition.playStone(square, true);
+                if (errorPosition == null) {
                     console.log("La mossa ", move.move, " (letta da errore) non è valida.")
                 }
-                curPosition.comment = error.comment;
+                errorPosition.comment = error.comment;
                 if (error.moves != null) {
-                    Position.loadSequenzeFromJSON(curPosition, error.moves);
+                    Position.loadSequenzeFromJSON(errorPosition, error.moves);
                 }
             });
         }

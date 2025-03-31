@@ -19,7 +19,7 @@ export default class SequenceBoard {
     comment;
     humanColor;
 
-    errorState;
+    errorState = false;
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
@@ -81,15 +81,27 @@ export default class SequenceBoard {
         else {
             // IL QUIZ NON E' TERMINATO
             this.comment.setPositionComment(nextPosition);
-            if (nextPosition.turn === this.humanColor) {
+            if (this.errorState) {
+                this.addErrorComment();
+            }
+            else if (nextPosition.turn === this.humanColor) {
                 this.addHumanComment();
             }
             else {
                 this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br><b>Tocca al tuo avversario.</b><br>Clicca <i class=\"bi bi-caret-right-square\"></i> per vedere la sua mossa.");
             }
         }
-        this.controls.update(nextPosition, this.humanColor);
+        if (this.errorState) {
+            this.controls.update(nextPosition, null);
+        }
+        else {
+            this.controls.update(nextPosition, this.humanColor);
+        }
         this.currentPosition = nextPosition;
+    }
+
+    addErrorComment() {
+        this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br>Clicca <i class=\"bi bi-caret-right-square\"></i> per analizzare l'errore.")
     }
 
     addHumanComment() {
@@ -116,7 +128,6 @@ export default class SequenceBoard {
         return color === WHITE ? 'bianco' : 'nero';
     }
 
-
     moveComputer() {
         if (this.currentPosition.nextPosition != null) {
             this.goToNextPosition();
@@ -130,11 +141,11 @@ export default class SequenceBoard {
                 this.goToNextPosition();
             }
             else {
-                this.errorState = true;
                 // Cerchiamo la mossa sbagliata tra gli errori caricati
                 let wrongPosition = this.currentPosition.searchError(square);
                 if (wrongPosition != null) {
                     console.log("Trovato errore tra quelli presenti nel file!");
+                    this.errorState = true;
                     this.errorMove(wrongPosition);
                 }
                 else {
@@ -157,16 +168,15 @@ export default class SequenceBoard {
     errorMove(wrongPosition) {
         this.board.playPosition(wrongPosition);
         this.score.takeScore(wrongPosition);
-        this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span><br>");
+        this.comment.setComment("<span class=\"text-danger fw-bold\">Mossa errata.</span>");
         if (wrongPosition.comment != null) {
-            this.comment.addComment(wrongPosition.comment);
-            this.comment.addComment("<br><i class=\"bi bi-stars\"></i>");
-            if (wrongPosition.nextPosition != null) {
-                this.comment.addComment("<br>Clicca <i class=\"bi bi-caret-right-square\"></i> per analizzare l'errore.")
-            }
-            else{
-                this.comment.addComment("<br>Clicca <i class=\"bi bi-chevron-bar-left\"></i> per riprovare.");
-            }
+            this.comment.addComment("<br>" + wrongPosition.comment);
+        }
+        if (wrongPosition.nextPosition != null) {
+            this.addErrorComment();
+        }
+        else{
+            this.comment.addComment("<br><i class=\"bi bi-stars\"></i><br>Clicca <i class=\"bi bi-chevron-bar-left\"></i> per riprovare.");
         }
 
         this.controls.update(wrongPosition, null);

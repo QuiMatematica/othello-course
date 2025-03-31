@@ -13,7 +13,63 @@
   "moves": [
     {
       "move": "H8",
-      "comment": "Esatto: questa è la mossa migliore."
+      "comment": "Esatto: questa è la mossa migliore.",
+      "errors": [
+        {
+          "move": "A2",
+          "comment": "Non hai tenuto conto di come le mosse A2 e H8 si influenzino a vicenda. Scegliendo di muovere prima in A2, una pedina tornerà del bianco e questo ti porterà al pareggio.",
+          "moves": [
+            {
+              "move": "B2",
+              "comment": "Il bianco chiude lo spazio dispari."
+            },
+            {
+              "move": "H8",
+              "comment": "Cerchiamo di salvare il salvabile."
+            },
+            {
+              "move": "G7",
+              "comment": "La pedina F7 è tornata del bianco. Se scegli la sequenza corretta, tale pedina rimane nera. Hai pareggiato."
+            }
+          ]
+        },
+        {
+          "move": "B2",
+          "comment": "Questa mossa non ti garantisce abbastanza pedine per vincere.",
+          "moves": [
+            {
+              "move": "A2",
+              "comment": "Il bianco chiude lo spazio dispari."
+            },
+            {
+              "move": "H8",
+              "comment": "Cerchiamo di salvare il salvabile."
+            },
+            {
+              "move": "G7",
+              "comment": "Hai perso 34 a 30."
+            }
+          ]
+        },
+        {
+          "move": "G7",
+          "comment": "Questa mossa non ti garantisce abbastanza pedine per vincere.",
+          "moves": [
+            {
+              "move": "H8",
+              "comment": "Il bianco chiude lo spazio dispari."
+            },
+            {
+              "move": "A2",
+              "comment": "Cerchiamo di salvare il salvabile."
+            },
+            {
+              "move": "B2",
+              "comment": "Hai perso 34 a 30."
+            }
+          ]
+        }
+      ]
     },
     {
       "move": "G7",
@@ -21,7 +77,19 @@
     },
     {
       "move": "A2",
-      "comment": "Bravissimo!"
+      "comment": "Bravissimo!",
+      "errors": [
+        {
+          "move": "B2",
+          "comment": "Questa mossa non ti garantisce abbastanza pedine per vincere.",
+          "moves": [
+            {
+              "move": "A2",
+              "comment": "Hai perso 34 a 30."
+            }
+          ]
+        }
+      ]
     },
     {
       "move": "B2",

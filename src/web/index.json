@@ -301,6 +301,22 @@
 					]
 				}
 			]
+		},
+		{
+			"title": "Livello avanzato",
+			"href": "avanzato/",
+			"chapters": [
+				{
+					"href": "influenza/",
+					"title": "L'influenza",
+					"pages": [
+						{
+							"href": "definizione-influenza.php",
+							"title": "La definizione di influenza"
+						}
+					]
+				}
+			]
 		}
 	]
 }

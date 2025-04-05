@@ -1,0 +1,18 @@
+{
+  "position": [
+    "--------",
+    "-----O--",
+    "--OOOO##",
+    "-O#O#O##",
+    "##O#OO##",
+    "-##O#O##",
+    "--#O#O--",
+    "--OOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "D2",
+      "comment": "Il nero gira quattro delle sette pedine esterne bianche."
+    }
+  ]
+}

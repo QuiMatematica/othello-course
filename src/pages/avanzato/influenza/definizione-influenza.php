@@ -1,5 +1,5 @@
 <h1>La definizione di influenza</h1>
-<p><b>di Francesco Marconi, dall'articolo "Teoria dell'Othello" pubblicato su Othello News - anno X - n. 1 - 1994.</b></p>
+<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello</i>, Othello News - anno X - n. 1 - 1994.</b></p>
 
 <p>Un criterio guida nella scelta della mossa da giocare può essere quello di vedere il numero di mosse che essa lascia
     a noi e al nostro avversario. Cercheremo di raggiungere posizioni che ci lascino il maggior numero di mosse a
@@ -17,14 +17,23 @@ Ciò significa che:</p>
     <li>Provando a eseguire una mossa si nota come la nostra casa vuota dovrà confinare con una casa in cui sia
     presente una pedine avversaria nell'appropriata direzione. In generale esiste una correlazione tra quantità
     di pedine esterne avversarie e il numero di mosse a mia disposizione: all'aumentare di uno aumenta
-    anche l'altro. Sarà allora necessario, quando noi eseguiremo una mossa, far sì che non aumenti </li>
+    anche l'altro. Sarà allora necessario, quando noi eseguiremo una mossa, far sì che non aumenti
+    eccessivamente i numero di pedine esterne dell'avversario.</li>
+    <li>Una mossa può essere eseguita solo grazie a pedine proprie di appoggio già presenti. Va da sè che
+    tanto minore è il numero di pedine di appoggio in mio possesso, tanto minore tenderà a essere la
+    quantità di mosse a mia disposizione, e viceversa.</li>
 </ol>
 
-<p>TODO</p>
+<p>Vi sarete subito accorti che al punto 1 si afferma implicitamente che avere tante pedine non è cosa buona,
+mentre al punto 2 si affermar che avere tante pedine è una cosa buona. Ciò è dovuto al fatto che, in realtà,
+il nostro scopo dovrebbe essere quello di trovare un giusto equilibrio tra pedine esterne e pedine di appoggio.</p>
 
-<p>Prendiamo in esame i digrammi 1 e 2. In entrambi deve muovere il nero. In
-entrambi il nero e il bianco hanno lo stesso numero di pedine. Però nel diagramma
-1 il nero è in svantaggio. Cosa cambia tra le due posizioni?</p>
+<p>Chiariamo meglio questo concetto proseguendo nella nostra opera di generalizzazione e astrazione, identificando i
+metodi di approccio a una strategia di ottimizzazione delle proprie pedine esterne/d'appoggio.</p>
+
+<p>Lo facciamo prendendo in esame i digrammi 1 e 2. In entrambi deve muovere il nero. In
+entrambi le situazioni sia il nero che il bianco hanno lo stesso numero di pedine. Però nel diagramma
+1 il nero è in svantaggio, al contrario del diagramma 2. Cosa cambia tra le due posizioni?</p>
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
 	<div class="col">
@@ -53,119 +62,67 @@ entrambi il nero e il bianco hanno lo stesso numero di pedine. Però nel diagram
 	</div>
 </div>
 
-<p>Da quanto abbiamo visto nelle precedenti lezioni, puoi già affermare che nel
-diagramma 1 il nero è in svantaggio perché le sue pedine sono sparse, mentre
-nel diagramma 2 sono molto più compatte e controllano il centro della formazione.</p>
+<p>Notiamo ancora che il nero nel diagramma 1 ha ben 11 mosse contro le 10 del diagramma 2!
+Ancora le pedine di appoggio del nero sono 7 per il diagramma 1 e 9 per il diagramma 2.</p>
 
-<p>Quello che voglio ora sottolineare è che proprio questa diversa disposizione
-delle pedine fa sì che nel diagramma 1 il nero con una singola mossa rischia di
-girare contemporaneamente diverse pedine esterne dell'avversario, cosa che non si
-verifica nel diagramma 2. La situazione è esplicitata nel diagramma 3: con la mossa
-D2, per fare l'esempio più appariscente, il nero gira in una sola volta ben quattro
-delle sette pedine esterne bianche, togliendosi in questo modo un gran numero
-di mosse e dando origine a nuove pedine esterne questa volta a vantaggio del
-bianco.</p>
+<p>Ciò che però è radicalmente diverso tra le due posizioni, come probabilmente avrete già notato,
+non sono tanto dei parametri numerici come quelli sopraelencati, bensì il modo con cui sono dispose le pedine
+sulla scacchiera: nel diagramma 1 il nero con una singola mossa rischia di girare contemporaneamente
+diverse pedine esterne dell'avversario, cosa che non si veridica nel diagramma 2.</p>
 
-	<p align="center">
-	<img src="DallaPraticaAllaTeoria1.gif" width="231" height="231" alt="" border="0">
-	<br>
-	Diagramma 3: le direzioni in cui la mossa D2 gira pedine.
-	</p>
+<p>La situazione è esplicitata nel diagramma 3. Con la mossa <b>D2</b>, per fare l'esempio più appariscente,
+i nero gira in una sola volta ben quattro delle sette pedine esterne bianche, togliendosi in questo modo un
+gran numero di mosse e dando origine a nuove pedine esterne questa volta a vantaggio del bianco.</p>
 
-<p>In casi come questi si dice che il nero ha una grande <b>influenza</b> sulle pedine
-bianche.</p>
-
-<h2>Definizione di influenza</h2>
-
-<p>In una determinata una posizione, <b>una pedina X del colore C ha influenza
-su una casella Y</b> se il giocatore C può muovere in Y utilizzando X come
-pedina di sponda.</p>
-
-<p>In una determinata posizione, <b>l'influenza del colore C su una casella Y</b>
-è il numero di pedine sponda utilizzate dal giocatore C per muovere in Y.</p>
-
-<p>In una determinata posizione, <b>l'influenza del colore C</b> è data dalla media
-delle influenze di C sulle caselle in cui può giocare.</p>
-
-<p>Ti ricordo che una tua pedina è di sponda in una mossa se la utilizzi,
-insieme a quella che stai giocando, per girare le pedine avversarie.
-
-<p>Consideriamo i diagrammi 3 e 4 e calcoliamo
-l'influenza su ciascuna casella in cui il nero può giocare una mossa non rischiosa
-(escludo cioè le caselle X e le caselle C che danno con certezza un angolo)
-e quella globale del colore.</p>
-
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center" valign="bottom">
-<table border="1">
-  <tr><th>Mossa</th><th>Influenza</th></tr>
-  <tr><td align="center">E1</td><td align="center">1</td></tr>
-  <tr><td align="center">G1</td><td align="center">1</td></tr>
-  <tr><td align="center">C2</td><td align="center">2</td></tr>
-  <tr><td align="center">D2</td><td align="center">3</td></tr>
-  <tr><td align="center">E2</td><td align="center">3</td></tr>
-  <tr><td align="center">A3</td><td align="center">1</td></tr>
-  <tr><td align="center">B3</td><td align="center">2</td></tr>
-  <tr><td align="center">A4</td><td align="center">1</td></tr>
-  <tr><td align="center">media</td><td align="center">1,7</td></tr>
-</table>
-      </td>
-	  <td align="center" valign="bottom">
-<table border="1">
-  <tr><th>Mossa</th><th>Influenza</th></tr>
-  <tr><td align="center">F2</td><td align="center">1</td></tr>
-  <tr><td align="center">H2</td><td align="center">1</td></tr>
-  <tr><td align="center">A3</td><td align="center">1</td></tr>
-  <tr><td align="center">B6</td><td align="center">3</td></tr>
-  <tr><td align="center">media</td><td align="center">1,5</td></tr>
-</table>
-	  </td></tr>
-	  <tr><td align="center">
-		Tabella 1: l'influenza del nero nel diagramma 1.
-      </td>
-	  <td align="center">
-		Tabella 2: l'influenza del nero nel diagramma 2.
-	  </td></tr>
-	</table>
-	</p>
-
-<p>E' chiaro che per eseguire una mossa è indispensabile avere influenza sulla
-casella dove si vuole giocare. Ma se l'influenza sulla casella è alta la mossa
-sarà svantaggiosa perché girerà pedine in diverse direzioni, ne girerà tante e
-soprattutto girerà più di una pedina di appoggio, come nel caso della mossa D2
-o della mossa E2 nel diagramma 1.</p>
-
-<p>Possiamo quindi parlare di <b>influenza negativa</b> come di quell'influenza
-(possibilità di giocare in una casella) che tende a peggiorare la nostra
-posizione.</p>
-
-<p>Da tutto ciò deriva che un'alta influenza su una casella è un'influenza
-negativa. L'influenza del colore offre un parametro che, quando troppo elevato,
-ci dice che buona parte delle mosse sono negative e che, quindi, la posizione
-potrebbe non essere buona.</p>
-
-<p>A quanto ho precedentemente detto sulla
-<a href="../../StrategieFondamentali/LaMobilita/index.html">mobilità</a>, questo discorso
-aggiunge un legame più forte tra numero di mosse a disposizione e pedine di
-appoggio. Quando cioè abbiamo un'alta influenza su una casella significa che,
-oltre ad utilizzare più pedine di sponda, stiamo anche utilizzando più pedine
-di appoggio, quindi stiamo peggiorando la nostra mobilità. Quindi, un modo per
-utilizzare bene le pedine di appoggio a propria disposizione è giocare mosse
-con bassa influenza.</p>
-
-<p>Vediamo, per esempio, il diagramma 5: il bianco ha, verso nord, quattro pedine
-di appoggio a disposizione. Sembrerebbe che abbia quattro mosse a disposizione,
-invece no, perché anche con la mossa C2 (quella con influenza più bassa) gira
-due pedine di appoggio e quindi perde due possibilità con una mossa sola. Se
-la sua influenza fosse stata minore, tale da fargli girare un'unica pedina
-di appoggio, forse poteva giocare tutte e quattro le mosse.</p>
+<p>Diremo che il nero ha una grossa <b>influenza</b>.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
-        <div class="match-file-board" data-file="definizione-influenza-5.json"></div>
+        <div class="match-file-board" data-file="definizione-influenza-3.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-    	Diagramma 5: influenza, mobilità e pedine di appoggio.
+        Diagramma 3: effetto della mossa in D2.
     </div>
 </div>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Definizione</div>
+	<div class="card-body">
+		<p class="card-text">In una determinata posizione <b>l'influenza di una pedina X su una casa Y</b> è
+        la possibilità di eseguire una mossa nella casa Y avendo come pedina di appoggio la pedina X.</p>
+        <p class="card-text">L'<b>influenza su una casa Y</b> è il numero di pedine di appoggio all'atto
+        dell'esecuzione della mossa nella casa Y.</p>
+	</div>
+</div>
+
+<p>Per esempio nella posizione di partenza del diagramma 3:</p>
+<ul>
+    <li>le pedine <b>A5</b>, <b>D5</b> e <b>G5</b> hanno influenza sulla casa <b>D2</b>;</li>
+    <li>l'influenza sulla casa <b>D2</b> vale <b>3</b>.</li>
+</ul>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Definizione</div>
+	<div class="card-body">
+		<p class="card-text">Chiamiamo <b>influenza di un colore su un altro</b>, per esempio del nero sul bianco,
+            la quantità di pedine bianche che in media il nero potrebbe girare a ogni mossa.</p>
+	</div>
+</div>
+
+<p>Notiamo una cosa molto, molto importante; per poter eseguire una mossa, come ritroviamo nella definizione appena
+riportata, è indispensabile avere influenza su una casa. Per esempio, sempre nella posizione iniziale del diagramma 3, il bianco può
+eseguire la mossa in <b>B3</b> solo perché ha influenza su di essa (con la pedina <b>F7</b>).</p>
+
+<p>Ciò che però cambia tra l'influenza del bianco e quella del nero su <b>D2</b> è la grossa quantità di pedine
+esterne girate, e perciò, di conseguenza, il fatto che il nero dopo <b>D2</b> avrà trasformato tante pedine
+esterne da bianche in nere, ossia avrà aumentato il suo numero di pedine esterne.</p>
+
+<p>&Egrave; per questo che possiamo parlare di <b>influenza negativa</b> come di quell'influenza che tenderebbe
+a <i>peggiorare</i> la nostra posizione. Nel corso di queste pagine ogni volta che parlerò di influenza
+ne parlerò con accezione negativa, tranne quando sarà esplicitamente specificato.</p>
+
+<p>Ritroviamo perciò nell'influenza un parametro che, quando troppo elevato, indica quanto cattiva può essere
+la nostra posizione. Attenzione, ho detto può essere. Infatti studieremo posizioni in cui nonostante una grossa
+influenza un giocatore può avere ugualmente un notevole vantaggio. L'influenza, comunque, è come un tarlo
+che impedisce, ma solo a lungo termine, di perseguire una ottimizzazione tra pedine esterne e pedine di appoggio.
+&Egrave; un elemento negativo da limitare.</p>

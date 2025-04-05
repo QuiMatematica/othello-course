@@ -20,38 +20,38 @@ Ciò significa che:</p>
     anche l'altro. Sarà allora necessario, quando noi eseguiremo una mossa, far sì che non aumenti </li>
 </ol>
 
+<p>TODO</p>
+
 <p>Prendiamo in esame i digrammi 1 e 2. In entrambi deve muovere il nero. In
 entrambi il nero e il bianco hanno lo stesso numero di pedine. Però nel diagramma
 1 il nero è in svantaggio. Cosa cambia tra le due posizioni?</p>
 
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="-------------O----OOOO##-O#O#O####O#OO##-##O#O##--#O#O----OOOOO-">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="------------#-----###OOOOO####OOOOO####OO-OO##OO--O##O----O##O--">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 1: mossa al nero.
-      </td>
-	  <td align="center">
-		Diagramma 2: mossa al nero.
-	  </td></tr>
-	</table>
-	</p>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+	<div class="col">
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="definizione-influenza-1.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 1: mossa al nero.
+			</div>
+		</div>
+
+	</div>
+	<div class="col">
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="definizione-influenza-2.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 2: mossa al nero.
+			</div>
+		</div>
+
+	</div>
+</div>
 
 <p>Da quanto abbiamo visto nelle precedenti lezioni, puoi già affermare che nel
 diagramma 1 il nero è in svantaggio perché le sue pedine sono sparse, mentre
@@ -94,35 +94,6 @@ insieme a quella che stai giocando, per girare le pedine avversarie.
 l'influenza su ciascuna casella in cui il nero può giocare una mossa non rischiosa
 (escludo cioè le caselle X e le caselle C che danno con certezza un angolo)
 e quella globale del colore.</p>
-
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="-------------O----OOOO##-O#O#O####O#OO##-##O#O##--#O#O----OOOOO-">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="------------#-----###OOOOO####OOOOO####OO-OO##OO--O##O----O##O--">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 3: il nero ha più influenza.
-      </td>
-	  <td align="center">
-		Diagramma 4: il nero ha meno influenza.
-	  </td></tr>
-	</table>
-	</p>
 
 	<p align="center">
 	<table border="0" width="90%">
@@ -190,13 +161,11 @@ due pedine di appoggio e quindi perde due possibilità con una mossa sola. Se
 la sua influenza fosse stata minore, tale da fargli girare un'unica pedina
 di appoggio, forse poteva giocare tutte e quattro le mosse.</p>
 
-	<p align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="231" height="231"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-        <param name="function" value="static">
-        <param name="position" value="---------------OOO####OOOOOOO##OO#O#OO#OOOO###OOO-O##O-O--#####-">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	<br>
-	Diagramma 5: influenza, mobilità e pedine di appoggio.
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="definizione-influenza-5.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+    	Diagramma 5: influenza, mobilità e pedine di appoggio.
+    </div>
+</div>

@@ -1,6 +1,6 @@
 import { WHITE } from './position.js';
 import { BLACK } from './position.js';
-import {createStone, setAnimatingFlip, xmlns} from "./page";
+import {createSquare, createStone, setAnimatingFlip, xmlns} from "./page";
 
 export default class Board {
 
@@ -12,7 +12,7 @@ export default class Board {
 
     letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', '']
 
-    constructor(container, counter, onClickCallback) {
+    constructor(container, counter, stoneShape, onClickCallback) {
         this.container = container;
         this.counter = counter;
 
@@ -24,10 +24,10 @@ export default class Board {
         this.gameBoard.classList.add('gameBoard');
         this.gameBoardContainer.appendChild(this.gameBoard)
 
-        this.createBoard(onClickCallback)
+        this.createBoard(stoneShape, onClickCallback)
     }
 
-    createBoard(onClickCallback) {
+    createBoard(stoneShape, onClickCallback) {
         // Prima riga: riferimenti
         for (let x = 0; x < 10; ++x) {
             const div = document.createElement('div');
@@ -69,7 +69,12 @@ export default class Board {
 
                 // Add the stone itself, which will not show up until a black or white
                 // class is added to the square.
-                div.appendChild(createStone());
+                if (stoneShape == null) {
+                    div.appendChild(createStone());
+                }
+                else if (stoneShape === 'square') {
+                    div.appendChild(createSquare());
+                }
 
                 // Add the square to the DOM and to the 2D array.
                 this.gameBoard.appendChild(div);
@@ -265,6 +270,53 @@ export default class Board {
         const top = ya + 1 - padding;
 
         this.addSvgRect(left, top, delta_x, delta_y, color, false);
+    }
+
+    addArrow(startX, startY, endX, endY, color) {
+        const divNode = document.createElement('div');
+        divNode.style.position = 'absolute';
+        divNode.style.display = 'block';
+        divNode.style.left = '0';
+        divNode.style.top = '0';
+        divNode.style.width = 'calc(var(--square-size)*10)';
+        divNode.style.height = 'calc(var(--square-size)*10)';
+
+        const svg = document.createElementNS(xmlns, 'svg');
+        svg.setAttribute('viewBox', '0 0 1000 1000');
+
+        const arrowLen = 6
+        const arrowWid = 4
+
+        const defs = document.createElementNS(xmlns, "defs");
+        const marker = document.createElementNS(xmlns, "marker");
+        marker.setAttribute("id", "arrowhead");
+        marker.setAttribute("markerWidth", String(arrowLen));
+        marker.setAttribute("markerHeight", String(arrowWid));
+        marker.setAttribute("refX", String(arrowLen));
+        marker.setAttribute("refY", String(arrowWid/2));
+        marker.setAttribute("orient", "auto");
+
+        const polygon = document.createElementNS(xmlns, "polygon");
+        polygon.setAttribute("points", "0 0, " + arrowLen + " " + arrowWid/2 + ", 0 " + arrowWid);
+        polygon.setAttribute("fill", color);
+
+        marker.appendChild(polygon);
+        defs.appendChild(marker);
+        svg.appendChild(defs);
+
+        const line = document.createElementNS(xmlns, 'line');
+        line.setAttribute("x1", String(startX));
+        line.setAttribute("y1", String(startY));
+        line.setAttribute("x2", String(endX));
+        line.setAttribute("y2", String(endY));
+        line.setAttribute("stroke", color);
+        line.setAttribute("stroke-width", "10");
+        line.setAttribute("marker-end", "url(#arrowhead)");
+
+        svg.appendChild(line);
+        divNode.appendChild(svg);
+        this.gameBoard.appendChild(divNode);
+        console.log("freccia aggiunta");
     }
 
     addSvgRect(left, top, delta_x, delta_y, color, to_fill) {

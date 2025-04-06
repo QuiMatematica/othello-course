@@ -32,3 +32,17 @@ export function createStone() {
 
     return svg;
 }
+
+export function createSquare() {
+    const svg = document.createElementNS(xmlns, 'svg');
+    svg.setAttributeNS(null, 'viewBox', '0 0 100 100');
+
+    // The circle of the stone itself.
+    const square = document.createElementNS(xmlns, 'rect');
+    square.classList.add('stone');
+    square.setAttributeNS(null, 'width', '100');
+    square.setAttributeNS(null, 'height', '100');
+    svg.appendChild(square);
+
+    return svg;
+}

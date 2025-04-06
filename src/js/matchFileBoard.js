@@ -22,8 +22,7 @@ export default class MatchFileBoard {
 
     readMatch(json, container, counter) {
         this.currentPosition = Position.getPositionFromJSON(json);
-
-        this.board = new Board(container, counter, matchFileBoardOnClick);
+        this.board = new Board(container, counter, json.stoneShape, matchFileBoardOnClick);
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);
@@ -102,6 +101,11 @@ export default class MatchFileBoard {
                     const ul = Square.fromString(entry.ul);
                     const dr = Square.fromString(entry.dr);
                     this.board.addBorder(ul.x, ul.y, dr.x, dr.y, entry.color);
+                })
+            }
+            if (json.add['arrows'] != null) {
+                json.add.arrows.forEach((entry) => {
+                    this.board.addArrow(entry.start[0], entry.start[1], entry.end[0], entry.end[1], entry.color);
                 })
             }
         }

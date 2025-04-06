@@ -44,7 +44,7 @@ ossia soffermandoci solo sulla forma che le pedine hanno sulla scacchiera.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
-				<div class="match-file-board" data-file="definizione-influenza-1.json"></div>
+				<div class="match-file-board" data-file="area-di-gioco-3.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 3.
@@ -56,7 +56,7 @@ ossia soffermandoci solo sulla forma che le pedine hanno sulla scacchiera.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
-				<div class="match-file-board" data-file="definizione-influenza-2.json"></div>
+				<div class="match-file-board" data-file="area-di-gioco-4.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 4.
@@ -85,7 +85,7 @@ che vogliamo impostare.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
-				<div class="match-file-board" data-file="definizione-influenza-1.json"></div>
+				<div class="match-file-board" data-file="area-di-gioco-5.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 5.
@@ -97,7 +97,7 @@ che vogliamo impostare.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">
-				<div class="match-file-board" data-file="definizione-influenza-2.json"></div>
+				<div class="match-file-board" data-file="area-di-gioco-6.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
 				Diagramma 6.

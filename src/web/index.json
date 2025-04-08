@@ -317,6 +317,10 @@
 						{
 							"href": "area-di-gioco.php",
 							"title": "Area di gioco e area di appoggio"
+						},
+						{
+							"href": "riempire-area-di-gioco.php",
+							"title": "Esaurire l'area di gioco"
 						}
 					]
 				}

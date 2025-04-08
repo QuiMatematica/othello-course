@@ -1,5 +1,5 @@
 <h1>La definizione di influenza</h1>
-<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello</i>, Othello News - anno X - n. 1 - 1994.</b></p>
+<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello - prima parte</i>, Othello News - anno X - n. 1 - 1994.</b></p>
 
 <p>Un criterio guida nella scelta della mossa da giocare può essere quello di vedere il numero di mosse che essa lascia
     a noi e al nostro avversario. Cercheremo di raggiungere posizioni che ci lascino il maggior numero di mosse a

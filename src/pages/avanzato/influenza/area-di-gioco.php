@@ -1,5 +1,5 @@
 <h1>Area di gioco e area di appoggio</h1>
-<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello</i>, Othello News - anno X - n. 1 - 1994.</b></p>
+<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello - prima parte</i>, Othello News - anno X - n. 1 - 1994.</b></p>
 
 <p>Vediamo quale gioco può essere <i>indicativamente</i> adottato per limitare l'effetto dell'influenza.</p>
 

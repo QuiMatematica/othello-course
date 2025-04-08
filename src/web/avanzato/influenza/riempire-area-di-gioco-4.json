@@ -1,0 +1,46 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "OOOOO##O",
+    "O#O#OO#O",
+    "OOO###OO",
+    "O-O##O-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C2"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "F2"
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "B8",
+      "comment": "Ora il bianco ha come uniche possibilità due mosse, tutte e due che cedono un angolo all'avversario."
+    }
+  ]
+}

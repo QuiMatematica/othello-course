@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "OOOOO##O",
+    "O#O#OO#O",
+    "OOO###OO",
+    "O-O##O-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C2"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "D2",
+      "comment": "A questo punto il nero può solo giocare sul lato nord aprendo così nuove mosse al bianco."
+    }
+  ]
+}

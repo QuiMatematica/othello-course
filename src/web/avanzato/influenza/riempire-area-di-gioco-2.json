@@ -10,7 +10,7 @@
     "--#####-"
   ],
   "turn": "white",
-  "comment": "Il bianco deve muovere, e al momento ha tre tempi a disposizione.<br><i>(Si fa riferimento alle mosse sulla riga 2: escludendo B2 e G2 che sono pericolose per gli angoli, il bianco non può giocare tutte e quattro le mosse C2, D2, E2, F2, perché alla prima possa gira almeno due pedine esterne nere, riducendo così il numero di possibili mosse fattibili in quell'area. NDR).</i><br>",
+  "comment": "Il bianco deve muovere, e al momento ha tre tempi a disposizione.<br><i>(Si fa riferimento alle mosse sulla riga 2: escludendo B2 e G2 che sono pericolose per gli angoli, il bianco non può giocare tutte e quattro le mosse C2, D2, E2, F2, perché alla prima possa gira almeno due pedine esterne nere, riducendo così il numero di possibili mosse fattibili in quell'area - NDR).</i><br>",
   "moves": [
     {
       "move": "C2",

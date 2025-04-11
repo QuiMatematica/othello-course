@@ -3,7 +3,8 @@
 
 <p>Un criterio guida nella scelta della mossa da giocare può essere quello di vedere il numero di mosse che essa lascia
     a noi e al nostro avversario. Cercheremo di raggiungere posizioni che ci lascino il maggior numero di mosse a
-    disposizione e che ne lascino il minimo al nostro avversario.</p>
+    disposizione e che ne lascino il minimo al nostro avversario. (<i>&Egrave; la strategia che abbiamo chiamato
+        <a href="../../intermedio/mobilita/chapter.php">mobilità</a> - NDR.</i>)</p>
 
 <p>Vediamo ora in che modo raggiungere questo obiettivo.</p>
 
@@ -24,9 +25,10 @@ Ciò significa che:</p>
     quantità di mosse a mia disposizione, e viceversa.</li>
 </ol>
 
-<p>Vi sarete subito accorti che al punto 1 si afferma implicitamente che avere tante pedine non è cosa buona,
-mentre al punto 2 si affermar che avere tante pedine è una cosa buona. Ciò è dovuto al fatto che, in realtà,
-il nostro scopo dovrebbe essere quello di trovare un giusto equilibrio tra pedine esterne e pedine di appoggio.</p>
+<p>Vi sarete subito accorti che al punto 1 si afferma implicitamente che avere tante pedine non è cosa buona
+    (<i><a href="../../intermedio/mobilita/evaporazione.php">evaporazione</a> - NDR</i>),
+mentre al punto 2 si afferma che avere tante pedine è una cosa buona. Ciò è dovuto al fatto che, in realtà,
+    il nostro scopo dovrebbe essere quello di <b>trovare un giusto equilibrio tra pedine esterne e pedine di appoggio</b>.</p>
 
 <p>Chiariamo meglio questo concetto proseguendo nella nostra opera di generalizzazione e astrazione, identificando i
 metodi di approccio a una strategia di ottimizzazione delle proprie pedine esterne/d'appoggio.</p>
@@ -43,7 +45,7 @@ entrambi le situazioni sia il nero che il bianco hanno lo stesso numero di pedin
 				<div class="match-file-board" data-file="definizione-influenza-1.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 1: mossa al nero.
+				Diagramma 1.
 			</div>
 		</div>
 
@@ -55,15 +57,15 @@ entrambi le situazioni sia il nero che il bianco hanno lo stesso numero di pedin
 				<div class="match-file-board" data-file="definizione-influenza-2.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 2: mossa al nero.
+				Diagramma 2.
 			</div>
 		</div>
 
 	</div>
 </div>
 
-<p>Notiamo ancora che il nero nel diagramma 1 ha ben 11 mosse contro le 10 del diagramma 2!
-Ancora le pedine di appoggio del nero sono 7 per il diagramma 1 e 9 per il diagramma 2.</p>
+<p>Notiamo che il nero nel diagramma 1 ha ben 11 mosse contro le 10 del diagramma 2!
+Le pedine di appoggio del nero sono 7 nel il diagramma 1, e 9 nel il diagramma 2.</p>
 
 <p>Ciò che però è radicalmente diverso tra le due posizioni, come probabilmente avrete già notato,
 non sono tanto dei parametri numerici come quelli sopraelencati, bensì il modo con cui sono dispose le pedine
@@ -71,10 +73,8 @@ sulla scacchiera: nel diagramma 1 il nero con una singola mossa rischia di girar
 diverse pedine esterne dell'avversario, cosa che non si veridica nel diagramma 2.</p>
 
 <p>La situazione è esplicitata nel diagramma 3. Con la mossa <b>D2</b>, per fare l'esempio più appariscente,
-i nero gira in una sola volta ben quattro delle sette pedine esterne bianche, togliendosi in questo modo un
+il nero gira in una sola volta ben quattro delle sette pedine esterne bianche, togliendosi in questo modo un
 gran numero di mosse e dando origine a nuove pedine esterne questa volta a vantaggio del bianco.</p>
-
-<p>Diremo che il nero ha una grossa <b>influenza</b>.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -84,6 +84,8 @@ gran numero di mosse e dando origine a nuove pedine esterne questa volta a vanta
         Diagramma 3: effetto della mossa in D2.
     </div>
 </div>
+
+<p>Diremo che il nero ha una grossa <b>influenza</b>.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>

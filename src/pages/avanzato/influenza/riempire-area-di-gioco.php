@@ -31,7 +31,7 @@ momento, senza fretta.</p>
 
 <h2>Mosse di riserva e tempi di gioco</h2>
 
-<p>La mossa di riserva farà perdere un tempo all'avversario, vediamo nel diagramma 2 come.</p>
+<p>La mossa di riserva farà perdere un <a href="../../intermedio/tempi-di-gioco/chapter.php">tempo</a> all'avversario, vediamo nel diagramma 2 come.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -53,14 +53,14 @@ nero.</p>
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
 		<p class="card-text">Per <b>mossa di riserva</b> su intende una mossa che permette a un giocatore di
-        guadagnare un tempo di gioco o non aprendo nuove mosse all'avversario o perché le mosse aperte
+        guadagnare un tempo di gioco, o non aprendo nuove mosse all'avversario o perché le mosse aperte
         risulterebbero palesemente svantaggiose per l'avversario.</p>
 	</div>
 </div>
 
 <h2>Quando giocare le mosse di riserva?</h2>
 
-<p>Poiché con la sua mossa di riserva abbiamo visto come il nero riesce a guadagnare un tempo, dobbiamo chiederci:
+<p>Poiché con la sua mossa di riserva il nero riesce a guadagnare un tempo, dobbiamo chiederci:
 <b>quando</b> sarà meglio per il nero sfruttare questo guadagno di tempo?</p>
 
 <p>La risposta è solo di due tipi:</p>
@@ -68,11 +68,11 @@ nero.</p>
 <ol>
     <li>Quando, dopo il guadagno di tempo, all'avversario rimane come unica possibilità quella di cedere una posizione
     importante (per esempio un angolo).</li>
-    <li>Quando al nero restano solo mosse che darebbero forti vantaggi all'avversario (in termini di tempo o
-    di influenza o di guadagno di posizioni).</li>
+    <li>Quando al nero restano solo mosse che darebbero forti vantaggi all'avversario (in termini di tempo, o
+    di influenza, o di guadagno di posizioni).</li>
 </ol>
 
-<p>Il primo caso è abbastanza di immediata comprensione e lo vediamo nel diagramma 3.</p>
+<p>Il primo caso è di comprensione abbastanza immediata e lo vediamo nel diagramma 3.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -145,7 +145,7 @@ che sarà completata questa area di gioco, il bianco avrà anche esaurito le mos
 
 <p>Ciò comporta due vantaggi:</p>
 <ul>
-    <li>il primo lo abbiamo già visto, vengono esaurite le mosse del bianco (riempimento del piano di gioco);</li>
+    <li>il primo lo abbiamo già visto, vengono esaurite le mosse del bianco (riempimento dell'area di gioco);</li>
     <li>l'altro è che il nero risolve il problema di dover eseguire delle mosse (alternativamente al bianco)
     e quindi non apre nuove opportunità all'avversario o non è costretto a giocare in altre zone della tavola.</li>
 </ul>
@@ -192,3 +192,12 @@ effettuando la banale mossa in <b>B8</b> lascia il bianco in un grosso guaio.</p
 
 <p>Identifichiamo perciò la filosofia di gioco che c'è alla base: il nero ha usato successivamente la propria mossa
 in <b>B8</b>, ossia si è "conservato" un tempo di gioco utile per momenti in cui si è rivelato più importante.</p>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Strategia</div>
+	<div class="card-body">
+		<p class="card-text">Devi "aiutare" il tuo avversario a esaurire la sua area di gioco.</p>
+		<p class="card-text">E devi posticipare le tue mosse di riserve per quando l'avversario non avrà
+        più aree di gioco sicure a disposizione.</p>
+	</div>
+</div>

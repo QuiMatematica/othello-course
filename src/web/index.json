@@ -321,6 +321,10 @@
 						{
 							"href": "riempire-area-di-gioco.php",
 							"title": "Esaurire l'area di gioco"
+						},
+						{
+							"href": "influenza-e-bordi.php",
+							"title": "Influenza e bordi"
 						}
 					]
 				}

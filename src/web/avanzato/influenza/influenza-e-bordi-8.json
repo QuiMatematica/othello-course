@@ -1,0 +1,119 @@
+{
+  "position": [
+    "---###--",
+    "---#OO-#",
+    "--##OO##",
+    "--#OOOO#",
+    "-#O#OOO-",
+    "#OOOOO-O",
+    "--#-----",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C8",
+      "comment": "Il bianco toglie al nero l'unica mossa che non appartiene all'area di gioco a sud."
+    },
+    {
+      "move": "E7",
+      "comment": "Il nero gioca cercando di prendere il controllo del centro e di girare poche pedine bianche. Inoltre taglia la diagonale <b>B7-F2</b> che, lo vedremo, avrà un ruolo fondamentale nella partita."
+    },
+    {
+      "move": "B3",
+      "comment": "Il bianco riprende il controllo della diagonale <b>B7-F2</b>, cercando di offrire poche mosse al bianco."
+    },
+    {
+      "move": "D7"
+    },
+    {
+      "move": "C1",
+      "comment": "Il bianco costringe il nero ad allungare il bordo nord."
+    },
+    {
+      "move": "B1",
+      "comment": "Dopo questa mossa il nero avrebbe interesse a prendere anche <b>G1</b> prima che il bianco attacchi il cinque. Ma la diagonale <b>B7-F2</b> è tutta bianca e il nero non ha l'accesso necessario."
+    },
+    {
+      "move": "A5"
+    },
+    {
+      "move": "B4",
+      "comment": "IL nero prova ad ottenere l'accesso a <b>G1</b>."
+    },
+    {
+      "move": "C2",
+      "comment": "Il bianco toglie al nero l'accesso a <b>G1</b>. Nota le conformazioni dei due colori: bianco compatto e centrifugo, nero centripeto, in particolare verso nord-ovest."
+    },
+    {
+      "move": "A4"
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco attacca il cinque a nord. Per il nero la posizione è decisamente compromessa."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero tenta questa mossa spinto dal fatto che il bianco non ha subito l'accesso all'angolo. Inoltre vuole tagliare la solita diagonale per ottenere almeno un tempo di gioco in <b>A7</b>."
+    },
+    {
+      "move": "D8",
+      "comment": "Ma non c'è nulla da fare: il bianco taglia la diagonale nera e riprende il controllo di quella bianca."
+    },
+    {
+      "move": "E8"
+    },
+    {
+      "move": "F8"
+    },
+    {
+      "move": "F7"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "G6"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G7",
+      "comment": "Nota che la diagonale principale è tutta bianca."
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A3"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "H8"
+    }
+  ]
+}

@@ -23,7 +23,8 @@
 
 <p>I primi due obiettivi sono già stati trattati nei capitoli precedenti.</p>
 
-<p>Il quarto obiettivo e il concetto di <i>influenza</i> verranno presentati nella sezione avanzata del corso.</p>
+<p>Il quarto obiettivo e il concetto di <a href="../../avanzato/influenza/chapter.php"><i>influenza</i></a> verranno
+    presentati nella sezione avanzata del corso.</p>
 
 <p><b>In questo capitolo</b> cominceremo ad approcciare il terzo obiettivo con una serie di definizioni
     e di osservazioni tattiche di natura generale.

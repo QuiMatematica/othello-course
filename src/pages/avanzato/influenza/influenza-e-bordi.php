@@ -11,24 +11,24 @@
       <a href="../../intermedio/parita/chapter.php" title="La parità"><b>parità</b></a>;</li>
     <li>ottenere delle <b>formazioni non attaccabili</b> e costringere l'avversario a prendere delle
   <b>formazioni attaccabili</b>;</li>
-    <li>tenere sotto controllo l'influenza della propria posizioni e aumentare l'influenza dell'avversario.</li>
+    <li>tenere sotto controllo l'<b>influenza</b> della propria posizioni e aumentare l'influenza dell'avversario.</li>
 </ul>
 
 <p>&Egrave; giunta l'ora, quindi, di spiegare il quarto punto.</p>
 
 <p>Il ragionamento è semplice:</p>
 <ul>
-    <li>la maggior parte è un singolo colore a prendere il controllo del bordo, ottenendo diverse
-    pedine sullo stesso: ognuna di queste pedine ha influenza sulle mosse successive;</li>
-    <li>a meno di attacchi particolari, le strutture di bordo tendono a rimanere immutate a lungo:
-    l'influenza pertanto rimane per lo stesso tempo, per lo meno fino a quando le aree di gioco
-    su cui puntano non vengono saturate.</li>
+    <li>nella maggior parte delle situazioni è un singolo colore a prendere il controllo di un bordo,
+    formando un gruppo compatto di pedine: ciascuna di queste genera influenza per le prossime mosse;</li>
+    <li>a meno di attacchi particolari, le strutture di bordo tendono a rimanere immutate:
+    l'influenza generata dal bordo, pertanto, rimane a lungo, per lo meno fino a quando le aree di gioco
+    a cui puntano non vengono saturate.</li>
 </ul>
 
 <p>Quindi ottenere un bordo significa avere un'alta influenza (quindi un'influenza negativa) e
 che rischia di rimanere <i>attiva</i> per molte mosse.</p>
 
-<p>Concludendo: dal punto di vista dell'influenza, ottenere un bordo è negativo.</p>
+<p>Concludendo: dal punto di vista dell'influenza, prendere un bordo è negativo.</p>
 
 <p>A titolo di esempio, analizziamo la posizione del diagramma 1, che è tratto dalla partita tra
 Marco Ferrando e Giuseppe Menozzi al Campionato Italiano 2002.</p>
@@ -44,15 +44,16 @@ Marco Ferrando e Giuseppe Menozzi al Campionato Italiano 2002.</p>
 
 <p>In questa posizione il nero ha una configurazione piuttosto compatta e centrifuga.
 Tuttavia le sue aree di gioco sono molto limitate. Giocare in E1 non è particolarmente interessante:
-    il bianco risponderebbe automaticamente in G1, anche se significherebbe avere un cinque attaccabile.
-    Giocare in G2 è prematuro. Rimane solo l'area a sud-ovest, dove ha almeno tre tempi di gioco.</p>
+    il bianco risponderebbe automaticamente in G1, anche se significherebbe prendere un cinque attaccabile.
+    Giocare in G2 è prematuro. L'area più promettente per il nero è quella a sud-ovest,
+    dove ha almeno tre tempi.</p>
 
 <p>Il bianco invece ha una configurazione divisa in due blocchi e centripeta.
     Ma ha anche la possibilità di giocare in <b>A5</b>, mossa che gli permette di:</p>
 <ul>
-    <li>togliere un tempo al nero</li>
-    <li>costringere il nero ad allungare la formazione di bordo: in questo modo l'influenza
-    del nero aumenta e la formazione delle pedine diventa centripeta.</li>
+    <li>togliere un tempo al nero;</li>
+    <li>costringere l'avversario ad allungare la formazione di bordo: in questo modo l'influenza
+    del nero aumenta e la sua formazione diventa centripeta.</li>
 </ul>
 
 <p>Studia la sequenza giocata nel diagramma 2.</p>
@@ -140,6 +141,9 @@ tra Paolo Scognamiglio e Alessandro Di Mattei.</p>
 Alla mossa 29 ha giocato in <b>A6</b> impiantandosi così nel terzo bordo. Nota coma la su
 configurazione sia centripeta verso l'area di gioco a sud. Gli rimane solo una mossa al
 di fuori di questa zona, la <b>A5</b>, che il bianco provvede subito a togliergli.</p>
+
+<p>Oltre all'influenza, il nero è in difficoltà anche per la diagonale <b>B6-F2</b> che è completamente
+bianca e non permette al nero di giocare nè in <b>A7</b> nè in <b>G1</b>.</p>
 
 <p>Ne segue una partita molto difficile per il nero, che non è più riuscito a recuperare
 da questa posizione di svantaggio. Nel diagramma 8 puoi vedere il seguito della partita con

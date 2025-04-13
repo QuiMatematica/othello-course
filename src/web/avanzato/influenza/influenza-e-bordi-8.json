@@ -17,7 +17,7 @@
     },
     {
       "move": "E7",
-      "comment": "Il nero gioca cercando di prendere il controllo del centro e di girare poche pedine bianche. Inoltre taglia la diagonale <b>B7-F2</b> che, lo vedremo, avrà un ruolo fondamentale nella partita."
+      "comment": "Il nero gioca cercando di prendere il controllo del centro e cercando di girare poche pedine bianche. Inoltre taglia la diagonale <b>B7-F2</b> che, lo vedremo, avrà un ruolo fondamentale nella partita."
     },
     {
       "move": "B3",
@@ -39,7 +39,7 @@
     },
     {
       "move": "B4",
-      "comment": "IL nero prova ad ottenere l'accesso a <b>G1</b>."
+      "comment": "Il nero prova ad ottenere l'accesso a <b>G1</b>."
     },
     {
       "move": "C2",

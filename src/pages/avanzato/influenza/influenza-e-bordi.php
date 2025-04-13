@@ -1,7 +1,7 @@
 <h1>Influenza e bordi</h1>
 
 <p>Nella sezione precedente del corso ti ho indicato quali sono i principi che dovrebbero guidare
-    il gioco sui bordi:</p>
+    il gioco sui <a href="../../intermedio/bordi/chapter.php">bordi</a>:</p>
 
 <ul>
   <li>conquistare dei
@@ -9,7 +9,7 @@
       e non consentire all'avversario di farlo;</li>
   <li>preparare gli spazi adeguati per giocare la
       <a href="../../intermedio/parita/chapter.php" title="La parità"><b>parità</b></a>;</li>
-    <li>ottenere delle <a href="../../intermedio/bordi/chapter.php"><b>formazioni non attaccabili</b></a> e costringere l'avversario a prendere delle
+    <li>ottenere delle <b>formazioni non attaccabili</b> e costringere l'avversario a prendere delle
   <b>formazioni attaccabili</b>;</li>
     <li>tenere sotto controllo l'influenza della propria posizioni e aumentare l'influenza dell'avversario.</li>
 </ul>

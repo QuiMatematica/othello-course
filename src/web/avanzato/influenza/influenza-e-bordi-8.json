@@ -17,7 +17,7 @@
     },
     {
       "move": "E7",
-      "comment": "Il nero gioca cercando di prendere il controllo del centro e cercando di girare poche pedine bianche. Inoltre taglia la diagonale <b>B7-F2</b> che, lo vedremo, avrà un ruolo fondamentale nella partita."
+      "comment": "Il nero gioca cercando di prendere il controllo del centro e cercando di girare poche pedine bianche esterne. Inoltre taglia la diagonale <b>B7-F2</b>."
     },
     {
       "move": "B3",
@@ -58,7 +58,7 @@
     },
     {
       "move": "D8",
-      "comment": "Ma non c'è nulla da fare: il bianco taglia la diagonale nera e riprende il controllo di quella bianca."
+      "comment": "Ma non c'è nulla da fare: il bianco taglia la diagonale <b>B2-F6</b> e riprende il controllo della <b>B7-F2</b>."
     },
     {
       "move": "E8"

@@ -19,19 +19,19 @@
 <p>Il ragionamento è semplice:</p>
 <ul>
     <li>nella maggior parte delle situazioni è un singolo colore a prendere il controllo di un bordo,
-    formando un gruppo compatto di pedine: ciascuna di queste genera influenza per le prossime mosse;</li>
+    formando un gruppo compatto di pedine: ciascuna di queste genera influenza per le mosse successive;</li>
     <li>a meno di attacchi particolari, le strutture di bordo tendono a rimanere immutate:
     l'influenza generata dal bordo, pertanto, rimane a lungo, per lo meno fino a quando le aree di gioco
     a cui puntano non vengono saturate.</li>
 </ul>
 
-<p>Quindi ottenere un bordo significa avere un'alta influenza (quindi un'influenza negativa) e
-che rischia di rimanere <i>attiva</i> per molte mosse.</p>
+<p>Quindi ottenere un bordo significa avere un'influenza negativa che rischia di rimanere
+    <i>attiva</i> per molte mosse.</p>
 
-<p>Concludendo: dal punto di vista dell'influenza, prendere un bordo è negativo.</p>
+<h2>Primo esempio</h2>
 
-<p>A titolo di esempio, analizziamo la posizione del diagramma 1, che è tratto dalla partita tra
-Marco Ferrando e Giuseppe Menozzi al Campionato Italiano 2002.</p>
+<p>Analizziamo la posizione del diagramma 1, che è tratto dalla partita tra
+    <b>Marco Ferrando</b> e <b>Giuseppe Menozzi</b> al <b>Campionato Italiano 2002</b>.</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">
@@ -42,13 +42,14 @@ Marco Ferrando e Giuseppe Menozzi al Campionato Italiano 2002.</p>
 	</div>
 </div>
 
-<p>In questa posizione il nero ha una configurazione piuttosto compatta e centrifuga.
+<p>In questa posizione il nero ha una configurazione compatta e centrifuga.
 Tuttavia le sue aree di gioco sono molto limitate. Giocare in E1 non è particolarmente interessante:
     il bianco risponderebbe automaticamente in G1, anche se significherebbe prendere un cinque attaccabile.
     Giocare in G2 è prematuro. L'area più promettente per il nero è quella a sud-ovest,
     dove ha almeno tre tempi.</p>
 
 <p>Il bianco invece ha una configurazione divisa in due blocchi e centripeta.
+    Ha un'area di gioco molto ampia a sud-est.
     Ma ha anche la possibilità di giocare in <b>A5</b>, mossa che gli permette di:</p>
 <ul>
     <li>togliere un tempo al nero;</li>
@@ -67,8 +68,10 @@ Tuttavia le sue aree di gioco sono molto limitate. Giocare in E1 non è particol
 	</div>
 </div>
 
+<h2>Uno studio più astratto</h2>
+
 <p>A puro titolo esemplificativo, ti propongo i diagrammi seguenti, nei quali analizziamo l'influenza
-quando un colore ha uno, due o tre bordi.</p>
+di un colore che controlla uno, due o tre bordi.</p>
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
 	<div class="col">
@@ -124,9 +127,11 @@ quando un colore ha uno, due o tre bordi.</p>
 	</div>
 </div>
 
+<h2>Secondo esempio</h2>
+
 <p>Se la posizione del diagramma 6 ti sembra troppo astratta, osserva quella del diagramma 7.
-&Egrave; tratta dalla seconda partita della finale del Campionato Italiano 2025 giocata
-tra Paolo Scognamiglio e Alessandro Di Mattei.</p>
+    &Egrave; tratta dalla seconda partita della finale del <b>Campionato Italiano 2025</b> giocata
+tra <b>Paolo Scognamiglio</b> e <b>Alessandro Di Mattei</b>.</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">
@@ -138,12 +143,13 @@ tra Paolo Scognamiglio e Alessandro Di Mattei.</p>
 </div>
 
 <p>Dopo una serie di mosse non facili, il nero si è trovato costretto a giocare sui bordi.
-Alla mossa 29 ha giocato in <b>A6</b> impiantandosi così nel terzo bordo. Nota coma la su
-configurazione sia centripeta verso l'area di gioco a sud. Gli rimane solo una mossa al
+Alla mossa 29 ha giocato in <b>A6</b> impiantandosi così nel terzo bordo. La sua
+configurazione è centripeta verso l'area di gioco a sud. Gli rimane solo una mossa al
 di fuori di questa zona, la <b>A5</b>, che il bianco provvede subito a togliergli.</p>
 
 <p>Oltre all'influenza, il nero è in difficoltà anche per la diagonale <b>B6-F2</b> che è completamente
-bianca e non permette al nero di giocare nè in <b>A7</b> nè in <b>G1</b>.</p>
+bianca e non gli permette di giocare nè in <b>A7</b> nè in <b>G1</b>.
+Si tratta di una "diagonale C" che analizzeremo in un prossimo capitolo.</p>
 
 <p>Ne segue una partita molto difficile per il nero, che non è più riuscito a recuperare
 da questa posizione di svantaggio. Nel diagramma 8 puoi vedere il seguito della partita con
@@ -155,5 +161,16 @@ qualche commento.</p>
 	</div>
 	<div class="card-footer text-body-secondary text-center">
 		Diagramma 8: Scognamiglio - Di Mattei, Campionato Italiano 2025.
+	</div>
+</div>
+
+<h2>Conclusione</h2>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Strategia</div>
+	<div class="card-body">
+        <p class="card-text">Dal punto di vista dell'influenza, <b>prendere un bordo è svantaggioso</b>.</p>
+        <p class="card-text">Pertanto è opportuno accedere ai bordi solo in cambio di altri vantaggi: tempi di gioco,
+        parità e formazioni stabili non attaccabili.</p>
 	</div>
 </div>

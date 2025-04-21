@@ -32,7 +32,7 @@ export function init() {
     console.log("init(): fine")
 }
 
-console.log("Attivazione scacchiere");
+console.log("Attivazione tavole");
 init();
 document.getElementById("shareBtn").addEventListener("click", async () => {
     const shareData = {

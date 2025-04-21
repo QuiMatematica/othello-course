@@ -41,7 +41,7 @@ l'angolo H8.</p>
 non è solo questo. Nel diagramma 1, per esempio, il bianco prende l'angolo per primo; il
 nero ha poi la possibilità di guadagnare due tempi di gioco, il primo in C8, il secondo in
 A8. Fin che il nero prende possesso del bordo, quindi, il bianco è costretto a muovere in
-una diversa parte della scacchiera, rischiando di chiudersi il gioco.</p>
+una diversa parte della tavola, rischiando di chiudersi il gioco.</p>
 
 <p>Come per tutti gli attacchi, bisogna sempre controllare che tutto possa funzionare
 perfettamente. In particolare chi attacca un quattro più uno deve sempre stare attento a

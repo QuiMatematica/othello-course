@@ -4,7 +4,7 @@
 			<div class="card-header">Definizione</div>
 			<div class="card-body">
 				<p class="card-text"><b>Un cinque</b> è un insieme di cinque pedine contigue dello stesso colore su un
-	            bordo della scacchiera, che vanno da una casella A alla casella C opposta.</p>
+	            bordo della tavola, che vanno da una casella A alla casella C opposta.</p>
 			</div>
 		</div>
 

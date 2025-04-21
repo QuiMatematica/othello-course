@@ -59,7 +59,7 @@
 			<div class="card-header">Definizione</div>
 			<div class="card-body">
 				<p class="card-text">Guadagnare un tempo significa giocare una mossa in più rispetto
-		all'avversario in una data regione della scacchiera (spesso un bordo) e
+		all'avversario in una data regione della tavola (spesso un bordo) e
 		costringerlo a giocare altrove (spesso allungando i muri).</p>
 			</div>
 		</div>

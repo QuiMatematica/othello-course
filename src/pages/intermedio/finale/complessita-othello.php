@@ -112,7 +112,7 @@ l'albero delle mosse troveremo sicuramente tutte le posizioni ottenibili.</p>
     <li>occupata da una pedina che mostra il lato bianco.</li>
 </ul>
 
-<p>In un'ipotetica scacchiera di due caselle avremo 9 posizioni possibili: per
+<p>In un'ipotetica tavola di due caselle avremo 9 posizioni possibili: per
 ciascuno degli stati possibili della prima (che sono tre), la seconda ha tre
     stati possibili. <b>3 ⋅ 3 = 9</b>.</p>
 <p>In un'ipotetica scacchiera di tre caselle, per ciascuno

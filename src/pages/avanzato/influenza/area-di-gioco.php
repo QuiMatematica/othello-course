@@ -72,7 +72,7 @@ creazione, magari anche solo mentale, di una forma, di un disegno geometrico da 
     Così facendo notiamo infatti nei diagrammi 3 e 4 due posizioni strutturate in modo molto diverso.</p>
 
 <p>La prima differenza che ci colpisce è la diversa compattezza che hanno le pedine nere: scarsa nel diagramma 3
-e fortissima nel diagramma 4. Inoltre, e ci soffermeremo su questo concetto, nel diagramma 4 notiamo il nero
+e fortissima nel diagramma 4. Inoltre nel diagramma 4 notiamo che il nero è
 al <i>centro</i>, tra due insiemi di pedine bianche.</p>
 
 <p>Per muovere abbiamo bisogno di una casella vuota dove posizionare la nuova pedina e di una pedina di
@@ -94,8 +94,9 @@ sponda: tra questi due estremi devono trovarsi le pedine avversarie.</p>
     che hanno tali caratteristiche.</p>
 
 <p>Nel diagramma 4 il nero ha un'unica grande area di appoggio rappresentata da tutta la regione
-tinta di nero. Ha inoltre ben quattro aree di gioco, rappresentate dagli angoli della tavola visto che,
-con azioni ed effetti diversi, può agire in tutti e quattro le direzioni. Non è, invece, area di gioco
+tinta di nero. Ha inoltre ben quattro aree di gioco, rappresentate dagli angoli della tavola.
+    Infatti ha a disposizione mosse in tutti e quattro le zone vicine agli angoli.
+    Non è, invece, area di gioco
 del nero il bordo nord, perché non ha alcuna mossa a disposizione in quella regione.</p>
 
 <p>Per muovere abbiamo bisogno di un'area di appoggio e un'area di gioco. Possiamo congiungere le due
@@ -129,10 +130,10 @@ Otteniamo così i diagrammi 5 e 6.</p>
 	</div>
 </div>
 
-<p>Questi vettori indicano la <i>direzione di gioco</i> in quanto è in quel senso, in quella
-direzione, che il giocatore dovrà sviluppare il proprio gioco.</p>
+<p>Questi vettori indicano le <i>direzioni di gioco</i> in quanto è in quelle
+direzioni che il giocatore dovrà sviluppare il proprio gioco.</p>
 
-<p>Confrontando i diagrammi 5 e 6, come si differenziano le due aree di gioco del nero?</p>
+<p>Confrontando i diagrammi 5 e 6: come si differenziano le due aree di gioco del nero?</p>
 
 <p>Nel 5 abbiamo una configurazione <b>centripeta</b>, ossia i vettori partono da diverse aree
 di appoggio e si incontrano nelle stesse aree di gioco.</p>
@@ -140,7 +141,7 @@ di appoggio e si incontrano nelle stesse aree di gioco.</p>
 <p>Nel diagramma 6 la situazione è opposta: la configurazione è <b>centrifuga</b>, con vettori che
     partono da una stessa area di appoggio e si dirigono verso diverse aree di gioco.</p>
 
-<p>Notiamo inoltre che non tutte le aree di gioco hanno lo stesso valore. Nel diagramma 6
+<p>Notiamo poi che non tutte le aree di gioco hanno lo stesso valore. Nel diagramma 6
     le due aree di gioco a nord sono più ampie di quelle a sud. Inoltre le aree a nord daranno
     facilmente accesso anche al bordo libero, andando a formare così un'unica ampia direzione
     di gioco. Perciò il gioco futuro di bianco e nero,
@@ -149,26 +150,28 @@ se non da subito, molto presto si concentrerà su queste direzioni, ed è perci�
     il proprio gioco. Chi ci riuscirà si sarà assicurato un buon numero di mosse.</p>
 
 <p>I diagramma 5 e 6 rappresentano due casi limite del nostro discorso, ma ci permettono di spiegare e capire in modo
-alternativo il concetto di influenza. Infatti (diagramma 5) <b>l'influenza tende a essere alta qualora
+    alternativo il concetto di influenza.</p>
+<ul>
+    <li>Diagramma 5: <b>l'influenza tende a essere alta qualora
         la configurazione della posizione tenda a essere centripeta</b>, tendente verso un unico punto partendo da zone diverse.
 Infatti quando eseguirò una mossa su questa area di gioco avrò diverse pedine di appoggio che da diverse zone
 della tavola avranno influenza sulle stesse case, e mi troverò a girare più pedine esterne secondo le diverse
-direzioni.</p>
-
-<p>Mentre (diagramma 6) <b>l'influenza sarà minore se la configurazione delle direzioni di gioco sarà centrifuga</b> con
-il risultato che all'atto dell'esecuzione di una mossa le pedine che avranno influenza proverranno da un solo punto.</p>
+direzioni.</li>
+    <li>Diagramma 6: <b>l'influenza sarà minore se la configurazione delle direzioni di gioco sarà centrifuga</b> con
+il risultato che all'atto dell'esecuzione di una mossa le pedine che avranno influenza proverranno da un solo punto.</li>
+</ul>
 
 <p>In generale il possesso di una <b>posizione di centro</b> ci assicura un'area di gioco di tipo centrifugo, mentre, al
-    contrario, una <b>posizione estremamente spezzettata</b> originerà un'area di gioco di tipo centripeta, con conseguente
+    contrario, una <b>posizione periferica</b> originerà un'area di gioco di tipo centripeta, con conseguente
 aumento della propria influenza.</p>
 
 <p>Da ultimo notiamo che una posizione di cui abbiamo il possesso del centro sarà sempre <b>compatta</b> (ossia le pedine
-del proprio colore una vicina all'altra), altrimenti, se sparpagliata, non potremo avere il centro. Cio è anche
+del proprio colore una vicina all'altra), altrimenti, se <b>sparpagliata</b>, non potremo avere il centro. Cio è anche
 evidente in quanto il centro della posizione è un unico punto.</p>
 
 <p>Attenzione però: quando parliamo di centro non dobbiamo intendere il centro della tavola, bensì il centro
 delle pedine disposte sulla tavola. Non sempre le due cose coincidono. Infatti il centro della tavola
-è formato dal quadrato più interno di gioco, ma nel diagramma 7 il centro delle pedine in realtà è leggermente
+è formato dal quadrato più interno di gioco, ma nel diagramma 7 il centro delle pedine in realtà è
 spostato verso il bordo sinistro ed è in possesso del bianco.</p>
 
 <div class="card mx-auto board-card my-3">

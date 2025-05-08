@@ -12,10 +12,12 @@
   "turn": "white",
   "moves": [
     {
-      "move": "C2"
+      "move": "C2",
+      "comment": "Il bianco sceglie C2 in modo da girare 'solo' due pedine esterne del nero."
     },
     {
-      "move": "D2"
+      "move": "D2",
+      "comment": "Il nero risponde nella stessa area di gioco, posticipando la mossa in <b>B8</b>."
     },
     {
       "move": "E1"
@@ -36,11 +38,12 @@
       "move": "F1"
     },
     {
-      "move": "G1"
+      "move": "G1",
+      "comment": "L'area di gioco a nord si è riempita. Entrambi i colori hanno esaurito le mosse sicure... a parte la mossa di riserva del nero."
     },
     {
       "move": "B8",
-      "comment": "Ora il bianco ha come uniche possibilità due mosse, tutte e due che cedono un angolo all'avversario."
+      "comment": "Ora il bianco ha solo due mosse: entrambe cedono un angolo all'avversario."
     }
   ]
 }

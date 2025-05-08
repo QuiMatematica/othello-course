@@ -14,24 +14,28 @@
     </div>
 </div>
 
-<p>Notiamo che il nero ha la possibilità di eseguire una mossa in <b>B8</b>.
-Tocca al bianco, è vero, ma il bianco non ha alcuna possibilità di impedire la mossa futura del nero,
-almeno dalla situazione attuale.
-D'altra parte il nero, sempre per la posizione attuale, non cede alcun vantaggio al bianco giocando una futura
-<b>B8</b>: farebbe diventare esterna la pedina in <b>C7</b>, esterna a causa della casa libera <b>B7</b>,
-ma <b>B7</b> è già una casa libera a cui il bianco può accedere, perciò il nero giocando in <b>B8</b>
-aprirebbe al bianco una mossa in <b>B7</b> che "già ha". O, più semplicemente, il nero giocando in <b>B8</b>
-non darebbe "nuove" mosse al bianco.</p>
+<p>Anche se tocca al bianco, osserviamo per un momento la situazione del nero.
+    Questi ha la possibilità di giocare una mossa in <b>B8</b>,
+e il bianco non ha alcuna possibilità di impedire questa mossa,
+    almeno nella situazione attuale.</p>
 
-<p>Inoltre, se osserviamo anche superficialmente la posizione del diagramma 1, la mossa in <b>B7</b> non è sicuramente
-una buona mossa, in quanto cederebbe una posizione molto importante quale l'angolo in <b>A8</b>.</p>
+<p>Inoltre il nero, sempre nella posizione attuale, non cede alcun vantaggio al bianco giocando
+    in <b>B8</b>: gli offre una mossa in più, la <b>B7</b>, ma è una mossa che il bianco non ha
+    interesse a giocare perché cederebbe l'angolo e tutto il bordo ovest.</p>
 
-<p>La mossa in <b>B8</b> è, per così dire, una mossa di "riserva", mossa che il nero può eseguire in un qualsiasi
+<p>La mossa in <b>B8</b> è, per così dire, una mossa <b>di riserva</b>, mossa che il nero può eseguire in un qualsiasi
 momento, senza fretta.</p>
 
 <h2>Mosse di riserva e tempi di gioco</h2>
 
-<p>La mossa di riserva farà perdere un <a href="../../intermedio/tempi-di-gioco/chapter.php">tempo</a> all'avversario, vediamo nel diagramma 2 come.</p>
+<p>Ora analizziamo la situazione del bianco. Ha quattro mosse sicure, tutte a nord: le caselle <b>C2</b>,
+<b>D2</b>, <b>E2</b> e <b>F2</b>. Però osserva: ognuna di queste mosse gira almeno due delle
+pedine esterne del nero. Quindi, se il nero non offre altre
+mosse a nord, il bianco può giocare solo tre di quelle quattro mosse. Ha quindi a disposizione
+    solo <b>tre <a href="../../intermedio/tempi-di-gioco/chapter.php">tempi di gioco</a></b>.</p>
+
+<p>La mossa di riserva del nero, la <b>B8</b>, fa perdere un tempo all'avversario.
+    Lo vediamo nel diagramma 2.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -43,18 +47,23 @@ momento, senza fretta.</p>
 </div>
 
 <p>Nella sequenza proposta il nero ha eseguito la sua mossa di riserva
-<b>B8</b> che non ha aperto nuove mosse all'avversario. Ha cioè <b>fatto perdere un tempo all'avversario</b> e,
-ovviamente, ne ha <b>guadagnati</b> a sua volta grazie al fatto che il bianco giocando ha dato nuove mosse al
-nero.</p>
+<b>B8</b> che non ha aperto nuove mosse all'avversario.
+    Cioè ha <b>fatto perdere un tempo all'avversario</b>.
+    Inoltre il nero ha <b>guadagnato dei tempi di gioco</b> grazie al fatto che il bianco,
+    giocando a nord,
+    gli ha fornito nuove mosse.</p>
 
-<p>Notiamo perciò la grossa forza che possiedono le mosse di riserva e quanto possa essere importante possederne.</p>
+<p>Notiamo perciò la grossa forza che possiede una mossa di riserva e quanto possa essere importante possederne.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-		<p class="card-text">Per <b>mossa di riserva</b> su intende una mossa che permette a un giocatore di
-        guadagnare un tempo di gioco, o non aprendo nuove mosse all'avversario o perché le mosse aperte
-        risulterebbero palesemente svantaggiose per l'avversario.</p>
+		<p class="card-text">Per <b>mossa di riserva</b> si intende una mossa che permette a un giocatore di
+            guadagnare un tempo di gioco:</p>
+        <ul class="card-text">
+            <li>o perché non apre nuove mosse all'avversario;</li>
+            <li>o perché le mosse aperte risultano palesemente svantaggiose per l'avversario.</li>
+        </ul>
 	</div>
 </div>
 
@@ -63,16 +72,10 @@ nero.</p>
 <p>Poiché con la sua mossa di riserva il nero riesce a guadagnare un tempo, dobbiamo chiederci:
 <b>quando</b> sarà meglio per il nero sfruttare questo guadagno di tempo?</p>
 
-<p>La risposta è solo di due tipi:</p>
+<p>La risposta è: quando, dopo il guadagno di tempo, all'avversario rimangono solo mosse che
+    cedono una posizione importante.</p>
 
-<ol>
-    <li>Quando, dopo il guadagno di tempo, all'avversario rimane come unica possibilità quella di cedere una posizione
-    importante (per esempio un angolo).</li>
-    <li>Quando al nero restano solo mosse che darebbero forti vantaggi all'avversario (in termini di tempo, o
-    di influenza, o di guadagno di posizioni).</li>
-</ol>
-
-<p>Il primo caso è di comprensione abbastanza immediata e lo vediamo nel diagramma 3.</p>
+<p>Nel diagramma 3 lo vediamo in modo immediato.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -83,9 +86,9 @@ nero.</p>
     </div>
 </div>
 
-<p>Il secondo caso è da spiegare più a fondo. La facciamo ripartendo dal diagramma 1, provando a immaginare due modi
+<p>Ma ripartiamo dal diagramma 1, e proviamo a immaginare due modi
     (diagramma 4 e 5)
-con cui potrebbe svilupparsi la partita (gli sviluppi vanno preso solo a titolo di esempio, ovviamente).</p>
+in cui potrebbe svilupparsi la partita (gli sviluppi vanno presi solo a titolo di esempio).</p>
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
 	<div class="col">
@@ -118,8 +121,9 @@ con cui potrebbe svilupparsi la partita (gli sviluppi vanno preso solo a titolo 
 e lo sfrutta solo quando il bianco ha esaurito tutte le mosse. La mossa in <b>B8</b> ha il sapore di un colpo di
 grazia.</p>
 
-<p>Nella seconda sequenza invece il "bonus" è sfruttato subito, risultato è che se il bianco riuscirà a non farsi togliere
-tutte le mosse ha ancora speranze di vincere la partita.</p>
+<p>Nella seconda sequenza invece il "bonus" è stato sfruttato subito.
+    Però il bianco, se riesce a non farsi togliere tutte le mosse,
+    ha ancora speranze di vincere la partita.</p>
 
 <h2>Esaurire l'area di gioco</h2>
 
@@ -135,17 +139,17 @@ tutte le mosse ha ancora speranze di vincere la partita.</p>
     </div>
 </div>
 
-<p>L'area di gioco del bianco è nettamente più ampia di quella del nero, ma ha solo questa a propria disposizione,
+<p>L'area di gioco del bianco è nettamente più ampia di quella del nero,
+    ma ha solo questa a propria disposizione:
 le sue mosse sono concentrate solo qui. Inoltre tocca allo stesso bianco che sarà costretto, alla sua prima mossa,
 ad aprire almeno in parte questa sua area di gioco al nero. Una volta che sarà esaurita,
-che sarà completata questa area di gioco, il bianco avrà anche esaurito le mosse a propria disposizione.</p>
+che sarà riempita questa area di gioco, il bianco avrà esaurito le mosse a propria disposizione.</p>
 
 <p>Sarà allora nell'interesse del nero che l'area di gioco del bianco si esaurisca. Ciò è possibile
-<b>solo aiutandolo a riempire le case</b>, ossia giocando lui stesso in questa area di gioco.</p>
-
+    <b>solo aiutando il bianco a riempire le case</b>, ovvero: <b>giocando lui stesso in questa area di gioco</b>.</p>
 <p>Ciò comporta due vantaggi:</p>
 <ul>
-    <li>il primo lo abbiamo già visto, vengono esaurite le mosse del bianco (riempimento dell'area di gioco);</li>
+    <li>il primo lo abbiamo già visto: vengono esaurite le mosse del bianco (riempimento dell'area di gioco);</li>
     <li>l'altro è che il nero risolve il problema di dover eseguire delle mosse (alternativamente al bianco)
     e quindi non apre nuove opportunità all'avversario o non è costretto a giocare in altre zone della tavola.</li>
 </ul>
@@ -185,19 +189,20 @@ sequenza del digramma 4, il diagramma 8 dopo tutta la sequenza del diagramma 4 m
 <p>Notiamo che dopo la prima mossa del bianco (diagramma 7) per il nero si aprono delle nuove opportunità coincidenti
 con l'area di gioco del bianco. Oltre a questo c'è poi la solita mossa in <b>B8</b>.</p>
 
-<p>Il giocatore nero riempiendo l'area di gioco del bianco invece di sfruttare la mossa in <b>B8</b> può raggiungere,
-per esempio, la posizione schematizzata nel diagramma 8 dove notiamo che il bianco non ha più mosse a propria
-disposizione, se ne escludiamo una che cede grossi vantaggi all'avversario. Adesso tocca al nero che
-effettuando la banale mossa in <b>B8</b> lascia il bianco in un grosso guaio.</p>
+<p>Se il giocatore nero riempie l'area di gioco del bianco ed evita di sfruttare la mossa di riserva,
+    raggiunge la posizione schematizzata nel diagramma 8 dove notiamo che il bianco non ha più mosse
+    sicure a propria
+disposizione. Adesso tocca al nero che,
+effettuando la mossa in <b>B8</b>, lascia il bianco in un grosso guaio.</p>
 
 <p>Identifichiamo perciò la filosofia di gioco che c'è alla base: il nero ha usato successivamente la propria mossa
-in <b>B8</b>, ossia si è "conservato" un tempo di gioco utile per momenti in cui si è rivelato più importante.</p>
+in <b>B8</b>, ossia ha "conservato" un tempo di gioco utile per il momento in cui si è rivelato più importante.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Strategia</div>
 	<div class="card-body">
 		<p class="card-text">Devi "aiutare" il tuo avversario a esaurire la sua area di gioco.</p>
-		<p class="card-text">E devi posticipare le tue mosse di riserve per quando l'avversario non avrà
+		<p class="card-text">E devi posticipare le tue mosse di riserva per quando l'avversario non avrà
         più aree di gioco sicure a disposizione.</p>
 	</div>
 </div>

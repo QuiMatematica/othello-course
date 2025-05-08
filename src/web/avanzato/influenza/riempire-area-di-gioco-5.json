@@ -12,10 +12,12 @@
   "turn": "white",
   "moves": [
     {
-      "move": "C2"
+      "move": "C2",
+      "comment": "Il bianco sceglie C2 in modo da girare 'solo' due pedine esterne del nero."
     },
     {
-      "move": "B8"
+      "move": "B8",
+      "comment": "Il nero gioca subito la sua mossa di riserva."
     },
     {
       "move": "D2",

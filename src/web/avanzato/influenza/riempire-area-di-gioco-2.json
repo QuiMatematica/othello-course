@@ -10,15 +10,15 @@
     "--#####-"
   ],
   "turn": "white",
-  "comment": "Il bianco deve muovere, e al momento ha tre tempi a disposizione.<br><i>(Si fa riferimento alle mosse sulla riga 2: escludendo B2 e G2 che sono pericolose per gli angoli, il bianco non può giocare tutte e quattro le mosse C2, D2, E2, F2, perché alla prima possa gira almeno due pedine esterne nere, riducendo così il numero di possibili mosse fattibili in quell'area - NDR).</i><br>",
+  "comment": "Il bianco deve muovere, e al momento ha tre tempi a disposizione.",
   "moves": [
     {
       "move": "C2",
-      "comment": "Se il bianco gioca in <b>C2</b>, i suoi tempi scenderanno a due, mentre saranno aumentati i tempi del nero (sono aumentate le pedine esterne del bianco e perciò le case su cui può muovere il nero)."
+      "comment": "Il bianco gioca in <b>C2</b> e i suoi tempi scendono a due. Invece sono aumentati i tempi del nero, che ora può giocare anche a nord."
     },
     {
       "move": "B8",
-      "comment": "Il nero decide di giocare la sua mossa di riserva in <b>B8</b>. A questo punto tocca nuovamente al bianco. Questa volta però il bianco non ha più a disposizione tre tempi, ma solo due."
+      "comment": "Il nero decide di giocare la sua mossa di riserva in <b>B8</b>. A questo punto tocca nuovamente al bianco che dovrà utilizzare un altre tempo di gioco."
     }
   ]
 }

@@ -10,15 +10,15 @@
     "--#####-"
   ],
   "turn": "white",
-  "comment": "Il bianco ha disponibili o una mossa che agisce sulla pedina <b>D2</b> (perciò in <b>C1</b>, o <b>D1</b>, o <b>E1</b>, o <b>E2</b>) oppure di cedere un angolo in <b>G7</b>.",
+  "comment": "Il bianco può giocare o una mossa che agisce sulla pedina <b>D2</b> (ovvero <b>C1</b>, <b>D1</b>, <b>E1</b> o <b>E2</b>) oppure in <b>G7</b> (cedendo un angolo al nero).",
   "moves": [
     {
       "move": "E2",
-      "comment": "Se il bianco gioca per esempio in <b>E2</b>, al bianco non resta che <b>G7</b>. Basterebbe al nero guadagnare un tempo, eseguire una mossa che non apre nuove mosse al bianco, che la partita sarebbe praticamente vinta. Ciò è possibile grazie alla mossa del nero in <b>B8</b>."
+      "comment": "Il bianco ha scelto di giocare in <b>E2</b>. Ora gli resta solo la mossa in <b>G7</b>. Al nero basta guadagnare un tempo, eseguendo una mossa che non apra nuove mosse al bianco, e la partita è vinta. Ciò è possibile grazie alla mossa di riserva in <b>B8</b>."
     },
     {
       "move": "B8",
-      "comment": "Dopo nero <b>B8</b> al bianco restano solo le opportunità in <b>G7</b> e in <b>B7</b>, entrambe che cedono due angoli molto vantaggiosi per il nero."
+      "comment": "Dopo nero <b>B8</b> al bianco restano solo le opportunità in <b>G7</b> e in <b>B7</b>: entrambe cedono angoli molto vantaggiosi per il nero."
     }
   ]
 }

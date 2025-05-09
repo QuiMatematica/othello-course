@@ -43,10 +43,10 @@
 </div>
 
 <p>In questa posizione il nero ha una configurazione compatta e centrifuga.
-Tuttavia le sue aree di gioco sono molto limitate. Giocare in E1 non è particolarmente interessante:
-    il bianco risponderebbe automaticamente in G1, anche se significherebbe prendere un cinque attaccabile.
-    Giocare in G2 è prematuro. L'area più promettente per il nero è quella a sud-ovest,
-    dove ha almeno tre tempi.</p>
+    Tuttavia le sue aree di gioco sono molto limitate. Giocare in <b>E1</b> non è particolarmente interessante:
+    il bianco risponderebbe automaticamente in <b>G1</b>, anche se significherebbe prendere un cinque attaccabile.
+    Giocare in <b>G2</b> è prematuro. L'area più promettente per il nero è quella a sud-ovest,
+    dove ha tre tempi di gioco.</p>
 
 <p>Il bianco invece ha una configurazione divisa in due blocchi e centripeta.
     Ha un'area di gioco molto ampia a sud-est.
@@ -70,7 +70,7 @@ Tuttavia le sue aree di gioco sono molto limitate. Giocare in E1 non è particol
 
 <h2>Uno studio più astratto</h2>
 
-<p>A puro titolo esemplificativo, ti propongo i diagrammi seguenti, nei quali analizziamo l'influenza
+<p>A puro titolo esemplificativo, ti propongo i seguenti diagrammi, nei quali analizziamo l'influenza
 di un colore che controlla uno, due o tre bordi.</p>
 
 <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -142,7 +142,7 @@ tra <b>Paolo Scognamiglio</b> e <b>Alessandro Di Mattei</b>.</p>
 	</div>
 </div>
 
-<p>Dopo una serie di mosse non facili, il nero si è trovato costretto a giocare sui bordi.
+<p>Dopo una serie di mosse non facili, il nero si è trovato costretto ad accedere ai bordi.
 Alla mossa 29 ha giocato in <b>A6</b> impiantandosi così nel terzo bordo. La sua
 configurazione è centripeta verso l'area di gioco a sud. Gli rimane solo una mossa al
 di fuori di questa zona, la <b>A5</b>, che il bianco provvede subito a togliergli.</p>

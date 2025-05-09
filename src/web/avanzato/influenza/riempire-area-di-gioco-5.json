@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "C2",
-      "comment": "Il bianco sceglie C2 in modo da girare 'solo' due pedine esterne del nero."
+      "comment": "Il bianco sceglie <b>C2</b> in modo da girare 'solo' due pedine esterne del nero."
     },
     {
       "move": "B8",
@@ -21,7 +21,7 @@
     },
     {
       "move": "D2",
-      "comment": "A questo punto il nero può solo giocare sul lato nord aprendo così nuove mosse al bianco."
+      "comment": "Il bianco gioca un altro tempo a nord.<br>A questo punto il nero può giocare solo sul lato nord aprendo così nuove mosse al bianco."
     }
   ]
 }

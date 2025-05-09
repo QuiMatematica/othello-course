@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "C2",
-      "comment": "Il bianco sceglie C2 in modo da girare 'solo' due pedine esterne del nero."
+      "comment": "Il bianco sceglie <b>C2</b> in modo da girare 'solo' due pedine esterne del nero."
     },
     {
       "move": "D2",
@@ -23,7 +23,8 @@
       "move": "E1"
     },
     {
-      "move": "D1"
+      "move": "D1",
+      "comment": "Il nero continua a posticipare la mossa in D8 e lo farà fino a quando al bianco non rimarranno più mosse sicure."
     },
     {
       "move": "C1"

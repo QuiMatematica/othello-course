@@ -1,5 +1,6 @@
 <h1>Esaurire l'area di gioco</h1>
-<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello - seconda parte</i>, Othello News - anno X - n. 2 - 1994.</b></p>
+<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello - seconda parte</i>, Othello News - anno X - n. 2 - 1994.</b>
+<a href="https://www.fngo.it/allegati/OthelloNews%20Anno%20X%20n.2.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a></p>
 
 <h2>Mosse di riserva</h2>
 

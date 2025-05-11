@@ -1,5 +1,6 @@
 <h1>La definizione di influenza</h1>
-<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello - prima parte</i>, Othello News - anno X - n. 1 - 1994.</b></p>
+<p><b>adattato da: Francesco Marconi, <i>Teoria dell'Othello - prima parte</i>, Othello News - anno X - n. 1 - 1994.</b>
+<a href="https://www.fngo.it/allegati/OthelloNews%20Anno%20X%20n.1.pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a></p>
 
 <p>Abbiamo visto che è importante avere <a href="../../intermedio/mobilita/chapter.php">mobilità</a>:
 è vantaggioso cioè avere molte mosse a disposizione.

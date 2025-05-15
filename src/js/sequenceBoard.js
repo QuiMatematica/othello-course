@@ -53,7 +53,6 @@ export default class SequenceBoard {
         this.errorState = false;
 
         if (this.currentPosition.nextPosition.nextPosition == null) {
-            this.controls.prev.remove();
             this.controls.computer.remove();
         }
 

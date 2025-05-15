@@ -9,7 +9,7 @@ export default class RefereeBoard {
 
     constructor(container, counter) {
         const emptyPosition = Position.getStartingPosition();
-        this.board = new Board(container, counter, staticBoardOnClick);
+        this.board = new Board(container, counter, null, staticBoardOnClick);
         this.board.setPosition(emptyPosition);
         this.score = new Score(container, this.board);
         this.score.turnContainer.remove();

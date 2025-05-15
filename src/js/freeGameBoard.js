@@ -18,7 +18,7 @@ export default class FreeGameBoard {
     constructor(container, counter) {
         const matchFile = container.dataset['file'];
         if (matchFile == null) {
-            this.readMatch("", container, counter);
+            this.readMatch(null, container, counter);
         }
         else {
             fetch(matchFile)
@@ -33,7 +33,7 @@ export default class FreeGameBoard {
         this.container = container;
         this.counter = counter;
 
-        this.board = new Board(container, counter, freeGameBoardOnClick)
+        this.board = new Board(container, counter, null, freeGameBoardOnClick)
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);

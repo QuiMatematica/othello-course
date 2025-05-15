@@ -57,6 +57,9 @@ export default class Position {
     }
 
     static getPositionFromJSON(json) {
+        if (json == null) {
+            return Position.getStartingPosition();
+        }
         let position;
         if (json.position != null) {
             const grid = [];

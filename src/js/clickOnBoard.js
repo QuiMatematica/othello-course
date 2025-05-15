@@ -18,7 +18,7 @@ export default class ClickOnBoard {
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
-        this.board = new Board(container, counter, clickOnClick);
+        this.board = new Board(container, counter, null, clickOnClick);
         this.board.setPosition(this.currentPosition);
         this.comment = new PositionComment(container);
         this.controls = new ClickOnControls(container, counter);

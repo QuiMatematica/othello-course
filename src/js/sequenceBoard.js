@@ -23,7 +23,7 @@ export default class SequenceBoard {
 
     constructor(container, counter) {
         this.currentPosition = Position.getEmptyPosition();
-        this.board = new Board(container, counter, sequenceBoardOnClick);
+        this.board = new Board(container, counter, null, sequenceBoardOnClick);
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);

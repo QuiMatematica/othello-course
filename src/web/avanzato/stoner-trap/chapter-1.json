@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "##OOOO##",
+    "##OOO##O",
+    "#OOO##OO",
+    "####OOO#",
+    "--####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca nella casella <b>X</b> e controlla la diagonale <b>B7 - F3</b>."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero cerca di ottenere una pedina per poter accedere all'angolo."
+    },
+    {
+      "move": "C8",
+      "comment": "Il bianco chiude l'attacco.<br>Ora: se il nero gioca in <b>A8</b>, il bianco prima si incunea in <b>B8</b>, poi prende l'angolo.<br>Se, invece, il nero gioca in <b>B8</b> gira la pedina nella casella <b>X</b> e il bianco può prendere entrambi gli angoli."
+    }
+  ]
+}

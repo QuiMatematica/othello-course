@@ -327,6 +327,16 @@
 							"title": "Influenza e bordi"
 						}
 					]
+				},
+				{
+					"href": "stoner-trap/",
+					"title": "Le Stoner trap",
+					"pages": [
+						{
+							"href": "stoner-trap-c.php",
+							"title": "Le Stoner trap di tipo C"
+						}
+					]
 				}
 			]
 		}

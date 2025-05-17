@@ -1,0 +1,31 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OO##",
+    "#OOOO###",
+    "#OO###O#",
+    "#O##OO##",
+    "--####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "F2",
+      "comment": "Il nero si procura una pedina sulla diagonale."
+    },
+    {
+      "move": "C8",
+      "comment": "Il bianco chiude l'attacco ma..."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero si prende tutto il lato sud senza girare la pedina nella casella <b>X</b>. Al prossimo turno potrà prendere l'angolo."
+    }
+  ]
+}

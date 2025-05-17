@@ -1,0 +1,264 @@
+<h1>Le Stoner trap di tipo C</h1>
+
+<p>Rivediamo, nel diagramma 1, l'esempio base già presentato nella pagina precedente.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="chapter-1.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 1: il bianco gioca una Stoner trap.
+    </div>
+</div>
+
+<p>L'attacco è tale che il nero ha la certezza di ottenere l'angolo H8 e buona parte del bordo sud.</p>
+<ul>
+	<li>Se, infatti, il bianco gioca in <b>B8</b> per girare la pedina <b>C8</b>, gira anche la pedina in <b>B7</b>,
+	consentendo al nero di prendere l'angolo <b>A8</b>... e successivamente anche <b>H8</b>.</li>
+    <li>Se, invece, il bianco prende l'angolo <b>A8</b>, il nero può incunearsi in <b>B8</b> e, in una mossa
+    successiva, prendere l'angolo <b>H8</b>.</li>
+    <li>Se, infine, il bianco gioca altrove, il nero può prendere l'angolo <b>H8</b>, oppure aspettare che
+    si realizzino uno delle due situazioni precedenti. In questo caso, oltre alla certezza di prendere l'angolo,
+    il nero avrà comunque guadagnato un tempo di gioco.</li>
+</ul>
+
+<h2>Condizioni per la riuscita dell'attacco</h2>
+
+<p>Affinché una Stoner trap di questo tipo abbia successo sono necessarie diverse condizioni.</p>
+
+<p>Innanzitutto deve esserci una formazione di bordo sbilanciata da attaccare. Nell'esempio è un quattro (diagramma 2), ma nel
+seguito vedremo che è possibile attaccare anche altre formazioni.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-2.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 2: una formazione di bordo sbilanciata da attaccare.
+    </div>
+</div>
+
+<p>L'attaccante (il bianco) deve poter giocare nella casella <b>X</b> opposta allo sbilanciamento (<b>B7</b>)
+prendendo il controllo di tutta la diagonale (diagramma 3).</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-3.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 3: il bianco deve poter giocare nella casella X controllando la diagonale.
+    </div>
+</div>
+
+<p>Dopo la risposta dell'attaccato, l'attaccante (il bianco) deve poter giocare nella casella adiacente alla formazione sbilanciata
+    (<b>C8</b>, diagramma 4).</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-4.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 4: il bianco deve poter giocare nella casella adiacente alla formazione sbilanciata.
+    </div>
+</div>
+
+<p>Completato l'attacco, se l'attaccato (il nero) gioca nella casella <b>C</b> rimasta libera (<b>B8</b>),
+    deve essere costretto a girare anche la casella <b>X</b> (<b>B7</b>) in modo che l'attaccante possa accedere
+all'angolo.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-5.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 5: se il nero gioca in <b>B8</b> deve girare anche <b>B7</b>.
+    </div>
+</div>
+
+<p>Ho denominato <b>di tipo C</b> le Stoner trap che presente in questa pagina perché il giocatore attaccato
+    dovrebbe giocare in una casella <b>C</b> per impedire l'accesso all'angolo.</p>
+
+<h2>Quando l'attacco non funziona</h2>
+
+<p>Quando l'attaccante gioca nella casella <b>X</b> deve prendere il controllo della diagonale.
+    Se così non fosse, l'attaccato potrebbe conquistare l'angolo. Sul bordo rimangono due caselle vuote e,
+    per parità, il bordo è salvo. Vedi il diagramma 6.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-6.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 6: l'attaccante non controlla la diagonale.
+    </div>
+</div>
+
+<p>Dopo la risposta dell'attaccato, l'attaccante deve poter chiudere la trappola giocando nella casella adiacente
+    alla formazione sbilanciata. In particolare l'attaccante deve stare attento che l'avversario, tagliando la diagonale
+    non riesca a impedirgli la mossa richiesta. Vedi il diagramma 7.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-7.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 7: l'attaccante non accede alla casella adiacente alla formazione di bordo.
+    </div>
+</div>
+
+<p>Infine, la mossa nella casella <b>C</b> dell'attaccato deve girare la pedina nella casella <b>X</b>.
+    Se così non fosse, l'attaccato riesce a muovere in entrambe le caselle. Vedi il diagramma 8.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-8.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 8: l'attaccato riesce a giocare nella casella C senza girare la pedina nella casella X.
+    </div>
+</div>
+
+<p>Va considerata, poi, una quarta condizione, che tuttavia non è fondamentale.
+La trappola è più efficace se, dopo che l'attaccato ha preso l'angolo,
+l'attaccante può giocare nella casella <b>C</b> rimasta libera. Così facendo si incunea e conquista
+un tempo di gioco. Nella situazione del diagramma 9, per esempio, il bianco non
+riesce a incunearsi e deve quindi prendere subito l'angolo opposto.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-9.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 9: l'attaccante non ha la possibilità di incunearsi.
+    </div>
+</div>
+
+<h2>Altre formazioni sbilanciate attaccabili</h2>
+
+<p>Il quattro sbilanciato è solo una delle formazioni di bordo attaccabili con una Stoner trap di tipo C.</p>
+
+<p>Nei seguenti diagrammi ti mostro un esempio per altre possibili formazioni.</p>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+	<div class="col">
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="stoner-trap-c-10.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 10.
+			</div>
+		</div>
+
+	</div>
+	<div class="col">
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="stoner-trap-c-11.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 11.
+			</div>
+		</div>
+
+	</div>
+</div>
+
+
+	<p align="center">
+	<table border="0" width="90%">
+	  <tr><td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="match">
+    	<param name="matchFile" value="LeStonerTrapDiTipoC1.txt">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+      </td>
+	  <td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="match">
+    	<param name="matchFile" value="LeStonerTrapDiTipoC2.txt">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	  </td></tr>
+	  <tr><td align="center">
+		Diagramma 1: attacco ad un "quattro sbilanciato".
+      </td>
+	  <td align="center">
+		Diagramma 2: attacco ad un "tre + uno".
+	  </td></tr>
+	</table>
+	</p>
+
+	<p align="center">
+	<table border="0" width="90%">
+	  <tr><td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="match">
+    	<param name="matchFile" value="LeStonerTrapDiTipoC3.txt">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+      </td>
+	  <td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="match">
+    	<param name="matchFile" value="LeStonerTrapDiTipoC4.txt">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	  </td></tr>
+	  <tr><td align="center">
+		Diagramma 3: attacco ad un "due + due".
+      </td>
+	  <td align="center">
+		Diagramma 4: attacco ad un "uno + tre".
+	  </td></tr>
+	</table>
+	</p>
+
+
+
+
+<h2>Tocca a te</h2>
+
+<p>Nel diagramma 9 giochi con il bianco e devi attaccare il quattro sbilanciato
+sul bordo ovest. Anche nel diagramma 10 giochi con il bianco, ma devi anche decidere
+quale bordo sbilanciato attaccare.</p>
+
+	<p align="center">
+	<table border="0" width="90%">
+	  <tr><td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="380"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="sequence">
+    	<param name="sequenceFile" value="LeStonerTrapDiTipoC9.txt">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+      </td>
+	  <td align="center">
+    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="380"
+            code="it.claudiosignorini.tao.TaoApplet.class"
+            hspace="0" vspace="0" align="top">
+    	<param name="function" value="sequence">
+    	<param name="sequenceFile" value="LeStonerTrapDiTipoC10.txt">
+        Mi dispiace: il tuo browser non supporta le Applet Java.
+    </applet>
+	  </td></tr>
+	  <tr><td align="center">
+		Diagramma 9: il bianco gioca una Stoner trap.
+      </td>
+	  <td align="center">
+		Diagramma 10: il bianco gioca una Stoner trap.
+	  </td></tr>
+	</table>
+	</p>

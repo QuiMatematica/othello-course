@@ -119,10 +119,12 @@ all'angolo.</p>
 </div>
 
 <p>Va considerata, poi, una quarta condizione, che tuttavia non è fondamentale.
-La trappola è più efficace se, dopo che l'attaccato ha preso l'angolo,
-l'attaccante può giocare nella casella <b>C</b> rimasta libera. Così facendo si incunea e conquista
+    Se la manovra avviene in una regione pari (come in tutti i diagrammi di questa pagina),
+l'attacco è più efficace se, dopo che l'attaccato ha preso l'angolo,
+l'attaccante può giocare nella casella <b>C</b> rimasta libera. Così facendo si incunea, chiudo una regione e conquista
 un tempo di gioco. Nella situazione del diagramma 9, per esempio, il bianco non
-riesce a incunearsi e deve quindi prendere subito l'angolo opposto.</p>
+riesce a incunearsi e deve quindi prendere subito l'angolo opposto. La casella rimasta libera rimane a disposizione
+dell'attaccato che guadagna un tempo di gioco.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">

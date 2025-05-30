@@ -1,0 +1,33 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "#--OOO##",
+    "##OOO###",
+    "##O###O#",
+    "#O##OO##",
+    "#-####--",
+    "---O-##-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero si procura una pedina sulla diagonale."
+    },
+    {
+      "move": "E8",
+      "comment": "Il bianco chiude l'attacco."
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "H8"
+    }
+  ]
+}

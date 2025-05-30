@@ -1,0 +1,31 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "---OOO##",
+    "##OOO###",
+    "##O###O#",
+    "OO##OO##",
+    "--####--",
+    "----###-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero si procura una pedina sulla diagonale."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco chiude l'attacco."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero gioca nella casella B senza girare la pedina in X. La formazione sul bordo diventa un cinque."
+    }
+  ]
+}

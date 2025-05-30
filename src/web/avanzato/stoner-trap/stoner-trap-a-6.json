@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---OO###",
+    "##OOO###",
+    "##O###O#",
+    "#O##OO##",
+    "#-####--",
+    "----###-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo. Sul bordo sud rimangono 3 caselle libere e il bianco può incunearsi."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco minaccia l'angolo <b>H8</b>."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero tenta di parare la minaccia."
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco si incunea e potrà successivamente prendere l'angolo <b>H8</b>."
+    }
+  ]
+}

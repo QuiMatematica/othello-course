@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "-----OOO",
+    "#OOOOOOO",
+    "#O####OO",
+    "####OOOO",
+    "--####-O",
+    "-#-O-##-"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: il bianco muove e conquista 11 pedine stabili in 4 mosse.",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Bravo! Similmente alle Stoner trap devi cominciare giocando in una casella <b>X</b>."
+    },
+    {
+      "move": "E3",
+      "comment": "Il bianco si procura una pedina sulla diagonale."
+    },
+    {
+      "move": "E8",
+      "comment": "Bene! Hai chiuso l'attacco. Ora il nero non può difendersi in <b>C8</b> perché girerebbe la pedina bianca nella casella <b>X</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "C8",
+      "comment": "Ottima conclusione! Ora ti sarà facile ottenere il risultato desiderato."
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "H8",
+      "comment": "Ecco fatto! Complimenti!!!"
+    }
+  ]
+}

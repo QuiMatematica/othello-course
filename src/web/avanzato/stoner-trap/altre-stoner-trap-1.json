@@ -1,0 +1,26 @@
+{
+  "position": [
+    "-O-#-OO-",
+    "O-###O--",
+    "OOOOOO#-",
+    "O#OOO###",
+    "OOO####-",
+    "O-O###-#",
+    "---###--",
+    "---##---"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il nero conquista tutta la diagonale <b>B2-F6</b>."
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero completa la Stoner trap."
+    }
+  ]
+}

@@ -11,7 +11,7 @@
     </div>
 </div>
 
-<p>L'attacco è tale che il nero ha la certezza di ottenere l'angolo H8 e buona parte del bordo sud.</p>
+<p>L'attacco è tale che il nero ha la certezza di ottenere l'angolo <b>H8</b> e buona parte del bordo sud.</p>
 <ul>
 	<li>Se, infatti, il bianco gioca in <b>B8</b> per girare la pedina <b>C8</b>, gira anche la pedina in <b>B7</b>,
 	consentendo al nero di prendere l'angolo <b>A8</b>... e successivamente anche <b>H8</b>.</li>
@@ -139,7 +139,7 @@ riesce a incunearsi e deve quindi prendere subito l'angolo opposto.</p>
 
 <p>Nei seguenti diagrammi ti mostro un esempio per altre possibili formazioni.</p>
 
-<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="row row-cols-1 row-cols-md-3 g-4">
 	<div class="col">
 
 		<div class="card mx-auto board-card my-3">
@@ -164,101 +164,42 @@ riesce a incunearsi e deve quindi prendere subito l'angolo opposto.</p>
 		</div>
 
 	</div>
+	<div class="col">
+
+		<div class="card mx-auto board-card my-3">
+			<div class="card-body">
+				<div class="match-file-board" data-file="stoner-trap-c-12.json"></div>
+			</div>
+			<div class="card-footer text-body-secondary text-center">
+				Diagramma 12.
+			</div>
+		</div>
+
+	</div>
 </div>
-
-
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="match">
-    	<param name="matchFile" value="LeStonerTrapDiTipoC1.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="match">
-    	<param name="matchFile" value="LeStonerTrapDiTipoC2.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 1: attacco ad un "quattro sbilanciato".
-      </td>
-	  <td align="center">
-		Diagramma 2: attacco ad un "tre + uno".
-	  </td></tr>
-	</table>
-	</p>
-
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="match">
-    	<param name="matchFile" value="LeStonerTrapDiTipoC3.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="390"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="match">
-    	<param name="matchFile" value="LeStonerTrapDiTipoC4.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 3: attacco ad un "due + due".
-      </td>
-	  <td align="center">
-		Diagramma 4: attacco ad un "uno + tre".
-	  </td></tr>
-	</table>
-	</p>
-
-
-
 
 <h2>Tocca a te</h2>
 
 <p>Nel diagramma 9 giochi con il bianco e devi attaccare il quattro sbilanciato
-sul bordo ovest. Anche nel diagramma 10 giochi con il bianco, ma devi anche decidere
+    sul bordo ovest.</p>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="stoner-trap-c-13.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 13.
+	</div>
+</div>
+
+<p>Anche nel diagramma 10 giochi con il bianco, ma devi anche decidere
 quale bordo sbilanciato attaccare.</p>
 
-	<p align="center">
-	<table border="0" width="90%">
-	  <tr><td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="380"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="sequence">
-    	<param name="sequenceFile" value="LeStonerTrapDiTipoC9.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-      </td>
-	  <td align="center">
-    <applet codebase="../.." archive="Tao.jar" name="TaoApplet" width="241" height="380"
-            code="it.claudiosignorini.tao.TaoApplet.class"
-            hspace="0" vspace="0" align="top">
-    	<param name="function" value="sequence">
-    	<param name="sequenceFile" value="LeStonerTrapDiTipoC10.txt">
-        Mi dispiace: il tuo browser non supporta le Applet Java.
-    </applet>
-	  </td></tr>
-	  <tr><td align="center">
-		Diagramma 9: il bianco gioca una Stoner trap.
-      </td>
-	  <td align="center">
-		Diagramma 10: il bianco gioca una Stoner trap.
-	  </td></tr>
-	</table>
-	</p>
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="stoner-trap-c-14.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 14.
+	</div>
+</div>

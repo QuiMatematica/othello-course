@@ -1,12 +1,12 @@
 {
   "position": [
     "--------",
-    "--------",
-    "----OO##",
+    "----O---",
+    "---OOO##",
     "#OOOO###",
     "#OO###O#",
-    "#O##OO##",
-    "--####--",
+    "####OO##",
+    "#-####--",
     "---####-"
   ],
   "turn": "white",
@@ -16,7 +16,7 @@
       "comment": "Il bianco attacca."
     },
     {
-      "move": "F2",
+      "move": "E1",
       "comment": "Il nero si procura una pedina sulla diagonale."
     },
     {

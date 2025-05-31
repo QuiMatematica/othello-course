@@ -11,17 +11,6 @@
     </div>
 </div>
 
-<p>L'attacco è tale che il nero ha la certezza di ottenere l'angolo <b>H8</b> e buona parte del bordo sud.</p>
-<ul>
-	<li>Se, infatti, il bianco gioca in <b>B8</b> per girare la pedina <b>C8</b>, gira anche la pedina in <b>B7</b>,
-	consentendo al nero di prendere l'angolo <b>A8</b>... e successivamente anche <b>H8</b>.</li>
-    <li>Se, invece, il bianco prende l'angolo <b>A8</b>, il nero può incunearsi in <b>B8</b> e, in una mossa
-    successiva, prendere l'angolo <b>H8</b>.</li>
-    <li>Se, infine, il bianco gioca altrove, il nero può prendere l'angolo <b>H8</b>, oppure aspettare che
-    si realizzino uno delle due situazioni precedenti. In questo caso, oltre alla certezza di prendere l'angolo,
-    il nero avrà comunque guadagnato un tempo di gioco.</li>
-</ul>
-
 <h2>Condizioni per la riuscita dell'attacco</h2>
 
 <p>Affinché una Stoner trap di questo tipo abbia successo sono necessarie diverse condizioni.</p>
@@ -39,7 +28,8 @@ seguito vedremo che è possibile attaccare anche altre formazioni.</p>
 </div>
 
 <p>L'attaccante (il bianco) deve poter giocare nella casella <b>X</b> opposta allo sbilanciamento (<b>B7</b>)
-prendendo il controllo di tutta la diagonale (diagramma 3).</p>
+prendendo il controllo di tutta la diagonale. Dopo tale mossa l'attaccato (il nero) non deve avere accesso
+    all'angolo (diagramma 3).</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -51,7 +41,7 @@ prendendo il controllo di tutta la diagonale (diagramma 3).</p>
 </div>
 
 <p>Dopo la risposta dell'attaccato, l'attaccante (il bianco) deve poter giocare nella casella adiacente alla formazione sbilanciata
-    (<b>C8</b>, diagramma 4).</p>
+    (<b>C8</b>) minacciando l'angolo opposto (<b>H8</b>, diagramma 4).</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -64,7 +54,8 @@ prendendo il controllo di tutta la diagonale (diagramma 3).</p>
 
 <p>Completato l'attacco, se l'attaccato (il nero) gioca nella casella <b>C</b> rimasta libera (<b>B8</b>),
     deve essere costretto a girare anche la casella <b>X</b> (<b>B7</b>) in modo che l'attaccante possa accedere
-all'angolo.</p>
+all'angolo. Per ottenere questo è necessario che sul controbordo adiacente (la colonna <b>B</b>) rimanga
+almeno una pedina dell'attaccato.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -75,8 +66,8 @@ all'angolo.</p>
     </div>
 </div>
 
-<p>Ho denominato <b>di tipo C</b> le Stoner trap che presente in questa pagina perché il giocatore attaccato
-    dovrebbe giocare in una casella <b>C</b> per impedire l'accesso all'angolo.</p>
+<p>Ho denominato <b>di tipo C</b> le Stoner trap di questa pagina perché il giocatore attaccato
+    dovrebbe giocare in una casella <b>C</b> (<b>B8</b>) per impedire l'accesso all'angolo minacciato.</p>
 
 <h2>Quando l'attacco non funziona</h2>
 
@@ -107,7 +98,9 @@ all'angolo.</p>
 </div>
 
 <p>Infine, la mossa nella casella <b>C</b> dell'attaccato deve girare la pedina nella casella <b>X</b>.
-    Se così non fosse, l'attaccato riesce a muovere in entrambe le caselle. Vedi il diagramma 8.</p>
+    E perché questo accada è necessario che almeno una pedina del controbordo adiacente sia dell'attaccato.
+    Se così non fosse, l'attaccato riuscirebbe a muovere prima nella casella <b>C</b> (senza girare la pedina nella
+    casella <b>X</b>) e poi nell'angolo. Vedi il diagramma 8.</p>
 
 <div class="card mx-auto board-card my-3">
     <div class="card-body">
@@ -118,10 +111,10 @@ all'angolo.</p>
     </div>
 </div>
 
-<p>Va considerata, poi, una quarta condizione, che tuttavia non è fondamentale.
+<p>Va considerata una quarta condizione che, tuttavia, non è fondamentale.
     Se la manovra avviene in una regione pari (come in tutti i diagrammi di questa pagina),
 l'attacco è più efficace se, dopo che l'attaccato ha preso l'angolo,
-l'attaccante può giocare nella casella <b>C</b> rimasta libera. Così facendo si incunea, chiudo una regione e conquista
+l'attaccante può giocare nella casella <b>C</b> rimasta libera. Così facendo si incunea, chiude una regione e conquista
 un tempo di gioco. Nella situazione del diagramma 9, per esempio, il bianco non
 riesce a incunearsi e deve quindi prendere subito l'angolo opposto. La casella rimasta libera rimane a disposizione
 dell'attaccato che guadagna un tempo di gioco.</p>
@@ -138,8 +131,6 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 <h2>Altre formazioni sbilanciate attaccabili</h2>
 
 <p>Il quattro sbilanciato è solo una delle formazioni di bordo attaccabili con una Stoner trap di tipo C.</p>
-
-<p>Nei seguenti diagrammi ti mostro un esempio per altre possibili formazioni.</p>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
 	<div class="col">
@@ -182,7 +173,7 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 
 <h2>Tocca a te</h2>
 
-<p>Nel diagramma 9 giochi con il bianco e devi attaccare il quattro sbilanciato
+<p>Nel diagramma 13 giochi con il bianco e devi attaccare il quattro sbilanciato
     sul bordo ovest.</p>
 
 <div class="card mx-auto board-card my-3">
@@ -194,7 +185,7 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 	</div>
 </div>
 
-<p>Anche nel diagramma 10 giochi con il bianco, ma devi anche decidere
+<p>Anche nel diagramma 14 giochi con il bianco, ma devi anche decidere
 quale bordo sbilanciato attaccare.</p>
 
 <div class="card mx-auto board-card my-3">

@@ -1,7 +1,7 @@
 <h1>Le Stoner trap di tipo A</h1>
 
 <p>Le Stoner trap che chiamo <i>di tipo A</i> sono quelle che, alla fine
-dell'attacco, vedono <u>quattro pedine</u> sul bordo attaccato. Il colore che deve
+dell'attacco, vedono quattro pedine sul bordo attaccato. Il colore che deve
 difendersi potrebbe conquistare tutto il lato giocando in una casella <b>A</b>, ma,
     se l'attacco è condotto bene, questa mossa gira la casella <b>X</b> adiacente,
 consentendo all'attaccante di conquistare l'angolo.</p>
@@ -57,7 +57,9 @@ formazione sbilanciata (<b>D8</b>, diagramma 4).</p>
 </div>
 
 <p>Completato l'attacco, se l'attaccato (il nero) gioca nella casella <b>A</b> rimasta libera (<b>C8</b>),
-deve girare anche la casella <b>X</b> (<b>B7</b>) in modo che l'attaccante possa accedere all'angolo.</p>
+deve girare anche la casella <b>X</b> (<b>B7</b>) in modo che l'attaccante possa accedere all'angolo.
+Affinché accada questo è necessario che la pedina nella casella <b>A</b> sul bordo adiacente (<b>A6</b>) deve essere
+dell'attaccato.</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">

@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "B7",
-      "comment": "Il bianco attacca."
+      "comment": "Il bianco attacca. Ma attenzione: nella colonna <b>B</b> non ci sono più pedine nere."
     },
     {
       "move": "E1",

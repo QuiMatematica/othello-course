@@ -40,7 +40,28 @@ in una regione.</p>
     <li>chi può essere attaccato ha valutato meno dannoso l'attacco delle manovre necessarie a pararlo.</li>
 </ul>
 
-<h2>Non se n'è accorto</h2>
+<h2>Una Stoner trap iniziata ma trasformata in qualcos'altro</h2>
 
 <p>Il diagramma 1 riporta la situazione dopo 29-esima mossa della partita tra l'inglese Imre Leader (nero) e
-il tedesco Matthias Berg (bianco) all'ottavo turno del torneo di Cambridge dell'EGP 2024-2025.</p>
+il tedesco Matthias Berg (bianco) all'ottavo turno del torneo di Cambridge, valido per
+    l'European Grand Prix 2024-2025.</p>
+
+<p>Il bianco si sente in difficoltà: ha un solo tempo di gioco a disposizione a sud-est; oltre a questo può giocare
+solo a ridosso dei bordi del nero. Questi, in compenso, ha preso saldamente i bordi, ma ha un'influenza elevata.
+Inoltre ha a disposizione una mossa ideale in <b>G6</b>.</p>
+
+<p>Il bianco, quindi, sta cercando una mossa che gli permetta di guadagnare un tempo e, al tempo stesso, togliere
+all'avversario la mossa <b>G6</b>. <b>B2</b> è una buona candidata. Si forma un bordo sbilanciato a nord, ma non è
+attaccabile con una Stoner trap. La mossa è fattibile.</p>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="match-file-board" data-file="stoner-in-azione-1.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 1.
+	</div>
+</div>
+
+Puoi vedere il resto della partita su flipthedisk
+<a href="https://flipthedisc.com/live/189/25822" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a></p>.

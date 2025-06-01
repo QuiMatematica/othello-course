@@ -31,9 +31,8 @@ possibile attaccare altre formazioni.</p>
 	</div>
 </div>
 
-<p>L'attaccante (il bianco) deve poter giocare nella casella <b>X</b> opposta allo schieramento (<b>B7</b>).
-Come vedremo dopo non è necessario prendere il controllo di tutta la diagonale, ma farlo rende l'attacco più
-efficace (diagramma 3).</p>
+<p>L'attaccante (il bianco) deve poter giocare nella casella <b>X</b> opposta allo schieramento (<b>B7</b>)
+    e deve prendere il controllo di tutta la diagonale (diagramma 3).</p>
 
 <div class="card mx-auto board-card my-3">
 	<div class="card-body">

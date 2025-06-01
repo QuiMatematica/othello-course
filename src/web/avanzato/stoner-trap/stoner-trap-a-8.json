@@ -25,7 +25,7 @@
     },
     {
       "move": "C8",
-      "comment": "Il nero gioca nella casella B senza girare la pedina in X. La formazione sul bordo diventa un cinque."
+      "comment": "Il nero gioca nella casella <b>B</b> senza girare la pedina nella casella <b>X</b>. La formazione sul bordo diventa un cinque."
     }
   ]
 }

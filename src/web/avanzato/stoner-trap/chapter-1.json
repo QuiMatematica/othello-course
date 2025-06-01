@@ -21,7 +21,7 @@
     },
     {
       "move": "C8",
-      "comment": "Il bianco chiude l'attacco.<br>se il nero gioca in <b>A8</b>, il bianco prima si incunea in <b>B8</b>, poi prende l'angolo <b>H8</b>.<br>Se, invece, il nero gioca in <b>B8</b> gira la pedina nella casella <b>X</b> e il bianco può prendere prima <b>A8</b> e poi <b>H8</b>."
+      "comment": "Il bianco chiude l'attacco.<br>Se il nero gioca in <b>A8</b>, il bianco prima si incunea in <b>B8</b>, poi prende l'angolo <b>H8</b>.<br>Se, invece, il nero gioca in <b>B8</b> gira la pedina nella casella <b>X</b> e il bianco può prendere prima <b>A8</b> e poi <b>H8</b>."
     },
     {
       "move": "A8",

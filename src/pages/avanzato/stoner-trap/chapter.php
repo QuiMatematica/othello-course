@@ -41,17 +41,18 @@
 
 <p>Le Stoner trap si possono dividere in due sottofamiglie che in queste pagine chiamo
 "di tipo C" e "di tipo A", in base alla casella in cui il colore attaccato
-dovrebbe giocare per riconquistare tutto il lato. Tale nomenclatura è
-    originale, quindi non la ritroverai in altri articoli.</p>
+dovrebbe giocare per bloccare la minaccia all'angolo. Tale nomenclatura è
+    originale, quindi non la ritroverai in altri corsi.</p>
 
 <p>Nelle prossime pagine vedrai quali sono le formazioni attaccabili e quali sono le condizioni per attaccare
     efficacemente.</p>
 
-<h2>Un po' di storia</h2>
+<h2>Un po' di storia a ritroso</h2>
 
-<p>John Stoner è uno dei fondatori della U.S.O.A.: United States Othello Association.
-    Nel 1979, durante un torneo a Harrisburg (Pennsylvania), Stoner conquista un angolo con una trappola mai vista.
-Da allora il nome di questo tipo di attacco è stato <i>Stoner trap</i>: la trappola di Stoner.</p>
+<p>John Stoner è uno dei fondatori della U.S.O.A.: United States Othello Association
+    <a href="https://usothello.org/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>.
+    Nel 1979, durante un torneo a Harrisburg (Pennsylvania), Stoner conquista un angolo con una trappola mai vista in America.
+Da allora il nome di questo tipo di attacco è <i>Stoner trap</i>: la trappola di Stoner.</p>
 
 <p>Se l'attribuzione è stata data a Stoner, sicuramente non è stato il primo a giocare quella sequenza di mosse.
 Pier Andrea Morolli, vincitore del primo campionato italiano (1978), ha raccontato in un'intervista
@@ -61,7 +62,7 @@ Pier Andrea Morolli, vincitore del primo campionato italiano (1978), ha racconta
         feci quella sequenza che negli anni successivi gli americani attribuirono erroneamente a John Stoner,
         ma all'epoca della Stoner Trap, quella sequenza l'avevo già fatta in diverse occasioni.</i></p>
 
-<p>Ma il Giappone si organizzano tornei di Othello fin dal 1973. È estremamente probabile che qualche giapponese
+<p>Ma in Giappone si organizzano tornei di Othello fin dal 1973. È estremamente probabile che qualche giapponese
 abbia scoperto questa sequenza di attacco prima di Stoner e prima del nostro Morolli.</p>
 
 <p>In <i>Reversi go bang</i>

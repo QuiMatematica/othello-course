@@ -1,0 +1,32 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "#--OOO##",
+    "##OOO###",
+    "##O###O#",
+    "####OO##",
+    "--####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "C8"
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco non ha accesso alla casella <b>B8</b> ma non è un problema: rimane una regione pari in cui spera di giocare per ultimo."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende subito l'angolo."
+    }
+  ]
+}

@@ -85,7 +85,7 @@ almeno una pedina dell'attaccato.</p>
 </div>
 
 <p>Dopo la risposta dell'attaccato, l'attaccante deve poter chiudere la trappola giocando nella casella adiacente
-    alla formazione sbilanciata. In particolare l'attaccante deve stare attento che l'avversario, tagliando la diagonale
+    alla formazione sbilanciata. In particolare l'attaccante deve stare attento che l'avversario, tagliando la diagonale,
     non riesca a impedirgli la mossa richiesta. Vedi il diagramma 7.</p>
 
 <div class="card mx-auto board-card my-3">
@@ -112,7 +112,7 @@ almeno una pedina dell'attaccato.</p>
 </div>
 
 <p>Va considerata una quarta condizione che, tuttavia, non è fondamentale.
-    Se la manovra avviene in una regione pari (come in tutti i diagrammi di questa pagina),
+    Se la manovra avviene in una regione pari (come in tutti i diagrammi di questa pagina a parte il 10),
 l'attacco è più efficace se, dopo che l'attaccato ha preso l'angolo,
 l'attaccante può giocare nella casella <b>C</b> rimasta libera. Così facendo si incunea, chiude una regione e conquista
 un tempo di gioco. Nella situazione del diagramma 9, per esempio, il bianco non
@@ -128,6 +128,18 @@ dell'attaccato che guadagna un tempo di gioco.</p>
     </div>
 </div>
 
+<p>Se invece l'attacco inizia da una regione dispari, l'attaccante non ha vantaggio a giocare nella casella <b>C</b>
+perché così rimane una regione dispari in cui non è vantaggioso giocare. Vedi il diagramma 10.</p>
+
+<div class="card mx-auto board-card my-3">
+    <div class="card-body">
+        <div class="match-file-board" data-file="stoner-trap-c-10b.json"></div>
+    </div>
+    <div class="card-footer text-body-secondary text-center">
+        Diagramma 10: l'attaccante non ha vantaggio a incunearsi.
+    </div>
+</div>
+
 <h2>Altre formazioni sbilanciate attaccabili</h2>
 
 <p>Il quattro sbilanciato è solo una delle formazioni di bordo attaccabili con una Stoner trap di tipo C.</p>
@@ -140,7 +152,7 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 				<div class="match-file-board" data-file="stoner-trap-c-10.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 10.
+				Diagramma 11.
 			</div>
 		</div>
 
@@ -152,7 +164,7 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 				<div class="match-file-board" data-file="stoner-trap-c-11.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 11.
+				Diagramma 12.
 			</div>
 		</div>
 
@@ -164,7 +176,7 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 				<div class="match-file-board" data-file="stoner-trap-c-12.json"></div>
 			</div>
 			<div class="card-footer text-body-secondary text-center">
-				Diagramma 12.
+				Diagramma 13.
 			</div>
 		</div>
 
@@ -173,7 +185,7 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 
 <h2>Tocca a te</h2>
 
-<p>Nel diagramma 13 giochi con il bianco e devi attaccare il quattro sbilanciato
+<p>Nel diagramma 14 giochi con il bianco e devi attaccare il quattro sbilanciato
     sul bordo ovest.</p>
 
 <div class="card mx-auto board-card my-3">
@@ -181,11 +193,11 @@ dell'attaccato che guadagna un tempo di gioco.</p>
 		<div class="sequence-board" data-file="stoner-trap-c-13.json"></div>
 	</div>
 	<div class="card-footer text-body-secondary text-center">
-		Diagramma 13.
+		Diagramma 14.
 	</div>
 </div>
 
-<p>Anche nel diagramma 14 giochi con il bianco, ma devi anche decidere
+<p>Anche nel diagramma 15 giochi con il bianco, ma devi anche decidere
 quale bordo sbilanciato attaccare.</p>
 
 <div class="card mx-auto board-card my-3">
@@ -193,6 +205,6 @@ quale bordo sbilanciato attaccare.</p>
 		<div class="sequence-board" data-file="stoner-trap-c-14.json"></div>
 	</div>
 	<div class="card-footer text-body-secondary text-center">
-		Diagramma 14.
+		Diagramma 15.
 	</div>
 </div>

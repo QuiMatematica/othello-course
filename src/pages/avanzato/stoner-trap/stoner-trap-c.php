@@ -208,3 +208,33 @@ quale bordo sbilanciato attaccare.</p>
 		Diagramma 15.
 	</div>
 </div>
+
+<p>Nei diagrammi successivi devi verificare che la Stoner trap è giocabile. Se lo è, giocala. Se non lo è,
+gioca la mossa che ti viene indicata nel diagramma.</p>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="brusca-p150-n1.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 16.
+	</div>
+</div>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="brusca-p150-n4.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 17.
+	</div>
+</div>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="brusca-p150-n3.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 18.
+	</div>
+</div>

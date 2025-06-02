@@ -150,3 +150,35 @@ attacco a un cinque e come tale va gestito (diagramma 8).</p>
 
 	</div>
 </div>
+
+<h2>Tocca a te</h2>
+
+<p>Nei diagrammi successivi devi verificare che la Stoner trap è giocabile. Se lo è, giocala. Se non lo è,
+gioca la mossa che ti viene indicata nel diagramma.</p>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="brusca-p150-n5.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 11.
+	</div>
+</div>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="brusca-p150-n6.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 12.
+	</div>
+</div>
+
+<div class="card mx-auto board-card my-3">
+	<div class="card-body">
+		<div class="sequence-board" data-file="brusca-p150-n8.json"></div>
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Diagramma 13.
+	</div>
+</div>

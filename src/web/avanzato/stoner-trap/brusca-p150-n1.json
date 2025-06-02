@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--------",
+    "O-------",
+    "OO#-----",
+    "OOOO#---",
+    "-O##OO--",
+    "##OOOO--",
+    "--OO#---",
+    "--OO#O--"
+  ],
+  "comment": "Se la Stoner trap non è giocabile, muovi in <b>F7</b>",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Esatto. La Stoner trap non era giocabile perché dopo <b>B7</b> la riga <b>7</b> contiene solo pedine nere, quindi giocando in <b>A7</b> il bianco non gira la pedina <b>B7</b>.",
+      "errors": [
+        {
+          "move": "B7",
+          "comment": "Mi dispiace, ma la Stoner trap non è giocabile. Dopo questa tua mossa la riga <b>7</b> contiene solo pedine nere, quindi giocando in <b>A7</b> il bianco non gira la pedina <b>B7</b>."
+        },
+        {
+          "move": "A5",
+          "comment": "Eh no: la Stoner trap non inizia con questa mossa. Prima devi giocare nella casella <b>X</b>."
+        }
+      ]
+    }
+  ]
+}

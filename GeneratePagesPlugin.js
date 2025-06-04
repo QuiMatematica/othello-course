@@ -1,10 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+const DiagramProcessor = require('./DiagramProcessor');
 
 class GeneratePagesPlugin {
 
     constructor(options) {
         this.options = options;
+        this.diagramProcessor = new DiagramProcessor();
     }
 
     // Funzione ricorsiva per leggere i file HTML dalle directory
@@ -43,8 +45,10 @@ class GeneratePagesPlugin {
 
                 const htmlContent = fs.readFileSync(filePath, 'utf8');
 
+                const numbered = this.diagramProcessor.process(htmlContent);
+
                 // Componi l'HTML completo
-                const composedHtml = this.composePage(htmlContent, filePath, level);
+                const composedHtml = this.composePage(numbered, filePath, level);
 
                 // Determina il percorso del file di output
                 const relativePath = path.relative(inputDir, filePath);

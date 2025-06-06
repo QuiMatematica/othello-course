@@ -1,12 +1,14 @@
 const fs = require('fs');
 const path = require('path');
-const DiagramProcessor = require('./DiagramProcessor');
+const GatherProcessor = require('./GatherProcessor');
+const BoardProcessor = require('./BoardProcessor');
 
 class GeneratePagesPlugin {
 
     constructor(options) {
         this.options = options;
-        this.diagramProcessor = new DiagramProcessor();
+        this.gatherProcessor = new GatherProcessor();
+        this.boardProcessor = new BoardProcessor();
     }
 
     // Funzione ricorsiva per leggere i file HTML dalle directory
@@ -28,7 +30,7 @@ class GeneratePagesPlugin {
         compiler.hooks.emit.tapAsync('GeneratePagesPlugin', (compilation, callback) => {
             const { inputDir, outputDir } = this.options;
 
-            console.log('inputDir: ' + inputDir);
+            // console.log('inputDir: ' + inputDir);
 
             const jsonPath = path.resolve(__dirname, 'src/web/index.json');
             const jsonContent = fs.readFileSync(jsonPath, 'utf8');
@@ -41,14 +43,15 @@ class GeneratePagesPlugin {
 
             files.forEach(filePath => {
                 const level = countSlashes(filePath) - countSlashes(inputDir) - 1;
-                console.log('generating: ' + filePath + '; level: ' + level);
+                // console.log('generating: ' + filePath + '; level: ' + level);
 
-                const htmlContent = fs.readFileSync(filePath, 'utf8');
+                let html = fs.readFileSync(filePath, 'utf8');
 
-                const numbered = this.diagramProcessor.process(htmlContent);
+                html = this.gatherProcessor.process(html);
+                html = this.boardProcessor.process(html);
 
                 // Componi l'HTML completo
-                const composedHtml = this.composePage(numbered, filePath, level);
+                html = this.composePage(html, filePath, level);
 
                 // Determina il percorso del file di output
                 const relativePath = path.relative(inputDir, filePath);
@@ -61,7 +64,7 @@ class GeneratePagesPlugin {
                 }
 
                 // Scrivi il file HTML nella outputDir
-                fs.writeFileSync(outputFilePath, composedHtml);
+                fs.writeFileSync(outputFilePath, html);
             });
 
             callback(); // Segnala a Webpack che il plugin ha finito

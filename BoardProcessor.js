@@ -1,10 +1,11 @@
 const cheerio = require('cheerio');
 
-class DiagramProcessor {
+class BoardProcessor {
 
     constructor() {
         this.boardTypeMap = {};
         this.boardTypeMap['show'] = 'match-file-board';
+        this.boardTypeMap['quiz'] = 'sequence-board';
     }
 
     process(html) {
@@ -20,6 +21,11 @@ class DiagramProcessor {
             const boardClass = this.boardTypeMap[type];
 
             const label = $board.attr('data-label');
+
+            if (labelMap.hasOwnProperty(label)) {
+                throw new Error(`Label duplicata trovata: "${label}"`);
+            }
+
             const number = imageCounter++;
             labelMap[label] = number;
 
@@ -42,14 +48,19 @@ class DiagramProcessor {
 
         // Sostituzione riferimenti nel testo
         $('[data-board-ref]').each(function () {
-              const $ref = $(this);
-              const refLabel = $ref.attr('data-board-ref');
-              const refNumber = labelMap[refLabel] || '??';
-              $ref.text(`${refNumber}`);
+            const $ref = $(this);
+            const refLabel = $ref.attr('data-board-ref');
+
+            if (!labelMap.hasOwnProperty(refLabel)) {
+                throw new Error(`Riferimento a label non definita: "${refLabel}"`);
+            }
+
+            const refNumber = labelMap[refLabel];
+            $ref.text(`${refNumber}`);
         });
 
         return $.html();
     }
 }
 
-module.exports = DiagramProcessor;
+module.exports = BoardProcessor;

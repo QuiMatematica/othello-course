@@ -12,16 +12,9 @@
 <p>In questo capitolo vedremo un insieme di attacchi, con caratteristiche simili, che vanno sotto il nome di
 <b>Stoner trap</b>.</p>
 
-<p>Un esempio vale più di mille parole:</p>
+<p>Un esempio vale più di mille parole: vedi il diagramma <span data-board-ref="chapter-1"></span>.</p>
 
-<div class="card mx-auto board-card my-3">
-    <div class="card-body">
-        <div class="match-file-board" data-file="chapter-1.json"></div>
-    </div>
-    <div class="card-footer text-body-secondary text-center">
-        Diagramma 1: il bianco gioca una Stoner trap.
-    </div>
-</div>
+<board data-type="show" data-label="chapter-1" data-file="chapter-1.json" data-caption="Il bianco gioca una Stoner trap."></board>
 
 <p>L'attacco avviene in due fasi:</p>
 <ul>

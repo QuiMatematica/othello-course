@@ -6,68 +6,33 @@ difendersi potrebbe conquistare tutto il lato giocando in una casella <b>A</b>, 
     se l'attacco è condotto bene, questa mossa gira la casella <b>X</b> adiacente,
 consentendo all'attaccante di conquistare l'angolo.</p>
 
-<p>Nel diagramma 1 vediamo il caso più semplice e più comune di questo tipo di attacco.</p>
+<p>Nel diagramma <span data-board-ref="a-1"></span> vediamo il caso più semplice e più comune di questo tipo di attacco.</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-1.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 1.
-	</div>
-</div>
+<board data-type="show" data-label="a-1" data-file="stoner-trap-a-1.json"></board>
 
 <h2>Condizioni per la riuscita dell'attacco</h2>
 
-<p>Deve esserci una formazione di bordo sbilanciata da attaccare. Nell'esempio è un tre (diagramma 2), ma vedremo che è
+<p>Deve esserci una formazione di bordo sbilanciata da attaccare. Nell'esempio è un tre (diagramma <span data-board-ref="a-2"></span>), ma vedremo che è
 possibile attaccare altre formazioni.</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-2.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 2.
-	</div>
-</div>
+<board data-type="show" data-label="a-2" data-file="stoner-trap-a-2.json"></board>
 
 <p>L'attaccante (il bianco) deve poter giocare nella casella <b>X</b> opposta allo schieramento (<b>B7</b>)
-    e deve prendere il controllo di tutta la diagonale (diagramma 3).</p>
+    e deve prendere il controllo di tutta la diagonale (diagramma <span data-board-ref="a-3"></span>).</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-3.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 3.
-	</div>
-</div>
+<board data-type="show" data-label="a-3" data-file="stoner-trap-a-3.json"></board>
 
 <p>Dopo la risposta dell'attaccato, l'attaccante (il bianco) deve poter giocare nella casella adiacente alla
-formazione sbilanciata (<b>D8</b>, diagramma 4).</p>
+formazione sbilanciata (<b>D8</b>, diagramma <span data-board-ref="a-4"></span>).</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-4.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 4.
-	</div>
-</div>
+<board data-type="show" data-label="a-4" data-file="stoner-trap-a-4.json"></board>
 
 <p>Completato l'attacco, se l'attaccato (il nero) gioca nella casella <b>A</b> rimasta libera (<b>C8</b>),
 deve girare anche la casella <b>X</b> (<b>B7</b>) in modo che l'attaccante possa accedere all'angolo.
 Affinché accada questo è necessario che la pedina nella casella <b>A</b> sul bordo adiacente (<b>A6</b>) deve essere
-dell'attaccato.</p>
+dell'attaccato (diagramma <span data-board-ref="a-5"></span>).</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-5.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 5.
-	</div>
-</div>
+<board data-type="show" data-label="a-5" data-file="stoner-trap-a-5.json"></board>
 
 <h2>Se non ci sono tutte le condizioni</h2>
 
@@ -83,102 +48,39 @@ perché non sono necessarie. </p>
 
 <p>Giocando nella casella <b>X</b> non è necessario ottenere il controllo della diagonale.
     Infatti anche se l'attaccato conquista l'angolo, sul bordo rimangono tre caselle
-vuote e l'attaccante può incunearsi (diagramma 6).</p>
+vuote e l'attaccante può incunearsi (diagramma <span data-board-ref="a-6"></span>).</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-6.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 6.
-	</div>
-</div>
+<board data-type="show" data-label="a-6" data-file="stoner-trap-a-6.json"></board>
 
 <p>Non è necessario che l'attaccante possa chiudere la trappola giocando sul bordo
 accanto alla formazione sbilanciata avversaria. Infatti anche se non ci riesce
-e l'attaccato prende l'angolo, rimane uno spazio dispari che permette l'incuneamento (diagramma 5).
+e l'attaccato prende l'angolo, rimane uno spazio dispari che permette l'incuneamento
+    (diagramma <span data-board-ref="a-7"></span>).
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-7.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 7.
-	</div>
-</div>
+<board data-type="show" data-label="a-7" data-file="stoner-trap-a-7.json"></board>
 
 <p>Non è nemmeno necessario che l'eventuale mossa dell'attaccato nella casella <b>A</b>
     giri la pedina nella casella <b>X</b>. In questo caso l'attacco diventa un normale
-attacco a un cinque e come tale va gestito (diagramma 8).</p>
+attacco a un cinque e come tale va gestito (diagramma <span data-board-ref="a-8"></span>).</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="match-file-board" data-file="stoner-trap-a-8.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 8.
-	</div>
-</div>
+<board data-type="show" data-label="a-8" data-file="stoner-trap-a-8.json"></board>
 
 <h2>Altre formazioni sbilanciate attaccabili</h2>
 
 <p>Il tre sbilanciato è solo una delle formazioni di bordo attaccabili con una Stoner trap di tipo A.</p>
 
-<div class="row row-cols-1 row-cols-md-2 g-4">
-	<div class="col">
-
-		<div class="card mx-auto board-card my-3">
-			<div class="card-body">
-				<div class="match-file-board" data-file="stoner-trap-a-9.json"></div>
-			</div>
-			<div class="card-footer text-body-secondary text-center">
-				Diagramma 9.
-			</div>
-		</div>
-
-	</div>
-	<div class="col">
-
-		<div class="card mx-auto board-card my-3">
-			<div class="card-body">
-				<div class="match-file-board" data-file="stoner-trap-a-10.json"></div>
-			</div>
-			<div class="card-footer text-body-secondary text-center">
-				Diagramma 10.
-			</div>
-		</div>
-
-	</div>
-</div>
+<gather>
+    <board data-type="show" data-label="a-9" data-file="stoner-trap-a-9.json"></board>
+    <board data-type="show" data-label="a-10" data-file="stoner-trap-a-10.json"></board>
+</gather>
 
 <h2>Tocca a te</h2>
 
 <p>Nei diagrammi successivi devi verificare che la Stoner trap è giocabile. Se lo è, giocala. Se non lo è,
 gioca la mossa che ti viene indicata nel diagramma.</p>
 
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="sequence-board" data-file="brusca-p150-n5.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 11.
-	</div>
-</div>
-
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="sequence-board" data-file="brusca-p150-n6.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 12.
-	</div>
-</div>
-
-<div class="card mx-auto board-card my-3">
-	<div class="card-body">
-		<div class="sequence-board" data-file="brusca-p150-n8.json"></div>
-	</div>
-	<div class="card-footer text-body-secondary text-center">
-		Diagramma 13.
-	</div>
-</div>
+<gather>
+    <board data-type="quiz" data-label="n5" data-file="brusca-p150-n5.json"></board>
+    <board data-type="quiz" data-label="n6" data-file="brusca-p150-n6.json"></board>
+    <board data-type="quiz" data-label="n8" data-file="brusca-p150-n8.json"></board>
+</gather>

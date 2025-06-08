@@ -31,3 +31,13 @@ a quelle già viste, ma è a tutti gli effetti una Stoner trap di tipo C.</p>
 <h2>Tocca a te</h2>
 
 <board data-type="quiz" data-label="altre-4" data-file="altre-stoner-trap-4.json"></board>
+
+<h2>Un curiosità: la Stoner trap più veloce</h2>
+
+<p>Nella pagina di spiegazione tecnica di Egaroucid
+    <a href="https://www.egaroucid.nyanyan.dev/ja/technology/explanation/" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>
+    è riportata la Stoner trap più veloce: bastano
+    13 mosse. Riporto la sequenza nel diagramma <span data-board-ref="fast-stoner"></span></p>
+
+<board data-type="show" data-label="fast-stoner" data-file="fast-stoner.json"
+       data-caption="La Stoner trap più veloce."></board>

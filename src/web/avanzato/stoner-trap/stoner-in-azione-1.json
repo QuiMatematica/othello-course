@@ -9,10 +9,10 @@
     "---O----",
     "--------"
   ],
-  "turn": "white"
+  "turn": "white",
   "moves": [
     {
-      "move": "B2",
+      "move": "B1",
       "comment": "Il bianco toglie l'accesso ideale <b>G6</b> all'avversario. La formazione di bordo sbilanciata non è attaccabile con una Stoner trap perché il nero non può giocare in <b>G2</b>."
     },
     {

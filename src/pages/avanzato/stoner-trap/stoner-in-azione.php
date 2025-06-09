@@ -26,11 +26,37 @@ della saga di Guerre Stellari.</p>
 <p>Anche se non si vedono, le Stoner trap sono spesso dietro l'angolo. Sono una minaccia che può concretizzarsi
     da un momento all'altro. Ma <i>se le conosci le eviti</i>. E se le eviti, non si presentano in partita.</p>
 
-<p>Ma state certi che se, ad alto livello, un giocatore ottiene una formazione sbilanciata, subito entrambi pensano
+<p>Ma state certi che se, ad alto livello, un giocatore può ottenere una formazione sbilanciata, subito entrambi pensano
 alla Stoner trap: l'uno per capire se può utilizzarla, l'altro per fare di tutto per evitarla.</p>
 
+<h2>Non ci sono le condizioni</h2>
+
 <p>Le condizioni per realizzare una Stoner trap non sono facili da ottenere, in particolare il controllo della diagonale.
-Quindi al giocatore minacciato basta assicurarsi di avere sempre una pedina sulla diagonale e l'attacco è sventato.
+    Quindi al giocatore minacciato basta assicurarsi di avere sempre una pedina sulla diagonale e l'attacco è sventato.
+Oppure può essere sufficiente che per ottenere le condizioni necessarie il potenziale attaccante debba rinunciare
+a troppo.</p>
+
+<p>Il diagramma <span data-board-ref="juigner-berg-2"></span> mostra la posizione dopo la mossa 26 della partita
+    tra Arthur Juigner (nero) e Matthias Berg (nero). Seconda partita della finale del Quarto Campionato Europeo,
+    1 giugno 2025, Praga.</p>
+
+<p>La posizione è piuttosto bilanciata. Entrambi i colori non devono assolutamente perdere di vista la mobilità.
+    Tocca al nero, al quale non conviene né giocare a nord-est, né a sud-ovest. L'unica mossa che sembrerebbe
+    interessante dal punto di vista della mobilità è <b>H7</b>. Infatti con tale mossa il bianco non ottiene
+    nessuna nuova mossa buona. Inoltre il nero ha gira la pedina <b>F5</b> che gli permetterebbe, in seguito,
+    di giocare in <b>B5</b>. Ma...</p>
+
+<p>Ma muovendo in <b>H7</b> il nero forma un bordo sbilanciato, ed è uno di quelli attaccabili da una Stoner trap.
+    Ma è effettivamente attaccabile? Subito no, perché la diagonale è tagliata dalla pedina <b>E4</b> che diventa nera.
+    Quindi si può osare!</p>
+
+<board data-type="show" data-label="juigner-berg-2" data-file="juigner-berg-2-2025-26.json"
+       data-caption="Juigner - Berg, Praga"></board>
+
+
+
+
+
 Ma talvolta gli sforzi di mantenere una situazione di non attaccabilità possono costare cari, come la perdita di mobilità
 in una regione.</p>
 

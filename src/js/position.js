@@ -99,6 +99,10 @@ export default class Position {
         }
         position.comment = json.comment;
 
+        if (json.played != null) {
+            position.played = Square.fromString(json.played);
+        }
+
         if (json.moves != null) {
             Position.loadSequenzeFromJSON(position, json.moves);
         }

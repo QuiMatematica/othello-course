@@ -143,6 +143,10 @@ export default class Board {
                 }
             }
         }
+        if (position.played != null) {
+            const playSquare = this.grid[position.played.y][position.played.x];
+            playSquare.classList.add('last');
+        }
     }
 
     playPosition(position) {

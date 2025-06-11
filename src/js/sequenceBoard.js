@@ -162,6 +162,9 @@ export default class SequenceBoard {
                 }
             }
         }
+        else {
+            this.moveComputer();
+        }
     }
 
     errorMove(wrongPosition) {

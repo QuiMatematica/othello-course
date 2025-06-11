@@ -55,6 +55,16 @@ Pier Andrea Morolli, vincitore del primo campionato italiano (1978), ha racconta
         feci quella sequenza che negli anni successivi gli americani attribuirono erroneamente a John Stoner,
         ma all'epoca della Stoner Trap, quella sequenza l'avevo già fatta in diverse occasioni.</i></p>
 
+<div class="card mx-auto my-3" style="width: fit-content; max-width: 100%;">
+	<div class="card-body">
+		<img src="Morolli.png" alt="Pier Andrea Morolli" class="card-img-top img-fluid">
+	</div>
+	<div class="card-footer text-body-secondary text-center">
+		Figura 1: Pier Andrea Morolli (a sinistra) al World Othello Championship 1982 a Stoccolma (Svezia).
+        <br>Da Othello News Japan, n. 15.
+	</div>
+</div>
+
 <p>Ma in Giappone si organizzano tornei di Othello fin dal 1973. È estremamente probabile che qualche giapponese
 abbia scoperto questa sequenza di attacco prima di Stoner e prima del nostro Morolli.</p>
 

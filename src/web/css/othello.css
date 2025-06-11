@@ -240,6 +240,24 @@ svg {
   }
 }
 
+.cross-line {
+  display: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.last .cross-line {
+  display: block;
+}
+
+.last.white .cross-line {
+  stroke: black;
+}
+
+.last.black .cross-line {
+  stroke: white;
+}
+
 /* ====================================
  * The score board and status displays.
  * ==================================== */

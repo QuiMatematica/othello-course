@@ -106,11 +106,18 @@ export default class Board {
         }
     }
 
+    resetLast() {
+        for (const div of this.gameBoard.querySelectorAll('.last')) {
+            div.classList.remove('last');
+        }
+    }
+
     resetGame() {
         for (const div of this.gameBoard.querySelectorAll('.square')) {
             div.classList.remove('black');
             div.classList.remove('white');
             div.classList.remove('flip');
+            div.classList.remove('last');
         }
     }
 
@@ -139,9 +146,12 @@ export default class Board {
     }
 
     playPosition(position) {
+        this.resetLast();
+
         // Place the stone by adding the relevant color class.
         const playSquare = this.grid[position.played.y][position.played.x];
         playSquare.classList.add(Board.getColor(position.prevPosition.turn));
+        playSquare.classList.add('last');
 
         for (const flipped of position.flipped) {
             const div = this.grid[flipped.y][flipped.x];

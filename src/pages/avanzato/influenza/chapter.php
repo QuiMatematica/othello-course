@@ -13,7 +13,7 @@ elemento in più per valutare le posizioni di gioco.</p>
 		<img src="790.jpg" alt="Francesco Marconi" class="card-img-top img-fluid">
 	</div>
 	<div class="card-footer text-body-secondary text-center">
-		Figura 1: Francesco Marconi al World Othello Championship 2016 a Mito (Giappone).
+		Figura 1: Francesco Marconi al Campionato Mondiale del 2016 a Mito (Giappone).
 	</div>
 </div>
 

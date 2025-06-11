@@ -57,10 +57,10 @@ Pier Andrea Morolli, vincitore del primo campionato italiano (1978), ha racconta
 
 <div class="card mx-auto my-3" style="width: fit-content; max-width: 100%;">
 	<div class="card-body">
-		<img src="Morolli.png" alt="Pier Andrea Morolli" class="card-img-top img-fluid">
+		<img src="Morolli.jpg" alt="Pier Andrea Morolli" class="card-img-top img-fluid">
 	</div>
 	<div class="card-footer text-body-secondary text-center">
-		Figura 1: Pier Andrea Morolli (a sinistra) al World Othello Championship 1982 a Stoccolma (Svezia).
+		Figura 1: Pier Andrea Morolli (a sinistra) al Campionato Mondiale del 1982 a Stoccolma (Svezia).
         <br>Da Othello News Japan, n. 15.
 	</div>
 </div>

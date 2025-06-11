@@ -4,6 +4,7 @@ import Score from "./score";
 import PositionComment from "./positionComment";
 import Square from "./square";
 import Controls from "./controls";
+import {boards} from "./page";
 
 export default class MatchFileBoard {
 
@@ -175,4 +176,13 @@ export default class MatchFileBoard {
 }
 
 function matchFileBoardOnClick(event) {
+    const div = event.currentTarget;
+    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
+    const board = boards[counter];
+    if (parseInt(x) < 4) {
+        board.goToPreviousPosition();
+    }
+    else {
+        board.goToNextPosition();
+    }
 }

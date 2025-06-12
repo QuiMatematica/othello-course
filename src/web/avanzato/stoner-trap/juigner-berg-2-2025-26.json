@@ -10,19 +10,5 @@
     "--------"
   ],
   "played": "E1",
-  "turn": "black",
-  "moves": [
-    {
-      "move": "H7",
-      "comment": "Il nero è disposto a sbilanciarsi pur di non perdere mobilità. E la Stoner trap non è realizzabile.<br>Per cercare di utilizzare la trap, il bianco dovrebbe ottenere il controllo della diagonale. Al momento l'unica mossa che gli permette di fare questo è <b>B4</b> che però è disastrosa dal punto di vista della mobilità. Meglio aspettare e concentrarsi su altro."
-    },
-    {
-      "move": "F8",
-      "comment": "Quando un giocatore esperto esegue una mossa che gira molte pedine significa che sta cercando di togliere accessi all'avversario. In questo caso credo che il bianco volesse voltare la pedina <b>F5</b> per impedire al nero di giocare in <b>B5</b>."
-    },
-    {
-      "move": "G7",
-      "comment": "Il nero chiude una volta per tutto il discorso sulla possibile Stoner trap. Dopo questa mossa il bianco non può più giocare in <b>H6</b> altrimenti volterebbe anche la pedina <b>G7</b> concedendo l'angolo al nero.<br>Inoltre se il bianco ottiene, prima o poi, l'accesso all'angolo <b>H8</b>, il nero può guadagnare due tempi di gioco muovendo prima incuneandosi in <b>H6</b> e poi in <b>G8</b>."
-    }
-  ]
+  "turn": "black"
 }

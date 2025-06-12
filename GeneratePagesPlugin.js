@@ -205,6 +205,7 @@ class GeneratePagesPlugin {
     <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
+	<link rel="canonical" href="${url}">
 	<link href="${prepend}css/bootstrap.min.css" rel="stylesheet">
 	<script src="${prepend}js/bootstrap.bundle.min.js"></script>
 	<link rel="stylesheet" href="${prepend}assets/bootstrap-icons/bootstrap-icons.min.css">

@@ -65,7 +65,7 @@ E' una posizione svantaggiosa per il bianco, in particolare se si dovesse trovar
 Puoi vedere il reale svolgimento della partita su flipthedisk
 <a href="https://flipthedisc.com/live/299/31499" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a></p>.
 
-<h2>Fare in modo che non ci sono le condizioni</h2>
+<h2>Fare in modo che non ci siano le condizioni</h2>
 
 <p>Le condizioni per realizzare una Stoner trap non sono facili da ottenere, in particolare il controllo della diagonale.
     Quindi al giocatore minacciato basta assicurarsi di avere sempre una pedina sulla diagonale e l'attacco è sventato.</p>
@@ -95,6 +95,60 @@ partita.</p>
 non c'erano le condizioni per eseguire l'attacco e il nero ha trovato una buona scappatoia per evitare
 l'attacco.</p>
 
+<h2>Se devi subire... fallo consapevolmente</h2>
+
+<p>Ormai l'hai capito: nell'Othello non ci sono assoluti. Ogni strategia sembra fatta apposta per avere le sue
+eccezioni. Anche le Stoner trap hanno questa caratteristica: possono esserci delle situazioni in cui può essere
+vantaggioso subirle.</p>
+
+<p>Facciamo un bilancio <i>dare-avere</i> di una Stoner trap andata buon fine.</p>
+
+<div class="container">
+  <div class="row fw-bold border-bottom pb-2 mb-2">
+    <div class="col text-center">Avere</div>
+    <div class="col text-center">Dare</div>
+  </div>
+  <div class="row mb-2">
+    <div class="col text-center">Un angolo e un bordo.</div>
+    <div class="col text-center">Un angolo (e talvolta il bordo adiacente).</div>
+  </div>
+  <div class="row mb-2">
+    <div class="col text-center">Alcuni tempi di gioco.</div>
+    <div class="col text-center">Un aumento della propria influenza.</div>
+  </div>
+</div>
+
+<p>L'ultima voce del <i>dare</i> merita un approfondimento. Giocando una Stoner trap otteniamo un angolo e un bordo
+    (prima voce dell'<i>avere</i>). Ma abbiamo visto anche che
+    <a href="../influenza/influenza-e-bordi.php">ottenere un bordo significa aumentare la propria influenza</a>.
+    Per cui giocare una Stoner trap può, soprattutto
+se siamo ancora nelle fasi iniziali della partita, far peggiorare la nostra mobilità.</p>
+
+<p>Questo aspetto l'ha capito molto bene Ben Seeley, il quale, al Campionato Mondiale del 2018, giocando con il bianco
+contro Taeyeon Kim, si è trovato nella posizione del diagramma <span data-board-ref="taeyeon-seeley-25"></span>.</p>
+
+<board data-type="show" data-label="taeyeon-seeley-25" data-file="taeyeon-seeley-25.json"
+       data-caption="Taeyeon - Seeley<br>Campionato Mondiale 2018"></board>
+
+<p>È piuttosto evidente che il bianco è in vantaggio per quanto riguarda la mobilità.
+    Le sue mosse migliori sembrano essere <b>E6</b>, <b>F7</b> e <b>G8</b>, perché non offrono nessuna nuova mossa
+    all'avversario. Sarebbe interessante analizzarle una per una (e ti invito a farlo in autonomia), ma voglio
+arrivare subito al dunque.</p>
+
+<p>Delle tre mosse, <b>G8</b> è la più particolare: forma un tre sbilanciato. A causa delle pedine nera in
+<b>E7</b> non è possibile giocare una Stoner trap di tipo A. Però il nero può prima giocare in <b>C8</b> e poi
+giocare una Stoner trap di tipo C. Quindi se è vero che non vogliamo subire Stoner trap, dovremo evitare questa mossa.</p>
+
+<p>Ma... Il nero è già in difficoltà per quanto riguarda la mobilità. Se prende il bordo sud aumenta la sua influenza.
+Il bianco potrebbe quindi puntare su una serie di mosse centrali in modo da costringere l'avversario, prima o poi,
+a chiudersi completamente il gioco. Inoltre, subendo la Stoner trap, il bianco va a stabilizzare il bordo ovest che,
+in questo momento, rappresenta l'unico suo punto di debolezza.</p>
+
+<p>Nel diagramma <span data-board-ref="taeyeon-seeley-25-seguito"></span> vedi il seguito della partita.</p>
+
+<board data-type="show" data-label="taeyeon-seeley-25-seguito" data-file="taeyeon-seeley-25-seguito.json"
+       data-caption="Taeyeon - Seeley<br>Campionato Mondiale 2018"></board>
+
 <h2>Per concludere</h2>
 
 <p>Devi assolutamente conoscere le Stoner trap. Se ti capiterà l'occasione buona per sfruttarle, saranno un'arma
@@ -110,3 +164,7 @@ molto potente. Ma soprattutto le devi conoscere per evitare di subirle.</p>
         </ul>
 	</div>
 </div>
+
+<p>Però se la partita è ancora all'inizio, prova a valutare se subire una Stoner trap può essere un vantaggio in
+termini di influenza e di mobilità. Se ti trovi in una posizione simile a quella di Seeley potresti portarti
+a casa una vittoria spettacolare.</p>

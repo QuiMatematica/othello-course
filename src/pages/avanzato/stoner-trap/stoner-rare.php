@@ -131,7 +131,7 @@ contro Taeyeon Kim, si è trovato nella posizione del diagramma <span data-board
        data-caption="Taeyeon - Seeley<br>Campionato Mondiale 2018"></board>
 
 <p>È piuttosto evidente che il bianco è in vantaggio per quanto riguarda la mobilità.
-    Le sue mosse migliori sembrano essere <b>E6</b>, <b>F7</b> e <b>G8</b>, perché non offrono nessuna nuova mossa
+    Le sue mosse migliori sembrano essere <b>E6</b>, <b>F7</b> e <b>G8</b> perché non offrono nessuna nuova mossa
     all'avversario. Sarebbe interessante analizzarle una per una (e ti invito a farlo in autonomia), ma voglio
 arrivare subito al dunque.</p>
 

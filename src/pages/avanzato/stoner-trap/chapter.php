@@ -18,19 +18,14 @@
 
 <p>L'attacco avviene in due fasi:</p>
 <ul>
-    <li>si gioca in una casella <b>X</b> controllando l'intera diagonale: il colore attacco non ha
+    <li>si gioca in una casella <b>X</b> controllando l'intera diagonale: il colore attaccato non ha
     accesso immediato all'angolo;</li>
     <li>si gioca in una casella adiacente al bordo sbilanciato minacciando di accedere all'angolo opposto.</li>
 </ul>
 
-<p>Tre sono le caratteristiche di questi attacchi:</p>
-<ul>
-    <li>vanno giocati contro <b>formazioni sbilanciate</b>;</li>
-    <li>sfruttano il <b>controllo di una diagonale</b>;</li>
-    <li>diversamente dagli attacchi che ti ho già mostrato,
+<p>Diversamente dagli attacchi che ti ho già mostrato,
         la <b>conquista di un angolo e di un bordo è garantita</b>, anche se l'avversario gioca in una diversa area della
-    tavola.</li>
-</ul>
+    tavola, il che rende l'attacco piuttosto spettacolare ed efficace.</p>
 
 <p>Le Stoner trap si possono dividere in due sottofamiglie che in queste pagine chiamo
 "di tipo C" e "di tipo A", in base alla casella in cui il colore attaccato
@@ -73,7 +68,7 @@ abbia scoperto questa sequenza di attacco prima di Stoner e prima del nostro Mor
     un libretto pubblicato nel 1890 a New York, è già presente un esempio
 di questo tipo di trappole, indicato con il nome di <i>coup</i>, che in francese significa <i>colpo</i>.</p>
 
-<p>Come giustamente ha commentato Manu Lazard, è tardi per cambiare il nome.</p>
+<p>Come giustamente ha commentato Emmanuel Lazard, è tardi per cambiare il nome.</p>
 
 <p>Al di là dei motivi storici, mi piace <i>Stoner trap</i> anche per la traduzione che ne può derivare:
 <i>trappola del pietrificatore</i>. In effetti la prima volta che la si subisce si rimane pietrificati.</p>

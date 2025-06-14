@@ -27,7 +27,8 @@
       "move": "B8"
     },
     {
-      "move": "B3"
+      "move": "G7",
+      "comment": "Per la parità nella regione sud-est."
     },
     {
       "move": "H8"

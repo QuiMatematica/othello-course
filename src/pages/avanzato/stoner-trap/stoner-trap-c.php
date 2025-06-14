@@ -15,7 +15,7 @@ seguito vedremo che è possibile attaccare anche altre formazioni.</p>
 <board data-type="show" data-label="c-2" data-file="stoner-trap-c-2.json" data-caption="Una formazioni di bordo sbilanciata da attaccare."></board>
 
 <p>L'attaccante (il bianco) deve poter giocare nella casella <b>X</b> opposta allo sbilanciamento (<b>B7</b>)
-prendendo il controllo di tutta la diagonale. Dopo tale mossa l'attaccato (il nero) non deve avere accesso
+prendendo il controllo di tutta la diagonale. Dopo tale mossa l'attaccato (il nero) non ha accesso
     all'angolo (diagramma <span data-board-ref="c-3"></span>).</p>
 
 <board data-type="show" data-label="c-3" data-file="stoner-trap-c-3.json" data-caption="Il bianco deve poter giocare nella casella X controllando la diagonale."></board>

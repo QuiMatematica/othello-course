@@ -1,0 +1,47 @@
+<h1>Controllo di linee</h1>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Definizione</div>
+	<div class="card-body">
+		<p class="card-text">Si parla di <b>controllo di una linea</b> quando uno dei colori possiede tutte le
+            pedine sulla stessa linea.</p>
+	</div>
+</div>
+
+<p>Come per le direzioni di voltura, il controllo di linea può avvenire in orizzontale
+    (diagramma <span data-board-ref="orizzontale"></span>), in verticale
+    (diagramma <span data-board-ref="verticale"></span>) o in diagonale
+    (diagramma <span data-board-ref="diagonale"></span>).</p>
+
+<gather>
+    <board data-type="show" data-label="orizzontale" data-file="chapter-orizzontale.json"
+           data-caption="Il bianco controlla la riga <b>2</b>."></board>
+    <board data-type="show" data-label="verticale" data-file="chapter-verticale.json"
+           data-caption="Il nero controlla la colonna <b>G</b>."></board>
+    <board data-type="show" data-label="diagonale" data-file="chapter-diagonale.json"
+           data-caption="Il bianco controlla la diagonale <b>B2-G7</b>, mentre il nero controlla la diagonale <b>B7-G2</b>."></board>
+</gather>
+
+<p>L'effetto del controllo di una linea è duplice.</p>
+
+<p>Nel diagramma <span data-board-ref="non-puo-muovere"></span> se il bianco gioca in <b>B2</b>
+    controlla la diagonale <b>B2-H8</b>.
+    Per effetto di questo controllo, il nero non sarà in grado di muovere nell'angolo <b>A1</b>
+    e salvare il bordo nord, ma sarà costretto a muovere in <b>A2</b>.</p>
+
+<board data-type="show" data-label="non-puo-muovere" data-file="chapter-non-puo-muovere.json"
+       data-caption="Il bianco controlla la diagonale e il nero non può muovere in <b>A1</b>."></board>
+
+<p>Se una linea è controllata da un colore, non può essere utilizzata per voltare pedine.
+Per cui se a uno dei suoi estremi c'è una casella vuota, e non ci sono altre direzioni
+    lungo cui voltare pedine, non è possibile muovere in tale casella.</p>
+
+<p>Nel diagramma <span></span> se il nero gioca in <b>A8</b> controlla tutta la colonna <b>B</b>.
+Il bianco può giocare in <b>B8</b> (infatti volta pedine in diagonale) ma, per effetto della colonna controllata,
+    non volta alcuna pedina in verticale</p>
+
+<board data-type="show" data-label="non-puo-girare" data-file="chapter-non-puo-girare.json"
+       data-caption="Il nero controlla la colonna e il bianco non volta pedine lungo la stessa."></board>
+
+<p>In questi due esempi abbiamo visto il controllo di una linea come un aspetto positivo. In verità gli stessi
+effetti </p>

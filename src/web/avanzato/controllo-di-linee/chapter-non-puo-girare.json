@@ -1,0 +1,25 @@
+{
+  "position": [
+    "O#######",
+    "O#######",
+    "O#####OO",
+    "O#O###OO",
+    "###O#OOO",
+    "##O##OOO",
+    "#O#OOOOO",
+    "--OOOOOO"
+  ],
+  "played": "H8",
+  "turn": "black",
+  "comment": "Il nero ha la possibilità di controllare la colonna <b>B</b> muovendo in <b>A8</b>.",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "La colonna <b>B</b> è completamente nera."
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco non volta pedine in verticale. Perde 33 a 31.<br>Se il nero avesse giocato in <b>B2</b> avrebbe perso 34 a 30."
+    }
+  ]
+}

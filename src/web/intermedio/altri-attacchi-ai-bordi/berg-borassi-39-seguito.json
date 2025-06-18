@@ -1,0 +1,95 @@
+{
+  "position": [
+    "-OOOO-#-",
+    "-OOOO##-",
+    "##OOO##-",
+    "#####O##",
+    "-##OOOO-",
+    "O###O---",
+    "---#O#--",
+    "---###--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "F1",
+      "comment": "Il bianco forza l'avversario a prendere subito l'angolo A1, pena la perdita di tutto il bordo nord."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero è costretto a prendere l'angolo. Nota che è stata girata anche la pedina B2, per cui il nero non ha accesso alla casella A2."
+    },
+    {
+      "move": "A5",
+      "comment": "Dopo questa mossa il nero non può giocare in A7, altrimenti il bianco giocherebbe prima in A2 e poi in A8 e si prenderebbe tutto il bordo. Il bianco è riuscito a muovere senza offrire nuove mosse all'avversario, il quale ha una mobilità molto compromessa.<br>Ora il nero deve cercare di conservare quanta più mobilità possibile, ma non è facile..."
+    },
+    {
+      "move": "H6",
+      "comment": "Il nero trova questa ottima mossa in cui gira solo la pedina G5.<br>Il bianco, ora, deve cercare di muovere senza aumentare la mobilità dell'avversario. E trova un'ottima sequenza."
+    },
+    {
+      "move": "C8",
+      "comment": "Dopo questa mossa il nero è costretto a prendere in B8 per non perdere due tempi di gioco sul bordo sud."
+    },
+    {
+      "move": "B8",
+      "comment": "Ma adesso..."
+    },
+    {
+      "move": "C7",
+      "comment": "... il bianco gioca in C7, guadagnando un tempo di gioco."
+    },
+    {
+      "move": "F6",
+      "comment": "Il nero ormai è completamente chiuso."
+    },
+    {
+      "move": "G6",
+      "comment": "Il bianco gioca ancora in modo da lasciare poca mobilità al nero."
+    },
+    {
+      "move": "B7",
+      "comment": "Non avendo più niente di interessante da giocare, il nero cerca di preservare quante più pedine possibili. La diagonale B7-G2 è tutta nera, quindi il bianco non può andare negli angoli. Ma basta una mossa..."
+    },
+    {
+      "move": "H5",
+      "comment": "... e il bianco si procura una pedina sulla diagonale."
+    },
+    {
+      "move": "H3",
+      "comment": "Il nero gioca in una regione dispari e gioca l'ultima mossa tranquilla della partita."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prendere l'angolo."
+    },
+    {
+      "move": "A7",
+      "comment": "Per non perdere ulteriori tempi di gioco il nero è costretto a giocare in A7."
+    },
+    {
+      "move": "A2",
+      "comment": "Il bianco prende tutto il bordo ovest, e prepara le sponde per giocare a sud-est e girare molte pedine."
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco cominciare a girare molte pedine, in vista del conteggio finale."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "H1",
+      "comment": "Borassi vince 39 a 25."
+    }
+  ]
+}

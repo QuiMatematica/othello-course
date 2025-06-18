@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "OOOOO##O",
+    "O#O#OO#O",
+    "OOO###OO",
+    "O-O##O-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C2",
+      "comment": "Il bianco sceglie <b>C2</b> in modo da girare 'solo' due pedine esterne del nero."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero gioca subito la sua mossa di riserva."
+    },
+    {
+      "move": "D2",
+      "comment": "Il bianco gioca un altro tempo a nord.<br>A questo punto il nero può giocare solo sul lato nord aprendo così nuove mosse al bianco."
+    }
+  ]
+}

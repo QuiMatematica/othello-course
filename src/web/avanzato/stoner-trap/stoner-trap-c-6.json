@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----O###",
+    "##OOO###",
+    "##O###O#",
+    "####OO##",
+    "#-####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo. Sul bordo sud rimangono due caselle libere e il bianco non può incunearsi."
+    }
+  ]
+}

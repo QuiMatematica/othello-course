@@ -1,0 +1,14 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "OOOOO##O",
+    "O#O#OO#O",
+    "OOO###OO",
+    "O-O##O-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "stoneShape": "square"
+}

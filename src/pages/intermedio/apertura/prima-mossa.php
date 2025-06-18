@@ -14,7 +14,7 @@
 		<p>La prima mossa spetta sempre al nero, il quale ha quattro possibilità:
 		D3, C4, E6 ed F5. In qualunque casella giochi la posizione generata è sempre
 		la stessa, ruotata o riflessa rispetto a una delle due diagonali o rispetto al
-		centro della scacchiera (diagrammi 2-5).</p>
+		centro della tavola (diagrammi 2-5).</p>
 
 		<div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -75,4 +75,4 @@
 		identiche. Diventa molto importante, allora, imparare a riconoscere una
 		determinata sequenza in qualunque posizione si presenti, qualunque sia
 		stata la prima mossa del nero, senza bisogno di allungare il collo o
-		girare la scacchiera (cosa, ovviamente, vietata in torneo).</p>
+		girare la tavola (cosa, ovviamente, vietata in torneo).</p>

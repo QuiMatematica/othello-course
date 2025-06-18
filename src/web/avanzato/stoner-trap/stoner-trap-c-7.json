@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OO##",
+    "##OOO###",
+    "##O###O#",
+    "#####O##",
+    "#-####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "C3",
+      "comment": "Il nero toglie l'accesso al bianco alla casella <b>C8</b> e contemporaneamente ottiene una pedina sulla diagonale. Al suo prossimo turno potrà prendere in sicurezza l'angolo <b>A8</b>."
+    }
+  ]
+}

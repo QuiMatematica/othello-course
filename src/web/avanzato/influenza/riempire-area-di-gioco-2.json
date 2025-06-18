@@ -1,0 +1,24 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "OOOOO##O",
+    "O#O#OO#O",
+    "OOO###OO",
+    "O-O##O-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "comment": "Il bianco deve muovere, e al momento ha tre tempi a disposizione.",
+  "moves": [
+    {
+      "move": "C2",
+      "comment": "Il bianco gioca in <b>C2</b> e i suoi tempi scendono a due. Invece sono aumentati i tempi del nero, che ora può giocare anche a nord."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero decide di giocare la sua mossa di riserva in <b>B8</b>. A questo punto tocca nuovamente al bianco che dovrà utilizzare un altro tempo di gioco."
+    }
+  ]
+}

@@ -4,6 +4,7 @@ import Score from "./score";
 import PositionComment from "./positionComment";
 import Square from "./square";
 import Controls from "./controls";
+import {boards} from "./page";
 
 export default class MatchFileBoard {
 
@@ -22,8 +23,7 @@ export default class MatchFileBoard {
 
     readMatch(json, container, counter) {
         this.currentPosition = Position.getPositionFromJSON(json);
-
-        this.board = new Board(container, counter, matchFileBoardOnClick);
+        this.board = new Board(container, counter, json.stoneShape, matchFileBoardOnClick);
         this.board.setPosition(this.currentPosition);
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);
@@ -49,8 +49,19 @@ export default class MatchFileBoard {
             this.controls.update(this.currentPosition);
         }
 
-        this.comment = new PositionComment(container);
-        this.comment.setPositionComment(this.currentPosition);
+        if (json.controls == null || json.controls.comment == null || json.controls.comment) {
+            if (this.controls == null) {
+                if (this.currentPosition.comment != null) {
+                    this.comment = new PositionComment(container);
+                    this.comment.setPositionComment(this.currentPosition);
+                }
+            }
+            else {
+                this.comment = new PositionComment(container);
+                this.comment.setPositionComment(this.currentPosition);
+                //this.addInstructions();
+            }
+        }
 
         if (json.add != null) {
             if (json.add["a-squares"]) {
@@ -67,9 +78,36 @@ export default class MatchFileBoard {
             }
             if (json.add["squares"] != null) {
                 json.add.squares.forEach((entry) => {
-                    const square = Square.fromString(entry.square);
-                    this.board.addLetter(square.x, square.y, entry.value);
+                    if (entry.square != null) {
+                        const square = Square.fromString(entry.square);
+                        this.board.addLetter(square.x, square.y, entry.value);
+                    }
+                    else {
+                        entry.squares.forEach((sq) => {
+                            const square = Square.fromString(sq);
+                            this.board.addLetter(square.x, square.y, entry.value);
+                        })
+                    }
                 });
+            }
+            if (json.add['rects'] != null) {
+                json.add.rects.forEach((entry) => {
+                    const ul = Square.fromString(entry.ul);
+                    const dr = Square.fromString(entry.dr);
+                    this.board.addRect(ul.x, ul.y, dr.x, dr.y, entry.color);
+                })
+            }
+            if (json.add['borders'] != null) {
+                json.add.borders.forEach((entry) => {
+                    const ul = Square.fromString(entry.ul);
+                    const dr = Square.fromString(entry.dr);
+                    this.board.addBorder(ul.x, ul.y, dr.x, dr.y, entry.color);
+                })
+            }
+            if (json.add['arrows'] != null) {
+                json.add.arrows.forEach((entry) => {
+                    this.board.addArrow(entry.start[0], entry.start[1], entry.end[0], entry.end[1], entry.color);
+                })
             }
         }
     }
@@ -80,6 +118,7 @@ export default class MatchFileBoard {
             this.board.playPosition(nextPosition);
             this.score.takeScore(nextPosition);
             this.comment.setPositionComment(nextPosition);
+            //this.addInstructions();
             this.controls.update(nextPosition);
             this.currentPosition = nextPosition;
         }
@@ -91,6 +130,7 @@ export default class MatchFileBoard {
             this.board.setPosition(prevPosition);
             this.score.takeScore(prevPosition);
             this.comment.setPositionComment(prevPosition);
+            //this.addInstructions();
             this.controls.update(prevPosition);
             this.currentPosition = prevPosition;
         }
@@ -107,6 +147,7 @@ export default class MatchFileBoard {
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
             this.comment.setPositionComment(curPosition);
+            //this.addInstructions();
             this.controls.update(curPosition);
             this.currentPosition = curPosition;
         }
@@ -121,11 +162,27 @@ export default class MatchFileBoard {
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
             this.comment.setPositionComment(curPosition);
+            //this.addInstructions();
             this.controls.update(curPosition);
             this.currentPosition = curPosition;
         }
     }
+
+    // addInstructions() {
+    //     let comment = '<br><i class="bi bi-stars"></i><br>';
+    //     comment += 'Clicca sulle frecce per seguire la sequenza.';
+    //     this.comment.addComment(comment);
+    // }
 }
 
 function matchFileBoardOnClick(event) {
+    const div = event.currentTarget;
+    const {counter, x, y} = div.dataset;  // NOTE: strings, not ints
+    const board = boards[counter];
+    if (parseInt(x) < 4) {
+        board.goToPreviousPosition();
+    }
+    else {
+        board.goToNextPosition();
+    }
 }

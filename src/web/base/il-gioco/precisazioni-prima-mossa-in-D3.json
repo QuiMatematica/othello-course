@@ -9,5 +9,8 @@
    "--------",
    "--------"
   ],
-  "turn": "white"
+  "turn": "white",
+  "controls": {
+    "comment": false
+  }
 }

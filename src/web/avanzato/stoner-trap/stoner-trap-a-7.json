@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---OOO##",
+    "##OOO###",
+    "##O#####",
+    "########",
+    "#-####--",
+    "----###-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca."
+    },
+    {
+      "move": "D2",
+      "comment": "Il nero toglie l'accesso al bianco alla casella <b>D8</b> e contemporaneamente ottiene una pedina sulla diagonale."
+    },
+    {
+      "move": "C3",
+      "comment": "Il bianco si procura nuovamente l'accesso a <b>D8</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco inizia l'incuneamento."
+    }
+  ]
+}

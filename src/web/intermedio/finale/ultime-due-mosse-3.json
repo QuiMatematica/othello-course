@@ -1,0 +1,35 @@
+{
+  "position": [
+    "#OOOOOOO",
+    "##OOO##O",
+    "###O##OO",
+    "######OO",
+    "######O#",
+    "####OOO#",
+    "###OO#O-",
+    "OOOOO##-"
+  ],
+  "comment": "Obiettivo: gioca la mossa vincente del nero.",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Bravissimo, infatti...",
+      "errors": [
+        {
+          "move": "H7",
+          "comment": "Hai posizionato una pedina e ne hai voltate due: ora ci sono 37 pedine nere. Adesso, però, il bianco ha la possibilità di voltare 6 pedine, quindi il nero finisce la partita con 31 pedine.",
+          "moves": [
+            {
+              "move": "H8",
+              "comment": "Il bianco vince 33 a 31."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "move": "H7",
+      "comment": "Hai vinto 33 a 31!"
+    }
+  ]
+}

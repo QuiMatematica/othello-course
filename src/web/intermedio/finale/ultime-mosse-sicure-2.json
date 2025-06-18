@@ -1,0 +1,57 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-#O#O-#",
+    "#O#OOO##",
+    "##OOOO##",
+    "#O#O####",
+    "##OO#OO#",
+    "#-O##O--",
+    "-OOOOOO-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Se il bianco gioca in B1..."
+    },
+    {
+      "move": "H7",
+      "comment": "... il nero gioca la sua mossa sicura in H7, gira la pedina G6 e il bianco perde la mossa sicura in G2."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca la sua ultima mossa sicura in G2. Ma perde la parità perché gli rimangono solo regioni di due caselle."
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero attacca il cinque minacciando anche l'angolo A8."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo per poter giocare poi in H8."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero si incunea. Il finale è tutto per il nero."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero gioca per parità."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero risponde per parità, e gioca anche l'ultima mossa."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco perde."
+    }
+  ]
+}

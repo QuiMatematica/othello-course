@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----O---",
+    "--#OOOO-",
+    "--##OOO-",
+    "--##O#O-",
+    "--#O##-O",
+    "-#####--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H3",
+      "comment": "Il nero attacca la casella C isolata, ma così facendo il cinque diventa pieno e quindi attaccabile."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco attacca il cinque.<br>Ora però il nero non può proseguire l'attacco in H5, perché dopo H4, giocando in H6 girerebbe anche la pedina G7."
+    },
+    {
+      "move": "H4",
+      "comment": "La scelta migliore per il nero è quindi questa mossa sul bordo per non aumentare la mobilità del bianco."
+    },
+    {
+      "move": "H5",
+      "comment": "Il bianco può giocare questa mossa sul bordo evitando così di dover perdere mobilità a nord-ovest.<br>Il nero non può rispondere H6 perché girerebbe anche G7."
+    },
+    {
+      "move": "G3",
+      "comment": "A questo punto il gioco sul bordo sembra essersi stabilizzato e bisogna tornare a giocare sul centro.<br>Chiudiamo qui la sequenza con un cinque attaccato e un attacco alla casella C che è stato vanificato."
+    }
+  ]
+}

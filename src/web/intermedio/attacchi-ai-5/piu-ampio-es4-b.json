@@ -1,0 +1,57 @@
+{
+  "position": [
+    "-#####--",
+    "--#OO#-O",
+    "OOO###OO",
+    "OOO#OO#O",
+    "O#O##O#O",
+    "OO#OOOOO",
+    "--O##O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca nella regione dispari, tanto i bordi sud e ovest sono già compromessi."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero gioca nella regione dispari a nord-ovest. Sacrifica il bordo nord, ne otterrà un vantaggio. Tieni d'occhio la colonna A e la diagonale B7-G2."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero si incunea. Ma la regione a sud-ovest è pari. Eppure..."
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero prende tre pedine sulla riga 2 e costringe il bianco a prendere tutta la diagonale."
+    },
+    {
+      "move": "H1",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "A8",
+      "comment": "Sorpresa! Visto che la diagonale è tutta bianca, il nero può giocare sia in A8 sia in A7."
+    },
+    {
+      "move": "A7",
+      "comment": "+6 per il nero. Ma va sottolineato che il nero ha vinto più per questa trappola finale che per l'attacco al cinque."
+    }
+  ]
+}

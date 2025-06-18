@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--####--",
+    "--O#O#-O",
+    "--O###O-",
+    "--O###O-",
+    "--O###O-",
+    "--O##O#-",
+    "--O###--",
+    "--O##O--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Il bianco prova a lasciare 4 caselle vuote sul bordo."
+    },
+    {
+      "move": "H4",
+      "comment": "Il nero ha trovato il punto debole del bianco. Dopo questa mossa il bianco dovrebbe andare in H6, ma la mossa non è giocabile. Il bianco dovrà allora giocare altrove. Sul bordo est rimangono 3 caselle vuote e il nero potrà conquistare tutti e due gli angoli."
+    }
+  ]
+}

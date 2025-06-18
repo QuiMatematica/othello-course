@@ -16,6 +16,7 @@ module.exports = {
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'src/web', to: '.' }, // Copia tutto il contenuto di src/web in dist
+                { from: "node_modules/bootstrap-icons/font", to: "assets/bootstrap-icons" },
             ],
         }),
         new GeneratePagesPlugin({

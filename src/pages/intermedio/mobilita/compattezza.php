@@ -4,7 +4,7 @@
 		quella della compattezza, detta in inglese <i>curling into a ball</i> (letteralmente
 		"arricciarsi a palla").</p>
 
-		<p>L'idea è che <b>muovendo vicino alle pedine che hai già sulla scacchiera, offrirai
+		<p>L'idea è che <b>muovendo vicino alle pedine che hai già sulla tavola, offrirai
 		meno pedine esterne e meno mosse all'avversario</b>.</p>
 
 		<div class="card border-primary mb-3">

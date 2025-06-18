@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--#OOO--",
+    "---OOO-#",
+    "--OOOO##",
+    "--OOO#O-",
+    "--OO#OO#",
+    "--#O#-#O",
+    "-----#--",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco gioca nella casella <b>X</b>. La casella vuota <b>F6</b> impedisce al nero di accedere all'angolo <b>H8</b>."
+    },
+    {
+      "move": "F6",
+      "comment": "Il nero cerca l'accesso all'angolo."
+    },
+    {
+      "move": "H4",
+      "comment": "Il bianco chiude l'attacco."
+    }
+  ]
+}

@@ -25,33 +25,46 @@ export default class Controls {
         container.appendChild(buttonsContainer);
     }
 
-    createButton(text, listener) {
+    createEmptyButton(listener) {
         let button = document.createElement("button");
         button.classList.add("btn");
         button.classList.add("btn-primary");
         button.dataset.counter = this.counter;
-        button.appendChild(document.createTextNode(text));
         button.addEventListener('click', listener);
         this.buttonGroup.appendChild(button);
         return button;
     }
+
+    createButton(text, listener) {
+        let button = this.createEmptyButton(listener);
+        button.appendChild(document.createTextNode(text));
+        return button;
+    }
+
+    createIconButton(icon, listener) {
+        let button = this.createEmptyButton(listener);
+        button.classList.add("bi");
+        button.classList.add(icon);
+        return button;
+    }
+
     addFirstButton() {
-        this.first = this.createButton("|<", onFirstClick);
+        this.first = this.createIconButton("bi-chevron-bar-left", onFirstClick);
         return this;
     }
 
     addPrevButton() {
-        this.prev = this.createButton("<", onPrevClick);
+        this.prev = this.createIconButton("bi-chevron-left", onPrevClick);
         return this;
     }
 
     addNextButton() {
-        this.next = this.createButton(">", onNextClick);
+        this.next = this.createIconButton("bi-chevron-right", onNextClick);
         return this;
     }
 
     addLastButton() {
-        this.last = this.createButton(">|", onLastClick);
+        this.last = this.createIconButton("bi-chevron-bar-right", onLastClick);
         return this;
     }
 

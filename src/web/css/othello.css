@@ -59,7 +59,7 @@
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
   /* The border around the whole board. */
-  border: 0px solid black;
+  border: 0 solid black;
 
   /* The .spot elements will be positioned absolutely within this board. */
   position: relative;
@@ -111,7 +111,7 @@
 }
 
 .boardBorder {
-  border: 0px;
+  border: 0;
 
   /* The size of the squares should include the border, or else the overall
    * board might be too big. */
@@ -240,6 +240,24 @@ svg {
   }
 }
 
+.cross-line {
+  display: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.last .cross-line {
+  display: block;
+}
+
+.last.white .cross-line {
+  stroke: black;
+}
+
+.last.black .cross-line {
+  stroke: white;
+}
+
 /* ====================================
  * The score board and status displays.
  * ==================================== */
@@ -314,4 +332,16 @@ svg {
 
 .comment-container {
     width: calc(10 * var(--square-size));
+}
+
+/* ======================
+ * Pulsante di condivisione.
+ * ====================== */
+
+/* Posizionamento fisso in alto a destra */
+.share-button {
+    position: sticky;
+    top: 10px;
+    float: right;
+    z-index: 1000; /* Per mantenerlo sopra gli altri elementi */
 }

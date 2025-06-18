@@ -1,0 +1,50 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OO####OO",
+    "OOOOO##O",
+    "O#O#OO#O",
+    "OOO###OO",
+    "O-O##O-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C2",
+      "comment": "Il bianco sceglie <b>C2</b> in modo da girare 'solo' due pedine esterne del nero."
+    },
+    {
+      "move": "D2",
+      "comment": "Il nero risponde nella stessa area di gioco, posticipando la mossa in <b>B8</b>."
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "D1",
+      "comment": "Il nero continua a posticipare la mossa in D8 e lo farà fino a quando al bianco non rimarranno più mosse sicure."
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "F2"
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "F1"
+    },
+    {
+      "move": "G1",
+      "comment": "L'area di gioco a nord si è riempita. Entrambi i colori hanno esaurito le mosse sicure... a parte la mossa di riserva del nero."
+    },
+    {
+      "move": "B8",
+      "comment": "Ora il bianco ha solo due mosse: entrambe cedono un angolo all'avversario."
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 import { WHITE } from './position.js';
 import { BLACK } from './position.js';
-import {createStone, setAnimatingFlip, xmlns} from "./page";
+import {createSquare, createStone, setAnimatingFlip, xmlns} from "./page";
 
 export default class Board {
 
@@ -12,7 +12,7 @@ export default class Board {
 
     letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', '']
 
-    constructor(container, counter, onClickCallback) {
+    constructor(container, counter, stoneShape, onClickCallback) {
         this.container = container;
         this.counter = counter;
 
@@ -24,10 +24,10 @@ export default class Board {
         this.gameBoard.classList.add('gameBoard');
         this.gameBoardContainer.appendChild(this.gameBoard)
 
-        this.createBoard(onClickCallback)
+        this.createBoard(stoneShape, onClickCallback)
     }
 
-    createBoard(onClickCallback) {
+    createBoard(stoneShape, onClickCallback) {
         // Prima riga: riferimenti
         for (let x = 0; x < 10; ++x) {
             const div = document.createElement('div');
@@ -69,7 +69,12 @@ export default class Board {
 
                 // Add the stone itself, which will not show up until a black or white
                 // class is added to the square.
-                div.appendChild(createStone());
+                if (stoneShape == null) {
+                    div.appendChild(createStone());
+                }
+                else if (stoneShape === 'square') {
+                    div.appendChild(createSquare());
+                }
 
                 // Add the square to the DOM and to the 2D array.
                 this.gameBoard.appendChild(div);
@@ -101,11 +106,18 @@ export default class Board {
         }
     }
 
+    resetLast() {
+        for (const div of this.gameBoard.querySelectorAll('.last')) {
+            div.classList.remove('last');
+        }
+    }
+
     resetGame() {
         for (const div of this.gameBoard.querySelectorAll('.square')) {
             div.classList.remove('black');
             div.classList.remove('white');
             div.classList.remove('flip');
+            div.classList.remove('last');
         }
     }
 
@@ -131,12 +143,19 @@ export default class Board {
                 }
             }
         }
+        if (position.played != null) {
+            const playSquare = this.grid[position.played.y][position.played.x];
+            playSquare.classList.add('last');
+        }
     }
 
     playPosition(position) {
+        this.resetLast();
+
         // Place the stone by adding the relevant color class.
         const playSquare = this.grid[position.played.y][position.played.x];
         playSquare.classList.add(Board.getColor(position.prevPosition.turn));
+        playSquare.classList.add('last');
 
         for (const flipped of position.flipped) {
             const div = this.grid[flipped.y][flipped.x];
@@ -174,26 +193,26 @@ export default class Board {
         return div.classList.contains(color);
     }
 
-    addASquares() {
-        this.addLetter(0, 3, "A");
-        this.addLetter(3, 0, "A");
-        this.addLetter(0, 4, "A");
-        this.addLetter(3, 7, "A");
-        this.addLetter(7, 3, "A");
-        this.addLetter(4, 0, "A");
-        this.addLetter(7, 4, "A");
-        this.addLetter(4, 7, "A");
+    addBSquares() {
+        this.addLetter(0, 3, "B");
+        this.addLetter(3, 0, "B");
+        this.addLetter(0, 4, "B");
+        this.addLetter(3, 7, "B");
+        this.addLetter(7, 3, "B");
+        this.addLetter(4, 0, "B");
+        this.addLetter(7, 4, "B");
+        this.addLetter(4, 7, "B");
     }
 
-    addBSquares() {
-        this.addLetter(0, 2, "B");
-        this.addLetter(2, 0, "B");
-        this.addLetter(0, 5, "B");
-        this.addLetter(2, 7, "B");
-        this.addLetter(7, 2, "B");
-        this.addLetter(5, 0, "B");
-        this.addLetter(7, 5, "B");
-        this.addLetter(5, 7, "B");
+    addASquares() {
+        this.addLetter(0, 2, "A");
+        this.addLetter(2, 0, "A");
+        this.addLetter(0, 5, "A");
+        this.addLetter(2, 7, "A");
+        this.addLetter(7, 2, "A");
+        this.addLetter(5, 0, "A");
+        this.addLetter(7, 5, "A");
+        this.addLetter(5, 7, "A");
     }
 
     addCSquares() {
@@ -246,6 +265,106 @@ export default class Board {
     removeLetter(x, y) {
         const square = this.grid[y][x];
         square.getElementsByTagName("text").item(0).remove();
+    }
+
+    addRect(xa, ya, xb, yb, color) {
+        const delta_x = (xb - xa + 1);
+        const delta_y = (yb - ya + 1);
+        const left = xa + 1;
+        const top = ya + 1;
+
+        this.addSvgRect(left, top, delta_x, delta_y, color, true);
+    }
+
+    addBorder(xa, ya, xb, yb, color) {
+        const padding = .15
+        const delta_x = xb - xa + 1 + padding * 2;
+        const delta_y = yb - ya + 1 + padding * 2;
+        const left = xa + 1 - padding;
+        const top = ya + 1 - padding;
+
+        this.addSvgRect(left, top, delta_x, delta_y, color, false);
+    }
+
+    addArrow(startX, startY, endX, endY, color) {
+        const divNode = document.createElement('div');
+        divNode.style.position = 'absolute';
+        divNode.style.display = 'block';
+        divNode.style.left = '0';
+        divNode.style.top = '0';
+        divNode.style.width = 'calc(var(--square-size)*10)';
+        divNode.style.height = 'calc(var(--square-size)*10)';
+
+        const svg = document.createElementNS(xmlns, 'svg');
+        svg.setAttribute('viewBox', '0 0 1000 1000');
+
+        const arrowLen = 6
+        const arrowWid = 4
+
+        const defs = document.createElementNS(xmlns, "defs");
+        const marker = document.createElementNS(xmlns, "marker");
+        marker.setAttribute("id", "arrowhead");
+        marker.setAttribute("markerWidth", String(arrowLen));
+        marker.setAttribute("markerHeight", String(arrowWid));
+        marker.setAttribute("refX", String(arrowLen));
+        marker.setAttribute("refY", String(arrowWid/2));
+        marker.setAttribute("orient", "auto");
+
+        const polygon = document.createElementNS(xmlns, "polygon");
+        polygon.setAttribute("points", "0 0, " + arrowLen + " " + arrowWid/2 + ", 0 " + arrowWid);
+        polygon.setAttribute("fill", color);
+
+        marker.appendChild(polygon);
+        defs.appendChild(marker);
+        svg.appendChild(defs);
+
+        const line = document.createElementNS(xmlns, 'line');
+        line.setAttribute("x1", String(startX));
+        line.setAttribute("y1", String(startY));
+        line.setAttribute("x2", String(endX));
+        line.setAttribute("y2", String(endY));
+        line.setAttribute("stroke", color);
+        line.setAttribute("stroke-width", "10");
+        line.setAttribute("marker-end", "url(#arrowhead)");
+
+        svg.appendChild(line);
+        divNode.appendChild(svg);
+        this.gameBoard.appendChild(divNode);
+        console.log("freccia aggiunta");
+    }
+
+    addSvgRect(left, top, delta_x, delta_y, color, to_fill) {
+        const divNode = document.createElement('div');
+        divNode.style.position = 'absolute';
+        divNode.style.display = 'block';
+        divNode.style.left = 'calc(var(--square-size)* ' + left + ')';
+        divNode.style.top = 'calc(var(--square-size)* ' + top + ')';
+        divNode.style.width = 'calc(var(--square-size)* ' + delta_x + ')';
+        divNode.style.height = 'calc(var(--square-size)* ' + delta_y + ')';
+
+        const svg = document.createElementNS(xmlns, 'svg');
+        svg.setAttribute('viewBox', '0 0 ' + (100 * delta_x) + ' ' + (100 * delta_y));
+
+        const rect = document.createElementNS(xmlns, 'rect');
+        rect.setAttribute('width', String(100 * delta_x - 20));
+        rect.setAttribute('height', String(100 * delta_y - 20));
+        rect.setAttribute('x', '10');
+        rect.setAttribute('y', '10');
+        rect.setAttribute('rx', '45');
+        rect.setAttribute('ry', '45');
+        if (to_fill) {
+            rect.setAttribute('fill', color);
+            rect.setAttribute('opacity', '60%');
+        }
+        else {
+            rect.setAttribute('fill', 'none');
+            rect.setAttribute('stroke', color);
+            rect.setAttribute('stroke-width', '15');
+        }
+
+        svg.appendChild(rect);
+        divNode.appendChild(svg);
+        this.gameBoard.appendChild(divNode);
     }
 
 }

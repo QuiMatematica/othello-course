@@ -1,0 +1,48 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-#OO#-#",
+    "###OOOO#",
+    "##OO#OO#",
+    "#O######",
+    "#O#O#O##",
+    "#-O##O-#",
+    "-OOOOOO-"
+  ],
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero gioca la sua mossa sicura, annulla la mossa bianca in B7 e la trasforma in una propria mossa sicura."
+    },
+    {
+      "move": "G1",
+      "comment": "Per il bianco G1 è ancora una mossa sicura perché non gira la pedina in G2."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero gioca la sua ultima mossa sicura."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco gioca l'altra mossa sicura rimastagli. Al nero rimangono solo due spazi pari."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "H1"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "position": [
+    "########",
+    "#####OO#",
+    "#OO#OOO#",
+    "#O#O#OO#",
+    "####OOO#",
+    "###OOOO#",
+    "-##O####",
+    "--#OOOOO"
+  ],
+  "turn": "white",
+  "comment": "Determina il finale perfetto e giocalo. Riuscirai a vincere questa partita?",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Esatto! Questa mossa porta alla vittoria del bianco.",
+      "errors": [
+        {
+          "move": "B8",
+          "comment": "Purtroppo questa mossa non ti porta alla vittoria.",
+          "moves": [
+            {
+              "move": "A7",
+              "comment": "Entrambe le mosse del nero portano allo stesso risultato."
+            },
+            {
+              "move": "A8",
+              "comment": "Hai perso per 33 a 31."
+            }
+          ]
+        },
+        {
+          "move": "A7",
+          "comment": "Purtroppo questa mossa non ti porta alla vittoria.",
+          "moves": [
+            {
+              "move": "B8",
+              "comment": "Questa è la migliore risposta del nero."
+            },
+            {
+              "move": "A8",
+              "comment": "Hai perso 35 a 29."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero limita i danni."
+    },
+    {
+      "move": "A7",
+      "comment": "Bravissimo: hai vinto 33 a 31."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--####--",
+    "--####O-",
+    "-####OO#",
+    "-##OO#O#",
+    "--OOO#O#",
+    "--#OO#O#",
+    "-------#",
+    "--------"
+  ],
+  "comment": "Obiettivo: il bianco ha attaccato il tuo cinque, ma tu poi conquistare 7 pedine stabili.",
+  "moves": [
+    {
+      "move": "H1",
+      "comment": "Bravo: malgrado tu abbia giocato nell'angolo, il bianco non può incunearsi."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco può incunearsi a nord, ma questo non gli permetterà di conquistare subito il lato nord."
+    },
+    {
+      "move": "H2",
+      "comment": "Complimenti: ce l'hai fatta! Hai preso tutto il bordo est!"
+    }
+  ]
+}

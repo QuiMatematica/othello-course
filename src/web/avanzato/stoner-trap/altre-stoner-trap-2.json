@@ -1,0 +1,43 @@
+{
+  "position": [
+    "-O--O---",
+    "--OOOO-O",
+    "-##OOOOO",
+    "--##OOOO",
+    "-###OOOO",
+    "--###OOO",
+    "---###--",
+    "--####--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero prende la diagonale <b>G2-C6</b>."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco si procura una pedina sulla diagonale."
+    },
+    {
+      "move": "C1",
+      "comment": "Il nero forza il bordo."
+    },
+    {
+      "move": "D1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "F1",
+      "comment": "Il nero chiude la Stoner trap."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo. Il nero non può giocare in <b>G1</b>, cedendo un tempo di gioco all'avversario."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende l'angolo <b>A1</b>."
+    }
+  ]
+}

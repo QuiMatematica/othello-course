@@ -56,7 +56,7 @@
 
 		<p>Sono mosse che girano una fila di pedine, il più possibile interne o centrali,
 		in un'unica direzione. Le mosse centrali permettono di conquistare il centro
-		della scacchiera, favorendo la compattezza delle pedine.</p>
+		della tavola, favorendo la compattezza delle pedine.</p>
 
 		<p>Prima di giocarle bisogna stare attenti che non creino mosse ideali per
 		l'avversario, o che questi abbia a disposizione un'analoga mossa centrale.

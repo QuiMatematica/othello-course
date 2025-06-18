@@ -1,0 +1,43 @@
+{
+  "position": [
+    "-----#--",
+    "---###--",
+    "--OOO##-",
+    "-#OO##O#",
+    "--O#####",
+    "--O#O###",
+    "--###O-#",
+    "-###-O--"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: gioca una Stoner trap.",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Bravo. Il quattro sul bordo est non era attaccabile!"
+    },
+    {
+      "move": "B6",
+      "comment": "Il nero si procura un accesso all'angolo..."
+    },
+    {
+      "move": "E8",
+      "comment": "Obiettivo raggiunto: hai chiuso l'attacco."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo e salva il bordo est."
+    },
+    {
+      "move": "G8",
+      "comment": "Tu ti incunei chiudendo la regione a sud-est."
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "A8",
+      "comment": "Attacco terminato!"
+    }
+  ]
+}

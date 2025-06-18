@@ -1,0 +1,39 @@
+{
+  "position": [
+    "-OOOOO--",
+    "--O#OO-O",
+    "#OOO##OO",
+    "#OO#OOOO",
+    "##OOOO#O",
+    "###OOO#O",
+    "#######O",
+    "#######O"
+  ],
+  "comment": "Il nero parte con 27 pedine.",
+  "moves": [
+    {
+      "move": "G1",
+      "comment": "Pedina giocata: +1.<br>Pedine voltate: +1."
+    },
+    {
+      "move": "H1",
+      "comment": "Pedine voltate: -1."
+    },
+    {
+      "move": "G2",
+      "comment": "Pedina giocata: +1.<br>Pedine voltate: +2."
+    },
+    {
+      "move": "A2",
+      "comment": "Pedina giocata: +1.<br>Pedine voltate: +4."
+    },
+    {
+      "move": "B2",
+      "comment": "Pedine voltate: -1."
+    },
+    {
+      "move": "A1",
+      "comment": "Pedina giocata: +1.<br>Pedine voltate: +2.<br>Totale per il nero: 38."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "position": [
+    "--#-#O--",
+    "--####--",
+    "-##O#OOO",
+    "###OO#OO",
+    "-O##O#O-",
+    "-#O##OO-",
+    "--OO##--",
+    "--#O-#--"
+  ],
+  "played": "F8",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B8",
+      "comment": "Se il bianco prende in <b>B8</b> ci sono tutte le condizioni affinché il nero esegua una Stoner trap."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero inizia l'attacco.<br>Il bianco ha un'unica possibilità di tagliare la diagonale: giocare in <b>A3</b>. Non è la sua mossa migliore, ma proviamo a proseguire con l'evoluzione tipica della Stoner trap."
+    },
+    {
+      "move": "A3",
+      "comment": "Il bianco si procura una pedina bianca sulla diagonale."
+    },
+    {
+      "move": "E8",
+      "comment": "Il nero completa l'attacco."
+    },
+    {
+      "move": "H8",
+      "comment": "La posizione del bianco è compromessa. E' meglio prendere l'angolo per giocare, successivamente, in <b>G8</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Visto che non può incunearsi il nero prende l'angolo <b>A8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco guadagna un tempo di gioco."
+    },
+    {
+      "move": "B7",
+      "comment": "Anche il nero guadagna un tempo a ovest.<br>Il bianco ora è in forte difficoltà e dovrà consegnare il bordo ovest all'avversario. Il finale perfetto conduce ad un 41 - 23 per il nero."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "position": [
+    "----OOO-",
+    "--#OO#--",
+    "#####OOO",
+    "###OOOOO",
+    "##OOO#OO",
+    "##OOO#OO",
+    "#-------",
+    "--------"
+  ],
+  "comment": "Obiettivo: trova il modo di mettere in sicurezza il tuo cinque pieno a ovest.",
+  "moves": [
+    {
+      "move": "D1",
+      "comment": "Bravo! Con questa mossa minacci di prendere l'angolo H1. Il tuo avversario è costretto a giocare in C1."
+    },
+    {
+      "move": "C1",
+      "comment": "Ma giocando in C1 il bianco perde l'accesso alla casella B2 e non riuscirà più ad attaccare il tuo cinque."
+    }
+  ]
+}

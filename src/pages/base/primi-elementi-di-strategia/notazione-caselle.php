@@ -29,7 +29,7 @@
 		negli scacchi vanno dal basso verso l'alto (più precisamente: dal bianco verso il nero), mentre nell'Othello
 		vanno dall'alto verso il basso.</p>
 
-		<h2>Le caselle "speciali"</h2>
+		<h2 id="caselle_speciali">Le caselle "speciali"</h2>
 
 		<p>Durante il corso ti accorgerai che alcune caselle hanno un ruolo privilegiato
 		rispetto ad altre. Per questo è stata introdotta un'apposita notazione che ho
@@ -48,6 +48,12 @@
 		indicate come "caselle X", mentre le caselle adiacenti orizzontalmente e
 		verticalmente sono indicate come "caselle C". Il contesto permetterà di chiarire
 		di quale particolare casella si sta parlando.</p>
+
+        <p>Sicuramente avrai notato che le caselle A, B e C non sono in sequenza (anche se sono simmetriche rispetto
+        agli assi della tavola da gioco). L'ordine che è stato scelto vuole essere un'indicazione
+        della forza delle caselle: è preferibile occupare una casella A rispetto a una casella B, ed è preferibile occupare
+        una casella B rispetto a una casella C. Tuttavia, come vedremo nel seguito del corso,
+        questa è una strategia molto grossolana.</p>
 
 		<h2>Le zone</h2>
 

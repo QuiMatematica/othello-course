@@ -1,0 +1,26 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "----OO#-",
+    "OOO#####",
+    "#OO##O##",
+    "###OOO##",
+    "--O#OO--",
+    "-O------"
+  ],
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "Il nero attacca la caselle C isolata."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco gioca altrove."
+    },
+    {
+      "move": "D8",
+      "comment": "Il nero continua l'attacco giocando in D8.<br>Anche in questo caso si aprono diverse possibilità: se il bianco gioca in C8, il nero prendo l'angolo; se il bianco gioca in E8, il nero prima gioca in C8 e poi prende l'angolo; se il bianco gioca altrove, il nero gioca in C8 e poi prende l'angolo."
+    }
+  ]
+}

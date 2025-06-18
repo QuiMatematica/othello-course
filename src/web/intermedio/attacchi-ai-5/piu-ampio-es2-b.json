@@ -1,0 +1,46 @@
+{
+  "position": [
+    "-#####--",
+    "O-#OO#-O",
+    "OOO###OO",
+    "OOO#OO#O",
+    "O#O##O#O",
+    "OO#OOOOO",
+    "O-O##O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco ha mantenuto la parità nella regione a sud-ovest e la parità globale."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B2",
+      "comment": "+4 per il bianco. &Egrave; bastato cambiare una pedina per ribaltare il risultato."
+    }
+  ]
+}

@@ -3,8 +3,8 @@
 		<p>Per non cedere all'avversario gli angoli, è necessario
 		giocare con molta attenzione nelle caselle X e nelle caselle C.</p>
 
-		<p>Per esempio, se nella situazione del diagramma 1 il bianco gioca in B7, il nero potrà
-		conquistare l'angolo A8.</p>
+		<p>Per esempio, se nella situazione del diagramma 1 il bianco gioca in G7, il nero potrà
+		conquistare l'angolo H8.</p>
 
 		<div class="card mx-auto board-card my-3">
 			<div class="card-body">

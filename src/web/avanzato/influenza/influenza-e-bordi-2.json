@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--OO-#--",
+    "--OOO#--",
+    "##OOOO##",
+    "#######-",
+    "-OO###--",
+    "--OO----",
+    "--------",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A5",
+      "comment": "Il bianco muove nell'area di gioco del nero, togliendogli un tempo e costringendolo ad allungare il bordo."
+    },
+    {
+      "move": "A6",
+      "comment": "Il nero è costretto a prendere in <b>A6</b> per non perdere altri tempi di gioco."
+    },
+    {
+      "move": "B6",
+      "comment": "Il bianco continua a muovere nell'area di gioco del nero."
+    },
+    {
+      "move": "E7",
+      "comment": "Il nero vuole posticipare la mossa in <b>A7</b>."
+    },
+    {
+      "move": "D7",
+      "comment": "Il bianco taglia la formazione del nero, rendendola centrifuga."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero guadagna un tempo di gioco sul bordo."
+    },
+    {
+      "move": "E6",
+      "comment": "La situazione si è invertita: ora il bianco ha una configurazione centrifuga, mentre il nero ha una configurazione centripeta."
+    }
+  ]
+}

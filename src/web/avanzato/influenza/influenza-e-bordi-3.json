@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OOOO--",
+    "##OOOOOO",
+    "##OOOOOO",
+    "##OOOOOO",
+    "##OOOOOO",
+    "--------",
+    "--------"
+  ],
+  "stoneShape": "square",
+  "add": {
+    "arrows": [
+      {
+        "start": [200, 490],
+        "end": [750, 250],
+        "color": "red"
+      },
+      {
+        "start": [200, 510],
+        "end": [500, 750],
+        "color": "red"
+      }
+    ]
+  }
+}

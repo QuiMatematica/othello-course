@@ -1,0 +1,29 @@
+{
+  "position": [
+    "---#-OO-",
+    "--OOOO--",
+    "#OO#OO--",
+    "###O#---",
+    "####O#--",
+    "#O#OO#--",
+    "--------",
+    "--------"
+  ],
+  "comment": "Se la Stoner trap non è giocabile, muovi in <b>C7</b>",
+  "moves": [
+    {
+      "move": "C7",
+      "comment": "Esatto. La Stoner trap è non giocabile: manca la pedina bianca in <b>A3</b>, quindi muovendo in <b>C1</b> il bianco non gira la pedina in <b>B2</b>.",
+      "errors": [
+        {
+          "move": "B2",
+          "comment": "Mi dispiace, ma la Stoner trap è non giocabile: manca la pedina bianca in <b>A3</b>, quindi muovendo in <b>C1</b> il bianco non gira la pedina in <b>B2</b>."
+        },
+        {
+          "move": "E1",
+          "comment": "Eh no: la Stoner trap non inizia con questa mossa. Prima devi giocare nella casella <b>X</b>."
+        }
+      ]
+    }
+  ]
+}

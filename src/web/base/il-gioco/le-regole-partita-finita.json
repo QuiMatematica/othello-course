@@ -8,5 +8,8 @@
     "OO#O#O##",
     "OO##O#O#",
     "OOOOOOOO"
-  ]
+  ],
+  "controls": {
+    "comment": false
+  }
 }

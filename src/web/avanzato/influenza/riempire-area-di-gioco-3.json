@@ -1,0 +1,24 @@
+{
+  "position": [
+    "--------",
+    "--O#----",
+    "OOOOOOOO",
+    "-O##OOOO",
+    "#O#####O",
+    "#OO##OOO",
+    "#-O#O#-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "comment": "Il bianco può giocare o una mossa che agisce sulla pedina <b>D2</b> (ovvero <b>C1</b>, <b>D1</b>, <b>E1</b> o <b>E2</b>) oppure in <b>G7</b> (cedendo un angolo al nero).",
+  "moves": [
+    {
+      "move": "E2",
+      "comment": "Il bianco ha scelto di giocare in <b>E2</b>. Ora gli resta solo la mossa in <b>G7</b>. Al nero basta guadagnare un tempo, eseguendo una mossa che non apra nuove mosse al bianco, e la partita è vinta. Ciò è possibile grazie alla mossa di riserva in <b>B8</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Dopo nero <b>B8</b> al bianco restano solo le opportunità in <b>G7</b> e in <b>B7</b>: entrambe cedono angoli molto vantaggiosi per il nero."
+    }
+  ]
+}

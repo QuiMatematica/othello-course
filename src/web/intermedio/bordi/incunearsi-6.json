@@ -1,11 +1,11 @@
 {
   "position": [
     "--####--",
-    "--O###-O",
+    "--OOO#-O",
     "--O###O-",
     "--O###O-",
     "--O###O-",
-    "--O####-",
+    "--O##O#-",
     "--O###--",
     "--O##O--"
   ],
@@ -14,7 +14,7 @@
   "moves": [
     {
       "move": "H7",
-      "comment": "Corretto: avendo lasciato quattro caselle libere (un numero pari) il bianco non ha la possibilità di incunearsi."
+      "comment": "Corretto: avendo lasciato quattro caselle libere (un numero pari) il nero non ha la possibilità di incunearsi."
     }
   ]
 }

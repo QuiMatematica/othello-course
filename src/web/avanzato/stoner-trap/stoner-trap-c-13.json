@@ -1,0 +1,44 @@
+{
+  "position": [
+    "-#####--",
+    "--#OO#--",
+    "-###O##-",
+    "##OO##--",
+    "##O#O#--",
+    "##OOOO--",
+    "#-------",
+    "--------"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: attacca il quattro sbilanciato",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Bravo: la prima mossa è sempre in una casella <b>X</b>."
+    },
+    {
+      "move": "E7",
+      "comment": "Il nero si procura un accesso all'angolo..."
+    },
+    {
+      "move": "A3",
+      "comment": "Complimenti: hai chiuso l'attacco."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero si accontenta dell'angolo."
+    },
+    {
+      "move": "A2",
+      "comment": "Esatto: ti devi incuneare, così chiudi la regione a nord-ovest."
+    },
+    {
+      "move": "D7",
+      "comment": "Il nero perde un tempo di gioco."
+    },
+    {
+      "move": "A8",
+      "comment": "E tu ti prendi tutto il bordo ovest. <br>Il nero avrà anche salvato il bordo nord, ma adesso è costretto a rinunciare a tutto il resto."
+    }
+  ]
+}

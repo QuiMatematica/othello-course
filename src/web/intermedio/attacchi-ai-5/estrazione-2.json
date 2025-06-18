@@ -1,0 +1,38 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####OOO",
+    "##OO##OO",
+    "##OO##OO",
+    "-#O##O#O",
+    "--OO#O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca giocando nella casella X."
+    },
+    {
+      "move": "C2",
+      "comment": "Il bianco trova il modo di rendere tutto bianco il controbordo adiacente. Quando prenderà l'angolo H8, il nero non avrà modo di incunearsi in G8."
+    },
+    {
+      "move": "E2",
+      "comment": "Il nero è costretto a giocare altrove."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco conquista l'angolo."
+    },
+    {
+      "move": "F2",
+      "comment": "Il nero gioca di nuovo altrove."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco ha salvato il bordo sud. E anche il bordo est."
+    }
+  ]
+}

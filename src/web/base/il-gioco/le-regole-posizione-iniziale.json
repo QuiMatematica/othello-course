@@ -1,3 +1,6 @@
 {
-  "vuoto": "vuoto"
+  "vuoto": "vuoto",
+  "controls": {
+    "comment": false
+  }
 }

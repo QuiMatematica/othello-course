@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "G6",
-      "comment": "Corretto: hai girato 4 pedine. Premi su 'Muove il computer'."
+      "comment": "Corretto: hai girato 4 pedine."
     },
     {
       "move": "C3",
@@ -21,7 +21,7 @@
     },
     {
       "move": "A5",
-      "comment": "Corretto: hai girato altre 4 pedine. Premi su 'Muove il computer'."
+      "comment": "Corretto: hai girato altre 4 pedine."
     },
     {
       "move": "F2",

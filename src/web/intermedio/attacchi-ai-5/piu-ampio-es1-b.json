@@ -1,0 +1,49 @@
+{
+  "position": [
+    "-#####--",
+    "O-#OO#-O",
+    "OOO###OO",
+    "OOO#OO#O",
+    "O#O##O#O",
+    "OOOOOOOO",
+    "O-O##O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca. Il bianco non è costretto a prendere subito l'angolo, anzi: farebbe meglio a giocare a nord. Ma abbiamo detto che vogliamo valutare l'effetto di un attacco <i>accettato</i>, quindi il bianco prenderà il H8."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco non ha più mosse a sud. E' costretto a giocare a nord e lo farà cercando di sfruttare la parità nelle regioni dispari."
+    },
+    {
+      "move": "H1",
+      "comment": "Per preservare il bordo nord."
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B2",
+      "comment": "Ultima mossa per il bianco."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B7",
+      "comment": "+16 per il nero."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "position": [
+    "-######-",
+    "--#OO#-#",
+    "##OOOO##",
+    "#OO##OO#",
+    "#O###OO#",
+    "##O#OO##",
+    "#-OOOO--",
+    "-OOOOO--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il bianco gioca nella regione dispari e comincia l'attacco al cinque. Se il nero prende l'angolo..."
+    },
+    {
+      "move": "A1",
+      "comment": "... salva il bordo nord, ma ..."
+    },
+    {
+      "move": "A2",
+      "comment": "Il bianco si incunea chiudendo la regione pari."
+    },
+    {
+      "move": "G7",
+      "comment": "A questo punto il nero non può far altro che attaccare a sud."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo per poter poi conquistare il bordo est."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero si incunea, ma..."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco arriva in A8 prima del nero."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero chiude la regione dispari."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco chiude l'altra regione dispari e si prepara a prendere il bordo."
+    },
+    {
+      "move": "G2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco vince con un vantaggio considerevole."
+    }
+  ]
+}

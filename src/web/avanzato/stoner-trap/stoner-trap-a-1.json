@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "#--OOO##",
+    "##OOO###",
+    "##O###O#",
+    "#O##OO##",
+    "#-####--",
+    "----###-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco attacca muovendo nella casella <b>X</b> e controllando la diagonale. Il nero non può accedere subito all'angolo."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero si procura l'accesso all'angolo."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco chiude l'attacco minacciando di prendere l'angolo <b>H8</b>.<br>Il nero non può difendersi giocando in <b>C8</b> perché girerebbe anche la pedina <b>B7</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero si accontenta dell'angolo <b>A8</b>.<br>Questa volta il bianco non può incunearsi perché la regione sul bordo è pari."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo <b>H8</b>."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--#OO#OO",
+    "--#O####",
+    "---#O###",
+    "--OO#OOO",
+    "--OOOO--",
+    "-OOO----"
+  ],
+  "comment": "Se la Stoner trap non è giocabile, muovi in <b>F2</b>",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Esatto. La Stoner trap è giocabile: ci sono tutte le condizioni perché sia efficace.",
+      "errors": [
+        {
+          "move": "F2",
+          "comment": "Mi dispiace, ma la Stoner trap è giocabile. Ricontrolla le condizioni, e vedrai che sono tutte presenti."
+        },
+        {
+          "move": "E8",
+          "comment": "Eh no: la Stoner trap non inizia con questa mossa. Prima devi giocare nella casella <b>X</b>."
+        }
+      ]
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco prova a difendersi."
+    },
+    {
+      "move": "E8",
+      "comment": "Esatto: puoi completare l'attacco. Ben fatto!"
+    }
+  ]
+}

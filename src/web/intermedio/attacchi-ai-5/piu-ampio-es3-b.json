@@ -1,0 +1,46 @@
+{
+  "position": [
+    "-#####--",
+    "#-#OO#-O",
+    "##O###OO",
+    "#OO#OO#O",
+    "##O##O#O",
+    "###OOOOO",
+    "#-O##O-O",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero è costretto a giocare in B2."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco si riprende tutta la diagonale. +6 per il bianco."
+    }
+  ]
+}

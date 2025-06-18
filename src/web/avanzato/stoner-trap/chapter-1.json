@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "-#OOOO##",
+    "##OOO##O",
+    "#OOO##OO",
+    "####OOO#",
+    "#-####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca nella casella <b>X</b> e controlla la diagonale <b>B7 - F3</b>. Il nero non può prendere subito l'angolo <b>A8</b>."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero cerca di ottenere una pedina per poter accedere all'angolo."
+    },
+    {
+      "move": "C8",
+      "comment": "Il bianco chiude l'attacco.<br>Se il nero gioca in <b>A8</b>, il bianco prima si incunea in <b>B8</b>, poi prende l'angolo <b>H8</b>.<br>Se, invece, il nero gioca in <b>B8</b> gira la pedina nella casella <b>X</b> e il bianco può prendere prima <b>A8</b> e poi <b>H8</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "La situazione più comune è che l'attaccato prenda l'angolo."
+    },
+    {
+      "move": "B8",
+      "comment": "L'attaccante si incunea. In questa situazione chiude anche lo spazio a sud-ovest. L'accesso all'angolo <b>H8</b> è garantito."
+    }
+  ]
+}

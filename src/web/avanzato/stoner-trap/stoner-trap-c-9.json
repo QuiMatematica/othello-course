@@ -1,0 +1,31 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#--OOO##",
+    "##OOO###",
+    "##O###O#",
+    "####OO##",
+    "#-####--",
+    "---####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "C8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco deve subito prendere l'angolo. L'attacco ha avuto successo, ma il bianco non ha guadagno il tempo di gioco che poteva ottenere se avesse potuto giocare in <b>B8</b>."
+    }
+  ]
+}

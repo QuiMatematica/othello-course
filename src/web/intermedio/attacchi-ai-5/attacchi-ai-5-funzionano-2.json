@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "#####OOO",
+    "##OO##OO",
+    "##O##OOO",
+    "-#O##OOO",
+    "--OOOO--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero attacca giocando nella casella X. La pedina F7 rimane bianca."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo, ma attenzione: il nero ora può giocare in G8!"
+    },
+    {
+      "move": "G8",
+      "comment": "L'attacco del nero ha funzionato. Nota che il nero avrebbe potuto anche rimandare tale mossa, tanto il bianco non ha accesso a questa casella!"
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende tutto il bordo sud.<br>Nota che in una mossa successiva il nero può incunearsi anche in H7, ottenendo un altro tempo di gioco."
+    }
+  ]
+}

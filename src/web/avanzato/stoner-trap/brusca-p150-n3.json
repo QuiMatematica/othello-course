@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--##-OO-",
+    "--O#OO--",
+    "OOO#OO--",
+    "OO#O#---",
+    "OO##O---",
+    "OO#O-#--",
+    "--#-----",
+    "--------"
+  ],
+  "comment": "Se la Stoner trap non è giocabile, muovi in <b>D7</b>",
+  "moves": [
+    {
+      "move": "D7",
+      "comment": "Esatto. La Stoner trap è non giocabile: dopo <b>B2</b> il bianco poteva muovere in <b>F4</b> e toglierti l'accesso a <b>E1</b>.",
+      "errors": [
+        {
+          "move": "B2",
+          "comment": "Mi dispiace, ma la Stoner trap è non giocabile. Ora il bianco può muovere in <b>F4</b> e toglierti l'accesso a <b>E1</b>."
+        },
+        {
+          "move": "E1",
+          "comment": "Eh no: la Stoner trap non inizia con questa mossa. Prima devi giocare nella casella <b>X</b>."
+        }
+      ]
+    }
+  ]
+}

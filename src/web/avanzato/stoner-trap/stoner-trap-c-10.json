@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "---OOO##",
+    "##OOO###",
+    "##O###O#",
+    "#O##OO##",
+    "#-####--",
+    "--O-###-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7"
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "D8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "G7",
+      "comment": "Per la parità nella regione sud-est."
+    },
+    {
+      "move": "H8"
+    }
+  ]
+}

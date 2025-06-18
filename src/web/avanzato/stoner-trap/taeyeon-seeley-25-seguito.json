@@ -1,0 +1,147 @@
+{
+  "position": [
+    "--------",
+    "---##---",
+    "OOO##---",
+    "OO####--",
+    "O####---",
+    "OOO#-#--",
+    "O-OO#---",
+    "----O#--"
+  ],
+  "played": "F8",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il bianco accetta di sbilanciarsi, sicuro di ottenere un vantaggio posizionale anche qualora subisse una Stoner trap."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero capisce che non può giocare una Stoner trap di tipo A, quindi gioca in <b>C8</b> per preparare una attacco di tipo C. Nota che ci sono tutte le condizioni per un attacco efficace."
+    },
+    {
+      "move": "F7",
+      "comment": "Il bianco gioca una mossa che non offre nuove mosse all'avversario. Al momento il controllo del centro è in mano al nero, il quale ha una posizione centrifuga. Ma il bianco confida di ribaltare la situazione regalando il bordo sud all'avversario."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero inizia la Stoner trap."
+    },
+    {
+      "move": "E6",
+      "comment": "Il bianco si procura due pedine sulla diagonale in modo da poter accedere all'angolo <b>A8</b>.<br>Ma tieni d'occhio anche il controbordo <b>B</b>: se diventa tutto bianco, tale colore può giocare sia in <b>A8</b> sia in <b>B8</b>."
+    },
+    {
+      "move": "D8",
+      "comment": "Il nero completa l'attacco. Ora l'accesso all'angolo <b>H8</b> è garantito.<br>Ora guarda di nuovo il controbordo <b>B</b>: come può fare il bianco per evitare che il nero si incunei in <b>B8</b> e giocare lui sia in <b>A8</b> sia in <b>B8</b>?"
+    },
+    {
+      "move": "F5",
+      "comment": "Eccolo qui: il controbordo <b>B</b> è diventato tutto bianco. Questi può giocare entrambe le mosse a sud-ovest. E nota come la posizione del bianco comincia a diventare centrifuga."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "G3",
+      "comment": "Il bianco non ha fretta di prendere l'angolo <b>A8</b>. Per cui gioca a est con l'obiettivo di esaurire l'area di gioco del nero."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero cerca di accumulare pedine stabili. Ma questa mossa è una falsa sicurezza: le pedine della riga <b>7</b> sono tutt'altro che stabili e, in finale di partita, potrebbero diventare tutte bianche."
+    },
+    {
+      "move": "F3",
+      "comment": "Il bianco continua a tergiversare giocando a est. Questa mossa è piuttosto debole, perché offre fin troppe mosse all'avversario. Però l'obiettivo è chiaro: ottenere una posizione centrifuga e saturare l'area di gioco del bianco."
+    },
+    {
+      "move": "G5",
+      "comment": "L'effetto dell'influenza del nero comincia a farsi sentire: non riesce a muovere se non voltando in due o più direzioni."
+    },
+    {
+      "move": "F2",
+      "comment": "Ancora una mossa centrale per il bianco."
+    },
+    {
+      "move": "G4",
+      "comment": "Il nero si è trovato costretto a richiudere il muro a est, a causa dell'influenza causata dal bordo sud."
+    },
+    {
+      "move": "A8",
+      "comment": "Finalmente il bianco è soddisfatto e può dedicarsi all'area sud-ovest."
+    },
+    {
+      "move": "H3",
+      "comment": "Obiettivo di questa mossa non è tanto prendere il bordo, quanto togliere al bianco l'accesso a <b>B8</b>."
+    },
+    {
+      "move": "H6",
+      "comment": "Il bianco si procura l'accesso a <b>B8</b>."
+    },
+    {
+      "move": "F1",
+      "comment": "Al nero non resta che provare a resistere."
+    },
+    {
+      "move": "H4",
+      "comment": "Di nuovo il bianco riprende ad esaurire le mosse del nero a est. Non vuole lasciargli tregua."
+    },
+    {
+      "move": "C2",
+      "comment": "Il nero si trova costretto a chiudersi anche a nord."
+    },
+    {
+      "move": "B8",
+      "comment": "E il bianco prende anche la casella <b>B8</b>. Al nero rimangono solo tre mosse."
+    },
+    {
+      "move": "G6",
+      "comment": "Sicuramente il nero non si è accorto di aver giocato la mossa peggiore. Guarda cosa succede: non ha più alcun accesso al bordo est. Il bianco può giocare prima in <b>H2</b> e poi in <b>H4</b> senza che il nero possa replicare. E' una <i>trappola di Boscov</i> che vedremo in uno dei prossimi capitoli."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco ha il pieno controllo della partita."
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "A2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "C1"
+    },
+    {
+      "move": "D1"
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "B2",
+      "comment": "Attenzione: la diagonale è tutta nera. Il bianco può giocare sia <b>A1</b> sia <b>B1</b>."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco vince 53-11.<br>Della Stoner trap sono rimaste giusto le sei pedine sul bordo sud."
+    }
+  ]
+}

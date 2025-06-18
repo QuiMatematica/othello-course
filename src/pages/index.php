@@ -27,6 +27,8 @@
     <meta name="author" content="Claudio Signorini">
 
 	<title>Corso interattivo di Othello</title>
+	<link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.min.css">
+    <link href="css/othello.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="js/bootstrap.bundle.min.js"></script>
 
@@ -48,6 +50,9 @@
 	</nav>
 
 	<div id="othello-content" class="container-xxl">
+        <button id="shareBtn" class="btn btn-light btn-outline-dark share-button">
+            <i class="bi bi-share-fill"></i>
+        </button>
 		<div class="row">
 			<div class="col-lg-2 bg-primary-subtle text-center">
 				<a class="" href="https://www.fngo.it">
@@ -74,6 +79,35 @@
             </div>
         </div>
     </div>
+
+    <script>
+        document.getElementById("shareBtn").addEventListener("click", async () => {
+            const shareData = {
+                title: "Corso interattivo di Othello",
+                text: "Vuoi imparare a giocare ad Othello? Visita questo sito!",
+                url: window.location.href
+            };
+
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                    console.log("Contenuto condiviso con successo!");
+                } catch (err) {
+                    console.error("Errore nella condivisione:", err);
+                }
+            } else {
+                const mailtoLink = `mailto:?subject=${encodeURIComponent(shareData.title)}&body=${encodeURIComponent(shareData.text + " " + shareData.url)}`;
+                window.location.href = mailtoLink;
+            }
+
+            gtag("event", "share_click", {
+                "event_category": "Interaction",
+                "event_label": "Share page",
+                "page_path": window.location.pathname
+            });
+            console.log("Condivisione registrata su GA.");
+        });
+    </script>
 
 </body>
 </html>

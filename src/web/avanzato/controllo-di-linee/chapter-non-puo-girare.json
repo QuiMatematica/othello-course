@@ -19,7 +19,7 @@
     },
     {
       "move": "B8",
-      "comment": "Il bianco non volta pedine in verticale. Perde 33 a 31.<br>Se il nero avesse giocato in <b>B2</b> avrebbe perso 34 a 30."
+      "comment": "Il bianco non volta pedine in verticale. Il nero vince 33 a 31.<br>Se il nero avesse giocato in <b>B2</b> avrebbe perso 34 a 30."
     }
   ]
 }

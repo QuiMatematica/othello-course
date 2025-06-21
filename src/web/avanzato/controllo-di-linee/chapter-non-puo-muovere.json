@@ -15,15 +15,15 @@
   "moves": [
     {
       "move": "B2",
-      "comment": "Il controllo della diagonale impedisce al nero di muovere <b>A1</b> e salvare il bordo nord."
+      "comment": "Il controllo della diagonale impedisce al nero di muovere <b>A1</b> e salvare il bordo nord: è costretto a muovere in <b>A2</b>"
     },
     {
       "move": "A2",
-      "comment": "Il nero è costretto a muovere in <b>A2</b>."
+      "comment": "Ora il bianco può chiudere la partita..."
     },
     {
       "move": "A1",
-      "comment": "Il bianco chiude la partita prendendo il bordo nord e vince 33 a 31.<br>Se, nella posizione iniziale di questo diagramma, il bianco avesse giocato subito in <b>A1</b> avrebbe perso la parità e pareggiato. Se invece avesse giocato in <b>A2</b> avrebbe perso."
+      "comment": "Il bianco prende il bordo nord e vince 33 a 31.<br>Se, nella posizione iniziale, il bianco avesse giocato subito in <b>A1</b> avrebbe perso la parità e pareggiato. Se invece avesse giocato in <b>A2</b> avrebbe perso."
     }
   ]
 }

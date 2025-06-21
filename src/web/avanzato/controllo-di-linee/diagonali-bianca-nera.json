@@ -1,0 +1,17 @@
+{
+  "position": [
+    "O------#",
+    "-O----#-",
+    "--O--#--",
+    "---O#---",
+    "---#O---",
+    "--#--O--",
+    "-#----O-",
+    "#------O"
+  ],
+  "stoneShape": "square",
+  "controls": {
+    "score": false,
+    "turn": false
+  }
+}

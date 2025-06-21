@@ -70,8 +70,8 @@ Quindi non siamo nella situazione in cui il bianco controlla tutte le pedine del
 
 <p>Nelle prossime pagine approfondiremo i più tipici controlli di linee, ovvero:</p>
 <ul>
-    <li>controllo delle diagonali;</li>
-    <li>controllo dei controbordi;</li>
+    <li>controllo delle <i>diagonali principali</i>;</li>
+    <li>controllo dei <i>controbordi</i>;</li>
     <li>controllo delle <i>diagonali C</i>;</li>
     <li>controllo delle <i>mini diagonali</i>.</li>
 </ul>

@@ -46,7 +46,8 @@ Il bianco può giocare in <b>B8</b> (infatti volta pedine in diagonale) ma, per 
     <li>se ci sono altre direzioni lungo cui voltare pedine, si può giocare nella casella ma si voltano poche pedine.</li>
 </ul>
 
-<p>Ma il controllo di una linea può anche avere <b>effetti negativi</b> per il colore che lo detiene.</p>
+<p>Ma questi effetti si applicano sia a chi ha il controllo della linea sia al proprio avversario. Quindi il
+    controllo può essere una <b>punto di debolezza</b> per il coloro che lo detiene.</p>
 
 <p>Nel diagramma <span data-board-ref="perde-la-mossa"></span> il bianco ha il controllo della diagonale
     <b>A1-G7</b>. Il nero può giocare in <b>H8</b> perché volta pedine in verticale, ma facendolo non volta la pedina
@@ -55,15 +56,19 @@ Il bianco può giocare in <b>B8</b> (infatti volta pedine in diagonale) ma, per 
 <board data-type="show" data-label="perde-la-mossa" data-file="chapter-perde-la-mossa.json"
        data-caption="Il bianco controlla la diagonale quindi il nero può giocare in <b>H8</b> senza voltare <b>G7</b>."></board>
 
-<p>Visto che sono ininfluenti per quanto riguarda le mosse a disposizione e le direzioni di voltura, si parla
-di controllo di linea anche se le caselle sui bordi sono di un colore diverso purché sia separate dalla linea
-controllata da caselle vuote. Per esempio nel diagramma <span data-board-ref="dettaglio"></span> il bianco
-controlla il controbordo sud, anche se le pedine <b>A7</b> e <b>H7</b> sono nere.</p>
+<p>Il diagramma <span data-board-ref="dettaglio"></span> presente una situazione abbastanza comune che, a rigor di logica,
+non rientra nella definizione data sopra di controllo di linea.</p>
+
+<p>Le pedine <b>C7</b>, <b>D7</b>, <b>E7</b> ed <b>F7</b> sono tutte le bianco. Ma le pedine <b>A7</b> e <b>H7</b> sono nere.
+Quindi non siamo nella situazione in cui il bianco controlla tutte le pedine della riga <b>7</b>.</p>
+
+<p>Tuttavia le pedine <b>A7</b> e <b>H7</b> non hanno effetto sulle caselle vuote <b>B7</b> e <b>G7</b>.
+    Quindi possiamo comunque affermare che <i>il bianco ha il controllo del controbordo sud</i>.</p>
 
 <board data-type="show" data-label="dettaglio" data-file="chapter-dettaglio.json"
        data-caption="Il bianco controlla il controbordo sud."></board>
 
-<p>Nelle prossime pagine approfondiremo gli effetti del controllo delle varie linee, in particolare vedremo:</p>
+<p>Nelle prossime pagine approfondiremo i più tipici controlli di linee, ovvero:</p>
 <ul>
     <li>controllo delle diagonali;</li>
     <li>controllo dei controbordi;</li>

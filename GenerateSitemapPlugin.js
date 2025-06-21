@@ -38,9 +38,11 @@ class GenerateSitemapPlugin {
             outputContent += this.buildUrlTag(siteRoot + section.href + 'section.php');
             section.chapters.forEach(chapter => {
                 outputContent += this.buildUrlTag(siteRoot + section.href + chapter.href + 'chapter.php');
-                chapter.pages.forEach(page => {
-                    outputContent += this.buildUrlTag(siteRoot + section.href + chapter.href + page.href);
-                });
+                if (chapter.pages != null) {
+                    chapter.pages.forEach(page => {
+                        outputContent += this.buildUrlTag(siteRoot + section.href + chapter.href + page.href);
+                    });
+                }
             });
         });
         outputContent += '</urlset>';

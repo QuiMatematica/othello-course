@@ -1,0 +1,57 @@
+{
+  "position": [
+    "--#####-",
+    "--####-#",
+    "##O#OO##",
+    "#O##O###",
+    "####O###",
+    "##OOOO##",
+    "#-####-#",
+    "-#####--"
+  ],
+  "turn": "white",
+  "comment": "Al bianco non conviene giocare nella regione dispari a sud-est. Inoltre non ha la possibilità di controllare una diagonale giocando in una casella <b>X</b>. Ma può farlo diversamente...",
+  "moves": [
+    {
+      "move": "A2",
+      "comment": "Il bianco attacca il cinque a nord e controlla la diagonale nera."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero deve prendere l'angolo per salvare il bordo ovest. Ma ora il bianco può incunearsi in <b>B1</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco si incunea."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero chiude la regione dispari."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende il bordo nord. Nota che il bianco ha ancora il controllo della diagonale nera, per cui il nero non può giocare nè in <b>G2</b> nè in <b>B7</b>."
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Questa e le prossime mosse sono tutte del bianco."
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco vince 50 a 14."
+    }
+  ]
+}

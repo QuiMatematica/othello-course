@@ -1,0 +1,35 @@
+{
+  "position": [
+    "-######-",
+    "#-####-#",
+    "##O##O##",
+    "#O#OO###",
+    "####O###",
+    "###OO###",
+    "#-####-#",
+    "-#####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco prende il controllo della diagonale nera."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero prende il controllo della diagonale bianca.<br>Il bianco ha due mosse a disposizione."
+    },
+    {
+      "move": "G8",
+      "comment": "Analizziamo cosa accade se il bianco muove in <b>G8</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo.<br>Il bianco passa."
+    },
+    {
+      "move": "G7",
+      "comment": "Partita terminata: il nero vince 54 a 10."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "position": [
+    "-######-",
+    "--####OO",
+    "--###O#O",
+    "--##OO#O",
+    "--#O#O#O",
+    "-#O##O#O",
+    "--OOO---",
+    "-OOOOO--"
+  ],
+  "played": "G2",
+  "comment": "Il bianco ha mosso in <b>G2</b> convinto di avere il controllo della diagonale.",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Il nero taglia la diagonale e ottiene l'accesso all'angolo <b>H1</b>."
+    }
+  ]
+}

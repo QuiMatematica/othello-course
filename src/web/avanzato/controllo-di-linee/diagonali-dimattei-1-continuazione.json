@@ -1,0 +1,48 @@
+{
+  "position": [
+    "-######-",
+    "#-####-#",
+    "##O##O##",
+    "#O##O###",
+    "####O###",
+    "###O####",
+    "#-####-#",
+    "-#####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco prende il controllo della diagonale nera."
+    },
+    {
+      "move": "B2",
+      "comment": "Forzata."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo e chiude una regione dispari.<br>Il nero passa."
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco controlla ancora la diagonale nera, quindi il nero non può muovere in <b>H1</b>."
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "G7",
+      "comment": "Con questa mossa il bianco prende il controllo della diagonale bianca e della colonna <b>G</b>.<br>Quindi il nero non può muovere in <b>H8</b> e, anche se può muovere in <b>G8</b> non volta pedine in verticale."
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco vince 55 a 9."
+    }
+  ]
+}

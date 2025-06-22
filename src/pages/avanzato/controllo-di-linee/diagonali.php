@@ -123,3 +123,23 @@ una casella <b>X</b>. Però il bianco può prendere il controllo della diagonale
 attacca il cinque sul bordo nord. Studia la sequenza proposta nel diagramma.</p>
 
 <board data-type="show" data-label="dimattei-3" data-file="diagonali-dimattei-3.json"></board>
+
+<h2>Preparare il controllo di una diagonale</h2>
+
+<p>Se il controllo di una diagonale è così importante, è giusto approfittarne ogni volta che si presenta l'occasione.
+Ma è strategicamente importante anche andare a <b>preparare il controllo</b> di una diagonale, e non aspettare di
+ritrovarsela casualmente davanti.</p>
+
+<p>Il diagramma <span data-board-ref="suekuni-1"></span> è il primo esempio portato da Makoto Suekuni
+    alla master class che ha tenuto nel 2024 all'EGP di Roma (è disponibile una sintesi in italiano a cura di Paolo
+    Scognamiglio<a href="https://www.youtube.com/watch?v=adk3sTpatQ8" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>).</p>
+
+<board data-type="show" data-label="suekuni-1" data-file="diagonali-suekuni-1.json"></board>
+
+<p>Il bianco si trova in una situazione a prima vista non positiva, a causa del muro verso sud. Tuttavia la sua mobilità
+è ancora buona e può sfruttare bene l'area di gioco a ovest per ottenere dei vantaggi. Ma a quali vantaggi deve puntare?</p>
+
+<p>Una possibilità è proprio quella di cercare di ottenere il controllo di una diagonale, in particolare una diagonale
+che sia facilmente allungabile. Ora, controllare la diagonale nera risulta complesso, in particolare per la pedina
+    <b>E4</b> che non sembra facilmente voltabile. Sembra invece più semplice prendere il controllo della diagonale
+bianca.</p>

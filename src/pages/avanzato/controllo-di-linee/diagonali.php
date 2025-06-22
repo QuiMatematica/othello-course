@@ -143,3 +143,33 @@ ritrovarsela casualmente davanti.</p>
 che sia facilmente allungabile. Ora, controllare la diagonale nera risulta complesso, in particolare per la pedina
     <b>E4</b> che non sembra facilmente voltabile. Sembra invece più semplice prendere il controllo della diagonale
 bianca.</p>
+
+<p>Il bianco deve quindi voltare la pedina <b>C3</b> e la pedina <b>F6</b>, ma non può farlo con una singola mossa.
+Non possiamo usare da subito le caselle <b>X</b>, quindi dobbiamo prima usare altre caselle.</p>
+
+<p>Per voltare <b>F6</b> possiamo muovere in <b>F8</b>.</p>
+
+<p>Per voltare <b>C3</b> possiamo muovere in <b>A3</b> o in <b>A5</b>. Se però il bianco muove in <b>A3</b>
+il nero può rispondere in <b>A5</b> vanificando l'intenzione. Quindi l'opzione migliore è <b>A5</b>.</p>
+
+<p>Quale delle due mosse è meglio fare per prima?</p>
+
+<p>Il problema è che tutte e due le mosse offrono la possibilità al nero di prendere il controllo della diagonale
+prima che il bianco riesca a concludere la manovra.</p>
+
+<p>In particolare se il bianco gioca in <b>F8</b> il nero può rispondere in <b>G7</b> prendendo il controllo della
+diagonale e attaccando il quattro più uno del bordo est. Nel diagramma <span data-board-ref="suekuni-1-F8"></span>
+puoi vedere una possibile continuazione di questa situazione.</p>
+
+<board data-type="show" data-label="suekuni-1-F8" data-file="diagonali-suekuni-1-F8.json"></board>
+
+<p>Se invece il bianco gioca in <b>A5</b> il nero non ha nessun vantaggio a prendere il controllo della diagonale in
+<b>B2</b> perché il bianco può tagliare la diagonale facilmente e il nero si ritrova a perdere sia il bordo nord sia
+il bordo ovest. Nel diagramma <span data-board-ref="suekuni-1-A5"></span> puoi vedere una possibile continuazione
+di questa situazione.</p>
+
+<board data-type="show" data-label="suekuni-1-A5" data-file="diagonali-suekuni-1-A5.json"></board>
+
+<h2>Tocca a te</h2>
+
+<board data-type="quiz" data-label="quiz-1" data-file="diagonali-quiz-1.json"></board>

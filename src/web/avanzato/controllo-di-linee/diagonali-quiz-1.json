@@ -1,0 +1,97 @@
+{
+  "position": [
+    "--OOOOO-",
+    "O-OOOO-O",
+    "OO##OOOO",
+    "O#O#OOOO",
+    "OOOOOO#O",
+    "O##OOOOO",
+    "O-#OO#-O",
+    "-#####--"
+  ],
+  "comment": "Obiettivo: ottieni il controllo di una diagonale e vinci la partita.",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Esatto: questa è la diagonale giusta da controllare, perché è allungabile giocando in <b>B2</b>.",
+      "errors": [
+        {
+          "move": "G2",
+          "comment": "Sbagliato. Non è questa la diagonale giusta da controllare perché non è allungabile. Il finale perfetto di porta ad una sconfitta per 16 a 48."
+        },
+        {
+          "move": "B2",
+          "comment": "Con questa mossa non ottieni il controllo della diagonale e il bianco vince."
+        },
+        {
+          "move": "B1",
+          "comment": "Con questa mossa non ottieni il controllo della diagonale e il bianco vince."
+        }
+      ]
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco ottiene il controllo della diagonale nera."
+    },
+    {
+      "move": "B2",
+      "comment": "Esatto: devi allungare il controllo della diagonale. Ora il bianco ha solo due mosse, entrambi perdenti.",
+      "errors": [
+        {
+          "move": "B1",
+          "comment": "Perché cedere l'angolo quando puoi allungare la diagonale?"
+        },
+        {
+          "move": "G2",
+          "comment": "Perché cedere l'angolo quando puoi allungare la diagonale?"
+        }
+      ]
+    },
+    {
+      "move": "B1",
+      "comment": "Cosa rispondi a questa mossa?"
+    },
+    {
+      "move": "A1",
+      "comment": "Esatto: devi riprendere il controllo della diagonale."
+    },
+    {
+      "move": "G8",
+      "comment": "E dopo questa mossa del nero?"
+    },
+    {
+      "move": "H8",
+      "comment": "Esatto: ora puoi giocare tutte e tre le mosse finali. Questo diagramma ti permette di arrivare in fondo giocando per prima <b>A8</b>.",
+      "errors": [
+        {
+          "move": "A8",
+          "comment": "In effetti anche questa mossa è corretta, ma questo diagramma è programmato per rispondere alla mossa <b>H8</b>. Per favore torna indietro e gioca l'altra mossa."
+        }
+      ]
+    },
+    {
+      "move": "A8",
+      "comment": "Bravo! Adesso gioca in <b>H1</b>.",
+      "errors": [
+        {
+          "move": "H1",
+          "comment": "In effetti anche questa mossa è corretta, ma questo diagramma è programmato per rispondere alla mossa <b>A8</b>. Per favore torna indietro e gioca l'altra mossa."
+        }
+      ]
+    },
+    {
+      "move": "H1",
+      "comment": "Ultima...",
+      "errors": [
+        {
+          "move": "G2",
+          "comment": "In effetti anche questa mossa è corretta, ma questo diagramma è programmato per rispondere alla mossa <b>H1</b>. Per favore torna indietro e gioca l'altra mossa."
+        }
+      ]
+    },
+    {
+      "move": "G2",
+      "comment": "Bravissimo. Hai vinto 49 a 15."
+    }
+  ]
+}

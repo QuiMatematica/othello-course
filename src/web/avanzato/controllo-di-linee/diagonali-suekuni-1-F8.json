@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--####--",
+    "--#OO#-O",
+    "-####OO-",
+    "###O#OO#",
+    "--##O#O#",
+    "OOOO####",
+    "---OO#-#",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "Se il bianco muove in <b>F8</b> per prendere il controllo della diagonale bianca..."
+    },
+    {
+      "move": "G7",
+      "comment": "... il nero lo può precedere e prendere lui il controllo, attaccando al tempo stesso il quattro più uno del bordo est."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco può anche cercare di tagliare la diagonale."
+    },
+    {
+      "move": "B5",
+      "comment": "Ma il nero non se ne preoccupa perché con <b>H8</b> il bianco si ritroverebbe senza mosse a sud."
+    },
+    {
+      "move": "A3",
+      "comment": "Non che il bianco abbiamo molto di meglio da giocare."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero può riprendere il controllo della diagonale e il bianco è spacciato."
+    }
+  ]
+}

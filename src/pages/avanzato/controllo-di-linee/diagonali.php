@@ -3,21 +3,14 @@
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-		<p class="card-text">Chiamiamo <b>diagonali principali</b> l'insieme delle pedine che vanno da
-            <b>A1</b> ad <b>H8</b>, e l'insieme delle pedine che vanno da <b>H1</b> ad <b>A8</b>.</p>
-        <p class="card-text">Tenendo presente la posizione delle pedine all'inizio gioco
-             possiamo chiamare
-            :</p>
-        <ul>
-            <li><b>diagonale bianca</b> quella che va da <b>A1</b> ad <b>H8</b>;</li>
-            <li><b>diagonale nera</b> quella che va da <b>H1</b> ad <b>A8</b>.</li>
-        </ul>
+		<p class="card-text">Chiamiamo <b>diagonali principali</b> l'insieme delle caselle che vanno da
+            <b>A1</b> ad <b>H8</b> e l'insieme delle caselle che vanno da <b>H1</b> ad <b>A8</b>.</p>
 	</div>
 </div>
 
 Nella posizione di partenza (diagramma <span data-board-ref="inizio-gioco"></span>) sulla diagonale <b>A1</b> ad <b>H8</b>
 sono presenti le due pedine bianche, mentre sulla diagonale <b>H1</b> ad <b>A8</b> sono presenti le due pedine nero.
-Questo ci offre un buon modo per distinguere tra le due diagonali (diagramma <span data-board-ref="diagonale-bianca-nera"></span>).
+Questo ci offre un buon modo per distinguere tra le due diagonali principali (diagramma <span data-board-ref="diagonale-bianca-nera"></span>).
 
 <gather>
     <board data-type="show" data-label="inizio-gioco" data-file="diagonali-inizio-gioco.json"
@@ -47,19 +40,19 @@ due mosse: <b>B7</b> e <b>H7</b>. Ma sono entrambi caselle <b>X</b>.</p>
 
 <board data-type="show" data-label="dimattei-1" data-file="diagonali-dimattei-1.json"></board>
 
-<p>Quando abbiamo parlato di pedine stabili abbiamo visto quanto possa essere pericoloso giocare in una casella <b>X</b>.
+<p>Quando abbiamo parlato di <a href="../../intermedio/pedine-stabili/pedine-stabili.php">pedine stabili</a> abbiamo visto quanto possa essere pericoloso giocare in una casella <b>X</b>.
 Anche se si ottiene il controllo della diagonale l'avversario può cercare il modo di <i>tagliare</i> la diagonale
 e ottenere così un accesso all'angolo. Per esempio, nel diagramma <span data-board-ref="diagonale-tagliata"></span>
-il bianco gioca nella casella <b>X</b> convinto di avere il controllo della diagonale, ma il nero la taglia e ottiene
+il bianco ha giocato nella casella <b>X</b> convinto di avere il controllo della diagonale, ma il nero la taglia e ottiene
 l'accesso all'angolo.</p>
 
 <board data-type="show" data-label="diagonale-tagliata" data-file="diagonali-diagonale-tagliata.json"
        data-caption="Il nero taglia la diagonale controllata dal bianco."></board>
 
-<p>Abbiamo già visto due eccezioni alla pericolosità delle caselle <b>X</b>:</p>
+<p>Abbiamo già visto due situazioni in cui la pericolosità delle caselle <b>X</b> è compensata da un vantaggio maggiore:</p>
 <ul>
-    <li>possiamo usare una casella <b>X</b> per attaccare un bordo sbilanciato, come un cinque;</li>
-    <li>possiamo usare una casella <b>X</b> e il controllo anche solo temporaneo della diagonale per una Stoner trap.</li>
+    <li>possiamo usare una casella <b>X</b>, anche senza controllo della diagonale, per attaccare un bordo sbilanciato, per esempio un cinque;</li>
+    <li>possiamo usare una casella <b>X</b>, con il controllo anche solo temporaneo della diagonale, per una Stoner trap.</li>
 </ul>
 
 <p>Ma tornando al diagramma <span data-board-ref="dimattei-1"></span>, la situazione è ancora diversa. Siamo in una
@@ -97,12 +90,12 @@ esempio è tratto dal corso di Alessandro Di Mattei).</p>
 
 <p>Il bianco ha la possibilità di controllare entrambi le diagonali, ma anche il nero ha la stessa possibilità.
 Quindi se il bianco muove per controllare una diagonale, il nero risponde controllando l'altra. Quale è la sequenza
-giusta per il bianco?</p>
+vincente per il bianco?</p>
 
 <p>Nei diagrammi <span data-board-ref="dimattei-2-sequenza1"></span> e <span data-board-ref="dimattei-2-sequenza2"></span>
 il bianco gioca in <b>B7</b> per controllare la diagonale nera. Il nero quindi risponde in <b>B2</b> per controllare
 la diagonale bianca. Al bianco rimangono quindi due mosse: <b>G7</b> (diagramma <span data-board-ref="dimattei-2-sequenza1"></span>)
-e <b>G8</b> (diagramma <span data-board-ref="dimattei-2-sequenza2">), entrambi perdenti.</p>
+    e <b>G8</b> (diagramma <span data-board-ref="dimattei-2-sequenza2"></span>), entrambi perdenti.</p>
 
 <gather>
     <board data-type="show" data-label="dimattei-2-sequenza1" data-file="diagonali-dimattei-2-sequenza1.json"></board>
@@ -119,7 +112,7 @@ di <b>allungare</b> il controllo della diagonale giocando in <b>B2</b>, e questo
 
 <p>Anche nel diagramma <span data-board-ref="dimattei-3"></span> (altro esempio del corso di Alessandro Di Mattei)
 tocca al bianco che, però, non ha la possibilità di prendere il controllo di una diagonale principale giocando in
-una casella <b>X</b>. Però il bianco può prendere il controllo della diagonale nera con una mossa nera, e nel farlo
+una casella <b>X</b>. Però può prendere il controllo della diagonale nera con una mossa diversa, e nel farlo
 attacca il cinque sul bordo nord. Studia la sequenza proposta nel diagramma.</p>
 
 <board data-type="show" data-label="dimattei-3" data-file="diagonali-dimattei-3.json"></board>
@@ -127,34 +120,40 @@ attacca il cinque sul bordo nord. Studia la sequenza proposta nel diagramma.</p>
 <h2>Preparare il controllo di una diagonale</h2>
 
 <p>Se il controllo di una diagonale è così importante, è giusto approfittarne ogni volta che si presenta l'occasione.
-Ma è strategicamente importante anche andare a <b>preparare il controllo</b> di una diagonale, e non aspettare di
-ritrovarsela casualmente davanti.</p>
+Ma è strategicamente importante anche <b>preparare il controllo</b> di una diagonale, e non aspettare di
+ritrovarselo casualmente davanti.</p>
 
 <p>Il diagramma <span data-board-ref="suekuni-1"></span> è il primo esempio portato da Makoto Suekuni
     alla master class che ha tenuto nel 2024 all'EGP di Roma (è disponibile una sintesi in italiano a cura di Paolo
-    Scognamiglio<a href="https://www.youtube.com/watch?v=adk3sTpatQ8" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>).</p>
+    Scognamiglio <a href="https://www.youtube.com/watch?v=adk3sTpatQ8" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>).</p>
 
 <board data-type="show" data-label="suekuni-1" data-file="diagonali-suekuni-1.json"></board>
 
 <p>Il bianco si trova in una situazione a prima vista non positiva, a causa del muro verso sud. Tuttavia la sua mobilità
 è ancora buona e può sfruttare bene l'area di gioco a ovest per ottenere dei vantaggi. Ma a quali vantaggi deve puntare?</p>
 
-<p>Una possibilità è proprio quella di cercare di ottenere il controllo di una diagonale, in particolare una diagonale
-che sia facilmente allungabile. Ora, controllare la diagonale nera risulta complesso, in particolare per la pedina
-    <b>E4</b> che non sembra facilmente voltabile. Sembra invece più semplice prendere il controllo della diagonale
+<p>Un vantaggio che si può prospettare in una situazione come questa
+    è proprio il controllo di una diagonale, in particolare una diagonale
+che sia allungabile, in modo da guadagnare uno o più tempi di gioco.
+    Ora, nella situazione proposta, il controllo della diagonale nera risulta complicato,
+    in particolare la pedina
+    <b>E4</b> non è voltabile facilmente.
+    Sembra invece più semplice prendere il controllo della diagonale
 bianca.</p>
 
-<p>Il bianco deve quindi voltare la pedina <b>C3</b> e la pedina <b>F6</b>, ma non può farlo con una singola mossa.
-Non possiamo usare da subito le caselle <b>X</b>, quindi dobbiamo prima usare altre caselle.</p>
+<p>Il bianco può quindi puntare a voltare la pedina <b>C3</b> e la pedina <b>F6</b>.
+    Ma non può ottenere questi due risultati con una singola mossa.
+E non possiamo usare da subito le caselle <b>X</b>, quindi deve prima usare altre caselle.</p>
 
-<p>Per voltare <b>F6</b> possiamo muovere in <b>F8</b>.</p>
+<p>Per voltare <b>F6</b> può muovere in <b>F8</b>.</p>
 
-<p>Per voltare <b>C3</b> possiamo muovere in <b>A3</b> o in <b>A5</b>. Se però il bianco muove in <b>A3</b>
-il nero può rispondere in <b>A5</b> vanificando l'intenzione. Quindi l'opzione migliore è <b>A5</b>.</p>
+<p>Per voltare <b>C3</b> può muovere in <b>A3</b> o in <b>A5</b>. Però se il bianco muove in <b>A3</b>
+il nero può rispondere in <b>A5</b>. Quindi l'opzione migliore è <b>A5</b>.</p>
 
 <p>Quale delle due mosse è meglio fare per prima?</p>
 
-<p>Il problema è che tutte e due le mosse offrono la possibilità al nero di prendere il controllo della diagonale
+<p>Il problema è che tutte e due le mosse offrono la possibilità al nero di prendere il controllo
+    della diagonale
 prima che il bianco riesca a concludere la manovra.</p>
 
 <p>In particolare se il bianco gioca in <b>F8</b> il nero può rispondere in <b>G7</b> prendendo il controllo della

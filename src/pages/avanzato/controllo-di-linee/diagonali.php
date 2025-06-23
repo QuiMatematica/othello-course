@@ -27,21 +27,22 @@ Questo ci offre un buon modo per distinguere tra le due diagonali principali (di
 	</div>
 </div>
 
-<p>Attenzione che in questo caso il colore si riferisce alle diagonali, non alle pedine che sono presenti sulle stesse.</p>
+<p>Attenzione: gli aggettivi <i>bianca</i> e <i>nera</i> si riferisce alle diagonali,
+    non alle pedine che sono presenti sulle stesse.</p>
 
 <h2>Controllare la diagonale e mantenere il controllo</h2>
 
-<p>Il controllo delle diagonali diventa estremamente importante nei finali delle partite. Capita spesso, infatti,
+<p>Il controllo delle diagonali diventa estremamente importante nei finali. Capita spesso, infatti,
 che si giunga alle ultime mosse senza che nessuno dei due giocatori sia riuscito a conquistare un angolo.</p>
 
-<p>Per esempio nel diagramma <span data-board-ref="dimattei-1"></span> (esempio tratto dal corso scritto da Alessandro
+<p>Per esempio nel diagramma <span data-board-ref="dimattei-1"></span> (esempio tratto dal corso curato da Alessandro
 Di Mattei) tocca al bianco. Ormai non c'è più alcuna casella <i>sicura</i> dove giocare e al bianco rimangono solo
 due mosse: <b>B7</b> e <b>H7</b>. Ma sono entrambi caselle <b>X</b>.</p>
 
 <board data-type="show" data-label="dimattei-1" data-file="diagonali-dimattei-1.json"></board>
 
 <p>Quando abbiamo parlato di <a href="../../intermedio/pedine-stabili/pedine-stabili.php">pedine stabili</a> abbiamo visto quanto possa essere pericoloso giocare in una casella <b>X</b>.
-Anche se si ottiene il controllo della diagonale l'avversario può cercare il modo di <i>tagliare</i> la diagonale
+Anche se si ottiene il controllo della diagonale l'avversario può cercare il modo di <b>tagliare</b> la diagonale
 e ottenere così un accesso all'angolo. Per esempio, nel diagramma <span data-board-ref="diagonale-tagliata"></span>
 il bianco ha giocato nella casella <b>X</b> convinto di avere il controllo della diagonale, ma il nero la taglia e ottiene
 l'accesso all'angolo.</p>
@@ -51,8 +52,10 @@ l'accesso all'angolo.</p>
 
 <p>Abbiamo già visto due situazioni in cui la pericolosità delle caselle <b>X</b> è compensata da un vantaggio maggiore:</p>
 <ul>
-    <li>possiamo usare una casella <b>X</b>, anche senza controllo della diagonale, per attaccare un bordo sbilanciato, per esempio un cinque;</li>
-    <li>possiamo usare una casella <b>X</b>, con il controllo anche solo temporaneo della diagonale, per una Stoner trap.</li>
+    <li>possiamo usare una casella <b>X</b>, anche senza controllo della diagonale, per attaccare un bordo sbilanciato,
+        per esempio un <a href="../../intermedio/attacchi-ai-5/chapter.php">cinque</a>;</li>
+    <li>possiamo usare una casella <b>X</b>, con il controllo anche solo temporaneo della diagonale,
+        per una <a href="../stoner-trap/chapter.php">Stoner trap</a>.</li>
 </ul>
 
 <p>Ma tornando al diagramma <span data-board-ref="dimattei-1"></span>, la situazione è ancora diversa. Siamo in una
@@ -60,10 +63,12 @@ fase avanzata della partita, e tutte le caselle sicure sono ormai occupate. Risu
 modo di tagliare una diagonale. Quindi il bianco può giocare in <b>B7</b>, ottenere il controllo della diagonale nera,
 e stare tranquillo che il nero non riuscirà a prendere l'angolo <b>A8</b>.</p>
 
-<p>Anche perché, e lo vediamo nei diagrammi <span data-board-ref="dimattei-1-analisi-diagonale"></span>,
+<p>Infatti dopo la mossa in <b>B7</b> tutte le pedine della
+diagonale sono già incastrate, in qualunque direzione, tra le pedine del nero.
+    Lo vediamo nei diagrammi <span data-board-ref="dimattei-1-analisi-diagonale"></span>,
     <span data-board-ref="dimattei-1-analisi-orizzontale"></span> e
-    <span data-board-ref="dimattei-1-analisi-verticale"></span>, tutte le pedine della
-diagonale sono già incastrate, in qualunque direzione, tra le pedine del nero. Quindi il nero non ha nessuna possibilità
+    <span data-board-ref="dimattei-1-analisi-verticale"></span>.
+    Quindi il nero non ha nessuna possibilità
 di voltare le pedine presenti sulla diagonale.</p>
 
 <gather>
@@ -77,7 +82,7 @@ di voltare le pedine presenti sulla diagonale.</p>
 
 <p>Dopo <b>B7</b> del bianco, il nero può muovere solo in <b>B2</b> che, a differenza della mossa dell'avversario,
 non prende il controllo della diagonale. Il bianco quindi può prendere l'angolo <b>A1</b> e vincere facilmente la partita.
-Guarda la sequenza nel diagramma <span data-board-ref="dimattei-1-continuazione"></span></p>.
+Guarda la sequenza nel diagramma <span data-board-ref="dimattei-1-continuazione"></span>.</p>
 
 <board data-type="show" data-label="dimattei-1-continuazione" data-file="diagonali-dimattei-1-continuazione.json"></board>
 

@@ -13,11 +13,11 @@
   "moves": [
     {
       "move": "F8",
-      "comment": "Se il bianco muove in <b>F8</b> per prendere il controllo della diagonale bianca..."
+      "comment": "Il bianco muove in <b>F8</b> per prendere il controllo della diagonale bianca."
     },
     {
       "move": "G7",
-      "comment": "... il nero lo può precedere e prendere lui il controllo, attaccando al tempo stesso il quattro più uno del bordo est."
+      "comment": "Ma il nero può precedere l'avversario e prendere lui il controllo della diagonale bianca. Inoltre attacca il quattro più uno del bordo est."
     },
     {
       "move": "A5",
@@ -25,11 +25,11 @@
     },
     {
       "move": "B5",
-      "comment": "Ma il nero non se ne preoccupa perché con <b>H8</b> il bianco si ritroverebbe senza mosse a sud."
+      "comment": "Ma il nero non se ne preoccupa perché con <b>H8</b> il bianco si ritroverebbe senza mosse a sud. Quindi muove per esaurire l'area di gioco del bianco."
     },
     {
       "move": "A3",
-      "comment": "Non che il bianco abbiamo molto di meglio da giocare."
+      "comment": "Non che il bianco abbia di meglio da giocare."
     },
     {
       "move": "B2",

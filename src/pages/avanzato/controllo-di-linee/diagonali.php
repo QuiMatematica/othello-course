@@ -9,7 +9,7 @@
 </div>
 
 Nella posizione di partenza (diagramma <span data-board-ref="inizio-gioco"></span>) sulla diagonale <b>A1</b> ad <b>H8</b>
-sono presenti le due pedine bianche, mentre sulla diagonale <b>H1</b> ad <b>A8</b> sono presenti le due pedine nero.
+sono presenti le due pedine bianche, mentre sulla diagonale <b>H1</b> ad <b>A8</b> sono presenti le due pedine nere.
 Questo ci offre un buon modo per distinguere tra le due diagonali principali (diagramma <span data-board-ref="diagonale-bianca-nera"></span>).
 
 <gather>
@@ -36,7 +36,8 @@ Questo ci offre un buon modo per distinguere tra le due diagonali principali (di
 che si giunga alle ultime mosse senza che nessuno dei due giocatori sia riuscito a conquistare un angolo.</p>
 
 <p>Per esempio nel diagramma <span data-board-ref="dimattei-1"></span> (esempio tratto dal corso curato da Alessandro
-Di Mattei) tocca al bianco. Ormai non c'è più alcuna casella <i>sicura</i> dove giocare e al bianco rimangono solo
+    Di Mattei) tocca al bianco. Ormai non c'è più alcuna
+    <a href="../../intermedio/mobilita/togliere-mosse.php">casella sicura</a> dove giocare e al bianco rimangono solo
 due mosse: <b>B7</b> e <b>H7</b>. Ma sono entrambi caselle <b>X</b>.</p>
 
 <board data-type="show" data-label="dimattei-1" data-file="diagonali-dimattei-1.json"></board>
@@ -135,7 +136,7 @@ ritrovarselo casualmente davanti.</p>
 <board data-type="show" data-label="suekuni-1" data-file="diagonali-suekuni-1.json"></board>
 
 <p>Il bianco si trova in una situazione a prima vista non positiva, a causa del muro verso sud. Tuttavia la sua mobilità
-è ancora buona e può sfruttare bene l'area di gioco a ovest per ottenere dei vantaggi. Ma a quali vantaggi deve puntare?</p>
+è ancora buona e può sfruttare bene l'area di gioco a ovest per ottenere dei vantaggi. Ma a cosa deve puntare?</p>
 
 <p>Un vantaggio che si può prospettare in una situazione come questa
     è proprio il controllo di una diagonale, in particolare una diagonale
@@ -148,7 +149,7 @@ bianca.</p>
 
 <p>Il bianco può quindi puntare a voltare la pedina <b>C3</b> e la pedina <b>F6</b>.
     Ma non può ottenere questi due risultati con una singola mossa.
-E non possiamo usare da subito le caselle <b>X</b>, quindi deve prima usare altre caselle.</p>
+E non può usare da subito le caselle <b>X</b>, quindi deve prima usare altre caselle.</p>
 
 <p>Per voltare <b>F6</b> può muovere in <b>F8</b>.</p>
 

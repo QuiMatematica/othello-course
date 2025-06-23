@@ -2,5 +2,19 @@
   "controls": {
     "score": false,
     "turn": false
+  },
+  "add": {
+    "lines": [
+      {
+        "start": [150, 150],
+        "end": [850, 850],
+        "color": "white"
+      },
+      {
+        "start": [150, 850],
+        "end": [850, 150],
+        "color": "black"
+      }
+    ]
   }
 }

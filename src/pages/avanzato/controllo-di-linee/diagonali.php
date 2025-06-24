@@ -27,7 +27,7 @@ Questo ci offre un buon modo per distinguere tra le due diagonali principali (di
 	</div>
 </div>
 
-<p>Attenzione: gli aggettivi <i>bianca</i> e <i>nera</i> si riferisce alle diagonali,
+<p>Attenzione: gli aggettivi <i>bianca</i> e <i>nera</i> si riferiscono alle diagonali,
     non alle pedine che sono presenti sulle stesse.</p>
 
 <h2>Controllare la diagonale e mantenere il controllo</h2>
@@ -35,7 +35,7 @@ Questo ci offre un buon modo per distinguere tra le due diagonali principali (di
 <p>Il controllo delle diagonali diventa estremamente importante nei finali. Capita spesso, infatti,
 che si giunga alle ultime mosse senza che nessuno dei due giocatori sia riuscito a conquistare un angolo.</p>
 
-<p>Per esempio nel diagramma <span data-board-ref="dimattei-1"></span> (esempio tratto dal corso curato da Alessandro
+<p>Per esempio nel diagramma <span data-board-ref="dimattei-1"></span> (tratto dal corso curato da Alessandro
     Di Mattei) tocca al bianco. Ormai non c'è più alcuna
     <a href="../../intermedio/mobilita/togliere-mosse.php">casella sicura</a> dove giocare e al bianco rimangono solo
 due mosse: <b>B7</b> e <b>H7</b>. Ma sono entrambi caselle <b>X</b>.</p>
@@ -51,34 +51,31 @@ l'accesso all'angolo.</p>
 <board data-type="show" data-label="diagonale-tagliata" data-file="diagonali-diagonale-tagliata.json"
        data-caption="Il nero taglia la diagonale controllata dal bianco."></board>
 
-<p>Abbiamo già visto due situazioni in cui la pericolosità delle caselle <b>X</b> è compensata da un vantaggio maggiore:</p>
+<p>Abbiamo già visto due situazioni in cui la pericolosità delle caselle <b>X</b> è compensata da un vantaggio maggiore.</p>
 <ul>
-    <li>possiamo usare una casella <b>X</b>, anche senza controllo della diagonale, per attaccare un bordo sbilanciato,
-        per esempio un <a href="../../intermedio/attacchi-ai-5/chapter.php">cinque</a>;</li>
-    <li>possiamo usare una casella <b>X</b>, con il controllo anche solo temporaneo della diagonale,
+    <li>Possiamo usare una casella <b>X</b>, anche senza controllo della diagonale, per attaccare un bordo sbilanciato,
+        per esempio un <a href="../../intermedio/attacchi-ai-5/chapter.php">cinque</a>.</li>
+    <li>Possiamo usare una casella <b>X</b>, con il controllo anche solo temporaneo della diagonale,
         per una <a href="../stoner-trap/chapter.php">Stoner trap</a>.</li>
 </ul>
 
-<p>Ma tornando al diagramma <span data-board-ref="dimattei-1"></span>, la situazione è ancora diversa. Siamo in una
-fase avanzata della partita, e tutte le caselle sicure sono ormai occupate. Risulta difficile, pertanto, trovare il
-modo di tagliare una diagonale. Quindi il bianco può giocare in <b>B7</b>, ottenere il controllo della diagonale nera,
-e stare tranquillo che il nero non riuscirà a prendere l'angolo <b>A8</b>.</p>
+<p>Ma tornando al diagramma <span data-board-ref="dimattei-1"></span>, la situazione è ancora diversa.</p>
 
-<p>Infatti dopo la mossa in <b>B7</b> tutte le pedine della
+<p>Dopo la mossa in <b>B7</b> tutte le pedine bianche della
 diagonale sono già incastrate, in qualunque direzione, tra le pedine del nero.
     Lo vediamo nei diagrammi <span data-board-ref="dimattei-1-analisi-diagonale"></span>,
     <span data-board-ref="dimattei-1-analisi-orizzontale"></span> e
     <span data-board-ref="dimattei-1-analisi-verticale"></span>.
-    Quindi il nero non ha nessuna possibilità
-di voltare le pedine presenti sulla diagonale.</p>
+    Quindi il nero non ha alcuna possibilità
+di voltare le pedine presenti sulla diagonale e prendere l'angolo <b>A8</b>.</p>
 
 <gather>
 <board data-type="show" data-label="dimattei-1-analisi-diagonale" data-file="diagonali-dimattei-1-analisi-diagonale.json"
-    data-caption="Tutte le pedine della diagonale sono già incastrate tra quelle avversarie."></board>
+    data-caption="Incastri in diagonale."></board>
 <board data-type="show" data-label="dimattei-1-analisi-orizzontale" data-file="diagonali-dimattei-1-analisi-orizzontale.json"
-    data-caption="Tutte le pedine della diagonale sono già incastrate tra quelle avversarie."></board>
+    data-caption="Incastri orizzontali."></board>
 <board data-type="show" data-label="dimattei-1-analisi-verticale" data-file="diagonali-dimattei-1-analisi-verticale.json"
-    data-caption="Tutte le pedine della diagonale sono già incastrate tra quelle avversarie."></board>
+    data-caption="Incastri verticali."></board>
 </gather>
 
 <p>Dopo <b>B7</b> del bianco, il nero può muovere solo in <b>B2</b> che, a differenza della mossa dell'avversario,
@@ -94,7 +91,7 @@ esempio è tratto dal corso di Alessandro Di Mattei).</p>
 
 <board data-type="show" data-label="dimattei-2" data-file="diagonali-dimattei-2.json"></board>
 
-<p>Il bianco ha la possibilità di controllare entrambi le diagonali, ma anche il nero ha la stessa possibilità.
+<p>Il bianco ha la possibilità di controllare entrambi le diagonali, ma anche il nero può fare lo stesso.
 Quindi se il bianco muove per controllare una diagonale, il nero risponde controllando l'altra. Quale è la sequenza
 vincente per il bianco?</p>
 
@@ -118,7 +115,7 @@ di <b>allungare</b> il controllo della diagonale giocando in <b>B2</b>, e questo
 
 <p>Anche nel diagramma <span data-board-ref="dimattei-3"></span> (altro esempio del corso di Alessandro Di Mattei)
 tocca al bianco che, però, non ha la possibilità di prendere il controllo di una diagonale principale giocando in
-una casella <b>X</b>. Però può prendere il controllo della diagonale nera con una mossa diversa, e nel farlo
+    una casella <b>X</b>. Però può prendere il controllo della diagonale nera giocando in <b>A2</b>, e al tempo stesso
 attacca il cinque sul bordo nord. Studia la sequenza proposta nel diagramma.</p>
 
 <board data-type="show" data-label="dimattei-3" data-file="diagonali-dimattei-3.json"></board>
@@ -174,6 +171,17 @@ il bordo ovest. Nel diagramma <span data-board-ref="suekuni-1-A5"></span> puoi v
 di questa situazione.</p>
 
 <board data-type="show" data-label="suekuni-1-A5" data-file="diagonali-suekuni-1-A5.json"></board>
+
+<h2>Riassumendo</h2>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Strategia</div>
+	<div class="card-body">
+        <p class="card-text">Valuta se puoi <b>prendere il controllo</b> di una diagonale che non può essere tagliata.</p>
+        <p class="card-text">Valuta se puoi <b>allungare il controllo</b> di una diagonale.</p>
+        <p class="card-text">Valuta se puoi <b>preparare il controllo</b> di una diagonale.</p>
+	</div>
+</div>
 
 <h2>Tocca a te</h2>
 

@@ -352,7 +352,13 @@
 				},
 				{
 					"href": "controllo-di-linee/",
-					"title": "Controllo di linee"
+					"title": "Controllo di linee",
+					"pages": [
+						{
+							"href": "diagonali.php",
+							"title": "Controllo delle diagonali principali"
+						}
+					]
 				}
 			]
 		}

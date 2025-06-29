@@ -17,6 +17,17 @@
 <board data-type="show" data-label="controbordo" data-file="controbordo.json"
        data-caption="I controbordi."></board>
 
+<p>Abbiamo già parlato di controbordi in relazioni agli attacchi ai cinque perché influenzano molto l'efficacia
+degli attacchi.</p>
+<ul>
+    <li>Se il cinque è pieno (ovvero il controbordo è controllato dallo stesso colore del cinque) l'attacco dalla casella
+        <b>X</b> è sempre efficace, purché si possa giocare nella casella <b>X</b>.Ne abbiamo parlato
+    <a href="../../intermedio/attacchi-ai-5/cinque-attaccabili.php">qui</a>.</li>
+    <li>Se il cinque non è pieno e il controbordo adiacente al cinque è controllato da uno dei due giocatori,
+    l'attacco da casella <b>X</b> non è mai efficace. Ne abbiamo parlato
+    <a href="../../intermedio/attacchi-ai-5/cinque-non-attaccabili.php">qui</a>.</li>
+</ul>
+
 <h2>Primo esempio</h2>
 
 <p>La posizione del diagramma <span data-board-ref="suekuni-2"></span>
@@ -80,9 +91,12 @@ quindi il controllo del controbordo nord non è utile. Se invece il nero prendes
 può giocare in <b>B7</b>. Certamente il bianco risponderà in <b>A8</b>, sia per prendere l'angolo
 sia per tagliare il controbordo; ma il nero può riconquistare il controbordo giocando in <b>A6</b>.
 Ok, nel fare questa manovra il nero perde il bordo ovest, però ottiene il controbordo relativo.
-&Egrave; sufficiente per vincere? Non resta che contare. O guardare il finale perfetto nel
+&Egrave; sufficiente per vincere?</p>
+
+<p>Non ci resta che contare. E nel farlo dovresti notare che è più facile contare questa sequenza
+    perché è facile capire quali sono le mosse migliori dei due colori dopo <b>B7</b>.
+    Una volta arrivato alla fine controlla il finale perfetto nel
 diagramma <span data-board-ref="suekuni-4"></span>.</p>
 
 <board data-type="show" data-label="suekuni-4" data-file="controbordo-suekuni-4.json"
        data-caption="Gli effetti del controllo del controbordo."></board>
-

@@ -167,7 +167,9 @@ cerca di sfruttare meglio la situazione, in particolare il cinque sul bordo oves
 
 
 <p>Nella sequenza del diagramma 5 ci sono diversi elementi strategici che hanno permesso al bianco di vincere:
-un attacco al cinque, il controllo di un controbordo e due buchi neri. Sono tutti elementi che forse ancora non conosci.
+    un <a href="../attacchi-ai-5/chapter.php">attacco al cinque</a>,
+    il <a href="../../avanzato/controllo-di-linee/controbordo.php">controllo di un controbordo</a>
+    e due buchi neri. Sono tutti elementi che forse ancora non conosci.
     Porta pazienza e sii perseverante nello studio: man mano che li conoscerai imparerai a sfruttarli e imparerai
     a valutare correttamente le situazioni.</p>
 

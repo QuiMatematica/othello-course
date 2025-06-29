@@ -1,0 +1,46 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-OOOO##",
+    "##OOOO##",
+    "#O#O##O#",
+    "#OO##OO#",
+    "-OO#OOO#",
+    "O-#O#OO#",
+    "-#######"
+  ],
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il nero attacca il quattro più uno."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "A6",
+      "comment": "Il nero si incunea in <b>A6</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco chiude la regione a nord-ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo. Nota che solo il bianco può giocare in <b>B7</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo. Se avesse giocato in <b>G1</b> il nero avrebbe ottenuto il controllo della diagonale e il bianco avrebbe perso."
+    },
+    {
+      "move": "G1",
+      "comment": "Forzata."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco chiude e vince."
+    }
+  ]
+}

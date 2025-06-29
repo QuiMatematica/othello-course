@@ -357,6 +357,14 @@
 						{
 							"href": "diagonali.php",
 							"title": "Controllo delle diagonali principali"
+						},
+						{
+							"href": "controbordo.php",
+							"title": "Controllo dei controbordi"
+						},
+						{
+							"href": "diagonale-c.php",
+							"title": "Controllo delle diagonali C"
 						}
 					]
 				}

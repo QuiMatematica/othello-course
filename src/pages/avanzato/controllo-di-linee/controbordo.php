@@ -1,4 +1,4 @@
-<h1>Controllo del controbordo</h1>
+<h1>Controllo dei controbordi</h1>
 
 <p>Riprendo il concetto di controbordo, che ti ho già presentato parlando di
     <a href="../../intermedio/attacchi-ai-5/definizioni.php">attacchi ai cinque</a>.</p>

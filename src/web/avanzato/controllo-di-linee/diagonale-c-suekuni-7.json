@@ -13,11 +13,11 @@
   "moves": [
     {
       "move": "B1",
-      "comment": "Il nero taglia la diagonale nera. Questo gli permetterà di ottenere l'angolo <b>A8</b>. Inoltre, giocando nell'angolo, gira anche la pedina <b>D5</b> che gli permette di controllare la diagonale C."
+      "comment": "Il nero taglia la diagonale nera e ottiene l'accesso all'angolo <b>A8</b>. Inoltre, quando giocherà nell'angolo, girerà anche la pedina <b>D5</b> e avrà il controllo della diagonale C."
     },
     {
       "move": "C1",
-      "comment": "Il bianco punta all'angolo <b>A1<7b>."
+      "comment": "Il bianco punta all'angolo <b>A1</b>."
     },
     {
       "move": "B2",

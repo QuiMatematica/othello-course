@@ -1,0 +1,39 @@
+{
+  "position": [
+    "#OOOOO--",
+    "#OOOOOO-",
+    "OOOOO#O#",
+    "O#O###O#",
+    "O#OOO###",
+    "OOO##O##",
+    "O#####-#",
+    "O####O--"
+  ],
+  "comment": "Riuscirà il nero a vincere questa partita?",
+  "moves": [
+    {
+      "move": "H1",
+      "comment": "Il nero prendo l'angolo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco gioca nella regione dispari e va in parità."
+    },
+    {
+      "move": "G1",
+      "comment": ""
+    },
+    {
+      "move": "H2",
+      "comment": ""
+    },
+    {
+      "move": "H8",
+      "comment": ""
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco vince 33 a 31."
+    }
+  ]
+}

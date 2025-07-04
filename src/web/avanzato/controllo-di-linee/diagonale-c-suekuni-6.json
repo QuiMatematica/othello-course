@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--#####-",
+    "OOOOOOO#",
+    "OO#O#O##",
+    "O##OO#O#",
+    "O##O#OO#",
+    "O#O##OO#",
+    "OO#OOOO-",
+    "O#OOOO--"
+  ],
+  "comment": "Riuscirà il nero a vincere questa partita?",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il nero cede il bordo sud, ma ottiene la pedina <b>G6</b> fondamentale per controllare la diagonale C e tagliare la diagonale nera."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero prende il controllo della diagonale C <b>B2-G6</b>: ottiene l'accesso all'angolo <b>H1<7b> e il bianco non può giocare in <b>H7</b>."
+    },
+    {
+      "move": "A1",
+      "comment": "Forzata."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende il tanto desiderato angolo stabilizzando i bordi nord ed est.<br>Il bianco passa."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero chiude la partita e vince 37 a 27."
+    }
+  ]
+}

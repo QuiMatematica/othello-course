@@ -27,3 +27,25 @@ principale, come mostra il diagramma <span data-board-ref="taglio-diagonale"></s
 
 <board data-type="show" data-label="suekuni-7" data-file="diagonale-c-suekuni-7.json"
        data-caption="Vincere controllando una diagonale C."></board>
+
+<h2>Secondo esempio</h2>
+
+<board data-type="show" data-label="suekuni-3-G7" data-file="diagonale-c-suekuni-3-G7.json"
+       data-caption="Vincere controllando una diagonale C."></board>
+
+<board data-type="show" data-label="suekuni-3-H1" data-file="diagonale-c-suekuni-3-H1.json"
+       data-caption="Vincere controllando una diagonale C."></board>
+
+<board data-type="show" data-label="suekuni-3-H2" data-file="diagonale-c-suekuni-3-H2.json"
+       data-caption="Vincere controllando una diagonale C."></board>
+
+<board data-type="show" data-label="suekuni-3-G1-controbordo" data-file="diagonale-c-suekuni-3-G1-controbordo.json"
+       data-caption="Vincere controllando una diagonale C."></board>
+
+<board data-type="show" data-label="suekuni-3" data-file="diagonale-c-suekuni-3.json"
+       data-caption="Vincere controllando una diagonale C."></board>
+
+<h2>Terzo esempio</h2>
+
+<board data-type="show" data-label="suekuni-6" data-file="diagonale-c-suekuni-6.json"
+       data-caption="Vincere controllando una diagonale C."></board>

@@ -49,3 +49,10 @@ principale, come mostra il diagramma <span data-board-ref="taglio-diagonale"></s
 
 <board data-type="show" data-label="suekuni-6" data-file="diagonale-c-suekuni-6.json"
        data-caption="Vincere controllando una diagonale C."></board>
+
+<h2>Tocca a te</h2>
+
+<p>L'esercizio del diagramma <span data-board-ref="finale-5"></span> è piuttosto difficile. Ma può diventare più
+semplice se ti concentri sul fatto che ti serve controllare una diagonale C per poter vincere la partita.</p>
+
+<board data-type="quiz" data-label="finale-5" data-file="diagonale-c-finale-5.json"></board>

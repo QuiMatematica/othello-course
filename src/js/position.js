@@ -1,4 +1,5 @@
 import Square from "./square";
+import {getIso, NULL_ISO} from "./isometry";
 
 export const EMPTY = 0;
 export const WHITE = 1;
@@ -18,8 +19,8 @@ export default class Position {
 
     errors;
 
-    constructor(grid, turn) {
-        this.grid = grid;
+    constructor(grid, turn, iso) {
+        this.grid = iso.position(grid);
         this.turn = turn;
         this.gameOver = false;
         this.passCount = 0;
@@ -37,7 +38,7 @@ export default class Position {
                 row.push(EMPTY);
             }
         }
-        return new Position(grid, BLACK)
+        return new Position(grid, BLACK, NULL_ISO)
     }
 
     static getStartingPosition() {
@@ -53,13 +54,14 @@ export default class Position {
         grid[4][4] = WHITE;
         grid[3][4] = BLACK;
         grid[4][3] = BLACK;
-        return new Position(grid, BLACK)
+        return new Position(grid, BLACK, NULL_ISO)
     }
 
     static getPositionFromJSON(json) {
         if (json == null) {
             return Position.getStartingPosition();
         }
+        let iso = getIso(json);
         let position;
         if (json.position != null) {
             const grid = [];
@@ -81,18 +83,13 @@ export default class Position {
                 }
             }
             let turn;
-            if (json.turn != null) {
-                if (json.turn === 'white') {
-                    turn = WHITE;
-                }
-                else {
-                    turn = BLACK;
-                }
+            if (json.turn === 'white') {
+                turn = WHITE;
             }
             else {
                 turn = BLACK;
             }
-            position = new Position(grid, turn);
+            position = new Position(grid, turn, iso);
         }
         else {
             position = Position.getStartingPosition();
@@ -100,18 +97,18 @@ export default class Position {
         position.comment = json.comment;
 
         if (json.played != null) {
-            position.played = Square.fromString(json.played);
+            position.played = Square.fromString(json.played, iso);
         }
 
         if (json.moves != null) {
-            Position.loadSequenzeFromJSON(position, json.moves);
+            Position.loadSequenceFromJSON(position, json.moves, iso);
         }
         else if (json.txt != null) {
             let curPosition = position;
             const txt = json.txt;
             for (let i = 0; i * 2 < txt.length; i++) {
                 const s = txt.substring(i * 2, i * 2 + 2);
-                const square = Square.fromString(s);
+                const square = Square.fromString(s, iso);
                 curPosition = curPosition.playStone(square, false);
             }
         }
@@ -119,10 +116,10 @@ export default class Position {
         return position;
     }
 
-    static loadSequenzeFromJSON(curPosition, moves) {
+    static loadSequenceFromJSON(curPosition, moves, iso) {
         moves.forEach((move) => {
-            Position.loadErrorSequenceFromJSON(curPosition, move);
-            const square = Square.fromString(move.move);
+            Position.loadErrorSequenceFromJSON(curPosition, move, iso);
+            const square = Square.fromString(move.move, iso);
             curPosition = curPosition.playStone(square, false);
             if (curPosition == null) {
                 console.log("La mossa ", move.move, " non è valida.")
@@ -131,17 +128,17 @@ export default class Position {
         });
     }
 
-    static loadErrorSequenceFromJSON(curPosition, move) {
+    static loadErrorSequenceFromJSON(curPosition, move, iso) {
         if (move.errors != null) {
             move.errors.forEach((error) => {
-                const square = Square.fromString(error.move);
+                const square = Square.fromString(error.move, iso);
                 const errorPosition = curPosition.playStone(square, true);
                 if (errorPosition == null) {
                     console.log("La mossa ", move.move, " (letta da errore) non è valida.")
                 }
                 errorPosition.comment = error.comment;
                 if (error.moves != null) {
-                    Position.loadSequenzeFromJSON(errorPosition, error.moves);
+                    Position.loadSequenceFromJSON(errorPosition, error.moves, iso);
                 }
             });
         }
@@ -246,7 +243,7 @@ export default class Position {
         const nextTurn = - this.turn;
 
         // Build the next position.
-        let next = new Position(nextGrid, nextTurn);
+        let next = new Position(nextGrid, nextTurn, NULL_ISO);
         // Save the played position
         next.played = new Square(x, y);
         // Save the flipped stones

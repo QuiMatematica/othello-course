@@ -1,4 +1,4 @@
-import Position, {WHITE} from "./position";
+import Position, {BLACK, WHITE} from "./position";
 import Board from "./board";
 import Score from "./score";
 import {boards, isAnimatingFlip} from "./page";
@@ -49,7 +49,17 @@ export default class SequenceBoard {
     readMatch(json) {
         this.currentPosition = Position.getPositionFromJSON(json);
 
-        this.humanColor = this.currentPosition.turn;
+        if (json.user == null) {
+            this.humanColor = this.currentPosition.turn;
+        }
+        else {
+            if (json.user === 'white') {
+                this.humanColor = WHITE;
+            }
+            else {
+                this.humanColor = BLACK;
+            }
+        }
         this.errorState = false;
 
         if (this.currentPosition.nextPosition.nextPosition == null) {

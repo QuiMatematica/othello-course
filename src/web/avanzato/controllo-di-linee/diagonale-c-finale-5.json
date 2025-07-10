@@ -1,0 +1,36 @@
+{
+  "position": [
+    "#OOOOOOO",
+    "#OOOO##-",
+    "#O#####-",
+    "#OO####O",
+    "#OO####O",
+    "#O#OOO#O",
+    "########",
+    "#--###-#"
+  ],
+  "turn": "white",
+  "comment": "Obiettivo: il bianco muove e vince.",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Esatto: con questa mossa punti a prendere il controllo della diagonale C <b>B7-H2</b>"
+    },
+    {
+      "move": "H3",
+      "comment": "Il bianco chiude la regione a nord-est e taglia la diagonale C."
+    },
+    {
+      "move": "G8",
+      "comment": "Esatto: con questa mossa riprendi il controllo della diagonale C."
+    },
+    {
+      "move": "C8",
+      "comment": "Complimenti, la mossa è corretta. Sacrifichi il bordo sud, ma grazie al controllo della diagonale C il nero non potrà girare altre pedine."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero gioca l'ultima mossa ma non è sufficiente per vincere. Il bianco vince 34 a 30."
+    }
+  ]
+}

@@ -29,5 +29,5 @@ module.exports = {
         }),
         new GenerateIndexPlugin(),
     ],
-    mode: 'production'
+    mode: 'development'
 };

@@ -9,11 +9,11 @@
     "O#####-#",
     "O####O--"
   ],
-  "comment": "Riuscirà il nero a vincere questa partita?",
+  "comment": "Riuscirà il nero a vincere muovendo in <b>G7</b>?",
   "moves": [
     {
       "move": "G7",
-      "comment": "Il nero gioca nella zona dispari."
+      "comment": "Il nero gioca nella regione dispari."
     },
     {
       "move": "H8",

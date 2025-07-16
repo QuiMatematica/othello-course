@@ -9,7 +9,7 @@
     "O#####-#",
     "O####O--"
   ],
-  "comment": "Riuscirà il nero a vincere questa partita?",
+  "comment": "Riuscirà il nero a vincere controllando una diagonale C?",
   "moves": [
     {
       "move": "G1",

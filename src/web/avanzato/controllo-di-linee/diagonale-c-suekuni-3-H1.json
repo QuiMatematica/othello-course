@@ -9,7 +9,7 @@
     "O#####-#",
     "O####O--"
   ],
-  "comment": "Riuscirà il nero a vincere questa partita?",
+  "comment": "Riuscirà il nero a vincere giocando in <b>H1</b>?",
   "moves": [
     {
       "move": "H1",
@@ -21,15 +21,15 @@
     },
     {
       "move": "G1",
-      "comment": ""
+      "comment": "Il nero stabilizza il bordo nord."
     },
     {
       "move": "H2",
-      "comment": ""
+      "comment": "Il bianco si incunea"
     },
     {
       "move": "H8",
-      "comment": ""
+      "comment": "Il nero prende l'angolo e stabilizza il bordo est."
     },
     {
       "move": "G8",

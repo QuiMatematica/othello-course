@@ -185,4 +185,6 @@ di questa situazione.</p>
 
 <h2>Tocca a te</h2>
 
+<board data-type="quiz" data-label="quiz-2" data-file="diagonali-quiz-2.json"></board>
+
 <board data-type="quiz" data-label="quiz-1" data-file="diagonali-quiz-1.json"></board>

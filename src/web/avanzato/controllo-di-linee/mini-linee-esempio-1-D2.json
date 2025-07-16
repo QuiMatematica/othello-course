@@ -1,0 +1,24 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--###---",
+    "--###O--",
+    "-OO##O--",
+    "---O#O--",
+    "--------",
+    "--------"
+  ],
+  "played": "E6",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "D2",
+      "comment": "Il bianco cerca di tagliare la mini-diagonale."
+    },
+    {
+      "move": "F3",
+      "comment": "Ma il nero occupa la casella in cui il bianco avrebbe la mossa ideale. Nota come ora il nero controlli la <i>mini-linea</i> della colonna <b>E</b>."
+    }
+  ]
+}

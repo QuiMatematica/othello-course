@@ -21,7 +21,7 @@
     },
     {
       "move": "G7",
-      "comment": "Il nero prende il controllo della diagonale C <b>B8-G3</b> e il bianco non può giocare in <b>H2</b>.<br>Il bianco non può neanche giocare <b>G8</b> altrimenti il nero muove sia in <b>h8</b> sia in <b>H2</b>."
+      "comment": "Il nero prende il controllo della diagonale C <b>B8-G3</b> e il bianco non può giocare in <b>H2</b>.<br>Il bianco non può neanche giocare <b>G8</b> altrimenti il nero muove sia in <b>H8</b> sia in <b>H2</b>."
     },
     {
       "move": "H8",

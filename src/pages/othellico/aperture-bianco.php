@@ -7,5 +7,6 @@
 
 <gather>
     <board data-type="quiz" data-label="heath-1" data-file="bianco-heath-1.json"></board>
+    <board data-type="quiz" data-label="heath-bat-1" data-file="bianco-heath-bat-1.json"></board>
     <board data-type="quiz" data-label="serpente-1" data-file="bianco-serpente-1.json"></board>
 </gather>

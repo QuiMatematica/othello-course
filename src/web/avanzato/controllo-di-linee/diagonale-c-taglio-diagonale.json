@@ -9,11 +9,22 @@
     "-O#OO#OO",
     "OOOOOOOO"
   ],
+  "played": "B2",
   "comment": "Il bianco controlla la diagonale bianca. In questo momento il nero non ha accesso all'angolo <b>A1</b>.",
   "moves": [
     {
       "move": "B6",
-      "comment": "Il nero prende il controllo della diagonale C <b>B6-F2</b>.<br>Il bianco non può muovere né in <b>A7</b> né in <b>G1</b>. E il nero ha tagliato la diagonale bianca."
+      "comment": "Il nero gioca in <b>B6</b> e ottiene due effetti.<br>Prende il controllo della diagonale C <b>B6-F2</b>, così il bianco non può muovere né in <b>A7</b> né in <b>G1</b>.<br>Taglia la diagonale bianca e ottiene l'accesso all'angolo <b>A1</b>."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero vince 40 a 24."
     }
   ]
 }

@@ -62,6 +62,11 @@ export default class SequenceBoard {
         }
         this.errorState = false;
 
+        if (json.controls != null) {
+            if (json.controls.help) {
+                this.controls.addHelpButton();
+            }
+        }
         if (this.currentPosition.nextPosition.nextPosition == null) {
             this.controls.computer.remove();
         }
@@ -140,6 +145,13 @@ export default class SequenceBoard {
     moveComputer() {
         if (this.currentPosition.nextPosition != null) {
             this.goToNextPosition();
+        }
+    }
+
+    showHelp() {
+        if (this.currentPosition.nextPosition != null) {
+            let nextPlayed = this.currentPosition.nextPosition.played;
+            this.board.grid[nextPlayed.y][nextPlayed.x].classList.add('last');
         }
     }
 

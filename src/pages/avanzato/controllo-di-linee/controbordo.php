@@ -42,15 +42,13 @@ Ma c'è un modo per conservare abbastanza pedine da riuscire a vincere la partit
 
 <p>Prima di analizzare la sequenza proposta, prova a determinare il finale perfetto.</p>
 
-<board data-type="show" data-label="suekuni-2" data-file="controbordo-suekuni-2.json"
-       data-caption="Gli effetti del controllo del controbordo."></board>
+<board data-type="show" data-label="suekuni-2" data-file="controbordo-suekuni-2.json"></board>
 
 <p>Ci basta cambiare colore a una pedina della posizione di partenza che il risultato è completamente diverso
 (diagramma <span data-board-ref="suekuni-2-alt"></span>). Anche in questo caso prova a contare il finale prima
 di vedere la sequenza proposta.</p>
 
-<board data-type="show" data-label="suekuni-2-alt" data-file="controbordo-suekuni-2-alt.json"
-       data-caption="Gli effetti del NON controllo del controbordo."></board>
+<board data-type="show" data-label="suekuni-2-alt" data-file="controbordo-suekuni-2-alt.json"></board>
 
 <h2>Secondo esempio</h2>
 
@@ -100,3 +98,8 @@ diagramma <span data-board-ref="suekuni-4"></span>.</p>
 
 <board data-type="show" data-label="suekuni-4" data-file="controbordo-suekuni-4.json"
        data-caption="Gli effetti del controllo del controbordo."></board>
+
+<h2>Tocca a te</h2>
+
+<board data-type="quiz" data-label="quiz-1" data-file="controbordo-quiz-1.json"
+       data-caption="Il nero muove e vince."></board>

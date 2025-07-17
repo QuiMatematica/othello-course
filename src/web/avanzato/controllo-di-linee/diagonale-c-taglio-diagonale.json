@@ -14,7 +14,7 @@
   "moves": [
     {
       "move": "B6",
-      "comment": "Il nero gioca in <b>B6</b> e ottiene due effetti.<br>Prende il controllo della diagonale C <b>B6-F2</b>, così il bianco non può muovere né in <b>A7</b> né in <b>G1</b>.<br>Taglia la diagonale bianca e ottiene l'accesso all'angolo <b>A1</b>."
+      "comment": "Il nero gioca in <b>B6</b> e ottiene due effetti.<br><b>1.</b> Prende il controllo della diagonale C <b>B6-F2</b>, così il bianco non può muovere né in <b>A7</b> né in <b>G1</b>.<br><b>2.</b> Taglia la diagonale bianca e ottiene l'accesso all'angolo <b>A1</b>."
     },
     {
       "move": "A1"

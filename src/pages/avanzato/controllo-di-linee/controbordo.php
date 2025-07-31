@@ -30,7 +30,7 @@ degli attacchi.</p>
 <p>La posizione del diagramma <span data-board-ref="suekuni-2"></span>
     ci dà un'idea del perché sia importante
 controllare un controbordo in finale di partita.
-    L'esempio tratto dalla master class di Makoto Suekuni
+    L'esempio è tratto dalla master class di Makoto Suekuni
     <a href="https://www.youtube.com/watch?v=adk3sTpatQ8" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>.
 </p>
 
@@ -51,7 +51,7 @@ di vedere la sequenza proposta.</p>
 
 <p>La posizione del diagramma <span data-board-ref="suekuni-4-start"></span> è più complessa.
     Anche questo esempio è tratto dalla master class di Makoto Suekuni.
-Quale mossa faresti se tu fosse il nero?</p>
+Quale mossa faresti se tu fossi il nero?</p>
 
 <board data-type="show" data-label="suekuni-4-start" data-file="controbordo-suekuni-4-start.json"
        data-caption="Gli effetti del controllo del controbordo."></board>
@@ -76,7 +76,7 @@ Ovviamente non stiamo parlando di quello a nord, perché la casella <b>A2</b> è
 quindi il controllo del controbordo nord non è utile. Se invece il nero prendesse il controllo
     del controbordo ovest otterrebbe due effetti.</p>
 <ul>
-    <li>Primo: il bianco non ha la possibilità di giocare in <b>B2</b>;</li>
+    <li>Primo: il bianco non ha la possibilità di giocare in <b>B2</b>.</li>
     <li>Secondo: se il nero fosse costretto a giocare in <b>B1</b> o <b>B2</b>, il bianco
         potrebbe giocare nella casella rimanente, ma non volterebbe alcuna pedina nella direzione
         verticale.</li>

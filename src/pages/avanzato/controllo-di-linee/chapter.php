@@ -1,5 +1,14 @@
 <h1>Controllo di linee</h1>
 
+    <div class="mb-0 text-center">
+        <p class="fst-italic">
+            "Interesting things happen in Othello when there are lines of one colour."
+            <br>
+            "Nell'Othello accadono cose interessanti quando ci sono linee di un solo colore."
+        </p>
+        <footer class="blockquote-footer">Graham Brightwell</footer>
+    </div>
+
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
@@ -15,11 +24,11 @@
 
 <gather>
     <board data-type="show" data-label="orizzontale" data-file="chapter-orizzontale.json"
-           data-caption="Il bianco controlla la riga <b>2</b>."></board>
+           data-caption="Il bianco controlla la riga <b>2</b><br>Nota che il nero non ha la possibilità di giocare in <b>A2</b>."></board>
     <board data-type="show" data-label="verticale" data-file="chapter-verticale.json"
-           data-caption="Il nero controlla la colonna <b>G</b>."></board>
+           data-caption="Il nero controlla la colonna <b>G</b>.<br>Il bianco non può giocare né in <b>G1</b> né in <b>G8</b>."></board>
     <board data-type="show" data-label="diagonale" data-file="chapter-diagonale.json"
-           data-caption="Il bianco controlla la diagonale <b>B2-G7</b>, mentre il nero controlla la diagonale <b>B7-G2</b>."></board>
+           data-caption="Il bianco controlla la diagonale <b>B2-G7</b>, mentre il nero controlla la diagonale <b>B7-G2</b>.<br>Nota che i due colori non possono giocare negli angoli."></board>
 </gather>
 
 <p>L'effetto del controllo di una linea è duplice.</p>
@@ -48,7 +57,7 @@ Il bianco può giocare in <b>B8</b> (infatti volta pedine in diagonale) ma, per 
 </ul>
 
 <p>Ma questi effetti si applicano sia a chi ha il controllo della linea sia all'avversario. Quindi il
-    controllo può anche essere un <b>punto di debolezza</b> per il coloro che lo detiene.</p>
+    controllo può anche essere un <b>punto di debolezza</b> per il colore che lo detiene.</p>
 
 <p>Nel diagramma <span data-board-ref="perde-la-mossa"></span> il bianco ha il controllo della diagonale
     <b>A1-G7</b>. Il nero può giocare in <b>H8</b> perché volta pedine in verticale, ma facendolo non volta la pedina
@@ -57,7 +66,7 @@ Il bianco può giocare in <b>B8</b> (infatti volta pedine in diagonale) ma, per 
 <board data-type="show" data-label="perde-la-mossa" data-file="chapter-perde-la-mossa.json"
        data-caption="Il bianco controlla la diagonale quindi il nero può giocare in <b>H8</b> senza voltare <b>G7</b>."></board>
 
-<p>Il diagramma <span data-board-ref="dettaglio"></span> presente una situazione abbastanza comune che, a rigor di logica,
+<p>Il diagramma <span data-board-ref="dettaglio"></span> presenta una situazione abbastanza comune che, a rigor di logica,
 non rientra nella definizione data sopra di controllo di linea.</p>
 
 <p>Le pedine <b>C7</b>, <b>D7</b>, <b>E7</b> ed <b>F7</b> sono tutte del bianco. Ma le pedine <b>A7</b> e <b>H7</b> sono nere.

@@ -8,9 +8,9 @@
 	</div>
 </div>
 
-Nella posizione di partenza (diagramma <span data-board-ref="inizio-gioco"></span>) sulla diagonale <b>A1</b> ad <b>H8</b>
-sono presenti le due pedine bianche, mentre sulla diagonale <b>H1</b> ad <b>A8</b> sono presenti le due pedine nere.
-Questo ci offre un buon modo per distinguere tra le due diagonali principali (diagramma <span data-board-ref="diagonale-bianca-nera"></span>).
+Nella posizione di partenza (diagramma <span data-board-ref="inizio-gioco"></span>) sulla diagonale <b>A1-H8</b>
+sono presenti le due pedine bianche, mentre sulla diagonale <b>H1-A8</b> sono presenti le due pedine nere.
+Questo ci offre un buon modo per denominare le due diagonali principali (diagramma <span data-board-ref="diagonale-bianca-nera"></span>).
 
 <gather>
     <board data-type="show" data-label="inizio-gioco" data-file="diagonali-inizio-gioco.json"
@@ -22,8 +22,8 @@ Questo ci offre un buon modo per distinguere tra le due diagonali principali (di
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-        <p class="card-text">Chiamiamo <b>diagonale bianca</b> la diagonale principale che va da <b>A1</b> ad <b>H8</b>.</p>
-        <p class="card-text">Chiamiamo <b>diagonale nera</b> la diagonale principale che va da <b>H1</b> ad <b>A8</b>.</p>
+        <p class="card-text">Definiamo <b>diagonale bianca</b> la diagonale <b>A1-H8</b>.</p>
+        <p class="card-text">Definiamo <b>diagonale nera</b> la diagonale <b>H1-A8</b>.</p>
 	</div>
 </div>
 
@@ -38,15 +38,15 @@ che si giunga alle ultime mosse senza che nessuno dei due giocatori sia riuscito
 <p>Per esempio nel diagramma <span data-board-ref="dimattei-1"></span> (tratto dal corso curato da Alessandro
     Di Mattei) tocca al bianco. Ormai non c'è più alcuna
     <a href="../../intermedio/mobilita/togliere-mosse.php">casella sicura</a> dove giocare e al bianco rimangono solo
-due mosse: <b>B7</b> e <b>H7</b>. Ma sono entrambi caselle <b>X</b>.</p>
+tre mosse: <b>B2</b>, <b>B7</b> e <b>H7</b>, che sono tutte caselle <b>X</b>.</p>
 
 <board data-type="show" data-label="dimattei-1" data-file="diagonali-dimattei-1.json"></board>
 
 <p>Quando abbiamo parlato di <a href="../../intermedio/pedine-stabili/pedine-stabili.php">pedine stabili</a> abbiamo visto quanto possa essere pericoloso giocare in una casella <b>X</b>.
-Anche se si ottiene il controllo della diagonale l'avversario può cercare il modo di <b>tagliare</b> la diagonale
-e ottenere così un accesso all'angolo. Per esempio, nel diagramma <span data-board-ref="diagonale-tagliata"></span>
-il bianco ha giocato nella casella <b>X</b> convinto di avere il controllo della diagonale, ma il nero la taglia e ottiene
-l'accesso all'angolo.</p>
+Anche se si ottiene il controllo della diagonale l'avversario può cercare il modo di <b>tagliarla</b>
+ottenendo così un accesso all'angolo. Per esempio, nel diagramma <span data-board-ref="diagonale-tagliata"></span>,
+il bianco ha giocato nella casella <b>X</b> convinto di poter tenere il controllo della diagonale, ma il nero la taglia
+    giocando in <b>F7</b> e ottiene l'accesso all'angolo <b>H1</b>.</p>
 
 <board data-type="show" data-label="diagonale-tagliata" data-file="diagonali-diagonale-tagliata.json"
        data-caption="Il nero taglia la diagonale controllata dal bianco."></board>
@@ -92,13 +92,13 @@ esempio è tratto dal corso di Alessandro Di Mattei).</p>
 <board data-type="show" data-label="dimattei-2" data-file="diagonali-dimattei-2.json"></board>
 
 <p>Il bianco ha la possibilità di controllare entrambi le diagonali, ma anche il nero può fare lo stesso.
-Quindi se il bianco muove per controllare una diagonale, il nero risponde controllando l'altra. Quale è la sequenza
+Quindi se il bianco muove per controllare una diagonale, il nero risponde controllando l'altra. Qual è, se esiste, la sequenza
 vincente per il bianco?</p>
 
 <p>Nei diagrammi <span data-board-ref="dimattei-2-sequenza1"></span> e <span data-board-ref="dimattei-2-sequenza2"></span>
-il bianco gioca in <b>B7</b> per controllare la diagonale nera. Il nero quindi risponde in <b>B2</b> per controllare
+il bianco gioca in <b>B7</b> per controllare la diagonale nera. Il nero, quindi, risponde in <b>B2</b> per controllare
 la diagonale bianca. Al bianco rimangono quindi due mosse: <b>G7</b> (diagramma <span data-board-ref="dimattei-2-sequenza1"></span>)
-    e <b>G8</b> (diagramma <span data-board-ref="dimattei-2-sequenza2"></span>), entrambi perdenti.</p>
+    e <b>G8</b> (diagramma <span data-board-ref="dimattei-2-sequenza2"></span>), entrambe perdenti.</p>
 
 <gather>
     <board data-type="show" data-label="dimattei-2-sequenza1" data-file="diagonali-dimattei-2-sequenza1.json"></board>

@@ -96,6 +96,16 @@ diagramma <span data-board-ref="suekuni-4"></span>.</p>
 <board data-type="show" data-label="suekuni-4" data-file="controbordo-suekuni-4.json"
        data-caption="Gli effetti del controllo del controbordo."></board>
 
+<h2>Riassumendo</h2>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Strategia</div>
+	<div class="card-body">
+        <p class="card-text">Valuta se puoi <b>prendere il controllo</b> di un controbordo e quali possano essere i suoi effetti.</p>
+        <p class="card-text">Valuta se puoi <b>preparare il controllo</b> di un controbordo.</p>
+	</div>
+</div>
+
 <h2>Tocca a te</h2>
 
 <board data-type="quiz" data-label="quiz-1" data-file="controbordo-quiz-1.json"

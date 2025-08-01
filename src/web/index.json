@@ -365,6 +365,10 @@
 						{
 							"href": "diagonale-c.php",
 							"title": "Controllo delle diagonali C"
+						},
+						{
+							"href": "mini-linea.php",
+							"title": "Controllo delle mini-linee"
 						}
 					]
 				}

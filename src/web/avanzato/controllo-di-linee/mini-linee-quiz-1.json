@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--#O----",
+    "--##OO--",
+    "--#OOO--",
+    "-#-OO#O-",
+    "----O---",
+    "--------"
+  ],
+  "played": "E7",
+  "turn": "black",
+  "comment": "Obiettivo: cerca di prendere il controllo della mini-diagonale <b>E6-F5</b>.",
+  "moves": [
+    {
+      "move": "G5",
+      "comment": "Mossa esatta: hai voltato una delle due pedine della mini-diagonale.",
+      "errors": [
+        {
+          "move": "F7",
+          "comment": "Quasi! Hai voltato una delle due pedine delle mini-diagonale, ma il bianco può rispondere in <b>G5</b> e per prendere il controllo della mini-diagonale dovresti giocare in <b>H5</b> o in <b>F3</b> che sono due mosse troppo svantaggiose. Ritenta."
+        }
+      ]
+    },
+    {
+      "move": "C6",
+      "comment": "Il bianco gioca questa mossa ideale."
+    },
+    {
+      "move": "F7",
+      "comment": "Obiettivo raggiunto! Hai presto il controllo della mini-diagonale <b>E6-F5</b>."
+    }
+  ]
+}

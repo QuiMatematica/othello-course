@@ -156,6 +156,16 @@ diagonale C, il nero taglia la diagonale bianca e ottiene l'accesso in <b>H1</b>
 <board data-type="show" data-label="suekuni-6" data-file="diagonale-c-suekuni-6.json"
        data-caption="Vincere controllando una diagonale C."></board>
 
+<h2>Riassumendo</h2>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Strategia</div>
+	<div class="card-body">
+        <p class="card-text">Valuta se puoi <b>prendere il controllo</b> di una diagonale C e quali possano essere i suoi effetti.</p>
+        <p class="card-text">Valuta se puoi <b>preparare il controllo</b> di un diagonale C.</p>
+	</div>
+</div>
+
 <h2>Tocca a te</h2>
 
 <p>L'esercizio del diagramma <span data-board-ref="finale-5"></span> è piuttosto difficile. Ma può diventare più

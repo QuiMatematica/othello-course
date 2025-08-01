@@ -78,10 +78,19 @@ Quindi non siamo nella situazione in cui il bianco controlla tutte le pedine del
 <board data-type="show" data-label="dettaglio" data-file="chapter-dettaglio.json"
        data-caption="Il bianco controlla il controbordo sud."></board>
 
-<p>Nelle prossime pagine approfondiremo i più tipici controlli di linee.</p>
+<h2>Quali linee controllare? E quando?</h2>
+
+<p>Il controllo delle linee diventa particolarmente importante in finale di partita, in particolare quando i giocatori
+hanno utilizzato tutte le mosse sicure e il gioco comincia a concentrarsi sulle caselle <b>C</b>, sulle caselle <b>X</b>
+e sugli angoli.</p>
+
+<p>In particolare sono tre le categorie di linee su cui dovremo concentrarci:</p>
 <ul>
-    <li>Controllo delle <a href="diagonali.php"><i>diagonali principali</i></a>.</li>
-    <li>Controllo dei <a href="controbordo.php"><i>controbordi</i></a>.</li>
-    <li>Controllo delle <a href="diagonale-c.php"><i>diagonali C</i></a>.</li>
-    <!-- li>Controllo delle <i>mini diagonali</i>.</li -->
+    <li>le <a href="diagonali.php"><i>diagonali principali</i></a>;</li>
+    <li>i <a href="controbordo.php"><i>controbordi</i></a>;</li>
+    <li>le cosiddette <a href="diagonale-c.php"><i>diagonali C</i></a>.</li>
 </ul>
+
+<p>Tuttavia vedremo che il controllo delle linee può essere strategicamente importante anche durante l'apertura.
+In questo caso, visto che sono poche le pedine che formano le linee, parleremo di
+    <a href="mini-linea.php"><i>mini-linee</i></a>.</p>

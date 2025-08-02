@@ -1,0 +1,43 @@
+{
+  "moves": [
+    {
+      "move": "F5"
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C4",
+      "comment": "Apertura Tigre."
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "C5",
+      "comment": "Tipica risposta alla Tigre, nota come <i>many blacks</i>. Il nero ha tante pedine, però ha il controllo del centro e, anche se è presto per considerarlo, sta già controllando diverse mini-linee, come la diagonale <b>D5-E4</b> e la colonna <b>E</b>."
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "C2",
+      "comment": "Apertura Rose-Bill. Il nero ha ancora tante pedine, mantiene il controllo del centro e sta controllando molte linee."
+    },
+    {
+      "move": "D2",
+      "comment": "Apertura Keisuke.<br>Il bianco cerca di riprendere il controllo del centro tramite le pedine della colonna <b>D</b>."
+    },
+    {
+      "move": "E6",
+      "comment": "Il nero prende il controllo della mini-diagonale <b>D5-E4</b> che, almeno per il momento, non è conquistabile dal bianco."
+    }
+  ]
+}

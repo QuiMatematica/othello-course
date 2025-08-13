@@ -110,3 +110,6 @@ diagramma <span data-board-ref="suekuni-4"></span>.</p>
 
 <board data-type="quiz" data-label="quiz-1" data-file="controbordo-quiz-1.json"
        data-caption="Il nero muove e vince."></board>
+
+<board data-type="quiz" data-label="quiz-2" data-file="controbordo-quiz-2.json"
+       data-caption="Il nero muove e vince."></board>

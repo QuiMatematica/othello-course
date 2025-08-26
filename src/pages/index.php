@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta name="keywords" content="Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello">
+	<link rel="canonical" href="https://othello.quimatematica.it">
     <meta property="og:title" content="Corso interattivo di Othello">
     <meta property="og:url" content="https://othello.quimatematica.it">
     <meta property="og:image" content="https://othello.quimatematica.it/images/banner.jpg">

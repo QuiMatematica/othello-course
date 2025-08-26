@@ -1,0 +1,29 @@
+{
+  "position": [
+    "-######O",
+    "--#O####",
+    "######OO",
+    "##O###OO",
+    "#####OOO",
+    "#######O",
+    "###OOOOO",
+    "##OOOOOO"
+  ],
+  "played": "A3",
+  "turn": "white",
+  "comment": "Il bianco ha la possibilità di controllare la diagonale <b>B2-H8</b> muovendo in <b>B2</b>.",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il controllo della diagonale impedisce al nero di muovere <b>A1</b> e salvare il bordo nord: è costretto a muovere in <b>A2</b>"
+    },
+    {
+      "move": "A2",
+      "comment": "Ora il bianco può chiudere la partita..."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende il bordo nord e vince 33 a 31.<br>Se, nella posizione iniziale, il bianco avesse giocato subito in <b>A1</b> avrebbe perso la parità e pareggiato. Se invece avesse giocato in <b>A2</b> avrebbe perso."
+    }
+  ]
+}

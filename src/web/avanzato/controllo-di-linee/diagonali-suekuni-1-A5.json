@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--####--",
+    "--#OO#-O",
+    "-####OO-",
+    "###O#OO#",
+    "--##O#O#",
+    "OOOO####",
+    "---OO#-#",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A5",
+      "comment": "Il bianco prepara il controllo della diagonale."
+    },
+    {
+      "move": "B5",
+      "comment": "Il nero chiude la regione dispari."
+    },
+    {
+      "move": "F8",
+      "comment": "Il bianco ottiene il controllo della diagonale."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero guadagna un tempo di gioco prendendo il bordo ovest. Forma un quattro sbilanciato che è attaccabile, ma è ancora una delle mosse migliori dal punto di vista della mobilità."
+    },
+    {
+      "move": "B2",
+      "comment": "Il bianco allunga il controllo della diagonale, iniziando una Stoner trap."
+    },
+    {
+      "move": "D8",
+      "comment": "Il nero cerca di tagliare la diagonale per ottenere l'angolo <b>A1</b>.<br>Ora il bianco ha ben tre mosse vincenti: può giocare in <b>G7</b> e riprendere il controllo della diagonale, può giocare in <b>A2</b> e ottenere un quattro più uno già attaccato, oppure può giocare in <b>A3</b> e chiudere la Stoner trap."
+    }
+  ]
+}

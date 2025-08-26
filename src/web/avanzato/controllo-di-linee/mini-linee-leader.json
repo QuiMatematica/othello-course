@@ -1,0 +1,28 @@
+{
+  "moves": [
+    {
+      "move": "F5"
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C4",
+      "comment": "Apertura Tigre."
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "E6",
+      "comment": "Variante della Tigre conosciuta come Leader.<br>Il nero consolida il controllo del centro e costringe il bianco a rimanere nella periferia (per esempio muovendo in <b>B3</b>). Il nero controlla le mini-diagonali <b>D5-E4</b> e <b>C3-E5</b>."
+    }
+  ]
+}

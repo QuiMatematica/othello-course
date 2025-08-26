@@ -85,12 +85,14 @@ class GeneratePagesPlugin {
                 <a class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href="${prepend}${section.href}${chapter.href}chapter.php">${chapter.title}</a>
                 <ul>`;
 
-                chapter.pages.forEach(page => {
-                    offcanvas += `
+                if (chapter.pages != null) {
+                    chapter.pages.forEach(page => {
+                        offcanvas += `
                     <li class='nav-item'>
                     <a class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href="${prepend}${section.href}${chapter.href}${page.href}">${page.title}</a>
                     </li>`;
-                });
+                    });
+                }
 
                 offcanvas += `
                 </ul>
@@ -244,9 +246,11 @@ ${pagination}
             this.pages.push(new Page(section.href + 'section.php', section.title, section.description, section.keywords));
             section.chapters.forEach(chapter => {
                 this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title, chapter.description, chapter.keywords));
-                chapter.pages.forEach(page => {
-                    this.pages.push(new Page(section.href + chapter.href + page.href, page.title, page.description, page.keywords));
-                });
+                if (chapter.pages != null) {
+                    chapter.pages.forEach(page => {
+                        this.pages.push(new Page(section.href + chapter.href + page.href, page.title, page.description, page.keywords));
+                    });
+                }
             });
         });
     }

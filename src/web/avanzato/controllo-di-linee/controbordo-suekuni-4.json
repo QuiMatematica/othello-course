@@ -1,0 +1,47 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-OOOO##",
+    "##OOOO##",
+    "#O#O##O#",
+    "#OO##OO#",
+    "-OO#OOO#",
+    "O-#O#OO#",
+    "-#######"
+  ],
+  "comment": "Riuscirà il nero a vincere questa partita?",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il nero prende il controllo del controbordo ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo, tagliando il controbordo."
+    },
+    {
+      "move": "A6",
+      "comment": "Il nero prende nuovamente il controllo del controbordo ovest."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende tutto il bordo ovest."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero conquista cinque pedine..."
+    },
+    {
+      "move": "H1",
+      "comment": "... in cambio di due perse."
+    },
+    {
+      "move": "B1",
+      "comment": "E il nero conquista sei pedine..."
+    },
+    {
+      "move": "B2",
+      "comment": "... in cambio di due perse. E grazie al controllo del controbordo il nero vince."
+    }
+  ]
+}

@@ -48,12 +48,14 @@ class GenerateIndexPlugin {
                 </h4>
                 <ul>`;
 
-                chapter.pages.forEach(page => {
-                    index += `
+                if (chapter.pages != null) {
+                    chapter.pages.forEach(page => {
+                        index += `
                     <li class='nav-item'>
                     <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}${page.href}">${page.title}</a>
                     </li>`;
-                });
+                    });
+                }
 
                 index += `
                 </ul>

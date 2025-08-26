@@ -3,10 +3,9 @@ import Controls from "./controls";
 
 export default class SequenceControls extends Controls {
 
-    // showComputerTooltip = true;
-
     computer;
     share;
+    help;
 
     constructor(container, counter, sourceFile) {
         super(container, counter);
@@ -17,11 +16,7 @@ export default class SequenceControls extends Controls {
     }
 
     addComputerButton() {
-        // this.computer = this.createButton("Muove il computer", onComputerClick);
         this.computer = this.createIconButton("bi-caret-right-square", onComputerClick);
-        // this.computer.setAttribute("data-bs-toggle", "tooltip");
-        // this.computer.setAttribute("data-bs-placement", "top");
-        // this.computer.setAttribute("title", "Clicca qui per vedere la risposta alla tua mossa");
         return this;
     }
 
@@ -35,28 +30,27 @@ export default class SequenceControls extends Controls {
         return this;
     }
 
+    addHelpButton() {
+        this.help = this.createIconButton("bi-lightbulb", onHelpClick);
+        return this;
+    }
+
     update(position, humanColor) {
-        this.first.disabled = (position.prevPosition == null);
+        this.first.disabled = position.prevPosition == null;
         // this.prev.disabled = (position.prevPosition == null);
-        this.computer.disabled = (position.nextPosition == null || position.turn === humanColor);
-        // if (this.showComputerTooltip && !this.computer.disabled) {
-        //     const tooltip = new bootstrap.Tooltip(this.computer);
-        //     setTimeout(() => {
-        //         tooltip.show();
-        //
-        //         // Nasconde il tooltip dopo 3 secondi
-        //         setTimeout(() => {
-        //             tooltip.hide();
-        //         }, 3000);
-        //     }, 3000);
-        //     this.showComputerTooltip = false;
-        // }
+        this.computer.disabled = position.nextPosition == null || position.turn === humanColor;
+        if (this.help != null) {
+            this.help.disabled = position.nextPosition != null && position.turn !== humanColor;
+        }
     }
 
     wrong() {
         this.first.disabled = false;
         // this.prev.disabled = false;
         this.computer.disabled = true;
+        if (this.help != null) {
+            this.help.disabled = true;
+        }
     }
 
 }
@@ -71,4 +65,8 @@ function onShareClick(event) {
 
 function onGoToSourceClick(event) {
     getBoard(event).goToSource();
+}
+
+function onHelpClick(event) {
+    getBoard(event).showHelp();
 }

@@ -1,0 +1,51 @@
+{
+  "position": [
+    "-######-",
+    "#-####-#",
+    "##O##O##",
+    "#O#OO###",
+    "####O###",
+    "###OO###",
+    "#-####-#",
+    "-#####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il bianco prende il controllo della diagonale bianca."
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero prende il controllo della diagonale nera."
+    },
+    {
+      "move": "B2",
+      "comment": "Il bianco allunga il controllo della diagonale bianca. Questo gli fa guadagnare un tempo e ora il nero ha solo una mossa obbligata."
+    },
+    {
+      "move": "G8",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco riprende il controllo della diagonale e comincia il giro dei quattro cantoni."
+    },
+    {
+      "move": "H1",
+      "comment": "Secondo angolo."
+    },
+    {
+      "move": "A1",
+      "comment": "Terzo angolo."
+    },
+    {
+      "move": "A8",
+      "comment": "Quarto angolo."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco vince 50 a 14."
+    }
+  ]
+}

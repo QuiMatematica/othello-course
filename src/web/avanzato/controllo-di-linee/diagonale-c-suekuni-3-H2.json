@@ -1,0 +1,39 @@
+{
+  "position": [
+    "#OOOOO--",
+    "#OOOOOO-",
+    "OOOOO#O#",
+    "O#O###O#",
+    "O#OOO###",
+    "OOO##O##",
+    "O#####-#",
+    "O####O--"
+  ],
+  "comment": "Riuscirà il nero a vincere giocando in <b>H2</b>?",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Il nero prende tutte le pedine della riga <b>2</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero prende tutte le pedine del bordo nord."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco in compenso prende il bordo est."
+    },
+    {
+      "move": "G7",
+      "comment": ""
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco vince 33 a 31."
+    }
+  ]
+}

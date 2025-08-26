@@ -109,6 +109,11 @@ export default class MatchFileBoard {
                     this.board.addArrow(entry.start[0], entry.start[1], entry.end[0], entry.end[1], entry.color);
                 })
             }
+            if (json.add['lines'] != null) {
+                json.add.lines.forEach((entry) => {
+                    this.board.addLine(entry.start[0], entry.start[1], entry.end[0], entry.end[1], entry.color);
+                })
+            }
         }
     }
 

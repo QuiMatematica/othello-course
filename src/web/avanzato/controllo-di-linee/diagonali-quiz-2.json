@@ -1,0 +1,34 @@
+{
+  "position": [
+    "-OOOOO--",
+    "--O##O-#",
+    "OOOO#O##",
+    "-OO#####",
+    "-O#O####",
+    "OOO#O###",
+    "--#O#O--",
+    "-OOOOOO-"
+  ],
+  "played": "G8",
+  "comment": "Obiettivo: gioca la mossa migliore!",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Esatto: prendendo il controllo della diagonale bianco lasci pochissime mosse al tuo avversario."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco prova a resistere."
+    },
+    {
+      "move": "G7",
+      "comment": "Bravissimo: allungando il controllo della diagonale hai lasciato solo tre mosse al bianco, tutte perdenti.<br>Il finale perfetto ti fa vincere per 48 a 16.",
+      "errors": [
+        {
+          "move": "A8",
+          "comment": "Anche questa è una buona mossa, ed è comunque vincente. Ma puoi fare di meglio. Riparti con il quiz."
+        }
+      ]
+    }
+  ]
+}

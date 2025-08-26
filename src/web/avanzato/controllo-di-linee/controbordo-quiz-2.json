@@ -1,0 +1,31 @@
+{
+  "position": [
+    "OOOOOOOO",
+    "#-OO####",
+    "##OO#O#O",
+    "##OOOO#O",
+    "#######O",
+    "##OO#O#O",
+    "#-OOOO#O",
+    "--OOOO#O"
+  ],
+  "comment": "Il nero muove e vince.<br>Quiz proposto da P. Scognamiglio",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Esatto: il controllo del controbordo ovest impedisce al bianco di muovere in <b>B2</b>. Riuscirai a ottenere la parità?"
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende tutto il bordo ovest."
+    },
+    {
+      "move": "B8",
+      "comment": "Esatto! Allunghi il controllo del controbordo e ora il bianco è costretto a passare: hai ottenuto la parità."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero vince 34 a 30."
+    }
+  ]
+}

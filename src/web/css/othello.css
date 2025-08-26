@@ -248,6 +248,7 @@ svg {
 
 .last .cross-line {
   display: block;
+  stroke: yellow;
 }
 
 .last.white .cross-line {

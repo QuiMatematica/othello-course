@@ -330,7 +330,31 @@ export default class Board {
         svg.appendChild(line);
         divNode.appendChild(svg);
         this.gameBoard.appendChild(divNode);
-        console.log("freccia aggiunta");
+    }
+
+    addLine(startX, startY, endX, endY, color) {
+        const divNode = document.createElement('div');
+        divNode.style.position = 'absolute';
+        divNode.style.display = 'block';
+        divNode.style.left = '0';
+        divNode.style.top = '0';
+        divNode.style.width = 'calc(var(--square-size)*10)';
+        divNode.style.height = 'calc(var(--square-size)*10)';
+
+        const svg = document.createElementNS(xmlns, 'svg');
+        svg.setAttribute('viewBox', '0 0 1000 1000');
+
+        const line = document.createElementNS(xmlns, 'line');
+        line.setAttribute("x1", String(startX));
+        line.setAttribute("y1", String(startY));
+        line.setAttribute("x2", String(endX));
+        line.setAttribute("y2", String(endY));
+        line.setAttribute("stroke", color);
+        line.setAttribute("stroke-width", "10");
+
+        svg.appendChild(line);
+        divNode.appendChild(svg);
+        this.gameBoard.appendChild(divNode);
     }
 
     addSvgRect(left, top, delta_x, delta_y, color, to_fill) {

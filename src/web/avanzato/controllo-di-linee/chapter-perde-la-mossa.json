@@ -1,0 +1,25 @@
+{
+  "position": [
+    "O#######",
+    "OOOOO###",
+    "O#OOOOOO",
+    "O#OOOOOO",
+    "O##OOOOO",
+    "O#O##OOO",
+    "#O#OOOOO",
+    "#OOOOO--"
+  ],
+  "played": "G7",
+  "turn": "black",
+  "comment": "Il bianco controlla la diagonale <b>A1-G7</b>.",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Giocando nell'angolo il nero non volta la pagine <b>G7</b>. Il bianco passa."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero vince 39 a 25.<br>Se il nero avesse giocato prima in <b>G8</b> il bianco avrebbe preso l'angolo e la partita sarebbe finita in parità."
+    }
+  ]
+}

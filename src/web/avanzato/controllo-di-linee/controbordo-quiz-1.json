@@ -1,0 +1,31 @@
+{
+  "position": [
+    "-#######",
+    "--OO#O##",
+    "--OOOOO#",
+    "OOO#OOO#",
+    "O#OOOOO#",
+    "O#O##OO#",
+    "O####OO#",
+    "O#OOOOOO"
+  ],
+  "comment": "Il nero muove e vince.",
+  "moves": [
+    {
+      "move": "A3",
+      "comment": "Esatto: il controllo del controbordo ovest ti permetterà di preservare un numero sufficiente di pedine per vincere la partita."
+    },
+    {
+      "move": "A2",
+      "comment": "Forzata"
+    },
+    {
+      "move": "B3",
+      "comment": "Esatto! Allunghi il controllo del controbordo e prendi le pedine dalla riga <b>3</b>."
+    },
+    {
+      "move": "B2",
+      "comment": "Forzata. Il bianco esegue l'ultima mossa ma non è sufficiente per vincere.<br>Il nero vince 34 a 30."
+    }
+  ]
+}

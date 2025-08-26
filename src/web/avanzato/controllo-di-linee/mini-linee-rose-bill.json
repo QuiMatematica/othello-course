@@ -1,0 +1,62 @@
+{
+  "moves": [
+    {
+      "move": "F5"
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "C3"
+    },
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C4",
+      "comment": "Apertura Tigre."
+    },
+    {
+      "move": "F4"
+    },
+    {
+      "move": "C5",
+      "comment": "Tipica risposta alla Tigre, nota come <i>many blacks</i>. Il nero ha tante pedine, però ha il controllo del centro e, anche se è presto per considerarlo, sta già controllando diverse mini-linee, come la diagonale <b>D5-E4</b> e la colonna <b>E</b>."
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "C2",
+      "comment": "Apertura Rose-Bill. Il nero ha ancora tante pedine, mantiene il controllo del centro e sta controllando molte linee."
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "D2",
+      "comment": "Il gioco del nero si sta concentrando su due mini-diagonali: <b>C4-D3</b> e <b>D5-E4</b>."
+    },
+    {
+      "move": "C6",
+      "comment": "Con questa mossa il bianco cerca di tagliare entrambi le mini-diagonali. La mossa è buona (e teoricamente pari) anche se sembra formare un muro."
+    },
+    {
+      "move": "B4",
+      "comment": "Il nero si concentra sulla diagonale <b>C4-D3</b>. Per farlo è costretto a sfondare subito il muro bianco. Inoltre con questa mossa impedisce al bianco di giocare in <b>F3</b> altrimenti il nero può rispondere con l'ideale <b>E6</b>."
+    },
+    {
+      "move": "A4",
+      "comment": "Il bianco cerca di riprendere il centro e, al tempo stesso, di tagliare la mini-diagonale."
+    },
+    {
+      "move": "B5",
+      "comment": "Questa volta, per mantenere il controllo della mini-diagonale, il nero è costretto ad allungarla."
+    },
+    {
+      "move": "B6",
+      "comment": "Il bianco insiste a tagliare quella mini-diagonale: vuole ottenere la mossa ideale in <b>E2</b>. E questa volta ce la fa: al nero non conviene insistere su quel gioco. In questa posizione il nero può cercare di far sbilanciare il bianco giocando in <b>A3</b>, oppure cercare di riprendere il centro con <b>G4</b>, oppure giocare una mossa d'attesa in <b>D7</b>. Molto giocata è anche <b>E2</b> che blocca la mossa ideale voluta dal bianco, ma ne offre un'altra in <b>E6</b>."
+    }
+  ]
+}

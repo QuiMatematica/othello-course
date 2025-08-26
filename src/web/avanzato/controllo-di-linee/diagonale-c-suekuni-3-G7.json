@@ -1,0 +1,39 @@
+{
+  "position": [
+    "#OOOOO--",
+    "#OOOOOO-",
+    "OOOOO#O#",
+    "O#O###O#",
+    "O#OOO###",
+    "OOO##O##",
+    "O#####-#",
+    "O####O--"
+  ],
+  "comment": "Riuscirà il nero a vincere muovendo in <b>G7</b>?",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero gioca nella regione dispari."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero si incunea nel bordo sud salvando sei pedine."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco prende l'angolo e taglia la diagonale C."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero conquista tutto il bordo nord."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco gioca l'ultima mossa e vince 34 a 30."
+    }
+  ]
+}

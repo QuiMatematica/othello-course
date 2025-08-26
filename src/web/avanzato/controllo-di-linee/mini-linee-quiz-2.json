@@ -1,0 +1,21 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---#----",
+    "---####-",
+    "-OOO#O--",
+    "--OO#O--",
+    "----#---",
+    "--------"
+  ],
+  "played": "E7",
+  "turn": "white",
+  "comment": "Obiettivo: prendi il controllo di una mini-diagonale.",
+  "moves": [
+    {
+      "move": "D7",
+      "comment": "Mossa esatta: hai preso il controllo della mini-diagonale <b>E6-F5</b>."
+    }
+  ]
+}

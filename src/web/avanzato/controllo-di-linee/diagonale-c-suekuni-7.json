@@ -1,0 +1,47 @@
+{
+  "position": [
+    "---O-OOO",
+    "--OOOOOO",
+    "##OO#O#O",
+    "#O#OOOOO",
+    "#OOOO##O",
+    "#OO##O#O",
+    "#OOOO##O",
+    "--O####O"
+  ],
+  "comment": "Riuscirà il nero a vincere questa partita?",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il nero taglia la diagonale nera e ottiene l'accesso all'angolo <b>A8</b>. Inoltre, quando giocherà nell'angolo, girerà anche la pedina <b>D5</b> e avrà il controllo della diagonale C."
+    },
+    {
+      "move": "C1",
+      "comment": "Il bianco punta all'angolo <b>A1</b>."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero gioca nell'area dispari a nord-ovest, tenendo la casella <b>E1</b> libera per una mossa successiva."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "A8",
+      "comment": "E' giunto il momento di prendere l'angolo <b>A8</b> e, al tempo stesso, prendere il controllo della diagonale C. Grazie a questo controllo il bianco non è in grado di muovere in <b>A2</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Forzata."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero chiude lo spazio a nord e si procura l'accesso ad <b>A2</b>.<br>Il bianco passa."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero chiude la partita e vince."
+    }
+  ]
+}

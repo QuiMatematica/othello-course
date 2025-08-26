@@ -1,0 +1,39 @@
+{
+  "position": [
+    "#OOOOO--",
+    "#OOOOOO-",
+    "OOOOO#O#",
+    "O#O###O#",
+    "O#OOO###",
+    "OOO##O##",
+    "O#####-#",
+    "O####O--"
+  ],
+  "comment": "Riuscirà il nero a vincere controllando il controbordo est?",
+  "moves": [
+    {
+      "move": "G1",
+      "comment": "Il primo effetto di questa mossa è che impediamo al bianco di giocare in <b>G7</b>. Se infatti la giocasse il nero potrebbe giocare prima in <b>H8</b> e poi anche in <b>G8</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo"
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero prende il controllo del controbordo est."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero allunga il controbordo."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco gioca l'ultima mossa.<br>La partita è pari."
+    }
+  ]
+}

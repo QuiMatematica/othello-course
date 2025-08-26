@@ -1,0 +1,39 @@
+{
+  "position": [
+    "--O####O",
+    "--OOOO##",
+    "##OO####",
+    "#OOO#OO#",
+    "###OO#O#",
+    "########",
+    "#-OO####",
+    "-OOOOOOO"
+  ],
+  "comment": "Riuscirà il nero a vincere questa partita?",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il nero prende il controllo del controbordo nord."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero prende nuovamente il controllo del controbordo nord."
+    },
+    {
+      "move": "A2",
+      "comment": "Il bianco può incunearsi in <b>A2</b> ma non gira alcuna pedina in orizzontale. Il controllo del controbordo permette al nero di conservare tutte le pedine dello stesso."
+    },
+    {
+      "move": "B7",
+      "comment": "Forzata."
+    },
+    {
+      "move": "A8",
+      "comment": "Anche se conquista tutto il bordo ovest, il bianco non riesce a vincere.<br>Il nero vince 33 a 31."
+    }
+  ]
+}

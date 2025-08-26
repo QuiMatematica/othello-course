@@ -1,0 +1,39 @@
+{
+  "position": [
+    "#OOOOO--",
+    "#OOOOOO-",
+    "OOOOO#O#",
+    "O#O###O#",
+    "O#OOO###",
+    "OOO##O##",
+    "O#####-#",
+    "O####O--"
+  ],
+  "comment": "Riuscirà il nero a vincere controllando una diagonale C?",
+  "moves": [
+    {
+      "move": "G1",
+      "comment": "Il primo effetto di questa mossa è che impediamo al bianco di giocare in <b>G7</b>. Se infatti la giocasse il nero potrebbe giocare prima in <b>H8</b> e poi anche in <b>G8</b>."
+    },
+    {
+      "move": "H1",
+      "comment": ""
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero prende il controllo della diagonale C <b>B8-G3</b> e il bianco non può giocare in <b>H2</b>.<br>Il bianco non può neanche giocare <b>G8</b> altrimenti il nero muove sia in <b>H8</b> sia in <b>H2</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo e taglia la diagonale C."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero si incunea nel bordo est."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco gioca l'ultima mossa, ma non è sufficiente.<br>Il nero vince 34 a 30."
+    }
+  ]
+}

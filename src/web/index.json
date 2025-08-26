@@ -349,6 +349,28 @@
 							"title": "Le Stoner trap sono rare?"
 						}
 					]
+				},
+				{
+					"href": "controllo-di-linee/",
+					"title": "Controllo di linee",
+					"pages": [
+						{
+							"href": "diagonali.php",
+							"title": "Controllo delle diagonali principali"
+						},
+						{
+							"href": "controbordo.php",
+							"title": "Controllo dei controbordi"
+						},
+						{
+							"href": "diagonale-c.php",
+							"title": "Controllo delle diagonali C"
+						},
+						{
+							"href": "mini-linea.php",
+							"title": "Controllo delle mini-linee"
+						}
+					]
 				}
 			]
 		}

@@ -1,7 +1,7 @@
 {
   "position": [
     "-#######",
-    "--OO#O##",
+    "--OO#OO#",
     "--OOOOO#",
     "OOO#OOO#",
     "O#OOOOO#",
@@ -25,7 +25,7 @@
     },
     {
       "move": "B2",
-      "comment": "Forzata. Il bianco esegue l'ultima mossa ma non è sufficiente per vincere.<br>Il nero vince 34 a 30."
+      "comment": "Forzata. Il bianco esegue l'ultima mossa ma non è sufficiente per vincere.<br>Il nero vince 33 a 31."
     }
   ]
 }

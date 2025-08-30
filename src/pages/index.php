@@ -40,6 +40,11 @@
     <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3661950.js"></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2c3e50">
+    <link rel="icon" href="icons/icon-192.png">
 </head>
 
 <body>
@@ -110,5 +115,13 @@
         });
     </script>
 
+    <script>
+        // PWA: Registra il service worker se supportato
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('✅ Service Worker registrato'))
+                .catch(err => console.log('❌ Errore SW:', err));
+        }
+    </script>
 </body>
 </html>

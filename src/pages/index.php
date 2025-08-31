@@ -185,24 +185,20 @@
 </script>
 
 <div id="othello-content" class="container-xxl">
-    <button id="shareBtn" class="btn btn-light btn-outline-dark share-button">
-        <i class="bi bi-share-fill"></i>
-    </button>
-    <div class="row">
-        <div class="col-lg-2 bg-primary-subtle text-center">
-            <a class="" href="https://www.fngo.it">
-                <img class="mt-3" src="images/fngologo.gif" width="126" height="123"
-                     alt="Federazione Nazionale Gioco Othello">
-            </a>
-            <h5>Federazione Nazionale Gioco Othello</h5>
-            <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-               href="presentazione-del-corso.php">Presentazione del corso</a>
-        </div>
-        <div class="col-lg-10 py-3 px-5">
             <div id="index-content" class="row">
                 <!-- REPLACE WITH INDEX -->
             </div>
-        </div>
+</div>
+
+<div id="shareContainer" class="container-xxl my-4">
+    <div class="install-box text-center">
+        <h5 class="mb-3">⚪⚫ Condividi <strong>Qui Othello</strong></h5>
+        <p class="mb-4">
+            Invia il link del corso e sfida i tuoi amici a diventare maestri di Othello.
+        </p>
+        <button id="shareBtn" class="btn btn-light btn-install shadow">
+            <i class="bi bi-share-fill"></i> Condividi
+        </button>
     </div>
 </div>
 

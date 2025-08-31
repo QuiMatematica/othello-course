@@ -161,7 +161,7 @@ class GeneratePagesPlugin {
         // Trova la pagina nella lista delle pagine caricate da json
         const indexOfThisPage = this.findThisPage(filePath);
 
-        const title = indexOfThisPage === -1 ? "Corso interattivo di Othello" : this.pages[indexOfThisPage].title + " @ Corso interattivo di Othello";
+        const title = indexOfThisPage === -1 ? "Qui Othello" : this.pages[indexOfThisPage].title + " @ Qui Othello";
         const url = indexOfThisPage === -1 ? "https://othello.quimatematica.it" : "https://othello.quimatematica.it/" + this.pages[indexOfThisPage].href;
 
         let description = "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
@@ -195,7 +195,7 @@ class GeneratePagesPlugin {
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
-    <meta property="og:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta property="og:image" content="https://othello.quimatematica.it/icons/icon-192.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />
@@ -204,7 +204,7 @@ class GeneratePagesPlugin {
     <meta name="twitter:url" content="${url}">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta name="twitter:image" content="https://othello.quimatematica.it/icons/icon-192.jpg">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
 	<link rel="canonical" href="${url}">

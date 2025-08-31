@@ -76,39 +76,53 @@
     <link rel="icon" href="icons/icon-192.png">
 
     <style>
-    /* Stile personalizzato per il box di installazione */
-    .install-box {
-        background: linear-gradient(135deg, #0f5132, #198754); /* verde stile tavola */
-        color: white;
-        border-radius: 1rem;
-        padding: 2rem;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-    }
+        .navbar {
+            min-height: 64px;
+        }
 
-    .install-box h5 {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
+        .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 0.5px;
+        }
 
-    .install-box p {
-        font-size: 1rem;
-        opacity: 0.9;
-    }
+        /* Stile personalizzato per il box di installazione */
+        .install-box {
+            background: linear-gradient(135deg, #0f5132, #198754); /* verde stile tavola */
+            color: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+        }
 
-    .install-box .btn-install {
-        font-size: 1.2rem;
-        padding: 0.75rem 1.5rem;
-        border-radius: 2rem;
-    }
-</style>
+        .install-box h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .install-box p {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .install-box .btn-install {
+            font-size: 1.2rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 2rem;
+        }
+    </style>
 
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
-    <div class="container-xxl">
-        <a class="navbar-brand h1" href="/">Othello: corso interattivo</a>
+<!-- Navbar minimale Qui Othello -->
+<nav class="navbar" style="background: linear-gradient(135deg, #0f5132, #198754);">
+    <div class="container-xxl d-flex align-items-center">
+        <!-- Logo con icona -->
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="#">
+            <img src="icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+            Qui Othello
+        </a>
     </div>
 </nav>
 

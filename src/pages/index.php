@@ -185,10 +185,112 @@
 </script>
 
 <div id="othello-content" class="container-xxl">
-            <div id="index-content" class="row">
-                <!-- REPLACE WITH INDEX -->
-            </div>
+    <div id="index-content" class="row">
+        <!-- REPLACE WITH INDEX -->
+    </div>
 </div>
+
+<div class="container-xxl my-5">
+    <div class="row g-4">
+
+        <!-- Container 1: Siti per giocare -->
+        <div class="col-12 col-lg-6">
+            <div class="p-3 border rounded shadow-sm h-100" style="background: #ffffff;">
+                <!-- Titolo -->
+                <div class="mb-4 text-center">
+                    <h4 class="fw-bold">🎮 Gioca Online a Othello 🎮</h4>
+                </div>
+
+                <!-- Riquadri -->
+                <div class="row g-3">
+                    <!-- eOthello -->
+                    <div class="col-6">
+                        <div class="card shadow-sm h-100 text-center" style="background: #f8f9fa;">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <div class="fs-1 mb-3">⌛</div>
+                                <h5 class="card-title fw-bold">eOthello</h5>
+                                <p class="card-text flex-grow-1">
+                                    Gioco a turni, per riflettere con calma sulle mosse.
+                                </p>
+                                <a href="https://www.eothello.com" target="_blank" class="btn btn-success mt-auto">
+                                    Vai su eOthello
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- OthelloQuest -->
+                    <div class="col-6">
+                        <div class="card shadow-sm h-100 text-center" style="background: #f8f9fa;">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <div class="fs-1 mb-3">⚡</div>
+                                <h5 class="card-title fw-bold">OthelloQuest</h5>
+                                <p class="card-text flex-grow-1">
+                                    Gioco in tempo reale, rapido e competitivo.
+                                </p>
+                                <a href="http://questgames.net/reversi" target="_blank" class="btn btn-success mt-auto">
+                                    Vai su OthelloQuest
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container 2: Federazione -->
+        <div class="col-12 col-lg-6">
+            <div class="p-3 border rounded shadow-sm h-100" style="background: #ffffff;">
+                <!-- Titolo -->
+                <!-- Titolo -->
+                <div class="mb-4 text-center d-flex align-items-center justify-content-center gap-2 flex-wrap">
+                    <img src="images/fngologo.gif" alt="FNGO logo" style="height:40px; width:auto;">
+                    <h4 class="fw-bold m-0">Federazione Nazionale Gioco Othello</h4>
+                    <img src="images/fngologo.gif" alt="FNGO logo" style="height:40px; width:auto;">
+                </div>
+
+                <!-- Riquadri -->
+                <div class="row g-3">
+                    <!-- Tornei -->
+                    <div class="col-6">
+                        <div class="card shadow-sm h-100 text-center" style="background: #f8f9fa;">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <div class="fs-1 mb-3">📅</div>
+                                <h5 class="card-title fw-bold">Calendario Tornei</h5>
+                                <p class="card-text flex-grow-1">
+                                    Scopri le date dei prossimi tornei ufficiali in Italia.
+                                </p>
+                                <a href="https://www.fngo.it/calendario.asp" target="_blank"
+                                   class="btn btn-success mt-auto">
+                                    Vai al calendario
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Classifica -->
+                    <div class="col-6">
+                        <div class="card shadow-sm h-100 text-center" style="background: #f8f9fa;">
+                            <div class="card-body d-flex flex-column align-items-center">
+                                <div class="fs-1 mb-3">🏆</div>
+                                <h5 class="card-title fw-bold">Classifica Rating</h5>
+                                <p class="card-text flex-grow-1">
+                                    Consulta la classifica nazionale aggiornata.
+                                </p>
+                                <a href="https://www.fngo.it/glicko.asp" target="_blank"
+                                   class="btn btn-success mt-auto">
+                                    Vai alla classifica
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
 
 <div id="shareContainer" class="container-xxl my-4">
     <div class="install-box text-center">

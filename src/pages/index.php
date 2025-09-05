@@ -109,6 +109,23 @@
             padding: 0.75rem 1.5rem;
             border-radius: 2rem;
         }
+
+        /* colore verde Othello sui pills attivi */
+        .nav-pills .nav-link.active,
+        .nav-pills .show > .nav-link {
+            background-color: #198754;
+            color: #fff;
+        }
+
+        /* colore testo normale */
+        .nav-pills .nav-link {
+            color: #198754;
+        }
+
+        .nav-pills .nav-link:hover {
+            background-color: #198754;
+            color: #fff;
+        }
     </style>
 
 </head>
@@ -185,7 +202,7 @@
 </script>
 
 <div id="othello-content" class="container-xxl">
-    <div id="index-content" class="row">
+    <div class="border rounded border-3 border-success p-3">
         <!-- REPLACE WITH INDEX -->
     </div>
 </div>
@@ -245,7 +262,7 @@
                 <!-- Titolo -->
                 <div class="mb-4 text-center d-flex align-items-center justify-content-center gap-2 flex-wrap">
                     <img src="images/fngologo.gif" alt="FNGO logo" style="height:40px; width:auto;">
-                    <h4 class="fw-bold m-0">Federazione Nazionale Gioco Othello</h4>
+                    <h4 class="fw-bold m-0">Fed. Naz. Gioco Othello</h4>
                     <img src="images/fngologo.gif" alt="FNGO logo" style="height:40px; width:auto;">
                 </div>
 

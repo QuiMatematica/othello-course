@@ -1,5 +1,5 @@
 // Nome della cache
-const CACHE_NAME = "pwa-cache-v1";
+const CACHE_NAME = "pwa-cache-v2";
 
 // File statici da mettere in cache all'installazione
 const FILES_TO_CACHE = [

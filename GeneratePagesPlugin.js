@@ -71,43 +71,6 @@ class GeneratePagesPlugin {
         });
     }
 
-    composeOffcanvas(prepend) {
-        let offcanvas = '';
-        this.json.sections.forEach(section => {
-
-            offcanvas += `
-            <h5><a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${prepend}${section.href}section.php">${section.title}</a></h5>
-            <ul class='nav flex-column'>`;
-
-            section.chapters.forEach(chapter => {
-                offcanvas += `
-                <li class='nav-item pb-3'>
-                <a class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href="${prepend}${section.href}${chapter.href}chapter.php">${chapter.title}</a>
-                <ul>`;
-
-                if (chapter.pages != null) {
-                    chapter.pages.forEach(page => {
-                        offcanvas += `
-                    <li class='nav-item'>
-                    <a class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href="${prepend}${section.href}${chapter.href}${page.href}">${page.title}</a>
-                    </li>`;
-                    });
-                }
-
-                offcanvas += `
-                </ul>
-                </li>`;
-
-            });
-
-            offcanvas += `
-            </ul>`;
-
-        });
-        return offcanvas;
-    }
-
-
     findThisPage(filePath) {
         let indexOfThisPage = -1;
         for (let i = 0; i < this.pages.length; i++) {
@@ -161,6 +124,7 @@ class GeneratePagesPlugin {
         // Trova la pagina nella lista delle pagine caricate da json
         const indexOfThisPage = this.findThisPage(filePath);
 
+        const h1title = indexOfThisPage === -1 ? "Qui Othello" : this.pages[indexOfThisPage].title;
         const title = indexOfThisPage === -1 ? "Qui Othello" : this.pages[indexOfThisPage].title + " @ Qui Othello";
         const url = indexOfThisPage === -1 ? "https://othello.quimatematica.it" : "https://othello.quimatematica.it/" + this.pages[indexOfThisPage].href;
 
@@ -174,10 +138,8 @@ class GeneratePagesPlugin {
             keywords = this.pages[indexOfThisPage].keywords;
         }
 
-        let offcanvas = '';
         let pagination = '';
         if (!filePath.endsWith('quiz.php')) {
-            offcanvas = this.composeOffcanvas(prepend);
             pagination = this.composePagination(filePath, prepend, indexOfThisPage);
         }
 
@@ -215,27 +177,50 @@ class GeneratePagesPlugin {
 	<script type="module" src="${prepend}js/tao.js"></script>
 </head>
 <body>
-    <nav class='navbar navbar-expand-lg bg-primary' data-bs-theme='dark'>
-        <div class='container-xxl'>
-            <a class='navbar-brand h1' href='${prepend}'>Othello: corso interattivo</a>
+    <!-- Header Browser -->
+    <div id="browserHeader" class="d-none">
+    <nav class="navbar" style="background: linear-gradient(135deg, #0f5132, #198754);">
+        <div class="container-xxl d-flex align-items-center">
+            <!-- Logo con icona -->
+            <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="${prepend}">
+                <img src="../icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+                Qui Othello
+            </a>
         </div>
     </nav>
-    <div class='offcanvas offcanvas-start' tabindex='-1' id='section-index' aria-labelledby='offcanvasLabel'>
-        <div class='offcanvas-header'>
-            <h5 class='offcanvas-title' id='offcanvasLabel'>Indice</h5>
-            <button type='button' class='btn-close' data-bs-dismiss='offcanvas' aria-label='Chiudi'></button>
-        </div>
-        <div class='offcanvas-body'>${offcanvas}
+    </div>
+    
+    <!-- Header App -->
+    <div id="appHeader" class="d-none">
+        <div class="bg-success text-white d-flex align-items-center p-3">
+            <button class="btn text-white me-3 p-0 fs-4" onclick="history.back()">←</button>
+            <h1 class="h4 mb-0">${h1title}</h1>
         </div>
     </div>
+
 	<div id="othello-content" class="container-xxl mt-4">
         <button id="shareBtn" class="btn btn-light btn-outline-dark share-button">
             <i class="bi bi-share-fill"></i>
         </button>
-${pagination}
+        <h1 class="mb-3 d-none" id="pageTitle">${h1title}</h1>
 ${htmlContent}
 ${pagination}
     </div>
+    <script>
+        function isInStandaloneMode() {
+            return (window.matchMedia('(display-mode: standalone)').matches) ||
+                (window.navigator.standalone === true);
+        }
+    
+        if (isInStandaloneMode()) {
+            // Siamo in app
+            document.getElementById("appHeader").classList.remove("d-none");
+        } else {
+            // Siamo in browser
+            document.getElementById("browserHeader").classList.remove("d-none");
+            document.getElementById("pageTitle").classList.remove("d-none");
+        }
+    </script>
 </body>
 </html>`;
     }

@@ -28,10 +28,10 @@ jobs:
           npx webpack
 
       - name: Upload via FTP
-          uses: SamKirkland/FTP-Deploy-Action@v4
-          with:
-            server: ${{ secrets.FTP_HOST }}
-            username: ${{ secrets.FTP_USERNAME }}
-            password: ${{ secrets.FTP_PASSWORD }}
-            local-dir: dist
-            server-dir: /othello-test.quimatematica.it/public_html
+        uses: SamKirkland/FTP-Deploy-Action@v4
+        with:
+          server: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: dist
+          server-dir: /othello-test.quimatematica.it/public_html

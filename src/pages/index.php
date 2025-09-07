@@ -143,8 +143,19 @@
     </div>
 </nav>
 
-<!-- Container dinamico per suggerire l'installazione -->
-<div id="pwaInstallContainer" class="container-xxl my-4"></div>
+<!-- Container per suggerire l'installazione -->
+<div id="pwaInstallContainer" class="container-xxl my-4 d-none">
+    <div class="install-box text-center">
+        <h5 class="mb-3">⚪⚫ Installa <strong>Qui Othello</strong></h5>
+        <p class="mb-4">
+            Porta sempre con te il corso di Othello!<br>
+            Con l'app avrai un'esperienza più veloce, fluida e senza distrazioni.
+        </p>
+        <button id="installBtn" class="btn btn-light btn-install shadow">
+            📲 Installa l'app
+        </button>
+    </div>
+</div>
 
 <script>
     let deferredPrompt;
@@ -154,30 +165,13 @@
         (window.matchMedia('(display-mode: standalone)').matches)
         || (window.navigator.standalone === true); // iOS
 
-    document.write(`<p>window.matchMedia('(display-mode: standalone)').matches: ${window.matchMedia('(display-mode: standalone)').matches}</p>`);
-    document.write(`<p>window.navigator.standalone: ${window.navigator.standalone}</p>`);
-    document.write(`<p>window.navigator.standalone === true: ${window.navigator.standalone === true}</p>`);
-
     if (!isInStandaloneMode()) {
+        document.getElementById('pwaInstallContainer').classList.remove('d-none');
+
         // Se NON è già un'app, ascolta l'evento di installazione
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-
-            // Costruisci il contenuto Bootstrap + grafica personalizzata
-            const container = document.getElementById('pwaInstallContainer');
-            container.innerHTML = `
-      <div class="install-box text-center">
-        <h5 class="mb-3">⚪⚫ Installa <strong>Qui Othello</strong></h5>
-        <p class="mb-4">
-          Porta sempre con te il corso di Othello!<br>
-          Con l'app avrai un'esperienza più veloce, fluida e senza distrazioni.
-        </p>
-        <button id="installBtn" class="btn btn-light btn-install shadow">
-          📲 Installa l'app
-        </button>
-      </div>
-    `;
 
             // Collega l'evento al pulsante
             document.getElementById('installBtn').addEventListener('click', async () => {
@@ -193,24 +187,24 @@
                 }
 
                 deferredPrompt = null;
-                container.innerHTML = ''; // Rimuovi il messaggio dopo il tentativo
+                document.getElementById('pwaInstallContainer').classList.add('d-none');
             });
         });
 
         // Nascondi il container se l'app viene installata
         window.addEventListener('appinstalled', () => {
-            document.getElementById('pwaInstallContainer').innerHTML = '';
+                document.getElementById('pwaInstallContainer').classList.add('d-none');
         });
     }
 </script>
 
-<div id="othello-content" class="container-xxl">
+<div id="othello-content" class="container-xxl my-4">
     <div class="border rounded-4 border-3 border-success p-3">
         <!-- REPLACE WITH INDEX -->
     </div>
 </div>
 
-<div class="container-xxl my-5">
+<div class="container-xxl my-4 ">
     <div class="row g-4">
 
         <!-- Container 1: Siti per giocare -->

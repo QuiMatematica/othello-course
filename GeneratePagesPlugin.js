@@ -183,7 +183,7 @@ class GeneratePagesPlugin {
         <div class="container-xxl d-flex align-items-center">
             <!-- Logo con icona -->
             <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="${prepend}">
-                <img src="../icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+                <img src="${prepend}/icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
                 Qui Othello
             </a>
         </div>
@@ -193,7 +193,7 @@ class GeneratePagesPlugin {
     <!-- Header App -->
     <div id="appHeader" class="d-none">
         <div class="bg-success text-white d-flex align-items-center p-3">
-            <button class="btn text-white me-3 p-0 fs-4" onclick="history.back()">←</button>
+            <a class="btn text-white me-3 p-0 fs-4" href="${prepend}">←</a>
             <h1 class="h4 mb-0">${h1title}</h1>
         </div>
     </div>

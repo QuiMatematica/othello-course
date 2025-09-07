@@ -202,7 +202,7 @@
 </script>
 
 <div id="othello-content" class="container-xxl">
-    <div class="border rounded border-3 border-success p-3">
+    <div class="border rounded-4 border-3 border-success p-3">
         <!-- REPLACE WITH INDEX -->
     </div>
 </div>

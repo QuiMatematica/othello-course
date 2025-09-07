@@ -150,10 +150,13 @@
     let deferredPrompt;
 
     // Verifica se siamo in modalità standalone (installata come app)
-    const isInStandaloneMode = () => {
-        return (window.matchMedia('(display-mode: standalone)').matches)
-            || (window.navigator.standalone === true); // iOS
-    };
+    const isInStandaloneMode =
+        (window.matchMedia('(display-mode: standalone)').matches)
+        || (window.navigator.standalone === true); // iOS
+
+    document.write(`<p>window.matchMedia('(display-mode: standalone)').matches: ${window.matchMedia('(display-mode: standalone)').matches}</p>`);
+    document.write(`<p>window.navigator.standalone: ${window.navigator.standalone}</p>`);
+    document.write(`<p>window.navigator.standalone === true: ${window.navigator.standalone === true}</p>`);
 
     if (!isInStandaloneMode()) {
         // Se NON è già un'app, ascolta l'evento di installazione

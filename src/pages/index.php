@@ -165,7 +165,7 @@
         (window.matchMedia('(display-mode: standalone)').matches)
         || (window.navigator.standalone === true); // iOS
 
-    if (!isInStandaloneMode()) {
+    if (!isInStandaloneMode) {
         document.getElementById('pwaInstallContainer').classList.remove('d-none');
 
         // Se NON è già un'app, ascolta l'evento di installazione

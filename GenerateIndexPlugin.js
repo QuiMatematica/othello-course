@@ -33,9 +33,31 @@ class GenerateIndexPlugin {
     composePage(htmlContent) {
         let index = '';
 
+        index += `
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">`;
+
+        let isActive = 'active';
+        this.json.sections.forEach(section => {
+            index += `
+            <li class="nav-item" role="presentation">
+                <button class="nav-link nav-success ${isActive}" id="pills-${section.id}-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-${section.id}"
+                        type="button" role="tab" aria-controls="pills-${section.id}" aria-selected="true">${section.title}
+                </button>
+            </li>`;
+            isActive = '';
+        });
+
+        index += `
+        </ul>
+        <div class="tab-content" id="pills-tabContent">`;
+
+        isActive = 'active';
         this.json.sections.forEach(section => {
 
             index += `
+            <div class="tab-pane fade show ${isActive}" id="pills-${section.id}" role="tabpanel" aria-labelledby="pills-${section.id}-tab" tabindex="0">
+            <div id="index-${section.id}" class="row">
             <h1><a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}section.php">${section.title}</a></h1>`;
 
             section.chapters.forEach(chapter => {
@@ -65,9 +87,14 @@ class GenerateIndexPlugin {
             });
 
             index += `
-            <hr>`;
+            </div>
+            </div>`;
 
+            isActive = '';
         });
+
+        index += `
+        </div>`;
 
         return htmlContent.replace("<!-- REPLACE WITH INDEX -->", index);
     }

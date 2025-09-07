@@ -1,6 +1,7 @@
 {
 	"sections": [
 		{
+            "id": "base",
 			"title": "Livello base",
 			"href": "base/",
 			"chapters": [
@@ -87,6 +88,7 @@
 			]
 		},
 		{
+            "id": "intermedio",
 			"title": "Livello intermedio",
 			"href": "intermedio/",
 			"chapters": [
@@ -303,6 +305,7 @@
 			]
 		},
 		{
+            "id": "avanzato",
 			"title": "Livello avanzato",
 			"href": "avanzato/",
 			"chapters": [

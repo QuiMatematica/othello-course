@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qui Othello – Pagina Standard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<!-- Header Browser -->
+<div id="browserHeader" class="d-none">
+<nav class="navbar" style="background: linear-gradient(135deg, #0f5132, #198754);">
+    <div class="container-xxl d-flex align-items-center">
+        <!-- Logo con icona -->
+        <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="${prepend}">
+            <img src="../icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+            Qui Othello
+        </a>
+    </div>
+</nav>
+</div>
+
+<!-- Header App -->
+<div id="appHeader" class="d-none">
+    <div class="bg-success text-white d-flex align-items-center p-3">
+        <button class="btn text-white me-3 p-0 fs-4" onclick="history.back()">←</button>
+        <h1 class="h4 mb-0">Titolo Pagina</h1>
+    </div>
+</div>
+
+<!-- Contenuto -->
+<main class="container py-4">
+    <h1 class="mb-3 d-none" id="pageTitle">Titolo Pagina</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer et libero nec magna fermentum placerat.</p>
+    <p>Vivamus ut mi ac lorem interdum varius. Morbi at neque ut est consequat faucibus. Nulla facilisi.</p>
+</main>
+
+
+<script>
+    function isInStandaloneMode() {
+        return (window.matchMedia('(display-mode: standalone)').matches) ||
+            (window.navigator.standalone === true);
+    }
+
+    if (isInStandaloneMode()) {
+        // Siamo in app
+        document.getElementById("appHeader").classList.remove("d-none");
+    } else {
+        // Siamo in browser
+        document.getElementById("browserHeader").classList.remove("d-none");
+        document.getElementById("pageTitle").classList.remove("d-none");
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

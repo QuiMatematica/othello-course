@@ -2,11 +2,13 @@ const fs = require('fs');
 const path = require('path');
 const GatherProcessor = require('./GatherProcessor');
 const BoardProcessor = require('./BoardProcessor');
+const TitleProcessor = require("./TitleProcessor");
 
 class GeneratePagesPlugin {
 
     constructor(options) {
         this.options = options;
+        this.titleProcessor = new TitleProcessor();
         this.gatherProcessor = new GatherProcessor();
         this.boardProcessor = new BoardProcessor();
     }
@@ -43,10 +45,11 @@ class GeneratePagesPlugin {
 
             files.forEach(filePath => {
                 const level = countSlashes(filePath) - countSlashes(inputDir) - 1;
-                console.log('generating: ' + filePath + '; level: ' + level);
+                // console.log('generating: ' + filePath + '; level: ' + level);
 
                 let html = fs.readFileSync(filePath, 'utf8');
 
+                html = this.titleProcessor.process(html);
                 html = this.gatherProcessor.process(html);
                 html = this.boardProcessor.process(html);
 
@@ -83,36 +86,17 @@ class GeneratePagesPlugin {
     }
 
     composePagination(filePath, prepend, indexOfThisPage) {
-        let before = '';
-        if (indexOfThisPage > 0) {
-            before = `
-            <li class='page-item'>
-            <a class='page-link' aria-label='Previous' href='${prepend}${this.pages[indexOfThisPage-1].href}'>
-            <span class='px-1' aria-hidden='true'>&laquo;</span>
-            <span class='sr-only'>${this.pages[indexOfThisPage-1].title}</span>
-            </a>
-            </li>`;
-        }
-
-        let after = '';
+        let nextPage = '';
         if (indexOfThisPage < this.pages.length - 1) {
-            after = `
-            <li class='page-item'>
-            <a class='page-link' aria-label='Previous' href='${prepend}${this.pages[indexOfThisPage+1].href}'>
-            <span class='sr-only'>${this.pages[indexOfThisPage+1].title}</span>
-            <span class='px-1' aria-hidden='true'>&raquo;</span>
-            </a>
-            </li>`;
+            nextPage = `
+            <div class="text-center">
+                <a class="btn btn-success shadow mt-1 mb-5" href="${prepend}${this.pages[indexOfThisPage+1].href}">
+                    Lezione successiva: ${this.pages[indexOfThisPage+1].title}
+                </a>
+            </div>`;
         }
 
-        return `
-        <nav class='my-3'>
-        <ul class='pagination justify-content-center'>${before}
-        <li class='page-item'>
-        <a class='page-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>
-        </li>${after}
-        </ul>
-        </nav>`;
+        return nextPage;
     }
 
     composePage(htmlContent, filePath, level) {
@@ -193,8 +177,8 @@ class GeneratePagesPlugin {
     <!-- Header App -->
     <div id="appHeader" class="d-none">
         <div class="bg-success text-white d-flex align-items-center p-3">
-            <a class="btn text-white me-3 p-0 fs-4" href="${prepend}">←</a>
-            <h1 class="h4 mb-0">${h1title}</h1>
+            <a class="btn text-white me-3 p-0 fs-1" href="${prepend}"><i class="bi bi-chevron-left"></i></a>
+            <h1 class="h1 mb-0">${h1title}</h1>
         </div>
     </div>
 

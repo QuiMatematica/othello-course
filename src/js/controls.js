@@ -28,7 +28,7 @@ export default class Controls {
     createEmptyButton(listener) {
         let button = document.createElement("button");
         button.classList.add("btn");
-        button.classList.add("btn-primary");
+        button.classList.add("btn-success");
         button.dataset.counter = this.counter;
         button.addEventListener('click', listener);
         this.buttonGroup.appendChild(button);

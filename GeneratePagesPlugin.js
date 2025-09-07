@@ -43,7 +43,7 @@ class GeneratePagesPlugin {
 
             files.forEach(filePath => {
                 const level = countSlashes(filePath) - countSlashes(inputDir) - 1;
-                // console.log('generating: ' + filePath + '; level: ' + level);
+                console.log('generating: ' + filePath + '; level: ' + level);
 
                 let html = fs.readFileSync(filePath, 'utf8');
 

@@ -258,7 +258,7 @@ class Page {
 }
 
 function countSlashes(str) {
-  return str.split('\\').length - 1;
+  return str.split(/[\\/]/).length - 1;
 }
 
 module.exports = GeneratePagesPlugin;

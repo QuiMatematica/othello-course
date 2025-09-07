@@ -23,7 +23,7 @@ jobs:
       - name: Build
         run: |
           npm install
-          npm run build
+          npx webpack
 
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6

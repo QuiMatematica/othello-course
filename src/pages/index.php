@@ -166,12 +166,12 @@
         || (window.navigator.standalone === true); // iOS
 
     if (!isInStandaloneMode) {
-        document.getElementById('pwaInstallContainer').classList.remove('d-none');
-
         // Se NON è già un'app, ascolta l'evento di installazione
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
+
+            document.getElementById('pwaInstallContainer').classList.remove('d-none');
 
             // Collega l'evento al pulsante
             document.getElementById('installBtn').addEventListener('click', async () => {
@@ -193,7 +193,7 @@
 
         // Nascondi il container se l'app viene installata
         window.addEventListener('appinstalled', () => {
-                document.getElementById('pwaInstallContainer').classList.add('d-none');
+            document.getElementById('pwaInstallContainer').classList.add('d-none');
         });
     }
 </script>

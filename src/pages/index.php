@@ -204,6 +204,43 @@
     </div>
 </div>
 
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const levels = [
+            {id: "pills-base", title: "Livello base", emoji: "🎯"},
+            {id: "pills-intermedio", title: "Livello intermedio", emoji: "⚔️"},
+            {id: "pills-avanzato", title: "Livello avanzato", emoji: "🏆"}
+        ];
+
+        let current = 0;
+        const levelTitle = document.getElementById("levelTitle");
+        const prevBtn = document.getElementById("prevBtn");
+        const nextBtn = document.getElementById("nextBtn");
+
+        function showLevel(index) {
+            // aggiorna contenuto tab
+            document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("show", "active"));
+            document.getElementById(levels[index].id).classList.add("show", "active");
+
+            // aggiorna titolo barra con emoji
+            levelTitle.textContent = `${levels[index].emoji} ${levels[index].title} ${levels[index].emoji}`;
+
+            // aggiorna indice
+            current = index;
+        }
+
+        prevBtn.addEventListener("click", function () {
+            const newIndex = (current - 1 + levels.length) % levels.length;
+            showLevel(newIndex);
+        });
+
+        nextBtn.addEventListener("click", function () {
+            const newIndex = (current + 1) % levels.length;
+            showLevel(newIndex);
+        });
+    });
+</script>
+
 <div class="container-xxl my-4 ">
     <div class="row g-4">
 

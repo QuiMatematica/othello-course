@@ -34,25 +34,26 @@ class GenerateIndexPlugin {
         let index = '';
 
         index += `
-        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">`;
+        <div class="d-flex align-items-center justify-content-between bg-success text-white rounded py-2 px-3">
+            <!-- Pulsante precedente -->
+            <button class="btn btn-success" id="prevBtn">
+                <i class="bi bi-chevron-left fs-3 text-white"></i>
+            </button>
+            <!-- Titolo livello attivo -->
+            <div id="levelTitle" class="fs-3 fw-bold text-center flex-grow-1">
+                🎯 Livello base 🎯
+            </div>
 
-        let isActive = 'active';
-        this.json.sections.forEach(section => {
-            index += `
-            <li class="nav-item" role="presentation">
-                <button class="nav-link nav-success ${isActive}" id="pills-${section.id}-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-${section.id}"
-                        type="button" role="tab" aria-controls="pills-${section.id}" aria-selected="true">${section.title}
-                </button>
-            </li>`;
-            isActive = '';
-        });
+            <!-- Pulsante successivo -->
+            <button class="btn btn-success" id="nextBtn">
+                <i class="bi bi-chevron-right fs-3 text-white"></i>
+            </button>
+        </div>`;
 
         index += `
-        </ul>
         <div class="tab-content" id="pills-tabContent">`;
 
-        isActive = 'active';
+        let isActive = 'active';
         this.json.sections.forEach(section => {
 
             index += `

@@ -207,9 +207,9 @@
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         const levels = [
-            {id: "pills-base", title: "Livello base", emoji: "🎯"},
-            {id: "pills-intermedio", title: "Livello intermedio", emoji: "⚔️"},
-            {id: "pills-avanzato", title: "Livello avanzato", emoji: "🏆"}
+            {id: "pills-base", title: "Base", emoji: "🎯"},
+            {id: "pills-intermedio", title: "Intermedio", emoji: "⚔️"},
+            {id: "pills-avanzato", title: "Avanzato", emoji: "🏆"}
         ];
 
         let current = 0;

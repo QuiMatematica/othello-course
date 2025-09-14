@@ -41,7 +41,7 @@ class GenerateIndexPlugin {
             </button>
             <!-- Titolo livello attivo -->
             <div id="levelTitle" class="fs-3 fw-bold text-center flex-grow-1">
-                🎯 Livello base 🎯
+                🎯 Base 🎯
             </div>
 
             <!-- Pulsante successivo -->

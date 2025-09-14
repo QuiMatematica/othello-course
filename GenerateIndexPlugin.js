@@ -57,8 +57,7 @@ class GenerateIndexPlugin {
 
             index += `
             <div class="tab-pane fade show ${isActive}" id="pills-${section.id}" role="tabpanel" aria-labelledby="pills-${section.id}-tab" tabindex="0">
-            <div id="index-${section.id}" class="row">
-            <h1><a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}section.php">${section.title}</a></h1>`;
+            <div id="index-${section.id}" class="row">`;
 
             section.chapters.forEach(chapter => {
                 index += `

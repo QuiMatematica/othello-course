@@ -63,26 +63,27 @@ class GenerateIndexPlugin {
             section.chapters.forEach(chapter => {
                 index += `
                 <div class='col-lg-3 py-3'>
-                <ul class='nav flex-column'>
-                <li class='nav-item'>
-                <h4>
-                <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}chapter.php">${chapter.title}</a>
-                </h4>
-                <ul>`;
+                    <div class="card shadow-sm h-100" style="background: #f8f9fa;">
+                        <div class="card-body d-flex flex-column">
+                            <h4>
+                            <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}chapter.php">${chapter.title}</a>
+                            </h4>`;
 
-                if (chapter.pages != null) {
-                    chapter.pages.forEach(page => {
-                        index += `
-                    <li class='nav-item'>
-                    <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}${page.href}">${page.title}</a>
-                    </li>`;
-                    });
-                }
+                            if (chapter.pages != null) {
+                                chapter.pages.forEach(page => {
+                                    index += `
+                                    <p class="card-text mb-0">
+                                        <a class="d-flex align-items-start link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}${page.href}">
+                                            <i class="bi bi-play-circle-fill text-success"></i>
+                                            <span class="ms-2">${page.title}</span>
+                                        </a>
+                                    </p>`;
+                                });
+                            }
 
-                index += `
-                </ul>
-                </li>
-                </ul>
+                            index += `
+                        </div>
+                    </div>
                 </div>`;
             });
 

@@ -130,10 +130,10 @@
 
 </head>
 
-<body>
+<body class="pt-5 mt-3">
 
 <!-- Navbar minimale Qui Othello -->
-<nav class="navbar" style="background: linear-gradient(135deg, #0f5132, #198754);">
+<nav class="navbar fixed-top" style="background: linear-gradient(135deg, #0f5132, #198754);">
     <div class="container-xxl d-flex align-items-center">
         <!-- Logo con icona -->
         <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="#">

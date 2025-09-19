@@ -223,7 +223,7 @@
             document.getElementById(levels[index].id).classList.add("show", "active");
 
             // aggiorna titolo barra con emoji
-            levelTitle.textContent = `${levels[index].emoji} ${levels[index].title} ${levels[index].emoji}`;
+            levelTitle.textContent = `${levels[index].emoji} ${levels[index].title}`;
 
             // aggiorna indice
             current = index;

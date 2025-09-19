@@ -159,6 +159,16 @@ class GeneratePagesPlugin {
 	<link rel="stylesheet" href="${prepend}assets/bootstrap-icons/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="${prepend}css/othello.css">
 	<script type="module" src="${prepend}js/tao.js"></script>
+    <style>
+        .navbar {
+            min-height: 64px;
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header Browser -->

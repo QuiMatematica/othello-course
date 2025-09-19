@@ -62,7 +62,7 @@ class GenerateIndexPlugin {
 
             section.chapters.forEach(chapter => {
                 index += `
-                <div class='col-lg-3 py-3'>
+                <div class='col-lg-3 pt-3'>
                     <div class="card shadow-sm h-100" style="background: #f8f9fa;">
                         <div class="card-body d-flex flex-column">
                             <h4>

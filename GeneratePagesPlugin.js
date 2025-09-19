@@ -214,6 +214,21 @@ ${pagination}
             document.getElementById("browserHeader").classList.remove("d-none");
             document.getElementById("pageTitle").classList.remove("d-none");
         }
+        
+        // Memorizza la visita della pagina
+        // prendi il pathname della pagina corrente
+        const path = window.location.pathname;
+        // dividi in parti ignorando stringhe vuote
+        const parts = path.split("/").filter(Boolean);
+        // prendi gli ultimi 3 pezzi
+        const last3 = parts.slice(-3);
+        // ricostruisci con lo slash davanti
+        const pagina = last3.join("/");
+        const ora = new Date().toISOString();
+        let visite = JSON.parse(localStorage.getItem('visite')) || [];
+        visite = visite.filter(v => v.pagina !== pagina);
+        visite.push({ pagina, ultimaVisita: ora });
+        localStorage.setItem('visite', JSON.stringify(visite));
     </script>
 </body>
 </html>`;

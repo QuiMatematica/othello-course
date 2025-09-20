@@ -74,7 +74,7 @@ class GenerateIndexPlugin {
                                     index += `
                                     <p class="card-text mb-0">
                                         <a class="d-flex align-items-start link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}${page.href}">
-                                            <i class="bi bi-play-circle-fill text-success"></i>
+                                            <i class="bi text-success"></i>
                                             <span class="ms-2">${page.title}</span>
                                         </a>
                                     </p>`;

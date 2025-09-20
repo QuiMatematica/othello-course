@@ -205,6 +205,27 @@
 </div>
 
 <script>
+    let visite = JSON.parse(localStorage.getItem('visite')) || [];
+
+    const container = document.getElementById("othello-content");
+
+    const links = container.querySelectorAll("a");
+
+    links.forEach(link => {
+        const href = link.getAttribute("href");
+        const icon = link.querySelector("i");
+
+        if (icon) {
+            if (visite.some(v => v.pagina === href)) {
+                icon.classList.add("bi-check2-circle");
+            } else {
+                icon.classList.add("bi-play-circle-fill");
+            }
+        }
+    });
+</script>
+
+<script>
     document.addEventListener("DOMContentLoaded", function () {
         const levels = [
             {id: "pills-base", title: "Base", emoji: "🎯"},

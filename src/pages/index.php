@@ -205,11 +205,32 @@
 </div>
 
 <script>
+    let visite = JSON.parse(localStorage.getItem('visite')) || [];
+
+    const container = document.getElementById("othello-content");
+
+    const links = container.querySelectorAll("a");
+
+    links.forEach(link => {
+        const href = link.getAttribute("href");
+        const icon = link.querySelector("i");
+
+        if (icon) {
+            if (visite.some(v => v.pagina === href)) {
+                icon.classList.add("bi-check2-circle");
+            } else {
+                icon.classList.add("bi-play-circle-fill");
+            }
+        }
+    });
+</script>
+
+<script>
     document.addEventListener("DOMContentLoaded", function () {
         const levels = [
-            {id: "pills-base", title: "Base", emoji: "🎯"},
-            {id: "pills-intermedio", title: "Intermedio", emoji: "⚔️"},
-            {id: "pills-avanzato", title: "Avanzato", emoji: "🏆"}
+            {id: "pills-base", title: "Base", emoji: "🎯", level: "base"},
+            {id: "pills-intermedio", title: "Intermedio", emoji: "⚔️", level: "intermedio"},
+            {id: "pills-avanzato", title: "Avanzato", emoji: "🏆", level: "avanzato"}
         ];
 
         let current = 0;
@@ -223,10 +244,12 @@
             document.getElementById(levels[index].id).classList.add("show", "active");
 
             // aggiorna titolo barra con emoji
-            levelTitle.textContent = `${levels[index].emoji} ${levels[index].title} ${levels[index].emoji}`;
+            levelTitle.textContent = `${levels[index].emoji} ${levels[index].title}`;
 
             // aggiorna indice
             current = index;
+            // salva selezione
+            localStorage.setItem('livello', levels[index].level);
         }
 
         prevBtn.addEventListener("click", function () {
@@ -238,6 +261,12 @@
             const newIndex = (current + 1) % levels.length;
             showLevel(newIndex);
         });
+
+        let level = localStorage.getItem('livello') || "base";
+        let index = levels.findIndex(item => item.level === level);
+        if (current !== index) {
+            showLevel(index);
+        }
     });
 </script>
 

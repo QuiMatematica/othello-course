@@ -12,7 +12,12 @@ class BoardProcessor {
         const labelMap = {};
         let imageCounter = 1;
 
-        const $ = cheerio.load(html);
+        const $ = cheerio.load(html, {
+            xmlMode: false,        // 🔴 HTML mode → niente <div/> ma <div></div>
+            decodeEntities: false, // 🔴 non ricodifica &egrave; in &amp;egrave;
+            lowerCaseTags: false,  // opzionale: mantiene i tag così come sono scritti
+            recognizeSelfClosing: true // opzionale: interpreta <br/> come <br>
+        });
 
         $('board[data-type][data-label]').each((_, el) => {
             const $board = $(el);
@@ -59,7 +64,7 @@ class BoardProcessor {
             $ref.text(`${refNumber}`);
         });
 
-        return $.html();
+        return $('body').html();
     }
 }
 

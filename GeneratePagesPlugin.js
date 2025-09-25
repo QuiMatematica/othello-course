@@ -13,119 +13,86 @@ class GeneratePagesPlugin {
         this.boardProcessor = new BoardProcessor();
     }
 
-    // Funzione ricorsiva per leggere i file HTML dalle directory
-    readFilesRecursively(dir, fileList = [], addFiles = true) {
-        const files = fs.readdirSync(dir);
-        files.forEach(file => {
-            const filePath = path.join(dir, file);
-            const stat = fs.statSync(filePath);
-            if (stat.isDirectory()) {
-                this.readFilesRecursively(filePath, fileList);
-            } else if (addFiles && stat.isFile() && path.extname(file) === '.php') {
-                fileList.push(filePath);
-            }
-        });
-        return fileList;
-    }
-
     apply(compiler) {
         compiler.hooks.emit.tapAsync('GeneratePagesPlugin', (compilation, callback) => {
             const { inputDir, outputDir } = this.options;
-
-            // console.log('inputDir: ' + inputDir);
 
             const jsonPath = path.resolve(__dirname, 'src/web/index.json');
             const jsonContent = fs.readFileSync(jsonPath, 'utf8');
             this.json = JSON.parse(jsonContent);
 
-            this.readListOfPages();
+            this.json.sections.forEach(section => {
+                const sectionPath = path.join(inputDir, section.href);
+                section.chapters.forEach(chapter => {
+                    const chapterPath = path.join(sectionPath, chapter.href);
+                    chapter.pages.forEach(page => {
+                        const pagePath = path.join(chapterPath, page.href);
+                        // console.log('page: ' + pagePath);
+                        let html = fs.readFileSync(pagePath, 'utf8');
 
-            // Leggi i file HTML ricorsivamente dal inputDir
-            const files = this.readFilesRecursively(inputDir, [], false);
+                        html = this.titleProcessor.process(html);
+                        html = this.gatherProcessor.process(html);
+                        html = this.boardProcessor.process(html);
 
-            files.forEach(filePath => {
-                const level = countSlashes(filePath) - countSlashes(inputDir) - 1;
-                // console.log('generating: ' + filePath + '; level: ' + level);
+                        // Componi l'HTML completo
+                        html = this.composePage(html, section, chapter, page);
 
-                let html = fs.readFileSync(filePath, 'utf8');
+                        // Determina il percorso del file di output
+                        const relativePath = path.relative(inputDir, pagePath);
+                        const outputFilePath = path.join(outputDir, relativePath);
 
-                html = this.titleProcessor.process(html);
-                html = this.gatherProcessor.process(html);
-                html = this.boardProcessor.process(html);
+                        // Crea le directory necessarie per il file di output
+                        const outputDirPath = path.dirname(outputFilePath);
+                        if (!fs.existsSync(outputDirPath)) {
+                            fs.mkdirSync(outputDirPath, {recursive: true});
+                        }
 
-                // Componi l'HTML completo
-                html = this.composePage(html, filePath, level);
-
-                // Determina il percorso del file di output
-                const relativePath = path.relative(inputDir, filePath);
-                const outputFilePath = path.join(outputDir, relativePath);
-
-                // Crea le directory necessarie per il file di output
-                const outputDirPath = path.dirname(outputFilePath);
-                if (!fs.existsSync(outputDirPath)) {
-                    fs.mkdirSync(outputDirPath, { recursive: true });
-                }
-
-                // Scrivi il file HTML nella outputDir
-                fs.writeFileSync(outputFilePath, html);
-            });
+                        // Scrivi il file HTML nella outputDir
+                        fs.writeFileSync(outputFilePath, html);
+                    })
+                })
+            })
 
             callback(); // Segnala a Webpack che il plugin ha finito
         });
     }
 
-    findThisPage(filePath) {
-        let indexOfThisPage = -1;
-        for (let i = 0; i < this.pages.length; i++) {
-            if (filePath.replace(/\\/g, '/').endsWith(this.pages[i].href)) {
-                indexOfThisPage = i;
-                break;
-            }
-        }
-        return indexOfThisPage;
-    }
+    composePagination(chapter, page) {
+        let index = chapter.pages.indexOf(page);
 
-    composePagination(filePath, prepend, indexOfThisPage) {
-        let nextPage = '';
-        if (indexOfThisPage < this.pages.length - 1) {
-            nextPage = `
+        let nextButton = '';
+        if (index + 1 < chapter.pages.length) {
+            nextButton = `
             <div class="text-center">
-                <a class="btn btn-success shadow mt-1 mb-5" href="${prepend}${this.pages[indexOfThisPage+1].href}">
-                    Lezione successiva: ${this.pages[indexOfThisPage+1].title}
+                <a class="btn btn-success shadow mt-1 mb-5" href="${chapter.pages[index + 1].href}">
+                    Lezione successiva: ${chapter.pages[index + 1].title}
+                </a>
+            </div>`;
+        }
+        else {
+            nextButton = `
+            <div class="text-center">
+                <a class="btn btn-success shadow mt-1 mb-5" href="../../">
+                    ⚪⚫ Torna alla home ⚫⚪
                 </a>
             </div>`;
         }
 
-        return nextPage;
+        return nextButton;
     }
 
-    composePage(htmlContent, filePath, level) {
-        let prepend = '';
-        for (let i = 0; i < level; i++) {
-            prepend += '../';
-        }
+    composePage(htmlContent, section, chapter, page) {
+        let prepend = '../../';
 
-        // Trova la pagina nella lista delle pagine caricate da json
-        const indexOfThisPage = this.findThisPage(filePath);
+        const h1title = page.title;
+        const title = page.title + " @ Qui Othello";
+        const url = "https://othello.quimatematica.it/" + section.href + chapter.href + page.href;
 
-        const h1title = indexOfThisPage === -1 ? "Qui Othello" : this.pages[indexOfThisPage].title;
-        const title = indexOfThisPage === -1 ? "Qui Othello" : this.pages[indexOfThisPage].title + " @ Qui Othello";
-        const url = indexOfThisPage === -1 ? "https://othello.quimatematica.it" : "https://othello.quimatematica.it/" + this.pages[indexOfThisPage].href;
+        const description = page.description || "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
 
-        let description = "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
-        if (indexOfThisPage !== -1 && this.pages[indexOfThisPage].description != null) {
-            description = this.pages[indexOfThisPage].description;
-        }
+        const keywords = page.keywords || "Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello"
 
-        let keywords = "Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello"
-        if (indexOfThisPage !== -1 && this.pages[indexOfThisPage].keywords != null) {
-            keywords = this.pages[indexOfThisPage].keywords;
-        }
-
-        let pagination = '';
-        if (!filePath.endsWith('quiz.php')) {
-            pagination = this.composePagination(filePath, prepend, indexOfThisPage);
-        }
+        const pagination = this.composePagination(chapter, page);
 
         return `<!DOCTYPE HTML>
 <html lang="it">
@@ -214,45 +181,26 @@ ${pagination}
             document.getElementById("browserHeader").classList.remove("d-none");
             document.getElementById("pageTitle").classList.remove("d-none");
         }
+        
+        // Memorizza la visita della pagina
+        // prendi il pathname della pagina corrente
+        const path = window.location.pathname;
+        // dividi in parti ignorando stringhe vuote
+        const parts = path.split("/").filter(Boolean);
+        // prendi gli ultimi 3 pezzi
+        const last3 = parts.slice(-3);
+        // ricostruisci con lo slash davanti
+        const pagina = last3.join("/");
+        const ora = new Date().toISOString();
+        let visite = JSON.parse(localStorage.getItem('visite')) || [];
+        visite = visite.filter(v => v.pagina !== pagina);
+        visite.push({ pagina, ultimaVisita: ora });
+        localStorage.setItem('visite', JSON.stringify(visite));
     </script>
 </body>
 </html>`;
     }
 
-    readListOfPages() {
-        this.pages = [];
-        this.json.sections.forEach(section => {
-            this.pages.push(new Page(section.href + 'section.php', section.title, section.description, section.keywords));
-            section.chapters.forEach(chapter => {
-                this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title, chapter.description, chapter.keywords));
-                if (chapter.pages != null) {
-                    chapter.pages.forEach(page => {
-                        this.pages.push(new Page(section.href + chapter.href + page.href, page.title, page.description, page.keywords));
-                    });
-                }
-            });
-        });
-    }
-}
-
-class Page {
-
-    href;
-    title;
-    description;
-    keywords;
-
-    constructor(href, title, description, keywords) {
-        this.href = href;
-        this.title = title;
-        this.description = description;
-        this.keywords = keywords;
-    }
-
-}
-
-function countSlashes(str) {
-  return str.split(/[\\/]/).length - 1;
 }
 
 module.exports = GeneratePagesPlugin;

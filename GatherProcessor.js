@@ -1,34 +1,39 @@
 const cheerio = require('cheerio');
 
 class GatherProcessor {
-  process(html) {
-    const $ = cheerio.load(html);
+    process(html) {
+        const $ = cheerio.load(html, {
+            xmlMode: false,        // 🔴 HTML mode → niente <div/> ma <div></div>
+            decodeEntities: false, // 🔴 non ricodifica &egrave; in &amp;egrave;
+            lowerCaseTags: false,  // opzionale: mantiene i tag così come sono scritti
+            recognizeSelfClosing: true // opzionale: interpreta <br/> come <br>
+        });
 
-    $('gather').each((_, el) => {
-      const $gather = $(el);
-      const $boards = $gather.children('board');
+        $('gather').each((_, el) => {
+            const $gather = $(el);
+            const $boards = $gather.children('board');
 
-      const count = $boards.length;
+            const count = $boards.length;
 
-      // Calcolo classi Bootstrap in base al numero di board
-      const colClass =
-        count >= 3 ? 'row-cols-md-3' :
-        count === 2 ? 'row-cols-md-2' :
-        'row-cols-md-1';
+            // Calcolo classi Bootstrap in base al numero di board
+            const colClass =
+                count >= 3 ? 'row-cols-md-3' :
+                    count === 2 ? 'row-cols-md-2' :
+                        'row-cols-md-1';
 
-      const $row = $(`<div class="row row-cols-1 ${colClass} g-4"></div>`);
+            const $row = $(`<div class="row row-cols-1 ${colClass} g-4"></div>`);
 
-      $boards.each((_, boardEl) => {
-        const $col = $('<div class="col"></div>');
-        $col.append($(boardEl));
-        $row.append($col);
-      });
+            $boards.each((_, boardEl) => {
+                const $col = $('<div class="col"></div>');
+                $col.append($(boardEl));
+                $row.append($col);
+            });
 
-      $gather.replaceWith($row);
-    });
+            $gather.replaceWith($row);
+        });
 
-    return $.html();
-  }
+        return $('body').html();
+    }
 }
 
 module.exports = GatherProcessor;

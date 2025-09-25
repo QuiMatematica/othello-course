@@ -237,9 +237,7 @@ ${pagination}
     readListOfPages() {
         this.pages = [];
         this.json.sections.forEach(section => {
-            this.pages.push(new Page(section.href + 'section.php', section.title, section.description, section.keywords));
             section.chapters.forEach(chapter => {
-                this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title, chapter.description, chapter.keywords));
                 if (chapter.pages != null) {
                     chapter.pages.forEach(page => {
                         this.pages.push(new Page(section.href + chapter.href + page.href, page.title, page.description, page.keywords));

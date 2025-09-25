@@ -1,381 +1,433 @@
 {
-	"sections": [
-		{
-            "id": "base",
-			"title": "Livello base",
-			"href": "base/",
-			"chapters": [
-				{
-					"href": "il-gioco/",
-					"title": "Il gioco",
-					"pages": [
-						{
-							"href": "le-regole.php",
-							"title": "Le regole",
-							"description": "Scopri le regole del gioco Othello con il nostro corso interattivo. Diventa un maestro di Othello con lezioni dettagliate e pratiche.",
-							"keywords": "regole Othello, regole dell'Othello, regole del gioco Othello"
-						},
-						{
-							"href": "precisazioni.php",
-							"title": "Precisazioni"
-						},
-						{
-							"href": "gioco-libero.php",
-							"title": "Gioco libero"
-						}
-					]
-				},
-				{
-					"href": "quiz-per-cominciare/",
-					"title": "Piccoli quiz per cominciare",
-					"pages": [
-						{
-							"href": "le-mosse-legali.php",
-							"title": "Le mosse legali"
-						},
-						{
-							"href": "le-pedine-da-girare.php",
-							"title": "Le pedine da girare"
-						},
-						{
-							"href": "quante-pedine-girare.php",
-							"title": "Quante pedine vengono girate?"
-						},
-						{
-							"href": "ottenere-una-pedina.php",
-							"title": "Per ottenere una pedina"
-						},
-						{
-							"href": "togliere-una-mossa.php",
-							"title": "Togliere una mossa"
-						},
-						{
-							"href": "ottenere-una-mossa.php",
-							"title": "Ottenere una mossa"
-						},
-						{
-							"href": "finali-con-caselle-vuote.php",
-							"title": "Finali con caselle vuote"
-						}
-					]
-				},
-				{
-					"href": "primi-elementi-di-strategia/",
-					"title": "Primi elementi di strategia",
-					"pages": [
-						{
-							"href": "notazione-caselle.php",
-							"title": "Per indicare le caselle"
-						},
-						{
-							"href": "notazione-partite.php",
-							"title": "Per registrare le partite"
-						},
-						{
-							"href": "gli-angoli.php",
-							"title": "Gli angoli"
-						},
-						{
-							"href": "il-centro.php",
-							"title": "Il centro"
-						},
-						{
-							"href": "quante-pedine.php",
-							"title": "Quante pedine?"
-						}
-					]
-				}
-			]
-		},
-		{
-            "id": "intermedio",
-			"title": "Livello intermedio",
-			"href": "intermedio/",
-			"chapters": [
-				{
-					"title": "Le pedine stabili",
-					"href": "pedine-stabili/",
-					"pages": [
-						{
-							"href": "pedine-stabili.php",
-							"title": "Gli angoli e le altre pedine stabili"
-						},
-						{
-							"href": "caselle-x-c.php",
-							"title": "Le caselle X e C"
-						},
-						{
-							"href": "sacrifici-e-vantaggi.php",
-							"title": "Sacrifici e vantaggi"
-						}
-					]
-				},
-				{
-					"href": "mobilita/",
-					"title": "La mobilità",
-					"pages": [
-						{
-							"href": "pedine-esterne.php",
-							"title": "Le pedine esterne"
-						},
-						{
-							"href": "muri.php",
-							"title": "I muri"
-						},
-						{
-							"href": "evaporazione.php",
-							"title": "Evaporazione"
-						},
-						{
-							"href": "compattezza.php",
-							"title": "La compattezza"
-						},
-						{
-							"href": "mosse-ideali.php",
-							"title": "Le mosse ideali"
-						},
-						{
-							"href": "togliere-mosse.php",
-							"title": "Togliere mosse all'avversario"
-						},
-						{
-							"href": "usare-caselle-x.php",
-							"title": "Usare caselle X per la mobilità"
-						},
-						{
-							"href": "classificazione-delle-mosse.php",
-							"title": "Classificazione delle mosse"
-						}
-					]
-				},
-				{
-					"href": "apertura/",
-					"title": "L'apertura",
-					"pages": [
-						{
-							"href": "prima-mossa.php",
-							"title": "La prima mossa"
-						},
-						{
-							"href": "seconda-mossa.php",
-							"title": "La seconda mossa"
-						},
-						{
-							"href": "diagonale.php",
-							"title": "Aperture basate sulla diagonale"
-						},
-						{
-							"href": "perpendicolare.php",
-							"title": "Aperture basate sulla perpendicolare"
-						}
-					]
-				},
-				{
-					"href": "tempi-di-gioco/",
-					"title": "I tempi di gioco",
-					"pages": [
-						{
-							"href": "un-tempo.php",
-							"title": "Guadagnare un tempo di gioco"
-						},
-						{
-							"href": "piu-tempi.php",
-							"title": "Guadagnare più tempi di gioco"
-						}
-					]
-				},
-				{
-					"href": "parita/",
-					"title": "La parità",
-					"pages": [
-						{
-							"href": "parita.php",
-							"title": "Regioni chiuse e parità"
-						},
-						{
-							"href": "parita-globale.php",
-							"title": "La parità globale: il nero e il bianco"
-						},
-						{
-							"href": "partite-commentate.php",
-							"title": "Parità: partite commentate"
-						},
-						{
-							"href": "parita-e-tempi-di-gioco.php",
-							"title": "Parità e tempi di gioco"
-						}
-					]
-				},
-				{
-					"href": "bordi/",
-					"title": "I bordi",
-					"pages": [
-						{
-							"href": "formazioni-di-bordo.php",
-							"title": "Classificazione delle formazioni di bordo"
-						},
-						{
-							"href": "incunearsi.php",
-							"title": "Incunearsi"
-						},
-						{
-							"href": "controbordi-e-formazioni-piene.php",
-							"title": "Controbordi e formazioni piene"
-						}
-					]
-				},
-				{
-					"href": "attacchi-ai-5/",
-					"title": "Attacchi ai cinque",
-					"pages": [
-						{
-							"href": "definizioni.php",
-							"title": "Definizioni per lo studio dei cinque"
-						},
-						{
-							"href": "cinque-non-attaccabili.php",
-							"title": "Cinque non attaccabili"
-						},
-						{
-							"href": "estrazione.php",
-							"title": "La tecnica dell'estrazione"
-						},
-						{
-							"href": "cinque-attaccabili.php",
-							"title": "Cinque attaccabili"
-						},
-						{
-							"href": "attacchi-ai-5-riassunto.php",
-							"title": "Gli attacchi ai cinque: riassunto"
-						},
-						{
-							"href": "attacchi-ai-5-esempi.php",
-							"title": "Gli attacchi ai cinque: altri esempi"
-						},
-						{
-							"href": "piu-ampio.php",
-							"title": "Una visione più ampia per gli attacchi ai cinque"
-						}
-					]
-				},
-				{
-					"href": "altri-attacchi-ai-bordi/",
-					"title": "Altri attacchi ai bordi",
-					"pages": [
-						{
-							"href": "attacchi-alle-caselle-c.php",
-							"title": "Attacchi alle caselle C isolate"
-						},
-						{
-							"href": "attacchi-ai-4-piu-1.php",
-							"title": "Attacchi ai quattro più uno"
-						}
-					]
-				},
-				{
-					"href": "finale/",
-					"title": "Il finale",
-					"pages": [
-						{
-							"href": "ultime-due-mosse.php",
-							"title": "Il finale perfetto con due caselle vuote"
-						},
-						{
-							"href": "tre-o-piu-mosse.php",
-							"title": "Il finale perfetto con tre o più caselle vuote"
-						},
-						{
-							"href": "parita.php",
-							"title": "La parità nel finale"
-						},
-						{
-							"href": "contare.php",
-							"title": "Contare l'indispensabile"
-						},
-						{
-							"href": "sequenze-indipendenti.php",
-							"title": "Sequenze indipendenti e non indipendenti"
-						},
-						{
-							"href": "complessita-othello.php",
-							"title": "La complessità dell'Othello"
-						}
-					]
-				}
-			]
-		},
-		{
-            "id": "avanzato",
-			"title": "Livello avanzato",
-			"href": "avanzato/",
-			"chapters": [
-				{
-					"href": "influenza/",
-					"title": "L'influenza",
-					"pages": [
-						{
-							"href": "definizione-influenza.php",
-							"title": "La definizione di influenza"
-						},
-						{
-							"href": "area-di-gioco.php",
-							"title": "Area di gioco e area di appoggio"
-						},
-						{
-							"href": "riempire-area-di-gioco.php",
-							"title": "Esaurire l'area di gioco"
-						},
-						{
-							"href": "influenza-e-bordi.php",
-							"title": "Influenza e bordi"
-						}
-					]
-				},
-				{
-					"href": "stoner-trap/",
-					"title": "Le Stoner trap",
-					"pages": [
-						{
-							"href": "stoner-trap-c.php",
-							"title": "Le Stoner trap di tipo C"
-						},
-						{
-							"href": "stoner-trap-a.php",
-							"title": "Le Stoner trap di tipo A"
-						},
-						{
-							"href": "altre-stoner-trap.php",
-							"title": "Altri esempi di Stoner trap"
-						},
-						{
-							"href": "stoner-rare.php",
-							"title": "Le Stoner trap sono rare?"
-						}
-					]
-				},
-				{
-					"href": "controllo-di-linee/",
-					"title": "Controllo di linee",
-					"pages": [
-						{
-							"href": "diagonali.php",
-							"title": "Controllo delle diagonali principali"
-						},
-						{
-							"href": "controbordo.php",
-							"title": "Controllo dei controbordi"
-						},
-						{
-							"href": "diagonale-c.php",
-							"title": "Controllo delle diagonali C"
-						},
-						{
-							"href": "mini-linea.php",
-							"title": "Controllo delle mini-linee"
-						}
-					]
-				}
-			]
-		}
-	]
+  "sections": [
+    {
+      "id": "base",
+      "title": "Livello base",
+      "href": "base/",
+      "chapters": [
+        {
+          "href": "il-gioco/",
+          "title": "Il gioco",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Introduzione"
+            },
+            {
+              "href": "le-regole.php",
+              "title": "Le regole",
+              "description": "Scopri le regole del gioco Othello con il nostro corso interattivo. Diventa un maestro di Othello con lezioni dettagliate e pratiche.",
+              "keywords": "regole Othello, regole dell'Othello, regole del gioco Othello"
+            },
+            {
+              "href": "precisazioni.php",
+              "title": "Precisazioni"
+            },
+            {
+              "href": "gioco-libero.php",
+              "title": "Gioco libero"
+            }
+          ]
+        },
+        {
+          "href": "quiz-per-cominciare/",
+          "title": "Quiz per cominciare",
+          "pages": [
+            {
+              "href": "le-mosse-legali.php",
+              "title": "Le mosse legali"
+            },
+            {
+              "href": "le-pedine-da-girare.php",
+              "title": "Le pedine da girare"
+            },
+            {
+              "href": "quante-pedine-girare.php",
+              "title": "Quante pedine vengono girate?"
+            },
+            {
+              "href": "ottenere-una-pedina.php",
+              "title": "Per ottenere una pedina"
+            },
+            {
+              "href": "togliere-una-mossa.php",
+              "title": "Togliere una mossa"
+            },
+            {
+              "href": "ottenere-una-mossa.php",
+              "title": "Ottenere una mossa"
+            },
+            {
+              "href": "finali-con-caselle-vuote.php",
+              "title": "Finali con caselle vuote"
+            }
+          ]
+        },
+        {
+          "href": "primi-elementi-di-strategia/",
+          "title": "Primi elementi di strategia",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Introduzione"
+            },
+            {
+              "href": "notazione-caselle.php",
+              "title": "Per indicare le caselle"
+            },
+            {
+              "href": "notazione-partite.php",
+              "title": "Per registrare le partite"
+            },
+            {
+              "href": "gli-angoli.php",
+              "title": "Gli angoli"
+            },
+            {
+              "href": "il-centro.php",
+              "title": "Il centro"
+            },
+            {
+              "href": "quante-pedine.php",
+              "title": "Quante pedine?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intermedio",
+      "title": "Livello intermedio",
+      "href": "intermedio/",
+      "chapters": [
+        {
+          "title": "Le pedine stabili",
+          "href": "pedine-stabili/",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "La tecnica della massimizzazione"
+            },
+            {
+              "href": "pedine-stabili.php",
+              "title": "Gli angoli e le altre pedine stabili"
+            },
+            {
+              "href": "caselle-x-c.php",
+              "title": "Le caselle X e C"
+            },
+            {
+              "href": "sacrifici-e-vantaggi.php",
+              "title": "Sacrifici e vantaggi"
+            }
+          ]
+        },
+        {
+          "href": "mobilita/",
+          "title": "La mobilità",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "La mobilità"
+            },
+            {
+              "href": "pedine-esterne.php",
+              "title": "Le pedine esterne"
+            },
+            {
+              "href": "muri.php",
+              "title": "I muri"
+            },
+            {
+              "href": "evaporazione.php",
+              "title": "Evaporazione"
+            },
+            {
+              "href": "compattezza.php",
+              "title": "La compattezza"
+            },
+            {
+              "href": "mosse-ideali.php",
+              "title": "Le mosse ideali"
+            },
+            {
+              "href": "togliere-mosse.php",
+              "title": "Togliere mosse all'avversario"
+            },
+            {
+              "href": "usare-caselle-x.php",
+              "title": "Usare caselle X per la mobilità"
+            },
+            {
+              "href": "classificazione-delle-mosse.php",
+              "title": "Classificazione delle mosse"
+            }
+          ]
+        },
+        {
+          "href": "apertura/",
+          "title": "L'apertura",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "L'apertura"
+            },
+            {
+              "href": "prima-mossa.php",
+              "title": "La prima mossa"
+            },
+            {
+              "href": "seconda-mossa.php",
+              "title": "La seconda mossa"
+            },
+            {
+              "href": "diagonale.php",
+              "title": "Aperture basate sulla diagonale"
+            },
+            {
+              "href": "perpendicolare.php",
+              "title": "Aperture basate sulla perpendicolare"
+            }
+          ]
+        },
+        {
+          "href": "tempi-di-gioco/",
+          "title": "I tempi di gioco",
+          "pages": [
+            {
+              "href": "un-tempo.php",
+              "title": "Guadagnare un tempo di gioco"
+            },
+            {
+              "href": "piu-tempi.php",
+              "title": "Guadagnare più tempi di gioco"
+            }
+          ]
+        },
+        {
+          "href": "parita/",
+          "title": "La parità",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "La parità"
+            },
+            {
+              "href": "parita.php",
+              "title": "Regioni chiuse e parità"
+            },
+            {
+              "href": "parita-globale.php",
+              "title": "La parità globale: il nero e il bianco"
+            },
+            {
+              "href": "partite-commentate.php",
+              "title": "Parità: partite commentate"
+            },
+            {
+              "href": "parita-e-tempi-di-gioco.php",
+              "title": "Parità e tempi di gioco"
+            }
+          ]
+        },
+        {
+          "href": "bordi/",
+          "title": "I bordi",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "I bordi"
+            },
+            {
+              "href": "formazioni-di-bordo.php",
+              "title": "Classificazione delle formazioni di bordo"
+            },
+            {
+              "href": "incunearsi.php",
+              "title": "Incunearsi"
+            },
+            {
+              "href": "controbordi-e-formazioni-piene.php",
+              "title": "Controbordi e formazioni piene"
+            }
+          ]
+        },
+        {
+          "href": "attacchi-ai-5/",
+          "title": "Attacchi ai cinque",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Gli attacchi ai cinque"
+            },
+            {
+              "href": "definizioni.php",
+              "title": "Definizioni per lo studio dei cinque"
+            },
+            {
+              "href": "cinque-non-attaccabili.php",
+              "title": "Cinque non attaccabili"
+            },
+            {
+              "href": "estrazione.php",
+              "title": "La tecnica dell'estrazione"
+            },
+            {
+              "href": "cinque-attaccabili.php",
+              "title": "Cinque attaccabili"
+            },
+            {
+              "href": "attacchi-ai-5-riassunto.php",
+              "title": "Gli attacchi ai cinque: riassunto"
+            },
+            {
+              "href": "attacchi-ai-5-esempi.php",
+              "title": "Gli attacchi ai cinque: altri esempi"
+            },
+            {
+              "href": "piu-ampio.php",
+              "title": "Una visione più ampia per gli attacchi ai cinque"
+            }
+          ]
+        },
+        {
+          "href": "altri-attacchi-ai-bordi/",
+          "title": "Altri attacchi ai bordi",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Altri attacchi ai bordi"
+            },
+            {
+              "href": "attacchi-alle-caselle-c.php",
+              "title": "Attacchi alle caselle C isolate"
+            },
+            {
+              "href": "attacchi-ai-4-piu-1.php",
+              "title": "Attacchi ai quattro più uno"
+            }
+          ]
+        },
+        {
+          "href": "finale/",
+          "title": "Il finale",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Il finale"
+            },
+            {
+              "href": "ultime-due-mosse.php",
+              "title": "Il finale perfetto con due caselle vuote"
+            },
+            {
+              "href": "tre-o-piu-mosse.php",
+              "title": "Il finale perfetto con tre o più caselle vuote"
+            },
+            {
+              "href": "parita.php",
+              "title": "La parità nel finale"
+            },
+            {
+              "href": "contare.php",
+              "title": "Contare l'indispensabile"
+            },
+            {
+              "href": "sequenze-indipendenti.php",
+              "title": "Sequenze indipendenti e non indipendenti"
+            },
+            {
+              "href": "complessita-othello.php",
+              "title": "La complessità dell'Othello"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "avanzato",
+      "title": "Livello avanzato",
+      "href": "avanzato/",
+      "chapters": [
+        {
+          "href": "influenza/",
+          "title": "L'influenza",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "L'influenza"
+            },
+            {
+              "href": "definizione-influenza.php",
+              "title": "La definizione di influenza"
+            },
+            {
+              "href": "area-di-gioco.php",
+              "title": "Area di gioco e area di appoggio"
+            },
+            {
+              "href": "riempire-area-di-gioco.php",
+              "title": "Esaurire l'area di gioco"
+            },
+            {
+              "href": "influenza-e-bordi.php",
+              "title": "Influenza e bordi"
+            }
+          ]
+        },
+        {
+          "href": "stoner-trap/",
+          "title": "Le Stoner trap",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Le Stoner trap"
+            },
+            {
+              "href": "stoner-trap-c.php",
+              "title": "Le Stoner trap di tipo C"
+            },
+            {
+              "href": "stoner-trap-a.php",
+              "title": "Le Stoner trap di tipo A"
+            },
+            {
+              "href": "altre-stoner-trap.php",
+              "title": "Altri esempi di Stoner trap"
+            },
+            {
+              "href": "stoner-rare.php",
+              "title": "Le Stoner trap sono rare?"
+            }
+          ]
+        },
+        {
+          "href": "controllo-di-linee/",
+          "title": "Controllo di linee",
+          "pages": [
+            {
+              "href": "chapter.php",
+              "title": "Controllo di linee"
+            },
+            {
+              "href": "diagonali.php",
+              "title": "Controllo delle diagonali principali"
+            },
+            {
+              "href": "controbordo.php",
+              "title": "Controllo dei controbordi"
+            },
+            {
+              "href": "diagonale-c.php",
+              "title": "Controllo delle diagonali C"
+            },
+            {
+              "href": "mini-linea.php",
+              "title": "Controllo delle mini-linee"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

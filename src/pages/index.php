@@ -264,7 +264,9 @@
 
         let level = localStorage.getItem('livello') || "base";
         let index = levels.findIndex(item => item.level === level);
-        showLevel(index);
+        if (current !== index) {
+            showLevel(index);
+        }
     });
 </script>
 

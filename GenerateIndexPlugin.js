@@ -33,41 +33,67 @@ class GenerateIndexPlugin {
     composePage(htmlContent) {
         let index = '';
 
+        index += `
+        <div class="d-flex align-items-center justify-content-between bg-success text-white rounded py-2 px-3">
+            <!-- Pulsante precedente -->
+            <button class="btn btn-success" id="prevBtn">
+                <i class="bi bi-chevron-left fs-3 text-white"></i>
+            </button>
+            <!-- Titolo livello attivo -->
+            <div id="levelTitle" class="fs-3 fw-bold text-center flex-grow-1">
+                🎯 Base
+            </div>
+
+            <!-- Pulsante successivo -->
+            <button class="btn btn-success" id="nextBtn">
+                <i class="bi bi-chevron-right fs-3 text-white"></i>
+            </button>
+        </div>`;
+
+        index += `
+        <div class="tab-content" id="pills-tabContent">`;
+
+        let isActive = 'active';
         this.json.sections.forEach(section => {
 
             index += `
-            <h1><a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}section.php">${section.title}</a></h1>`;
+            <div class="tab-pane fade show ${isActive}" id="pills-${section.id}" role="tabpanel" aria-labelledby="pills-${section.id}-tab" tabindex="0">
+            <div id="index-${section.id}" class="row">`;
 
             section.chapters.forEach(chapter => {
                 index += `
-                <div class='col-lg-3 py-3'>
-                <ul class='nav flex-column'>
-                <li class='nav-item'>
-                <h4>
-                <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}chapter.php">${chapter.title}</a>
-                </h4>
-                <ul>`;
+                <div class='col-lg-3 pt-3'>
+                    <div class="card shadow-sm h-100" style="background: #f8f9fa;">
+                        <div class="card-body d-flex flex-column">
+                            <h4>${chapter.title}</h4>`;
 
-                if (chapter.pages != null) {
-                    chapter.pages.forEach(page => {
-                        index += `
-                    <li class='nav-item'>
-                    <a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}${page.href}">${page.title}</a>
-                    </li>`;
-                    });
-                }
+                            if (chapter.pages != null) {
+                                chapter.pages.forEach(page => {
+                                    index += `
+                                    <p class="card-text mb-0">
+                                        <a class="d-flex align-items-start link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${section.href}${chapter.href}${page.href}">
+                                            <i class="bi text-success"></i>
+                                            <span class="ms-2">${page.title}</span>
+                                        </a>
+                                    </p>`;
+                                });
+                            }
 
-                index += `
-                </ul>
-                </li>
-                </ul>
+                            index += `
+                        </div>
+                    </div>
                 </div>`;
             });
 
             index += `
-            <hr>`;
+            </div>
+            </div>`;
 
+            isActive = '';
         });
+
+        index += `
+        </div>`;
 
         return htmlContent.replace("<!-- REPLACE WITH INDEX -->", index);
     }

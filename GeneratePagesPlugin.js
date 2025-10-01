@@ -2,184 +2,97 @@ const fs = require('fs');
 const path = require('path');
 const GatherProcessor = require('./GatherProcessor');
 const BoardProcessor = require('./BoardProcessor');
+const TitleProcessor = require("./TitleProcessor");
 
 class GeneratePagesPlugin {
 
     constructor(options) {
         this.options = options;
+        this.titleProcessor = new TitleProcessor();
         this.gatherProcessor = new GatherProcessor();
         this.boardProcessor = new BoardProcessor();
-    }
-
-    // Funzione ricorsiva per leggere i file HTML dalle directory
-    readFilesRecursively(dir, fileList = [], addFiles = true) {
-        const files = fs.readdirSync(dir);
-        files.forEach(file => {
-            const filePath = path.join(dir, file);
-            const stat = fs.statSync(filePath);
-            if (stat.isDirectory()) {
-                this.readFilesRecursively(filePath, fileList);
-            } else if (addFiles && stat.isFile() && path.extname(file) === '.php') {
-                fileList.push(filePath);
-            }
-        });
-        return fileList;
     }
 
     apply(compiler) {
         compiler.hooks.emit.tapAsync('GeneratePagesPlugin', (compilation, callback) => {
             const { inputDir, outputDir } = this.options;
 
-            // console.log('inputDir: ' + inputDir);
-
             const jsonPath = path.resolve(__dirname, 'src/web/index.json');
             const jsonContent = fs.readFileSync(jsonPath, 'utf8');
             this.json = JSON.parse(jsonContent);
 
-            this.readListOfPages();
+            this.json.sections.forEach(section => {
+                const sectionPath = path.join(inputDir, section.href);
+                section.chapters.forEach(chapter => {
+                    const chapterPath = path.join(sectionPath, chapter.href);
+                    chapter.pages.forEach(page => {
+                        const pagePath = path.join(chapterPath, page.href);
+                        // console.log('page: ' + pagePath);
+                        let html = fs.readFileSync(pagePath, 'utf8');
 
-            // Leggi i file HTML ricorsivamente dal inputDir
-            const files = this.readFilesRecursively(inputDir, [], false);
+                        html = this.titleProcessor.process(html);
+                        html = this.gatherProcessor.process(html);
+                        html = this.boardProcessor.process(html);
 
-            files.forEach(filePath => {
-                const level = countSlashes(filePath) - countSlashes(inputDir) - 1;
-                // console.log('generating: ' + filePath + '; level: ' + level);
+                        // Componi l'HTML completo
+                        html = this.composePage(html, section, chapter, page);
 
-                let html = fs.readFileSync(filePath, 'utf8');
+                        // Determina il percorso del file di output
+                        const relativePath = path.relative(inputDir, pagePath);
+                        const outputFilePath = path.join(outputDir, relativePath);
 
-                html = this.gatherProcessor.process(html);
-                html = this.boardProcessor.process(html);
+                        // Crea le directory necessarie per il file di output
+                        const outputDirPath = path.dirname(outputFilePath);
+                        if (!fs.existsSync(outputDirPath)) {
+                            fs.mkdirSync(outputDirPath, {recursive: true});
+                        }
 
-                // Componi l'HTML completo
-                html = this.composePage(html, filePath, level);
-
-                // Determina il percorso del file di output
-                const relativePath = path.relative(inputDir, filePath);
-                const outputFilePath = path.join(outputDir, relativePath);
-
-                // Crea le directory necessarie per il file di output
-                const outputDirPath = path.dirname(outputFilePath);
-                if (!fs.existsSync(outputDirPath)) {
-                    fs.mkdirSync(outputDirPath, { recursive: true });
-                }
-
-                // Scrivi il file HTML nella outputDir
-                fs.writeFileSync(outputFilePath, html);
-            });
+                        // Scrivi il file HTML nella outputDir
+                        fs.writeFileSync(outputFilePath, html);
+                    })
+                })
+            })
 
             callback(); // Segnala a Webpack che il plugin ha finito
         });
     }
 
-    composeOffcanvas(prepend) {
-        let offcanvas = '';
-        this.json.sections.forEach(section => {
+    composePagination(chapter, page) {
+        let index = chapter.pages.indexOf(page);
 
-            offcanvas += `
-            <h5><a class="link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover" href="${prepend}${section.href}section.php">${section.title}</a></h5>
-            <ul class='nav flex-column'>`;
+        let nextButton = '';
+        if (index + 1 < chapter.pages.length) {
+            nextButton = `
+            <div class="text-center">
+                <a class="btn btn-success shadow mt-1 mb-5" href="${chapter.pages[index + 1].href}">
+                    Lezione successiva: ${chapter.pages[index + 1].title}
+                </a>
+            </div>`;
+        }
+        else {
+            nextButton = `
+            <div class="text-center">
+                <a class="btn btn-success shadow mt-1 mb-5" href="../../">
+                    ⚪⚫ Torna alla home ⚫⚪
+                </a>
+            </div>`;
+        }
 
-            section.chapters.forEach(chapter => {
-                offcanvas += `
-                <li class='nav-item pb-3'>
-                <a class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href="${prepend}${section.href}${chapter.href}chapter.php">${chapter.title}</a>
-                <ul>`;
-
-                if (chapter.pages != null) {
-                    chapter.pages.forEach(page => {
-                        offcanvas += `
-                    <li class='nav-item'>
-                    <a class='link-dark link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover' href="${prepend}${section.href}${chapter.href}${page.href}">${page.title}</a>
-                    </li>`;
-                    });
-                }
-
-                offcanvas += `
-                </ul>
-                </li>`;
-
-            });
-
-            offcanvas += `
-            </ul>`;
-
-        });
-        return offcanvas;
+        return nextButton;
     }
 
+    composePage(htmlContent, section, chapter, page) {
+        let prepend = '../../';
 
-    findThisPage(filePath) {
-        let indexOfThisPage = -1;
-        for (let i = 0; i < this.pages.length; i++) {
-            if (filePath.replace(/\\/g, '/').endsWith(this.pages[i].href)) {
-                indexOfThisPage = i;
-                break;
-            }
-        }
-        return indexOfThisPage;
-    }
+        const h1title = page.title;
+        const title = page.title + " @ Qui Othello";
+        const url = "https://othello.quimatematica.it/" + section.href + chapter.href + page.href;
 
-    composePagination(filePath, prepend, indexOfThisPage) {
-        let before = '';
-        if (indexOfThisPage > 0) {
-            before = `
-            <li class='page-item'>
-            <a class='page-link' aria-label='Previous' href='${prepend}${this.pages[indexOfThisPage-1].href}'>
-            <span class='px-1' aria-hidden='true'>&laquo;</span>
-            <span class='sr-only'>${this.pages[indexOfThisPage-1].title}</span>
-            </a>
-            </li>`;
-        }
+        const description = page.description || "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
 
-        let after = '';
-        if (indexOfThisPage < this.pages.length - 1) {
-            after = `
-            <li class='page-item'>
-            <a class='page-link' aria-label='Previous' href='${prepend}${this.pages[indexOfThisPage+1].href}'>
-            <span class='sr-only'>${this.pages[indexOfThisPage+1].title}</span>
-            <span class='px-1' aria-hidden='true'>&raquo;</span>
-            </a>
-            </li>`;
-        }
+        const keywords = page.keywords || "Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello"
 
-        return `
-        <nav class='my-3'>
-        <ul class='pagination justify-content-center'>${before}
-        <li class='page-item'>
-        <a class='page-link' data-bs-toggle='offcanvas' href='#section-index' role='button' aria-controls='offcanvasExample'>Indice</a>
-        </li>${after}
-        </ul>
-        </nav>`;
-    }
-
-    composePage(htmlContent, filePath, level) {
-        let prepend = '';
-        for (let i = 0; i < level; i++) {
-            prepend += '../';
-        }
-
-        // Trova la pagina nella lista delle pagine caricate da json
-        const indexOfThisPage = this.findThisPage(filePath);
-
-        const title = indexOfThisPage === -1 ? "Corso interattivo di Othello" : this.pages[indexOfThisPage].title + " @ Corso interattivo di Othello";
-        const url = indexOfThisPage === -1 ? "https://othello.quimatematica.it" : "https://othello.quimatematica.it/" + this.pages[indexOfThisPage].href;
-
-        let description = "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
-        if (indexOfThisPage !== -1 && this.pages[indexOfThisPage].description != null) {
-            description = this.pages[indexOfThisPage].description;
-        }
-
-        let keywords = "Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello"
-        if (indexOfThisPage !== -1 && this.pages[indexOfThisPage].keywords != null) {
-            keywords = this.pages[indexOfThisPage].keywords;
-        }
-
-        let offcanvas = '';
-        let pagination = '';
-        if (!filePath.endsWith('quiz.php')) {
-            offcanvas = this.composeOffcanvas(prepend);
-            pagination = this.composePagination(filePath, prepend, indexOfThisPage);
-        }
+        const pagination = this.composePagination(chapter, page);
 
         return `<!DOCTYPE HTML>
 <html lang="it">
@@ -195,7 +108,7 @@ class GeneratePagesPlugin {
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
-    <meta property="og:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta property="og:image" content="https://othello.quimatematica.it/icons/icon-192.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />
@@ -204,7 +117,7 @@ class GeneratePagesPlugin {
     <meta name="twitter:url" content="${url}">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://othello.quimatematica.it/images/banner.jpg">
+    <meta name="twitter:image" content="https://othello.quimatematica.it/icons/icon-192.jpg">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
 	<link rel="canonical" href="${url}">
@@ -213,67 +126,81 @@ class GeneratePagesPlugin {
 	<link rel="stylesheet" href="${prepend}assets/bootstrap-icons/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="${prepend}css/othello.css">
 	<script type="module" src="${prepend}js/tao.js"></script>
+    <style>
+        .navbar {
+            min-height: 64px;
+        }
+
+        .navbar-brand {
+            font-size: 1.75rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
 </head>
 <body>
-    <nav class='navbar navbar-expand-lg bg-primary' data-bs-theme='dark'>
-        <div class='container-xxl'>
-            <a class='navbar-brand h1' href='${prepend}'>Othello: corso interattivo</a>
+    <!-- Header Browser -->
+    <div id="browserHeader" class="d-none">
+    <nav class="navbar" style="background: linear-gradient(135deg, #0f5132, #198754);">
+        <div class="container-xxl d-flex align-items-center">
+            <!-- Logo con icona -->
+            <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="${prepend}">
+                <img src="${prepend}/icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+                Qui Othello
+            </a>
         </div>
     </nav>
-    <div class='offcanvas offcanvas-start' tabindex='-1' id='section-index' aria-labelledby='offcanvasLabel'>
-        <div class='offcanvas-header'>
-            <h5 class='offcanvas-title' id='offcanvasLabel'>Indice</h5>
-            <button type='button' class='btn-close' data-bs-dismiss='offcanvas' aria-label='Chiudi'></button>
-        </div>
-        <div class='offcanvas-body'>${offcanvas}
+    </div>
+    
+    <!-- Header App -->
+    <div id="appHeader" class="d-none">
+        <div class="bg-success text-white d-flex align-items-center p-3">
+            <a class="btn text-white me-3 p-0 fs-1" href="${prepend}"><i class="bi bi-chevron-left"></i></a>
+            <h1 class="h1 mb-0">${h1title}</h1>
         </div>
     </div>
+
 	<div id="othello-content" class="container-xxl mt-4">
         <button id="shareBtn" class="btn btn-light btn-outline-dark share-button">
             <i class="bi bi-share-fill"></i>
         </button>
-${pagination}
+        <h1 class="mb-3 d-none" id="pageTitle">${h1title}</h1>
 ${htmlContent}
 ${pagination}
     </div>
+    <script>
+        function isInStandaloneMode() {
+            return (window.matchMedia('(display-mode: standalone)').matches) ||
+                (window.navigator.standalone === true);
+        }
+    
+        if (isInStandaloneMode()) {
+            // Siamo in app
+            document.getElementById("appHeader").classList.remove("d-none");
+        } else {
+            // Siamo in browser
+            document.getElementById("browserHeader").classList.remove("d-none");
+            document.getElementById("pageTitle").classList.remove("d-none");
+        }
+        
+        // Memorizza la visita della pagina
+        // prendi il pathname della pagina corrente
+        const path = window.location.pathname;
+        // dividi in parti ignorando stringhe vuote
+        const parts = path.split("/").filter(Boolean);
+        // prendi gli ultimi 3 pezzi
+        const last3 = parts.slice(-3);
+        // ricostruisci con lo slash davanti
+        const pagina = last3.join("/");
+        const ora = new Date().toISOString();
+        let visite = JSON.parse(localStorage.getItem('visite')) || [];
+        visite = visite.filter(v => v.pagina !== pagina);
+        visite.push({ pagina, ultimaVisita: ora });
+        localStorage.setItem('visite', JSON.stringify(visite));
+    </script>
 </body>
 </html>`;
     }
 
-    readListOfPages() {
-        this.pages = [];
-        this.json.sections.forEach(section => {
-            this.pages.push(new Page(section.href + 'section.php', section.title, section.description, section.keywords));
-            section.chapters.forEach(chapter => {
-                this.pages.push(new Page(section.href + chapter.href + 'chapter.php', chapter.title, chapter.description, chapter.keywords));
-                if (chapter.pages != null) {
-                    chapter.pages.forEach(page => {
-                        this.pages.push(new Page(section.href + chapter.href + page.href, page.title, page.description, page.keywords));
-                    });
-                }
-            });
-        });
-    }
-}
-
-class Page {
-
-    href;
-    title;
-    description;
-    keywords;
-
-    constructor(href, title, description, keywords) {
-        this.href = href;
-        this.title = title;
-        this.description = description;
-        this.keywords = keywords;
-    }
-
-}
-
-function countSlashes(str) {
-  return str.split('\\').length - 1;
 }
 
 module.exports = GeneratePagesPlugin;

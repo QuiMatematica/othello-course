@@ -25,6 +25,14 @@ jobs:
           npm install
           npx webpack
 
+      - name: Set server dir
+        run: |
+          if [ "${GITHUB_REF}" == "refs/heads/master" ]; then
+            echo "SERVER_DIR=/othello.quimatematica.it/public_html/" >> $GITHUB_ENV
+          else
+            echo "SERVER_DIR=/othello-test.quimatematica.it/public_html/" >> $GITHUB_ENV
+          fi
+
       - name: Upload via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.6
         with:
@@ -32,4 +40,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
-          server-dir: /othello-test.quimatematica.it/public_html/
+          server-dir: ${{ env.SERVER_DIR }}

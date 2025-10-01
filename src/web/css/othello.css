@@ -1,8 +1,19 @@
 :root {
-  /* The size of the squares in the Othello board.  Many other things are
-   * computed relative to this size, which will change in certain screen
-   * layouts and sizes. */
-  --square-size: 2em;
+    /* The size of the squares in the Othello board.  Many other things are
+     * computed relative to this size, which will change in certain screen
+     * layouts and sizes. */
+    --square-size: 2em;
+}
+
+.spezzone {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.6s ease, opacity 0.6s ease;
+}
+
+.spezzone.mostrato {
+    opacity: 1;
 }
 
 .board-card {
@@ -48,105 +59,108 @@
  * The game board.
  * =============== */
 
-.game-board-container{
+.game-board-container {
     width: calc(10 * var(--square-size));
     display: flex;
 }
 
 .gameBoard {
-  /* The game board is an 8x8 grid. */
-  display: grid;
-  grid-template: repeat(10, 1fr) / repeat(10, 1fr);
+    /* The game board is an 8x8 grid. */
+    display: grid;
+    grid-template: repeat(10, 1fr) / repeat(10, 1fr);
 
-  /* The border around the whole board. */
-  border: 0 solid black;
+    /* The border around the whole board. */
+    border: 0 solid black;
 
-  /* The .spot elements will be positioned absolutely within this board. */
-  position: relative;
+    /* The .spot elements will be positioned absolutely within this board. */
+    position: relative;
 }
 
 /* Any container that holds a stone, including a square in the board. */
 .stone-container {
-  width: var(--square-size);
-  height: var(--square-size);
+    width: var(--square-size);
+    height: var(--square-size);
 
-  /* For the score board stones, we need to make sure the size of the container
-   * is properly constrained.  Otherwise, display: inline would make the SVG
-   * inside blow up and escape the width & height above. */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+    /* For the score board stones, we need to make sure the size of the container
+     * is properly constrained.  Otherwise, display: inline would make the SVG
+     * inside blow up and escape the width & height above. */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-  /* The score board stones have text overlayed with absolute positioning. */
-  position: relative;
+    /* The score board stones have text overlayed with absolute positioning. */
+    position: relative;
 }
 
 .square {
-  /* The squares are all green with a black border. */
-  background-color: green;
-  border: 1px solid black;
+    /* The squares are all green with a black border. */
+    background-color: green;
+    border: 1px solid black;
 
-  /* The size of the squares should include the border, or else the overall
-   * board might be too big. */
-  box-sizing: border-box;
+    /* The size of the squares should include the border, or else the overall
+     * board might be too big. */
+    box-sizing: border-box;
 
-  /* Fixes minor positioning weirdness for svg at zoom */
-  line-height: 0;
+    /* Fixes minor positioning weirdness for svg at zoom */
+    line-height: 0;
 }
 
 /* Any container that holds a stone, including a square in the board. */
 .reference-container {
-  width: var(--square-size);
-  height: var(--square-size);
+    width: var(--square-size);
+    height: var(--square-size);
 
-  /* For the score board stones, we need to make sure the size of the container
-   * is properly constrained.  Otherwise, display: inline would make the SVG
-   * inside blow up and escape the width & height above. */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+    /* For the score board stones, we need to make sure the size of the container
+     * is properly constrained.  Otherwise, display: inline would make the SVG
+     * inside blow up and escape the width & height above. */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-  /* The score board stones have text overlayed with absolute positioning. */
-  position: relative;
+    /* The score board stones have text overlayed with absolute positioning. */
+    position: relative;
 }
 
 .boardBorder {
-  border: 0;
+    border: 0;
 
-  /* The size of the squares should include the border, or else the overall
-   * board might be too big. */
-  box-sizing: border-box;
+    /* The size of the squares should include the border, or else the overall
+     * board might be too big. */
+    box-sizing: border-box;
 
-  /* Fixes minor positioning weirdness for svg at zoom */
-  line-height: 0;
+    /* Fixes minor positioning weirdness for svg at zoom */
+    line-height: 0;
 }
 
 .spot {
-  /* A "dot" at the corners of certain parts of the board.  This base class
-   * contains everything but the actual positions. */
-  position: absolute;
-  width: .5em;
-  height: .5em;
-  border-radius: 50%;
-  background-color: black;
+    /* A "dot" at the corners of certain parts of the board.  This base class
+     * contains everything but the actual positions. */
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    background-color: black;
 }
 
 /* The positions of specific spots. */
 #spot-0 {
-  left: calc(var(--square-size) * 3 - .25em);
-  top: calc(var(--square-size) * 3 - .25em);
+    left: calc(var(--square-size) * 3 - .25em);
+    top: calc(var(--square-size) * 3 - .25em);
 }
+
 #spot-1 {
-  left: calc(var(--square-size) * 7 - .25em);
-  top: calc(var(--square-size) * 3 - .25em);
+    left: calc(var(--square-size) * 7 - .25em);
+    top: calc(var(--square-size) * 3 - .25em);
 }
+
 #spot-2 {
-  left: calc(var(--square-size) * 3 - .25em);
-  top: calc(var(--square-size) * 7 - .25em);
+    left: calc(var(--square-size) * 3 - .25em);
+    top: calc(var(--square-size) * 7 - .25em);
 }
+
 #spot-3 {
-  left: calc(var(--square-size) * 7 - .25em);
-  top: calc(var(--square-size) * 7 - .25em);
+    left: calc(var(--square-size) * 7 - .25em);
+    top: calc(var(--square-size) * 7 - .25em);
 }
 
 /* ======================
@@ -154,109 +168,110 @@
  * ====================== */
 
 svg {
-  /* The SVG should scale according to its container. */
-  width: 100%;
-  height: 100%;
+    /* The SVG should scale according to its container. */
+    width: 100%;
+    height: 100%;
 }
 
 /* The circle within the SVG. */
 .stone {
-  /* When we use transform to animate it, do it relative to the center. */
-  transform-origin: 50% 50%;
+    /* When we use transform to animate it, do it relative to the center. */
+    transform-origin: 50% 50%;
 
-  /* Empty by default.  Game board squares all contain an SVG for a stone, but
-   * you just won't see it until we give the container a color class. */
-  fill: none;
-  stroke: none;
-  stroke-width: 1px;  /* In SVG coordinates, not pages coordinates. */
+    /* Empty by default.  Game board squares all contain an SVG for a stone, but
+     * you just won't see it until we give the container a color class. */
+    fill: none;
+    stroke: none;
+    stroke-width: 1px; /* In SVG coordinates, not pages coordinates. */
 }
 
 .black .stone {
-  fill: black;
-  stroke: white;
+    fill: black;
+    stroke: white;
 }
 
 .white .stone {
-  fill: white;
-  stroke: black;
+    fill: white;
+    stroke: black;
 }
 
 /* When we flip a stone, we use the .flip class temporarily to animate the
  * change. There are separate animations for black & white because you can't
  * use CSS filters to change the stroke and fill colors in an SVG. */
 .black.flip .stone {
-  animation: flip-black .5s ease-in-out;
+    animation: flip-black .5s ease-in-out;
 }
+
 .white.flip .stone {
-  animation: flip-white .5s ease-in-out;
+    animation: flip-white .5s ease-in-out;
 }
 
 /* Flip from black to white by shrinking horizontally, then expanding back out
  * to full size.  Fade out the stroke along the way to reduce aliasing. */
 @keyframes flip-white {
-  0% {
-    transform: scaleX(1);
-    fill: black;
-    stroke: white;
-  }
-  50% {
-    transform: scaleX(0);
-    fill: black;
-    stroke: none;
-  }
-  50.001% {
-    transform: scaleX(0);
-    fill: white;
-    stroke: none;
-  }
-  100% {
-    transform: scaleX(1);
-    fill: white;
-    stroke: black;
-  }
+    0% {
+        transform: scaleX(1);
+        fill: black;
+        stroke: white;
+    }
+    50% {
+        transform: scaleX(0);
+        fill: black;
+        stroke: none;
+    }
+    50.001% {
+        transform: scaleX(0);
+        fill: white;
+        stroke: none;
+    }
+    100% {
+        transform: scaleX(1);
+        fill: white;
+        stroke: black;
+    }
 }
 
 /* The same animation as above, but from white to black. */
 @keyframes flip-black {
-  0% {
-    transform: scaleX(1);
-    fill: white;
-    stroke: black;
-  }
-  50% {
-    transform: scaleX(0);
-    fill: white;
-    stroke: none;
-  }
-  50.001% {
-    transform: scaleX(0);
-    fill: black;
-    stroke: none;
-  }
-  100% {
-    transform: scaleX(1);
-    fill: black;
-    stroke: white;
-  }
+    0% {
+        transform: scaleX(1);
+        fill: white;
+        stroke: black;
+    }
+    50% {
+        transform: scaleX(0);
+        fill: white;
+        stroke: none;
+    }
+    50.001% {
+        transform: scaleX(0);
+        fill: black;
+        stroke: none;
+    }
+    100% {
+        transform: scaleX(1);
+        fill: black;
+        stroke: white;
+    }
 }
 
 .cross-line {
-  display: none;
-  stroke-width: 4;
-  stroke-linecap: round;
+    display: none;
+    stroke-width: 4;
+    stroke-linecap: round;
 }
 
 .last .cross-line {
-  display: block;
-  stroke: yellow;
+    display: block;
+    stroke: yellow;
 }
 
 .last.white .cross-line {
-  stroke: black;
+    stroke: black;
 }
 
 .last.black .cross-line {
-  stroke: white;
+    stroke: white;
 }
 
 /* ====================================
@@ -268,42 +283,42 @@ svg {
 }
 
 .score-wrapper {
-  /* A wrapper for the score of an individual player. */
-  display: inline-block;
-  width: calc(5 * var(--square-size));
-  text-align: center;
+    /* A wrapper for the score of an individual player. */
+    display: inline-block;
+    width: calc(5 * var(--square-size));
+    text-align: center;
 
-  /* Fixes some weirdness with sizing of text in edge cases */
-  line-height: 0;
+    /* Fixes some weirdness with sizing of text in edge cases */
+    line-height: 0;
 }
 
 /* Any container that holds a stone, including a square in the board. */
 .score-stone-container {
-  width: calc(var(--square-size) / 2);
-  height: calc(var(--square-size) / 2);
+    width: calc(var(--square-size) / 2);
+    height: calc(var(--square-size) / 2);
 
-  /* For the score board stones, we need to make sure the size of the container
-   * is properly constrained.  Otherwise, display: inline would make the SVG
-   * inside blow up and escape the width & height above. */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+    /* For the score board stones, we need to make sure the size of the container
+     * is properly constrained.  Otherwise, display: inline would make the SVG
+     * inside blow up and escape the width & height above. */
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 
-  /* The score board stones have text overlayed with absolute positioning. */
-  position: relative;
+    /* The score board stones have text overlayed with absolute positioning. */
+    position: relative;
 }
 
 .score-text {
-  /* Make sure the score text aligns well with the stone. */
-  display: inline-block;
-  vertical-align: baseline;
-  margin: 0 10px;
+    /* Make sure the score text aligns well with the stone. */
+    display: inline-block;
+    vertical-align: baseline;
+    margin: 0 10px;
 }
 
 /* Class attached to the stone in the score panel of the player whose turn it
  * is. */
 .turn {
-  filter: drop-shadow(-1vmin 1vmin 1vmin blue);
+    filter: drop-shadow(-1vmin 1vmin 1vmin blue);
 }
 
 /* ======================
@@ -311,11 +326,11 @@ svg {
  * ====================== */
 
 .turn-container {
-  width: calc(10 * var(--square-size));
+    width: calc(10 * var(--square-size));
 }
 
 .turn-text {
-  text-align: center;
+    text-align: center;
 }
 
 /* ======================

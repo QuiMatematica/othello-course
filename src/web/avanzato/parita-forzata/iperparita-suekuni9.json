@@ -1,0 +1,28 @@
+{
+  "position": [
+    "###OOOO#",
+    "OOOOOOO#",
+    "#OO###O#",
+    "##OO#O##",
+    "####O###",
+    "###O#OO#",
+    "#-##OOO#",
+    "--######"
+  ],
+  "turn": "white",
+  "comment": "Qual è la mossa vincente del bianco? Istintivamente verrebbe da prendere tutto il bordo ovest giocando in <b>A8</b>. Ma cosa succede se lo fa?",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Dopo questa mossa si forma una regione di iper parità: solo il bianco può giocare. Il nero passa e guadagna la parità globale."
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco cerca di salvare qualche pedina della colonna <b>B</b>."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero conclude la partita e vince 33 a 31."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--####O#",
+    "#O###OOO",
+    "###OO#OO",
+    "###O##OO",
+    "#O##O#OO",
+    "#O#####O",
+    "#O###OOO",
+    "#OOOOOOO"
+  ],
+  "comment": "Questa posizione è stata raggiunta dopo una partita piuttosto equilibrata. Nessuno dei due giocatori è riuscito a prevalicare sull'albero e nessuno ha dovuto passare. Ci sono solo due caselle libere, quindi tocca al nero. Ma, ahimè, qualunque mossa faccia perde. Tu dove giocheresti?",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il conteggio ci dice che questa mossa è migliore."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco vince 36 a 28."
+    }
+  ]
+}

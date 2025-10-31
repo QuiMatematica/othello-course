@@ -76,5 +76,9 @@ dalla parità locale e conservare così la parità globale.</p>
 <p>Ma se il nero riesce a creare una regione di iper parità, il bianco è interessato a chiudere tale regione
 il prima possibile. Perderà certamente la parità locale, ma almeno mantiene la parità globale.</p>
 
-<board data-type="show" data-label="iperparita4" data-file="iperparita4.json"
+<gather>
+    <board data-type="show" data-label="iperparita4wrong" data-file="iperparita4.json"
        data-caption="Rispondere alll'iper parità."></board>
+    <board data-type="show" data-label="iperparita4" data-file="iperparita4.json"
+       data-caption="Rispondere alll'iper parità."></board>
+</gather>

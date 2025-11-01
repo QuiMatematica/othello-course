@@ -23,7 +23,7 @@ la vittoria.</p>
 </div>
 
 <p>Entrambi i giocatori hanno interesse a formare una regione di iper parità: costringendo l'avversario a giocarci
-    per prima hanno la sicurezza di ottenere almeno la parità locale.</p>
+    per primo si ha la sicurezza di ottenere almeno la <b>parità locale</b>.</p>
 
 <p>Tuttavia il bianco ha la parità globale, quindi tra i due giocatori ha meno interesse a formare regioni di
     iper parità.</p>
@@ -32,8 +32,8 @@ la vittoria.</p>
     formare regioni di iper parità. E, se ci riesce, queste gli possono garantire sia la parità locale sia quella
     globale.</p>
 
-<p>Ecco perché in tutti gli esempi che seguono vedremo protagonista il nero, che cercherà di formare delle regioni
-di iper parità e cercherà di sfruttarle per ottenere la parità globale.</p>
+<p>Ecco perché, in tutti gli esempi che seguono, vedremo protagonista il nero, che cercherà di formare delle regioni
+    di iper parità e cercherà di sfruttarle per ottenere la <b>parità globale</b>.</p>
 
 <p>Dal canto suo il bianco dovrà cercare di non concedere regioni di parità al suo avversario. Stiamo quindi
 considerando quegli elementi di gioco in cui i due giocatori devono agire diversamente.</p>
@@ -74,11 +74,21 @@ a non formarne. L'autogol è sempre dietro l'angolo.</p>
 dalla parità locale e conservare così la parità globale.</p>
 
 <p>Ma se il nero riesce a creare una regione di iper parità, il bianco è interessato a chiudere tale regione
-il prima possibile. Perderà certamente la parità locale, ma almeno mantiene la parità globale.</p>
+il prima possibile. La parità locale è comunque persa, ma almeno il bianco mantiene la parità globale.
+Confronta le sequenza dei diagrammi
+<span data-board-ref="iperparita4wrong"></span> e <span data-board-ref="iperparita4"></span>.</p>
 
 <gather>
-    <board data-type="show" data-label="iperparita4wrong" data-file="iperparita4.json"
+    <board data-type="show" data-label="iperparita4wrong" data-file="iperparita4wrong.json"
        data-caption="Rispondere alll'iper parità."></board>
     <board data-type="show" data-label="iperparita4" data-file="iperparita4.json"
        data-caption="Rispondere alll'iper parità."></board>
 </gather>
+
+<h2>Tocca a te</h2>
+
+<p>La posizione del diagramma <span data-board-ref="iperparita-es2"></span> è tratta da una partita giocata su
+    eOthello tra MK1973 (nero) e ClaudioPadova (bianco).</p>
+
+<board data-type="quiz" data-label="iperparita-es2" data-file="iperparita-es2.json"
+       data-caption="Il bianco muove e vince."></board>

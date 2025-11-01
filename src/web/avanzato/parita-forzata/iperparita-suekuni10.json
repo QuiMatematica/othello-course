@@ -17,7 +17,7 @@
     },
     {
       "move": "A1",
-      "comment": "Il bianco è costretto a prendere l'angolo A1. E, nel farlo, gira la pedina E5. Ora guarda la diagonale C <b>C7-H2</b>."
+      "comment": "Il bianco è costretto a prendere l'angolo <b>A1</b>. E, nel farlo, gira la pedina <b>E5</b>. Ora guarda la diagonale C <b>C7-H2</b>."
     },
     {
       "move": "B8",

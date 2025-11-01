@@ -87,6 +87,12 @@ Confronta le sequenza dei diagrammi
 
 <h2>Tocca a te</h2>
 
+<p>Partiamo da un quiz semplice: diagramma <span data-board-ref="iperparita-es1"></span>.
+Il nero ha due mosse: quale gli permette di vincere?</p>
+
+<board data-type="quiz" data-label="iperparita-es1" data-file="iperparita-es1.json"
+       data-caption="Il bianco muove e vince."></board>
+
 <p>La posizione del diagramma <span data-board-ref="iperparita-es2"></span> è tratta da una partita giocata su
     eOthello tra MK1973 (nero) e ClaudioPadova (bianco).</p>
 

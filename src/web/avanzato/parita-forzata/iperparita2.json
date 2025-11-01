@@ -9,7 +9,7 @@
     "#O###OOO",
     "#OOOOOOO"
   ],
-  "comment": "Rispetto alla precedente, in questa posizione è cambiata solo una pedina: <b>B2</b>. Ora, il nero non ha mosse, quindi è costretto a passare. Ma questo è un vantaggio.",
+  "comment": "Rispetto alla posizione precedente, in questa è cambiato il colore della pedina <b>B2</b>. A causa di questo il nero non ha mosse, quindi è costretto a passare. Ma è un vantaggio!",
   "moves": [
     {
       "move": "A1",

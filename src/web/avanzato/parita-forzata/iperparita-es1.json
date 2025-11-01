@@ -13,7 +13,13 @@
   "moves": [
     {
       "move": "H2",
-      "comment": "Il nero aveva due mosse, ma questa <b>H2</b> crea una regione di iper parità, che garantisce almeno la parità locale al nero."
+      "comment": "Il nero aveva due mosse, ma questa <b>H2</b> crea una regione di iper parità, che garantisce almeno la parità locale al nero.",
+      "errors": [
+        {
+          "move": "G1",
+          "comment": "Dopo <b>G1</b> il bianco può giocare nella regione dispari a sud e mantenere la parità globale."
+        }
+      ]
     },
     {
       "move": "H1",
@@ -29,7 +35,13 @@
     },
     {
       "move": "B8",
-      "comment": "La migliore tra le due."
+      "comment": "La migliore tra le due.",
+      "errors": [
+        {
+          "move": "A8",
+          "comment": "Anche questa mossa è vincente, ma l'altra era migliore."
+        }
+      ]
     },
     {
       "move": "A8",

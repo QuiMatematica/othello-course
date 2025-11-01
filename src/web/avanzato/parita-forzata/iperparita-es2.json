@@ -14,7 +14,25 @@
   "moves": [
     {
       "move": "D8",
-      "comment": "Corretta. Il nero aveva ben due regioni di iper parità. Con questa mossa il nero ottiene l'accesso alla regione a sud-ovest, quindi la regione ha perso il suo valore."
+      "comment": "Corretta. Il nero aveva ben due regioni di iper parità. Con questa mossa il nero ottiene l'accesso alla regione a sud-ovest, quindi la regione ha perso il suo valore.",
+      "errors": [
+        {
+          "move": "H1",
+          "comment": "Chiudere subito l'iper parità a nord est è una buona idea, ma ce n'è una migliore."
+        },
+        {
+          "move": "A8",
+          "comment": "Chiudere subito l'iper parità a sud ovest è una buona idea, ma puoi fare di meglio. Perché concedere la parità locale se la puoi riguadagnare?"
+        },
+        {
+          "move": "G1",
+          "comment": "Se proprio vuoi chiudere una regione di iper parità almeno cerca di ottenere qualcosa di interessante in cambio!"
+        },
+        {
+          "move": "A7",
+          "comment": "Perdere tutto il bordo ovest per chiudere subito la regione di iper parità non mi sembra una buona idea!"
+        }
+      ]
     },
     {
       "move": "E8",

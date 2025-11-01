@@ -1,5 +1,5 @@
 <p>Confronta le situazioni dei diagrammi <span data-board-ref="iperparita1"></span> e <span data-board-ref="iperparita2"></span>.
-    Fai attenzione: tra i due diagrammi cambia solo il colore di una pedina: quella in <b>B2</b>.</p>
+    Fai attenzione: tra i due diagrammi cambia il colore della pedina <b>B2</b>.</p>
 
 <gather>
     <board data-type="show" data-label="iperparita1" data-file="iperparita1.json"
@@ -8,34 +8,35 @@
        data-caption="Il nero passa... e vince."></board>
 </gather>
 
-<p>Cambiando il colore della pedina <b>B2</b>, il nero non ha mosse legali nella regione chiusa rimasta. E, dal
-momento che sono rimaste libere solo quelle due caselle, è costretto a passare. In questo modo
-guadagna la parità globale: il diritto di giocare l'ultima mossa che, in questo caso, gli permette di assicurarsi
-la vittoria.</p>
+<p>Nel diagramma <span data-board-ref="iperparita2"></span> il nero non ha mosse legali nella regione rimasta.
+    Ed è costretto a passare. In questo modo
+guadagna la <b>parità globale</b>: il diritto di giocare l'ultima mossa.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
         <p class="card-text">Chiamiamo <b>iper parità</b> (<i>hyper parity</i> in inglese)
-            una situazione in cui è presente una regione chiusa pari in cui uno dei due colori non ha mosse
+            una situazione in cui è presente una regione chiusa pari in cui uno dei due giocatori non ha mosse
             legali.</p>
 	</div>
 </div>
 
+<p>In questa pagina ci concentriamo su regioni di iper parità <b>di due caselle</b>. Rimando la trattazione di quelle
+di quattro (o più) caselle alla pagina successiva.</p>
+
 <p>Entrambi i giocatori hanno interesse a formare una regione di iper parità: costringendo l'avversario a giocarci
-    per primo si ha la sicurezza di ottenere almeno la <b>parità locale</b>.</p>
+    per primo si ha la sicurezza di ottenere la <b>parità locale</b>.</p>
 
 <p>Tuttavia il bianco ha la parità globale, quindi tra i due giocatori ha meno interesse a formare regioni di
     iper parità.</p>
 
-<p>Invece il nero, che si trova in svantaggio proprio al fatto che gioca le mosse dispari, ha tutto l'interesse a
-    formare regioni di iper parità. E, se ci riesce, queste gli possono garantire sia la parità locale sia quella
-    globale.</p>
+<p>Invece il nero, che gioca le mosse dispari, ha tutto l'interesse a
+    formare una regione di iper parità. Sicuramente ottiene la parità locale. Inoltre se il bianco non agisce prontamente,
+    può ottenere anche la <b>parità globale</b>, come nell'esempio iniziale.</p>
 
-<p>Ecco perché, in tutti gli esempi che seguono, vedremo protagonista il nero, che cercherà di formare delle regioni
-    di iper parità e cercherà di sfruttarle per ottenere la <b>parità globale</b>.</p>
+<p>Ecco perché, in tutti gli esempi che seguono, vedremo protagonista il nero.</p>
 
-<p>Dal canto suo il bianco dovrà cercare di non concedere regioni di parità al suo avversario. Stiamo quindi
+<p>Dal canto suo il bianco dovrà cercare di non concedere regioni di iper parità al suo avversario. Stiamo quindi
 considerando quegli elementi di gioco in cui i due giocatori devono agire diversamente.</p>
 
 <h2>Ottenere l'iper parità: primo esempio</h2>
@@ -45,7 +46,7 @@ considerando quegli elementi di gioco in cui i due giocatori devono agire divers
 
 <h2>Ottenere l'iper parità: secondo esempio</h2>
 
-<p>L'esempio del diagramma <span data-board-ref="iperparita-suekuni10"></span> è tratto
+<p>Il diagramma <span data-board-ref="iperparita-suekuni10"></span> è tratto
 dalla master class di Makoto Suekuni
 <a href="https://www.youtube.com/watch?v=adk3sTpatQ8" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>.</p>
 

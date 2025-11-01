@@ -1,0 +1,31 @@
+{
+  "position": [
+    "#--###O#",
+    "#OOOOOO-",
+    "#OOOO#O-",
+    "###O##OO",
+    "####O##O",
+    "###OO#OO",
+    "#OOOOOOO",
+    "OOOOOOO#"
+  ],
+  "comment": "Rimangono due regione pari e tocca al nero. Ma questi ha la possibilità di creare una regione di iper parità.",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Girando tutte le pedine della riga <b>2</b>, il nero non ha più mosse legali nella regione chiusa a nord-ovest: ha ottenuto la sua regione di iper parità.<br>Il bianco ha perso la parità locale in quella stessa regione. Il computo del finale perfetto ci dice che le tre mosse sono equivalenti."
+    },
+    {
+      "move": "H3",
+      "comment": "Allora diamo soddisfazione al nero e lasciamo che il bianco chiuda, per prima cosa, la regione ad est. Ora però il nero passa, quindi tocca di nuovo al bianco."
+    },
+    {
+      "move": "B1",
+      "comment": "Le due mosse erano equivalenti."
+    },
+    {
+      "move": "C1",
+      "comment": "Il nero chiude la regione ad ovest e vince."
+    }
+  ]
+}

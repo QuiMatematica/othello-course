@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--####O#",
+    "#####OOO",
+    "###OO#OO",
+    "###O##OO",
+    "#O##O#OO",
+    "#O#####O",
+    "#O###OOO",
+    "#OOOOOOO"
+  ],
+  "comment": "Rispetto alla posizione precedente, in questa è cambiato il colore della pedina <b>B2</b>. A causa di questo il nero non ha mosse, quindi è costretto a passare. Ma è un vantaggio!",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il conteggio ci dice che questa mossa è migliore."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero vince 34 a 30."
+    }
+  ]
+}

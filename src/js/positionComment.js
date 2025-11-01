@@ -9,7 +9,7 @@ export default class PositionComment {
         this.div.classList.add('p-1');
         this.div.classList.add('overflow-auto');
         this.div.classList.add('bg-white');
-        this.div.style.height = '125px';
+        this.div.style.height = 'calc(1.5em * 7)';
         container.appendChild(this.div)
     }
 

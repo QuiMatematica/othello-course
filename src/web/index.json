@@ -455,6 +455,10 @@
             {
               "href": "aperture-bianco.php",
               "title": "Aperture con il bianco"
+            },
+            {
+              "href": "aperture-nero.php",
+              "title": "Aperture con il nero"
             }
           ]
         }

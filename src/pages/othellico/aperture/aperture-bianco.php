@@ -5,6 +5,7 @@
 <gather>
     <board data-type="quiz" data-label="mucca-1" data-file="bianco-mucca-1.json"></board>
     <board data-type="quiz" data-label="mucca-2" data-file="bianco-mucca-2.json"></board>
+    <board data-type="quiz" data-label="mucca-3" data-file="bianco-mucca-3.json"></board>
 </gather>
 
 <h2>Bufalo</h2>

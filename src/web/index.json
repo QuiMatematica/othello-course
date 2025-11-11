@@ -442,6 +442,27 @@
           ]
         }
       ]
+    },
+    {
+      "id": "othellico",
+      "title": "Othellico",
+      "href": "othellico/",
+      "chapters": [
+        {
+          "href": "aperture/",
+          "title": "Aperture",
+          "pages": [
+            {
+              "href": "aperture-bianco.php",
+              "title": "Aperture con il bianco"
+            },
+            {
+              "href": "aperture-nero.php",
+              "title": "Aperture con il nero"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

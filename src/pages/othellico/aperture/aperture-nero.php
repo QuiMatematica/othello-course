@@ -12,5 +12,6 @@
 
 <gather>
     <board data-type="quiz" data-label="heath-1" data-file="nero-heath-1.json"></board>
+    <board data-type="quiz" data-label="heath-2" data-file="nero-heath-2.json"></board>
     <board data-type="quiz" data-label="heath-camino-1" data-file="nero-heath-camino-1.json"></board>
 </gather>

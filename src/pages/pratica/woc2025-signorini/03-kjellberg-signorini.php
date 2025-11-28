@@ -29,7 +29,7 @@
     </div>
 
     <div>
-    <img src="Turno 03.jpg" alt="Foto della partita" class="img-fluid rounded" />
+    <img src="Turno03.jpg" alt="Foto della partita" class="img-fluid rounded" />
     <div class="text-muted small">Foto: <i>Chu Chee Chin</i></div>
     </div>
 

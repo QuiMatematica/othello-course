@@ -1,0 +1,69 @@
+{
+  "position": [
+    "--OOOO--",
+    "O-#OOO-O",
+    "OO##OOOO",
+    "OOOO#O#O",
+    "OOOO#O#O",
+    "-OOOO#OO",
+    "--O##O--",
+    "-OOOOO--"
+  ],
+  "moves": [
+    {
+      "move": "A6",
+      "comment": "Esatto. Questa è la mossa corretta. Ma è solo propedeutica alla vera mossa vincente, che è la prossima. Saprai trovarla?"
+    },
+    {
+      "move": "A7",
+      "comment": "La risposta è obbligata. E adesso?"
+    },
+    {
+      "move": "B2",
+      "comment": "Esattamente! La mossa in <b>A6</b> ti serviva per avere accesso a questa regione dispari. E visto che a nord-est il bianco non può giocare, il nero ha ottenuto la parità. E la vittoria.<br>Adesso è più facile. Prova a completare con la sequenza perfetta."
+    },
+    {
+      "move": "A1",
+      "comment": "Salviamo almeno il bordo ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Bravo: hai chiuso la regione dispari."
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8",
+      "comment": "Giusta!"
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "G2",
+      "comment": "Bravissimo. Tutte le mosse erano vincenti, ma questa era la migliore."
+    },
+    {
+      "move": "G1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Ottimo! Tocca di nuovo a te. Qual è la migliore?"
+    },
+    {
+      "move": "G8",
+      "comment": "Bravissimo!"
+    },
+    {
+      "move": "H8",
+      "comment": "La meno peggio delle due."
+    },
+    {
+      "move": "H7",
+      "comment": "Hai vinto con la sequenza perfetta. Bravissimo."
+    }
+  ]
+}

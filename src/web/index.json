@@ -444,6 +444,23 @@
       ]
     },
     {
+      "id": "pratica",
+      "title": "Pratica",
+      "href": "pratica/",
+      "chapters": [
+        {
+          "href": "woc2025-signorini/",
+          "title": "WOC 2025 - Partite di Claudio Signorini",
+          "pages": [
+            {
+              "href": "03-kjellberg-signorini.php",
+              "title": "WOC 2025, Turno 3: Kjellberg - Signorini"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "othellico",
       "title": "Othellico",
       "href": "othellico/",

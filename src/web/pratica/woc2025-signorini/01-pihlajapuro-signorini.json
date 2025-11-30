@@ -1,0 +1,43 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C3",
+      "comment": "Apertura diagonale"
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "F4",
+      "comment": "Apertura Mucca"
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E6"
+    },
+    {
+      "move": "B5",
+      "comment": "Apertura Sinking Boat"
+    },
+    {
+      "move": "C6",
+      "comment": "Risposta tipica a questa apertura."
+    },
+    {
+      "move": "G4",
+      "comment": "Imposto un muro contro muro, tipico delle aperture di questa famiglia."
+    },
+    {
+      "move": "G3",
+      "comment": "Mossa d'attesa abbastanza comune. La risposta del bianco è piuttosto scontata."
+    }
+  ]
+}

@@ -12,7 +12,7 @@
         <div class="p-3 bg-dark bg-opacity-25 rounded">
           <div class="d-flex justify-content-between">
               <h5 class="fw-bold">⚫ Signorini Claudio <img src="https://flagcdn.com/24x18/it.png" alt="Italia"></h5>
-              <h5 class="fw-bold">12</h5>
+              <h5 class="fw-bold">42</h5>
           </div>
         </div>
       </div>
@@ -21,15 +21,15 @@
       <div class="col-12 col-md-6">
         <div class="p-3 bg-dark bg-opacity-25 rounded">
           <div class="d-flex justify-content-between">
-              <h5 class="fw-bold">⚪ Kurita Seiya <img src="https://flagcdn.com/24x18/jp.png" alt="Giappone"></h5>
-             <h5 class="fw-bold">52</h5>
+              <h5 class="fw-bold">⚪ Perel'man Andrey <img src="https://flagcdn.com/24x18/ru.png" alt="Russia"></h5>
+             <h5 class="fw-bold">22</h5>
         </div>
       </div>
 
     </div>
 
     <div>
-    <img src="Turno02.jpg" alt="Foto della partita" class="img-fluid rounded" />
+    <img src="Turno08.jpg" alt="Foto della partita" class="img-fluid rounded" />
     <div class="text-muted small">Foto: <i>Chu Chee Chin</i></div>
     </div>
 

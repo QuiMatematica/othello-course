@@ -12,7 +12,7 @@
         <div class="p-3 bg-dark bg-opacity-25 rounded">
           <div class="d-flex justify-content-between">
               <h5 class="fw-bold">⚫ Signorini Claudio <img src="https://flagcdn.com/24x18/it.png" alt="Italia"></h5>
-              <h5 class="fw-bold">12</h5>
+              <h5 class="fw-bold">38</h5>
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
         <div class="p-3 bg-dark bg-opacity-25 rounded">
           <div class="d-flex justify-content-between">
               <h5 class="fw-bold">⚪ Qvist Jessen Claus <img src="https://flagcdn.com/24x18/dk.png" alt="Danimarca"></h5>
-             <h5 class="fw-bold">52</h5>
+             <h5 class="fw-bold">26</h5>
         </div>
       </div>
 

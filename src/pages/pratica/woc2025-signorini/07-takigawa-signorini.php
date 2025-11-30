@@ -28,11 +28,6 @@
 
     </div>
 
-    <div>
-    <img src="Turno07.jpg" alt="Foto della partita" class="img-fluid rounded" />
-    <div class="text-muted small">Foto: <i>Chu Chee Chin</i></div>
-    </div>
-
     <!-- Note opzionali -->
     <div class="mt-4">
       <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>

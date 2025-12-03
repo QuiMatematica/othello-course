@@ -28,9 +28,9 @@ jobs:
       - name: Set server dir
         run: |
           if [ "${GITHUB_REF}" == "refs/heads/master" ]; then
-            echo "SERVER_DIR=/othello.quimatematica.it/public_html/" >> $GITHUB_ENV
+            echo "SERVER_DIR=/quiothello.it/public_html/" >> $GITHUB_ENV
           else
-            echo "SERVER_DIR=/othello-test.quimatematica.it/public_html/" >> $GITHUB_ENV
+            echo "SERVER_DIR=/test.quiothello.it/public_html/" >> $GITHUB_ENV
           fi
 
       - name: Upload via FTP

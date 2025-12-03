@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.othello\.quimatematica\.it$ [NC]
-RewriteRule ^(.*)$ https://othello.quimatematica.it/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.quiothello\.it$ [NC]
+RewriteRule ^(.*)$ https://quiothello.it/$1 [R=301,L]
 
 # Imposta gli header di scadenza a "passato"
 <IfModule mod_expires.c>

@@ -98,7 +98,7 @@ class GeneratePagesPlugin {
 <html lang="it">
 <head>
     <?php
-        if ($_SERVER['HTTP_HOST'] == 'othello.quimatematica.it') {
+        if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
             include '${prepend}google-tag.php';
         }
     ?>

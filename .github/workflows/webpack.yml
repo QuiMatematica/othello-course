@@ -3,6 +3,7 @@ name: NodeJS with Webpack
 on:
   push:
     branches: [ "master", "develop" ]
+  workflow_dispatch:
 
 jobs:
   build:

@@ -453,8 +453,56 @@
           "title": "WOC 2025 - Partite di Claudio Signorini",
           "pages": [
             {
+              "href": "01-pihlajapuro-signorini.php",
+              "title": "WOC 2025, Turno 1: Pihlajapuro - Signorini"
+            },
+            {
+              "href": "02-signorini-kurita.php",
+              "title": "WOC 2025, Turno 2: Signorini - Kurita"
+            },
+            {
               "href": "03-kjellberg-signorini.php",
               "title": "WOC 2025, Turno 3: Kjellberg - Signorini"
+            },
+            {
+              "href": "04-signorini-gornert.php",
+              "title": "WOC 2025, Turno 4: Signorini - Gornert"
+            },
+            {
+              "href": "05-aagaardhansen-signorini.php",
+              "title": "WOC 2025, Turno 5: Aagaard-Hansen - Signorini"
+            },
+            {
+              "href": "06-signorini-qvist.php",
+              "title": "WOC 2025, Turno 6: Signorini - Qvist Jessen"
+            },
+            {
+              "href": "07-takigawa-signorini.php",
+              "title": "WOC 2025, Turno 7: Takigawa - Signorini"
+            },
+            {
+              "href": "08-signorini-perelman.php",
+              "title": "WOC 2025, Turno 8: Signorini - Perel'man"
+            },
+            {
+              "href": "09-yang-signorini.php",
+              "title": "WOC 2025, Turno 9: Yang - Signorini"
+            },
+            {
+              "href": "10-signorini-douda.php",
+              "title": "WOC 2025, Turno 10: Signorini - Douda"
+            },
+            {
+              "href": "11-schotte-signorini.php",
+              "title": "WOC 2025, Turno 11: Schotte - Signorini"
+            },
+            {
+              "href": "12-signorini-kobzev.php",
+              "title": "WOC 2025, Turno 12: Signorini - Kobzev"
+            },
+            {
+              "href": "13-leader-signorini.php",
+              "title": "WOC 2025, Turno 13: Leader - Signorini"
             }
           ]
         }

@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "F5",
+      "comment": ""
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "C3",
+      "comment": ""
+    },
+    {
+      "move": "D3",
+      "comment": ""
+    },
+    {
+      "move": "C4",
+      "comment": ""
+    },
+    {
+      "move": "F4",
+      "comment": ""
+    },
+    {
+      "move": "C5",
+      "comment": ""
+    },
+    {
+      "move": "B3",
+      "comment": ""
+    },
+    {
+      "move": "C2",
+      "comment": ""
+    },
+    {
+      "move": "B4",
+      "comment": ""
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "E2",
+      "comment": "Non conoscevo questa possibile risposta del bianco, quindi da qui in poi ero fuori apertura.<br>La risposta, per ora, sembra piuttosto semplice..."
+    },
+    {
+      "move": "D2",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "F3",
+      "comment": "Mossa centrale, che va a puntare alla casella <b>C6</b> e al controllo della diagonale <b>B3-D5</b>."
+    },
+    {
+      "move": "C6",
+      "comment": "Per togliere l'accesso preferisco occupare io stesso la casella, anche a costo di concedere una mossa ideale."
+    },
+    {
+      "move": "B5",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "G4",
+      "comment": "Mossa d'attesa."
+    },
+    {
+      "move": "E1",
+      "comment": "Per non aprire il gioco a sud, il mio avversario decide di concentrare il gioco a nord."
+    },
+    {
+      "move": "C1",
+      "comment": "Questa mossa mi è piaciuta. Il bianco non ha interesse a rispondere in <b>D1</b>. Controllo la diagonale <b>C5-E3</b>. Insomma: mi sentivo quansi in vantaggio."
+    },
+    {
+      "move": "E6",
+      "comment": "Mossa centrale che taglia la diagonale appena controllata. Poco male, tanto non ha vantaggio a giocare in <b>B6</b>."
+    },
+    {
+      "move": "E7",
+      "comment": "Mossa d'attesa sfruttando la colonna <b>E</b> bianca e tenendo <b>D7</b> per una mossa futura."
+    },
+    {
+      "move": "F6",
+      "comment": "Mossa strana che non mi aspettavo. Credo che l'obiettivo fosse sporcare la mossa in <b>D7</b> ottenendo in cambio una mossa ideale in <b>F7</b>.<br>Però... però dove muovere adesso? E qui ahimè ho fatto un errore: ho pensato di giocare in <b>G5</b> senza accorgermi che voltavo anche la pedina <b>F6</b>."
+    },
+    {
+      "move": "G5",
+      "comment": "Ho posizionato la pedina in <b>G5</b>, ho girato in orizzontale e lungo la diagonale verso l'alto e ho premuto sull'orologio. Kurita mi guarda e ripreme l'orologio e mi fa notare che dovevo girare anche <b>F6</b>. Mannaggia no, non me n'ero proprio accorto. Così la mossa fa decisamente schifo. Amen. Andiamo avanti."
+    },
+    {
+      "move": "C7",
+      "comment": "Mossa d'attesa che sfrutta la diagonale <b>D6-F4</b> tutta di pedine nere."
+    },
+    {
+      "move": "D7",
+      "comment": "Chiudo quello spazietto, anche e soprattutto per non concederlo al bianco."
+    },
+    {
+      "move": "F2",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "B6",
+      "comment": "Mossa d'attesa: concedo un accesso al bordo ovest, ma io me ne procuro uno per il bordo sud senza girare tutta la colonna di pedine."
+    },
+    {
+      "move": "A5",
+      "comment": "Kurita accede al bordo ovest.<br>Il bianco non ha altre mosse nella regione e l'ho considerato un vantaggio, soprattutto in vista del consolidamento del bordo nord."
+    },
+    {
+      "move": "C8",
+      "comment": "Primo accesso al bordo sud."
+    },
+    {
+      "move": "F8",
+      "comment": "Accede al bordo ma soprattutto prepara la mossa in <b>G3</b> che non posso evitare."
+    },
+    {
+      "move": "D8",
+      "comment": "Tempo di gioco sul bordo."
+    },
+    {
+      "move": "G3",
+      "comment": "Mossa ideale.<br>A questo punto non ho mosse a sud e ad est. Preferisco non giocare ad ovest. E la situazione è ancora aperta a nord. Riuscirò a prendere un tempo di gioco?"
+    },
+    {
+      "move": "D1",
+      "comment": "Andiamo a saturare a nord."
+    },
+    {
+      "move": "F1",
+      "comment": "Kurita decide di non prendere il quattro ma di concedermi il cinque."
+    },
+    {
+      "move": "G1",
+      "comment": "Prendo questo prezioso tempo di gioco."
+    },
+    {
+      "move": "H6",
+      "comment": "Mossa d'attesa."
+    },
+    {
+      "move": "H3",
+      "comment": "Ok allora, saturiamo il bordo est."
+    },
+    {
+      "move": "H5",
+      "comment": "Continua il braccio di ferro ad est.<br>Ma purtroppo non posso giocare in <b>H4</b> altrimenti perdo un tempo di gioco."
+    },
+    {
+      "move": "G6",
+      "comment": "Mi rassegno a questa mossa debole."
+    },
+    {
+      "move": "H7",
+      "comment": "Giustamente chiude il gioco ad est obbligandomi così a cercare qualcos'altro."
+    },
+    {
+      "move": "B2",
+      "comment": "Trovo una diagonale da controllare. Chissà..."
+    },
+    {
+      "move": "E8",
+      "comment": "Taglia la diagonale e provoca una reazione sul bordo sud.<br>Non ho nessuna possibilità di riprendere il controllo della diagonale, quindi devo cercare di sfruttare alla meno peggio la regione a nord-ovest."
+    },
+    {
+      "move": "A3",
+      "comment": "Gioco questa mossa per rendere pari (contando anche <b>A4</b>) la regione a nord-ovest. Inoltre così facendo ottengo l'accesso a <b>B1</b> dopo la presa dell'angolo.<br>Mi sa che, con lo stesso scopo, <b>A2</b> era migliore."
+    },
+    {
+      "move": "A1",
+      "comment": "Prende l'angolo."
+    },
+    {
+      "move": "B1",
+      "comment": "Per non perdere tempi di gioco devo chiudere questa regione."
+    },
+    {
+      "move": "H1",
+      "comment": "Prende l'altro angolo.<br>E adesso? Il controbordo"
+    },
+    {
+      "move": "G2",
+      "comment": ""
+    },
+    {
+      "move": "A2",
+      "comment": ""
+    },
+    {
+      "move": "A4",
+      "comment": ""
+    },
+    {
+      "move": "H2",
+      "comment": ""
+    },
+    {
+      "move": "A7",
+      "comment": ""
+    },
+    {
+      "move": "F7",
+      "comment": ""
+    },
+    {
+      "move": "G8",
+      "comment": ""
+    },
+    {
+      "move": "H4",
+      "comment": ""
+    },
+    {
+      "move": "B7",
+      "comment": ""
+    },
+    {
+      "move": "A8",
+      "comment": ""
+    },
+    {
+      "move": "G7",
+      "comment": ""
+    },
+    {
+      "move": "A6",
+      "comment": ""
+    },
+    {
+      "move": "B8",
+      "comment": ""
+    },
+    {
+      "move": "H8",
+      "comment": ""
+    }
+  ]
+}

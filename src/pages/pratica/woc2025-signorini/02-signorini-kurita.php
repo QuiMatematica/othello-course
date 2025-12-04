@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Non capita tutti i giorni di giocare contro il campione del mondo!</div>
     </div>
 
   </div>
@@ -43,7 +43,7 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="02-signorini-kurita.json"
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>

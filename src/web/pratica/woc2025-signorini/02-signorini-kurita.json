@@ -18,7 +18,7 @@
     },
     {
       "move": "C4",
-      "comment": ""
+      "comment": "Apertura Tigre."
     },
     {
       "move": "F4",
@@ -34,7 +34,7 @@
     },
     {
       "move": "C2",
-      "comment": ""
+      "comment": "Apertura Rose-Bill."
     },
     {
       "move": "B4",
@@ -62,11 +62,11 @@
     },
     {
       "move": "B5",
-      "comment": "Mossa ideale."
+      "comment": "Mossa ideale.<br>A questo punto siamo in una di quelle situazioni in cui ci sono mosse importanti evidenti. Anche i bordi non sembrano essere interessanti per il nero. Per cui ho optato per una ..."
     },
     {
       "move": "G4",
-      "comment": "Mossa d'attesa."
+      "comment": "Mossa d'attesa. Giro una sola pedina. Aumento un po' il mio muro, ma non concedo mosse interessanti al bianco."
     },
     {
       "move": "E1",
@@ -74,11 +74,11 @@
     },
     {
       "move": "C1",
-      "comment": "Questa mossa mi è piaciuta. Il bianco non ha interesse a rispondere in <b>D1</b>. Controllo la diagonale <b>C5-E3</b>. Insomma: mi sentivo quansi in vantaggio."
+      "comment": "Questa mossa mi è piaciuta. Il bianco non ha interesse a rispondere in <b>D1</b> e controllo la diagonale <b>C5-E3</b>. Insomma: mi sentivo quasi in vantaggio."
     },
     {
       "move": "E6",
-      "comment": "Mossa centrale che taglia la diagonale appena controllata. Poco male, tanto non ha vantaggio a giocare in <b>B6</b>."
+      "comment": "Mossa centrale che taglia la diagonale appena controllata. Poco male, tanto per il bianco è svantaggioso giocare in <b>B6</b>.<br>Di nuovo siamo in una posizione dove non ci sono mosse interessanti. Ma devo muovere lo stesso..."
     },
     {
       "move": "E7",
@@ -106,7 +106,7 @@
     },
     {
       "move": "B6",
-      "comment": "Mossa d'attesa: concedo un accesso al bordo ovest, ma io me ne procuro uno per il bordo sud senza girare tutta la colonna di pedine."
+      "comment": "Cerco di ruotare attorno alla formazione del bianco: concedo un accesso al bordo ovest, ma io me ne procuro uno per il bordo sud senza girare tutta la colonna di pedine."
     },
     {
       "move": "A5",
@@ -150,7 +150,7 @@
     },
     {
       "move": "H5",
-      "comment": "Continua il braccio di ferro ad est.<br>Ma purtroppo non posso giocare in <b>H4</b> altrimenti perdo un tempo di gioco."
+      "comment": "Continua il braccio di ferro ad est.<br>Ma purtroppo non posso giocare in <b>H4</b> altrimenti perderei un tempo di gioco."
     },
     {
       "move": "G6",
@@ -182,51 +182,51 @@
     },
     {
       "move": "H1",
-      "comment": "Prende l'altro angolo.<br>E adesso? Il controbordo"
+      "comment": "Prende l'altro angolo.<br>E adesso? Anche la riga <b>2</b> ormai è persa. E si pone un altro problema: dobbiamo fare in modo che il bianco non possa giocare sia in <b>H2</b> sia in <b>H4</b>. Quindi serve che la pedina <b>F2</b> sia nera."
     },
     {
       "move": "G2",
-      "comment": ""
+      "comment": "Prendo tutto il controbordo e, in particolare, volto la pedina <b>F2</b>."
     },
     {
       "move": "A2",
-      "comment": ""
+      "comment": "Purtroppo il mio avversario ha la sequenza giusta per giocare entrambe le mosse della colonna <b>H</b>. Prima gioca in <b>A2</b>..."
     },
     {
       "move": "A4",
-      "comment": ""
+      "comment": "Io chiudo la regione a nord-ovest."
     },
     {
       "move": "H2",
-      "comment": ""
+      "comment": "... e poi prende tutto il controbordo, in particolare la pedina <b>F2</b>. Come nero non ho accesso in <b>H4</b>."
     },
     {
       "move": "A7",
-      "comment": ""
+      "comment": "A questo punto non posso far altro che andare nella regione (dispari) a sud-ovest e cercare di salvare qualche pedina. E, com'è tipico in situazioni come queste, parto con un taglio in diagonale."
     },
     {
       "move": "F7",
-      "comment": ""
+      "comment": "Kurita ha ancora una mossa sicura a sud-est, e la sfrutta adesso."
     },
     {
       "move": "G8",
-      "comment": ""
+      "comment": "Prendo il bordo sud. Se non altro, se Kurita vuole attaccarmi, deve farlo in uno spazio pari."
     },
     {
       "move": "H4",
-      "comment": ""
+      "comment": "Peccato che Kurita stia giocando con il bianco, quindi ha sempre una regione dispari su cui giocare."
     },
     {
       "move": "B7",
-      "comment": ""
+      "comment": "Cerco di salvare il salvabile. Non voglio cedere subito le pedine del bordo ovest. Non vorrei neanche cedere subito l'angolo <b>H8</b>. Gioco in <b>B7</b>."
     },
     {
       "move": "A8",
-      "comment": ""
+      "comment": "Kurita prende subito l'angolo.<br>Ora, se gioco in <b>A6</b> Kurita prende tutta la colonna <b>B</b>. Se gioco in <b>B8</b> Kurita gioca prima in <b>A6</b> e poi in <b>H8</b>. Cosa rimane?"
     },
     {
       "move": "G7",
-      "comment": ""
+      "comment": "Cedo anche l'angolo <b>H8</b>, nella speranza di salvare qualcosa ad ovest."
     },
     {
       "move": "A6",
@@ -238,7 +238,7 @@
     },
     {
       "move": "H8",
-      "comment": ""
+      "comment": "Andata. Grazie della partita, Kurita-san."
     }
   ]
 }

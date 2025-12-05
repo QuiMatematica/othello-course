@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "E6",
+      "comment": ""
+    },
+    {
+      "move": "F6",
+      "comment": "Apertura diagonale."
+    },
+    {
+      "move": "F5",
+      "comment": ""
+    },
+    {
+      "move": "D6",
+      "comment": ""
+    },
+    {
+      "move": "C3",
+      "comment": "Apertura Bufalo."
+    },
+    {
+      "move": "F4",
+      "comment": ""
+    },
+    {
+      "move": "C6",
+      "comment": ""
+    },
+    {
+      "move": "D3",
+      "comment": ""
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "D2",
+      "comment": ""
+    },
+    {
+      "move": "F3",
+      "comment": ""
+    },
+    {
+      "move": "E2",
+      "comment": ""
+    },
+    {
+      "move": "E1",
+      "comment": ""
+    },
+    {
+      "move": "C1",
+      "comment": ""
+    },
+    {
+      "move": "F1",
+      "comment": ""
+    },
+    {
+      "move": "C5",
+      "comment": ""
+    },
+    {
+      "move": "C4",
+      "comment": ""
+    },
+    {
+      "move": "F2",
+      "comment": ""
+    },
+    {
+      "move": "D7",
+      "comment": "Fino ad ora ho commentato poco perché è una sequenza che conosco a memoria. Questa è stata la prima mossa fuori dalla sequenza."
+    },
+    {
+      "move": "C2",
+      "comment": "Intanto giochiamoci questa mossa ideale."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero va a guadagnare un tempo di gioco sul bordo nord. Però si è sbilanciato."
+    },
+    {
+      "move": "B3",
+      "comment": "A questo punto comincio a girare attorno alla formazione nera. Ma l'idea è anche quella di indurre l'avversario a concedermi l'accesso a <b>D1</b> per poter attaccare il bordo. Per esempio se adesso giocasse <b>B4</b> potrei già attuare una Stoner Trap."
+    },
+    {
+      "move": "A3",
+      "comment": "Credo che il nero si sia accorto del pericolo, per cui opta per questa mossa sul bordo ovest."
+    },
+    {
+      "move": "B4",
+      "comment": "La risposta è facile. Tanto più che minaccia di muovere in <b>E7</b>."
+    },
+    {
+      "move": "A4",
+      "comment": "Il nero chiude la formazione sul bordo. Forse <b>B5</b> era migliore, ma anche così ci può stare."
+    },
+    {
+      "move": "B5",
+      "comment": "Continuo con le mosse centrali e la mira alla casella <b>E7</b>."
+    },
+    {
+      "move": "G3",
+      "comment": "Il nero decide di cambiare gioco e andare verso est. Credo che l'obiettivo fosse avere la risposta in <b>C7</b> alla mia <b>E7</b>. Ma questa mossa non farà certo bene alla sua mobilità.<br>Adesso ho diverse opzioni. Potrei premere sul bordo ovest giocando in <b>A5</b>. Potrei giocare comunque in <b>E7</b> e dopo <b>C7</b> prendere sul bordo in <b>D8</b>. Ma visto che il nero ha aperto il gioco ad est..."
+    },
+    {
+      "move": "G5",
+      "comment": "Gioco anch'io ad est, usando uno solo dei due accessi chi mi ha dato il nero con la mossa precedente."
+    },
+    {
+      "move": "E7",
+      "comment": "Il nero deve essere stato proprio infastidito da questa mia possibile mossa, tanto da giocarci lui stesso, a costo di concedermi una mossa ideale in <b>F7</b>."
+    },
+    {
+      "move": "G4",
+      "comment": "Per il momento mi concentro ad est, lasciando <b>F7</b> per dopo. Preferisco non avere mai fretta di prendere le mosse ideali."
+    },
+    {
+      "move": "H5",
+      "comment": "Il nero accede al bordo.<br>In effetti adesso <b>F7</b> non è più tanto interessante perché il nero può rispondere in <b>G6</b>. Meglio sarebbe, per me, la sequenza contraria."
+    },
+    {
+      "move": "H6",
+      "comment": "Forzo la mano sul bordo, alla caccia di tempi di gioco o di sbilanciare l'avversario in una formazione facilmente attaccabile."
+    },
+    {
+      "move": "F7",
+      "comment": "Il nero non accetta la forzatura ad est e gioca una mossa d'attesa.<br>A questo punto una sequenza buona potrebbe essere <b>G6-H3-H4-H7</b> ma il cinque che ne risulta non è attaccabile. Per cui ho scelto un'altra idea."
+    },
+    {
+      "move": "H4",
+      "comment": "Mi predo questo tempo di gioco sul bordo est."
+    },
+    {
+      "move": "H3",
+      "comment": "Il nero non me ne vuole cedere altri, quindi forza sullo stesso bordo."
+    },
+    {
+      "move": "H2",
+      "comment": "Prendo il cinque, tanto non è attaccabile e posso sperare di farlo diventare un sei."
+    },
+    {
+      "move": "G6",
+      "comment": "Per non perdere altri tempi il nero deve chiudere questo spazio e rassegnarsi a darmi il sei.<br>A questo punto voglio tenermi la mossa in <b>H7</b> come mossa bonus una volta che sia riuscito a chiudere il gioco ad ovest. Quindi andiamo a saturare le regioni aperte."
+    },
+    {
+      "move": "C7",
+      "comment": "Riapriamo le danze ad ovest."
+    },
+    {
+      "move": "A5",
+      "comment": "Il nero allunga il bordo.<br>Potrei muovere in <b>B6</b> ma sto cercando qualcosa di più forte."
+    },
+    {
+      "move": "A6",
+      "comment": "Forzo sul bordo. Se prende il cinque chiudo giocando in <b>B6</b>. Se invece gioca lui in <b>B6</b>, io mi prendo il bordo e un tempo di gioco."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero non è disposto a giocare ad ovest e manovra a sud."
+    },
+    {
+      "move": "A2",
+      "comment": "Prendo il mio tempo di gioco."
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero ci prova con il controllo della diagonale, sperando magari di incunearsi in <b>D1</b>."
+    },
+    {
+      "move": "B6",
+      "comment": "Prendo questa mossa tranquilla, che taglia la diagonale.<br>Il nero non può riprendere la diagonale in <b>B7</b> altrimenti io posso giocare prima in <b>A7</b> e poi, una volta ottenuto l'accesso, in <b>A8</b>."
+    },
+    {
+      "move": "A7",
+      "comment": "La situazione del nero è piuttosto disperata. Sta cercando in tutti i modi di preservare un po' di mobilità."
+    },
+    {
+      "move": "A8",
+      "comment": "Prendo l'angolo."
+    },
+    {
+      "move": "B7",
+      "comment": ""
+    },
+    {
+      "move": "B8",
+      "comment": ""
+    },
+    {
+      "move": "B1",
+      "comment": ""
+    },
+    {
+      "move": "D1",
+      "comment": "Mi incuneo, così lascio che il nero giochi in <b>B2</b>."
+    },
+    {
+      "move": "B2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": ""
+    },
+    {
+      "move": "H1",
+      "comment": ""
+    },
+    {
+      "move": "H7",
+      "comment": ""
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata.<br>A questo punto ho giocato in modo facile e tranquillo, senza cercare tanti fronzoli per massimizzare il risultato. Tanto è chiaro che ho vinto."
+    },
+    {
+      "move": "H8",
+      "comment": ""
+    },
+    {
+      "move": "G8",
+      "comment": ""
+    },
+    {
+      "move": "F8",
+      "comment": ""
+    },
+    {
+      "move": "E8",
+      "comment": ""
+    },
+    {
+      "move": "D8",
+      "comment": "Evvai. Secondo punto del mio mondiale 2025."
+    }
+  ]
+}

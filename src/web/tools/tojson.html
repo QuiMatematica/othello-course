@@ -27,7 +27,7 @@
         }
       }
 
-      document.getElementById('output').textContent = JSON.stringify(result, null, 2);
+      document.getElementById('output').textContent = JSON.stringify({moves: result}, null, 2);
     }
   </script>
   <button onclick="saveJSON()">Salva JSON</button>

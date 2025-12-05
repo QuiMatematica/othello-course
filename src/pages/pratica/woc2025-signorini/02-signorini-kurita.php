@@ -46,4 +46,11 @@
 <board data-type="show" data-label="commento" data-file="02-signorini-kurita.json"
        data-caption="Partita commentata."></board>
 
-<h2>Tocca a te</h2>
+<p>Analizzando la partita con il computer, risulta che è stata una sequela di piccoli errori che, uno dietro l'altro
+hanno portato al risultato che c'è stato. Anche perché il mio avversario (e non dobbiamo ricordarci che era il
+campione del mondo 2024 e ad Ankara si è riconfermato anche per il 2025) ha fatto pochissimi minimi errori.</p>
+
+<p>L'unica mossa che sento rimproverarmi è quella in cui non avevo visto la direzione di voltura. Ma per il computer
+non risulta neanche una mossa pessima. Semplicemente ho perso altre due pedine (sono passato da una valutazione -4 a
+una valutazione -6). Quindi il rimprovero non è tanto perché sia una mossa sbagliata, ma perché l'ho valutata su
+presupposti (quale pedine voltare) sbagliati.</p>

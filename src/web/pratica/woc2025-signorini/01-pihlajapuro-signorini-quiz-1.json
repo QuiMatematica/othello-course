@@ -1,0 +1,20 @@
+{
+  "position": [
+    "-----#--",
+    "---##O--",
+    "-###OO#-",
+    "--OO#OO-",
+    "-OO##-O-",
+    "--###---",
+    "--------",
+    "--------"
+  ],
+  "comment": "Qual è la mossa migliore?",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "H3",
+      "comment": "Esatto. Piuttosto di <b>E1</b> risulta più efficace questa <b>H3</b> che toglie l'accesso alla casella <b>E1</b> e compie il primo accesso al bordo in una posizione vantaggiosa."
+    }
+  ]
+}

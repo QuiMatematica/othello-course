@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JSON Move Builder</title>
+</head>
+<body>
+  <h2>JSON Move Builder</h2>
+  <input id="movesInput" type="text" maxlength="120" style="width: 90%; font-size: 1.2em;" placeholder="Inserisci fino a 120 caratteri" />
+  <button onclick="processMoves()">Genera JSON</button>
+
+  <pre id="output" style="margin-top: 20px; background: #f0f0f0; padding: 10px;"></pre>
+
+  <script>
+    function processMoves() {
+      const text = document.getElementById('movesInput').value;
+      const result = [];
+
+      for (let i = 0; i < text.length; i += 2) {
+        const pair = text.substring(i, i + 2).toUpperCase();
+        if (pair.length === 2) {
+          result.push({
+            move: pair,
+            comment: ""
+          });
+        }
+      }
+
+      document.getElementById('output').textContent = JSON.stringify({moves: result}, null, 2);
+    }
+  </script>
+  <button onclick="saveJSON()">Salva JSON</button>
+
+  <script>
+    // funzione già esistente processMoves()
+    function saveJSON() {
+      const content = document.getElementById('output').textContent;
+      if (!content.trim()) {
+        alert('Nessun JSON da salvare.');
+        return;
+      }
+      const blob = new Blob([content], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'moves.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+  </script>
+</body>
+</html>

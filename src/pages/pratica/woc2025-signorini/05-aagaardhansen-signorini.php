@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">&quot;Devi analizzare le partite che vinci.&quot; (cit. Barnaba)</div>
     </div>
 
   </div>
@@ -43,7 +43,15 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="05-aagaardhansen-signorini.json"
        data-caption="Partita commentata."></board>
 
-<h2>Tocca a te</h2>
+<p>Che dire? Ho giocato questa partita in modo pressoché perfetto. Il computer mi dà una media di 0,36 pedine perse per
+    mossa. Se avessi giocato tutte le partite a questo livello avrei vinto il mondiale.</p>
+
+<p>Il fatto è che quanto un avversario va in svantaggio abbastanza presto è più facile mantenerlo. Poi, per carità,
+bisogna stare attenti a non sbagliare. Però...</p>
+
+<p>L'importante è saper amministrare bene il vantaggio e saper condurre la partita. &Egrave; questo che intendeva
+Donato Barnaba nella citazione iniziale. C'è molto, e forse anche più che in altre occasioni, da imparare dalle partite che si
+vincono.</p>

@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "F5",
+      "comment": ""
+    },
+    {
+      "move": "D6",
+      "comment": "Apertura perpendicolare."
+    },
+    {
+      "move": "C3",
+      "comment": ""
+    },
+    {
+      "move": "D3",
+      "comment": ""
+    },
+    {
+      "move": "C4",
+      "comment": "Apertura Tigre."
+    },
+    {
+      "move": "F4",
+      "comment": ""
+    },
+    {
+      "move": "C5",
+      "comment": ""
+    },
+    {
+      "move": "B3",
+      "comment": ""
+    },
+    {
+      "move": "C2",
+      "comment": "Apertura Rose-Bill."
+    },
+    {
+      "move": "E6",
+      "comment": "Apertura Tamenori."
+    },
+    {
+      "move": "C6",
+      "comment": ""
+    },
+    {
+      "move": "B4",
+      "comment": ""
+    },
+    {
+      "move": "B5",
+      "comment": ""
+    },
+    {
+      "move": "D2",
+      "comment": ""
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "A6",
+      "comment": ""
+    },
+    {
+      "move": "C1",
+      "comment": ""
+    },
+    {
+      "move": "G4",
+      "comment": ""
+    },
+    {
+      "move": "F6",
+      "comment": ""
+    },
+    {
+      "move": "F3",
+      "comment": ""
+    },
+    {
+      "move": "E2",
+      "comment": "Fino a qui ho giocato a memoria. Questa mossa, in particolare, è centrale e prende il controllo della diagonale <b>C5-E3</b>."
+    },
+    {
+      "move": "E1",
+      "comment": "Il bianco gioca sul bordo nord avvantaggiato dal fatto che la colonna <b>E</b> è tutta di pedine nere.<br>Probabilmente forzare in <b>D1</b> sarebbe la risposta migliore, ma preferisco giocare altrove."
+    },
+    {
+      "move": "G5",
+      "comment": "&Egrave; una mossa prudente, gira due pedine ma non concede mobilità all'avversario."
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco risponde con una mossa a nord, che minaccia un successivo accesso a <b>B6</b>."
+    },
+    {
+      "move": "D1",
+      "comment": "Adesso mi decido a forzare sul bordo nord."
+    },
+    {
+      "move": "B6",
+      "comment": "Mossa ideale.<br>Il bianco ha una posizione più centrale, ma non mi considero messo male.<br>A questo punto ho bisogno di una mossa d'attesa che non lascia tanto spazio all'avversario. <b>H4</b> poteva essere un'idea."
+    },
+    {
+      "move": "H3",
+      "comment": "Ma alla fine gioco <b>H3</b>. Mi piaceva soprattutto l'idea di poter giocare anche in <b>G3</b>."
+    },
+    {
+      "move": "C7",
+      "comment": "Il bianco gira intorno alla mia posizione."
+    },
+    {
+      "move": "G3",
+      "comment": "Approfitto anche di questo tempo."
+    },
+    {
+      "move": "D7",
+      "comment": "Il bianco continua a girarmi attorno. Sembriamo due pistoleri che si stanno studiando."
+    },
+    {
+      "move": "A3",
+      "comment": "Vado sul bordo ovest, grazie al fatto che la diagonale <b>B4-D6</b> è formata da pedine bianche, e il bianco non può rispondere in <b>A4</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco prende un tempo dal bordo nord. A questo punto ha anche l'accesso in <b>A4</b>."
+    },
+    {
+      "move": "A4",
+      "comment": "Ma io anticipo le intenzioni del bianco."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco non può perdere altri tempi quindi gioca anche lui sul bordo."
+    },
+    {
+      "move": "B2",
+      "comment": "Ma io gioco sulla parità di questa regione, che adesso diventa pari. Dallo scambio a nord-ovest ne esco io in vantaggio e ho consolidato la posizione centrale sul resto della tavola."
+    },
+    {
+      "move": "E7",
+      "comment": "Il bianco riprende con il girarmi attorno."
+    },
+    {
+      "move": "F7",
+      "comment": "Ma mi lascia una mossa ideale."
+    },
+    {
+      "move": "G6",
+      "comment": "Mossa centrale, tipica di questo scambio sui controbordi.<br>A questo punto per me l'ideale sarebbe poter giocare in <b>H6</b>, ma al momento non ho l'accesso: me lo devo procurare."
+    },
+    {
+      "move": "F8",
+      "comment": "Gioco sul bordo sud, ma più di tutto mi interessa la pedina sulla riga <b>6</b>."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco è alla ricerca di tempi di gioco."
+    },
+    {
+      "move": "H6",
+     "comment": "Seconda mossa sul bordo est, con questa formazione con due spazi che mi consente di ottimizzare i tempi di gioco."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco, rassegnato per la zona di iper parità a nord-ovest, decide di prendere l'angolo..."
+    },
+    {
+      "move": "A2",
+      "comment": "... e io ovviamente mi incuneo per sfruttare la parità."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco gioca in una regione dispari, sperando di guadagnare almeno un tempo di gioco per poter respirare.<br>A questo punto non ho molte possibilità che mantengano chiuso il gioco del bianco. <b>E8</b> volta pedine anche in diagonale dando due accessi al bianco a sud-ovest. La stessa regione a sud-ovest non è particolarmente interessante."
+    },
+    {
+      "move": "H1",
+      "comment": "Allora prendo l'angolo."
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco non ha tempo da perdere e si incunea.<br>Mi ritrovo comunque con lo stesso problema di prima."
+    },
+    {
+      "move": "B8",
+      "comment": "Mi decido per questa mossa che mi piace fino ad un certo punto. Il rischio è di prendere il cinque, che può sempre essere attaccato. Dall'altra parte sono disposto anche a cedere il bordo sud, pur di tenere buona parte della colonna <b>A</b> e della colonna <b>B</b>."
+    },
+    {
+      "move": "C8",
+      "comment": "Il bianco mi costringe a prendere il cinque."
+    },
+    {
+      "move": "E8",
+      "comment": "E io lo prendo."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco si trova costretto a cedermi l'angolo, pur di mantenere la parità.<br>A questo punto devo consolidare il vantaggio acquisito. Giocare prima nell'angolo o prima a nord? Giocare adesso nell'angolo gira anche <b>G2</b>. Allora decido per il nord."
+    },
+    {
+      "move": "G1",
+      "comment": "Tra le due mosse preferisco questa perché forma una regione di iper parità ad est."
+    },
+    {
+      "move": "G8",
+      "comment": "<i>Feed the opponent</i>. Però non credo che basti."
+    },
+    {
+      "move": "A8",
+      "comment": "Prendo l'angolo e costringo l'avversario a scegliere quale regione chiudere. Io mi prenderò l'altra."
+    },
+    {
+      "move": "A7",
+      "comment": "Lui chiude a sud-ovest."
+    },
+    {
+      "move": "F1",
+      "comment": "Io chiudo a nord."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco vede una buona soluzione per costringermi a giocare ad est. Mi cede l'angolo..."
+    },
+    {
+      "move": "H8",
+      "comment": "... io devo prenderlo ..."
+    },
+    {
+      "move": "H7",
+      "comment": "... lui si incunea, girando anche la pedina <b>G6</b>."
+    },
+    {
+      "move": "H5",
+      "comment": "Ultima mossa mia."
+    },
+    {
+      "move": "H4",
+      "comment": "Ultima mossa sua. Ma vinco io. Terza vittoria al Campionato Mondiale 2025."
+    }
+  ]
+}

@@ -35,7 +35,9 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">
+          Basta un piccolo errore per portarti ad una posizione svantaggiosa. E dopo è tutto un peggiorare...
+      </div>
     </div>
 
   </div>
@@ -47,3 +49,24 @@
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>
+
+<p>La partita giocata da Katie ha rasentato la perfezione. Ha perso veramente pochissime occasione e non me
+ne ha concesse nessuna.</p>
+
+<p>Partite come queste, alla fine, si giocano su uno o due piccoli errori che ti portano a una situazione di svantaggio.
+E se il tuo avversario non concede nulla, la situazione non può che peggiorare.</p>
+
+<p>Il primo errore è minimo, anzi: non porta neanche a una situazione di svantaggio. Ma vale comunque la pena, soprattutto
+quando si è in vantaggio, imparare ad approfittare di tutte le possibilità.</p>
+
+<p>Dopo che Katie ha acceduto al bordo nord ho subito reagito allungando il bordo per evitare di perdere un tempo
+di gioco. Ma c'era una mossa migliore che otteneva lo stesso risultato... e anche qualcos'altro.</p>
+
+<board data-type="quiz" data-label="quiz-1" data-file="01-pihlajapuro-signorini-quiz-1.json"></board>
+
+<p>Ma il vero errore è stato un altro. Concedere il cinque a nord è stato necessario, e purtroppo c'era anche
+    la pedina bianca giusta in <b>F2</b> per trasformare quel cinque in un sei. Per evitare questa trasformazione
+avrei dovuto attaccare, ma essendo la colonna <b>G</b> formata da sole pedine nere sembra che l'attacco non sia
+attuabile. Ma allora qual era la mossa giusta?</p>
+
+<board data-type="quiz" data-label="quiz-2" data-file="01-pihlajapuro-signorini-quiz-2.json"></board>

@@ -85,6 +85,11 @@
             letter-spacing: 0.5px;
         }
 
+        .nav-btn-dark {
+            background-color: #157347 !important; /* verde più scuro */
+            border-color: #145c37 !important;
+        }
+
         /* Stile personalizzato per il box di installazione */
         .install-box {
             background: linear-gradient(135deg, #0f5132, #198754); /* verde stile tavola */
@@ -230,13 +235,17 @@
         const levels = [
             {id: "pills-base", title: "Base", emoji: "🎯", level: "base"},
             {id: "pills-intermedio", title: "Intermedio", emoji: "⚔️", level: "intermedio"},
-            {id: "pills-avanzato", title: "Avanzato", emoji: "🏆", level: "avanzato"}
+            {id: "pills-avanzato", title: "Avanzato", emoji: "🏆", level: "avanzato"},
+            {id: "pills-pratica", title: "Pratica", emoji: "🧩", level: "pratica"}
         ];
 
         let current = 0;
         const levelTitle = document.getElementById("levelTitle");
+        const levelIcon = document.getElementById("levelIcon");
         const prevBtn = document.getElementById("prevBtn");
         const nextBtn = document.getElementById("nextBtn");
+        const prevLabel = document.getElementById("prevLabel");
+        const nextLabel = document.getElementById("nextLabel");
 
         function showLevel(index) {
             // aggiorna contenuto tab
@@ -244,7 +253,10 @@
             document.getElementById(levels[index].id).classList.add("show", "active");
 
             // aggiorna titolo barra con emoji
-            levelTitle.textContent = `${levels[index].emoji} ${levels[index].title}`;
+            levelTitle.textContent = `${levels[index].title}`;
+            levelIcon.textContent = `${levels[index].emoji}`;
+            prevLabel.textContent = `${levels[(index - 1 + levels.length) % levels.length].title}`;
+            nextLabel.textContent = `${levels[(index + 1) % levels.length].title}`;
 
             // aggiorna indice
             current = index;

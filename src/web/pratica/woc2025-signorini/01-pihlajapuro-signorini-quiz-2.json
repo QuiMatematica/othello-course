@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-#####--",
+    "--O##O--",
+    "-#OO###-",
+    "--OOO##-",
+    "-OOOOO##",
+    "--###---",
+    "--------",
+    "--------"
+  ],
+  "comment": "Qual è la mossa migliore?",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Esatto. Qui ci voleva un po' di coraggio in più e attaccare anche se il cinque è apparentemente non attaccabile per la colonna <b>G</b> tutta nera."
+    },
+    {
+      "move": "H1",
+      "comment": "Anche se il nero prende l'angolo, tu hai la mossa giusta per prenderti il cinque."
+    },
+    {
+      "move": "H3",
+      "comment": "Esattamente: togli l'accesso alla casella <b>G2</b> e contemporaneamente ti procuri un doppio accesso alla stessa casella. Tanto più che per togliere entrambe le sponde il nero dovrebbe giocare in <b>H4</b> la quale gira anche la pedina <b>F2</b>."
+    }
+  ]
+}

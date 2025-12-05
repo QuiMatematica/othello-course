@@ -38,7 +38,7 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="07-takigawa-signorini.json"
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>

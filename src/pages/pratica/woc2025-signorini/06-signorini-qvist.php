@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Un braccio di ferro fino alla mossa 47.</div>
     </div>
 
   </div>
@@ -43,7 +43,26 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="06-signorini-qvist.json"
        data-caption="Partita commentata."></board>
 
-<h2>Tocca a te</h2>
+<p>L'analisi al computer ha rilevato un retroscena che non mi aspettavo. La partita è stata giocata con errori minimi
+per entrambi i giocatori fino alla mossa 47. Eravamo sempre all'interno del range -4, +4.</p>
+
+<p>L'unico vero errore è stato quando il mio avversario mi ha costretto a prendere il cinque a sud. Non era quella la
+sua mossa giusta. Ma non era per nulla facile capire quale sarebbe stata la sequenza perfetta (che era comunque
+perdente per -2).</p>
+
+<p>Non era un finale facile per il bianco, e in questo sta il vero vantaggio della posizione. A volte guardiamo solamente
+la valutazione del finale perfetto. E se guardo solo quello, eravamo abbastanza vicini al pareggio.</p>
+
+<p>Ma la mia posizione era molto più facile da giocare. Ed è questo che mi ha permesso di vincere la partita.</p>
+
+<p>E cos'era che rendeva più facile la mia posizione?</p>
+
+<p>Credo che sia stato l'utilizzo attento fin dal medio gioco della parità, malgrado - anzi: soprattutto perché ero
+il nero.</p>
+
+<p>Lo spazio dispari a sud-ovest e le due caselle libere sul bordo est non sono situazioni facili da gestire per
+    il bianco. Non ha trovato la soluzione perché non era facile da trovare. E io ho portato a casa la partita.</p>
+

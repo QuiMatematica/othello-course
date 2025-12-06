@@ -43,7 +43,18 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="08-signorini-perelman.json"
+       data-caption="Partita commentata."></board>
+
+<p>Alla mossa 49, purtroppo, ho fatto un errore di voltura. Non ho girato la pedina <b>C3</b>.</p>
+
+<p>Malgrado i tanti anni che gioco, malgrado questa cosa mi sia costata una partita vinta nel Mondiale del 2005,
+nonostante mi sia successo già con Kurita in questo Mondiale 2025, ancora mi capita di fare errori di voltura.
+Devo stare più attento.</p>
+
+<p>Riprendo pertanto con un diagramma adattato.</p>
+
+<board data-type="show" data-label="commento-finale" data-file="08-signorini-perelman-finale.json"
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>

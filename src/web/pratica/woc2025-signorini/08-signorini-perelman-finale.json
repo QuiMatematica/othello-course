@@ -1,0 +1,49 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "--O#OOO-",
+    "OOOO##O#",
+    "O##O##O#",
+    "O####O##",
+    "O###OOO#",
+    "-##OOO--",
+    "-#-OOOO-"
+  ],
+  "played": "B4",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A8"
+    },
+    {
+      "move": "C8"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "H2"
+    }
+  ]
+}

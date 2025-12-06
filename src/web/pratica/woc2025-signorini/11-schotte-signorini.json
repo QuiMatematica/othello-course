@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "E6",
+      "comment": ""
+    },
+    {
+      "move": "F6",
+      "comment": ""
+    },
+    {
+      "move": "F5",
+      "comment": ""
+    },
+    {
+      "move": "D6",
+      "comment": ""
+    },
+    {
+      "move": "C5",
+      "comment": ""
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "F7",
+      "comment": ""
+    },
+    {
+      "move": "C6",
+      "comment": ""
+    },
+    {
+      "move": "E7",
+      "comment": ""
+    },
+    {
+      "move": "C7",
+      "comment": ""
+    },
+    {
+      "move": "C4",
+      "comment": ""
+    },
+    {
+      "move": "B5",
+      "comment": ""
+    },
+    {
+      "move": "D3",
+      "comment": ""
+    },
+    {
+      "move": "C3",
+      "comment": ""
+    },
+    {
+      "move": "E2",
+      "comment": ""
+    },
+    {
+      "move": "F4",
+      "comment": ""
+    },
+    {
+      "move": "F3",
+      "comment": ""
+    },
+    {
+      "move": "E1",
+      "comment": ""
+    },
+    {
+      "move": "B6",
+      "comment": ""
+    },
+    {
+      "move": "A5",
+      "comment": ""
+    },
+    {
+      "move": "A6",
+      "comment": ""
+    },
+    {
+      "move": "A7",
+      "comment": ""
+    },
+    {
+      "move": "B4",
+      "comment": ""
+    },
+    {
+      "move": "D7",
+      "comment": ""
+    },
+    {
+      "move": "D8",
+      "comment": ""
+    },
+    {
+      "move": "G6",
+      "comment": ""
+    },
+    {
+      "move": "A4",
+      "comment": ""
+    },
+    {
+      "move": "A3",
+      "comment": ""
+    },
+    {
+      "move": "G4",
+      "comment": ""
+    },
+    {
+      "move": "G5",
+      "comment": ""
+    },
+    {
+      "move": "C8",
+      "comment": ""
+    },
+    {
+      "move": "H3",
+      "comment": ""
+    },
+    {
+      "move": "D2",
+      "comment": ""
+    },
+    {
+      "move": "G3",
+      "comment": ""
+    },
+    {
+      "move": "F1",
+      "comment": ""
+    },
+    {
+      "move": "G1",
+      "comment": ""
+    },
+    {
+      "move": "C2",
+      "comment": ""
+    },
+    {
+      "move": "D1",
+      "comment": ""
+    },
+    {
+      "move": "H6",
+      "comment": ""
+    },
+    {
+      "move": "F8",
+      "comment": ""
+    },
+    {
+      "move": "E8",
+      "comment": ""
+    },
+    {
+      "move": "B8",
+      "comment": ""
+    },
+    {
+      "move": "G7",
+      "comment": ""
+    },
+    {
+      "move": "C1",
+      "comment": ""
+    },
+    {
+      "move": "H4",
+      "comment": ""
+    },
+    {
+      "move": "H8",
+      "comment": ""
+    },
+    {
+      "move": "G8",
+      "comment": ""
+    },
+    {
+      "move": "H7",
+      "comment": ""
+    },
+    {
+      "move": "A8",
+      "comment": ""
+    },
+    {
+      "move": "H5",
+      "comment": ""
+    },
+    {
+      "move": "B7",
+      "comment": ""
+    },
+    {
+      "move": "B3",
+      "comment": ""
+    },
+    {
+      "move": "A2",
+      "comment": ""
+    },
+    {
+      "move": "A1",
+      "comment": ""
+    },
+    {
+      "move": "B2",
+      "comment": ""
+    },
+    {
+      "move": "B1",
+      "comment": ""
+    },
+    {
+      "move": "F2",
+      "comment": ""
+    },
+    {
+      "move": "G2",
+      "comment": ""
+    },
+    {
+      "move": "H1",
+      "comment": ""
+    },
+    {
+      "move": "H2",
+      "comment": ""
+    }
+  ]
+}

@@ -6,7 +6,7 @@
     },
     {
       "move": "F6",
-      "comment": ""
+      "comment": "Apertura diagonale."
     },
     {
       "move": "E6",
@@ -18,7 +18,7 @@
     },
     {
       "move": "E7",
-      "comment": ""
+      "comment": "Apertura Heath."
     },
     {
       "move": "G5",
@@ -30,171 +30,171 @@
     },
     {
       "move": "E3",
-      "comment": ""
+      "comment": "Per la seconda volta in questo torneo mi viene giocata questa risposta che considero 'anomala'. Ma questa volta sono pronto: me la sono studiata."
     },
     {
       "move": "C6",
-      "comment": ""
+      "comment": "Simile alla risposta della versione 'triangolo' sempre sulla Heath."
     },
     {
       "move": "E8",
-      "comment": ""
+      "comment": "Eh? Mi lascia la mossa ideale in <b>F4</b>? Credo che il bianco avesse in mente la barca a vela e che abbia voluto ricreare la situazione anche se non ho risposto <b>H5</b>. Ma orma non è più una barca a vela."
     },
     {
       "move": "F4",
-      "comment": ""
+      "comment": "Mi prendo la mia mossa ideale; dopotutto non c'era nulla di più interessante."
     },
     {
       "move": "G4",
-      "comment": ""
+      "comment": "La posizione del bianco è già compromessa. Ma anche questa mossa è anomala e non so bene come spiegarla. Forse voleva puntare a <b>F7</b>?<br>In questa posizione una buona mossa è sicuramente <b>H5</b> ma sinceramente ho preferito aspettare ad accedere al bordo. Tanto dubito che il bianco giochi in <b>H6</b>."
     },
     {
       "move": "C5",
-      "comment": ""
+      "comment": "Ho allora preferito questa mossa immaginando che il bianco giocasse in <b>C4</b> per poi rispondere <b>D3</b> per controllare ben due mini-diagonali."
     },
     {
       "move": "F7",
-      "comment": ""
+      "comment": "Ma qui si palesa l'intenzione del bianco con <b>G4</b>: voleva proprio venire in <b>F7</b>."
     },
     {
       "move": "C3",
-      "comment": ""
+      "comment": "Al che ho pensato di sfruttare il fatto di essere tutto ad ovest e di tentare di compattare le mie pedine da questa parte. In mente avevo la sequenza <b>C3-C4-D3</b> a cui prima o poi sarebbe seguita <b>B5</b> o <b>B4</b>."
     },
     {
       "move": "H5",
-      "comment": ""
+      "comment": "Il bianco si chiude in un muro-contro-muro, togliendomi l'accesso a <b>D4</b>."
     },
     {
       "move": "F3",
-      "comment": ""
+      "comment": "Ok, allora cominciamo a girare attorno al muro. Con questa mossa mi preparo un'ideale in <b>G3</b> ma soprattutto preparo un taglio in <b>E2</b> qualora il bianco giocasse in <b>D3</b>."
     },
     {
       "move": "F2",
-      "comment": ""
+      "comment": "Il bianco ricompatta il proprio muro. Ma mi lascia una facile risposta..."
     },
     {
       "move": "E2",
-      "comment": ""
+      "comment": "Giro attorno al muro."
     },
     {
       "move": "E1",
-      "comment": ""
+      "comment": "E via a richiudere il muro-contro-muro. Forse giocando in <b>D1</b> otteneva lo stesso effetto conservando altre mosse verso ovest."
     },
     {
       "move": "G3",
-      "comment": ""
+      "comment": "Taglio con una mossa ideale."
     },
     {
       "move": "H4",
-      "comment": ""
+      "comment": "E ricompatta il muro. Ormai è chiara l'intenzione del bianco: sta cercando di farmi giocare negli angoli in modo da chiudermi il gioco. Ma in verità ho talmente tante mosse a disposizione che sarà difficile bloccarmi."
     },
     {
       "move": "F8",
-      "comment": ""
+      "comment": "Gioco sul bordo sud, invitando il bianco a sbilanciarsi. Al tempo stesso mi preparo due buone mosse in <b>D3</b> e in <b>D7</b>."
     },
     {
       "move": "G8",
-      "comment": ""
+      "comment": "Per non perdere tempi di gioco allunga il bordo. In effetti se spera di chiudermi addosso ai bordi deve prendere tutti i tempi che gli arrivano."
     },
     {
       "move": "D3",
-      "comment": ""
+      "comment": "Prima delle due mosse ideali."
     },
     {
       "move": "C2",
-      "comment": ""
+      "comment": "Decide di togliermi la mossa ideale in <b>D7</b>, ma lo fa a caro prezzo: mi offre due buone mosse a nord. Forse giocare in <b>C7</b> per sporcarmi la mossa ideale era meglio."
     },
     {
       "move": "C1",
-      "comment": ""
+      "comment": "Facile tempo di gioco. Perché no? "
     },
     {
       "move": "D8",
-      "comment": ""
+      "comment": "Prende anche lui un tempo di gioco a nord.<br>E a questo punto mi accorgo di cosa posso fare a nord."
     },
     {
       "move": "F1",
-      "comment": ""
+      "comment": "Gioca in <b>F1</b>. Il bianco non può giocare né in <b>D1</b> né in <b>D2</b>. L'unica mossa per non perdere tempi di gioco è sbilanciarsi in <b>G1</b>."
     },
     {
       "move": "G1",
-      "comment": ""
+      "comment": "Infatti si sbilancia."
     },
     {
       "move": "D1",
-      "comment": ""
+      "comment": "Scelgo di fargli prendere tutto il bordo per prendermi poi il tempo di gioco in <b>D2</b>."
     },
     {
       "move": "B1",
-      "comment": ""
+      "comment": "Ovviamente prende il sei."
     },
     {
       "move": "D2",
-      "comment": ""
+      "comment": "Tempo di gioco."
     },
     {
       "move": "C7",
-      "comment": ""
+      "comment": "Fin che può gioca a sud.<br>A questo punto avrei potuto giocare in <b>C8</b> per costringere il bianco a prendere il sei anche a sud e guadagnare un altro tempo di gioco in <b>D7</b>. Ma siccome mi piace il gioco aggressivo, ho pensato di prepararmi una Stoner trap ad est..."
     },
     {
       "move": "H3",
-      "comment": ""
+      "comment": "Invito il bianco a prendere il quattro sbilanciato."
     },
     {
       "move": "B5",
-      "comment": ""
+      "comment": "Il bianco deve aver intuito le mie intenzioni e non accetta il quattro sbilanciato."
     },
     {
       "move": "C4",
-      "comment": ""
+      "comment": "Va bene, posso aspettare. Intanto mi gioco questa buona mossa centrale."
     },
     {
       "move": "D7",
-      "comment": ""
+      "comment": "Il bianco chiude il buco in <b>D7</b>. A questo punto avrei potuto prendermi due tempi di gioco in <b>H6</b> e <b>H7</b>, ma ho preferito aspettare."
     },
     {
       "move": "A5",
-      "comment": ""
+      "comment": "Intanto prendo questo accesso al bordo ovest."
     },
     {
       "move": "B6",
-      "comment": ""
+      "comment": "Il bianco risponde con questa mossa che ricompatta le sue pedine."
     },
     {
       "move": "H6",
-      "comment": ""
+      "comment": "Va bene, se non vuoi il bordo est me lo prendo io. PRimo tempo di gioco."
     },
     {
       "move": "A6",
-      "comment": ""
+      "comment": "Il bianco provoca sul bordo ovest."
     },
     {
       "move": "B7",
-      "comment": ""
+      "comment": "Cercavo una Stoner trap ad est, ma ne trovo una a sud. Perché no?"
     },
     {
       "move": "G2",
-      "comment": ""
+      "comment": "L'unica speranza che il bianco ha di tagliare la diagonale è questa casella <b>X</b>, a costo che segua <b>H1-H2</b>.<br>Qui mi accorgo di un pericolo: se gioco in <b>C8</b> chiudo la Stoner trap, ma dopo <b>A8</b> non posso incunearmi in <b>B8</b>. Allora..."
     },
     {
       "move": "B8",
-      "comment": ""
+      "comment": "Commuto la Stoner trap in un attacco ad un quattro più uno. In questo modo se il bianco prende l'angolo io posso giocare sia in <b>C8</b> sia in <b>A7</b> (magari dopo che il bianco ha giocato in <b>A4</b>."
     },
     {
       "move": "A4",
-      "comment": ""
+      "comment": "Ma il bianco non accetta il mio gioco e temporeggia."
     },
     {
       "move": "B3",
-      "comment": ""
+      "comment": "Allora mi attivo per saturare la regione ad ovest. Tanto ho un angolo e un bordo assicurato."
     },
     {
       "move": "A3",
-      "comment": ""
+      "comment": "Gioca sul bordo."
     },
     {
       "move": "B4",
-      "comment": ""
+      "comment": "E io chiudo il buco in <b>B4</b>."
     }
   ]
 }

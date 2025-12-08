@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Prendi il tuo vantaggio e portalo avanti fino in fondo.</div>
     </div>
 
   </div>
@@ -57,4 +57,9 @@ Devo stare più attento.</p>
 <board data-type="show" data-label="commento-finale" data-file="08-signorini-perelman-finale.json"
        data-caption="Partita commentata."></board>
 
-<h2>Tocca a te</h2>
+<p>A parte l'errore di voltura, di cui chiedo scusa al mio avversario, non ho fatto altri errori.
+E anche il gioco del bianco non è che sia stato così pessimo: di mossa in mossa non ha giocato
+sempre la mossa meno peggio, però si è trovato preso in una situazione di svantaggio e non
+gli ho dato respiro.</p>
+
+<p>Direi che questa analisi può tranquillamente concludersi qui.</p>

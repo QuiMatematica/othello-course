@@ -6,7 +6,7 @@
     },
     {
       "move": "C3",
-      "comment": ""
+      "comment": "Apertura diagonale."
     },
     {
       "move": "D3",
@@ -18,7 +18,7 @@
     },
     {
       "move": "F4",
-      "comment": ""
+      "comment": "Apertura Mucca."
     },
     {
       "move": "D6",
@@ -30,39 +30,39 @@
     },
     {
       "move": "B5",
-      "comment": ""
+      "comment": "Apertura Sinking Boat."
     },
     {
       "move": "C6",
-      "comment": ""
+      "comment": "Risposta classica alla Sinking Boat."
     },
     {
       "move": "G4",
-      "comment": ""
+      "comment": "Muro-contro-muro, simile alla barca a vela."
     },
     {
       "move": "E2",
-      "comment": ""
+      "comment": "Tagli del muro.<br>A questo punto avevo in mente due idee. Una era la sequenza <b>F5-F3-F6</b>. Ma l'altra..."
     },
     {
       "move": "F3",
-      "comment": ""
+      "comment": "L'altra sequenza prevede di chiudere qui la formazione e tenere la mossa ideale in <b>F5</b> per dopo."
     },
     {
       "move": "D2",
-      "comment": ""
+      "comment": "Il nero taglia di nuovo, controllando la mini diagonale <b>D3-E4</b>. Però mi concede una mossa ideale."
     },
     {
       "move": "C5",
-      "comment": ""
+      "comment": "Non ho molte speranze di riprendermi a breve la diagonale, quindi intanto im gioco la mossa ideale."
     },
     {
       "move": "A5",
-      "comment": ""
+      "comment": "Il nero gioca questa mossa d'attesa che però chiude il muro verso sud. Inoltre si prepara una mossa ideale in <b>F2</b>."
     },
     {
       "move": "B6",
-      "comment": ""
+      "comment": "Rimando la mossa ideale in <b>F2</b> invitando il nero a rafforzare la sua presenza sul bordo ovest."
     },
     {
       "move": "A6",

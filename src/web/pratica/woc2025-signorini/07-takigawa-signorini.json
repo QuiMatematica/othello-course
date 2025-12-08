@@ -42,7 +42,7 @@
     },
     {
       "move": "E3",
-      "comment": "Mossa centrale per tagliare le mie pedine.<br>Queste posizioni mi mettono sempre in difficoltà. La tentazione è di riprendermi il centro, ma forse anche <b>D3</b> poteva essere una buona scelta."
+      "comment": "Mossa centrale per tagliare le mie pedine.<br>Queste posizioni mi mettono sempre in difficoltà. La tentazione è di riprendermi il centro, ma forse anche una mossa d'attesa a nord, poteva essere una buona scelta."
     },
     {
       "move": "G5",
@@ -118,7 +118,7 @@
     },
     {
       "move": "C1",
-      "comment": "Rispondo invitando il nero a sbilanciarsi."
+      "comment": "Rispondo invitando il nero a sbilanciarsi.<br>A questo punto non mi sento messo tanto male. Ero uscito in svantaggio dall'apertura, ma questa ultima sequenza a nord e ad ovest mi ha dato respireo."
     },
     {
       "move": "B5",
@@ -138,7 +138,7 @@
     },
     {
       "move": "G8",
-      "comment": "Il nero non perde tempo e attacca subito il mio cinque agendo dalla casella C."
+      "comment": "Il nero non perde tempo e attacca subito il mio cinque agendo dalla casella C.<br>Devo rispondere a sud, altrimenti il nero gioca anche in <b>E8</b> e guadagna ben due tempi di gioco con il bordo sud."
     },
     {
       "move": "E8",
@@ -146,7 +146,7 @@
     },
     {
       "move": "D8",
-      "comment": "Per non perdere tempi di gioco, il nero deve chiudere questa casella isolata.<br>A questo punto sono obbligato: non posso concedere al mio avversario di prendere il sei a sud."
+      "comment": "Per non perdere tempi di gioco, il nero deve chiudere questa casella isolata.<br>A questo punto sono sentito obbligato: non potevo concedere al mio avversario di prendere il sei a sud.<br>In verità c'era una buona alternativa che non avevo considerato: <b>F1</b>, alla quale il nero non può rispondere se non sbilanciandosi."
     },
     {
       "move": "H8",
@@ -154,7 +154,7 @@
     },
     {
       "move": "B3",
-      "comment": "In effetti il nero non è costretto ad incunearsi subito ad est. Anzi, può aspettare per vedere se rimango senza mosse e mi trovo costretto a muovere per primo in <b>G7</b>. Inoltre con questa mossa si procura un accesso a <b>E1</b>."
+      "comment": "In effetti il nero non è costretto ad incunearsi subito ad est. Anzi, può aspettare per vedere se rimango senza mosse e mi trovo costretto a muovere per primo in <b>G7</b>. Inoltre con questa mossa si procura un accesso a <b>E1</b>, svalutando così la mia mossa in <b>F1</b>.."
     },
     {
       "move": "A3",
@@ -170,75 +170,75 @@
     },
     {
       "move": "B2",
-      "comment": "Il nero prende il controllo della diagonale."
+      "comment": "Il nero prende il controllo della diagonale.<br>Sarebbe interessante accedere all'angolo <b>A1</b>, ma non ho la sponda giusta. Allora mi rassegno a una mossa d'attesa sperando che il nero mi apra un po' il gioco."
     },
     {
       "move": "A6",
-      "comment": ""
+      "comment": "Mossa d'attesa."
     },
     {
       "move": "A2",
-      "comment": ""
+      "comment": "Giustamente il nero raddoppia la pressione su quell'angolo giocando in uno spazio dispari. Tanto più che io non ho accesso alla casella <b>A5</b>."
     },
     {
       "move": "B6",
-      "comment": ""
+      "comment": "&Egrave; una delle ultime mosse sicure che mi sono rimaste."
     },
     {
       "move": "E1",
-      "comment": ""
+      "comment": "Il nero lavora per saturare lo spazio a nord, facendo attenzione a non farmi tagliare la diagonale."
     },
     {
       "move": "F1",
-      "comment": ""
+      "comment": "Ultima mia mossa sicura. E purtroppo non sono in una situazione favorevole. Ci sono due regioni dispari in cui io non ho mosse. Il nero può prendere il controllo del gioco."
     },
     {
       "move": "G2",
-      "comment": ""
+      "comment": "Il nero gioca in una regione dispari. Giocare in parità è fondamentale."
     },
     {
       "move": "H1",
-      "comment": ""
+      "comment": "Prendo l'angolo. Di meglio non avevo: almeno salvo il bordo est."
     },
     {
       "move": "G1",
-      "comment": ""
+      "comment": "E il nero chiude la regione dispari. Ora sono costretto a cedere l'angolo a nord-ovest."
     },
     {
       "move": "B1",
-      "comment": ""
+      "comment": "Obbligata."
     },
     {
       "move": "A1",
-      "comment": ""
+      "comment": "Comincia la conquista del nero.<br>Il bianco passa."
     },
     {
       "move": "H7",
-      "comment": ""
+      "comment": "Il nero gioca tutte e due le mosse a sud-est grazie al controllo della diagonale principale e della colonna <b>G</b>."
     },
     {
       "move": "G7",
-      "comment": ""
+      "comment": "Seconda mossa nella regione."
     },
     {
       "move": "B8",
-      "comment": ""
+      "comment": "Corretta: mi cede l'angolo, ma controlla la riga <b>7</b>."
     },
     {
       "move": "A8",
-      "comment": ""
+      "comment": "Obbligata."
     },
     {
       "move": "A7",
-      "comment": ""
+      "comment": "In verità, contando, la mossa giusta sarebbe stata <b>B7</b>. Ma ormai eravamo stanchi e il tempo agli sgoccioli. E comunque ha vinto."
     },
     {
       "move": "B7",
-      "comment": ""
+      "comment": "La meno peggio."
     },
     {
       "move": "A5",
-      "comment": ""
+      "comment": "Thank you, Mr. Takigawa-san."
     }
   ]
 }

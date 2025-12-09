@@ -47,3 +47,8 @@
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>
+
+<p>L'analisi al computer rivela che non sono mai stato in svantaggio per tutta la partita. Eppure c'è stato un momento
+in cui ho fatto una mossa che ha diminuito il mio vantaggio.</p>
+
+<board data-type="quiz" data-label="quiz" data-file="09-yang-signorini-quiz-1.json"></board>

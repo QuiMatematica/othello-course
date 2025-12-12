@@ -6,7 +6,7 @@
     },
     {
       "move": "E3",
-      "comment": ""
+      "comment": "Apertura perpendicolare."
     },
     {
       "move": "F6",
@@ -18,7 +18,7 @@
     },
     {
       "move": "F5",
-      "comment": ""
+      "comment": "Apertura Tigre."
     },
     {
       "move": "C5",
@@ -34,11 +34,11 @@
     },
     {
       "move": "F7",
-      "comment": ""
+      "comment": "Apertura Rose-Bill."
     },
     {
       "move": "G5",
-      "comment": ""
+      "comment": "Apertura Rose-Bill centrale, detta anche 'Dead Draw'."
     },
     {
       "move": "D6",
@@ -58,187 +58,187 @@
     },
     {
       "move": "C3",
-      "comment": ""
+      "comment": "A questa mossa mi sono accorto che il mio avversario è rimasto un attimo stupito. Credo fosse una mossa che non si aspettava, o alla quale, comunque, non aveva preparato una risposta.<br>Invece io stavo ancora giocando a memoria."
     },
     {
       "move": "G3",
-      "comment": ""
+      "comment": "Corretta, siamo ancora su una linea pari."
     },
     {
       "move": "B3",
-      "comment": ""
+      "comment": "Fino a qui la sapevo a memoria. Da qui il bianco ha diverse opzioni valide, ma tutte che vedono risposte semplici per il nero."
     },
     {
       "move": "B4",
-      "comment": ""
+      "comment": "Il bianco sceglie questa lunga mossa ideale. Corretta: siamo ancora sulla sequenza pari."
     },
     {
       "move": "C6",
-      "comment": ""
+      "comment": "Rispondo con questo taglio che non offre grandi mosse al bianco. Inoltre ho preparato una mossa ideale in <b>G4</b>. Per questo mi aspettavo la risposta in <b>E2</b>, ma il bianco ha preferito fare diversamente."
     },
     {
       "move": "E7",
-      "comment": ""
+      "comment": "Ha girato pedine in ben tre direzioni. E non ha ottenuto molto. Anche la mossa ideale in <b>G4</b> può essere bloccata o giocando in <b>B4</b> stesso o tagliando in <b>E8</b>."
     },
     {
       "move": "E8",
-      "comment": ""
+      "comment": "Preferisco il taglio così, oltre a mantenere l'ideale in <b>G4</b> prendo anche il controllo della mini-diagonale <b>E6-F5</b>."
     },
     {
       "move": "F8",
-      "comment": ""
+      "comment": "Il bianco forza sul bordo invitandomi a sbilanciarmi."
     },
     {
       "move": "D7",
-      "comment": ""
+      "comment": "Ovviamente preferisco evitare di sbilanciarmi e piuttosto aumento l'influenza del bianco sulla casella <b>D8</b>, impedendogli di fatto di guadagnare un tempo con quella mossa."
     },
     {
       "move": "B6",
-      "comment": ""
+      "comment": "Il bianco taglia di nuovo la formazione, nuovamente minacciando di andare in <b>G4</b>."
     },
     {
       "move": "G4",
-      "comment": ""
+      "comment": "A questo punto direi che è il momento giusto per giocare la mossa ideale. Offro al bianco un accesso al bordo est, ma con gli opportuni accostamenti faccio presto a saturarlo, probabilmente costringendo il bianco a prendere un cinque."
     },
     {
       "move": "H3",
-      "comment": ""
+      "comment": "Il bianco approfitta dell'accesso ad est.<br>Però, prima di saturare ad est, andiamo a saturare dove anche il bianco ha mosse a disposizione: a sud."
     },
     {
       "move": "C7",
-      "comment": ""
+      "comment": "Lavoro per la chiusura del bordo sud."
     },
     {
       "move": "C2",
-      "comment": ""
+      "comment": "Il bianco non vuole chiudersi a sud, quindi decide di andare a nord, cercando di girare il meno possibile."
     },
     {
       "move": "D2",
-      "comment": ""
+      "comment": "Approfitto subito dell'accesso a nord, in modo da pareggiare il numero di mosse in quell'area. Mi rimane ancora un accesso al bordo nord, che posso utilizzare alla bisogna."
     },
     {
       "move": "E1",
-      "comment": ""
+      "comment": "Il bianco accede per primo al bordo nord.<br>A questo punto è mio interesse anche saturare il bordo nord. E visto che il bianco non sembra interessato al sud faccio pressione da quest'altra parte."
     },
     {
       "move": "D1",
-      "comment": ""
+      "comment": "Mi appoggio alla pedina bianca sul bordo nord."
     },
     {
       "move": "C1",
-      "comment": ""
+      "comment": "Questa volta il bianco cede alla tentazione e allunga il bordo, dandomi nuove mosse nella regione nord."
     },
     {
       "move": "E2",
-      "comment": ""
+      "comment": "Ancora lavoro per la saturazione del nord.<br>Questa mossa probabilmente non è la migliore, perché lascia due tempi al bianco: <b>F1</b> e <b>F2</b>. Però per saturare a nord non c'era di meglio."
     },
     {
       "move": "A3",
-      "comment": ""
+      "comment": "Il bianco cambia direzione e si sposta ad ovest.<br>A questo punto ho fatto tutto il possibile a nord e a sud, e non ho altri accessi in queste regioni che posso sfruttare. Quindi devo andare a est o a ovest spingendo l'avversario a sbilanciarsi. Il lato migliore sembra est, perché <b>H4</b> volta pedine in una sola direzione, invece..."
     },
     {
       "move": "A4",
-      "comment": ""
+      "comment": "Invece dal vivo ho preferito giocare a ovest. Ricordo che l'idea era di posticipare il più possibile la mossa <b>F1</b> del bianco."
     },
     {
       "move": "A5",
-      "comment": ""
+      "comment": "Il bianco allunga il bordo."
     },
     {
       "move": "H4",
-      "comment": ""
+      "comment": "Rifaccio lo stesso gioco a est. "
     },
     {
       "move": "F1",
-      "comment": ""
+      "comment": "Ma adesso il bianco ha accesso a nord e lo sfrutta.<br>Qui noto un pattern interessante: le pedine della riga <b>2</b> e della colonna <b>B</b> sono tutte bianche. Quindi..."
     },
     {
       "move": "B2",
-      "comment": ""
+      "comment": "Inizio il pattern per giocare tre mosse su quattro disponibili in questa regione."
     },
     {
       "move": "H5",
-      "comment": ""
+      "comment": "Il bianco nota la mal parata e gioca a est.<br>Qui probabilmente valeva la pena insistere a nord-ovest giocando in <b>B1</b>, ma preferito fare diversamente."
     },
     {
       "move": "H6",
-      "comment": ""
+      "comment": "Sono andato ad insistere a est, immaginando che il bianco prendesse in <b>H7<b/> e per poter poi accedere in <b>D8</b>."
     },
     {
       "move": "H7",
-      "comment": ""
+      "comment": "Il piano si realizza."
     },
     {
       "move": "D8",
-      "comment": ""
+      "comment": "E io accedo al bordo sud."
     },
     {
       "move": "F2",
-      "comment": ""
+      "comment": "A questo punto il bianco è forzato a chiudere a nord con l'ultima mossa sicura rimasta."
     },
     {
       "move": "A2",
-      "comment": ""
+      "comment": "Ora mi decido a giocare la mia seconda mossa a nord-ovest."
     },
     {
       "move": "A1",
-      "comment": ""
+      "comment": "Il bianco prende l'angolo..."
     },
     {
       "move": "B1",
-      "comment": ""
+      "comment": "... e io chiudo la regione.<br>Il bianco è in difficoltà, chiuso su tutti i fronti a parte verso sud. Allora cerca di sfruttare la sua arma migliore..."
     },
     {
       "move": "G7",
-      "comment": ""
+      "comment": "La parità. A costo di perdere un lato gioca nello spazio dispari con l'obiettivo di incunearsi in <b>G8</b>."
     },
     {
       "move": "G2",
-      "comment": ""
+      "comment": "Io rispondo controllando la diagonale nera e cercando di giocare tre mosse su quattro a nord-est."
     },
     {
       "move": "C8",
-      "comment": ""
+      "comment": "Il bianco gioca la sua ultima mossa sicura e taglia la diagonale. Purtroppo non potrò più incunearsi in <b>G8</b>."
     },
     {
       "move": "G1",
-      "comment": ""
+      "comment": "Seconda mossa a nord-est. Il nero prende il bordo nord, ma io mi tengo il controbordo nord e il bordo est."
     },
     {
       "move": "H1",
-      "comment": ""
+      "comment": "Angolo."
     },
     {
       "move": "H2",
-      "comment": ""
+      "comment": "Incuneamento. Il nero passa: guadagno la parità globale."
     },
     {
       "move": "H8",
-      "comment": ""
+      "comment": "Prendo l'angolo e il bordo est."
     },
     {
       "move": "G8",
-      "comment": ""
+      "comment": "Obbligata."
     },
     {
       "move": "B8",
-      "comment": ""
+      "comment": "Allungo il bordo."
     },
     {
       "move": "B7",
-      "comment": ""
+      "comment": "Obbligata."
     },
     {
       "move": "A8",
-      "comment": ""
+      "comment": "Prendo l'angolo e tutte le pedine della diagonale."
     },
     {
       "move": "A7",
-      "comment": ""
+      "comment": "Obbligata."
     },
     {
       "move": "A6",
-      "comment": ""
+      "comment": "Fatta! Mi porto a casa il sesto punto del mio Mondiale 2025: era il mio obiettivo!"
     }
   ]
 }

@@ -38,6 +38,8 @@
 
 <h2>La partita commentata</h2>
 
+<p>Avevo già giocato con Tomas Douda nel 2005 a Reykjavik. E aveva vinto lui. Ma stavolta...</p>
+
 <board data-type="show" data-label="commento" data-file="10-signorini-douda.json"
        data-caption="Partita commentata."></board>
 

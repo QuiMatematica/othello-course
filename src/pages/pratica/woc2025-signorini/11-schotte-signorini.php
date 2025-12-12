@@ -30,7 +30,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Partita con un finale molto difficile. E io sono stato quello che ha sbagliato per primo e per ultimo.</div>
     </div>
 
   </div>
@@ -38,7 +38,18 @@
 
 <h2>La partita commentata</h2>
 
+<p>Anche con Tom Schotte avevo già giocato nel 2005 a Reykjavik. In quella partita avevo vinto io per 36 a 28. Invece stavolta...</p>
+
 <board data-type="show" data-label="commento" data-file="11-schotte-signorini.json"
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>
+
+<p>Sono uscito dall'apertura con quella brutta <b>E1</b>. Ma comunque non sono mai stato in una situazione di forte svantaggio.</p>
+
+<p>Anche la mossa in <b>F8</b> era sbagliata, ed è quella che ha causato il pessimo risultato finale. Ma la mossa corretta,
+    <b>E8</b> prevedeva comunque un finale molto difficile che difficilmente avrei saputo giocare.</p>
+
+<p>L'unico errore di cui veramente mi pento è questo, dove avevo giocato <b>D1</b>.</p>
+
+<board data-type="quiz" data-label="quiz-1" data-file="11-schotte-signorini-quiz-1.json"></board>

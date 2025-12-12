@@ -1,0 +1,37 @@
+{
+  "position": [
+    "----OOO-",
+    "--###---",
+    "O-##OOOO",
+    "OO##OOO-",
+    "O#O#OOO-",
+    "OO#O#OO-",
+    "O-####--",
+    "--##----"
+  ],
+  "played": "C2",
+  "turn": "white",
+  "comment": "Qual è la mossa... meno peggio?",
+  "moves": [
+    {
+      "move": "B3",
+      "comment": "Esatto. E' una mossa sicura e il cinque non è attaccabile.<br>Ora, secondo il finale perfetto il nero dovrebbe giocare in <b>B7</b>, evidentemente per non concedermi la parità in quella regione. Ma tu la giocheresti? Secondo me è più probabile che..."
+    },
+    {
+      "move": "F2",
+      "comment": "Il nero gioca la mossa bonus in <b>F2</b>.<br>Ora, tocca a te. Hai una mossa che vale un pareggio. Qual è?"
+    },
+    {
+      "move": "B7",
+      "comment": "Esatto: devi giocare secondo parità."
+    },
+    {
+      "move": "A8",
+      "comment": "Chiaramente il nero ne approfitta."
+    },
+    {
+      "move": "B8",
+      "comment": "Bravissimo. Tu devi incunearti.<br>Possiamo chiudere qui la sequenza. Sei in una posizione pari: semmai usa un programma per analizzare il seguito."
+    }
+  ]
+}

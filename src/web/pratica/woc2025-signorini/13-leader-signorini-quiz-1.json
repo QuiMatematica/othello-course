@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--------",
+    "--O#----",
+    "-#OOO---",
+    "-OO#O---",
+    "--##O---",
+    "-#-#----",
+    "--------",
+    "--------"
+  ],
+  "played": "B6",
+  "turn": "white",
+  "comment": "Qual è la mossa migliore per il bianco?",
+  "moves": [
+    {
+      "move": "A3",
+      "comment": "Esatto: la mossa migliore è togliere la mossa buona sul bordo al nero. Anche <b>A4</b> era una buona alternativa, ma le caselle <b>A</b> sono in genere migliori delle caselle <b>B</b>."
+    },
+    {
+      "move": "F6",
+      "comment": "A questo punto il nero è costretto ad una mossa d'attesa. E tu cosa risponderesti?"
+    },
+    {
+      "move": "C1",
+      "comment": "Esatto. Stesso gioco di prima ma sull'altro bordo. E lasciando uno spazio pari in cui il bianco non ha mosse legali. La partita avrebbe preso tutta un'altra piega."
+    }
+  ]
+}

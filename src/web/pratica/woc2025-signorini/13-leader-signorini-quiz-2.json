@@ -1,0 +1,37 @@
+{
+  "position": [
+    "-OOOO---",
+    "--O###--",
+    "##OO#OO-",
+    "-#O##O--",
+    "-OOOO---",
+    "-#OOO---",
+    "---O----",
+    "--------"
+  ],
+  "played": "F2",
+  "turn": "white",
+  "comment": "Qual è la mossa migliore per il bianco?",
+  "moves": [
+    {
+      "move": "A6",
+      "comment": "Esatto: la prima cosa da fare è bloccare la mossa del nero nella stessa casella."
+    },
+    {
+      "move": "F6",
+      "comment": "Il nero è costretto ad una mossa d'attesa."
+    },
+    {
+      "move": "G1",
+      "comment": "A questo punto può partire il gioco sul bordo nord."
+    },
+    {
+      "move": "A5",
+      "comment": "Il nero può accedere al bordo ovest."
+    },
+    {
+      "move": "F1",
+      "comment": "Bravissimo. E tu chiudi il bordo nord e guadagni un altro tempo di gioco.<br>Secondo il computer non è una posizione vincente, ma se non altro l'hai giocata molto meglio di quanto non l'abbia fatto io."
+    }
+  ]
+}

@@ -2,12 +2,6 @@
 
 <html lang="it">
 <head>
-    <?php
-    if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
-        include 'google-tag.php';
-    }
-    ?>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -69,6 +63,12 @@
     <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/3661950.js"></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
+    <?php
+    if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
+        include 'google-tag.php';
+    }
+    ?>
 
     <!-- PWA -->
     <link rel="manifest" href="manifest.json">

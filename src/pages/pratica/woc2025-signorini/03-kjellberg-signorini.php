@@ -49,7 +49,7 @@
 
 <p>Solo un errore del mio avversario in finale mi ha permesso di vincere.</p>
 
-<p>Beh, la prima lezione è proprio <i>never give up</i>: non arrenderti mai, proprio come dicevano le magliette della squadra della Mongolia.</p>
+<p>Beh, la lezione è proprio <i>never give up</i>: non arrenderti mai, proprio come dicevano le magliette della squadra della Mongolia.</p>
 
 <p>Come ci insegna Savielly Tartakower, celebre giocatore di scacchi:</p>
 

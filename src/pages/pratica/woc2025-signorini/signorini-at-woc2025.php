@@ -1,22 +1,30 @@
-<p>Il 47-esimo Campionato Mondiale di Othello (<i>World Othello Championship</i> - <i>WOC</i>)
-si è disputato ad Ankara (Turchia) dal 12 al 15 novembre 2025, presso il modernissimo Ankara Hotel,
-costruito sopra la stazione ferroviaria della città.</p>
+<p>Il World Othello Championship 2025 si è svolto ad Ankara (Turchia),
+    e ha riunito i migliori giocatori provenienti da tutto il mondo per tre giorni di
+    competizioni di altissimo livello.
 
-<p>Ho avuto la possibilità di partecipare a questo mondiale grazie a un anno othellisticamente parlando piuttosto
-positivo.</p>
+<p>Ho avuto il piacere e l’onore di partecipare al mondiale come membro della squadra italiana,
+    insieme a Massimo Di Pietro, Paolo Scognamiglio, Elisabetta Vecchi e Tommaso Foschi.</p>
 
-<ul>
-    <li>Ho concluso il GPI (Gran Prix Italiano) 2025 in sesta posizione, grazie al quarto posto a Ferrara e al secondo posto a Udine.</li>
-    <li>Dopo il torneo di Udine ero in 13-esima posizione della classifica rating italiana.</li>
-    <li>Con lo stesso torneo di Udine ho ottenuto il titolo di Maestro della FNGO.</li>
-</ul>
+<div class="container my-4">
+  <figure class="text-center">
+    <img
+      src="DSC_4369.jpg"
+      class="img-fluid rounded shadow"
+      alt="Squadra italiana al World Othello Championship 2025"
+    >
+    <figcaption class="figure-caption mt-2">
+      La squadra italiana al World Othello Championship 2025 – Ankara
+    </figcaption>
+  </figure>
+</div>
 
-<p>Grazie a tutto questo, e alla defezione di altri giocatori che avevano precedenza, sono stato invitato a partecipare
-al mondiale.</p>
-
-<p>Quello del 2025 è il mio secondo mondiale. Il primo è stato nel 2005, a Reykjavik (Islanda).</p>
+<p>Sono partito per Ankara con l'obiettivo di ottenere almeno 6 punti nelle prime due giornate
+di gioco. E ho raggiunto il mio obiettivo, giocando piuttosto bene, in alcune partite forse
+anche meglio del mio standard. Certo, c'è sempre qualcosa da migliorare. Nelle prossime
+pagine trovi il commento di tutte le mie partite.</p>
 
 <div class="table-responsive">
+      <div class="mx-auto w-100 w-lg-auto" style="max-width: 800px;">
   <table class="table table-striped table-hover align-middle">
     <thead class="table-dark">
       <tr>
@@ -133,4 +141,5 @@ al mondiale.</p>
       </tr>
     </tbody>
   </table>
+      </div>
 </div>

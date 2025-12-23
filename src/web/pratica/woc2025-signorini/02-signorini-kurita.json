@@ -62,7 +62,7 @@
     },
     {
       "move": "B5",
-      "comment": "Mossa ideale.<br>A questo punto siamo in una di quelle situazioni in cui ci sono mosse importanti evidenti. Anche i bordi non sembrano essere interessanti per il nero. Per cui ho optato per una ..."
+      "comment": "Mossa ideale.<br>A questo punto siamo in una di quelle situazioni in cui non ci sono mosse importanti evidenti. Anche i bordi non sembrano interessanti per il nero. Per cui ho optato per una ..."
     },
     {
       "move": "G4",
@@ -182,7 +182,7 @@
     },
     {
       "move": "H1",
-      "comment": "Prende l'altro angolo.<br>E adesso? Anche la riga <b>2</b> ormai è persa. E si pone un altro problema: dobbiamo fare in modo che il bianco non possa giocare sia in <b>H2</b> sia in <b>H4</b>. Quindi serve che la pedina <b>F2</b> sia nera."
+      "comment": "Prende l'altro angolo.<br>E adesso? Anche la riga <b>2</b> ormai è persa. E si pone un altro problema: devo fare in modo che il bianco non possa giocare sia in <b>H2</b> sia in <b>H4</b>. Quindi serve che la pedina <b>F2</b> sia nera."
     },
     {
       "move": "G2",

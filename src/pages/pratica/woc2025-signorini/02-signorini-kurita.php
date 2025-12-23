@@ -53,4 +53,4 @@ campione del mondo 2024 e ad Ankara si è riconfermato anche per il 2025) ha fat
 <p>L'unica mossa che sento rimproverarmi è quella in cui non avevo visto la direzione di voltura. Ma per il computer
 non risulta neanche una mossa pessima. Semplicemente ho perso altre due pedine (sono passato da una valutazione -4 a
 una valutazione -6). Quindi il rimprovero non è tanto perché sia una mossa sbagliata, ma perché l'ho valutata su
-presupposti (quale pedine voltare) sbagliati.</p>
+presupposti (quali pedine voltare) sbagliati.</p>

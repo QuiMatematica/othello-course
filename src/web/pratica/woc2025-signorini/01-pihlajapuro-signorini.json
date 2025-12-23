@@ -5,7 +5,7 @@
     },
     {
       "move": "C3",
-      "comment": "Apertura diagonale"
+      "comment": "Apertura diagonale."
     },
     {
       "move": "C4"
@@ -15,7 +15,7 @@
     },
     {
       "move": "F4",
-      "comment": "Apertura Mucca"
+      "comment": "Apertura Mucca."
     },
     {
       "move": "D6"
@@ -25,7 +25,7 @@
     },
     {
       "move": "B5",
-      "comment": "Apertura Sinking Boat"
+      "comment": "Apertura Sinking Boat."
     },
     {
       "move": "C6",
@@ -101,7 +101,7 @@
     },
     {
       "move": "H6",
-      "comment": "Il nero gioca la seconda mossa sul bordo est.<br>Ora ho un problema. Il nero può giocare anche in <b>G1</b>, stabilizzando il bordo nord e guadagnando un altro tempo. Ma non posso attaccare subito il bordo. Quindi ho bisogno di riprendermi la pedina in <b>E3</b>."
+      "comment": "Il nero gioca la seconda mossa sul bordo est.<br>Ora ho un problema. Il nero può giocare anche in <b>G1</b>, stabilizzando il bordo nord e guadagnando un altro tempo. Ma non posso attaccare subito il bordo, altrimenti il nero può prendere l'angolo senza che io possa poi rispondere in <b>G1</b>. Quindi ho bisogno di riprendermi la pedina in <b>E3</b>."
     },
     {
       "move": "H3",
@@ -137,7 +137,7 @@
     },
     {
       "move": "E8",
-      "comment": "Faccio pressione sul bordo, ma più che altro per poter ottenere posizioni centrali."
+      "comment": "Faccio pressione sul bordo, ma più che altro vorrei ottenere una posizione centrale."
     },
     {
       "move": "D8",
@@ -145,7 +145,7 @@
     },
     {
       "move": "D7",
-      "comment": "Mossa centrale che purtroppo gira pedine in due direzioni. Se non altro minaccio di giocare in <b>B4/<b>."
+      "comment": "Mossa centrale che purtroppo gira pedine in due direzioni. Se non altro minaccio di giocare in <b>B4</b>."
     },
     {
       "move": "B4",
@@ -173,7 +173,7 @@
     },
     {
       "move": "G6",
-      "comment": "Senza nessun pericolo, questa mossa taglia la diagonale. Il cinque non è attaccabile."
+      "comment": "Senza nessun pericolo, questa mossa taglia la diagonale."
     },
     {
       "move": "G7",
@@ -193,7 +193,7 @@
     },
     {
       "move": "C7",
-      "comment": "Non posso far altro che ripetere la configurazione dei prima."
+      "comment": "Non posso far altro che ripetere la configurazione di prima."
     },
     {
       "move": "B8",

@@ -11,20 +11,20 @@
     <meta name="description" content="${description}">
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
-    <meta property="og:url" content="https://othello.quimatematica.it/pratica/quiz.php">
-    <meta property="og:image" content="https://othello.quimatematica.it/icons/icon-192.jpg">
+    <meta property="og:url" content="https://quiothello.it/pratica/quiz.php">
+    <meta property="og:image" content="https://quiothello.it/icons/icon-192.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="othello-test.quimatematica.it">
-    <meta name="twitter:url" content="https://othello.quimatematica.it/pratica/quiz.php">
+    <meta name="twitter:domain" content="quiothello.it">
+    <meta name="twitter:url" content="https://quiothello.it/pratica/quiz.php">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://othello.quimatematica.it/icons/icon-192.jpg">
+    <meta name="twitter:image" content="https://quiothello.it/icons/icon-192.jpg">
     <meta name="author" content="Claudio Signorini">
     <title>${title}</title>
-    <link rel="canonical" href="https://othello.quimatematica.it/pratica/quiz.php">
+    <link rel="canonical" href="https://quiothello.it/pratica/quiz.php">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/bootstrap-icons/bootstrap-icons.min.css">

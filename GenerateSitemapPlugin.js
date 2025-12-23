@@ -32,7 +32,7 @@ class GenerateSitemapPlugin {
         this.date = this.getCurrentDateFormatted();
         let outputContent = '<?xml version="1.0" encoding="UTF-8"?>\n';
         outputContent += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-        const siteRoot = 'https://othello.quimatematica.it/';
+        const siteRoot = 'https://quiothello.it/';
         outputContent += this.buildUrlTag(siteRoot);
         data.sections.forEach(section => {
             outputContent += this.buildUrlTag(siteRoot + section.href + 'section.php');

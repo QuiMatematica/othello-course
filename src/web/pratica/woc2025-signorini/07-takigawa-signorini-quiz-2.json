@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--O#----",
+    "--OO##-O",
+    "--O#OOOO",
+    "--###O#O",
+    "-###OO#O",
+    "--##O#OO",
+    "--O##O--",
+    "--O####-"
+  ],
+  "played": "D8",
+  "turn": "white",
+  "comment": "Dove deve muovere il bianco per non perdere tempi di gioco?",
+  "moves": [
+    {
+      "move": "F1",
+      "comment": "Esatto. Dopo <b>F1</b> il nero non ha la possibilità di giocare in <b>E1</b>. Quindi intanto tu bianco hai guadagnato un tempo di gioco a nord."
+    },
+    {
+      "move": "B8",
+      "comment": "Non è la sua mossa migliore, ma se il nero prendo il bordo sud..."
+    },
+    {
+      "move": "E1",
+      "comment": "Esatto! Tu guadagni un altro tempo di gioco a nord. Quindi tu ne hai guadagnato due a nord, il nero ne ha guadagnato uno a sud: al netto sei tu in vantaggio."
+    }
+  ]
+}

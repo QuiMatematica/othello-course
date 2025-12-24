@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Prendi il tuo vantaggio e portalo avanti fino in fondo.</div>
     </div>
 
   </div>
@@ -43,7 +43,23 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="08-signorini-perelman.json"
        data-caption="Partita commentata."></board>
 
-<h2>Tocca a te</h2>
+<p>Alla mossa 49, purtroppo, ho fatto un errore di voltura. Non ho girato la pedina <b>C3</b>.</p>
+
+<p>Malgrado i tanti anni che gioco, malgrado questa cosa mi sia costata una partita nel Mondiale del 2005,
+nonostante mi sia successo già con Kurita in questo Mondiale 2025, ancora mi capita di fare errori di voltura.
+Devo stare più attento.</p>
+
+<p>Riprendo pertanto con un diagramma adattato.</p>
+
+<board data-type="show" data-label="commento-finale" data-file="08-signorini-perelman-finale.json"
+       data-caption="Partita commentata."></board>
+
+<p>A parte l'errore di voltura, di cui chiedo scusa al mio avversario, non ho fatto altri errori.
+E anche il bianco non ha giocato malissimo: ha fatto alcuni piccoli errori in apertura e
+    si è trovato in una situazione di svantaggio. E io non
+gli ho dato respiro.</p>
+
+<p>Direi che questa analisi può tranquillamente concludersi qui.</p>

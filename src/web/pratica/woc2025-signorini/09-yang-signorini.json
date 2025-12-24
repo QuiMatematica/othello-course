@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "C4",
+      "comment": ""
+    },
+    {
+      "move": "C3",
+      "comment": "Apertura diagonale."
+    },
+    {
+      "move": "D3",
+      "comment": ""
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "F4",
+      "comment": "Apertura Mucca."
+    },
+    {
+      "move": "D6",
+      "comment": ""
+    },
+    {
+      "move": "E6",
+      "comment": ""
+    },
+    {
+      "move": "B5",
+      "comment": "Apertura Sinking Boat."
+    },
+    {
+      "move": "C6",
+      "comment": "Risposta classica alla Sinking Boat."
+    },
+    {
+      "move": "G4",
+      "comment": "Muro-contro-muro, simile alla barca a vela."
+    },
+    {
+      "move": "E2",
+      "comment": "Taglio del muro.<br>A questo punto avevo in mente due idee. Una era la sequenza <b>F5-F3-F6</b>. Ma l'altra..."
+    },
+    {
+      "move": "F3",
+      "comment": "L'altra sequenza prevede di chiudere qui la formazione e tenere la mossa ideale in <b>F5</b> per dopo."
+    },
+    {
+      "move": "D2",
+      "comment": "Il nero taglia di nuovo, controllando la mini diagonale <b>D3-E4</b>. Però mi concede una mossa ideale."
+    },
+    {
+      "move": "C5",
+      "comment": "Non ho molte speranze di riprendermi a breve la diagonale, quindi intanto mi gioco la mossa ideale."
+    },
+    {
+      "move": "A5",
+      "comment": "Il nero gioca questa mossa d'attesa che però chiude il muro verso sud. Inoltre si prepara una mossa ideale in <b>F2</b>."
+    },
+    {
+      "move": "B6",
+      "comment": "Rimando la mossa ideale in <b>F2</b> invitando il nero a rafforzare la sua presenza sul bordo ovest."
+    },
+    {
+      "move": "A6",
+      "comment": "Il nero rigioca sul bordo preparando nuovamente la mossa in <b>F2</b>.<br>La posizione del bianco ora è piuttosto buona perché centrale. La mossa migliore probabilmente è <b>F5</b>: lascia la mossa buona in <b>F2</b>, ma prepara una ideale in <b>C2</b>. Invece..."
+    },
+    {
+      "move": "D7",
+      "comment": "Invece ho giocato questa mossa. L'idea era di prendere il controllo della mini diagonale <b>C5-D6</b> e di poter giocare un'ideale in <b>B4</b> dopo la <b>F2</b> del nero. Ma il nero ha una risposta semplice..."
+    },
+    {
+      "move": "C7",
+      "comment": "Il nero risponde a sud, mi toglie il controllo della mini-diagonale a anzi dopo la sua <b>F2</b> prende il controllo della stessa mini-diagonale. Inoltre si tiene una pedina bianca a sud da usare in caso di necessità come tempo di gioco. Insomma: <b>D7</b> non è stata una buona scelta.<br>A questo punto <b>F5</b> non è più una buona mossa, quindi devo ripiegare da un'altra parte."
+    },
+    {
+      "move": "F1",
+      "comment": "Scelgo di sporcare la mossa <b>F2</b> dell'avversario con questa mossa d'attesa."
+    },
+    {
+      "move": "D8",
+      "comment": "Il nero approfitta subito del tempo di gioco a sud.<br>A questo punto <b>F5</b> torna ad essere una buona mossa. Ma chissà perché ancora preferisco altro."
+    },
+    {
+      "move": "F6",
+      "comment": "Scelgo questa mossa con in mente la sequenza <b>F5 - E7</b>, preparando quindi la mossa in <b>B4</b>."
+    },
+    {
+      "move": "F5",
+      "comment": "E in effetti il nero gioca in <b>F5</b>."
+    },
+    {
+      "move": "E7",
+      "comment": "E io tagli in <b>E7</b>. Ora il mio obiettivo è puntare a <b>B4</b>."
+    },
+    {
+      "move": "G6",
+      "comment": "Il gioca a sud, cercando di voltare poche pedine."
+    },
+    {
+      "move": "B4",
+      "comment": "Io gioco in <b>B4</b>. Già a questo punto mi sento risollevato e sento di aver recuperato l'errore fatto in <b>D7</b>."
+    },
+    {
+      "move": "B3",
+      "comment": "Questa non l'ho capita. Il nero chiude completamente i suoi accessi a ovest e aumenta considerevolmente l'influenza verso est. &Egrave; decisamente una mossa sbagliata."
+    },
+    {
+      "move": "F7",
+      "comment": "Insisto a giocare a sud: adesso è questa l'area attiva. Inoltre svaluto la mossa nera in <b>E8</b> aumentandone l'influenza."
+    },
+    {
+      "move": "F2",
+      "comment": "Il nero gioca la famosa <b>F2</b>. Però adesso ottiene anche di aumentare l'influenza verso sud."
+    },
+    {
+      "move": "C1",
+      "comment": "Insisto sul bordo nord, lasciando uno spazio a due. Chiaramente sto puntando anche a guadagnare un altro tempo di gioco in <b>G1</b>."
+    },
+    {
+      "move": "E8",
+      "comment": "Il nero si chiude il gioco a sud. Confesso che non comprendo il gioco del nero e ho l'impressione di essere sempre di più in vantaggio."
+    },
+    {
+      "move": "H6",
+      "comment": "Un bel tempo di gioco a est. Perché no?"
+    },
+    {
+      "move": "G5",
+      "comment": "Il nero trova questa mossa centrale che non avevo la possibilità di togliergli.<br>A questo punto è ora di impostare il finale. In particolare è molto interessante la regione dispari a sud-ovest."
+    },
+    {
+      "move": "B7",
+      "comment": "Ne approfitto subito: prendo il controllo della diagonale. Anche se l'avversario la tagliasse e prendesse l'angolo, io potrei incunearmi in <b>A7</b> e guadagnare un tempo di gioco."
+    },
+    {
+      "move": "H4",
+      "comment": "Il nero gioca ad est, secondo me anche con l'intento di tagliare la diagonale."
+    },
+    {
+      "move": "H5",
+      "comment": "Insisto con il gioco ad est, in modo da non cedere nessun tempo di gioco."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero allunga il bordo."
+    },
+    {
+      "move": "G3",
+      "comment": "E io gioco questa mossa ideale di fatto impedendo al nero di giocare anche in <b>H3</b>."
+    },
+    {
+      "move": "D1",
+      "comment": "Evidentemente non era intenzione del nero andare subito in angolo, per cui gioca a nord, forte anche del fatto che va a controllare la diagonale C <b>C2-H7</b>.<br>Come bianco potrei chiudere lo spazio in <b>E1</b>, ma mi dà fastidio lasciare <b>C2</b> all'avversario."
+    },
+    {
+      "move": "A4",
+      "comment": "Allora sono disposto a sporcare l'attacco a sud pur di ottenere un accesso a <b>C2</b>. E al tempo stesso riprendo il controllo della diagonale nera."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero decide di sbilanciarsi a nord."
+    },
+    {
+      "move": "A3",
+      "comment": "Insisto sul bordo ovest per saturare le poche mosse rimaste."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero allunga il bordo a ovest, facendolo diventare un cinque. Ed è già attaccato."
+    },
+    {
+      "move": "C2",
+      "comment": "Mi rimane questa mossa tranquilla."
+    },
+    {
+      "move": "H3",
+      "comment": "Al nero rimane solo quest'ultima mossa sicura, che va a completare il cinque a est.<br>Entriamo nel finale vero e proprio. Ci sono molte sequenze promettenti. Tu quale giocheresti?"
+    },
+    {
+      "move": "B8",
+      "comment": "Io ho deciso di fare pressione a sud-ovest. Sicuramente il nero prende l'angolo, io mi incuneo in <b>A7</b> e lui chiude in <b>C8</b>. Perdo il bordo sud, ma prendo tutto quello ad ovest e a nord."
+    },
+    {
+      "move": "A8",
+      "comment": "Angolo."
+    },
+    {
+      "move": "A7",
+      "comment": "Mi incuneo."
+    },
+    {
+      "move": "C8",
+      "comment": "Chiude la regione a sud-ovest."
+    },
+    {
+      "move": "A1",
+      "comment": "Prendo l'angolo a nord-ovest e tutto il bordo ovest."
+    },
+    {
+      "move": "B2",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "E1",
+      "comment": "Prendo il bordo nord. Il nero passa."
+    },
+    {
+      "move": "G1",
+      "comment": "Allungo il bordo nord."
+    },
+    {
+      "move": "G2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Prendo l'angolo."
+    },
+    {
+      "move": "H2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "E prendiamo anche questo angolo. Ho fatto tutto il giro."
+    },
+    {
+      "move": "G8",
+      "comment": "Taglio in diagonale in modo da massimizzare il guadagno."
+    },
+    {
+      "move": "G7",
+      "comment": "Giusta."
+    },
+    {
+      "move": "F8",
+      "comment": "Vinta. Quinto punto del mio Mondiale 2025."
+    }
+  ]
+}

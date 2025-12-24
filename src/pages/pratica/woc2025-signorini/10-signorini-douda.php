@@ -30,7 +30,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Vinta grazie alla miglior conoscenza dell'apertura.</div>
     </div>
 
   </div>
@@ -38,7 +38,18 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<p>Avevo già giocato con Tomas Douda nel 2005 a Reykjavik. E aveva vinto lui. Ma stavolta...</p>
+
+<board data-type="show" data-label="commento" data-file="10-signorini-douda.json"
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>
+
+<p>Anche in questa partita non sono mai stato in svantaggio, grazie a una migliore conoscenza dell'apertura rispetto
+al mio avversario e a una accorta gestione del centro partita.</p>
+
+<p>Tuttavia, a un certo punto, non ho saputo cogliere la mossa migliore, che mi avrebbe portato a una vittoria
+più schiacciante. La sequenza perfetta non è facile per nessuno dei due colori, per cui mi limito a chiederti solo
+le prime mosse.</p>
+
+<board data-type="quiz" data-label="quiz-1" data-file="10-signorini-douda-quiz-1.json"></board>

@@ -50,7 +50,7 @@
 
 <h2>Tocca a te</h2>
 
-<p>La partita giocata da Katie ha rasentato la perfezione. Ha perso veramente pochissime occasione e non me
+<p>La partita giocata da Katie ha rasentato la perfezione. Ha perso veramente pochissime occasioni e non me
 ne ha concesse nessuna.</p>
 
 <p>Partite come queste, alla fine, si giocano su uno o due piccoli errori che ti portano a una situazione di svantaggio.
@@ -64,9 +64,11 @@ di gioco. Ma c'era una mossa migliore che otteneva lo stesso risultato... e anch
 
 <board data-type="quiz" data-label="quiz-1" data-file="01-pihlajapuro-signorini-quiz-1.json"></board>
 
-<p>Ma il vero errore è stato un altro. Concedere il cinque a nord è stato necessario, e purtroppo c'era anche
-    la pedina bianca giusta in <b>F2</b> per trasformare quel cinque in un sei. Per evitare questa trasformazione
-avrei dovuto attaccare, ma essendo la colonna <b>G</b> formata da sole pedine nere sembra che l'attacco non sia
-attuabile. Ma allora qual era la mossa giusta?</p>
+<p>Ma il vero errore è stato un altro. Concedere il cinque a nord è stato necessario, e purtroppo è rimasta
+    la pedina bianca in <b>F2</b> che permette di trasformare il cinque in un sei.
+    Per evitare questa trasformazione
+dovrei attaccare. Ma la colonna <b>G</b> è formata da sole pedine nere, quindi
+    sembra che l'attacco non sia
+attuabile. Ma allora qual è la mossa giusta?</p>
 
 <board data-type="quiz" data-label="quiz-2" data-file="01-pihlajapuro-signorini-quiz-2.json"></board>

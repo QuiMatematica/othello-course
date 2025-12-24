@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">Basta un piccolo errore...</div>
     </div>
 
   </div>
@@ -43,7 +43,18 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<board data-type="show" data-label="commento" data-file="12-signorini-kobzev.json"
        data-caption="Partita commentata."></board>
 
+<p>Alla fine della partita, nel corridoio antistante alla sala di gioco, ho avuto una piacevole conversazione con
+Vyacheslav. Innanzitutto mi ha chiesto di farci una foto insieme. E poi abbiamo rivisto insieme la partita.
+Peccato che lui non sapesse una parola di inglese, e che io non sappia una parola di russo.
+Quindi dettava al traduttore in russo, il quale scriveva sul display in italiano. E io rispondevo, da bravo orso
+quale sono, con gesti e monosillabi.</p>
+
 <h2>Tocca a te</h2>
+
+<p>Nella &quot;chiacchierata&quot; con Vyacheslav abbiamo osservato come mi sia giocato una partita già in vantaggio
+    solo per una mossa. Vuoi provare tu a trovare la prosecuzione corretta?</p>
+
+<board data-type="quiz" data-label="quiz" data-file="12-signorini-kobzev-quiz-1.json"></board>

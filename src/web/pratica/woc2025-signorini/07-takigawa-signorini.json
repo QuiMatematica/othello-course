@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "E6",
+      "comment": ""
+    },
+    {
+      "move": "F6",
+      "comment": "Apertura diagonale."
+    },
+    {
+      "move": "F5",
+      "comment": ""
+    },
+    {
+      "move": "D6",
+      "comment": ""
+    },
+    {
+      "move": "F7",
+      "comment": "Apertura Serpente.<br>Ci sono essenzialmente tre risposte alla Serpente. La più classica <b>E3</b>, la <b>F4</b> che assomiglia al camino, e la <b>F3</b>."
+    },
+    {
+      "move": "F3",
+      "comment": "Ho scelto la <b>F3</b>. Mi piace perché prepara una mossa ideale in <b>F4</b>."
+    },
+    {
+      "move": "C7",
+      "comment": "Ecco, questa risposta non me l'aspettavo. Ok: toglie la mossa ideale. Però mi sembra un po' troppo esposta."
+    },
+    {
+      "move": "C6",
+      "comment": "Mi riprendo l'accesso a <b>F4</b>. Preferisco questa mossa rispetto a <b>D7</b> per stare lontano dal bordo. Inoltre questa mossa mi dà un interessante accesso a <b>C8</b>."
+    },
+    {
+      "move": "E7",
+      "comment": "Mossa d'attesa."
+    },
+    {
+      "move": "F4",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "E3",
+      "comment": "Mossa centrale per tagliare le mie pedine.<br>Queste posizioni mi mettono sempre in difficoltà. La tentazione è di riprendermi il centro, ma forse anche una mossa d'attesa a nord, poteva essere una buona scelta."
+    },
+    {
+      "move": "G5",
+      "comment": "Scelgo invece questa mossa centrale, anche se purtroppo il nero ha una risposta semplice."
+    },
+    {
+      "move": "G6",
+      "comment": "Eccola qua: risposta semplice che prende il controllo della mini diagonale <b>E6-F5</b>."
+    },
+    {
+      "move": "H6",
+      "comment": "Accedo al bordo con l'idea di muovere, prima o poi, in <b>G4</b>."
+    },
+    {
+      "move": "D7",
+      "comment": "Il nero mi toglie l'accesso a <b>G4</b>."
+    },
+    {
+      "move": "C8",
+      "comment": "Accedo al bordo sud, approfittando che la diagonale è composta di pedine nere e il mio avversario non può rispondere sul bordo."
+    },
+    {
+      "move": "G4",
+      "comment": "Occupa la casella, così non posso accedervi. Minaccia inoltre di muovere anche in <b>H4</b>."
+    },
+    {
+      "move": "H5",
+      "comment": "Per non concedere <b>H4</b> muovo in <b>H5</b>. Il nero potrà rispondere in <b>H3</b>, ma almeno non ho perso il tempo di gioco."
+    },
+    {
+      "move": "H3",
+      "comment": "Ovviamente."
+    },
+    {
+      "move": "G3",
+      "comment": "Sempre con l'idea di non perdere tempi di gioco, occupo anche questa casa. La posizione del bordo est non mi è favorevole, ma meglio di così non sono riuscito a ottenere."
+    },
+    {
+      "move": "F2",
+      "comment": "Mossa centrale.<br>Ho bisogno di tempi di gioco, quindi devo cominciare con i tagli diagonali."
+    },
+    {
+      "move": "D2",
+      "comment": "Eccolo qui: un bel taglio diagonale come mossa d'attesa."
+    },
+    {
+      "move": "E2",
+      "comment": "Il nero si compatta verso nord."
+    },
+    {
+      "move": "D3",
+      "comment": "Io approfitto di questa mossa centrale, anche se mi gonfia di pedine."
+    },
+    {
+      "move": "C5",
+      "comment": "Il nero trova questa mossa che gira poche pedine."
+    },
+    {
+      "move": "C3",
+      "comment": "Altro taglio diagonale. Offro una buona mossa in <b>C4</b> per poter muovere in <b>C2</b>."
+    },
+    {
+      "move": "C4",
+      "comment": "Come mi aspettavo."
+    },
+    {
+      "move": "C2",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "D1",
+      "comment": "Il nero inizia il gioco sul bordo nord con questa mossa centrale."
+    },
+    {
+      "move": "C1",
+      "comment": "Rispondo invitando il nero a sbilanciarsi.<br>A questo punto non mi sento messo tanto male. Ero uscito in svantaggio dall'apertura, ma questa ultima sequenza a nord e ad ovest mi ha dato respiro."
+    },
+    {
+      "move": "B5",
+      "comment": "Ma il nero non ci sta e piuttosto mi apre il gioco ad ovest."
+    },
+    {
+      "move": "F8",
+      "comment": "Muovo a sud, approfittando della diagonale composta da pedine nere. Questo tempo mi è prezioso!"
+    },
+    {
+      "move": "H4",
+      "comment": "Il nero spinge sul bordo."
+    },
+    {
+      "move": "H2",
+      "comment": "E io, per non perdere un tempo di gioco, prendo il cinque."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero non perde tempo e attacca subito il mio cinque agendo dalla casella C.<br>Devo rispondere a sud, altrimenti il nero gioca anche in <b>E8</b> e guadagna ben due tempi di gioco con il bordo sud."
+    },
+    {
+      "move": "E8",
+      "comment": "Cerco di trarre quanto più vantaggio possibile dall'attacco. Perderò il bordo est, ma almeno mi prendo il bordo sud."
+    },
+    {
+      "move": "D8",
+      "comment": "Per non perdere tempi di gioco, il nero deve chiudere questa casella isolata.<br>A questo punto mi sono sentito obbligato: non potevo concedere al mio avversario di prendere il sei a sud.<br>In verità c'era una buona alternativa che non avevo considerato: <b>F1</b>, alla quale il nero non può rispondere se non sbilanciandosi."
+    },
+    {
+      "move": "H8",
+      "comment": "Prendo l'angolo."
+    },
+    {
+      "move": "B3",
+      "comment": "In effetti il nero non è costretto ad incunearsi subito ad est. Anzi, può aspettare per vedere se rimango senza mosse e mi trovo costretto a muovere per primo in <b>G7</b>. Inoltre con questa mossa si procura un accesso a <b>E1</b>, svalutando così la mia mossa in <b>F1</b>."
+    },
+    {
+      "move": "A3",
+      "comment": "Per togliere l'accesso a <b>E1</b> allungo sul bordo."
+    },
+    {
+      "move": "A4",
+      "comment": "Il nero forza sul bordo.<br>Non posso rispondere in <b>A5</b>."
+    },
+    {
+      "move": "B4",
+      "comment": "Piuttosto gioco questa mossa centrale, anche se mi costringe a prendere molte pedine."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero prende il controllo della diagonale.<br>Sarebbe interessante accedere all'angolo <b>A1</b>, ma non ho la sponda giusta. Allora mi rassegno a una mossa d'attesa sperando che il nero mi apra un po' il gioco."
+    },
+    {
+      "move": "A6",
+      "comment": "Mossa d'attesa."
+    },
+    {
+      "move": "A2",
+      "comment": "Giustamente il nero raddoppia la pressione su quell'angolo giocando in uno spazio dispari. Tanto più che io non ho accesso alla casella <b>A5</b>."
+    },
+    {
+      "move": "B6",
+      "comment": "&Egrave; una delle ultime mosse sicure che mi sono rimaste."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero lavora per saturare lo spazio a nord, facendo attenzione a non farmi tagliare la diagonale."
+    },
+    {
+      "move": "F1",
+      "comment": "Ultima mia mossa sicura. E purtroppo non sono in una situazione favorevole. Ci sono due regioni dispari in cui io non ho mosse. Il nero può prendere il controllo del gioco."
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero gioca in una regione dispari. Giocare in parità è fondamentale."
+    },
+    {
+      "move": "H1",
+      "comment": "Prendo l'angolo. Di meglio non avevo: almeno salvo il bordo est."
+    },
+    {
+      "move": "G1",
+      "comment": "E il nero chiude la regione dispari. Ora sono costretto a cedere l'angolo a nord-ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": "Comincia la conquista del nero.<br>Il bianco passa."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero gioca tutte e due le mosse a sud-est grazie al controllo della diagonale principale e della colonna <b>G</b>."
+    },
+    {
+      "move": "G7",
+      "comment": "Seconda mossa nella regione."
+    },
+    {
+      "move": "B8",
+      "comment": "Corretta: mi cede l'angolo, ma controlla la riga <b>7</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A7",
+      "comment": "In verità, contando, la mossa giusta sarebbe stata <b>B7</b>. Ma ormai eravamo stanchi e il tempo agli sgoccioli. E comunque ha vinto."
+    },
+    {
+      "move": "B7",
+      "comment": "La meno peggio."
+    },
+    {
+      "move": "A5",
+      "comment": "Thank you, Mr. Takigawa-san."
+    }
+  ]
+}

@@ -49,9 +49,9 @@
 <p>Che dire? Ho giocato questa partita in modo pressoché perfetto. Il computer mi dà una media di 0,36 pedine perse per
     mossa. Se avessi giocato tutte le partite a questo livello avrei vinto il mondiale.</p>
 
-<p>Il fatto è che quanto un avversario va in svantaggio abbastanza presto è più facile mantenerlo. Poi, per carità,
+<p>Il fatto è che quando un avversario va in svantaggio abbastanza presto è più facile mantenerlo. Poi, per carità,
 bisogna stare attenti a non sbagliare. Però...</p>
 
 <p>L'importante è saper amministrare bene il vantaggio e saper condurre la partita. &Egrave; questo che intendeva
-Donato Barnaba nella citazione iniziale. C'è molto, e forse anche più che in altre occasioni, da imparare dalle partite che si
-vincono.</p>
+Donato Barnaba nella citazione iniziale. C'è molto da imparare dalle partite che si
+vincono, e forse anche più che in altre occasioni.</p>

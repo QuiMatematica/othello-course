@@ -35,7 +35,7 @@
 
     <!-- Note opzionali -->
     <div class="mt-4">
-      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;"></div>
+      <div style="background-color: white; color: black; border-radius: 10px; padding: 12px; margin: 8px 0;">&Egrave; stata un'emozione giocare contro una leggenda dell'Othello. &Egrave; stato un peccato aver giocato così male.</div>
     </div>
 
   </div>
@@ -43,7 +43,33 @@
 
 <h2>La partita commentata</h2>
 
-<board data-type="show" data-label="commento" data-file="01-pihlajapuro-signorini.json"
+<p>Imre Leader è una vera leggenda dell'Othello.</p>
+
+<p>Nel database ci partite sue fin dal 1983.</p>
+
+<p>Attualmente è considerato il numero 3 del Regno Unito e il numero 29 d'Europa.</p>
+
+<p>C'è un'apertura che riporta il suo nome: la Tigre di Leader.</p>
+
+<p>&Egrave; professore di matematica all'Università di Cambridge. &Egrave; uno dei pochi giocatori
+di Othello ad avere una propria pagina Wikipedia
+<a href="https://en.wikipedia.org/wiki/Imre_Leader" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>.</p>
+
+<p>Ma soprattutto è una persona piacevolissima, sempre pronta al dialogo e alla battuta... e a rivedere le partite insieme.</p>
+
+<board data-type="show" data-label="commento" data-file="13-leader-signorini.json"
        data-caption="Partita commentata."></board>
 
 <h2>Tocca a te</h2>
+
+<p>Stanchezza? Timore per l'avversario? O incapacità a giocare ad alto livello?</p>
+
+<p>Sta di fatto che pochi errori in apertura mi hanno portato presto a una situazione difficilmente sostenibile.</p>
+
+<p>E questo è stato il primo errore.</p>
+
+<board data-type="quiz" data-label="quiz-1" data-file="13-leader-signorini-quiz-1.json"></board>
+
+<p>Un'altra occasione persa era in questa posizione.</p>
+
+<board data-type="quiz" data-label="quiz-2" data-file="13-leader-signorini-quiz-2.json"></board>

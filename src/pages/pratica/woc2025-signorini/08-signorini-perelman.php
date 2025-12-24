@@ -48,7 +48,7 @@
 
 <p>Alla mossa 49, purtroppo, ho fatto un errore di voltura. Non ho girato la pedina <b>C3</b>.</p>
 
-<p>Malgrado i tanti anni che gioco, malgrado questa cosa mi sia costata una partita vinta nel Mondiale del 2005,
+<p>Malgrado i tanti anni che gioco, malgrado questa cosa mi sia costata una partita nel Mondiale del 2005,
 nonostante mi sia successo già con Kurita in questo Mondiale 2025, ancora mi capita di fare errori di voltura.
 Devo stare più attento.</p>
 
@@ -58,8 +58,8 @@ Devo stare più attento.</p>
        data-caption="Partita commentata."></board>
 
 <p>A parte l'errore di voltura, di cui chiedo scusa al mio avversario, non ho fatto altri errori.
-E anche il gioco del bianco non è che sia stato così pessimo: di mossa in mossa non ha giocato
-sempre la mossa meno peggio, però si è trovato preso in una situazione di svantaggio e non
+E anche il bianco non ha giocato malissimo: ha fatto alcuni piccoli errori in apertura e
+    si è trovato in una situazione di svantaggio. E io non
 gli ho dato respiro.</p>
 
 <p>Direi che questa analisi può tranquillamente concludersi qui.</p>

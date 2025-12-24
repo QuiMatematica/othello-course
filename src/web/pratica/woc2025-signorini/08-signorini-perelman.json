@@ -38,7 +38,7 @@
     },
     {
       "move": "E8",
-      "comment": "Eh? Mi lascia la mossa ideale in <b>F4</b>? Credo che il bianco avesse in mente la barca a vela e che abbia voluto ricreare la situazione anche se non ho risposto <b>H5</b>. Ma orma non è più una barca a vela."
+      "comment": "Eh? Mi lascia la mossa ideale in <b>F4</b>? Credo che il bianco avesse in mente la barca a vela e che abbia voluto ricreare la situazione anche se non ho risposto <b>H5</b>. Ma ormai non è più una barca a vela."
     },
     {
       "move": "F4",
@@ -110,11 +110,11 @@
     },
     {
       "move": "D8",
-      "comment": "Prende anche lui un tempo di gioco a nord.<br>E a questo punto mi accorgo di cosa posso fare a nord."
+      "comment": "Prende anche lui un tempo di gioco a sud.<br>E a questo punto mi accorgo di cosa posso fare a nord."
     },
     {
       "move": "F1",
-      "comment": "Gioca in <b>F1</b>. Il bianco non può giocare né in <b>D1</b> né in <b>D2</b>. L'unica mossa per non perdere tempi di gioco è sbilanciarsi in <b>G1</b>."
+      "comment": "Gioco in <b>F1</b>. Il bianco non può giocare né in <b>D1</b> né in <b>D2</b>. L'unica mossa per non perdere tempi di gioco è sbilanciarsi in <b>G1</b>."
     },
     {
       "move": "G1",
@@ -162,7 +162,7 @@
     },
     {
       "move": "H6",
-      "comment": "Va bene, se non vuoi il bordo est me lo prendo io. PRimo tempo di gioco."
+      "comment": "Va bene, se non vuoi il bordo est me lo prendo io. Primo tempo di gioco."
     },
     {
       "move": "A6",
@@ -194,7 +194,7 @@
     },
     {
       "move": "B4",
-      "comment": "E io chiudo il buco in <b>B4</b>."
+      "comment": "E io chiudo il buco in <b>B4</b>.<br>Metto in pausa l'analisi e leggi sotto."
     }
   ]
 }

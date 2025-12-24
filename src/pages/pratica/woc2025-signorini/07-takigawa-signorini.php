@@ -51,8 +51,8 @@ concedermi questi lussi.</p>
 
 <p>Ebbene: che questo rimanga di lezione per me... e per tutti voi che avete letto questo commento.
 Anche se siete stanchi, cercate comunque di elaborare un piano durante la partita. E soprattutto
-ogni mossa deve essere analizzata in profondità. Almeno profondità 3, quindi pensando alla mossa,
-alla miglior risposta dell'avversario e a una possibile propria contro-risposta.</p>
+ogni mossa deve essere analizzata in profondità: almeno profondità 3. Ovvero: pensi ad una tua mossa,
+alla miglior risposta dell'avversario e a una possibile contro-risposta.</p>
 
 <h2>Tocca a te</h2>
 
@@ -68,10 +68,10 @@ il sei giocando in <b>B8</b>.</p>
 
 <board data-type="show" data-label="quiz-2" data-file="07-takigawa-signorini-quiz-2.json"></board>
 
-<p>Se anche il nero non avesse preso il bordo sud, giocando a nord hai comunque ottenuto un vantaggio.
-    Ricorda dall'analisi. Dopo <b>B3</b> non era più vantaggioso giocare in <b>F1</b> perché il nero
-avrebbe potuto incunearsi in <b>E1</b>. Due buoni motivi (i tempi e il vantaggio a giocare) per giocare a nord
-invece di prendere il bordo.</p>
+<p>Anche se il nero non prendesse il bordo sud, giocando a nord hai comunque ottenuto un vantaggio.
+    Ricorda dall'analisi: dopo <b>B3</b> non era più vantaggioso giocare in <b>F1</b> perché il nero
+avrebbe potuto incunearsi in <b>E1</b>. Due buoni motivi (i tempi e il vantaggio della mossa) per giocare a nord
+invece di prendere il bordo sud.</p>
 
 <p>Anche alla mossa 45 ero io in leggero vantaggio, ma il finale perfetto non era per niente facile.</p>
 

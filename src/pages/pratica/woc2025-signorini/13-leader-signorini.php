@@ -51,11 +51,11 @@
 
 <p>C'è un'apertura che riporta il suo nome: la Tigre di Leader.</p>
 
-<p>&Egrave; professore di matematica all'Università di Cambridge. Credo sia l'unico giocatore
-di Othello che abbia una pagina Wikipedia
+<p>&Egrave; professore di matematica all'Università di Cambridge. &Egrave; uno dei pochi giocatori
+di Othello ad avere una propria pagina Wikipedia
 <a href="https://en.wikipedia.org/wiki/Imre_Leader" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>.</p>
 
-<p>Ma soprattutto è una persona piacevolissima, sempre pronta al dialogo e a rivedere le partite insieme.</p>
+<p>Ma soprattutto è una persona piacevolissima, sempre pronta al dialogo e alla battuta... e a rivedere le partite insieme.</p>
 
 <board data-type="show" data-label="commento" data-file="13-leader-signorini.json"
        data-caption="Partita commentata."></board>
@@ -72,4 +72,4 @@ di Othello che abbia una pagina Wikipedia
 
 <p>Un'altra occasione persa era in questa posizione.</p>
 
-<board data-tipe="quiz" data-label="quiz-2" data-file="13-leader-signorini-quiz-2.json"></board>
+<board data-type="quiz" data-label="quiz-2" data-file="13-leader-signorini-quiz-2.json"></board>

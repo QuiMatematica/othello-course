@@ -110,7 +110,7 @@
     },
     {
       "move": "A3",
-      "comment": "Tipica mossa d'attesa in diagonale con accesso al bordo.<br>Tocca a me, che devo aprire il gioco da qualche parte. Un obiettivo dovrebbe essere quello di procurarmi l'accesso a <b>B8</b>. Certamente devo concedere poche mosse all'avversario. Non ci sono molte mosse con queste caratteristiche. <b>B6</b> non mi piace perché consente al bianco di giocare sul bordo. <b>F3</b> non mi piace molto perché mi sembra aprire troppe mosse al bianco."
+      "comment": "Tipica mossa d'attesa in diagonale con accesso al bordo.<br>Tocca a me, che devo aprire il gioco da qualche parte. Un obiettivo dovrebbe essere quello di procurarmi l'accesso a <b>B8</b>. Certamente devo concedere poche mosse all'avversario. Non ci sono molte mosse con queste caratteristiche. <b>A6</b> non mi piace perché consente al bianco di giocare sul bordo. <b>F3</b> non mi piace molto perché mi sembra aprire troppe mosse al bianco."
     },
     {
       "move": "H4",
@@ -130,7 +130,7 @@
     },
     {
       "move": "A6",
-      "comment": "Peccato che non l'abbia fatto. Sono andato ad aprire il gioco ad ovest. Sì, il cinque a sud non è attaccabile, ma dato nuove mosse all'avversario."
+      "comment": "Peccato che non l'abbia fatto. Sono andato ad aprire il gioco ad ovest. Sì, il cinque a sud non è attaccabile, ma ho dato nuove mosse all'avversario."
     },
     {
       "move": "A4",
@@ -210,7 +210,7 @@
     },
     {
       "move": "B3",
-      "comment": "Il bianco riempi questa casella..."
+      "comment": "Il bianco riempie questa casella..."
     },
     {
       "move": "C2",

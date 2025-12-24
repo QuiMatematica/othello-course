@@ -38,7 +38,7 @@ class GenerateIndexPlugin {
             <!-- Pulsante precedente -->
             <button class="btn nav-btn-dark btn-success d-flex flex-column align-items-center px-0 w-25" id="prevBtn">
                 <i class="bi bi-chevron-left fs-3 text-white"></i>
-                <span id="prevLabel" class="small text-white-50">Avanzato</span>
+                <span id="prevLabel" class="small text-white-50">Pratica</span>
             </button>
             <!-- Titolo livello attivo -->
             <div class="d-flex flex-column align-items-center flex-grow-1">

@@ -3,7 +3,7 @@
 
     <!-- Header torneo -->
     <h4 class="text-center fw-bold mb-1">World Othello Championship 2025</h4>
-    <p class="text-center mb-3">Ankara (TR) – 13 novembre 2025</p>
+    <p class="text-center mb-3">Ankara (TR) – 14 novembre 2025</p>
 
     <div class="row g-4">
 

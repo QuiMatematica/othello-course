@@ -426,20 +426,6 @@
               "title": "Controllo delle mini-linee"
             }
           ]
-        },
-        {
-          "href": "parita-forzata/",
-          "title": "La parità forzata",
-          "pages": [
-            {
-              "href": "introduzione.php",
-              "title": "La parità forzata"
-            },
-            {
-              "href": "iperparita.php",
-              "title": "Iper parità"
-            }
-          ]
         }
       ]
     },

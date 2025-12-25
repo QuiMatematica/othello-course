@@ -1,0 +1,20 @@
+{
+  "position": [
+    "--OOOO--",
+    "--#OOO--",
+    "O###OO##",
+    "OO#O#O##",
+    "OOO#####",
+    "-OOOOO-O",
+    "--#OO---",
+    "--------"
+  ],
+  "turn": "white",
+  "comment": "A prima vista la posizione non sembra buona, eppure qui ero ancora in vantaggio. Ma qual era la risposta corretta?",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Esatto: non dovevo rinunciare al tempo di gioco ad est. Tanto più che ottenevo anche l'accesso a <b>G6</b> che potevo usare più avanti come ulteriore tempo di gioco."
+    }
+  ]
+}

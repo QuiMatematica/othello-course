@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--------",
+    "-----#--",
+    "O-###---",
+    "-O##OO--",
+    "-OO#OOO-",
+    "-OOO#OOO",
+    "--OOO#--",
+    "--#####-"
+  ],
+  "played": "A3",
+  "turn": "black",
+  "comment": "Qual è la mossa migliore?",
+  "moves": [
+    {
+      "move": "F3",
+      "comment": "Esatto: questa mossa ti permette di girare poche pedine e, al tempo stesso, ottenere l'accesso a <b>B8</b>."
+    },
+    {
+      "move": "G3",
+      "comment": "La risposta migliore del bianco è questa mossa che volta pedine in una sola direzione."
+    },
+    {
+      "move": "G4",
+      "comment": "Bravissimo: il nero minacciava di giocare una mossa ideale in questa casella, che invece hai occupato tu."
+    },
+    {
+      "move": "H3",
+      "comment": "Il bianco ne può approfittare per giocare la seconda mossa sul bordo."
+    },
+    {
+      "move": "B8",
+      "comment": "E tu concludi lo scambio giocando la tua mossa bonus sul bordo sud. Bravissimo.<br>Ora il bianco sarà costretto a giocare a nord, ma qui si apre tutto un altro scenario."
+    }
+  ]
+}

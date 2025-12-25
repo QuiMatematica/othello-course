@@ -1,0 +1,97 @@
+{
+  "position": [
+    "-----O-O",
+    "--#--OO-",
+    "O--#OO##",
+    "OO##O###",
+    "OOOO####",
+    "OOO#####",
+    "OO######",
+    "--####-#"
+  ],
+  "played": "H1",
+  "comment": "Non giocare <b>G1</b>: cerca un'alternativa migliore! E prova a giocare il finale perfetto (non facile).",
+  "moves": [
+    {
+      "move": "E2",
+      "comment": "Esatto. La mossa giusta è questa. Ora, te la senti di cercare il finale perfetto?"
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "C3",
+      "comment": "Questa è abbastanza facile: mossa ideale che non concede spazio all'avversario."
+    },
+    {
+      "move": "B3",
+      "comment": "Hai tre mosse vincenti. Sai individuare la migliore?"
+    },
+    {
+      "move": "D1",
+      "comment": "Questa non era per niente facile! Bravissimo.",
+      "errors": [
+        {
+          "move": "C1",
+          "comment": "Anche questa mossa è vincente (+6) ma non è la migliore."
+        },
+        {
+          "move": "A8",
+          "comment": "Anche questa mossa è vincente (+2) ma non è la migliore."
+        }
+      ]
+    },
+    {
+      "move": "C1",
+      "comment": "Adesso hai quattro mosse vincenti. Ma qual è la migliore?"
+    },
+    {
+      "move": "B2",
+      "comment": "Bravissimo. Complimenti!",
+      "errors": [
+        {
+          "move": "B1",
+          "comment": "Vincente +8, ma non la migliore."
+        },
+        {
+          "move": "E1",
+          "comment": "Vincente +8, ma non la migliore."
+        },
+        {
+          "move": "G1",
+          "comment": "Vincente +6, ma non la migliore."
+        }
+      ]
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "E1",
+      "comment": "Bravo: ti incunei."
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "A1",
+      "comment": "Ottimo!"
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "G8",
+      "comment": "Hai vinto 37 a 27. Peccato che non l'abbia fatto anch'io al Mondiale!"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "position": [
+    "-#####-#",
+    "-##O##-#",
+    "OO##O#O#",
+    "OOO#OO##",
+    "OOOO####",
+    "OOOOO#OO",
+    "OOOOOOOO",
+    "--######"
+  ],
+  "comment": "Tocca al nero, che non ha la parità in nessuna regione. Ma c'è una possibilità, racchiusa nella regione a nord-est. Riuscirà il nero a farla diventare una regione di iper parità?",
+  "moves": [
+    {
+      "move": "A2",
+      "comment": "La mossa può sembra suicida. &Egrave; vero che ha girato molte pedine, che male non fanno. Ma perché rinunciare al bordo ovest? Il motivo c'è. Ora il bianco è costretto..."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco è costretto a prendere l'angolo <b>A1</b>. E, nel farlo, gira la pedina <b>E5</b>. Ora guarda la diagonale C <b>C7-H2</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero prende tutta la diagonale, e soprattutto volta la pedina <b>G3</b>. Si forma una iper parità a nord-est."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo. Ma ora il nero passa e guadagna così la parità globale."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco prende il bordo nord, ma non è sufficiente."
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero gioca l'ultima mossa e vince 34 a 30."
+    }
+  ]
+}

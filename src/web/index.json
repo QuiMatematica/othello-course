@@ -428,6 +428,96 @@
           ]
         }
       ]
+    },
+    {
+      "id": "pratica",
+      "title": "Pratica",
+      "href": "pratica/",
+      "chapters": [
+        {
+          "href": "woc2025-signorini/",
+          "title": "C. Signorini @ WOC 2025",
+          "pages": [
+            {
+              "href": "signorini-at-woc2025.php",
+              "title": "Il mio mondiale 2025"
+            },
+            {
+              "href": "01-pihlajapuro-signorini.php",
+              "title": "Pihlajapuro - Signorini"
+            },
+            {
+              "href": "02-signorini-kurita.php",
+              "title": "Signorini - Kurita"
+            },
+            {
+              "href": "03-kjellberg-signorini.php",
+              "title": "Kjellberg - Signorini"
+            },
+            {
+              "href": "04-signorini-gornert.php",
+              "title": "Signorini - Görnert"
+            },
+            {
+              "href": "05-aagaardhansen-signorini.php",
+              "title": "Aagaard-Hansen - Signorini"
+            },
+            {
+              "href": "06-signorini-qvist.php",
+              "title": "Signorini - Qvist Jessen"
+            },
+            {
+              "href": "07-takigawa-signorini.php",
+              "title": "Takigawa - Signorini"
+            },
+            {
+              "href": "08-signorini-perelman.php",
+              "title": "Signorini - Perel'man"
+            },
+            {
+              "href": "09-yang-signorini.php",
+              "title": "Yang - Signorini"
+            },
+            {
+              "href": "10-signorini-douda.php",
+              "title": "Signorini - Douda"
+            },
+            {
+              "href": "11-schotte-signorini.php",
+              "title": "Schotte - Signorini"
+            },
+            {
+              "href": "12-signorini-kobzev.php",
+              "title": "Signorini - Kobzev"
+            },
+            {
+              "href": "13-leader-signorini.php",
+              "title": "Leader - Signorini"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "othellico",
+      "title": "Othellico",
+      "href": "othellico/",
+      "chapters": [
+        {
+          "href": "aperture/",
+          "title": "Aperture",
+          "pages": [
+            {
+              "href": "aperture-bianco.php",
+              "title": "Aperture con il bianco"
+            },
+            {
+              "href": "aperture-nero.php",
+              "title": "Aperture con il nero"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

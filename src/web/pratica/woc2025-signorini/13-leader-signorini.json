@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "D3",
+      "comment": ""
+    },
+    {
+      "move": "C3",
+      "comment": "Apertura diagonale."
+    },
+    {
+      "move": "C4",
+      "comment": ""
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "D2",
+      "comment": "Apertura Heath."
+    },
+    {
+      "move": "B4",
+      "comment": ""
+    },
+    {
+      "move": "B3",
+      "comment": ""
+    },
+    {
+      "move": "C5",
+      "comment": "Variante &quot;triangolare&quot; della Heath."
+    },
+    {
+      "move": "D6",
+      "comment": "Ops... questa risposta non la conoscevo. Quindi sono già fuori dalla mia libreria di aperture."
+    },
+    {
+      "move": "C2",
+      "comment": "Voglio prendere il controllo del centro, anche a costo di avere qualche pedina in più. In più con questa mossa prendo il controllo della mini-diagonale <b>C4-D3</b>."
+    },
+    {
+      "move": "B6",
+      "comment": "Mossa d'attesa.<br>E qui faccio il mio primo errore. Il nero ha una buona mossa sul bordo ovest: <b>A3</b>. Quindi avrei dovuto anticiparlo e giocare io sul bordo, con la stessa <b>A3</b> o anche con <b>A4</b>. Invece..."
+    },
+    {
+      "move": "E6",
+      "comment": "Invece vado a fare questa mossa d'attesa allungando il mio muro ad est. Una mossa troppo passiva in un momento in cui era necessario darsi da fare."
+    },
+    {
+      "move": "C1",
+      "comment": "Prima di ancora di accedere ad ovest, Imre nota un gioco interessante. Con questa <b>C1</b> si prepara una mossa ideale in <b>E2</b>. Se volessi togliergliela dovrei giocare in <b>B5</b> a cui risponderebbe con una ideale in <b>C6</b> riottenendo l'accesso a <b>E2</b>."
+    },
+    {
+      "move": "E1",
+      "comment": "Allora ho pensato di sporcare la mossa ideale del nero giocando sul bordo."
+    },
+    {
+      "move": "A3",
+      "comment": "A questo punto Imre può approfittare della buona mossa sul bordo ovest."
+    },
+    {
+      "move": "D7",
+      "comment": "Gioco una mossa d'attesa, sperando che il nero venga ad aprirmi il gioco ad est."
+    },
+    {
+      "move": "D1",
+      "comment": "Ma Imre si appoggia sul bordo per costringermi a sbilanciarmi."
+    },
+    {
+      "move": "B1",
+      "comment": "Io non ho altra scelta. Lasciargli prendere in <b>F1</b> avvrebbe significato la perdita di un altro tempo di gioco."
+    },
+    {
+      "move": "E2",
+      "comment": "E il nero gioca questa semplice mossa ideale.<br>La situazione per me si fa stretta."
+    },
+    {
+      "move": "F3",
+      "comment": "Preferisco continuare con le mosse ideali e un'impostazione di muro-contro-muro, in attesa che venga a concedermi qualche mossa in più."
+    },
+    {
+      "move": "F4",
+      "comment": "Mosse centrale, favorita anche dal fatto che controlla la diagonale <b>B6-E3</b>."
+    },
+    {
+      "move": "G3",
+      "comment": "Devo conservare quante più mosse possibile, quindi gioco in diagonale per conservare <b>F5</b> per dopo."
+    },
+    {
+      "move": "C6",
+      "comment": "Mossa ideale."
+    },
+    {
+      "move": "B5",
+      "comment": "Mi decido a tagliare la formazione nera per prendere il centro.<br>Qui mi aspettavo una mossa come <b>G4</b> o <b>G5</b> che andasse a sporcare la mia mossa ideale in <b>F5</b>."
+    },
+    {
+      "move": "F2",
+      "comment": "Invece il nero gioca questa strana <b>F2</b> che mi ispira un gioco simpatico.<br>Se gioco in <b>G1</b> il nero non può incunearsi in <b>F1</b> e quindi posso giocare io dopo in quella stessa casella per chiudere il sei. Attenzione però. Dopo <b>G1</b> il nero può giocare <b>A6</b> e togliermi l'accesso a <b>F1</b>; no problem: con <b>A5</b> riconquisto l'accesso. Ok, ma non era più facile giocare prima in <b>A6</b> e togliersi il pensiero? Tanto più che il nero non ha accessi al bordo ovest? Invece..."
+    },
+    {
+      "move": "G1",
+      "comment": "Invece sono andato subito in <b>G1</b>."
+    },
+    {
+      "move": "A6",
+      "comment": "Giustamente il nero ci prova a mettermi in difficoltà togliendo l'accesso a <b>F1</b>."
+    },
+    {
+      "move": "A5",
+      "comment": "Gioco per riottenere l'accesso."
+    },
+    {
+      "move": "A4",
+      "comment": "Il nero chiudo il bordo."
+    },
+    {
+      "move": "F1",
+      "comment": "E io chiudo il sei a nord.<br>Apparentemente lo scambio sembra essere stato favorevole a me. Ma il nero ha un altro asso nella manica."
+    },
+    {
+      "move": "F5",
+      "comment": "Con questa mossa ottiene ben tre cose. Occupa la mia mossa ideale. Mi concede una sola pedina esterna su cui giocare; e completa il bordo ovest togliendomi l'accesso alle caselle <b>C</b>.<br>A questo punto è accaduta una scenetta simpatica. Analizzando la situazione mi sono accorto del pericolo che il nero giochi in <b>B2</b> controllando la diagonale. Devo aver fatto un'esclamazione perché a fine partita Imre mi ha detto che è stato l'unico suono che ho emesso durante la partita."
+    },
+    {
+      "move": "F6",
+      "comment": "L'unico modo per impedire che il nero controlli la diagonale è giocare in questa casella, andando a chiudere completamente il muro. Sono finito. Ma non avevo alternative. Proviamo a vendere cara la pelle!"
+    },
+    {
+      "move": "C7",
+      "comment": "Imre ovviamente gioca mosse minimali, dandomi pochissimi accessi."
+    },
+    {
+      "move": "C8",
+      "comment": "Approfittiamo di quel poco che mi si offre."
+    },
+    {
+      "move": "E7",
+      "comment": "Piccole mosse, pochi accessi."
+    },
+    {
+      "move": "D8",
+      "comment": "Gioco in diagonale per tenermi <b>F7</b> per dopo."
+    },
+    {
+      "move": "F8",
+      "comment": "Sempre minimal."
+    },
+    {
+      "move": "E8",
+      "comment": "A questo punto devo giocare di parità, anche perché non ho alternative. Lascio il bordo al nero, ma con l'obiettivo di incunearmi in <b>A7</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero prende il bordo."
+    },
+    {
+      "move": "B7",
+      "comment": "Attacco."
+    },
+    {
+      "move": "F7",
+      "comment": "Peccato che il nero abbia a disposizione questa mossa sicura."
+    },
+    {
+      "move": "B2",
+      "comment": "Non mi resta che attaccare anche dall'altra parte."
+    },
+    {
+      "move": "G4",
+      "comment": "Il nero è costretto a darmi qualche mossa in più, ma sempre con mosse minimali."
+    },
+    {
+      "move": "H5",
+      "comment": "Andiamo sul bordo, ma soprattutto attento a girare una pedina alla volta."
+    },
+    {
+      "move": "G6",
+      "comment": "Il nero lavora per saturare la regione ad est."
+    },
+    {
+      "move": "G5",
+      "comment": "Mossa centrale."
+    },
+    {
+      "move": "H6",
+      "comment": "Il nero si appoggia sul bordo: l'obiettivo è la saturazione dell'area.<br>Qui ho intravisto una mezza speranza: se riesco a far fare un quattro al nero posso sfruttare la parità a nord-est."
+    },
+    {
+      "move": "H4",
+      "comment": "Mi appoggio sul bordo, sperando che il nero prenda il quattro."
+    },
+    {
+      "move": "A1",
+      "comment": "Ma Imre ha un piano diverso. Prende l'angolo nord-ovest."
+    },
+    {
+      "move": "A2",
+      "comment": "Ovviamente io non devo perdere tempo e mi incuneo."
+    },
+    {
+      "move": "H1",
+      "comment": "Imre prende tutto il bordo nord.<br>A questo punto sono costretto a giocare a sud."
+    },
+    {
+      "move": "H7",
+      "comment": "Cominciamo con questa mossa, la meno peggio."
+    },
+    {
+      "move": "H2",
+      "comment": "Imre cammina sul bordo."
+    },
+    {
+      "move": "G7",
+      "comment": "Gioco di parità. Qualcosa servirà, no?"
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero gioca prima a nord-est."
+    },
+    {
+      "move": "H3",
+      "comment": "E io chiudo."
+    },
+    {
+      "move": "H8",
+      "comment": "Poi gioca a sud-est."
+    },
+    {
+      "move": "G8",
+      "comment": "E io chiudo e mi incuneo."
+    },
+    {
+      "move": "A8",
+      "comment": "Infine gioca a sud-ovest."
+    },
+    {
+      "move": "A7",
+      "comment": "E io chiudo. Ma non basta. Thanks Imre."
+    }
+  ]
+}

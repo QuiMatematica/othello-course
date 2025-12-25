@@ -1,0 +1,77 @@
+{
+  "position": [
+    "--O#----",
+    "###O##-O",
+    "###OOOOO",
+    "#OO#OO#O",
+    "-OO##O#O",
+    "O-#OO#OO",
+    "--O#OO--",
+    "--OOOOOO"
+  ],
+  "played": "A2",
+  "turn": "white",
+  "comment": "C'è un'unica mossa vincente. Riesci a indovinarla al primo tentativo?",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Quanti tentativi hai dovuto fare per indovinare questa mossa? Se l'hai indovinata al primo sei un campione.<br>La chiave di lettura di questa mossa me l'ha offerta Paolo Scognamiglio: il bianco muove in una regione pari e cede un angolo che in verità ha già perso. Vero, ma resta comunque una mossa molto difficile da giocare.<br>Ora il nero ha due mosse di pari valore. Il diagramma segue quella per te più semplice: praticamente ti troverai costretto a vincere."
+    },
+    {
+      "move": "B1",
+      "comment": "Considerando anche <b>A5</b> questa era una regione dispari.<br>Tocca a te, ma questa è facile."
+    },
+    {
+      "move": "B6",
+      "comment": "Bravo: mossa sicura."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero prolunga il bordo nord."
+    },
+    {
+      "move": "F1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H7",
+      "comment": "Adesso attento all'interessante gioco del nero (che comunque non gli permette di vincere).<br>Si incunea ad est per ottenere l'accesso all'angolo <b>H1</b>."
+    },
+    {
+      "move": "G7",
+      "comment": "Tu ora sei obbligato a muovere in <b>G7</b> e rendere tutta la colonna <b>G</b> bianca."
+    },
+    {
+      "move": "G1",
+      "comment": "In questo modo il nero può giocare prima in <b>G1</b>..."
+    },
+    {
+      "move": "A1",
+      "comment": "... tu prendi l'angolo <b>A1</b>..."
+    },
+    {
+      "move": "H1",
+      "comment": "...e il nero prende <b>H1</b>."
+    },
+    {
+      "move": "A5",
+      "comment": "Ancora obbligato.<br>Il nero ha due mosse di pari valore."
+    },
+    {
+      "move": "B8",
+      "comment": "Conta bene..."
+    },
+    {
+      "move": "A8",
+      "comment": "Esatto."
+    },
+    {
+      "move": "A7",
+      "comment": "Ma anche l'altra era di pari valore."
+    },
+    {
+      "move": "B7",
+      "comment": "Hai vinto!"
+    }
+  ]
+}

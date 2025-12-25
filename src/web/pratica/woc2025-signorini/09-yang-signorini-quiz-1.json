@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--------",
+    "---##---",
+    "--O#OO--",
+    "--OO#OO-",
+    "##O##---",
+    "#####---",
+    "--------",
+    "--------"
+  ],
+  "played": "A6",
+  "turn": "white",
+  "comment": "Dove giocheresti tu?",
+  "moves": [
+    {
+      "move": "F5",
+      "comment": "Esatto: questa è la mossa migliore in questa posizione, se non altro perché prepara la mossa ideale in <b>C2</b>.<br>Ma proviamo a proseguire."
+    },
+    {
+      "move": "B3",
+      "comment": "Non è una mossa facile, ma secondo il computer questa è la migliore. E tu dove giocheresti adesso?"
+    },
+    {
+      "move": "C2",
+      "comment": "Esatto. Guarda che bella posizione centrale che ha preso il bianco.<br>Ancora qualche mossa, dai."
+    },
+    {
+      "move": "F2",
+      "comment": "Il nero gioca questa bella mossa centrale. Ora tocca a te."
+    },
+    {
+      "move": "C1",
+      "comment": "Esatto: è ora di accedere al bordo nord. Nota come il nero non può giocare in <b>E1</b> che sarebbe la risposta più spontanea. Ed è svantaggiato a giocare in <b>D1</b> perché ti lascerebbe un tempo di gioco in <b>B1</b>. Il vantaggio iniziale è ben consolidato. Complimenti."
+    }
+  ]
+}

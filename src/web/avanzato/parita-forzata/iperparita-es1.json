@@ -1,0 +1,51 @@
+{
+  "position": [
+    "#OOOO#--",
+    "##OOOOO-",
+    "#O#OOOOO",
+    "##O#OOOO",
+    "###O##O#",
+    "##OOO#O#",
+    "#-####O#",
+    "--####O#"
+  ],
+  "comment": "Il nero muove e vince.",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Il nero aveva due mosse, ma questa <b>H2</b> crea una regione di iper parità, che garantisce almeno la parità locale al nero.",
+      "errors": [
+        {
+          "move": "G1",
+          "comment": "Dopo <b>G1</b> il bianco può giocare nella regione dispari a sud e mantenere la parità globale."
+        }
+      ]
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco gioca subito nella regione per mantenere la parità globale."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero chiude la regione a nord."
+    },
+    {
+      "move": "B7",
+      "comment": "Il conteggio dice che questa è la mossa migliore per il bianco: cede la colonna <b>B</b> ma prende il bordo sud."
+    },
+    {
+      "move": "B8",
+      "comment": "La migliore tra le due.",
+      "errors": [
+        {
+          "move": "A8",
+          "comment": "Anche questa mossa è vincente, ma l'altra era migliore."
+        }
+      ]
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco chiude la partita ma non riesce a vincere."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--OOOO--",
+    "-#OOO---",
+    "OO#O#OOO",
+    "OOO###OO",
+    "OOOOOOOO",
+    "-O##OOO-",
+    "--##OO--",
+    "----#O--"
+  ],
+  "played": "H5",
+  "turn": "black",
+  "comment": "Qual è la mossa migliore per il nero?",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Esatto: il nero doveva giocare la sua seconda mossa nello spazio a nord-ovest, rendendolo così pari.<br>Grazie allo spazio dispari a sud-est, in cui il bianco non ha mossa, il nero ha la parità globale, quindi può giocare come se fosse il bianco."
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco risponde con questa mossa sicura."
+    },
+    {
+      "move": "G1",
+      "comment": "Esatto. Il nero rinuncia al bordo nord, ma gioca per la parità anche nella regione a nord-est, puntando a incunearsi in <b>H2</b>."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G2",
+      "comment": "Bravissimo: il nero gioca la seconda mossa a nord-est, rendendo la regione pari.<br>Da qui in poi il finale perfetto si fa molto complicato, per cui possiamo tranquillamente fermarci qui. Complimenti!"
+    }
+  ]
+}

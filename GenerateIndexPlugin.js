@@ -36,17 +36,24 @@ class GenerateIndexPlugin {
         index += `
         <div class="d-flex align-items-center justify-content-between bg-success text-white rounded py-2 px-3">
             <!-- Pulsante precedente -->
-            <button class="btn btn-success" id="prevBtn">
+            <button class="btn nav-btn-dark btn-success d-flex flex-column align-items-center px-0 w-25" id="prevBtn">
                 <i class="bi bi-chevron-left fs-3 text-white"></i>
+                <span id="prevLabel" class="small text-white-50">Pratica</span>
             </button>
             <!-- Titolo livello attivo -->
-            <div id="levelTitle" class="fs-3 fw-bold text-center flex-grow-1">
-                🎯 Base
+            <div class="d-flex flex-column align-items-center flex-grow-1">
+                <div id="levelIcon" class="fs-4 mt-1">
+                    🎯
+                </div>
+                <div id="levelTitle" class="fs-3 fw-bold text-center">
+                    Base
+                </div>
             </div>
 
             <!-- Pulsante successivo -->
-            <button class="btn btn-success" id="nextBtn">
+            <button class="btn nav-btn-dark btn-success d-flex flex-column align-items-center px-0 w-25" id="nextBtn">
                 <i class="bi bi-chevron-right fs-3 text-white"></i>
+                <span id="nextLabel" class="small text-white-50">Intermedio</span>
             </button>
         </div>`;
 

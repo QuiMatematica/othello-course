@@ -1,0 +1,244 @@
+{
+  "moves": [
+    {
+      "move": "E6",
+      "comment": ""
+    },
+    {
+      "move": "F6",
+      "comment": "Apertura diagonale."
+    },
+    {
+      "move": "F5",
+      "comment": ""
+    },
+    {
+      "move": "D6",
+      "comment": ""
+    },
+    {
+      "move": "C5",
+      "comment": "Apertura Mucca."
+    },
+    {
+      "move": "E3",
+      "comment": ""
+    },
+    {
+      "move": "F7",
+      "comment": "Interessante variante della Mucca. Devo ringraziare Elisabetta Vecchi che mi aveva giocato questa mossa un paio di settimane prima del Mondiale, per cui me l'ero studiata."
+    },
+    {
+      "move": "C6",
+      "comment": "Il bianco deve cercare di mantenere il centro della posizione, senza però gonfiarsi di pedine. Lasciare l'ideale in <b>C4</b> non è un problema, tanto il bianco può rispondere <b>B5</b>."
+    },
+    {
+      "move": "E7",
+      "comment": "Infatti il nero non prende l'ideale, ma insiste a sbilanciare il gioco verso il bordo."
+    },
+    {
+      "move": "C7",
+      "comment": "E il bianco deve continuare con il gioco centrale e di evaporazione."
+    },
+    {
+      "move": "C4",
+      "comment": "Il nero gioca la sua mossa ideale."
+    },
+    {
+      "move": "B5",
+      "comment": "E il bianco taglia in orizzontale, riprendendo il centro della formazione."
+    },
+    {
+      "move": "D3",
+      "comment": "Anche il nero deve giocare prudentemente, cercando di girare poche pedine."
+    },
+    {
+      "move": "C3",
+      "comment": "Ecco, questa è una di quelle mosse 'strane' che o conosci a memoria o difficilmente giocherai dal vivo. Però ha la sua logica. &Egrave; un muro-contro-muro, e preserva la buona <b>F4</b> per dopo."
+    },
+    {
+      "move": "E2",
+      "comment": "Il nero accetta la logica del muro-contro-muro."
+    },
+    {
+      "move": "F4",
+      "comment": "Il bianco approfitta di questo semplice taglio."
+    },
+    {
+      "move": "F3",
+      "comment": "E il nero richiude il muro.<br>Fino a qui la sapevo a memoria. O meglio: l'avevo studiata più a fondo ma in quel momento non ricordavo se la mossa giusta fosse <b>E1</b> o <b>E8</b>. Ci ho pensato un po'..."
+    },
+    {
+      "move": "E1",
+      "comment": "... e ho scelto la mossa sbagliata. Quella giusta era <b>E8</b>. E me accorgerò presto di essermi messo nei guai.<br>Avevo scelto questa <b>E1</b> pensando di avere migliori risposte alle mosse a nord del nero. Ma in quel momento non avevo analizzato quello che poteva succedere a sud."
+    },
+    {
+      "move": "B6",
+      "comment": "Il nero gira il gioco e si sposta a sud. Corretto: a nord ho sigillato il mio muro fino al bordo, quindi non ha interesse a giocare là.<br>Qui per il bianco è interessante la mossa <b>D7</b> ma ho pensato di rimandarla."
+    },
+    {
+      "move": "A5",
+      "comment": "Allora per continuare la logica del muro-contro-muro, ho giocato questa mossa. Non è stata una buona idea, perché il nero può..."
+    },
+    {
+      "move": "A6",
+      "comment": "Il nero può affiancarsi sul bordo e spingermi a sbilanciarmi.<br>Sbilanciarsi sul bordo e mantenere i tempi di gioco o andare in <b>D7</b> e perdere un tempo di gioco sul bordo?"
+    },
+    {
+      "move": "A7",
+      "comment": "Ho scelto di sbilanciarmi e non perdere tempi di gioco."
+    },
+    {
+      "move": "B4",
+      "comment": "Il nero gioca questa mossa centrale."
+    },
+    {
+      "move": "D7",
+      "comment": "Io finalmente gioco in <b>D7</b>, anche perché tolgo almeno temporaneamente l'accesso a <b>A4</b> al nero."
+    },
+    {
+      "move": "D8",
+      "comment": "Facile risposta del nero.<br>A questo punto sono costretto a sfondare il muro a est. E devo farlo girando poche pedine. <b>G4</b> era una buona opzione."
+    },
+    {
+      "move": "G6",
+      "comment": "Invece ho scelto <b>G6</b>."
+    },
+    {
+      "move": "A4",
+      "comment": "Il nero si appoggia sul bordo ovest."
+    },
+    {
+      "move": "A3",
+      "comment": "Risposta praticamente obbligata."
+    },
+    {
+      "move": "G4",
+      "comment": "Il nero approfitta di una delle mosse che gli ho concesso a est."
+    },
+    {
+      "move": "G5",
+      "comment": "Io chiudo in <b>G5</b>. Questa mossa può sembrare interessante anche perché va a controllare la diagonale <b>C7-F4</b> e minaccia l'accesso a <b>C8</b>. Ma in verità..."
+    },
+    {
+      "move": "C8",
+      "comment": "Il nero rovina entrambe i piani al bianco giocando lui stesso in <b>C8</b> e guadagnando un ottimo tempo di gioco.<br>Ora la percezione di essere in svantaggio si fa concreta, tanto più che devo di nuovo giocare io."
+    },
+    {
+      "move": "H3",
+      "comment": "Mi decido per questa mossa d'attesa sul bordo, se non altro dopo la risposta in <b>G3</b> posso giocare in <b>F2</b>."
+    },
+    {
+      "move": "D2",
+      "comment": "Ma il nero ha un'altra idea. Temporeggia verso nord."
+    },
+    {
+      "move": "G3",
+      "comment": "A questo punto ne approfitto e chiudo io lo spazio in <b>G3</b>."
+    },
+    {
+      "move": "F1",
+      "comment": "Il nero si appoggia a nord, invitandomi a sbilanciarmi."
+    },
+    {
+      "move": "G1",
+      "comment": "In effetti ho valutato più interessante sbilanciarmi. Se non altro il nero non ha la possibilità di attaccare subito e ogni mossa a nord-ovest mi permette di stabilizzare il bordo. Inoltre il nero non ha vantaggio a giocare in <b>F2</b> perché posso rispondere in <b>C2</b>."
+    },
+    {
+      "move": "C2",
+      "comment": "Infatti il nero decide di occupare anche <b>C2</b>.<br>Ora, forse la mia risposta migliore poteva essere <b>B3</b>, visto che il cinque non è attaccabile. <b>B1</b> è pericolosa perché dopo <b>F2-B3</b> rischiavo un attacco sia contro il bordo nord sia contro il bordo ovest."
+    },
+    {
+      "move": "D1",
+      "comment": "Allora ho preferito allungare il bordo nord, se non altro per pareggiare i tempi di gioco con <b>F2</b>."
+    },
+    {
+      "move": "H6",
+      "comment": "Ma non ho tenuto conto che con <b>D1</b> ho reso bianca tutta la diagonale <b>D2-G5</b> per cui il nero può giocare questa <b>H6</b> senza darmi accessi al bordo est.<br>E qui ho fatto il primo vero errore della partita."
+    },
+    {
+      "move": "F8",
+      "comment": "Ho giocato <b>F8</b> perché dopo <b>E8-B8</b> speravo di prendere il sei sul bordo sud. Peccato che quel cinque in arrivo era subito attaccabile."
+    },
+    {
+      "move": "E8",
+      "comment": "Il nero mi invita a prendere il cinque."
+    },
+    {
+      "move": "B8",
+      "comment": "Non posso rinunciare, altrimenti perdo un altro tempo di gioco."
+    },
+    {
+      "move": "G7",
+      "comment": "E il nero attacca subito. Inoltre controllando la diagonale di fatto guadagna un tempo di gioco."
+    },
+    {
+      "move": "C1",
+      "comment": "Vado alla ricerca di una mossa che mi permetta di non fare danni.<br>Però formo una regione dispari a nord-ovest dove non ho accesso. No buono."
+    },
+    {
+      "move": "H4",
+      "comment": "Mossa strana: credo che il nero avesse di meglio. Quelle caselle sparse sul bordo est mi possono essere utili."
+    },
+    {
+      "move": "H8",
+      "comment": "Decido di prendere subito l'angolo, rinunciando di fatto al bordo sud e al bordo ovest ma puntando al bordo est e al controbordo sud."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero deve incunearsi."
+    },
+    {
+      "move": "H7",
+      "comment": "Io chiudo a sud-est. Il nero non può rispondere in <b>H5</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo a sud-ovest.<br>Ho due mosse: quale scegliere?"
+    },
+    {
+      "move": "H5",
+      "comment": "Ho preferito prendermi il bordo."
+    },
+    {
+      "move": "B7",
+      "comment": "E giustamente il nero mi porta via l'ultima mossa che ho a disposizione. Passo."
+    },
+    {
+      "move": "B3",
+      "comment": "Il nero si prende il controbordo ovest e mi concede un'unica mossa suicida."
+    },
+    {
+      "move": "A2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": "Prende l'angolo. Io passo."
+    },
+    {
+      "move": "B2",
+      "comment": "Prende il controbordo. Io passo."
+    },
+    {
+      "move": "B1",
+      "comment": "Chiude la regione. Io passo."
+    },
+    {
+      "move": "F2",
+      "comment": "Prende il controbordo nord."
+    },
+    {
+      "move": "G2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Prende il bordo. Io passo."
+    },
+    {
+      "move": "H2",
+      "comment": "Stra-vince. Complimenti Tom. Ti sei preso la rivincita da Reykjavik."
+    }
+  ]
+}

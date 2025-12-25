@@ -1,0 +1,238 @@
+{
+  "moves": [
+    {
+      "move": "D3"
+    },
+    {
+      "move": "C3",
+      "comment": "Apertura diagonale."
+    },
+    {
+      "move": "C4"
+    },
+    {
+      "move": "E3"
+    },
+    {
+      "move": "F4",
+      "comment": "Apertura Mucca."
+    },
+    {
+      "move": "D6"
+    },
+    {
+      "move": "E6"
+    },
+    {
+      "move": "B5",
+      "comment": "Apertura Sinking Boat."
+    },
+    {
+      "move": "C6",
+      "comment": "Risposta tipica a questa apertura."
+    },
+    {
+      "move": "G4",
+      "comment": "Imposto un muro contro muro, tipico delle aperture di questa famiglia."
+    },
+    {
+      "move": "G3",
+      "comment": "Mossa d'attesa abbastanza comune. La risposta del bianco è piuttosto scontata."
+    },
+    {
+      "move": "G5",
+      "comment": "Ecco la risposta 'scontata'."
+    },
+    {
+      "move": "D2",
+      "comment": "Il nero decide di tagliare la formazione del bianco. Offre una mossa ideale in <b>C5</b> ma in cambio vuole il controllo sulla diagonale <b>D3-F5</b>."
+    },
+    {
+      "move": "E2",
+      "comment": "La mossa ideale può aspettare. Piuttosto preferisco preservare la diagonale."
+    },
+    {
+      "move": "B3",
+      "comment": "Il nero cerca di sporcare la mossa ideale in <b>C5</b>. In verità ho capito solo alla mossa successiva che l'obiettivo della mia avversaria era anche un altro."
+    },
+    {
+      "move": "C5",
+      "comment": "Malgrado l'opera di sporcamento, scelgo di giocare in <b>C5</b>. Rispetto a quando era ideale non rappresenta un grosso peggioramento. Anzi mi può far comodo il fatto che in <b>B3</b> ci sia una pedina nera."
+    },
+    {
+      "move": "F3",
+      "comment": "La mia avversaria è disposta a girare molte pedine pur di prendere la mini diagonale <b>D3-E4</b>."
+    },
+    {
+      "move": "F2",
+      "comment": "Cerco di ricompattare le mie pedine e soprattutto impedisco la mossa nera in <b>B6</b>."
+    },
+    {
+      "move": "F1",
+      "comment": "Tipico primo accesso al bordo.<br>A questo punto devo intervenire subito per evitare che il nero giochi anche <b>E1</b>."
+    },
+    {
+      "move": "E1",
+      "comment": "Occupo io la casella.<br>Mi aspetto la risposta in <b>D1</b> e, ahimè, al nero rimane una futura mossa in <b>G1</b>."
+    },
+    {
+      "move": "D1",
+      "comment": "Piuttosto scontata, per mantenere i tempi di gioco sul bordo."
+    },
+    {
+      "move": "F5",
+      "comment": "Mossa centrale."
+    },
+    {
+      "move": "H5",
+      "comment": "La mia avversaria fa il primo accesso al bordo est, approfittando del fatto che la riga <b>5</b> è tutta bianca."
+    },
+    {
+      "move": "C1",
+      "comment": "A questo punto, gioco in <b>C1</b> per rimandare la mossa del nero in <b>H6</b> e per cercare di prendere un tempo di gioco chiudendo poi in <b>C2</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "La mia avversaria prende in <b>B1</b> per non perdere un tempo di gioco."
+    },
+    {
+      "move": "C2",
+      "comment": "Ma io mi prendo un tempo in <b>C2</b>."
+    },
+    {
+      "move": "H6",
+      "comment": "Il nero gioca la seconda mossa sul bordo est.<br>Ora ho un problema. Il nero può giocare anche in <b>G1</b>, stabilizzando il bordo nord e guadagnando un altro tempo. Ma non posso attaccare subito il bordo, altrimenti il nero può prendere l'angolo senza che io possa poi rispondere in <b>G1</b>. Quindi ho bisogno di riprendermi la pedina in <b>E3</b>."
+    },
+    {
+      "move": "H3",
+      "comment": "Questa è l'unica mossa che mi permette di impedire <b>G1</b>."
+    },
+    {
+      "move": "F6",
+      "comment": "Mossa d'attesa.<br>A questo punto il gioco deve spostarsi verso ovest. E come bianco ho bisogno di una mossa che mi permetta di ottenere il massimo da quel bordo. Cosa scegliere?"
+    },
+    {
+      "move": "A4",
+      "comment": "Ho scelto questa mossa per diverse ragioni. Innanzitutto ho cercato una mossa che desse poche risposte sul bordo. E poi ho cercato di tenere una regione pari a nord-ovest."
+    },
+    {
+      "move": "A5",
+      "comment": "La mia avversaria gioca questa ottima mossa: mi obbliga a rispondere in <b>A6</b> per non perdere tempi di gioco sul bordo, e intanto si procura l'accesso a <b>G1</b>."
+    },
+    {
+      "move": "A6",
+      "comment": "Mantengo il controllo del bordo."
+    },
+    {
+      "move": "G1",
+      "comment": "E la mia avversaria stabilizza il bordo nord.<br>A questo punto è piuttosto evidente che sono in difficoltà e tocca a me muovere. Ho bisogno di una mossa a bassa influenza..."
+    },
+    {
+      "move": "E7",
+      "comment": "La mossa più semplice è questa <b>E7</b> che gira pedine in un'unica direzione."
+    },
+    {
+      "move": "F8",
+      "comment": "Inizia il gioco sul bordo sud."
+    },
+    {
+      "move": "E8",
+      "comment": "Faccio pressione sul bordo, ma più che altro vorrei ottenere una posizione centrale."
+    },
+    {
+      "move": "D8",
+      "comment": "Katie allunga il bordo per non perdere il tempo di gioco."
+    },
+    {
+      "move": "D7",
+      "comment": "Mossa centrale che purtroppo gira pedine in due direzioni. Se non altro minaccio di giocare in <b>B4</b>."
+    },
+    {
+      "move": "B4",
+      "comment": "Ma ovviamente la mia avversaria non mi concede quella buona mossa. E, come se non bastasse, si procura un ottimo accesso per <b>F7</b>.<br>La situazione per me è disperata."
+    },
+    {
+      "move": "F7",
+      "comment": "Occupo io la casella, ma è solo un rimandare l'inevitabile."
+    },
+    {
+      "move": "G8",
+      "comment": "Infatti il nero può tranquillamente allungare in <b>G8</b>."
+    },
+    {
+      "move": "H4",
+      "comment": "A questo non posso far altro che cercare di salvare il salvabile, puntando prima di tutto sulla parità. Quindi chiudo questa piccola regione dispari, e conto sul fatto che la risposta in <b>H2</b> rende pari la regione a nord-est."
+    },
+    {
+      "move": "H2",
+      "comment": "Per non perdere tempi di gioco."
+    },
+    {
+      "move": "B2",
+      "comment": "Nella regione dispari a sud-ovest non ho ancora accessi, quindi intanto mi prendo questa diagonale principale, procurandomi l'accesso alla casella <b>B6</b>."
+    },
+    {
+      "move": "G6",
+      "comment": "Senza nessun pericolo, questa mossa taglia la diagonale."
+    },
+    {
+      "move": "G7",
+      "comment": "Mi riprendo la diagonale. Purtroppo il nero può giocare..."
+    },
+    {
+      "move": "H7",
+      "comment": "Purtroppo il nero può giocare in <b>H7</b> senza voltare la pedina in <b>G7</b>."
+    },
+    {
+      "move": "B6",
+      "comment": "Sfrutto questo accesso e rendo pari lo spazio a sud-ovest. Purtroppo ci sono due spazi dispari e a sud-est non ho accesso."
+    },
+    {
+      "move": "C8",
+      "comment": "Mossa tranquilla sul bordo sud."
+    },
+    {
+      "move": "C7",
+      "comment": "Non posso far altro che ripetere la configurazione di prima."
+    },
+    {
+      "move": "B8",
+      "comment": "Ora però il nero riesce anche a tagliare la diagonale. Il gioco è completamente nelle sue mani."
+    },
+    {
+      "move": "A3",
+      "comment": "Rendiamo pari quello che è rendibile pari."
+    },
+    {
+      "move": "A1",
+      "comment": "Primo angolo."
+    },
+    {
+      "move": "A2",
+      "comment": "Sembra una mossa suicida, ma è necessaria per non perdere ulteriori tempi di gioco proprio in finale, e per sfruttare fino in fondo quel po' di parità che mi è rimasta."
+    },
+    {
+      "move": "H8",
+      "comment": "Secondo angolo."
+    },
+    {
+      "move": "B7",
+      "comment": "Sempre per parità."
+    },
+    {
+      "move": "A7",
+      "comment": "Evvai! Quante pedine nere con una sola mossa."
+    },
+    {
+      "move": "A8",
+      "comment": "Magra consolazione."
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1",
+      "comment": "Ahimè, la mia prima partita finisce male. Posso consolarmi pensando che ho perso contro la terza classificata della categoria donne."
+    }
+  ]
+}

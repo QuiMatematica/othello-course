@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--###OO#",
+    "#####OO#",
+    "###OO#O#",
+    "###O##O#",
+    "##O###O#",
+    "#O###O##",
+    "--##O#-#",
+    "-######-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il bianco gioca subito nella regione di iper parità, tanto sa che dovrà comunque giocarci per primo."
+    },
+    {
+      "move": "B7",
+      "comment": "Per ottenere la maggior quantità di pedine possibile il nero può fare affidamento solo sulla parità locale. Quindi, con questa mossa, crea un'altra regione di iper parità."
+    },
+    {
+      "move": "A8",
+      "comment": "Di nuovo, il bianco gioca subito nella regione di iper parità. Non ottiene il bordo ovest, però prende il bordo sud e, soprattutto, mantiene la parità globale."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero salva il bordo ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco chiude la regione a nord."
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco vince."
+    }
+  ]
+}

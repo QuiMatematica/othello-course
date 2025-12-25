@@ -1,0 +1,20 @@
+{
+  "position": [
+    "-----O--",
+    "-----O--",
+    "---OOO##",
+    "-OOOOO##",
+    "-#O#####",
+    "#O######",
+    "OO######",
+    "--####-#"
+  ],
+  "played": "A7",
+  "comment": "Qual è la mossa migliore in questa posizione?",
+  "moves": [
+    {
+      "move": "A5",
+      "comment": "Esatto: puoi rispondere alla mossa in <b>A7</b> allungando il bordo e senza peggiorare la mobilità come con la mossa in <b>A4</b>."
+    }
+  ]
+}

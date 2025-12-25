@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--###OO#",
+    "#####OO#",
+    "###OO#O#",
+    "###O##O#",
+    "##O###O#",
+    "#O###O##",
+    "--##O#-#",
+    "-######-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca nello spazio dispari, convinto di poter vincere grazie alla parità e all'attacco al cinque."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo e salva il bordo sud."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco si incunea per prendere tutto il bordo ovest."
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco chiude la regione a sud. Ma ora il nero passa e il bianco ha perso la parità globale."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende il bordo ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Ma il nero vince."
+    }
+  ]
+}

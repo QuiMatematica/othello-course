@@ -1,0 +1,60 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "--O#OOO-",
+    "OOOO##O#",
+    "O##O##O#",
+    "O####O##",
+    "O###OOO#",
+    "-##OOO--",
+    "-#-OOOO-"
+  ],
+  "played": "B4",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Ormai al bianco rimane poco da fare: prende l'angolo."
+    },
+    {
+      "move": "C8",
+      "comment": "Come da piano, mi incuneo in <b>C8</b>."
+    },
+    {
+      "move": "A7",
+      "comment": "Nel frattempo il bianco ha ottenuto l'accesso in questa casella.<br>Non devo giocare subito in <b>H8</b> altrimenti perdo la parità e soprattutto rimangono due pedine bianche nella diagonale principale."
+    },
+    {
+      "move": "H7",
+      "comment": "Allora prima gioco sul bordo."
+    },
+    {
+      "move": "G7",
+      "comment": "Lascio che il mio avversario giochi nella casella <b>X</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "E prendo l'angolo. Il nero passa. E adesso la mossa interessante."
+    },
+    {
+      "move": "B2",
+      "comment": "Controllo la diagonale, quindi il bianco è costretto a giocare in..."
+    },
+    {
+      "move": "A2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": "Prendo l'angolo."
+    },
+    {
+      "move": "H1",
+      "comment": "Visto che il bianco controlla la diagonale nera, posso giocare entrambe le mosse."
+    },
+    {
+      "move": "H2",
+      "comment": "Vinta! Grazie per la partita."
+    }
+  ]
+}

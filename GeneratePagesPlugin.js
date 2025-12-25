@@ -108,7 +108,7 @@ class GeneratePagesPlugin {
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
-    <meta property="og:image" content="https://quiothello.it/icons/icon-192.jpg">
+    <meta property="og:image" content="https://quiothello.it/icons/icon-512.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />
@@ -117,7 +117,7 @@ class GeneratePagesPlugin {
     <meta name="twitter:url" content="${url}">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://quiothello.it/icons/icon-192.jpg">
+    <meta name="twitter:image" content="https://quiothello.it/icons/icon-512.jpg">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
 	<link rel="canonical" href="${url}">

@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://quiothello.it">
     <meta property="og:title" content="Qui Othello">
     <meta property="og:url" content="https://quiothello.it">
-    <meta property="og:image" content="https://quiothello.it/icons/icon-512.png">
+    <meta property="og:image" content="https://quiothello.it/images/banner2025.png.png">
     <meta property="og:type" content="website">
     <meta property="og:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
@@ -22,7 +22,7 @@
     <meta name="twitter:title" content="Qui Othello">
     <meta name="twitter:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
-    <meta name="twitter:image" content="https://quiothello.it/icons/icon-512.png">
+    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png.png">
     <meta name="author" content="Claudio Signorini">
 
     <title>Qui Othello</title>

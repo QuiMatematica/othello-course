@@ -12,7 +12,7 @@
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="https://quiothello.it/pratica/quiz.php">
-    <meta property="og:image" content="https://quiothello.it/icons/icon-512.jpg">
+    <meta property="og:image" content="https://quiothello.it/images/banner2025.png.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT"/>
@@ -21,7 +21,7 @@
     <meta name="twitter:url" content="https://quiothello.it/pratica/quiz.php">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://quiothello.it/icons/icon-512.jpg">
+    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png.jpg">
     <meta name="author" content="Claudio Signorini">
     <title>${title}</title>
     <link rel="canonical" href="https://quiothello.it/pratica/quiz.php">

@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--######",
+    "--####O#",
+    "###OOOO#",
+    "#OOOOOO#",
+    "#OOOOO##",
+    "#OOOO##O",
+    "#OOO##-#",
+    "######--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il bianco alimenta le mosse dell'avversario nella regione a nord-ovest."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende l'angolo.<br>Ora il bianco può giocare nella regione dispari. Ma non può muovere in <b>H8</b> altrimenti si forma una regione di iper parità."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco gioca nella regione dispari, ma lasciando la possibilità all'avversario di muovere.<br>Ora il nero si trova con due regione pari in cui muovere."
+    },
+    {
+      "move": "H8",
+      "comment": "Prende l'angolo a sud."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco chiude la regione."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero gioca a nord."
+    },
+    {
+      "move": "A2",
+      "comment": "Il bianco chiude la partita e vince."
+    }
+  ]
+}

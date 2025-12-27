@@ -438,6 +438,10 @@
             {
               "href": "iperparita.php",
               "title": "Iper parità"
+            },
+            {
+              "href": "alimentare.php",
+              "title": "Alimentare le mosse dell'avversario"
             }
           ]
         }

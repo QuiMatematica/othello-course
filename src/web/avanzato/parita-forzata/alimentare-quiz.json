@@ -1,0 +1,36 @@
+{
+  "position": [
+    "########",
+    "###OOOOO",
+    "#OOOO#OO",
+    "#OOO####",
+    "##O#OO##",
+    "####O###",
+    "--#O####",
+    "--####-#"
+  ],
+  "turn": "white",
+  "comment": "Il bianco muove e vince.",
+  "moves": [
+    {
+      "move": "A7",
+      "comment": "Esatto: devi alimentare le mosse dell'avversario. Ma devi anche tenere il bordo sud per aumentare le tue pedine."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "G8",
+      "comment": "Esatto: devi chiudere la regione dispari."
+    },
+    {
+      "move": "B7",
+      "comment": "Il nero è costretto a giocare di nuovo a sud-ovest."
+    },
+    {
+      "move": "B8",
+      "comment": "E tu vinci. Complimenti!"
+    }
+  ]
+}

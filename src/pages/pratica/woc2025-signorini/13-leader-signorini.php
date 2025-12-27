@@ -45,7 +45,7 @@
 
 <p>Imre Leader è una vera leggenda dell'Othello.</p>
 
-<p>Nel database ci partite sue fin dal 1983.</p>
+<p>Nel database ci sono partite sue fin dal 1983.</p>
 
 <p>Attualmente è considerato il numero 3 del Regno Unito e il numero 29 d'Europa.</p>
 

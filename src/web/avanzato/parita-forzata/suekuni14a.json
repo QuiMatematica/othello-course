@@ -1,0 +1,77 @@
+{
+  "position": [
+    "--OO----",
+    "--OOOO-O",
+    "##OOOOOO",
+    "-OOO###O",
+    "OO#O###O",
+    "-##OOOOO",
+    "#-OO#O-O",
+    "--OOOOO-"
+  ],
+  "played": "C1",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il nero attacca il cinque."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco non ha molto da fare se non prendere l'angolo e salvare il bordo ovest."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero si incunea."
+    },
+    {
+      "move": "A6",
+      "comment": "Il bianco cammina sul bordo ovest."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo. Il prossimo obiettivo sarà il buco nero."
+    },
+    {
+      "move": "A4",
+      "comment": "Il bianco continua con il bordo ovest."
+    },
+    {
+      "move": "G7",
+      "comment": "Buco nero conquistato."
+    },
+    {
+      "move": "A2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco passa ancora."
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "F1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero vince con ampio margine."
+    }
+  ]
+}

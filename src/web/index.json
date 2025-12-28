@@ -442,6 +442,10 @@
             {
               "href": "alimentare.php",
               "title": "Alimentare le mosse dell'avversario"
+            },
+            {
+              "href": "buchi-neri.php",
+              "title": "Buchi neri in caselle X"
             }
           ]
         }

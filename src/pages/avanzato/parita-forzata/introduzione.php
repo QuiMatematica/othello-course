@@ -1,8 +1,8 @@
 <h1>La parità forzata</h1>
 
-<p>Quando abbiamo introdotto il concetto di <a href="../../intermedio/parita/chapter.php">parità</a>,
-    nella sezione intermedia, abbiamo definito il concetto di
-regione chiusa. Riprendiamo qui la medesima definizione.</p>
+<p>Quando ho introdotto la <a href="../../intermedio/parita/chapter.php">parità</a>,
+    nella sezione intermedia, ho definito il concetto di
+regione chiusa. Riprendo qui la medesima definizione.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
@@ -11,54 +11,45 @@ regione chiusa. Riprendiamo qui la medesima definizione.</p>
 	</div>
 </div>
 
-<p>In questo nuovo capitolo della sezione avanzata vogliamo approfondire l'argomento analizzando, in particolare,
-le regioni chiuse in cui solo uno dei due giocatori può giocare per primo.</p>
-
-<p>Parleremo di <b>parità forzata</b> quando avremo situazioni di questo tipo: regioni chiuse in cui solo un giocatore
-può giocare per primo.</p>
+<p>In questo nuovo capitolo della sezione avanzata approfondiremo l'argomento analizzando, in particolare,
+le regioni chiuse in cui uno dei due colori non ha mosse legali.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-		<p class="card-text">Chiamiamo <b>cardinalità</b> di una regione chiusa il numero di caselle che la compongono.</p>
+		<p class="card-text">Parliamo di <b>parità forzata</b> quando in una regione chiusa
+            uno dei due colori non ha mosse legali.</p>
 	</div>
 </div>
 
-<h2>Cardinalità uno</h2>
+<h2>Parità forzata in regione dispari</h2>
 
-<p>La situazione più semplice è quando abbiamo una regione chiusa <b>formata da una sola casella</b>.</p>
+<p>Abbiamo visto come sia vantaggioso giocare in una regione dispari: l'alternanza delle mosse
+potrebbe permetterci di giocare anche l'ultima mossa.</p>
 
-<p>A meno del controllo di tutte le linee coinvolte, una regione di parità forzata di cardinalità uno
-rappresenta una mossa giocabile in un qualunque momento. E diventa estremamente importante scegliere il momento giusto
-in cui giocarla. I due momenti più tipici in cui giocarli sono:</p>
-<ul>
-    <li>quando l'avversario è chiuso e ha solo mosse pericolose: gioco nella regione chiusa, guadagno un tempo di gioco
-        e costringo l'avversario a fare una delle mosse rimastegli;</li>
-    <li>come ultima mossa, o comunque nel finale, per ottenere la parità assoluta della partita.</li>
-</ul>
+<p>Per cui è un grosso problema se non abbiamo mosse legali in un regione dispari. Significa che solo
+    il nostro avversario potrà muovere per primo, quindi ci ritroveremo con una regione pari.</p>
 
-<p>ESEMPIO DI AVVERSARIO CHIUSO</p>
+<p>La situazione si aggrava se è il bianco a non poter muovere nella regione dispari. Significa che
+ha perso la parità globale e, probabilmente, anche la partita.</p>
 
-<p>ESEMPIO DI PARITA' ASSOLUTA</p>
+<p>Al contrario sarà molto interessante formare regioni dispari di parità forzata in cui è il nostro
+avversario a non poter muovere per primo.</p>
 
-<p>L'esempio tipico di questo tipo di parità forzata è rappresentato dai buchi neri, che andremo ad approfondire
-nelle prossime pagine.</p>
+<p>E questo può essere un interessante obiettivo per il nero, che otterrebbe così la parità globale.</p>
 
-<h2>Cardinalità due</h2>
+<h2>Parità forzata in regioni pari</h2>
 
-<p>Se in una regione chiusa di cardinalità due sono un giocatore può giocare per primo, significa che in quella
-    regione quel giocatore non ha la parità.</p>
-<p>Mettendoci nei panni di quel giocatore, cosa possiamo tentare per portare a nostro vantaggio della situazione?</p>
-<p>&Egrave; molto arduo riuscire a indurre l'avversario a giocare una mossa che gira una delle pedine di contorno
-    della regione e dargli così la possibilità di muovere per primo. Anche perché poi bisogna riuscire a obbligarlo
-    a fare la prima mossa.</p>
-<p>Piuttosto si può cercare di ottenere un'opportuna situazione di controllo delle linee affinché si possano giocare
-    entrambe le mosse. In questo caso si parla di swindle (che possiamo tradurre genericamente come "trappola").</p>
+<p>Il ragionamento si capovolge, ovviamente, se pensiamo alla parità forzata in una regione pari.</p>
 
-<p>ESEMPIO DI SWINDLE</p>
+<p>Ma attenzione. Sono molto interessanti per il nero delle regioni di due caselle in cui non ha mosse
+legali. Si parla, in questo caso, di <a href="iperparita.php">iper parità.</a>.</p>
 
-<p>Se non riusciamo a realizzare uno swindle, è meglio tenere quella regione per il finale, in modo da capire quale
-delle due mosse convenga fare per massimizzare il punteggio.</p>
+<p>Se invece le caselle sono quattro (o più), la forza della regione diminuisce perché l'avversario,
+il bianco, può applicare la tecnica che è nota come <a href="alimentare.php">alimentare le mosse
+        dell'avversario.</a></p>
 
-<p>ESEMPIO DI FINALE CON 2 CASELLE LIBERE</p>
+<h2>Buchi neri</h2>
 
+<p>Concludono questo capitolo un paio di esempi di regioni chiuse formate da un'unica casella,
+denominate <a href="buchi-neri.php">buchi neri</a>.</p>

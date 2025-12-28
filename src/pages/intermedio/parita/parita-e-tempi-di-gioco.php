@@ -1,7 +1,7 @@
 <h1>Parità e tempi di gioco</h1>
 
 <p>Come hai visto nelle pagine precedenti, la parità entra in gioco nella fase del finale,
-    quando ci sono poche regioni chiuse
+    quando ci sono poche regioni
     e bisogna massimizzare il numero di pedine.</p>
 
 <p>Tuttavia la parità può essere vista anche come modo per ottenere un tempo di gioco. Infatti
@@ -131,7 +131,7 @@ completamente compromessa.</p>
         </div>
     </div>
 
-<p>Il nero ha a disposizione a sud-ovest una regione chiusa dispari, che può utilizzare per ottenere il tempo di gioco
+<p>Il nero ha a disposizione a sud-ovest una regione dispari, che può utilizzare per ottenere il tempo di gioco
     necessario a risollevarsi. Può giocare in B7: il bianco non ha immediatamente accesso all'angolo e certamente non risponderà con A7.
     Quindi il bianco giocherà a nord aprendo il gioco al nero. Vedi la prosecuzione nel diagramma 8.</p>
 

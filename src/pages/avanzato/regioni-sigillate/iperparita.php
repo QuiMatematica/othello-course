@@ -16,7 +16,7 @@ guadagna la <b>parità globale</b>: il diritto di giocare l'ultima mossa.</p>
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
         <p class="card-text">Chiamiamo <b>iper parità</b> (<i>hyper parity</i> in inglese)
-            una situazione in cui è presente una regione chiusa pari in cui uno dei due giocatori non ha mosse
+            una situazione in cui è presente una regione pari in cui uno dei due giocatori non ha mosse
             legali.</p>
 	</div>
 </div>
@@ -31,7 +31,7 @@ di quattro (o più) caselle alla pagina successiva.</p>
     iper parità.</p>
 
 <p>Invece il nero, che gioca le mosse dispari, ha tutto l'interesse a
-    formare una regione di iper parità. Sicuramente ottiene la parità locale. Inoltre se il bianco non agisce prontamente,
+    formare una regione di iper parità. Sicuramente ottiene la parità locale. Inoltre, se il bianco non agisce prontamente,
     può ottenere anche la <b>parità globale</b>, come nell'esempio iniziale.</p>
 
 <p>Ecco perché, in tutti gli esempi che seguono, vedremo protagonista il nero.</p>

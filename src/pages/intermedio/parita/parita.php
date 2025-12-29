@@ -1,9 +1,7 @@
-<h1>Regioni chiuse e parità</h1>
-
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text">Chiamiamo <b>regione chiusa</b> un gruppo di caselle vuote adiacenti.</p>
+        <p class="card-text">Chiamiamo <b>regione</b> un gruppo di caselle vuote adiacenti.</p>
     </div>
 </div>
 
@@ -15,19 +13,18 @@
         <div class="match-file-board" data-file="parita-1.json"></div>
     </div>
     <div class="card-footer text-body-secondary text-center">
-        Diagramma 1: regioni chiuse.
+        Diagramma 1: regioni.
     </div>
 </div>
 
-<p>Ci sono tre regioni chiuse:</p>
+<p>Ci sono tre regioni:</p>
 <ul>
     <li>la regione formata dalle caselle A1, B1 e B2;</li>
     <li>la regione formata dalle caselle A7 e A8;</li>
     <li>la regione formata dalle caselle G8, H7 e H8.</li>
 </ul>
 
-<p>Un giocatore ha interesse a poter fare <u>l'ultima mossa in una regione
-chiusa</u>. L'ultima mossa, infatti, permette di voltare pedine che si trovano nelle vicinanze di quella regione,
+<p>Un giocatore ha interesse a poter fare <u>l'ultima mossa in una regione</u>. L'ultima mossa, infatti, permette di voltare pedine che si trovano nelle vicinanze di quella regione,
     pedine che difficilmente l'avversario potrà riconquistare muovendo in un'altra regione.</p>
 
 <p>Nella posizione del diagramma 1 tocca al nero. Dove muoveresti?</p>
@@ -43,15 +40,14 @@ chiusa</u>. L'ultima mossa, infatti, permette di voltare pedine che si trovano n
     quindi il nero ha interesse a giocarci per primo: al bianco resterà una regione di due caselle,
     e il nero spera di poterci muovere per ultimo.</p>
 
-<p>Intuiamo quindi che giocare in regioni chiuse formate da un numero dispari di caselle vuote è diverso dal
-    giocare in regioni
-chiuse formate da un numero pari di caselle vuote.</p>
+<p>Intuiamo quindi che giocare in regioni formate da un numero dispari di caselle vuote è diverso dal
+    giocare in regioni formate da un numero pari di caselle vuote.</p>
 
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text">Chiamiamo <b>regione dispari</b> una regione chiusa costituita da un numero dispari di caselle vuote.</p>
-        <p class="card-text">Chiamiamo <b>regione pari</b> una regione chiusa costituita da un numero pari di caselle vuote.</p>
+        <p class="card-text">Chiamiamo <b>regione dispari</b> una regione costituita da un numero dispari di caselle vuote.</p>
+        <p class="card-text">Chiamiamo <b>regione pari</b> una regione costituita da un numero pari di caselle vuote.</p>
     </div>
 </div>
 
@@ -96,7 +92,7 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
     <div class="card-header">Strategia</div>
     <div class="card-body">
         <p class="card-text">
-            Cerca di <b>lasciare un numero pari di caselle vuote</b> in ciascuna regione chiusa
+            Cerca di <b>lasciare un numero pari di caselle vuote</b> in ciascuna regione
             in cui l'avversario può giocare.</p>
     </div>
 </div>
@@ -105,7 +101,7 @@ il nero giocasse a nord-ovest, il bianco non potrebbe giocare a sud-est e si tro
     <div class="card-header">Definizione</div>
     <div class="card-body">
         <p class="card-text">Chiamiamo <b>parità</b> questa strategia, ovvero lasciare un numero pari di caselle vuote
-        in ciascun regione chiusa in cui l'avversario ha accesso.</p>
+        in ciascun regione in cui l'avversario ha accesso.</p>
         <p class="card-text">Si dice che <b>un colore ha la parità in una regione</b> se ha il vantaggio
             dell'ultima mossa in quella stessa regione.</p>
     </div>

@@ -1,14 +1,14 @@
-<p>Un caso particolare di <i>parità forzata</i> è rappresentata dai buchi neri.</p>
+<p>Un caso particolare di <i>regione sigillata</i> è rappresentato dai buchi neri.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-		<p class="card-text">Chiamiamo <b>buco nero</b> (in inglese <i>black hole</i>) una regione chiusa formata da una sola casella in cui
+		<p class="card-text">Chiamiamo <b>buco nero</b> (in inglese <i>black hole</i>) una regione formata da una sola casella in cui
             un solo colore può muovere.</p>
 	</div>
 </div>
 
-<p>Un buco nero è certamente uno strumento molto potete per il colore che ci muovere.</p>
+<p>Un buco nero è certamente uno strumento molto potente per il colore che ci può muovere.</p>
 <ul>
     <li>Può essere utilizzato come ultima casella per conservare la <i>parità globale</i>, in particolare dal nero.</li>
     <li>Può essere utilizzato come <i>mossa d'attesa</i> durante una manovra di <i>feeding the opponent</i>.</li>

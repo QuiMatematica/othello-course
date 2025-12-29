@@ -214,7 +214,7 @@
             },
             {
               "href": "parita.php",
-              "title": "Regioni chiuse e parità"
+              "title": "Regioni e parità"
             },
             {
               "href": "parita-globale.php",
@@ -428,12 +428,12 @@
           ]
         },
         {
-          "href": "parita-forzata/",
-          "title": "La parità forzata",
+          "href": "regioni-sigillate/",
+          "title": "Regioni sigillate",
           "pages": [
             {
               "href": "introduzione.php",
-              "title": "La parità forzata"
+              "title": "Le regioni sigillate"
             },
             {
               "href": "iperparita.php",

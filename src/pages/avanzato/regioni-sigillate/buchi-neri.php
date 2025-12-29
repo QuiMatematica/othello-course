@@ -8,7 +8,7 @@
 	</div>
 </div>
 
-<p>Un buco nero è certamente uno strumento molto potete per il colore che ci muovere.</p>
+<p>Un buco nero è certamente uno strumento molto potente per il colore che ci può muovere.</p>
 <ul>
     <li>Può essere utilizzato come ultima casella per conservare la <i>parità globale</i>, in particolare dal nero.</li>
     <li>Può essere utilizzato come <i>mossa d'attesa</i> durante una manovra di <i>feeding the opponent</i>.</li>

@@ -1,5 +1,5 @@
 <p>Confronta le situazioni dei diagrammi <span data-board-ref="iperparita1"></span> e <span data-board-ref="iperparita2"></span>.
-    Fai attenzione: tra i due diagrammi cambia il colore della pedina <b>B2</b>.</p>
+    Tra i due diagrammi cambia solo il colore della pedina <b>B2</b>.</p>
 
 <gather>
     <board data-type="show" data-label="iperparita1" data-file="iperparita1.json"
@@ -21,23 +21,30 @@ guadagna la <b>parità globale</b>: il diritto di giocare l'ultima mossa.</p>
 	</div>
 </div>
 
-<p>In questa pagina ci concentriamo su regioni di iper parità <b>di due caselle</b>. Rimando la trattazione di quelle
-di quattro (o più) caselle alla pagina successiva.</p>
+<p>In questa pagina ci concentriamo su regioni di iper parità <b>di due caselle</b>. Rimando l'analisi di quelle
+formate da quattro o più caselle alla pagina successiva.</p>
 
-<p>Entrambi i giocatori hanno interesse a formare una regione di iper parità: costringendo l'avversario a giocarci
-    per primo si ha la sicurezza di ottenere la <b>parità locale</b>.</p>
+<p>&Egrave; vantaggioso formare una regione di iper parità in cui non si hanno mosse
+a disposizione perché si costringe l'avversario a giocarci per primo e si spera, così,
+di ottenere la <b>parità locale</b>: l'ultima mossa della regione.</p>
 
-<p>Tuttavia il bianco ha la parità globale, quindi tra i due giocatori ha meno interesse a formare regioni di
-    iper parità.</p>
+<p>Ma attenzione: la parità locale non è una certezza. &Egrave; possibile
+che l'avversario riesca a giocare entrambe le mosse disponibili. In questo caso si parla di
+    <b>swindle</b> (che possiamo tradurre in italiano con <i>trappola</i>),
+che sarà il tema del prossimo capitolo.</p>
 
-<p>Invece il nero, che gioca le mosse dispari, ha tutto l'interesse a
-    formare una regione di iper parità. Sicuramente ottiene la parità locale. Inoltre, se il bianco non agisce prontamente,
-    può ottenere anche la <b>parità globale</b>, come nell'esempio iniziale.</p>
+<p>Rimanendo per ora al caso in cui si può ottenere la parità locale, entrambi i giocatori hanno interesse a formare
+    una regione di iper parità.</p>
 
-<p>Ecco perché, in tutti gli esempi che seguono, vedremo protagonista il nero.</p>
+<p>Tuttavia il nero ha un vantaggio in più rispetto al bianco. Se la regione di iper parità viene formata (o mantenuta)
+fino alle ultime due mosse della partita, e se il bianco non ha la possibilità di giocare uno <i>swindle</i> nella
+regione, il nero ottiene anche la <b>parità globale</b>: la possibile di giocare l'ultima mossa della partita.
+&Egrave; quello che è successo nel diagramma <span data-board-ref="iperparita2"></span>.</p>
+
+<p>Ecco perché, in tutti gli esempi che seguono, vedremo sempre protagonista il nero.</p>
 
 <p>Dal canto suo il bianco dovrà cercare di non concedere regioni di iper parità al suo avversario. Stiamo quindi
-considerando quegli elementi di gioco in cui i due giocatori devono agire diversamente.</p>
+considerando uno di quegli elementi di gioco in cui i due giocatori devono agire diversamente.</p>
 
 <h2>Ottenere l'iper parità: primo esempio</h2>
 
@@ -74,9 +81,17 @@ a non formarne. L'autogol è sempre dietro l'angolo.</p>
 <p>Normalmente il bianco ha interesse a giocare nelle regioni dispari, in modo da ottenere il massimo vantaggio
 dalla parità locale e conservare così la parità globale.</p>
 
-<p>Ma se il nero riesce a creare una regione di iper parità, il bianco è interessato a chiudere tale regione
-il prima possibile. La parità locale è comunque persa, ma almeno il bianco mantiene la parità globale.
-Confronta le sequenza dei diagrammi
+<p>Ma se il nero riesce a creare una regione di iper parità, il bianco ha due possibilità.</p>
+
+<ul>
+    <li>Può cercare di ottenere uno <i>swindle</i> in cui riesce a giocare entrambe le mosse
+    disponibili. Si veda il capitolo successivo.</li>
+    <li>Se non ha la possibilità di ottenere uno <i>swindle</i> dovrebbe essere interessato a chiudere la
+    regione prima dell'ultima mossa. La parità locale è comunque persa, ma almeno, così, il bianco mantiene
+        la parità globale.</li>
+</ul>
+
+<p>Per questa ultima situazione, confronta le sequenza dei diagrammi
 <span data-board-ref="iperparita4wrong"></span> e <span data-board-ref="iperparita4"></span>.</p>
 
 <gather>

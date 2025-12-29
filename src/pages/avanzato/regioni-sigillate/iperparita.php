@@ -10,7 +10,7 @@
 
 <p>Nel diagramma <span data-board-ref="iperparita2"></span> il nero non ha mosse legali nella regione rimasta.
     Ed è costretto a passare. In questo modo
-guadagna la <b>parità globale</b>: il diritto di giocare l'ultima mossa.</p>
+guadagna la <b>parità</b>: il diritto di giocare l'ultima mossa della regione.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
@@ -32,19 +32,6 @@ di ottenere la <b>parità locale</b>: l'ultima mossa della regione.</p>
 che l'avversario riesca a giocare entrambe le mosse disponibili. In questo caso si parla di
     <b>swindle</b> (che possiamo tradurre in italiano con <i>trappola</i>),
 che sarà il tema del prossimo capitolo.</p>
-
-<p>Rimanendo per ora al caso in cui si può ottenere la parità locale, entrambi i giocatori hanno interesse a formare
-    una regione di iper parità.</p>
-
-<p>Tuttavia il nero ha un vantaggio in più rispetto al bianco. Se la regione di iper parità viene formata (o mantenuta)
-fino alle ultime due mosse della partita, e se il bianco non ha la possibilità di giocare uno <i>swindle</i> nella
-regione, il nero ottiene anche la <b>parità globale</b>: la possibile di giocare l'ultima mossa della partita.
-&Egrave; quello che è successo nel diagramma <span data-board-ref="iperparita2"></span>.</p>
-
-<p>Ecco perché, in tutti gli esempi che seguono, vedremo sempre protagonista il nero.</p>
-
-<p>Dal canto suo il bianco dovrà cercare di non concedere regioni di iper parità al suo avversario. Stiamo quindi
-considerando uno di quegli elementi di gioco in cui i due giocatori devono agire diversamente.</p>
 
 <h2>Ottenere l'iper parità: primo esempio</h2>
 
@@ -76,29 +63,41 @@ a non formarne. L'autogol è sempre dietro l'angolo.</p>
        data-caption="Il bianco mantiene la parità."></board>
 </gather>
 
-<h2>Come dovrebbe rispondere il bianco</h2>
+<h2>Come rispondere all'iper parità</h2>
 
-<p>Normalmente il bianco ha interesse a giocare nelle regioni dispari, in modo da ottenere il massimo vantaggio
-dalla parità locale e conservare così la parità globale.</p>
+<p>Normalmente i giocatori hanno interesse a muovere nelle regioni dispari, in modo da ottenere il massimo vantaggio
+dalla parità locale.</p>
 
-<p>Ma se il nero riesce a creare una regione di iper parità, il bianco ha due possibilità.</p>
+<p>Ma se uno dei due riesce a creare una regione di iper parità in cui non può giocare, l'avversario ha due possibilità.</p>
 
 <ul>
     <li>Può cercare di ottenere uno <i>swindle</i> in cui riesce a giocare entrambe le mosse
-    disponibili. Si veda il capitolo successivo.</li>
-    <li>Se non ha la possibilità di ottenere uno <i>swindle</i> dovrebbe essere interessato a chiudere la
-    regione prima dell'ultima mossa. La parità locale è comunque persa, ma almeno, così, il bianco mantiene
-        la parità globale.</li>
+    disponibili. Ma di questo parleremo nel prossimo capitolo.</li>
+    <li>Se non ha la possibilità di ottenere uno <i>swindle</i>, deve agire in base ai vantaggi che
+    può ottenere muovendo in una delle due caselle.</li>
 </ul>
 
-<p>Per questa ultima situazione, confronta le sequenza dei diagrammi
-<span data-board-ref="iperparita4wrong"></span> e <span data-board-ref="iperparita4"></span>.</p>
+<p>Osserva, per esempio, la posizione del diagramma <span data-board-ref="iperparita4start"></span>.</p>
+
+<board data-type="show" data-label="iperparita4start" data-file="iperparita4start.json"
+   data-caption="Rispondere all'iper parità."></board>
+
+<p>Tocca al bianco che certamente non giocherà a sud-est.</p>
+
+<p>Può giocare a sud-ovest, puntando a conquistare il bordo ovest. Però dopo la mossa del bianco
+    in <b>B7</b> il nero risponde in <b>A8</b> salvando così il bordo sud. Inoltre quando il bianco
+arriverà il <b>A1</b> il nero risponderà in <b>B1</b> salvando anche il bordo nord. Vedi la sequenza
+nel diagramma <span data-board-ref="iperparita4wrong"></span>.</p>
+
+<p>Ma il bianco può giocare anche in <b>A1</b>. Sicuramente prenderà il bordo ovest
+    e minaccia
+di prendere anche il bordo nord. La risposta corretta del nero è in <b>B7</b>, formando una nuova
+regione di iper parità. Vedi la sequenza perfetta nel diagramma
+    <span data-board-ref="iperparita4"></span>.</p>
 
 <gather>
-    <board data-type="show" data-label="iperparita4wrong" data-file="iperparita4wrong.json"
-       data-caption="Rispondere alll'iper parità."></board>
-    <board data-type="show" data-label="iperparita4" data-file="iperparita4.json"
-       data-caption="Rispondere alll'iper parità."></board>
+    <board data-type="show" data-label="iperparita4wrong" data-file="iperparita4wrong.json"></board>
+    <board data-type="show" data-label="iperparita4" data-file="iperparita4.json"></board>
 </gather>
 
 <h2>Tocca a te</h2>

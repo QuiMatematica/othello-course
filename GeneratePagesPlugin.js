@@ -111,7 +111,7 @@ $host = $_SERVER['HTTP_HOST'];
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
-    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.png">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />
@@ -120,7 +120,7 @@ $host = $_SERVER['HTTP_HOST'];
     <meta name="twitter:url" content="${url}">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
 	<link rel="canonical" href="${url}">

@@ -112,6 +112,9 @@ $host = $_SERVER['HTTP_HOST'];
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
     <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />

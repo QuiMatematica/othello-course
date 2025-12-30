@@ -86,7 +86,7 @@ class GeneratePagesPlugin {
 
         const h1title = page.title;
         const title = page.title + " @ Qui Othello";
-        const url = "https://quiothello.it/" + section.href + chapter.href + page.href;
+        const url = "https://<?= $host ?>/" + section.href + chapter.href + page.href;
 
         const description = page.description || "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
 
@@ -95,10 +95,13 @@ class GeneratePagesPlugin {
         const pagination = this.composePagination(chapter, page);
 
         return `<!DOCTYPE HTML>
+<?php
+$host = $_SERVER['HTTP_HOST'];
+?>
 <html lang="it">
 <head>
     <?php
-        if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
+        if ($host == 'quiothello.it') {
             include '${prepend}google-tag.php';
         }
     ?>
@@ -108,16 +111,16 @@ class GeneratePagesPlugin {
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
-    <meta property="og:image" content="https://quiothello.it/images/banner2025.png">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.png">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="quiothello.it">
+    <meta name="twitter:domain" content="<?= $host ?>">
     <meta name="twitter:url" content="${url}">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.png">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
 	<link rel="canonical" href="${url}">

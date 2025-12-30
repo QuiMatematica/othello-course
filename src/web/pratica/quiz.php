@@ -1,8 +1,11 @@
 <!DOCTYPE HTML>
+<?php
+$host = $_SERVER['HTTP_HOST'];
+?>
 <html lang="it">
 <head>
     <?php
-    if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
+    if ($host == 'quiothello.it') {
         include '../google-tag.php';
     }
     ?>
@@ -11,20 +14,20 @@
     <meta name="description" content="${description}">
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
-    <meta property="og:url" content="https://quiothello.it/pratica/quiz.php">
-    <meta property="og:image" content="https://quiothello.it/images/banner2025.png">
+    <meta property="og:url" content="https://<?= $host ?>/pratica/quiz.php">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.png">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="quiothello.it">
-    <meta name="twitter:url" content="https://quiothello.it/pratica/quiz.php">
+    <meta name="twitter:domain" content="<?= $host ?>">
+    <meta name="twitter:url" content="https://<?= $host ?>/pratica/quiz.php">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.png">
     <meta name="author" content="Claudio Signorini">
     <title>${title}</title>
-    <link rel="canonical" href="https://quiothello.it/pratica/quiz.php">
+    <link rel="canonical" href="https://<?= $host ?>/pratica/quiz.php">
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script src="../js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../assets/bootstrap-icons/bootstrap-icons.min.css">

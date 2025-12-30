@@ -25,26 +25,23 @@ le regioni in cui uno dei due colori non ha mosse legali.</p>
 <p>Abbiamo visto come sia vantaggioso giocare in una regione dispari: l'alternanza delle mosse
 potrebbe permetterci di giocare anche l'ultima mossa.</p>
 
-<p>Per cui è un grosso problema se non abbiamo mosse legali in un regione dispari. Significa che solo
-    il nostro avversario potrà muovere per primo, quindi ci ritroveremo con una regione pari.</p>
-
-<p>La situazione si aggrava se è il bianco a non poter muovere nella regione dispari. Significa che
-ha perso la parità globale e, probabilmente, anche la partita.</p>
-
-<p>Al contrario sarà molto interessante formare regioni sigillate dispari in cui è il nostro
-avversario a non poter muovere per primo.</p>
-
-<p>E questo può essere un interessante obiettivo per il nero, che otterrebbe così la parità globale.</p>
+<p>Per cui è estremamente vantaggio avere una regione dispari in cui il nostro avversario non ha mosse
+legali. Significa che solo noi potremo muoverci per primi e, in quella regione, la parità è
+garantita. Significa quindi che non abbiamo nessuna fretta di giocarvi: possiamo prima occuparci
+delle altre regioni e poi, a tempo debito, giocare in quella sigillata.</p>
 
 <h2>Regioni sigillate pari</h2>
 
 <p>Il ragionamento si capovolge, ovviamente, se pensiamo a regioni sigillate pari.</p>
 
-<p>Ma attenzione. Sono molto interessanti per il nero delle regioni di due caselle in cui non ha mosse
-legali. Si parla, in questo caso, di <a href="iperparita.php">iper parità.</a>.</p>
+<p>In questo caso è vantaggioso se siamo noi, con il nostro colore, a non poter giocare nella regione,
+costringendo così l'avversario a muoverci per primo.</p>
 
-<p>Se invece le caselle sono quattro (o più), la forza della regione diminuisce perché l'avversario,
-il bianco, può applicare la tecnica che è nota come <a href="alimentare.php">alimentare le mosse
+<p>Si parla, in questo caso, di <a href="iperparita.php">iper parità</a>.</p>
+
+<p>Ma attenzione. Le regioni sigillate pari sono sicuramente vantaggiose se formate da due caselle.
+    Se invece le caselle sono quattro (o più), la forza della regione diminuisce perché l'avversario
+    può applicare la tecnica che è nota come <a href="alimentare.php">alimentare le mosse
         dell'avversario.</a></p>
 
 <h2>Buchi neri</h2>

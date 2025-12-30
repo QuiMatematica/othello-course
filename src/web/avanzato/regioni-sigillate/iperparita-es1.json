@@ -17,7 +17,7 @@
       "errors": [
         {
           "move": "G1",
-          "comment": "Dopo <b>G1</b> il bianco può giocare nella regione dispari a sud e mantenere la parità globale."
+          "comment": "Dopo <b>G1</b> il bianco può giocare nella regione dispari a sud e mantenere la parità in entrambe le regioni."
         }
       ]
     },

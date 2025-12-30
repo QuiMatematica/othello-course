@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "A2",
-      "comment": "Il bianco vuole risolvere subito la regione a nord-ovest e lasciare lo spazio a sud per la parità globale. L'obiettivo è di cedere l'angolo <b>A1</b> per incunearsi in <b>B1</b>."
+      "comment": "Il bianco vuole risolvere subito la regione a nord-ovest e lasciare lo spazio a sud come ultima mossa. L'obiettivo è di cedere l'angolo <b>A1</b> per incunearsi in <b>B1</b>."
     },
     {
       "move": "A1",

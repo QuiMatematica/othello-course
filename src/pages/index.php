@@ -15,7 +15,7 @@ $host = $_SERVER['HTTP_HOST'];
     <link rel="canonical" href="https://<?= $host ?>">
     <meta property="og:title" content="Qui Othello">
     <meta property="og:url" content="https://<?= $host ?>">
-    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.png">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta property="og:type" content="website">
     <meta property="og:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
@@ -26,7 +26,7 @@ $host = $_SERVER['HTTP_HOST'];
     <meta name="twitter:title" content="Qui Othello">
     <meta name="twitter:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
-    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta name="author" content="Claudio Signorini">
 
     <title>Qui Othello</title>

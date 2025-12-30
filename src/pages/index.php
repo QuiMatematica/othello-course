@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
 
+<?php
+$host = $_SERVER['HTTP_HOST'];
+?>
+
 <html lang="it">
 <head>
     <meta charset="utf-8">
@@ -8,21 +12,21 @@
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta name="keywords"
           content="Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello">
-    <link rel="canonical" href="https://quiothello.it">
+    <link rel="canonical" href="https://<?= $host ?>">
     <meta property="og:title" content="Qui Othello">
-    <meta property="og:url" content="https://quiothello.it">
-    <meta property="og:image" content="https://quiothello.it/images/banner2025.png">
+    <meta property="og:url" content="https://<?= $host ?>">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.png">
     <meta property="og:type" content="website">
     <meta property="og:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta property="og:locale" content="it_IT"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="quiothello.it">
-    <meta name="twitter:url" content="https://quiothello.it">
+    <meta name="twitter:domain" content="<?= $host ?>">
+    <meta name="twitter:url" content="https://<?= $host ?>">
     <meta name="twitter:title" content="Qui Othello">
     <meta name="twitter:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
-    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.png">
     <meta name="author" content="Claudio Signorini">
 
     <title>Qui Othello</title>
@@ -65,7 +69,7 @@
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
     <?php
-    if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
+    if ($host == 'quiothello.it') {
         include 'google-tag.php';
     }
     ?>

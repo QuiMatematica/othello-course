@@ -22,7 +22,7 @@ dell'ultima mossa.</p>
     <li>giocare nella zona pari in modo da concedere all'avversario due mosse; nel diagramma proposto la mossa giusta è
     <b>A2</b> che concede al nero le mosse <b>A1</b> e <b>B2</b>;</li>
     <li>dopo la prima risposta dell'avversario, giocare altrove; nel diagramma il bianco deve giocare in <b>G7</b>;</li>
-    <li>a questo punto l'avversario sarà costretto a giocare anche la seconda mossa e perdere la parità globale.</li>
+    <li>a questo punto l'avversario sarà costretto a giocare anche la seconda mossa e perdere la parità.</li>
 </ul>
 
 <board data-type="show" data-label="alimentare3" data-file="alimentare3.json"></board>

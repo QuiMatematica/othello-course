@@ -10,7 +10,7 @@
 
 <p>Un buco nero è certamente uno strumento molto potente per il colore che ci può muovere.</p>
 <ul>
-    <li>Può essere utilizzato come ultima casella per conservare la <i>parità globale</i>, in particolare dal nero.</li>
+    <li>Può essere utilizzato come ultima mossa della partita.</li>
     <li>Può essere utilizzato come <i>mossa d'attesa</i> durante una manovra di <i>feeding the opponent</i>.</li>
     <li>Può essere utilizzato come <i>mossa jolly</i> per costringere l'avversario a muovere in una posizione suicida.</li>
     <li>E chissà quanti altri mille usi...</li>
@@ -51,7 +51,7 @@ e un intero bordo all'avversario. Il resto della tavola diventerà tutto suo.</p
 </p>
 
 <p>In questa situazione il nero ha a disposizione un buco nero in <b>G2</b>, e terrà questa mossa
-per ottenere la parità globale.</p>
+per ottenere la parità.</p>
 
 <board data-type="show" data-label="suekuni15" data-file="suekuni15.json"></board>
 

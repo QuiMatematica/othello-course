@@ -9,6 +9,7 @@
     "--##O#-#",
     "-######-"
   ],
+  "played": "B2",
   "turn": "white",
   "moves": [
     {
@@ -29,7 +30,7 @@
     },
     {
       "move": "H8",
-      "comment": "Il bianco chiude la regione a sud. Ma ora il nero passa e il bianco ha perso la parità globale."
+      "comment": "Il bianco chiude la regione a sud. Ma ora il nero passa e tocca di nuovo al bianco."
     },
     {
       "move": "A1",
@@ -37,7 +38,7 @@
     },
     {
       "move": "B1",
-      "comment": "Ma il nero vince."
+      "comment": "Il nero salva le pedine sul bordo nord e vince."
     }
   ]
 }

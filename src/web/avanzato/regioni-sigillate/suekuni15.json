@@ -11,7 +11,7 @@
   ],
   "played": "H8",
   "turn": "black",
-  "comment": "Il nero sfrutterà il buco nero in <b>G2</b> per ottenere la parità globale.",
+  "comment": "Il nero sfrutterà il buco nero in <b>G2</b> come ultima mossa della partita.",
   "moves": [
     {
       "move": "A8",
@@ -43,7 +43,7 @@
     },
     {
       "move": "G2",
-      "comment": "Infine il nero gioca il buco nero, ottiene la parità globale e vince."
+      "comment": "Infine il nero gioca il buco nero e vince."
     }
   ]
 }

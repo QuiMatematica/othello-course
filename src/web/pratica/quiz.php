@@ -15,9 +15,11 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     ?>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="${description}">
-    <meta name="keywords" content="${keywords}">
-    <meta property="og:title" content="${title}">
+    <meta name="description"
+          content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
+    <meta name="keywords"
+          content="Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello">
+    <meta property="og:title" content="Un quiz per te...">
     <meta property="og:url" content="https://<?= $host ?>/pratica/quiz.php">
     <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta property="og:image:width" content="1200">

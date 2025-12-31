@@ -106,7 +106,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 <head>
     <?php
         if ($isProd) {
-            include '/google-tag.php';
+            include '../../google-tag.php';
         }
     ?>
 	<meta charset="utf-8">

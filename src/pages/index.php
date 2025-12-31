@@ -2,6 +2,10 @@
 
 <?php
 $host = $_SERVER['HTTP_HOST'];
+$isLocalhost = str_contains($host, 'localhost');
+$isTest = str_contains($host, 'test');
+$isProd = !$isTest && !$isLocalhost;
+$root = $isLocalhost ? '/othello-course/dist/' : '/';
 ?>
 
 <html lang="it">
@@ -33,10 +37,10 @@ $host = $_SERVER['HTTP_HOST'];
     <meta name="author" content="Claudio Signorini">
 
     <title>Qui Othello</title>
-    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.min.css">
-    <link href="css/othello.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
+    <link href="<?= $root ?>css/othello.css" rel="stylesheet">
+    <link href="<?= $root ?>css/bootstrap.min.css" rel="stylesheet">
+    <script src="<?= $root ?>js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript">
         var _iub = _iub || [];
@@ -72,15 +76,15 @@ $host = $_SERVER['HTTP_HOST'];
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
     <?php
-    if ($host == 'quiothello.it') {
+    if ($isProd) {
         include 'google-tag.php';
     }
     ?>
 
     <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="<?= $root ?>manifest.json">
     <meta name="theme-color" content="#2c3e50">
-    <link rel="icon" href="icons/icon-192.png">
+    <link rel="icon" href="<?= $root ?>icons/icon-192.png">
 
     <style>
         .navbar {
@@ -149,7 +153,7 @@ $host = $_SERVER['HTTP_HOST'];
     <div class="container-xxl d-flex align-items-center">
         <!-- Logo con icona -->
         <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="#">
-            <img src="icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+            <img src="<?= $root ?>icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
             Qui Othello
         </a>
     </div>

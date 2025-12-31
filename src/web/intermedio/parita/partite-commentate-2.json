@@ -52,7 +52,7 @@
     },
     {
       "move": "B2",
-      "comment": "Il nero non ha ottenuto la parità globale, ma grazie alle parità locali ha ottenuto un numero sufficiente di pedine per vincere."
+      "comment": "Il nero non ha ottenuto la possibilità di giocare l'ultima mossa, ma grazie alle parità locali ha ottenuto un numero sufficiente di pedine per vincere."
     },
     {
       "move": "B1",

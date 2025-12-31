@@ -14,7 +14,7 @@
   "moves": [
     {
       "move": "A8",
-      "comment": "Dopo questa mossa si forma una regione di iper parità: il nero non ha mosse legali. Quindi passa e guadagna la parità globale."
+      "comment": "Dopo questa mossa si forma una regione di iper parità: il nero non ha mosse legali. Quindi passa e guadagna la parità."
     },
     {
       "move": "B8",

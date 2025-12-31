@@ -12,7 +12,7 @@ la posizione del diagramma 1: la posizione di partenza.</p>
     </div>
 </div>
 
-<p>Sulla scacchiera è presente un'unica regione chiusa formata da 60 caselle vuote. &Egrave; una regione pari.
+<p>Sulla scacchiera è presente un'unica regione formata da 60 caselle vuote. &Egrave; una regione pari.
 E la mossa è al nero. Questo significa che il bianco ha la parità?</p>
 
 <p>Ci sono due eccezioni: uno dei giocatori è costretto a passare, oppure la partita finisce con qualche casella
@@ -32,7 +32,7 @@ vuota. Ma se queste due situazioni non avvengono il bianco ha la parità fin dal
     quando sarà di turno il nero ci sarà un numero pari di caselle vuote,
     quando sarà di turno il bianco ci sarà un numero dispari di caselle vuote.</p>
 
-<p>Inoltre, all'avanzare della partita, cominceranno a formarsi delle regioni chiuse, che potranno essere pari
+<p>Inoltre, all'avanzare della partita, cominceranno a formarsi delle regioni, che potranno essere pari
 o dispari. Ma quando sarà di turno il nero ci sarà sempre un numero pari di spazi dispari (e zero è un numero pari).
 E quando sarà di turno il bianco ci sarà sempre un numero dispari di spazi dispari: quindi il bianco avrà sempre almeno
 uno spazio dispari a disposizione.</p>
@@ -85,7 +85,7 @@ proprio a questa situazione. Ne faccio solo un altro per rafforzare questo conce
 il bianco avrà la possibilità di giocare l'ultima mossa. Ma nella regione a sud-est il bianco non può giocare per primo:
     il nero ha la parità in quella regione.
 Quindi il nero può giocare a nord-ovest lasciando al bianco solo uno spazio pari. Il bianco sarà quindi costretto
-a passare e il nero conquisterà la parità globale, oltre alla parità "locale" in entrambe le regioni chiuse.
+a passare e il nero conquisterà la parità globale, oltre alla parità "locale" in entrambe le regioni.
 E nota che il nero giocherà due mosse su tre per ciascuna regione, ottenendo così anche due tempi di gioco.
 E la vittoria.</p>
 

@@ -80,10 +80,10 @@ entrare, per il momento, nel dettaglio delle sequenze giocabili:</p>
   a prendere immediatamente in A7, pena la perdita senza compensazione di due tempi di gioco
   (A3 e A1).</li>
   <li>Il bianco non ha la possibilità di giocare per primo nello spazio dispari formato da
-  tre caselle vuote e adiacente all'angolo sud-ovest. In altre parole, ha perso la parità
-  locale in quell'angolo e globale in tutta la scacchiera. Infatti, se nessuno dei due
-  giocatori sarà costretto a passare, il nero giocherà l'ultima mossa nel resto della
-  scacchiera e due mosse su tre nell'angolo sud-ovest.</li>
+  tre caselle vuote e adiacente all'angolo sud-ovest. Ha perso la parità
+  locale in quella regione. Inoltre, sfruttando opportunamente questa regione, il
+      nero ha la possibilità di giocare due mosse su tre nell'angolo sud-ovest e l'ultima mossa della
+  partita.</li>
   <li>Il bianco ha un cinque sul bordo sud. Il nero potrà sfruttare tale debolezza nelle
   prossime mosse guadagnando un tempo e attaccando il cinque con una mossa in G7. Anche il nero
   ha un cinque sul bordo est, ma questa debolezza è già stata sfruttata dal bianco che lo ha

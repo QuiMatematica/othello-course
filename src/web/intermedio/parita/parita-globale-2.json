@@ -18,7 +18,7 @@
     },
     {
       "move": "B2",
-      "comment": "Il bianco deve passare. La parità globale va al nero."
+      "comment": "Il bianco deve passare. La possibilità di giocare l'ultima mossa va al nero."
     },
     {
       "move": "B8"

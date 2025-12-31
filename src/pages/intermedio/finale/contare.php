@@ -3,8 +3,6 @@
 <p>Le euristiche, come la parità, offrono criteri per selezionare le sequenze più promettenti.
     Questo significa che non è necessario contare tutte le sequenze possibili, ma solo quelle più interessanti.</p>
 
-<p>Per mostrarti come fare, riprendiamo una posizione della pagina precedente.</p>
-
 <p>Nel diagramma 1 tocca al nero, il quale ha quattro mosse a disposizione: <b>A2</b>, <b>B2</b>, <b>G1</b> e <b>G2</b>.</p>
 
 <div class="card mx-auto board-card my-3">
@@ -16,11 +14,19 @@
 	</div>
 </div>
 
-<p>Abbiamo visto che <b>G2</b> non è una buona mossa, perché l'attacco al cinque non è efficace e il bianco può rispondere
+<p>Ci sono due regioni dispari. Nella regione a est possono giocare entrambi i colori, mentre nella
+    regione a ovest il bianco non ha mosse legali.</p>
+<p>Quindi se il nero gioca a est, il bianco è costretto
+a rispondere nella stessa regione, il nero chiude la regione, il bianco passa e il nero guadagna
+la parità anche nell'altra regione.</p>
+<p>Se invece il nero gioca a ovest, il bianco può giocare a est e mantenere la parità in tutte e due
+le regioni.</p>
+
+<p><b>G2</b> non è una buona mossa, perché l'attacco al cinque non è efficace e il bianco può rispondere
     in <b>G1</b> senza voltare la pedina <b>G2</b>, e si tiene <b>H1</b> per salvare tutto il lato nord.
     Quindi questa mossa è da escludere.</p>
 
-<p>Escludiamo anche <b>B2</b> perché rinuncia alla parità globale e permette al bianco di salvare il lato nord. Non c'è
+<p>Escludiamo anche <b>B2</b> perché, oltre a rinunciare alla parità, permette al bianco di salvare il lato nord. Non c'è
 nessun beneficio nel fare questa mossa.</p>
 
 <p>Dopo <b>G1</b> è ovvio che il bianco vorrà salvare il lato nord giocando in <b>H1</b>. Dopo queste due mossa in nero deve

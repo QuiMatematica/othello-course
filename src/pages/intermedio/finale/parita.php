@@ -6,7 +6,7 @@
 
 <p>L'euristica dominante nei finali è la <b>parità</b>.</p>
 
-<p>Ne abbiamo già parlato in un <a href="../parita/chapter.php">apposito precedente</a>:
+<p>Ne abbiamo già parlato in un <a href="../parita/chapter.php">capitolo precedente</a>:
     ma qui voglio ribadire la sua importanza e mostrarti che, purtroppo, non funziona sempre.</p>
 
 <h2>Se non conosci la parità... perdi</h2>
@@ -45,7 +45,7 @@ nord. Segui la sequenza proposta nel diagramma 2.</p>
 
 <p>Ripartiamo dalla posizione del diagramma 1 e questa volta ipotizziamo che il bianco conosca la parità.</p>
 
-<p>Il bianco ha ancora la parità globale e ha una regione dispari a disposizione.
+<p>Il bianco ha una regione dispari a disposizione.
     &Egrave; lì che deve giocare.
 Segui la sequenza nel diagramma 3.</p>
 

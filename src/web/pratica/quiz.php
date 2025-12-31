@@ -35,7 +35,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <meta name="twitter:description" content="${description}">
     <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta name="author" content="Claudio Signorini">
-    <title>${title}</title>
+    <title>Un quiz per te...</title>
     <link rel="canonical" href="https://<?= $host ?>/pratica/quiz.php">
     <link href="<?= $root ?>css/bootstrap.min.css" rel="stylesheet">
     <script src="<?= $root ?>js/bootstrap.bundle.min.js"></script>

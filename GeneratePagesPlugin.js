@@ -86,7 +86,7 @@ class GeneratePagesPlugin {
 
         const h1title = page.title;
         const title = page.title + " @ Qui Othello";
-        const url = "https://quiothello.it/" + section.href + chapter.href + page.href;
+        const url = "https://<?= $host ?>/" + section.href + chapter.href + page.href;
 
         const description = page.description || "Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.";
 
@@ -95,11 +95,18 @@ class GeneratePagesPlugin {
         const pagination = this.composePagination(chapter, page);
 
         return `<!DOCTYPE HTML>
+<?php
+$host = $_SERVER['HTTP_HOST'];
+$isLocalhost = str_contains($host, 'localhost');
+$isTest = str_contains($host, 'test');
+$isProd = !$isTest && !$isLocalhost;
+$root = $isLocalhost ? '/othello-course/dist/' : '/';
+?>
 <html lang="it">
 <head>
     <?php
-        if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
-            include '${prepend}google-tag.php';
+        if ($isProd) {
+            include '../../google-tag.php';
         }
     ?>
 	<meta charset="utf-8">
@@ -108,24 +115,27 @@ class GeneratePagesPlugin {
     <meta name="keywords" content="${keywords}">
     <meta property="og:title" content="${title}">
     <meta property="og:url" content="${url}">
-    <meta property="og:image" content="https://quiothello.it/images/banner2025.png">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpg">
     <meta property="og:type" content="article">
     <meta property="og:description" content="${description}">
     <meta property="og:locale" content="it_IT" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="quiothello.it">
+    <meta name="twitter:domain" content="<?= $host ?>">
     <meta name="twitter:url" content="${url}">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta name="author" content="Claudio Signorini">
 	<title>${title}</title>
 	<link rel="canonical" href="${url}">
-	<link href="${prepend}css/bootstrap.min.css" rel="stylesheet">
-	<script src="${prepend}js/bootstrap.bundle.min.js"></script>
-	<link rel="stylesheet" href="${prepend}assets/bootstrap-icons/bootstrap-icons.min.css">
-	<link rel="stylesheet" href="${prepend}css/othello.css">
-	<script type="module" src="${prepend}js/tao.js"></script>
+	<link href="<?= $root ?>css/bootstrap.min.css" rel="stylesheet">
+	<script src="<?= $root ?>js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
+	<link rel="stylesheet" href="<?= $root ?>css/othello.css">
+	<script type="module" src="<?= $root ?>js/tao.js"></script>
     <style>
         .navbar {
             min-height: 64px;
@@ -143,8 +153,8 @@ class GeneratePagesPlugin {
     <nav class="navbar" style="background: linear-gradient(135deg, #0f5132, #198754);">
         <div class="container-xxl d-flex align-items-center">
             <!-- Logo con icona -->
-            <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="${prepend}">
-                <img src="${prepend}/icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+            <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="<?= $root ?>">
+                <img src="<?= $root ?>icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
                 Qui Othello
             </a>
         </div>
@@ -154,7 +164,7 @@ class GeneratePagesPlugin {
     <!-- Header App -->
     <div id="appHeader" class="d-none">
         <div class="bg-success text-white d-flex align-items-center p-3">
-            <a class="btn text-white me-3 p-0 fs-1" href="${prepend}"><i class="bi bi-chevron-left"></i></a>
+            <a class="btn text-white me-3 p-0 fs-1" href="<?= $root ?>"><i class="bi bi-chevron-left"></i></a>
             <h1 class="h1 mb-0">${h1title}</h1>
         </div>
     </div>

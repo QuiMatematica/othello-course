@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 
+<?php
+$host = $_SERVER['HTTP_HOST'];
+$isLocalhost = str_contains($host, 'localhost');
+$isTest = str_contains($host, 'test');
+$isProd = !$isTest && !$isLocalhost;
+$root = $isLocalhost ? '/othello-course/dist/' : '/';
+?>
+
 <html lang="it">
 <head>
     <meta charset="utf-8">
@@ -8,28 +16,31 @@
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta name="keywords"
           content="Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello">
-    <link rel="canonical" href="https://quiothello.it">
+    <link rel="canonical" href="https://<?= $host ?>">
     <meta property="og:title" content="Qui Othello">
-    <meta property="og:url" content="https://quiothello.it">
-    <meta property="og:image" content="https://quiothello.it/images/banner2025.png">
+    <meta property="og:url" content="https://<?= $host ?>">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/jpg">
     <meta property="og:type" content="website">
     <meta property="og:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
     <meta property="og:locale" content="it_IT"/>
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:domain" content="quiothello.it">
-    <meta name="twitter:url" content="https://quiothello.it">
+    <meta name="twitter:domain" content="<?= $host ?>">
+    <meta name="twitter:url" content="https://<?= $host ?>">
     <meta name="twitter:title" content="Qui Othello">
     <meta name="twitter:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
-    <meta name="twitter:image" content="https://quiothello.it/images/banner2025.png">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
     <meta name="author" content="Claudio Signorini">
 
     <title>Qui Othello</title>
-    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.min.css">
-    <link href="css/othello.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
+    <link href="<?= $root ?>css/othello.css" rel="stylesheet">
+    <link href="<?= $root ?>css/bootstrap.min.css" rel="stylesheet">
+    <script src="<?= $root ?>js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript">
         var _iub = _iub || [];
@@ -65,15 +76,15 @@
     <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
 
     <?php
-    if ($_SERVER['HTTP_HOST'] == 'quiothello.it') {
+    if ($isProd) {
         include 'google-tag.php';
     }
     ?>
 
     <!-- PWA -->
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="<?= $root ?>manifest.json">
     <meta name="theme-color" content="#2c3e50">
-    <link rel="icon" href="icons/icon-192.png">
+    <link rel="icon" href="<?= $root ?>icons/icon-192.png">
 
     <style>
         .navbar {
@@ -142,7 +153,7 @@
     <div class="container-xxl d-flex align-items-center">
         <!-- Logo con icona -->
         <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="#">
-            <img src="icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+            <img src="<?= $root ?>icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
             Qui Othello
         </a>
     </div>

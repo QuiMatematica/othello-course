@@ -1,4 +1,12 @@
 RewriteEngine On
+
+
+# index.php → /
+RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# forza https + non-www
+RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} ^www\.quiothello\.it$ [NC]
 RewriteRule ^(.*)$ https://quiothello.it/$1 [R=301,L]
 

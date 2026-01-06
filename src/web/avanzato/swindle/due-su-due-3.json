@@ -1,0 +1,27 @@
+{
+  "position": [
+    "-#OOOO--",
+    "-##OOO--",
+    "####OO#-",
+    "##O#####",
+    "O##O####",
+    "OO##O###",
+    "OOOOO---",
+    "#--OO---"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Primo tempo.<br>Dal momento che il nero controlla la diagonale bianca, non viene voltata la pedina <b>B2</b>."
+    },
+    {
+      "move": "F7",
+      "comment": "Il nero è costretto a giocare altrove."
+    },
+    {
+      "move": "A2",
+      "comment": "Secondo tempo."
+    }
+  ]
+}

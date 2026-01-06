@@ -448,6 +448,16 @@
               "title": "Buchi neri in caselle X"
             }
           ]
+        },
+        {
+          "href": "swindle/",
+          "title": "Swindle",
+          "pages": [
+            {
+              "href": "due-su-due.php",
+              "title": "Due mosse in una regione a due"
+            }
+          ]
         }
       ]
     },

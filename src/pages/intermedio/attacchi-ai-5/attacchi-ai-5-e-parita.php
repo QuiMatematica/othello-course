@@ -34,8 +34,8 @@ Osserva la sequenza nel diagramma 2.</p>
 
 <p>L'analisi corretta della situazione doveva certamente tenere conto dell'opportunità di attaccare il cinque a ovest,
     ma doveva tenere conto anche della parità.</p>
-<p>La regione chiusa a nord-ovest è formata da quattro caselle, quindi dal punto di vista della parità il bianco non
-dovrebbe giocarci. &Egrave; è più opportuno sfruttare la regione dispari a nord-est, in modo da costringere
+<p>La regione a nord-ovest è formata da quattro caselle, quindi dal punto di vista della parità il bianco non
+dovrebbe giocarci. &Egrave; più opportuno sfruttare la regione dispari a nord-est, in modo da costringere
     il nero a giocare in regioni pari. Osserva la sequenza corretta nel diagramma 3.</p>
 
 <div class="card mx-auto board-card my-3">

@@ -13,7 +13,7 @@
   "moves": [
     {
       "move": "H2",
-      "comment": "Girando tutte le pedine della riga <b>2</b>, il nero non ha più mosse legali nella regione chiusa a nord-ovest: ha ottenuto la sua regione di iper parità.<br>Il bianco ha perso la parità locale in quella stessa regione. Il computo del finale perfetto ci dice che le tre mosse sono equivalenti."
+      "comment": "Girando tutte le pedine della riga <b>2</b>, il nero non ha più mosse legali nella regione a nord-ovest: ha ottenuto la sua regione di iper parità.<br>Il bianco ha perso la parità locale in quella stessa regione. Il computo del finale perfetto ci dice che le tre mosse sono equivalenti."
     },
     {
       "move": "H3",

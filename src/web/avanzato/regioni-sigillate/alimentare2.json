@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--####O#",
+    "--##OOO#",
+    "######O#",
+    "#OOO#OO#",
+    "####O#O#",
+    "###O####",
+    "######-#",
+    "#OOOOOOO"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A2",
+      "comment": "Il bianco vuole risolvere subito la regione a nord-ovest e lasciare lo spazio a sud come ultima mossa. L'obiettivo è di cedere l'angolo <b>A1</b> per incunearsi in <b>B1</b>."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco si incunea."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero, forte della parità locale, chiude la regione."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco chiude la partita, ma non riesce a vincere."
+    }
+  ]
+}

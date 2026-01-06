@@ -1,0 +1,49 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "--O##O-#",
+    "##OO#OO#",
+    "#O#OO#O#",
+    "#OO#OO##",
+    "#OOO#O##",
+    "-OOO##O-",
+    "-######O"
+  ],
+  "played": "H8",
+  "turn": "black",
+  "comment": "Il nero sfrutterà il buco nero in <b>G2</b> come ultima mossa della partita.",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Il nero salva il bordo sud."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco si incunea sul bordo ovest."
+    },
+    {
+      "move": "H7",
+      "comment": "Per non perdere un tempo di gioco, il nero chiude questa regione concedendo tutto il bordo est all'avversario."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo. Il buco nero è chiuso e a disposizione del nero."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero gioca nella regione dispari."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero salva il bordo ovest e chiude la regione. Il bianco passa."
+    },
+    {
+      "move": "G2",
+      "comment": "Infine il nero gioca il buco nero e vince."
+    }
+  ]
+}

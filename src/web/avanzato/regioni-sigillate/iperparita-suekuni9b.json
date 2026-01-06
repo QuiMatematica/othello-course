@@ -10,7 +10,7 @@
     "--######"
   ],
   "turn": "white",
-  "comment": "Ripartiamo dall'inizio. La mossa vincente per il bianco non è <b>A8</b>. Il bianco deve rinunciare al bordo ovest e mantenere la parità globale. Quindi deve giocare in <b>B8</b>.",
+  "comment": "Ripartiamo dall'inizio. La mossa vincente per il bianco non è <b>A8</b>. Il bianco deve rinunciare al bordo ovest e mantenere la parità. Quindi deve giocare in <b>B8</b>.",
   "moves": [
     {
       "move": "B8",

@@ -29,11 +29,11 @@
     },
     {
       "move": "H2",
-      "comment": "Il bianco prende il bordo est.<br>Ora il nero ha un problema. Per mantenere la parità fino alla fine della partita dovrebbe giocare nella regione a nord-est. Ma non può giocare in G2, perché l'attacco al cinque non funziona e il bianco può rispondere G1. Allora dovrebbe giocare in G1, ma nel farlo rinuncia al bordo nord. In alternativa può rinunciare alla parità globale e giocare la mossa sicura in A2. Il bilancio costi-benefici sembra equivalente. E' il momento giusto di provare a contare: non tutte le sequenze ma solo le due promettenti. La mossa migliore è..."
+      "comment": "Il bianco prende il bordo est.<br>Ora il nero ha un problema. Per mantenere la parità fino alla fine della partita dovrebbe giocare nella regione a nord-est. Ma non può giocare in G2, perché l'attacco al cinque non funziona e il bianco può rispondere G1. Allora dovrebbe giocare in G1, ma nel farlo rinuncia al bordo nord. In alternativa può rinunciare all'ultima mossa e giocare la mossa sicura in A2. Il bilancio costi-benefici sembra equivalente. E' il momento giusto di provare a contare: non tutte le sequenze ma solo le due promettenti. La mossa migliore è..."
     },
     {
       "move": "A2",
-      "comment": "Il nero rinuncia alla parità globale ma riesce a prendere tutto il bordo nord.<br>La parità torna al bianco che deve sfruttarla, anche se ormai è troppo tardi."
+      "comment": "Il nero rinuncia all'ultima mossa della partita ma riesce a prendere tutto il bordo nord.<br>La parità torna al bianco che deve sfruttarla, anche se ormai è troppo tardi."
     },
     {
       "move": "G2",

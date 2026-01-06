@@ -9,6 +9,7 @@
     "#O###OOO",
     "#OOOOOOO"
   ],
+  "played": "H8",
   "comment": "Rispetto alla posizione precedente, in questa è cambiato il colore della pedina <b>B2</b>. A causa di questo il nero non ha mosse, quindi è costretto a passare. Ma è un vantaggio!",
   "moves": [
     {

@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--####O#",
+    "--##OOO#",
+    "######O#",
+    "#OOO#OO#",
+    "####O#O#",
+    "###O####",
+    "######-#",
+    "#OOOOOOO"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A2",
+      "comment": "Il bianco gioca nella regione pari, fornendo al nero due mosse."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero gioca la prima mossa."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco gioca nella regione dispari rimasta."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero così è costretto a giocare anche la seconda mossa nella regione a nord-ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco chiude la regione e vince."
+    }
+  ]
+}

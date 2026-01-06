@@ -15,7 +15,7 @@
   "moves": [
     {
       "move": "B1",
-      "comment": "Esatto: il nero doveva giocare la sua seconda mossa nello spazio a nord-ovest, rendendolo così pari.<br>Grazie allo spazio dispari a sud-est, in cui il bianco non ha mossa, il nero ha la parità globale, quindi può giocare come se fosse il bianco."
+      "comment": "Esatto: il nero doveva giocare la sua seconda mossa nello spazio a nord-ovest, rendendolo così pari.<br>Grazie allo spazio dispari a sud-est, in cui il bianco non ha mossa, il nero ha la possibilità di giocare l'ultima mossa, quindi può giocare come se fosse il bianco."
     },
     {
       "move": "F2",

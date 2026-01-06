@@ -40,7 +40,7 @@
     },
     {
       "move": "H1",
-      "comment": "Corretta. Per non perdere la parità globale, il bianco deve giocare subito nella regione di iper parità. Tanto più che ora può prendere tutto il bordo est e accedere a sud-est con mosse sicure."
+      "comment": "Corretta. Il bianco deve giocare a nord-est per prendere tutto il bordo est e accedere a sud-est con mosse sicure."
     },
     {
       "move": "G1",

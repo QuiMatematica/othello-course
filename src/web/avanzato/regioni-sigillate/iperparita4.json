@@ -1,0 +1,44 @@
+{
+  "position": [
+    "--###OO#",
+    "#####OO#",
+    "###OO#O#",
+    "###O##O#",
+    "##O###O#",
+    "#O###O##",
+    "--##O#-#",
+    "-######-"
+  ],
+  "played": "B2",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il bianco gioca nella regione di iper parità per prendere il bordo ovest e minacciare il bordo nord."
+    },
+    {
+      "move": "B7",
+      "comment": "Per ottenere la maggior quantità di pedine possibile il nero può fare affidamento solo sulla parità locale. Quindi, con questa mossa, crea un'altra regione di iper parità.<br>Se il bianco prendesse in <b>B1</b>, dopo lo scambio <b>G7-H8</b> toccherebbe di nuovo al bianco che dovrebbe scegliere se prendere il bordo ovest o il bordo sud."
+    },
+    {
+      "move": "A8",
+      "comment": "La risposta corretta del bianco è nell'angolo, lasciando al nero la decisione se perdere il bordo ovest o quello nord. Il bianco, invece, può prendere il bordo sud."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero salva il bordo ovest."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco chiude la regione a nord prendendo il bordo."
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende anche il bordo sud e vince."
+    }
+  ]
+}

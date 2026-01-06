@@ -214,11 +214,11 @@
             },
             {
               "href": "parita.php",
-              "title": "Regioni chiuse e parità"
+              "title": "Regioni e parità"
             },
             {
-              "href": "parita-globale.php",
-              "title": "La parità globale: il nero e il bianco"
+              "href": "ultima-mossa.php",
+              "title": "L'ultima mossa della partita"
             },
             {
               "href": "partite-commentate.php",
@@ -424,6 +424,28 @@
             {
               "href": "mini-linea.php",
               "title": "Controllo delle mini-linee"
+            }
+          ]
+        },
+        {
+          "href": "regioni-sigillate/",
+          "title": "Regioni sigillate",
+          "pages": [
+            {
+              "href": "introduzione.php",
+              "title": "Le regioni sigillate"
+            },
+            {
+              "href": "iperparita.php",
+              "title": "Iper parità"
+            },
+            {
+              "href": "alimentare.php",
+              "title": "Alimentare le mosse dell'avversario"
+            },
+            {
+              "href": "buchi-neri.php",
+              "title": "Buchi neri in caselle X"
             }
           ]
         }

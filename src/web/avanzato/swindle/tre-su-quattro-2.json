@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--OOO---",
+    "--OOOO#-",
+    "-O#OO#OO",
+    "OO#OOO#O",
+    "-O###OOO",
+    "--#O#OOO",
+    "--##OO-O",
+    "--#OO---"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G1",
+      "comment": "Il nero gioca la prima mossa nella regione."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "F1",
+      "comment": "Il nero si incunea e controlla l'accesso alla casella <b>H2</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero guadagna il secondo tempo di gioco... e vincerà facilmente."
+    }
+  ]
+}

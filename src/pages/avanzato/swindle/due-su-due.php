@@ -44,7 +44,9 @@ Ma in una sola di queste puoi giocare uno swindle. Quale? E dove devi giocare?</
 <board data-type="quiz" data-label="due-su-due-quiz-1" data-file="due-su-due-quiz-1.json"
        data-caption="Due mosse su due."></board>
 
-<p><b>Esercizio comparativo</b> che ti vuole insegnare a difenderti dagli swindle.
+<h2>Difendersi dagli swindle</h2>
+
+<p>Questo <b>esercizio comparativo</b> vuole insegnare a difenderti dagli swindle.
     I diagrammi <span data-board-ref="due-su-due-quiz-2a"></span>
 e <span data-board-ref="due-su-due-quiz-2b"></span> presentano la stessa identica posizione.
 Nel diagramma <span data-board-ref="due-su-due-quiz-2a"></span> devi giocare la mossa
@@ -58,8 +60,11 @@ giocare la mossa corretta.</p>
        data-caption="Due mosse su due."></board>
 </gather>
 
-<p>L'unico modo per vincere nella posizione del diagramma
-    <span data-board-ref="due-su-due-quiz-3"></span> è giocare uno swindle. Ma...</p>
+<h2>Preparare uno swindle</h2>
+
+<p>Nella posizione del diagramma <span data-board-ref="due-su-due-quiz-3"></span>
+giochi con il nero. Hai davanti due regioni pari, ma grazie a uno swindle potresti ottenere la parità
+in una delle due regioni.</p>
 
 <board data-type="quiz" data-label="due-su-due-quiz-3" data-file="due-su-due-quiz-3.json"
        data-caption="Due mosse su due."></board>

@@ -454,6 +454,10 @@
           "title": "Swindle",
           "pages": [
             {
+              "href": "swindle.php",
+              "title": "Gli swindle"
+            },
+            {
               "href": "due-su-due.php",
               "title": "Due mosse in una regione a due"
             },

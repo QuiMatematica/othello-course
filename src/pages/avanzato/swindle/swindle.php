@@ -5,10 +5,12 @@ di ribaltare una partita apparentemente già persa.</p>
 <p>Ma non è facile definire cosa sia uno <i>swindle</i>. La traduzione in italiano potrebbe essere <i>truffa</i>,
 e direi che rende molto bene l'idea.</p>
 
-<p>Partirei dalla definizione che ne dà Brian Rose sul suo libro (disponibile sul sito della F.N.G.O. al seguente
+<p>Partirei dalla definizione che ne dà <b>Brian Rose</b> sul suo libro (disponibile sul sito della F.N.G.O. al seguente
 link:
 <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>
 ).</p>
+
+<h2>Coppie e swindle</h2>
 
 <p>Capita spesso che due caselle libere siano fortemente legate, tanto che se un giocatore gioca in una delle due,
 all'avversario conviene giocare nell'altra. Rose in questo caso parla di <i>coppie</i>.</p>
@@ -27,14 +29,15 @@ nel diagramma <span data-board-ref="swindle-1"></span>. Se il nero gioca in <b>A
 regione.</p>
 
 <board data-type="show" data-label="swindle-1" data-file="swindle-1.json"
-       data-caption="Una coppia."></board>
+       data-caption="La regione a nord-ovest è una coppia."></board>
 
-<p>Ma cambiamo colore alla pedina <b>C3</b>: vedi il diagramma <span data-board-ref="swindle-2"></span>. Se il nero gioca
+<p>Ma cambiamo colore alla pedina <b>C3</b>: vedi il diagramma <span data-board-ref="swindle-2"></span>.
+    Ora la diagonale nera è occupata solo da pedine bianche. Se il nero gioca
 in <b>A1</b> non gira la pedina <b>B2</b> e il bianco non può rispondere in <b>B1</b>. Il bianco è stato
 <i>truffato</i>: ha subito uno <i>swindle</i>.</p>
 
 <board data-type="show" data-label="swindle-2" data-file="swindle-2.json"
-       data-caption="Una coppia."></board>
+       data-caption="Il nero può truffare il bianco."></board>
 
 <p>Quindi, Rose dà la seguente definizione di <i>swindle</i>.</p>
 

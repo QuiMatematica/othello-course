@@ -10,6 +10,7 @@
     "--####--"
   ],
   "turn": "black",
+  "comment": "La regione a nord-ovest è una coppia.",
   "moves": [
     {
       "move": "A1",

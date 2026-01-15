@@ -10,6 +10,7 @@
     "--####--"
   ],
   "turn": "black",
+  "comment": "Il nero può truffare il bianco.",
   "moves": [
     {
       "move": "A1",

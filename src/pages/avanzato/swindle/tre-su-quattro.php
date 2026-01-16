@@ -56,8 +56,8 @@ può utilizzare per giocare tre mosse su quattro. Cerca la sequenza in autonomia
 	<div class="card-body">
         <p class="card-text">Se è presente una regione formata da quattro caselle:</p>
         <ul class="card-text">
-            <li>prova a cercare la sequenza che ti permetta di giocare tre delle quattro le mosse disponibili;</li>
-            <li>stai attento che il tuo avversario non possa giocare tre delle quattro le mosse disponibili.</li>
+            <li>prova a cercare la sequenza che ti permetta di giocare tre delle quattro mosse disponibili;</li>
+            <li>stai attento che il tuo avversario non possa giocare tre delle quattro mosse disponibili.</li>
         </ul>
 	</div>
 </div>

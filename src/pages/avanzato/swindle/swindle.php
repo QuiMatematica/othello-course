@@ -47,8 +47,8 @@ in <b>A1</b> non gira la pedina <b>B2</b> e il bianco non può rispondere in <b>
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
 		<p class="card-text">Uno <b><i>swindle</i></b> avviene quando un giocatore muove in una <i>coppia</i>,
-            ma l'avversario non ha mosse legali per rispondere nella casella restante, permettendo che il
-            primo giocatore ottenga entrambe le mosse nella coppia stessa.</p>
+            ma l'avversario non ha mosse legali per rispondere nella casella restante, permettendo al
+            primo giocatore di ottenere entrambe le mosse della coppia.</p>
 	</div>
 </div>
 
@@ -69,7 +69,7 @@ a giocare in <b>B1</b>, il bianco risponderebbe in <b>C1</b> incuneandosi e otte
 <board data-type="show" data-label="swindle-3" data-file="swindle-3.json"
        data-caption="Una coppia che non è una regione."></board>
 
-<p>Ma cosa succede se dopo la mossa del nero in <b>B1</b> il bianco non può rispondere in <b>C1</b>? Il bianco
+<p>Ma cosa succederebbe se dopo la mossa del nero in <b>B1</b> il bianco non potesse rispondere in <b>C1</b>? Il bianco
 verrebbe <i>truffato</i>: subirebbe uno <i>swindle</i>. &Egrave; quello che accade nel diagramma
 <span data-board-ref="swindle-4"></span>.</p>
 
@@ -92,7 +92,7 @@ seguito senza che l'avversario abbia nessuna possibilità di replica nella stess
 
 <h2>Una definizione più completa</h2>
 
-<p>Per tentare di dare una definizione di <i>swindle</i> che consideri tutti i casi secondo me possiamo basarci
+<p>Per tentare di dare una definizione di <i>swindle</i> che consideri tutti i casi possiamo basarci
     sul concetto di <a href="../../intermedio/tempi-di-gioco/chapter.php">tempo di gioco</a>.</p>
 
 <p>Prova a ripercorrere gli esempi di questa pagina. Vedrai che dove c'è stato uno <i>swindle</i> il giocatore
@@ -118,16 +118,16 @@ e capire se saremmo in grado di giocarle in partita.</p>
 <p>In questo capitolo introduttivo presento solo le forme più generali, ovvero:</p>
 <ul>
     <li>giocare due mosse in una regione a due;</li>
-    <li>giocare tre mosse in una regione a quattro.</li>
+    <li>giocare tre mosse in una regione a quattro;</li>
+    <li>segue una pagina con una raccolta di quiz su queste due forme base di swindle.</li>
 </ul>
 
 <p>Nel prossimo capitolo invece ti presento gli <i>swindle</i> più importanti e famosi, quelli che hanno meritato
-di essere ricordati con il nome di un giocatore. Quindi parleremo di:</p>
+di essere ricordati con un nome di persona. Quindi parleremo di:</p>
 <ul>
     <li>lo <i>swindle</i> di Boscov;</li>
     <li>la manovra Landau;</li>
     <li>la manovra semi-Landau</li>
 </ul>
 
-<p>Nel terzo capitolo della serie ti presento il catalogo di <i>swindle</i> che non sono ricordati con il nome
-    di un giocatore.</p>
+<p>Nel terzo capitolo della serie ti presento il catalogo di <i>swindle</i> che non sono ricordati con un nome di persona.</p>

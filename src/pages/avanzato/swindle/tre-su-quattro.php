@@ -42,4 +42,22 @@ consentire al bianco la mossa, è controllata dal nero.</p>
 
 <h2>Secondo esempio</h2>
 
+<p>La posizione del diagramma <span data-board-ref="tre-su-quattro-2"></span> è tratta dalla partita
+tra Donato Barnaba (questa volta con il nero) e Claudio Signorini (bianco) giocata durante il Campionato Italiano 2004.
+A nord est è presente una regione pari che il nero
+può utilizzare per giocare tre mosse su quattro. Cerca la sequenza in autonomia e poi vedi cosa ha giocato Barbana.</p>
+
 <board data-type="show" data-label="tre-su-quattro-2" data-file="tre-su-quattro-2.json"></board>
+
+<h2>Conclusione</h2>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Strategia</div>
+	<div class="card-body">
+        <p class="card-text">Se è presente una regione formata da quattro caselle:</p>
+        <ul class="card-text">
+            <li>prova a cercare la sequenza che ti permetta di giocare tre delle quattro le mosse disponibili;</li>
+            <li>stai attento che il tuo avversario non possa giocare tre delle quattro le mosse disponibili.</li>
+        </ul>
+	</div>
+</div>

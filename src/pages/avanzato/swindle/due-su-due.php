@@ -2,16 +2,17 @@
 giocatori possa giocare in entrambe le caselle, guadagnando così due tempi di gioco. &Egrave; il caso
 del diagramma <span data-board-ref="due-su-due-1"></span>,
     in cui il bianco può muovere in <b>A1</b> senza consentire al nero di rispondere in <b>A2</b>,
-casella che verrà occupata successivamente dallo stesso bianco.</p>
+casella che verrà occupata successivamente dal bianco.</p>
 
 <board data-type="show" data-label="due-su-due-1" data-file="due-su-due-1.json"
        data-caption="Due mosse su due."></board>
 
-<p>&Egrave; importante analizzare quali elementi hanno impedito al nero di muovere nella casella <b>A2</b>,
-elementi evidenziati dai colori nel diagramma <span data-board-ref="due-su-due-2"></span>.</p>
+<p>&Egrave; importante analizzare quali elementi hanno impedito al nero di muovere nella casella <b>A2</b>
+dopo la mossa in <b>A1</b> del bianco.
+Ho evidenziato tali elementi con delle frecce colorate nel diagramma <span data-board-ref="due-su-due-2"></span>.</p>
 
 <board data-type="show" data-label="due-su-due-2" data-file="due-su-due-2.json"
-       data-caption="Due mosse su due."></board>
+       data-caption="Cosa impedisce al nero di rispondere?"></board>
 
 <p>Per giocare in <b>A2</b> il nero deve voltare pedine in una delle direzioni tra sud, sud-est ed est.</p>
 <ul>
@@ -29,9 +30,9 @@ formata da due caselle:</p>
 
 <p>Spesso le posizioni favorevoli per uno swindle di questo tipo nascono da una linea controllata
 dal colore che subirà la trappola. Nel diagramma <span data-board-ref="due-su-due-3"></span>, per esempio,
-    la diagonale <b>B2-F6</b> è interamente nera, quindi il bianco può muovere in <b>A1</b> senza voltare la pedina
-    <b>B2</b>. In questo modo il nero non ha accesso alla casella <b>B2</b> perché tutte le direzioni hanno come prima
-una pedina nera.</p>
+    la diagonale bianca <b>B2-F6</b> è interamente nera, quindi il bianco può muovere in <b>A1</b> senza voltare la pedina
+    <b>B2</b>. In questo modo il nero non ha accesso alla casella <b>A2</b> perché tutte le direzioni hanno una pedina
+    nera come prima pedina.</p>
 
 <board data-type="show" data-label="due-su-due-3" data-file="due-su-due-3.json"
        data-caption="Due mosse su due."></board>
@@ -39,7 +40,7 @@ una pedina nera.</p>
 <h2>Tocca a te</h2>
 
 <p>Nel diagramma <span data-board-ref="due-su-due-quiz-1"></span> sono presenti quattro regioni di due caselle.
-Ma in una sola di queste puoi giocare uno swindle. Quale? E dove devi giocare?</p>
+Ma in una sola di queste puoi giocare uno swindle con il nero. Quale? E dove devi giocare?</p>
 
 <board data-type="quiz" data-label="due-su-due-quiz-1" data-file="due-su-due-quiz-1.json"
        data-caption="Due mosse su due."></board>

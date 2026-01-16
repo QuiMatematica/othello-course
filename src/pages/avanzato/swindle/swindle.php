@@ -2,10 +2,12 @@
 di <i>swindle</i>, e di come questi <i>swindle</i> hanno permesso di vincere con un grande margine di pedine o
 di ribaltare una partita apparentemente già persa.</p>
 
-<p>Ma non è facile definire cosa sia uno <i>swindle</i>. La traduzione in italiano potrebbe essere <i>truffa</i>,
+<p>Non è facile definire cosa sia uno <i>swindle</i>.
+&Egrave; un termine generico che fa riferimento a una grande varietà di situazioni, non facilmente accomunabili.
+La traduzione in italiano potrebbe essere <i>truffa</i>,
 e direi che rende molto bene l'idea.</p>
 
-<p>Partirei dalla definizione che ne dà <b>Brian Rose</b> sul suo libro (disponibile sul sito della F.N.G.O. al seguente
+<p>Proverei a partire dalla definizione che ne dà <b>Brian Rose</b> sul suo libro (disponibile sul sito della F.N.G.O. al seguente
 link:
 <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>
 ).</p>
@@ -13,7 +15,7 @@ link:
 <h2>Coppie e swindle</h2>
 
 <p>Capita spesso che due caselle libere siano fortemente legate, tanto che se un giocatore gioca in una delle due,
-all'avversario conviene giocare nell'altra. Rose in questo caso parla di <i>coppie</i>.</p>
+all'avversario conviene giocare subito nell'altra. Rose in questo caso parla di <i>coppie</i>.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
@@ -32,7 +34,7 @@ regione.</p>
        data-caption="La regione a nord-ovest è una coppia."></board>
 
 <p>Ma cambiamo colore alla pedina <b>C3</b>: vedi il diagramma <span data-board-ref="swindle-2"></span>.
-    Ora la diagonale nera è occupata solo da pedine bianche. Se il nero gioca
+    Ora la diagonale bianca è occupata solo da pedine bianche. Se il nero gioca
 in <b>A1</b> non gira la pedina <b>B2</b> e il bianco non può rispondere in <b>B1</b>. Il bianco è stato
 <i>truffato</i>: ha subito uno <i>swindle</i>.</p>
 
@@ -60,18 +62,19 @@ soltanto perché all'avversario non è conveniente rispondere nella coppia stess
 più ampia ma comunque legate tra loro. Un esempio è la coppia formata da una casella C e una casella A di un bordo
 su cui è presente un quattro sbilanciato, come le caselle <b>B1</b> e <b>C1</b> del diagramma
 <span data-board-ref="swindle-3"></span>.
-Se il bianco gioca in <b>C1</b>, il nero dovrebbe rispondere in <b>B1</b>. E se il nero per disgrazia fosse costretto
-a giocare in <b>B1</b>, il bianco risponderebbe in <b>C1</b> incuneandosi e ottendo l'accesso a entrambi gli angoli.</p>
+Se il bianco gioca in <b>C1</b>, il nero dovrebbe rispondere in <b>B1</b> per evitare di perdere il bordo e l'angolo
+    <b>H1</b>. Se invece il nero, per disgrazia, fosse costretto
+a giocare in <b>B1</b>, il bianco risponderebbe in <b>C1</b> incuneandosi e ottenendo l'accesso a entrambi gli angoli.</p>
 
 <board data-type="show" data-label="swindle-3" data-file="swindle-3.json"
-       data-caption="Una coppia."></board>
+       data-caption="Una coppia che non è una regione."></board>
 
 <p>Ma cosa succede se dopo la mossa del nero in <b>B1</b> il bianco non può rispondere in <b>C1</b>? Il bianco
 verrebbe <i>truffato</i>: subirebbe uno <i>swindle</i>. &Egrave; quello che accade nel diagramma
 <span data-board-ref="swindle-4"></span>.</p>
 
 <board data-type="show" data-label="swindle-4" data-file="swindle-4.json"
-       data-caption="Una coppia."></board>
+       data-caption="Uno swindle in una coppia che non è una regione."></board>
 
 <h2>Non solo coppie</h2>
 
@@ -82,7 +85,7 @@ truffato: il truffatore riesce a giocare tre delle quattro mosse disponibili e i
 Ne è un esempio la sequenza proposta nel diagramma <span data-board-ref="swindle-5"></span>.</p>
 
 <board data-type="show" data-label="swindle-5" data-file="swindle-5.json"
-       data-caption="Una coppia."></board>
+       data-caption="Uno swindle in una regione di quattro caselle."></board>
 
 <p>Inoltre nei prossimi capitoli vedremo degli <i>swindle</i> che permetteranno di giocare anche più di due mosse di
 seguito senza che l'avversario abbia nessuna possibilità di replica nella stessa zona.</p>

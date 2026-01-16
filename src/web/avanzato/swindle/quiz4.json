@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--#####-",
+    "#OOOO#--",
+    "##O##OOO",
+    "#OO###OO",
+    "#OOO##OO",
+    "##OO#OOO",
+    "#-------",
+    "--------"
+  ],
+  "turn": "black",
+  "comment": "Gioca uno swindle nella regione a nord-ovest.<br>Esempio tratto dal libro di Brian Rose.",
+  "moves": [
+    {
+      "move": "E7",
+      "comment": "Esatto: lo swindle va preparato e questa è la prima mossa da compiere."
+    },
+    {
+      "move": "F7",
+      "comment": "E adesso?"
+    },
+    {
+      "move": "D7",
+      "comment": "Bravissimo: avevi bisogno di rendere nere le pedine in <b>B4</b> e <b>B5</b>: e l'hai fatto con queste due mosse."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco tenta il tutto per tutto."
+    },
+    {
+      "move": "B1",
+      "comment": "Esatto: basta cambiare giro. Ora il bianco non può fare nulla per impedirti di giocare anche in <b>A1</b>."
+    }
+  ]
+}

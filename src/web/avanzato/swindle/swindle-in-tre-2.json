@@ -1,0 +1,28 @@
+{
+  "position": [
+    "#OOOO###",
+    "#OOOOOOO",
+    "#O###OO#",
+    "##O#OO##",
+    "###O####",
+    "#OO#O###",
+    "#OOO##-#",
+    "######--"
+  ],
+  "turn": "white",
+  "comment": "Il bianco crede di giocare uno swindle... ma sbaglia e perde.",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Il bianco gioca nell'angolo convinto che sia uno swindle, visto che non concede mosse all'avversario."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco gioca la seconda mossa ma... adesso il nero può giocare."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero gioca l'ultima mossa e vince."
+    }
+  ]
+}

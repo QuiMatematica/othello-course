@@ -12,26 +12,26 @@ link:
 <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>
 ).</p>
 
-<h2>Coppie e swindle</h2>
+<h2>Caselle accoppiate e swindle</h2>
 
 <p>Capita spesso che due caselle libere siano fortemente legate, tanto che se un giocatore gioca in una delle due,
-all'avversario conviene giocare subito nell'altra. Rose in questo caso parla di <i>coppie</i>.</p>
+all'avversario conviene giocare subito nell'altra. Rose in questo caso parla di <i>caselle accoppiate</i>.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-		<p class="card-text">Chiamiamo <b>coppia</b> un insieme di due caselle tali che, se un giocatore muove in
+		<p class="card-text">Chiamiamo <b>caselle accoppiate</b> due caselle tali che, se un giocatore muove in
             una, all'avversario è conveniente rispondere nell'altra.</p>
 	</div>
 </div>
 
-<p>Il caso più semplice di <i>coppia</i> è una regione formata da due caselle, come quella presente a nord-ovest
+<p>Il caso più semplice di <i>caselle accoppiate</i> è una regione formata da due caselle, come quella presente a nord-ovest
 nel diagramma <span data-board-ref="swindle-1"></span>. Se il nero gioca in <b>A1</b> il bianco risponde in
 <b>B1</b>, incuneandosi, ottenendo l'accesso all'angolo <b>H1</b> ma soprattutto giocando l'ultima mossa della
 regione.</p>
 
 <board data-type="show" data-label="swindle-1" data-file="swindle-1.json"
-       data-caption="La regione a nord-ovest è una coppia."></board>
+       data-caption="Caselle accoppiate che formano una regione."></board>
 
 <p>Ma cambiamo colore alla pedina <b>C3</b>: vedi il diagramma <span data-board-ref="swindle-2"></span>.
     Ora la diagonale bianca è occupata solo da pedine bianche. Se il nero gioca
@@ -46,20 +46,20 @@ in <b>A1</b> non gira la pedina <b>B2</b> e il bianco non può rispondere in <b>
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
-		<p class="card-text">Uno <b><i>swindle</i></b> avviene quando un giocatore muove in una <i>coppia</i>,
+		<p class="card-text">Uno <b><i>swindle</i></b> avviene quando un giocatore muove in una casella accoppiata,
             ma l'avversario non ha mosse legali per rispondere nella casella restante, permettendo al
-            primo giocatore di ottenere entrambe le mosse della coppia.</p>
+            primo giocatore di ottenere entrambe le mosse dell'accoppiamento.</p>
 	</div>
 </div>
 
-<p>Rose precisa inoltre che ci sono delle situazioni in cui un giocatore muove in entrambe le caselle di una coppia
-soltanto perché all'avversario non è conveniente rispondere nella coppia stessa. In questo caso non si parla di
+<p>Rose precisa inoltre che ci sono delle situazioni in cui un giocatore muove in entrambe le caselle accoppiate
+soltanto perché all'avversario non è conveniente rispondere nella seconda casella. In questo caso non si parla di
 <i>swindle</i>. Uno <i>swindle</i> accade solo quanto l'avversario <u>non può</u> giocare nella seconda casella.</p>
 
 <h2>Non solo regioni</h2>
 
-<p>Non è detto che una <i>coppia</i> corrisponda a una regione. Potrebbero essere due caselle di una regione molto
-più ampia ma comunque legate tra loro. Un esempio è la coppia formata da una casella C e una casella A di un bordo
+<p>Non è detto che due <i>caselle accoppiate</i> corrispondano a una regione. Potrebbero essere due caselle di una regione molto
+più ampia ma comunque legate tra loro. Per esempio, una casella C e una casella A di un bordo
 su cui è presente un quattro sbilanciato, come le caselle <b>B1</b> e <b>C1</b> del diagramma
 <span data-board-ref="swindle-3"></span>.
 Se il bianco gioca in <b>C1</b>, il nero dovrebbe rispondere in <b>B1</b> per evitare di perdere il bordo e l'angolo
@@ -67,18 +67,18 @@ Se il bianco gioca in <b>C1</b>, il nero dovrebbe rispondere in <b>B1</b> per ev
 a giocare in <b>B1</b>, il bianco risponderebbe in <b>C1</b> incuneandosi e ottenendo l'accesso a entrambi gli angoli.</p>
 
 <board data-type="show" data-label="swindle-3" data-file="swindle-3.json"
-       data-caption="Una coppia che non è una regione."></board>
+       data-caption="Caselle accoppiate che non sono una regione."></board>
 
 <p>Ma cosa succederebbe se dopo la mossa del nero in <b>B1</b> il bianco non potesse rispondere in <b>C1</b>? Il bianco
 verrebbe <i>truffato</i>: subirebbe uno <i>swindle</i>. &Egrave; quello che accade nel diagramma
 <span data-board-ref="swindle-4"></span>.</p>
 
 <board data-type="show" data-label="swindle-4" data-file="swindle-4.json"
-       data-caption="Uno swindle in una coppia che non è una regione."></board>
+       data-caption="Uno swindle in caselle accoppiate che non sono una regione."></board>
 
-<h2>Non solo coppie</h2>
+<h2>Non solo caselle accoppiate</h2>
 
-<p>Tuttavia legare il concetto di <i>swindle</i> a quello di <i>coppia</i> risulta riduttivo.</p>
+<p>Tuttavia legare il concetto di <i>swindle</i> a quello di <i>caselle accoppiate</i> risulta riduttivo.</p>
 
 <p>Lo stesso Rose, giustamente, fa esempi di regioni formate da quattro caselle in cui uno dei due colori viene
 truffato: il truffatore riesce a giocare tre delle quattro mosse disponibili e il truffato solo una.

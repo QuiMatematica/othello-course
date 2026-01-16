@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--------",
+    "--OO----",
+    "OO#O##--",
+    "OO####--",
+    "OO#OO#--",
+    "O##O##--",
+    "O##O#---",
+    "--OOOO--"
+  ],
+  "turn": "white",
+  "comment": "Gioca uno swindle nella regione a sud-ovest.",
+  "moves": [
+    {
+      "move": "F2",
+      "comment": "Lo swindle non è pronto, in effetti. Avevi bisogno, prima, di girare la pedina <b>B6</b>, e l'hai fatto con questa mossa."
+    },
+    {
+      "move": "E2",
+      "comment": "Il nero trova una mossa ideale."
+    },
+    {
+      "move": "A8",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "D1",
+      "comment": "Il nero è costretto a giocare altrove."
+    },
+    {
+      "move": "B8",
+      "comment": "Secondo tempo di gioco."
+    }
+  ]
+}

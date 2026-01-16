@@ -1,0 +1,24 @@
+{
+  "position": [
+    "--#####-",
+    "OOO###-#",
+    "#O#O####",
+    "##OO####",
+    "###OOOO#",
+    "#####O##",
+    "--##O#--",
+    "--####--"
+  ],
+  "turn": "black",
+  "comment": "La regione a nord-ovest è una coppia.",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il nero gioca la prima mossa della coppia."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco gioca la seconda mossa della coppia."
+    }
+  ]
+}

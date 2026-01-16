@@ -1,0 +1,28 @@
+{
+  "position": [
+    "---OOOOO",
+    "--###O##",
+    "--#OO##O",
+    "--#O#O#O",
+    "--OOOO#O",
+    "---O##OO",
+    "--###O-O",
+    "--##O---"
+  ],
+  "turn": "black",
+  "comment": "Gioca uno swindle nella regione a sud-est.<br>Esempio tratto dal libro di Brian Rose.",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Esatto!!! Questa mossa ti permette di giocare tre delle mosse nella regione."
+    },
+    {
+      "move": "F8",
+      "comment": "Il bianco ci prova a incunearsi."
+    },
+    {
+      "move": "H8",
+      "comment": "Ma tu metti in salvo l'angolo e ti conservi <b>G7</b> come prossima mossa. Bravissimo."
+    }
+  ]
+}

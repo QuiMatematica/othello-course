@@ -10,7 +10,9 @@ export default class Board {
     gameBoard;
     grid = [];
 
-    letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', '']
+    letters = ['', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', ''];
+
+    arrows = 0;
 
     constructor(container, counter, stoneShape, onClickCallback) {
         this.container = container;
@@ -303,7 +305,7 @@ export default class Board {
 
         const defs = document.createElementNS(xmlns, "defs");
         const marker = document.createElementNS(xmlns, "marker");
-        marker.setAttribute("id", "arrowhead");
+        marker.setAttribute("id", "arrowhead" + this.arrows);
         marker.setAttribute("markerWidth", String(arrowLen));
         marker.setAttribute("markerHeight", String(arrowWid));
         marker.setAttribute("refX", String(arrowLen));
@@ -325,11 +327,13 @@ export default class Board {
         line.setAttribute("y2", String(endY));
         line.setAttribute("stroke", color);
         line.setAttribute("stroke-width", "10");
-        line.setAttribute("marker-end", "url(#arrowhead)");
+        line.setAttribute("marker-end", "url(#arrowhead" + this.arrows + ")");
 
         svg.appendChild(line);
         divNode.appendChild(svg);
         this.gameBoard.appendChild(divNode);
+
+        this.arrows++;
     }
 
     addLine(startX, startY, endX, endY, color) {

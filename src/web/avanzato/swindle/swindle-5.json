@@ -1,0 +1,31 @@
+{
+  "position": [
+    "#OOOOOOO",
+    "##OOOOO#",
+    "##OOOOOO",
+    "##OOOOOO",
+    "##OOOO#O",
+    "##OOO#OO",
+    "##OOOO-O",
+    "OOOOO---"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il nero gioca la prima mossa nella regione."
+    },
+    {
+      "move": "F8",
+      "comment": "Il bianco risponde minacciando di prendere l'angolo. Però nota che adesso il bianco non ha accesso alla casella <b>G7</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero salva l'angolo e si tiene la mossa <b>G7</b> per dopo. Il bianco passa: è stato truffato della parità e della vittoria."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero ha giocato tre delle quattro mosse disponibili."
+    }
+  ]
+}

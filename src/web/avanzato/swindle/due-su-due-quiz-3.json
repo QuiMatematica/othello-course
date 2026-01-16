@@ -1,0 +1,42 @@
+{
+  "position": [
+    "--OOOO#O",
+    "OOO####O",
+    "#O#O#O#O",
+    "##O#O#OO",
+    "#O#O##OO",
+    "#OO##OOO",
+    "#OO##O-O",
+    "#OOOO##-"
+  ],
+  "turn": "black",
+  "comment": "Vinci grazie a uno swindle.",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Esatto. Lo swindle non è pronto, quindi lo devi preparare.",
+      "errors": [
+        {
+          "move": "A1",
+          "comment": "Non puoi giocare uno swindle cominciando da questa mossa, perché adesso il bianco potrebbe giocare in <b>B1</b>."
+        },
+        {
+          "move": "B1",
+          "comment": "Non puoi giocare uno swindle cominciando da questa mossa, perché adesso il bianco potrebbe giocare in <b>A1</b>."
+        }
+      ]
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero è obbligato a prendere questo angolo e, soprattutto, a prendere il controllo della diagonale bianca."
+    },
+    {
+      "move": "A1",
+      "comment": "Ora puoi giocare lo swindle. Primo tempo. Il bianco passa"
+    },
+    {
+      "move": "B1",
+      "comment": "Secondo tempo e vittoria! Bravissimo."
+    }
+  ]
+}

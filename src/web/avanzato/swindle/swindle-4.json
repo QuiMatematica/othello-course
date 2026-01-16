@@ -1,0 +1,27 @@
+{
+  "position": [
+    "---####-",
+    "--OO##--",
+    "--####OO",
+    "--####OO",
+    "--###OOO",
+    "----OOOO",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il nero gioca la prima mossa della coppia. Ma il bianco non può incunearsi in <b>C1</b>."
+    },
+    {
+      "move": "B4",
+      "comment": "Il bianco è costretto a giocare altrove. Si procura un accesso a <b>C1</b> per costringere il nero a chiudere subito lo <i>swindle</i>."
+    },
+    {
+      "move": "C1",
+      "comment": "Il nero gioca la seconda mossa della coppia, truffando l'avversario."
+    }
+  ]
+}

@@ -448,6 +448,28 @@
               "title": "Buchi neri in caselle X"
             }
           ]
+        },
+        {
+          "href": "swindle/",
+          "title": "Swindle",
+          "pages": [
+            {
+              "href": "swindle.php",
+              "title": "Gli swindle"
+            },
+            {
+              "href": "due-su-due.php",
+              "title": "Due mosse in una regione a due"
+            },
+            {
+              "href": "tre-su-quattro.php",
+              "title": "Tre mosse in una regione a quattro"
+            },
+            {
+              "href": "quiz.php",
+              "title": "Quiz sugli swindle"
+            }
+          ]
         }
       ]
     },

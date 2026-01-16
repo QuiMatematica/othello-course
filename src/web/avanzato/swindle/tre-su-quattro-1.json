@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "----O---",
+    "-----O#O",
+    "---OO#OO",
+    "-#-OOO#O",
+    "--#OO#O-",
+    "--###OO-",
+    "-#####--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Il nero accetta l'attacco al cinque e la conseguente perdita del bordo sud, perché sa che potrà guadagnare due tempi di gioco."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco si incunea."
+    },
+    {
+      "move": "H7",
+      "comment": "Ora il bianco può giocare lo swindle: primo tempo di gioco."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco può prendere il bordo sud."
+    },
+    {
+      "move": "H6",
+      "comment": "Il nero gioca il secondo tempo di gioco.<br>Ora il bianco è costretto a giocare altrove, aprendo il gioco al nero e chiudendo il proprio. Inoltre il nero potrà giocare anche in <b>H2</b> guadagnando un ulteriore tempo di gioco."
+    }
+  ]
+}

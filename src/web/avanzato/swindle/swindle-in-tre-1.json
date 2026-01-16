@@ -1,0 +1,28 @@
+{
+  "position": [
+    "O#######",
+    "O#####--",
+    "#######-",
+    "###O###O",
+    "######OO",
+    "######OO",
+    "######OO",
+    "#OOOO#OO"
+  ],
+  "turn": "white",
+  "comment": "Il bianco può giocare tutte e tre le mosse disponibili.",
+  "moves": [
+    {
+      "move": "H3",
+      "comment": "Il nero non ha mosse quindi passa."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero non ha ancora mossa e passa di nuovo."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco ha giocato tutte e tre le mosse disponibili. E vince. Ogni altra sequenza l'avrebbe portato a una sconfitta."
+    }
+  ]
+}

@@ -45,7 +45,7 @@ consentire al bianco la mossa, è controllata dal nero.</p>
 <p>La posizione del diagramma <span data-board-ref="tre-su-quattro-2"></span> è tratta dalla partita
 tra Donato Barnaba (questa volta con il nero) e Claudio Signorini (bianco) giocata durante il Campionato Italiano 2004.
 A nord est è presente una regione pari che il nero
-può utilizzare per giocare tre mosse su quattro. Cerca la sequenza in autonomia e poi vedi cosa ha giocato Barbana.</p>
+può utilizzare per giocare tre mosse su quattro. Cerca la sequenza in autonomia e poi vedi cosa ha giocato Barnaba.</p>
 
 <board data-type="show" data-label="tre-su-quattro-2" data-file="tre-su-quattro-2.json"></board>
 

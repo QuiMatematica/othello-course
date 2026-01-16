@@ -1,0 +1,28 @@
+{
+  "position": [
+    "#OOOO###",
+    "#OOOOOOO",
+    "#O###OO#",
+    "##O#OO##",
+    "###O####",
+    "#OO#O###",
+    "#OOO##-#",
+    "######--"
+  ],
+  "turn": "white",
+  "comment": "Il bianco crede di giocare uno swindle... ma sbaglia e perde.",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il bianco rinuncia all'angolo e ai bordi, ma non alla parità."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero mette i bordi in salvo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco gioca l'ultima mossa e vince la partita."
+    }
+  ]
+}

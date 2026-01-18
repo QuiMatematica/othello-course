@@ -1,11 +1,11 @@
-<p>Se hai avuto occasione di partecipare a qualche torneo dal vivo, ti sarà sicuramente capito di sentire parlare
-di <i>swindle</i>, e di come questi <i>swindle</i> hanno permesso di vincere con un grande margine di pedine o
+<p>Se hai avuto occasione di partecipare a qualche torneo dal vivo, ti sarà sicuramente capitato di sentire parlare
+di <i>swindle</i>, e di come questi abbiano permesso di vincere con un ampio margine di pedine o
 di ribaltare una partita apparentemente già persa.</p>
 
 <p>Non è facile definire cosa sia uno <i>swindle</i>.
 &Egrave; un termine generico che fa riferimento a una grande varietà di situazioni, non facilmente accomunabili.
-La traduzione in italiano potrebbe essere <i>truffa</i>,
-e direi che rende molto bene l'idea.</p>
+In italiano potrebbe essere reso con <i>truffa</i>,
+termine che rende molto bene l'idea.</p>
 
 <p>Proverei a partire dalla definizione che ne dà <b>Brian Rose</b> sul suo libro (disponibile sul sito della F.N.G.O. al seguente
 link:
@@ -14,7 +14,7 @@ link:
 
 <h2>Caselle accoppiate e swindle</h2>
 
-<p>Capita spesso che due caselle libere siano fortemente legate, tanto che se un giocatore gioca in una delle due,
+<p>Capita spesso che due caselle libere siano fortemente legate, tanto che se un giocatore muove in una delle due,
 all'avversario conviene giocare subito nell'altra. Rose in questo caso parla di <i>caselle accoppiate</i>.</p>
 
 <div class="card border-primary mb-3">

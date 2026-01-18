@@ -1,15 +1,17 @@
-<p>Gli swindle visti nella pagina precedente possono essere estesi a situazioni in cui si ha una regione formata
-da quattro caselle. Se un giocatore riesce a giocare tre delle quattro mosse a disposizione, e quindi lascia
-all'avversario una sola mossa della regione, ottiene due tempi di gioco, che spesso sono sufficienti per
-portare a casa la vittoria.</p>
+<p>Gli swindle visti nella pagina precedente possono essere estesi a situazioni in cui
+    è presente una regione composta
+da quattro caselle. Se un giocatore riesce a giocare tre delle quattro mosse a disposizione,
+    lasciando
+all'avversario un'unica possibilità nella regione, ottiene due tempi di gioco,
+    spesso sufficienti per vincere.</p>
 
-<p>Tipicamente succede che:</p>
+<p>Tipicamente si verifica che:</p>
 <ul>
-    <li>il giocatore che esegue lo swindle gioca la prima mossa nella regione;</li>
-    <li>l'avversario risponde nella stessa regione, ma tale mosse causa il formarsi di una regione di due caselle in cui
+    <li>il giocatore che esegue lo swindle gioca la prima delle mosse nella regione;</li>
+    <li>l'avversario risponde nella stessa regione, ma tale mossa causa il formarsi di una regione di due caselle in cui
     il primo giocatore può eseguire lo swindle;</li>
     <li>il primo giocatore gioca nella regione ottenendo il primo tempo di gioco;</li>
-    <li>l'avversario non può giocare nella regione ed è costretto a giocare altrove;</li>
+    <li>l'avversario non può giocare nella regione ed è costretto a giocare in un'altra zona della tavola;</li>
     <li>il primo giocatore chiude la regione ottenendo il secondo tempo di gioco.</li>
 </ul>
 
@@ -20,7 +22,7 @@ portare a casa la vittoria.</p>
     su Kurnik da Claudio Signorini (nero) e Donato Barnaba (bianco).</p>
 
 <board data-type="show" data-label="tre-su-quattro-1-start" data-file="tre-su-quattro-1-start.json"
-       data-caption="Tre su quattro."></board>
+       data-caption="Tre mosse su quattro."></board>
 
 <p>Il nero possiede un
 <a href="../../intermedio/attacchi-ai-5/chapter.php">cinque</a>
@@ -42,8 +44,8 @@ consentire al bianco la mossa, è controllata dal nero.</p>
 
 <h2>Secondo esempio</h2>
 
-<p>La posizione del diagramma <span data-board-ref="tre-su-quattro-2"></span> è tratta dalla partita
-tra Donato Barnaba (questa volta con il nero) e Claudio Signorini (bianco) giocata durante il Campionato Italiano 2004.
+<p>La posizione del diagramma <span data-board-ref="tre-su-quattro-2"></span> è presa dalla partita
+tra Donato Barnaba (questa volta con il nero) e Claudio Signorini (bianco) giocata nel corso del Campionato Italiano 2004.
 A nord est è presente una regione pari che il nero
 può utilizzare per giocare tre mosse su quattro. Cerca la sequenza in autonomia e poi vedi cosa ha giocato Barnaba.</p>
 
@@ -56,8 +58,8 @@ può utilizzare per giocare tre mosse su quattro. Cerca la sequenza in autonomia
 	<div class="card-body">
         <p class="card-text">Se è presente una regione formata da quattro caselle:</p>
         <ul class="card-text">
-            <li>prova a cercare la sequenza che ti permetta di giocare tre delle quattro mosse disponibili;</li>
-            <li>stai attento che il tuo avversario non possa giocare tre delle quattro mosse disponibili.</li>
+            <li>prova a trovare la sequenza che ti consenta di giocare tre delle quattro mosse disponibili;</li>
+            <li>assicurati che il tuo avversario non sia in grado di giocare tre delle quattro mosse disponibili.</li>
         </ul>
 	</div>
 </div>

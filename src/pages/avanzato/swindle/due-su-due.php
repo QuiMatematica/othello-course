@@ -7,14 +7,14 @@ casella che verrà occupata successivamente dal bianco.</p>
 <board data-type="show" data-label="due-su-due-1" data-file="due-su-due-1.json"
        data-caption="Due mosse su due."></board>
 
-<p>&Egrave; importante analizzare quali elementi hanno impedito al nero di muovere nella casella <b>A2</b>
+<p>&Egrave; importante analizzare quali elementi impediscono al nero di muovere nella casella <b>A2</b>
 dopo la mossa in <b>A1</b> del bianco.
 Ho evidenziato tali elementi con delle frecce colorate nel diagramma <span data-board-ref="due-su-due-2"></span>.</p>
 
 <board data-type="show" data-label="due-su-due-2" data-file="due-su-due-2.json"
        data-caption="Cosa impedisce al nero di rispondere?"></board>
 
-<p>Per giocare in <b>A2</b> il nero deve voltare pedine in una delle direzioni tra sud, sud-est ed est.</p>
+<p>Per giocare in <b>A2</b> il nero deve voltare delle pedine in una delle direzioni tra sud, sud-est ed est.</p>
 <ul>
     <li>Verso sud e verso sud-est il nero non volta alcuna pedina perché la prima pedina della direzione è nera
     (frecce gialle nel diagramma <span data-board-ref="due-su-due-2"></span>).</li>
@@ -77,8 +77,8 @@ in una delle due regioni.</p>
 	<div class="card-body">
         <p class="card-text">Se è presente una regione formata da due caselle:</p>
         <ul class="card-text">
-            <li>prova a cercare la sequenza che ti permetta di giocare tutte e due le mosse;</li>
-            <li>stai attento che il tuo avversario non possa giocare tutte e due le mosse.</li>
+            <li>prova a cercare la sequenza che ti permetta di giocare entrambe le mosse;</li>
+            <li>stai attento che il tuo avversario non possa giocare entrambe le mosse.</li>
         </ul>
 	</div>
 </div>

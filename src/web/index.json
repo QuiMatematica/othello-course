@@ -474,6 +474,16 @@
               "title": "Quiz sugli swindle"
             }
           ]
+        },
+        {
+          "href": "swindle-celebri/",
+          "title": "Swindle celebri",
+          "pages": [
+            {
+              "href": "boscov.php",
+              "title": "Lo swindle di Boscov"
+            }
+          ]
         }
       ]
     },

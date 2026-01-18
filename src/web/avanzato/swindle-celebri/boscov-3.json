@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--O#-#--",
+    "#-#OOO--",
+    "##OOO---",
+    "##OOO##-",
+    "-OOOOO--",
+    "-O------",
+    "--------",
+    "--------"
+  ],
+  "played": "F2",
+  "turn": "black",
+  "comment": "Il nero si accorge di non poter giocare subito lo swindle di Boscov.",
+  "moves": [
+    {
+      "move": "C6",
+      "comment": "Con questa mossa il nero volta la pedina <b>C4</b>. Se il bianco gli permettesse di giocare lo swindle, la risposta in <b>A5</b> non sarebbe più un problema."
+    },
+    {
+      "move": "E1",
+      "comment": "Ovviamente il bianco fa in modo di non subire lo swindle, giocando in <b>E1</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "Però il nero può comunque guadagnare due tempi di gioco. Il primo con questa <b>B1</b>, il secondo, a tempo debito, in <b>G1</b>."
+    }
+  ]
+}

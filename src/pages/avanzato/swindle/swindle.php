@@ -9,8 +9,7 @@ termine che rende molto bene l'idea.</p>
 
 <p>Proverei a partire dalla definizione che ne dà <b>Brian Rose</b> sul suo libro (disponibile sul sito della F.N.G.O. al seguente
 link:
-<a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>
-).</p>
+<a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>).</p>
 
 <h2>Caselle accoppiate e swindle</h2>
 

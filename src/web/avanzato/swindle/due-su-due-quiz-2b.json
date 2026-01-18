@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-OOOOO#O",
+    "--O####O",
+    "###O#O#O",
+    "####O#OO",
+    "#O#O##OO",
+    "#OO###OO",
+    "#OO##OOO",
+    "#OOOO#OO"
+  ],
+  "turn": "white",
+  "comment": "Gioca la mossa <b>corretta</b>!",
+  "moves": [
+    {
+      "move": "A2",
+      "comment": "Esatto: questa è la mossa corretta, perché non subirai uno swindle."
+    },
+    {
+      "move": "A1",
+      "comment": "Mossa migliore per il bianco."
+    },
+    {
+      "move": "B2",
+      "comment": "E tu vinci. Bravo!"
+    }
+  ]
+}

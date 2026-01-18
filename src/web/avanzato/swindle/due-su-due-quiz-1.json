@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--OOO--O",
+    "#OO###O#",
+    "##O##OO#",
+    "#O##OOO#",
+    "#O#OOOOO",
+    "##OOOOOO",
+    "-OO##--O",
+    "-OO####O"
+  ],
+  "turn": "black",
+  "comment": "Gioca uno swindle",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Esatto. Puoi giocare uno swindle solo in questa regione a sud-ovest e questa è la mossa iniziale corretta."
+    },
+    {
+      "move": "F7",
+      "comment": "Il bianco però ti toglie la possibilità di muovere in <b>A7</b>. Tu che fai?"
+    },
+    {
+      "move": "G7",
+      "comment": "Esatto: chiudi questa regione e ti procuri l'accesso in <b>A7</b>."
+    },
+    {
+      "move": "F1",
+      "comment": "Al bianco rimane solo questa mossa. Ora puoi completare lo swindle."
+    },
+    {
+      "move": "A7",
+      "comment": "Bravissimo. Obiettivo raggiunto."
+    }
+  ]
+}

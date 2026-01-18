@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--#####-",
+    "OOO###-#",
+    "#OOO####",
+    "##OO####",
+    "###OOOO#",
+    "#####O##",
+    "--##O#--",
+    "--####--"
+  ],
+  "turn": "black",
+  "comment": "Il nero può truffare il bianco.",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il nero gioca la prima mossa della coppia. Ora però il bianco non ha la possibilità di rispondere in <b>B1</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco è costretto a giocare altrove. Lo fa attaccando il cinque ad est e minacciando di prendersi tutto il bordo sud."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero mette in salvo il bordo sud, tanto il bianco non ha ottenuto l'accesso a <b>B1</b>."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco si incunea."
+    },
+    {
+      "move": "B1",
+      "comment": "Ora il nero può giocare la seconda mossa della coppia.<br>Nota che il nero ha anche guadagnato la parità in tutte le regioni rimanenti, grazie al buco nero in <b>G7</b>."
+    }
+  ]
+}

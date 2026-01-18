@@ -1,0 +1,44 @@
+{
+  "position": [
+    "--O-###-",
+    "--OOO#--",
+    "-##OO#OO",
+    "###O##OO",
+    "-#OO#O#O",
+    "-###OOOO",
+    "--#OOO--",
+    "---#OOOO"
+  ],
+  "turn": "black",
+  "comment": "Obiettivo: prepara e gioca uno swindle nella regione a sud-est.<br>Posizione tratta dalla partita tra Pierluigi Stanzione (nero) e Roberto Sperandio (bianco) al Campionato Italiano 2003.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Bravissimo: tutto inizia con la cessione dell'angolo <b>H1</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco conquista l'angolo, ma facendolo gira la pedine in <b>E4</b>."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero si incunea ottenendo l'accesso ad <b>H7</b>."
+    },
+    {
+      "move": "D1",
+      "comment": "Il nero chiude il bordo nord."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero gioca, guadagna un tempo di gioco e se ne prepara un altro in <b>G7</b>."
+    },
+    {
+      "move": "C8",
+      "comment": "Non può fare altro..."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero guadagna anche il secondo tempo di gioco... e vince!"
+    }
+  ]
+}

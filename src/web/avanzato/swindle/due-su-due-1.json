@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-#OOOO--",
+    "-#OOOO--",
+    "####OO#-",
+    "##OO####",
+    "O##O####",
+    "OO##O###",
+    "OOOOO---",
+    "#--OO---"
+  ],
+  "turn": "white",
+  "comment": "Il bianco sta per guadagnare due tempi di gioco nella regione a nord-ovest.",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Primo tempo di gioco.<br>Il nero non può rispondere in <b>A2</b>."
+    },
+    {
+      "move": "F7",
+      "comment": "Il nero si accontenta di questa mossa ideale."
+    },
+    {
+      "move": "A2",
+      "comment": "Secondo tempo di gioco."
+    }
+  ]
+}

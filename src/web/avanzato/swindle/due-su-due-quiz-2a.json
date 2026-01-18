@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-OOOOO#O",
+    "--O####O",
+    "###O#O#O",
+    "####O#OO",
+    "#O#O##OO",
+    "#OO###OO",
+    "#OO##OOO",
+    "#OOOO#OO"
+  ],
+  "turn": "white",
+  "comment": "Gioca la mossa <b>sbagliata</b>!",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Esatto: questa è la mossa sbagliata, perché adesso subirai uno swindle."
+    },
+    {
+      "move": "A1",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "A2",
+      "comment": "Secondo tempo di gioco. Pareggio.<br>Ma in verità potevi vincere."
+    }
+  ]
+}

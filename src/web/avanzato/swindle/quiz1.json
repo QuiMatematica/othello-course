@@ -1,0 +1,32 @@
+{
+  "position": [
+    "OOOOOO--",
+    "OO#OOO-#",
+    "OO#OO###",
+    "OO#O#O##",
+    "OO##O###",
+    "OOO##O##",
+    "OOOOOOO#",
+    "#######-"
+  ],
+  "turn": "black",
+  "comment": "Il nero muove e vince.",
+  "moves": [
+    {
+      "move": "H8",
+      "comment": "Esatto: questa mossa ti permetterà di giocare uno swindle a nord."
+    },
+    {
+      "move": "G2",
+      "comment": "Risposta obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "G1",
+      "comment": "Complimenti: hai vinto!"
+    }
+  ]
+}

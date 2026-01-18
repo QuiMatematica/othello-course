@@ -128,7 +128,7 @@ export default class SequenceBoard {
             comment += 'Condividilo cliccando su <i class="bi bi-share"></i>';
         }
         else {
-            comment += 'Vai alla pagina che contiene il quiz cliccando su <i class="bi bi-file-earmark"></i>';
+            comment += 'Vai alla pagina che contiene il quiz.php cliccando su <i class="bi bi-file-earmark"></i>';
         }
         this.comment.addComment(comment);
     }
@@ -249,8 +249,8 @@ export default class SequenceBoard {
 
     async share() {
         const shareData = {
-            title: "Un quiz di Othello",
-            text: "Prova a risolvere questo quiz di Othello!",
+            title: "Un quiz.php di Othello",
+            text: "Prova a risolvere questo quiz.php di Othello!",
             url: this.getQuizPageHref()
         };
 
@@ -269,7 +269,7 @@ export default class SequenceBoard {
 
         gtag("event", "share_click", {
             "event_category": "Interaction",
-            "event_label": "Share quiz",
+            "event_label": "Share quiz.php",
             "page_path": "/" + this.quizHref
         });
         console.log("Condivisione registrata su GA.");
@@ -292,9 +292,9 @@ export default class SequenceBoard {
             pathSegments = []; // Se ci sono meno di tre livelli, vai alla radice
         }
 
-        // Aggiungi "quiz.php"
+        // Aggiungi "quiz.php.php"
         pathSegments.push("pratica");
-        pathSegments.push("quiz.php");
+        pathSegments.push("quiz.php.php");
 
         this.quizHref = `${savedLevels.slice(0, 2).join('/')}/${this.sequenceFile}`;
 

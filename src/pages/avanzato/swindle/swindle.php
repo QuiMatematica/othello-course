@@ -119,7 +119,8 @@ e capire se saremmo in grado di giocarle in partita.</p>
 <ul>
     <li>giocare due mosse in una regione a due;</li>
     <li>giocare tre mosse in una regione a quattro;</li>
-    <li>segue una pagina con una raccolta di quiz su queste due forme base di swindle.</li>
+    <li>giocare swindle in una regione a tre;</li>
+    <li>segue una pagina con una raccolta di quiz su queste forme base di swindle.</li>
 </ul>
 
 <p>Nel prossimo capitolo invece ti presento gli <i>swindle</i> più importanti e famosi, quelli che hanno meritato

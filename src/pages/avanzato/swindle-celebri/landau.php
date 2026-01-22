@@ -1,3 +1,5 @@
+<h2>La prima storica manovra Landau</h2>
+
 <p>Ted Landau è stato un campione americano negli anni 80.</p>
 
 <p>La posizione del diagramma <span data-board-def="landau-1"></span> è tratta da un gioco via posta (quando
@@ -26,10 +28,43 @@ bordo è stato ceduto e il controbordo conquistato. In particolare:</p>
 <ul>
     <li>il colore attaccato non deve avere mosse a disposizioni nelle caselle rimaste liberi, e questo
     è garantito dal fatto che le pedine della colonna <b>3</b> adiacenti sono tutte del colore attaccato
-    (rettangoli giallo);</li>
+    (bordi gialli);</li>
     <li>il colore attaccante deve aver la possibilità di giocare nelle caselle <b>X</b> senza concedere la
     replica all'avversario nelle caselle <b>C</b> adiacenti, e questo è garantito dal fatto che l'attaccato
-    controlla i controbordi (rettangoli rossi).</li>
+    controlla i controbordi (bordi rossi).</li>
 </ul>
 
 <board data-type="show" data-label="landau-1-accessi" data-file="landau-1-accessi.json"></board>
+
+<p>Ma c'è un altro elemento che vale la pena sottolineare. Quel bordo che il nero ha ceduto il bianco risulta
+essere completamente passivo. Infatti quelle otto pedine (che, essendo stabili, il bianco terrà fino
+alla fine della partita) non offrono nessuna mossa al bianco e, vista la conformazione degli altri bordi e i
+tempi di gioco che perderà, il bianco non avrà la possibilità di ottenere nuove pedine centrali. C'è il forte rischio
+    che alla fine della partita il bianco avrà solo quelle otto pedine.</p>
+
+<h2>Lo studio di Landau</h2>
+
+<p>Lo stesso Ted Landau scrisse un articolo per la rivista americana Othello Quarterly in cui descriveva la
+manovra che poi ha assunto il suo stesso nome. In questo articolo ha portato diversi esempi, anche più semplici
+della prima storica manovra. E ha suddiviso questi esempi in due categorie:</p>
+<ul>
+    <li>le manovre Landau: in cui l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo opposto;</li>
+    <li>le manovre semi-Landau: in cui l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo ceduto.</li>
+</ul>
+<p>Si tratta quindi di situazioni più semplici rispetto a quella presentata prima in cui, addirittura, l'attaccante
+ha ottenuto due swindle. Ma, essendo più semplici, risultano anche meno rare.</p>
+<p>Questa pagina prosegue con le manovre Landau propriamente dette; le semi-Landau vengono rimandate dalla prossima
+pagina.</p>
+<p>Quello che hanno in comune tutte queste manovre è il controllo del controbordo, controllo che permette di mettere
+in atto lo swindle.</p>
+
+<h2>Un esempio più semplice</h2>
+
+<p>La posizione del diagramma <span data-board-ref="landau-2"></span> ha caratteristiche simili a quella dell'esempio
+precedente.</p>
+
+<p>Il nero ha la possibilità di cedere il bordo e l'angolo a nord-ovest. Ma poi riesce a prendere il controllo
+    del controbordo nord e, grazie a questo, giocare
+uno swindle nella regione a nord-est.</p>
+
+<board data-type="show" data-label="landau-2" data-file="landau-2.json"></board>

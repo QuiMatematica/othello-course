@@ -486,6 +486,10 @@
             {
               "href": "landau.php",
               "title": "La manovra Landau"
+            },
+            {
+              "href": "semi-landau.php",
+              "title": "La manovra semi-Landau"
             }
           ]
         }

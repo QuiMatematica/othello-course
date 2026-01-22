@@ -1,0 +1,32 @@
+{
+  "position": [
+    "--###-#-",
+    "--O####-",
+    "#-OOOOOO",
+    "OOOOOOOO",
+    "-OO#OOOO",
+    "-OO##OOO",
+    "--OO##-O",
+    "-OOO-##-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il nero punta a guadagnare un tempo sfruttando la parità a nord-ovest."
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero gioca l'ultima mossa nella regione e guadagna il tempo desiderato. Il finale perfetto porta al pareggio."
+    }
+  ]
+}

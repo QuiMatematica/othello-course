@@ -5,7 +5,7 @@ sola.</p>
     (tratta dal libro di Brian Rose
     <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>)
     il nero si trova in una posizione discreta.
-Probabilmente la sua mossa migliore è <b>E1</b>, che costringe il bianco a giocare vero nord, dando al nero nuove opportunità.
+Probabilmente la sua mossa migliore è <b>E1</b>, che costringe il bianco a giocare verso nord, dando al nero nuove opportunità.
     Tuttavia, il nero non conosce lo swindle di Boscov e ne subisce pienamente gli effetti!</p>
 
 <board data-type="show" data-label="boscov-1" data-file="boscov-1.json"></board>

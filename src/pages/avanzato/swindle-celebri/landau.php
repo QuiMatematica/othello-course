@@ -27,7 +27,7 @@ controbordo (frecce rosse).</p>
 bordo è stato ceduto e il controbordo conquistato. In particolare:</p>
 <ul>
     <li>il colore attaccato non deve avere mosse a disposizione nelle caselle rimaste libere, e questo
-    è garantito dal fatto che le pedine della colonna <b>3</b> adiacenti sono tutte del colore dell'attaccato
+    è garantito dal fatto che le pedine della colonna <b>C</b> adiacenti sono tutte del colore dell'attaccato
     (bordi gialli);</li>
     <li>il colore attaccante deve aver la possibilità di giocare nelle caselle <b>X</b> senza concedere la
     replica all'avversario nelle caselle <b>C</b> adiacenti, e questo è garantito dal fatto che l'attaccato
@@ -60,7 +60,7 @@ della prima storica manovra. E ha suddiviso questi esempi in due categorie:</p>
 <h2>Un esempio più semplice</h2>
 
 <p>La posizione del diagramma <span data-board-ref="landau-2"></span> è l'esempio tipico di
-    una trappola di Boscov.</p>
+    una manovra Landau.</p>
 
 <p>Il nero ha la possibilità di cedere il bordo e l'angolo a nord-ovest. Ma poi riesce a ottenere il controllo
     del controbordo nord e, grazie a questo, giocare

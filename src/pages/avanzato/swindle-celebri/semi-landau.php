@@ -22,11 +22,12 @@ che sfrutta la situazione per giocare una manovra semi-Landau.</p>
 <p>La manovra funziona perché:</p>
 
 <ul>
-    <li>la colonna <b>G</b>, controbordo del bordo attaccato, è controllata dal bianco;</li>
-    <li>la riga <b>2</b>, controbordo del bordo adiacente, è controllata dal nero.</li>
+    <li>la colonna <b>G</b>, controbordo del bordo attaccato, è controllata dal bianco (riquadro giallo);</li>
+    <li>la riga <b>2</b>, controbordo del bordo adiacente, è controllata dal nero (riquadro rosso);</li>
+    <li>la pedina <b>F3</b> deve essere nera per permettere la mossa nella casella <b>X</b> (riquadro blu).</li>
 </ul>
 
-<p>Solo la combinazione di questi due fattori consente al bianco di realizzare
+<p>Solo la combinazione di questi tre fattori consente al bianco di realizzare
 la manovra.</p>
 
 <h2>Contro altre formazioni di bordo</h2>

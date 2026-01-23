@@ -4,13 +4,13 @@ sola.</p>
 <p>Nella posizione del diagramma <span data-board-ref="boscov-1"></span>
     (tratta dal libro di Brian Rose
     <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>)
-    il nero è in una posizione discreta.
-Probabilmente la sua mossa migliore è <b>E1</b>, che costringe il bianco a giocare a nord, dando nuove mosse al nero.
-    Ma il nero non conosce lo swindle di Boscov e lo subisce in tutta la sua efficacia!</p>
+    il nero si trova in una posizione discreta.
+Probabilmente la sua mossa migliore è <b>E1</b>, che costringe il bianco a giocare vero nord, dando al nero nuove opportunità.
+    Tuttavia, il nero non conosce lo swindle di Boscov e ne subisce pienamente gli effetti!</p>
 
 <board data-type="show" data-label="boscov-1" data-file="boscov-1.json"></board>
 
-<p>Questo swindle non accade molto spesso, ma ci porta a un'osservazione interessante: muovere vicino ai bordi
+<p>Questo swindle non si verifica molto spesso, ma ci porta a un'osservazione interessante: muovere vicino ai bordi
 può portare facilmente a uno swindle.</p>
 
 <h2>Ma ci sono sempre le eccezioni</h2>
@@ -22,7 +22,7 @@ giocarlo subito. Il diagramma <span data-board-ref="boscov-2"></span> mostra la 
 
 <board data-type="show" data-label="boscov-2" data-file="boscov-2.json"></board>
 
-<p>Come avrebbe dovuto giocare il nero? Ha la possibilità di mettersi nelle condizioni di poter giocare lo swindle?
+<p>Come avrebbe dovuto muovere il Nero? Ha la possibilità di predisporre la posizione in modo da poter realizzare lo swindle?
 Studia il diagramma <span data-board-ref="boscov-3"></span>.</p>
 
 <board data-type="show" data-label="boscov-3" data-file="boscov-3.json"></board>
@@ -50,6 +50,6 @@ Studia il diagramma <span data-board-ref="boscov-3"></span>.</p>
 <h2>Tocca a te</h2>
 
 <p>Nel prossimo diagramma ti manca una pedina sul bordo ovest per predisporre la posizione adatta per lo swindle di
-Boscov. Trova la mossa giusta e il tuo avversario farà l'errore che ti permetterà di giocare lo swindle.</p>
+Boscov. Trova la mossa giusta e il tuo avversario commetterà l’errore che ti consentirà di giocare lo swindle di Boscov.</p>
 
 <board data-type="quiz" data-label="boscov-quiz-1" data-file="boscov-quiz-1.json"></board>

@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--OOOO--",
+    "--O###--",
+    "OOO#OOO#",
+    "OOO##O#O",
+    "OO##O#OO",
+    "OOOO##O#",
+    "--##O#--",
+    "--####--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Inizia la manovra: la riga <b>2</b> è tutta nera e la colonna <b>B</b> tutta bianca."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "B2",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "A2",
+      "comment": "Secondo tempo di gioco."
+    }
+  ]
+}

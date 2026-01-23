@@ -1,0 +1,68 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-OOOO-#",
+    "##OOOO##",
+    "##O#O###",
+    "-OOO#OO-",
+    "OOO#OO-O",
+    "--OOO---",
+    "--OO----"
+  ],
+  "turn": "black",
+  "comment": "Sei pronto per scoprire la manovra Landau?",
+  "moves": [
+    {
+      "move": "A5",
+      "comment": "Era questa la mossa che avevi scelto?<br>Se vuoi capire la forza di questa mossa, tieni d'occhio il controbordo ovest. Questa mossa e la successiva sono finalizzate a prendere il controllo di tale controbordo."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo: non può permettersi di perdere un altro tempo di gioco sul bordo ovest."
+    },
+    {
+      "move": "A7",
+      "comment": "Apparentemente è una mossa suicida perché cede un altro angolo. Ma guarda il controbordo: ora contiene solo pedine nere."
+    },
+    {
+      "move": "A8",
+      "comment": "Al bianco non resta che prendere il bordo.<br>Ma adesso si vede l'obiettivo del gioco del nero."
+    },
+    {
+      "move": "B2",
+      "comment": "Inizia lo swindle vero e proprio. Primo tempo di gioco. E il bianco non può rispondere in <b>B1</b>."
+    },
+    {
+      "move": "H5",
+      "comment": "Ultima mossa sicura del bianco."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero mette in salvo il bordo est."
+    },
+    {
+      "move": "G2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B7",
+      "comment": "Secondo tempo di gioco. E il bianco non ha accesso a <b>B8</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Terzo tempo di gioco. Ma non è ancora finita."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende l'angolo ma soprattutto si procura l'accesso in <b>B1</b>."
+    },
+    {
+      "move": "G1",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B1",
+      "comment": "Quarto tempo di gioco."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "position":[
+    "--------",
+    "--------",
+    "--###O##",
+    "--OO#O##",
+    "-OO#OO##",
+    "-OO#OO##",
+    "--#OO---",
+    "--#O-O--"
+  ],
+  "played": "B5",
+  "turn": "black",
+  "comment": "Il nero sta per commettere un grosso errore e subire lo swindle di Boscov.",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Il nero gioca in <b>F7</b> convinto di poter forzare il bianco a giocare a nord. Ma..."
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco gioca lo swindle di Boscov. Nota come, dopo questa <b>B8</b> il bianco potrà giocare sia in <b>E8</b> sia in <b>G8</b>, guadagnando così tre tempi di gioco."
+    },
+    {
+      "move": "E2"
+    },
+    {
+      "move": "E8",
+      "comment": "Secondo tempo di gioco."
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "G8",
+      "comment": "Terzo tempo di gioco. E il nero è costretto a giocare nuovamente a ovest."
+    }
+  ]
+}

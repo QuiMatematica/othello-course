@@ -2,12 +2,12 @@
 giocare in due mosse successive nelle caselle X e C adiacenti allo stesso
 angolo ceduto. Per fare questo è necessario che il controbordo del lato attaccato
     sia controllato dall'attaccante, mentre il controbordo del lato adiacente sia
-    controllato dal colo attaccante.</p>
+    controllato dal colore attaccante.</p>
 
 <h2>Primo esempio</h2>
 
 <p>Il diagramma <span data-board-ref="semi-landau-1"></span>
-    presenta la situazione dopo 39-esima mossa della partita giocata tra
+    presenta la situazione dopo la 39-esima mossa della partita giocata tra
 Suekuni (nero) e Brightwell (bianco) al Paris International 2000. &Egrave; di turno il bianco
 che sfrutta la situazione per giocare una manovra semi-Landau.</p>
 
@@ -22,8 +22,8 @@ che sfrutta la situazione per giocare una manovra semi-Landau.</p>
 <p>La manovra funziona perché:</p>
 
 <ul>
-    <li>la colonna <b>G</b> (controbordo del bordo attaccato) è occupata da pedine bianche (colore attaccante);</li>
-    <li>la riga <b>2</b> (controbordo del bordo adiacente) è occupata da pedine nere (colore attaccato).</li>
+    <li>la colonna <b>G</b> (controbordo del bordo attaccato) è controllata dal bianco (colore attaccante);</li>
+    <li>la riga <b>2</b> (controbordo del bordo adiacente) è controllata dal nero (colore attaccato).</li>
 </ul>
 
 <p>Solo la combinazione di questi due fattori consente all'attaccante (il bianco) di giocare
@@ -44,8 +44,8 @@ di un "tre sbilanciato più uno", qui sotto vediamo la manovra con un cinque
 <h2>Un'eccezione</h2>
 
 <p>Analizzando più approfonditamente la manovra, si può notare che è possibile ammettere
-un'eccezione alla prima condizione: al momento del sacrificio il controbordo
-del lato attaccato è del colore attaccante. Infatti può essere sufficiente che la
+un'eccezione alla prima condizione: ovvero che l'attaccante controlli il controbordo.
+    Infatti può essere sufficiente che la
 condizione si verifichi dopo la conquista della casella <b>X</b>.</p>
 
 <p>Il diagramma <span data-board-ref="semi-landau-4"></span>

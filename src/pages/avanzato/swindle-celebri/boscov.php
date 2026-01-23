@@ -49,7 +49,7 @@ Studia il diagramma <span data-board-ref="boscov-3"></span>.</p>
 
 <h2>Tocca a te</h2>
 
-<p>Nel prossimo diagramma ti manca una pedine sul bordo ovest per predisporre la posizione adatta per lo swindle di
+<p>Nel prossimo diagramma ti manca una pedina sul bordo ovest per predisporre la posizione adatta per lo swindle di
 Boscov. Trova la mossa giusta e il tuo avversario farà l'errore che ti permetterà di giocare lo swindle.</p>
 
 <board data-type="quiz" data-label="boscov-quiz-1" data-file="boscov-quiz-1.json"></board>

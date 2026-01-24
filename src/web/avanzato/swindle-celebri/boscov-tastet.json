@@ -1,0 +1,93 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OO#O--",
+    "##O#O#-O",
+    "##O#O#O-",
+    "-####O#O",
+    "-#O#####",
+    "--OOO#--",
+    "--O-###-"
+  ],
+  "played": "F3",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "G3",
+      "comment": "Sembra che il nero si stia mettendo in pericolo."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco inizia lo swindle di Boscov. La sua prossima mossa dovrebbe essere <b>H2</b>."
+    },
+    {
+      "move": "G2",
+      "comment": "Ma il nero blocca subito lo swindle giocando nella casella <b>X</b>."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco cambia tattica e prende il controllo della diagonale bianca."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero sfrutta l'unica possibilità di tagliare la diagonale, attaccando il bordo nord."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco approfitta della possibilità di giocare in <b>B1</b> senza voltare la pedina <b>B2</b>. Ma questa mossa è perdente (-4). La mossa corretta era la <b>A1</b> (+4)."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "H4",
+      "comment": "Per non perdere tempi di gioco il bianco deve assecondare il gioco del nero sul bordo est. Lo swindle, alla fine, gli si è ritorto contro.<br>L'analisi del presunto swindle finisce qui. Continua, se lo desideri, con l'analisi del resto della partita."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero gioca nello spazio dispari a nord-est. Tanto il bordo nord è comunque perso: tanto vale cercare di guadagnare un tempo dalla parità."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo <b>A1</b>."
+    },
+    {
+      "move": "A2",
+      "comment": "Questa volta tocca al nero assecondare il gioco dell'avversario per non perdere altri tempi di gioco."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco cerca di massimizzare le proprie pedine, ottenendo un buon appoggio alla mossa in <b>H2</b>."
+    },
+    {
+      "move": "H2",
+      "comment": "A questo punto il nero non può accettare che l'avversario prenda tutto il controbordo, quindi gioca in <b>H2</b>."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco allunga il bordo ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo.<br>La mossa migliore, però, sarebbe stata in <b>D8</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco gioca nello spazio dispari rimanente."
+    },
+    {
+      "move": "A6",
+      "comment": "A questo punto si tratta solo di contare."
+    },
+    {
+      "move": "B8"
+    },
+    {
+      "move": "D8"
+    },
+    {
+      "move": "A7"
+    }
+  ]
+}

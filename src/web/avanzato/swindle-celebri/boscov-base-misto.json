@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--OOOOOO",
+    "--OOO##O",
+    "--O#O##O",
+    "--OO###O",
+    "--####-O",
+    "--#O-O--"
+  ],
+  "played": "F7",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B8",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "B6",
+      "comment": "Ora il bianco non può giocare in <b>G8</b> altrimenti consentirebbe al nero incunearsi."
+    },
+    {
+      "move": "E8",
+      "comment": "Secondo tempo di gioco.<br>Ma viene voltata anche la pedina in <b>F7</b> quindi il bianco non può chiudere lo swindle con il terzo tempo di gioco in <b>G8</b>."
+    }
+  ]
+}

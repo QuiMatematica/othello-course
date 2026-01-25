@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--O#-#--",
+    "#-#OOO--",
+    "##OOO---",
+    "##OOO##-",
+    "-OOOOO--",
+    "-O------",
+    "--------",
+    "--------"
+  ],
+  "played": "F2",
+  "turn": "black",
+  "comment": "Il nero è convinto di poter giocare lo swindle di Boscov.",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Primo tempo di gioco. Ma..."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco trova una fantastica contro-mossa. Minaccia la presa dell'angolo <b>A1</b> e se il nero si difende..."
+    },
+    {
+      "move": "A6",
+      "comment": "... gira anche la pedina <b>E2</b> permettendo così al bianco di incunearsi sul bordo nord."
+    }
+  ]
+}

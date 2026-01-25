@@ -1,0 +1,42 @@
+{
+  "position": [
+    "---OO---",
+    "--OOO---",
+    "#OOO#O--",
+    "-#O####-",
+    "-O#O##--",
+    "O-O####-",
+    "--OO##--",
+    "--------"
+  ],
+  "turn": "black",
+  "comment": "Predisponi la pedina mancante per effettuare lo swindle di Boscov.",
+  "moves": [
+    {
+      "move": "A5",
+      "comment": "Bravissimo: mancava proprio questa pedina. Ora il tuo avversario farà l'errore."
+    },
+    {
+      "move": "B6",
+      "comment": "Eccolo qui. Ora puoi giocare lo swindle. Buon divertimento!"
+    },
+    {
+      "move": "A7",
+      "comment": "E uno!"
+    },
+    {
+      "move": "E8"
+    },
+    {
+      "move": "A4",
+      "comment": "E due!"
+    },
+    {
+      "move": "G3"
+    },
+    {
+      "move": "A2",
+      "comment": "E tre! Bravissimo."
+    }
+  ]
+}

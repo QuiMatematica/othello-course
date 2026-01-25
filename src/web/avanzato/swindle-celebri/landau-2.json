@@ -1,0 +1,35 @@
+{
+  "position": [
+    "-####-O-",
+    "--###OO-",
+    "#OOOOOOO",
+    "#O##O#OO",
+    "#O#OOOOO",
+    "##O###OO",
+    "--##----",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "F1",
+      "comment": "Il nero sacrifica l'angolo <b>A1</b> e il bordo nord."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco è obbligato ad accettare."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende l'angolo <b>H1</b>. Ora il nero ha il controllo della riga <b>2</b>, quindi il bianco non ha accesso alla casella <b>H2</b>. Il nero guadagna il primo tempo di gioco."
+    },
+    {
+      "move": "F7",
+      "comment": "Il bianco cerca di girare poche pedine."
+    },
+    {
+      "move": "H2,",
+      "comment": "Il nero sfrutta il controllo dell'accesso su <b>H2</b> e guadagna il secondo tempo di gioco."
+    }
+  ]
+}

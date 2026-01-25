@@ -19,7 +19,7 @@
 		</div>
 
 		<p>Le pedine poste negli angoli non possono essere girate perch&egrave; non sono incastrabili in
-		alcun modo. Per farlo si dovrebbe porre una pedine fuori dalla tavola, cosa ovviamente
+		alcun modo. Per farlo si dovrebbe porre una pedina fuori dalla tavola, cosa ovviamente
 		non consentita. Per questo si dice che le pedine negli angoli sono <b>pedine stabili</b>.</p>
 
 		<p>Ma se le pedine negli angoli sono sicuramente stabili anche altre lo possono diventare.
@@ -49,7 +49,7 @@
 		  con quella che si vuole porre nell'angolo.</li>
 		</ul>
 
-		<p>Per esempio, nel diagramma 3, il Bianco pu&ograve; giocare nell'angolo a1 perch&egrave; c'&egrave; una pedine nera
+		<p>Per esempio, nel diagramma 3, il bianco pu&ograve; giocare nell'angolo a1 perch&egrave; c'&egrave; una pedina nera
 		in a2 e una bianca in a3 che con a1 incastra la a2; pu&ograve; giocare nell'angolo h1 perch&egrave; c'&egrave; una
 		pedina nera in g2 e una bianca in e4 che incastra la g2 e la f3.</p>
 

@@ -1,0 +1,45 @@
+{
+  "position": [
+    "--###-#-",
+    "--O####-",
+    "#-OOOOOO",
+    "OOOOOOOO",
+    "-OO#OOOO",
+    "-OO##OOO",
+    "--OO##-O",
+    "-OOO-##-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B3",
+      "comment": "Il nero punta a guadagnare un tempo sfruttando la parità a nord-ovest."
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A6",
+      "comment": "Il nero non si accorge che è ora possibile giocare la manovra semi-Landau."
+    },
+    {
+      "move": "A5",
+      "comment": "Sacrificio."
+    },
+    {
+      "move": "A1",
+      "comment": "Presa dell'angolo."
+    },
+    {
+      "move": "B2",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "B1",
+      "comment": "Secondo tempo. Il Nero sperava di guadagnare un tempo invece ne ha persi due."
+    }
+  ]
+}

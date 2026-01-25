@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--####--",
+    "--####-O",
+    "OO####OO",
+    "OO#OO#OO",
+    "OOOOOOOO",
+    "OO####O#",
+    "---##O--",
+    "--------"
+  ],
+  "turn": "white",
+  "add": {
+    "borders": [
+      {
+        "ul": "G3",
+        "dr": "G6",
+        "color": "yellow"
+      },
+      {
+        "ul": "C2",
+        "dr": "F2",
+        "color": "red"
+      }
+    ]
+  }
+}

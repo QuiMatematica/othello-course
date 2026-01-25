@@ -1,0 +1,48 @@
+{
+  "position": [
+    "-O-####-",
+    "-OO###--",
+    "OOOOOOOO",
+    "#O#O##OO",
+    "#OOOO#OO",
+    "O#####O-",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "C1",
+      "comment": "Attacco."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco accetta l'angolo."
+    },
+    {
+      "move": "A1",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "F7"
+    },
+    {
+      "move": "A2",
+      "comment": "Secondo tempo di gioco."
+    },
+    {
+      "move": "E7"
+    },
+    {
+      "move": "A7",
+      "comment": "Terzo tempo di gioco."
+    },
+    {
+      "move": "D7"
+    },
+    {
+      "move": "G2",
+      "comment": "Quarto tempo di gioco. E quanto potrà procurarsi l'accesso potrà guadagnare un altro tempo di gioco in <b>H2</b>."
+    }
+  ]
+}

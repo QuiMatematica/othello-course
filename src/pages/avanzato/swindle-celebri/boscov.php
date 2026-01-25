@@ -71,7 +71,7 @@ Studia il diagramma <span data-board-ref="boscov-3"></span>.</p>
 sia uno swindle di Boscov o un qualunque altro tipo di attacco, sia attuabile e che non ci siano
 delle contromosse dell'avversario che la possono bloccare.</p>
 
-<h2>Quando conviene rischiar</h2>
+<h2>Quando conviene rischiare</h2>
 
 <p>Uno swindle di Boscov è sicuramente una trappola micidiale. Perdere tre tempi di gioco è
 un costo troppo elevato.</p>

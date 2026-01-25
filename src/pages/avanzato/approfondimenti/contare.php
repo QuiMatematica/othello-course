@@ -72,17 +72,17 @@
     capacità computazionale in cambio delle nostre abilità "artistiche/romantiche" e delle nostre valutazioni
     immediate.</p>
 
-<h2>Il gambetto del glucosio: è un mondo molto molto rischioso</h2>
+<h2>La trappola del glucosio: è un mondo pieno di rischi</h2>
 
 <p>A questo punto, dovrebbe essere chiaro dove andremo a parare con questo articolo che parte con una domanda e per
-    3/4 del testo fa di tutto per evitare di rispondere. Ridurre la nostra bravura ad Othello ad una misura numerica
+    3/4 del testo fa di tutto per evitare di rispondere. Ridurre la nostra bravura a Othello a una misura numerica
     delle mosse che prediciamo è fuorviante e dannoso. Giocare bene a Othello significa trovare <b>il mix ideale tra
         approccio analitico e posizionale</b>. Non conta tanto quante mosse siamo in grado di predire, ma quanto bravi siamo
     a stabilire quando è il momento di calcolare, e quando è meglio risparmiare le energie e fidarci della visione
     posizionale. L'esperienza dei grandi giocatori gli permette di riconoscere meglio degli altri quando è il momento
     di fermarsi e ragionare, conoscendo bene lo spazio che possono concedere alla fase di calcolo. L'approccio
     posizionale torna utile per scremare le possibilità che è necessario approfondire in maniera analitica,
-    e i giocatori esperti sono quelli che hanno trovato un'equilibrio migliore tra i due approcci.</p>
+    e i giocatori esperti sono quelli che hanno trovato un equilibrio migliore tra i due approcci.</p>
 
 <p>Più grande è l'esperienza, più facile è riconoscere in una posizione il rischio di fermarsi a una analisi
     superficiale. L'esperienza serve anche a limitare le "direzioni" in cui l'analisi si porterà, e a saper giudicare

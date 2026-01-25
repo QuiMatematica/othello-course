@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--####--",
+    "--####-O",
+    "OO####OO",
+    "OO#OO#OO",
+    "OOOOOO#-",
+    "OO######",
+    "---##O--",
+    "--------"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "H5",
+      "comment": "Il bianco sacrifica l'angolo <b>H1</b> e il bordo est."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero non può perdere quest'occasione e prende l'angolo."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco può muovere in <b>G2</b> e, grazie alla particolare conformazione dei controbordi nord ed est, controlla l'accesso in <b>G1</b>."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero allunga il proprio bordo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco chiude la manovra guadagnando un secondo tempo di gioco."
+    }
+  ]
+}

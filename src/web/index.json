@@ -474,6 +474,16 @@
               "title": "Quiz sugli swindle"
             }
           ]
+        },
+        {
+          "href": "approfondimenti/",
+          "title": "Approfondimenti",
+          "pages": [
+            {
+              "href": "contare.php",
+              "title": "Quante mosse avanti devo saper calcolare per giocare bene a Othello?"
+            }
+          ]
         }
       ]
     },

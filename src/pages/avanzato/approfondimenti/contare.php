@@ -72,7 +72,7 @@
     capacità computazionale in cambio delle nostre abilità "artistiche/romantiche" e delle nostre valutazioni
     immediate.</p>
 
-<h2>Il gambetto del glucosio: è un mondo molto molto rischioso</h2>
+<h2>La trappola del glucosio: è un mondo pieno di rischi</h2>
 
 <p>A questo punto, dovrebbe essere chiaro dove andremo a parare con questo articolo che parte con una domanda e per
     3/4 del testo fa di tutto per evitare di rispondere. Ridurre la nostra bravura ad Othello ad una misura numerica

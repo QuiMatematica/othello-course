@@ -5,13 +5,10 @@ sola.</p>
     (tratta dal libro di Brian Rose
     <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>)
     il nero si trova in una posizione discreta.
-Probabilmente la sua mossa migliore è <b>E1</b>, che costringe il bianco a giocare verso nord, dando al nero nuove opportunità.
+Probabilmente la sua mossa migliore è <b>E2</b>, che costringe il bianco a giocare verso nord, dando al nero nuove opportunità.
     Tuttavia, il nero non conosce lo swindle di Boscov e ne subisce pienamente gli effetti!</p>
 
 <board data-type="show" data-label="boscov-1" data-file="boscov-1.json"></board>
-
-<p>Questo swindle non si verifica molto spesso, ma ci porta a un'osservazione interessante: muovere vicino ai bordi
-può portare facilmente a uno swindle.</p>
 
 <h2>L'ordine delle mosse</h2>
 
@@ -55,10 +52,9 @@ Vedi il diagramma <span data-board-ref="boscov-base-misto"></span>.</p>
 
 <h2>Verificare prima di attaccare</h2>
 
-<p>Il prossimo esempio è stato proposto dal maestro Paolo Scognamiglio.</p>
-
-<p>Il bianco ha appena giocato la mossa che porterebbe allo swindle di Boscov ma, in questo caso, sarebbe un errore
-giocarlo subito. Il diagramma <span data-board-ref="boscov-2"></span> mostra la sequenza sbagliata del nero.</p>
+<p>Nel diagramma <span data-board-ref="boscov-2"></span> (proposto dal maestro Paolo Scognamiglio) il bianco ha appena giocato la mossa che porterebbe
+    allo swindle di Boscov ma, in questo caso, sarebbe un errore
+giocarlo subito. Il diagramma mostra la sequenza sbagliata del nero.</p>
 
 <board data-type="show" data-label="boscov-2" data-file="boscov-2.json"></board>
 
@@ -68,7 +64,7 @@ Studia il diagramma <span data-board-ref="boscov-3"></span>.</p>
 <board data-type="show" data-label="boscov-3" data-file="boscov-3.json"></board>
 
 <p>Questo esempio ci ricorda che è importante verificare che la manovra che abbiamo in mente di fare,
-sia uno swindle di Boscov o un qualunque altro tipo di attacco, sia attuabile e che non ci siano
+uno swindle di Boscov o un qualunque altro tipo di attacco, sia attuabile e che non ci siano
 delle contromosse dell'avversario che la possono bloccare.</p>
 
 <h2>Quando conviene rischiare</h2>
@@ -92,6 +88,16 @@ di Boscov.</p>
 nero riesce a vincere la partita.</p>
 
 <board data-type="show" data-label="boscov-tastet" data-file="boscov-tastet.json"></board>
+
+<p>Anche il diagramma <span data-board-ref="boscov-scogna"></span> mostra una posizione in cui predisporre la posizione
+che darebbe il via allo swindle di Boscov è l'opzione migliore.</p>
+
+<p>Tocca al nero. Come puoi facilmente osservare non ha delle buone mosse a disposizione. La meno impattante sembra
+essere <b>D7</b>, che però offre un facile risposta in <b>E7</b>. Anche <b>E1</b> non è una buona scelta perché
+dopo la sequenza <b>B1 - G2 - C2</b> il nero si trova ancora più in difficoltà a trovare delle buone mosse.
+Rimane <b>C2</b> che però porterebbe allo swindle di Boscov. Invece...</p>
+
+<board data-type="show" data-label="boscov-scogna" data-file="boscov-scogna.json"></board>
 
 <h2>Boscov, chi era costui?</h2>
 

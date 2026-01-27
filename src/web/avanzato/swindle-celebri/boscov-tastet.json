@@ -87,7 +87,8 @@
       "move": "D8"
     },
     {
-      "move": "A7"
+      "move": "A7",
+      "comment": "Il nero è riuscito a vincere la partita."
     }
   ]
 }

@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--#O-O--",
+    "---OO#--",
+    "OOOO#OOO",
+    "-OO###O#",
+    "####OO#-",
+    "###OOOO-",
+    "#-#-----",
+    "--#-----"
+  ],
+  "played": "D1",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "C2",
+      "comment": "Il nero rischia uno swindle di Boscov, però sa che non funzionerà."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco inizia lo swindle. Ma attenzione. Non potrà giocare in <b>G1</b> altrimenti il nero potrà incunearsi in <b>E1</b>. E <b>E1</b> causa il formarsi di un cinque completo che è facilmente attaccabile."
+    },
+    {
+      "move": "H5",
+      "comment": "Il nero può permettersi di aspettare e approfittare di questa mossa che ha ottenuto grazie alla sua mossa precedente."
+    },
+    {
+      "move": "E1",
+      "comment": "Se il bianco gioca in <b>E1</b>..."
+    },
+    {
+      "move": "G2",
+      "comment": "... il nero attacca subito il cinque. E vince."
+    }
+  ]
+}

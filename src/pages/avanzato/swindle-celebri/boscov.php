@@ -5,20 +5,56 @@ sola.</p>
     (tratta dal libro di Brian Rose
     <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>)
     il nero si trova in una posizione discreta.
-Probabilmente la sua mossa migliore è <b>E1</b>, che costringe il bianco a giocare vero nord, dando al nero nuove opportunità.
+Probabilmente la sua mossa migliore è <b>E2</b>, che costringe il bianco a giocare verso nord, dando al nero nuove opportunità.
     Tuttavia, il nero non conosce lo swindle di Boscov e ne subisce pienamente gli effetti!</p>
 
 <board data-type="show" data-label="boscov-1" data-file="boscov-1.json"></board>
 
-<p>Questo swindle non si verifica molto spesso, ma ci porta a un'osservazione interessante: muovere vicino ai bordi
-può portare facilmente a uno swindle.</p>
+<h2>L'ordine delle mosse</h2>
 
-<h2>Ma ci sono sempre le eccezioni</h2>
+<p>Prendiamo la posizione base che permette di giocare lo swindle di Boscov: diagramma
+    <span data-board-ref="boscov-base"></span>.</p>
 
-<p>Il prossimo esempio è stato proposto dal maestro Paolo Scognamiglio.</p>
+<board data-type="show" data-label="boscov-base" data-file="boscov-base.json"></board>
 
-<p>Il bianco ha appena giocato la mossa che porterebbe allo swindle di Boscov ma, in questo caso, sarebbe un errore
-giocarlo subito. Il diagramma <span data-board-ref="boscov-2"></span> mostra la sequenza sbagliata del nero.</p>
+<p>In quale ordine vanno giocate le tre mosse dello swindle?</p>
+
+<p>Se vogliamo ottenere tutti e tre i tempi di gioco, la prima mossa da fare è quella che
+    toglie ogni accesso all'attaccato sul bordo, quindi
+<b>B8</b>. Ma poi?</p>
+
+<p>L'ordine delle altre due mosse dipende da cosa c'è sul bordo est. Infatti l'effetto della
+    mossa in <b>E8</b> dipende dalle caselle <b>G6</b> e <b>H5</b>.</p>
+
+<p>Senza pretendere di analizzare tutti i casi possibili, vediamo almeno quelli più comuni.</p>
+
+<p>Se <b>G6</b> e <b>H5</b> sono occupate da pedine del colore attaccato (diagramma
+    <span data-board-ref="boscov-base-2nere"></span>) allora la sequenza giusta è
+<b>B8 - E8 - G8</b>.</p>
+
+<p>Se invece <b>G6</b> e <b>H5</b> sono occupate da pedine del colore attaccante (diagramma
+<span data-board-ref="boscov-base-2bianche"></span>) allora la sequenza giusta è
+<b>B8 - G8 - E8</b>.</p>
+
+<gather>
+    <board data-type="show" data-label="boscov-base-2nere" data-file="boscov-base-2nere.json"></board>
+    <board data-type="show" data-label="boscov-base-2bianche" data-file="boscov-base-2bianche.json"></board>
+</gather>
+
+<p>Se invece le caselle <b>G6</b> e <b>H5</b> sono occupate da pedine di colori diversi,
+    non è più possibile
+ottenere tutti e tre i tempi dello swindle. Infatti se il bianco gioca in <b>G8</b> il nero
+si può incuneare in <b>E8</b>. Se invece il bianco gioca in <b>E8</b> gira anche <b>F7</b> e non
+potrà più giocare in <b>G8</b>. Tra le due opzioni è chiaramente preferibile la seconda.
+Vedi il diagramma <span data-board-ref="boscov-base-misto"></span>.</p>
+
+<board data-type="show" data-label="boscov-base-misto" data-file="boscov-base-misto.json"></board>
+
+<h2>Verificare prima di attaccare</h2>
+
+<p>Nel diagramma <span data-board-ref="boscov-2"></span> (proposto dal maestro Paolo Scognamiglio) il bianco ha appena giocato la mossa che porterebbe
+    allo swindle di Boscov ma, in questo caso, sarebbe un errore
+giocarlo subito. Il diagramma mostra la sequenza sbagliata del nero.</p>
 
 <board data-type="show" data-label="boscov-2" data-file="boscov-2.json"></board>
 
@@ -26,6 +62,42 @@ giocarlo subito. Il diagramma <span data-board-ref="boscov-2"></span> mostra la 
 Studia il diagramma <span data-board-ref="boscov-3"></span>.</p>
 
 <board data-type="show" data-label="boscov-3" data-file="boscov-3.json"></board>
+
+<p>Questo esempio ci ricorda che è importante verificare che la manovra che abbiamo in mente di fare,
+uno swindle di Boscov o un qualunque altro tipo di attacco, sia attuabile e che non ci siano
+delle contromosse dell'avversario che la possono bloccare.</p>
+
+<h2>Quando conviene rischiare</h2>
+
+<p>Uno swindle di Boscov è sicuramente una trappola micidiale. Perdere tre tempi di gioco è
+un costo troppo elevato.</p>
+
+<p>Quindi quella mossa sul controbordo che consentirebbe all'avversario di attuare lo swindle
+andrebbe evitata a tutti i costi.</p>
+
+<p>Invece, come accade sempre nell'Othello, ci sono delle eccezioni.</p>
+
+<p>Il diagramma <span data-board-ref="boscov-tastet"></span> mostra un posizione della
+partita tra Henry Aspenryd e Mart Tastet all'EGP di Stoccolma del 2005. Tocca al nero
+che non è in una posizione felice e, tra le mosse che ha a disposizione, <b>G3</b>
+sembra essere la meno peggio. Ma è proprio quella mossa che potrebbe scatenare uno swindle
+di Boscov.</p>
+
+<p>In questo caso lo swindle non ha pieno effetto perché il nero lo può fermare giocando in
+<b>G2</b>. La posizione si complica e diventa più difficile capire come muovere. Tanto che il
+nero riesce a vincere la partita.</p>
+
+<board data-type="show" data-label="boscov-tastet" data-file="boscov-tastet.json"></board>
+
+<p>Anche il diagramma <span data-board-ref="boscov-scogna"></span> mostra una posizione in cui predisporre la posizione
+che darebbe il via allo swindle di Boscov è l'opzione migliore.</p>
+
+<p>Tocca al nero. Come puoi facilmente osservare non ha delle buone mosse a disposizione. La meno impattante sembra
+essere <b>D7</b>, che però offre un facile risposta in <b>E7</b>. Anche <b>E1</b> non è una buona scelta perché
+dopo la sequenza <b>B1 - G2 - C2</b> il nero si trova ancora più in difficoltà a trovare delle buone mosse.
+Rimane <b>C2</b> che però porterebbe allo swindle di Boscov. Invece...</p>
+
+<board data-type="show" data-label="boscov-scogna" data-file="boscov-scogna.json"></board>
 
 <h2>Boscov, chi era costui?</h2>
 

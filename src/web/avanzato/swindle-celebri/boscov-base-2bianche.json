@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--OOOOOO",
+    "--OOO#OO",
+    "--O#O#OO",
+    "--OO##OO",
+    "--####--",
+    "--#O-O--"
+  ],
+  "played": "F7",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B8",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "E2",
+      "comment": "Ora al bianco non conviene giocare in <b>E8</b> altrimenti volta anche la pedina in <b>F7</b> e non può ottenere il terzo tempo di gioco."
+    },
+    {
+      "move": "G8",
+      "comment": "Secondo tempo di gioco."
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "E8",
+      "comment": "Terzo tempo di gioco."
+    }
+  ]
+}

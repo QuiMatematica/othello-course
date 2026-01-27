@@ -21,6 +21,11 @@
         "ul": "C2",
         "dr": "F2",
         "color": "red"
+      },
+      {
+        "ul": "F3",
+        "dr": "F3",
+        "color": "blue"
       }
     ]
   }

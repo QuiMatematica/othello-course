@@ -489,7 +489,11 @@
             },
             {
               "href": "semi-landau.php",
-              "title": "La manovra semi-Landau"
+              "title": "La manovra semi-Landau (prima parte)"
+            },
+            {
+              "href": "semi-landau-opp.php",
+              "title": "La manovra semi-Landau (seconda parte)"
             }
           ]
         }

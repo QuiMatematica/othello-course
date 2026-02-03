@@ -41,29 +41,3 @@ essere completamente passivo. Infatti quelle otto pedine (che, essendo stabili, 
 alla fine della partita) non offrono alcuna mossa e, considerata la conformazione degli altri bordi e i
 tempi di gioco che perderà, il bianco non avrà la possibilità di ottenere nuove pedine centrali. C'è il forte rischio
     che alla fine della partita avrà solo quelle otto pedine.</p>
-
-<h2>Lo studio di Landau</h2>
-
-<p>Lo stesso Ted Landau scrisse un articolo per la rivista americana Othello Quarterly in cui descrisse la
-manovra che poi ha assunto il suo stesso nome. In questo articolo ha portato diversi esempi, anche più semplici
-della prima storica manovra. E ha suddiviso questi esempi in due categorie:</p>
-<ul>
-    <li>le <b>manovre Landau</b>: in cui l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo opposto;</li>
-    <li>le <b>manovre semi-Landau</b>: in cui l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo ceduto.</li>
-</ul>
-<p>Si tratta quindi di situazioni più semplici rispetto a quella presentata prima.
-    E, essendo più semplici, risultano anche meno rare.</p>
-<p>Questa pagina prosegue con le manovre Landau propriamente dette; le semi-Landau vengono
-    rimandate alla prossima pagina.</p>
-<p>Tutte queste manovre hanno in comune il controllo del controbordo che consente di realizzare lo swindle.</p>
-
-<h2>Un esempio più semplice</h2>
-
-<p>La posizione del diagramma <span data-board-ref="landau-2"></span> è l'esempio tipico di
-    una manovra Landau.</p>
-
-<p>Il nero ha la possibilità di cedere il bordo e l'angolo a nord-ovest. Ma poi riesce a ottenere il controllo
-    del controbordo nord e, grazie a questo, giocare
-uno swindle nella regione a nord-est.</p>
-
-<board data-type="show" data-label="landau-2" data-file="landau-2.json"></board>

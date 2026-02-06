@@ -1,0 +1,40 @@
+{
+  "position": [
+    "-######-",
+    "--OOOO--",
+    "--OO#O#O",
+    "--O####O",
+    "--#####O",
+    "--OOOOOO",
+    "--OOOO--",
+    "--OOOO--"
+  ],
+  "turn": "black",
+  "comment": "Il nero pensa di poter giocare una manovra semi-Landau, ma in verità è destinato a fallire.",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Il nero inizia la manovra semi-Landau."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero inizia lo swindle. Ma attenzione: l'accesso del nero in <b>G8</b> è garantito solo dalla pedina in <b>D5</b>. E il bianco ha un'ottima mossa che volta tale pedina e gli procura l'accesso in <b>G8</b>."
+    },
+    {
+      "move": "B5",
+      "comment": "Il nero è fregato: non ha più l'accesso in <b>G8</b>, dove invece può giocare il bianco."
+    },
+    {
+      "move": "B4",
+      "comment": "Il nero deve cercare qualche altra mossa, magari per fare pressione su <b>G8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Ma tanto ci arriva prima il bianco."
+    }
+  ]
+}

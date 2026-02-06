@@ -1,0 +1,32 @@
+{
+  "position": [
+    "-OOOOO--",
+    "--OOOO--",
+    "--OO#OOO",
+    "--O###O-",
+    "--O#####",
+    "--OOOO##",
+    "--OOOO-#",
+    "--OOOO--"
+  ],
+  "turn": "black",
+  "comment": "Gioca una manovra Landau.",
+  "moves": [
+    {
+      "move": "H4",
+      "comment": "Ottimo: inizia la manovra Landau."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "H2",
+      "comment": "Bravissimo: hai preso il controllo del controbordo."
+    },
+    {
+      "move": "H1",
+      "comment": "Secondo angolo.<br>Adesso hai solo l'imbarazzo della scelta se cominciare da nord o da sud. Ottimo lavoro."
+    }
+  ]
+}

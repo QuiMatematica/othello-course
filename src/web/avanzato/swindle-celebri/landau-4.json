@@ -1,0 +1,35 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-###O--",
+    "####O###",
+    "###O####",
+    "##OO####",
+    "###O####",
+    "--#OO#--",
+    "--####--"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B8",
+      "comment": "Inizia la manovra Landau, cedendo il primo angolo."
+    },
+    {
+      "move": "A8",
+      "comment": "Per non perdere altri tempi di gioco il nero deve prendere l'angolo."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco cede il secondo angolo. Nel frattempo ha preso il controllo del controbordo."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende il secondo angolo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco ora può dedicarsi agli swindle."
+    }
+  ]
+}

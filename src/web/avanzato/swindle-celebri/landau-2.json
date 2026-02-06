@@ -29,7 +29,7 @@
     },
     {
       "move": "H2,",
-      "comment": "Il nero sfrutta il controllo dell'accesso su <b>H2</b> e guadagna il secondo tempo di gioco."
+      "comment": "Il nero sfrutta il controllo dell'accesso su <b>H2</b> e guadagna il secondo tempo di gioco.<br>Nota che a nord-ovest il nero non potrà giocare uno swindle perché qualunque mossa giochi, l'altra verrà giocata dall'avversario."
     }
   ]
 }

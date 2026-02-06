@@ -41,3 +41,17 @@ essere completamente passivo. Infatti quelle otto pedine (che, essendo stabili, 
 alla fine della partita) non offrono alcuna mossa e, considerata la conformazione degli altri bordi e i
 tempi di gioco che perderà, il bianco non avrà la possibilità di ottenere nuove pedine centrali. C'è il forte rischio
     che alla fine della partita avrà solo quelle otto pedine.</p>
+
+<h2>Manovre Landau con altre formazioni di bordo</h2>
+
+<p>Abbiamo visto una manovra Landau partendo da un tre più uno su un bordo. La stessa manovra è attuabile anche
+con altre formazioni.</p>
+
+<p>Una situazione, più frequente di quanto si possa immaginare, è quella data dal diagramma
+<span data-board-ref="landau-4"></span>.</p>
+
+<board data-type="show" data-label="landau-4" data-file="landau-4.json"></board>
+
+<h2>Tocca a te</h2>
+
+<board data-type="quiz" data-label="landau-quiz" data-file="landau-quiz.json"></board>

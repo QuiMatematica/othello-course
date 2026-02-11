@@ -1,0 +1,35 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--OOOO##",
+    "--OOO###",
+    "--O#O###",
+    "--OO####",
+    "--####--",
+    "--#O-O--"
+  ],
+  "played": "F7",
+  "turn": "white",
+  "moves": [
+    {
+      "move": "B8",
+      "comment": "Primo tempo di gioco."
+    },
+    {
+      "move": "F2",
+      "comment": "Ora il bianco non può giocare in <b>G8</b> altrimenti consentirebbe al nero incunearsi."
+    },
+    {
+      "move": "E8",
+      "comment": "Secondo tempo di gioco."
+    },
+    {
+      "move": "D2"
+    },
+    {
+      "move": "G8",
+      "comment": "Terzo tempo di gioco."
+    }
+  ]
+}

@@ -27,7 +27,7 @@ controbordo (frecce rosse).</p>
 bordo è stato ceduto e il controbordo conquistato. In particolare:</p>
 <ul>
     <li>il colore attaccato non deve avere mosse a disposizione nelle caselle rimaste libere, e questo
-    è garantito dal fatto che le pedine della colonna <b>3</b> adiacenti sono tutte del colore dell'attaccato
+    è garantito dal fatto che le pedine della colonna <b>C</b> adiacenti sono tutte del colore dell'attaccato
     (bordi gialli);</li>
     <li>il colore attaccante deve aver la possibilità di giocare nelle caselle <b>X</b> senza concedere la
     replica all'avversario nelle caselle <b>C</b> adiacenti, e questo è garantito dal fatto che l'attaccato
@@ -42,28 +42,16 @@ alla fine della partita) non offrono alcuna mossa e, considerata la conformazion
 tempi di gioco che perderà, il bianco non avrà la possibilità di ottenere nuove pedine centrali. C'è il forte rischio
     che alla fine della partita avrà solo quelle otto pedine.</p>
 
-<h2>Lo studio di Landau</h2>
+<h2>Manovre Landau con altre formazioni di bordo</h2>
 
-<p>Lo stesso Ted Landau scrisse un articolo per la rivista americana Othello Quarterly in cui descrisse la
-manovra che poi ha assunto il suo stesso nome. In questo articolo ha portato diversi esempi, anche più semplici
-della prima storica manovra. E ha suddiviso questi esempi in due categorie:</p>
-<ul>
-    <li>le <b>manovre Landau</b>: in cui l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo opposto;</li>
-    <li>le <b>manovre semi-Landau</b>: in cui l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo ceduto.</li>
-</ul>
-<p>Si tratta quindi di situazioni più semplici rispetto a quella presentata prima.
-    E, essendo più semplici, risultano anche meno rare.</p>
-<p>Questa pagina prosegue con le manovre Landau propriamente dette; le semi-Landau vengono
-    rimandate alla prossima pagina.</p>
-<p>Tutte queste manovre hanno in comune il controllo del controbordo che consente di realizzare lo swindle.</p>
+<p>Abbiamo visto una manovra Landau partendo da un tre più uno su un bordo. La stessa manovra è attuabile anche
+con altre formazioni.</p>
 
-<h2>Un esempio più semplice</h2>
+<p>Una situazione, più frequente di quanto si possa immaginare, è quella data dal diagramma
+<span data-board-ref="landau-4"></span>.</p>
 
-<p>La posizione del diagramma <span data-board-ref="landau-2"></span> è l'esempio tipico di
-    una trappola di Boscov.</p>
+<board data-type="show" data-label="landau-4" data-file="landau-4.json"></board>
 
-<p>Il nero ha la possibilità di cedere il bordo e l'angolo a nord-ovest. Ma poi riesce a ottenere il controllo
-    del controbordo nord e, grazie a questo, giocare
-uno swindle nella regione a nord-est.</p>
+<h2>Tocca a te</h2>
 
-<board data-type="show" data-label="landau-2" data-file="landau-2.json"></board>
+<board data-type="quiz" data-label="landau-quiz" data-file="landau-quiz.json"></board>

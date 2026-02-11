@@ -476,6 +476,24 @@
           ]
         },
         {
+          "href": "swindle-celebri/",
+          "title": "Swindle celebri",
+          "pages": [
+            {
+              "href": "boscov.php",
+              "title": "Lo swindle di Boscov"
+            },
+            {
+              "href": "landau.php",
+              "title": "La manovra Landau"
+            },
+            {
+              "href": "semi-landau.php",
+              "title": "La manovra semi-Landau"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

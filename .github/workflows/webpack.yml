@@ -42,3 +42,9 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
           server-dir: ${{ env.SERVER_DIR }}
+
+      - name: Run database migrations (post-deploy)
+        run: |
+          ssh -o StrictHostKeyChecking=no \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "cd ${{ env.SERVER_DIR }} && php database/migrate.php"

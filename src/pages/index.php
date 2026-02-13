@@ -144,6 +144,31 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
         }
     </style>
 
+    <script>
+        function getDeviceId() {
+            let id = localStorage.getItem('pwa_device_id');
+            if (!id) {
+                id = crypto.randomUUID();
+                localStorage.setItem('pwa_device_id', id);
+            }
+            return id;
+        }
+    </script>
+
+    <script>
+        function pwaPing(type) {
+            fetch('/api/pwa_ping.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    device_id: getDeviceId(),
+                    type: type,
+                    platform: navigator.platform || null
+                })
+            });
+        }
+    </script>
+
 </head>
 
 <body class="pt-5 mt-3">
@@ -210,6 +235,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
         // Nascondi il container se l'app viene installata
         window.addEventListener('appinstalled', () => {
             document.getElementById('pwaInstallContainer').classList.add('d-none');
+            pwaPing('install');
         });
     }
 </script>
@@ -243,6 +269,8 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        pwaPing('visit');
+
         const levels = [
             {id: "pills-base", title: "Base", emoji: "🎯", level: "base"},
             {id: "pills-intermedio", title: "Intermedio", emoji: "⚔️", level: "intermedio"},

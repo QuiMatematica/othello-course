@@ -22,3 +22,6 @@ CREATE TABLE push_subscriptions (
     last_used DATETIME NULL,
     active TINYINT(1) DEFAULT 1
 );
+
+ALTER TABLE push_subscriptions
+ADD UNIQUE KEY unique_endpoint (endpoint(255));

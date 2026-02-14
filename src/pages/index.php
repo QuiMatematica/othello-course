@@ -240,6 +240,105 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     }
 </script>
 
+<div id="pushPrompt" class="container my-4 d-none">
+  <div class="card shadow-sm border-0 bg-light">
+    <div class="card-body text-center p-4">
+
+      <h5 class="card-title fw-bold mb-3">
+        🔔 Resta aggiornato su QuiOthello
+      </h5>
+
+      <p class="card-text text-muted mb-4">
+        Ricevi una notifica quando pubblichiamo nuove analisi, swindle e contenuti avanzati.
+        Nessuno spam, solo contenuti di qualità.
+      </p>
+
+      <button id="enablePushBtn" class="btn btn-primary px-4">
+        Attiva notifiche
+      </button>
+
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+
+  const pushPrompt = document.getElementById("pushPrompt");
+  const enableBtn = document.getElementById("enablePushBtn");
+
+  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+    return; // browser non supporta
+  }
+
+  const registration = await navigator.serviceWorker.ready;
+
+  // Controlla se già sottoscritto
+  const existingSubscription = await registration.pushManager.getSubscription();
+
+  if (existingSubscription) {
+    return; // già iscritto → non mostrare il box
+  }
+
+  // Controlla permesso notifiche
+  if (Notification.permission === "denied") {
+    return; // utente ha bloccato → non mostrare
+  }
+
+  // Mostra il box
+  pushPrompt.classList.remove("d-none");
+
+  enableBtn.addEventListener("click", async () => {
+
+    try {
+      const permission = await Notification.requestPermission();
+
+      if (permission !== "granted") {
+        return;
+      }
+
+      // Ottieni public key dal server
+      const response = await fetch("/api/get-vapid-public-key.php");
+      const { publicKey } = await response.json();
+
+      const convertedKey = urlBase64ToUint8Array(publicKey);
+
+      const subscription = await registration.pushManager.subscribe({
+        userVisibleOnly: true,
+        applicationServerKey: convertedKey
+      });
+
+      // Invia al server
+      await fetch("/api/save-subscription.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(subscription)
+      });
+
+      // Nascondi definitivamente il box
+      pushPrompt.remove();
+
+    } catch (error) {
+      console.error("Errore sottoscrizione push:", error);
+    }
+
+  });
+
+});
+
+
+// Conversione public key
+function urlBase64ToUint8Array(base64String) {
+  const padding = "=".repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding)
+    .replace(/-/g, "+")
+    .replace(/_/g, "/");
+
+  const rawData = window.atob(base64);
+  return Uint8Array.from([...rawData].map(char => char.charCodeAt(0)));
+}
+</script>
+
 <div id="othello-content" class="container-xxl my-4">
     <div class="border rounded-4 border-3 border-success p-3">
         <!-- REPLACE WITH INDEX -->

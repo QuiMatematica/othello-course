@@ -48,7 +48,7 @@ if (!filter_var($url, FILTER_VALIDATE_URL)) {
 // ===============================
 // CARICAMENTO LIBRERIE
 // ===============================
-require_once __DIR__ . '/../../vendor/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 require_once $_SERVER['DOCUMENT_ROOT'] . '/config/database.php';
 
 $config = require __DIR__ . '/../../../config/push-config.php';

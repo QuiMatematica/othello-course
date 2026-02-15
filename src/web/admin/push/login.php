@@ -39,7 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($username === $config['username'] &&
             password_verify($password, $config['password_hash'])) {
 
-            session_regenerate_id(true);
             $_SESSION['admin_logged'] = true;
             $_SESSION['login_time'] = time();
 

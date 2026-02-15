@@ -13,7 +13,7 @@ if (isset($_SESSION['admin_logged']) && $_SESSION['admin_logged'] === true) {
     exit;
 }
 
-$config = require '/home/tuoaccount/private/admin-config.php';
+$config = require __DIR__ . '/../../config/admin-config.php';
 
 $error = "";
 

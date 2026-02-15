@@ -49,9 +49,9 @@ if (!filter_var($url, FILTER_VALIDATE_URL)) {
 // CARICAMENTO LIBRERIE
 // ===============================
 require_once __DIR__ . '/../../vendor/autoload.php';
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config/database.php';
 
-$config = require '/home/tuoaccount/private/push-config.php';
+$config = require __DIR__ . '/../../config/push-config.php';
 
 use Minishlink\WebPush\WebPush;
 use Minishlink\WebPush\Subscription;

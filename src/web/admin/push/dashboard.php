@@ -25,7 +25,7 @@ $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 // ===============================
 // CONNESSIONE DB
 // ===============================
-require_once $_SERVER['DOCUMENT_ROOT'] . '/config/db.php';
+require_once $_SERVER['DOCUMENT_ROOT'] . '/config/database.php';
 
 // Conta dispositivi
 $stmtActive = $pdo->query("SELECT COUNT(*) FROM push_subscriptions WHERE active = 1");

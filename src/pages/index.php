@@ -266,7 +266,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <div class="install-box text-center">
 
         <h5 class="mb-3">
-            🔔 Resta aggiornato su <strong>Qui Othello</strong>
+            ⚫⚪ Resta aggiornato su <strong>Qui Othello</strong>
         </h5>
 
         <p class="mb-4">
@@ -275,7 +275,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 
         <div class="d-flex justify-content-center gap-2 flex-wrap">
             <button id="enablePushBtn" class="btn btn-light btn-install shadow">
-                Attiva notifiche
+                🔔 Attiva notifiche
             </button>
 
             <button id="remindLaterPushBtn" class="btn btn-outline-light btn-install shadow">

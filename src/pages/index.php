@@ -192,9 +192,15 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
             Porta sempre con te il corso di Othello!<br>
             Con l'app avrai un'esperienza più veloce, fluida e senza distrazioni.
         </p>
-        <button id="installBtn" class="btn btn-light btn-install shadow">
-            📲 Installa l'app
-        </button>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <button id="installBtn" class="btn btn-light btn-install shadow">
+                📲 Installa l'app
+            </button>
+
+            <button id="remindLaterInstallBtn" class="btn btn-outline-light btn-install shadow">
+                Ricordamelo più tardi
+            </button>
+        </div>
     </div>
 </div>
 
@@ -209,6 +215,12 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     if (!isInStandaloneMode) {
         // Se NON è già un'app, ascolta l'evento di installazione
         window.addEventListener('beforeinstallprompt', (e) => {
+            // Controllo reminder
+            const remindUntil = localStorage.getItem("installReminderUntil");
+            if (remindUntil && Date.now() < parseInt(remindUntil)) {
+                return;
+            }
+
             e.preventDefault();
             deferredPrompt = e;
 
@@ -230,6 +242,16 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
                 deferredPrompt = null;
                 document.getElementById('pwaInstallContainer').classList.add('d-none');
             });
+
+            document.getElementById('remindLaterInstallBtn').addEventListener('click', () => {
+                const days = 30; // 👈 qui decidi dopo quanti giorni riproporlo
+                const nextTime = Date.now() + (days * 24 * 60 * 60 * 1000);
+
+                localStorage.setItem("installReminderUntil", nextTime);
+
+                pwaInstallContainer.remove();
+            });
+
         });
 
         // Nascondi il container se l'app viene installata
@@ -249,7 +271,6 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 
         <p class="mb-4">
             Ricevi una notifica quando pubblichiamo nuove pagine e quiz.
-            Nessuno spam, solo contenuti di qualità.
         </p>
 
         <div class="d-flex justify-content-center gap-2 flex-wrap">
@@ -269,7 +290,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 
         const pushPrompt = document.getElementById("pushPrompt");
         const enableBtn = document.getElementById("enablePushBtn");
-        const remindBtn = document.getElementById('remindLaterBtn');
+        const remindBtn = document.getElementById('remindLaterPushBtn');
 
         if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
             return; // browser non supporta
@@ -336,7 +357,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 
         remindBtn.addEventListener('click', () => {
 
-            const days = 7; // 👈 qui decidi dopo quanti giorni riproporlo
+            const days = 30; // 👈 qui decidi dopo quanti giorni riproporlo
             const nextTime = Date.now() + (days * 24 * 60 * 60 * 1000);
 
             localStorage.setItem("pushReminderUntil", nextTime);

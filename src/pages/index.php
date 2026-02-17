@@ -262,8 +262,8 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     }
 </script>
 
-<div id="pushPrompt" class="container my-4 d-none">
-    <div class="install-box text-center p-4">
+<div id="pushPrompt" class="container-xxl my-4 d-none">
+    <div class="install-box text-center">
 
         <h5 class="mb-3">
             🔔 Resta aggiornato su <strong>Qui Othello</strong>

@@ -253,11 +253,11 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
         </p>
 
         <div class="d-flex justify-content-center gap-2 flex-wrap">
-            <button id="enablePushBtn" class="btn btn-primary">
+            <button id="enablePushBtn" class="btn btn-light btn-install shadow">
                 Attiva notifiche
             </button>
 
-            <button id="remindLaterPushBtn" class="btn btn-outline-secondary">
+            <button id="remindLaterPushBtn" class="btn btn-outline-light btn-install shadow">
                 Ricordamelo più tardi
             </button>
         </div>

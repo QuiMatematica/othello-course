@@ -241,23 +241,20 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 </script>
 
 <div id="pushPrompt" class="container my-4 d-none">
-  <div class="card shadow-sm border-0 bg-light">
-    <div class="card-body text-center p-4">
+  <div class="install-box text-center p-4">
 
-      <h5 class="card-title fw-bold mb-3">
-        🔔 Resta aggiornato su QuiOthello
+      <h5 class="mb-3">
+          🔔 Resta aggiornato su <strong>Qui Othello</strong>
       </h5>
 
-      <p class="card-text text-muted mb-4">
-        Ricevi una notifica quando pubblichiamo nuove analisi, swindle e contenuti avanzati.
+      <p class="mb-4">
+        Ricevi una notifica quando pubblichiamo nuove pagine e quiz.
         Nessuno spam, solo contenuti di qualità.
       </p>
 
-      <button id="enablePushBtn" class="btn btn-primary px-4">
+      <button id="enablePushBtn" class="btn btn-light btn-install shadow">
         Attiva notifiche
       </button>
-
-    </div>
   </div>
 </div>
 

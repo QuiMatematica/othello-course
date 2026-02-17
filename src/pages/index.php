@@ -159,7 +159,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
         function pwaPing(type) {
             fetch('/api/pwa_ping.php', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     device_id: getDeviceId(),
                     type: type,
@@ -241,99 +241,122 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 </script>
 
 <div id="pushPrompt" class="container my-4 d-none">
-  <div class="install-box text-center p-4">
+    <div class="install-box text-center p-4">
 
-      <h5 class="mb-3">
-          🔔 Resta aggiornato su <strong>Qui Othello</strong>
-      </h5>
+        <h5 class="mb-3">
+            🔔 Resta aggiornato su <strong>Qui Othello</strong>
+        </h5>
 
-      <p class="mb-4">
-        Ricevi una notifica quando pubblichiamo nuove pagine e quiz.
-        Nessuno spam, solo contenuti di qualità.
-      </p>
+        <p class="mb-4">
+            Ricevi una notifica quando pubblichiamo nuove pagine e quiz.
+            Nessuno spam, solo contenuti di qualità.
+        </p>
 
-      <button id="enablePushBtn" class="btn btn-light btn-install shadow">
-        Attiva notifiche
-      </button>
-  </div>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <button id="enablePushBtn" class="btn btn-primary">
+                Attiva notifiche
+            </button>
+
+            <button id="remindLaterPushBtn" class="btn btn-outline-secondary">
+                Ricordamelo più tardi
+            </button>
+        </div>
+    </div>
 </div>
 
 <script>
-document.addEventListener("DOMContentLoaded", async () => {
+    document.addEventListener("DOMContentLoaded", async () => {
 
-  const pushPrompt = document.getElementById("pushPrompt");
-  const enableBtn = document.getElementById("enablePushBtn");
+        const pushPrompt = document.getElementById("pushPrompt");
+        const enableBtn = document.getElementById("enablePushBtn");
+        const remindBtn = document.getElementById('remindLaterBtn');
 
-  if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
-    return; // browser non supporta
-  }
+        if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+            return; // browser non supporta
+        }
 
-  const registration = await navigator.serviceWorker.ready;
+        const registration = await navigator.serviceWorker.ready;
 
-  // Controlla se già sottoscritto
-  const existingSubscription = await registration.pushManager.getSubscription();
+        // Controlla se già sottoscritto
+        const existingSubscription = await registration.pushManager.getSubscription();
 
-  if (existingSubscription) {
-    return; // già iscritto → non mostrare il box
-  }
+        if (existingSubscription) {
+            return; // già iscritto → non mostrare il box
+        }
 
-  // Controlla permesso notifiche
-  if (Notification.permission === "denied") {
-    return; // utente ha bloccato → non mostrare
-  }
+        // Controlla permesso notifiche
+        if (Notification.permission === "denied") {
+            return; // utente ha bloccato → non mostrare
+        }
 
-  // Mostra il box
-  pushPrompt.classList.remove("d-none");
+        // Controllo reminder
+        const remindUntil = localStorage.getItem("pushReminderUntil");
+        if (remindUntil && Date.now() < parseInt(remindUntil)) {
+            return;
+        }
 
-  enableBtn.addEventListener("click", async () => {
+        // Mostra il box
+        pushPrompt.classList.remove("d-none");
 
-    try {
-      const permission = await Notification.requestPermission();
+        enableBtn.addEventListener("click", async () => {
 
-      if (permission !== "granted") {
-        return;
-      }
+            try {
+                const permission = await Notification.requestPermission();
 
-      // Ottieni public key dal server
-      const response = await fetch("/api/get-vapid-public-key.php");
-      const { publicKey } = await response.json();
+                if (permission !== "granted") {
+                    return;
+                }
 
-      const convertedKey = urlBase64ToUint8Array(publicKey);
+                // Ottieni public key dal server
+                const response = await fetch("/api/get-vapid-public-key.php");
+                const {publicKey} = await response.json();
 
-      const subscription = await registration.pushManager.subscribe({
-        userVisibleOnly: true,
-        applicationServerKey: convertedKey
-      });
+                const convertedKey = urlBase64ToUint8Array(publicKey);
 
-      // Invia al server
-      await fetch("/api/save-subscription.php", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(subscription)
-      });
+                const subscription = await registration.pushManager.subscribe({
+                    userVisibleOnly: true,
+                    applicationServerKey: convertedKey
+                });
 
-      // Nascondi definitivamente il box
-      pushPrompt.remove();
+                // Invia al server
+                await fetch("/api/save-subscription.php", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify(subscription)
+                });
 
-    } catch (error) {
-      console.error("Errore sottoscrizione push:", error);
+                // Nascondi definitivamente il box
+                pushPrompt.remove();
+
+            } catch (error) {
+                console.error("Errore sottoscrizione push:", error);
+            }
+
+        });
+
+        remindBtn.addEventListener('click', () => {
+
+            const days = 7; // 👈 qui decidi dopo quanti giorni riproporlo
+            const nextTime = Date.now() + (days * 24 * 60 * 60 * 1000);
+
+            localStorage.setItem("pushReminderUntil", nextTime);
+
+            pushPrompt.remove();
+        });
+
+    });
+
+
+    // Conversione public key
+    function urlBase64ToUint8Array(base64String) {
+        const padding = "=".repeat((4 - base64String.length % 4) % 4);
+        const base64 = (base64String + padding)
+            .replace(/-/g, "+")
+            .replace(/_/g, "/");
+
+        const rawData = window.atob(base64);
+        return Uint8Array.from([...rawData].map(char => char.charCodeAt(0)));
     }
-
-  });
-
-});
-
-
-// Conversione public key
-function urlBase64ToUint8Array(base64String) {
-  const padding = "=".repeat((4 - base64String.length % 4) % 4);
-  const base64 = (base64String + padding)
-    .replace(/-/g, "+")
-    .replace(/_/g, "/");
-
-  const rawData = window.atob(base64);
-  return Uint8Array.from([...rawData].map(char => char.charCodeAt(0)));
-}
 </script>
 
 <div id="othello-content" class="container-xxl my-4">

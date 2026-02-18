@@ -15,7 +15,9 @@
       <phpcs_by_interpreter asDefaultInterpreter="true" interpreter_id="fa2fd517-0085-42dd-b5bb-3cd63826922d" timeout="30000" />
     </phpcs_settings>
   </component>
-  <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
   <component name="PhpStanOptionsConfiguration">
     <option name="transferred" value="true" />
   </component>

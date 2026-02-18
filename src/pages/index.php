@@ -159,7 +159,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
         function pwaPing(type) {
             fetch('/api/pwa_ping.php', {
                 method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
+                headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
                     device_id: getDeviceId(),
                     type: type,
@@ -192,9 +192,15 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
             Porta sempre con te il corso di Othello!<br>
             Con l'app avrai un'esperienza più veloce, fluida e senza distrazioni.
         </p>
-        <button id="installBtn" class="btn btn-light btn-install shadow">
-            📲 Installa l'app
-        </button>
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <button id="installBtn" class="btn btn-light btn-install shadow">
+                📲 Installa l'app
+            </button>
+
+            <button id="remindLaterInstallBtn" class="btn btn-outline-light btn-install shadow">
+                Ricordamelo più tardi
+            </button>
+        </div>
     </div>
 </div>
 
@@ -209,6 +215,12 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     if (!isInStandaloneMode) {
         // Se NON è già un'app, ascolta l'evento di installazione
         window.addEventListener('beforeinstallprompt', (e) => {
+            // Controllo reminder
+            const remindUntil = localStorage.getItem("installReminderUntil");
+            if (remindUntil && Date.now() < parseInt(remindUntil)) {
+                return;
+            }
+
             e.preventDefault();
             deferredPrompt = e;
 
@@ -230,6 +242,16 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
                 deferredPrompt = null;
                 document.getElementById('pwaInstallContainer').classList.add('d-none');
             });
+
+            document.getElementById('remindLaterInstallBtn').addEventListener('click', () => {
+                const days = 30; // 👈 qui decidi dopo quanti giorni riproporlo
+                const nextTime = Date.now() + (days * 24 * 60 * 60 * 1000);
+
+                localStorage.setItem("installReminderUntil", nextTime);
+
+                pwaInstallContainer.remove();
+            });
+
         });
 
         // Nascondi il container se l'app viene installata
@@ -237,6 +259,124 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
             document.getElementById('pwaInstallContainer').classList.add('d-none');
             pwaPing('install');
         });
+    }
+</script>
+
+<div id="pushPrompt" class="container-xxl my-4 d-none">
+    <div class="install-box text-center">
+
+        <h5 class="mb-3">
+            ⚫⚪ Resta aggiornato su <strong>Qui Othello</strong>
+        </h5>
+
+        <p class="mb-4">
+            Ricevi una notifica quando pubblichiamo nuove pagine e quiz.
+        </p>
+
+        <div class="d-flex justify-content-center gap-2 flex-wrap">
+            <button id="enablePushBtn" class="btn btn-light btn-install shadow">
+                🔔 Attiva notifiche
+            </button>
+
+            <button id="remindLaterPushBtn" class="btn btn-outline-light btn-install shadow">
+                Ricordamelo più tardi
+            </button>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", async () => {
+
+        const pushPrompt = document.getElementById("pushPrompt");
+        const enableBtn = document.getElementById("enablePushBtn");
+        const remindBtn = document.getElementById('remindLaterPushBtn');
+
+        if (!("serviceWorker" in navigator) || !("PushManager" in window)) {
+            return; // browser non supporta
+        }
+
+        const registration = await navigator.serviceWorker.ready;
+
+        // Controlla se già sottoscritto
+        const existingSubscription = await registration.pushManager.getSubscription();
+
+        if (existingSubscription) {
+            return; // già iscritto → non mostrare il box
+        }
+
+        // Controlla permesso notifiche
+        if (Notification.permission === "denied") {
+            return; // utente ha bloccato → non mostrare
+        }
+
+        // Controllo reminder
+        const remindUntil = localStorage.getItem("pushReminderUntil");
+        if (remindUntil && Date.now() < parseInt(remindUntil)) {
+            return;
+        }
+
+        // Mostra il box
+        pushPrompt.classList.remove("d-none");
+
+        enableBtn.addEventListener("click", async () => {
+
+            try {
+                const permission = await Notification.requestPermission();
+
+                if (permission !== "granted") {
+                    return;
+                }
+
+                // Ottieni public key dal server
+                const response = await fetch("/api/get-vapid-public-key.php");
+                const {publicKey} = await response.json();
+
+                const convertedKey = urlBase64ToUint8Array(publicKey);
+
+                const subscription = await registration.pushManager.subscribe({
+                    userVisibleOnly: true,
+                    applicationServerKey: convertedKey
+                });
+
+                // Invia al server
+                await fetch("/api/save-subscription.php", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify(subscription)
+                });
+
+                // Nascondi definitivamente il box
+                pushPrompt.remove();
+
+            } catch (error) {
+                console.error("Errore sottoscrizione push:", error);
+            }
+
+        });
+
+        remindBtn.addEventListener('click', () => {
+
+            const days = 30; // 👈 qui decidi dopo quanti giorni riproporlo
+            const nextTime = Date.now() + (days * 24 * 60 * 60 * 1000);
+
+            localStorage.setItem("pushReminderUntil", nextTime);
+
+            pushPrompt.remove();
+        });
+
+    });
+
+
+    // Conversione public key
+    function urlBase64ToUint8Array(base64String) {
+        const padding = "=".repeat((4 - base64String.length % 4) % 4);
+        const base64 = (base64String + padding)
+            .replace(/-/g, "+")
+            .replace(/_/g, "/");
+
+        const rawData = window.atob(base64);
+        return Uint8Array.from([...rawData].map(char => char.charCodeAt(0)));
     }
 </script>
 

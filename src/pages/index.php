@@ -19,7 +19,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <link rel="canonical" href="https://<?= $host ?>">
     <meta property="og:title" content="Qui Othello">
     <meta property="og:url" content="https://<?= $host ?>">
-    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg?t=20260220">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpg">
@@ -33,7 +33,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <meta name="twitter:title" content="Qui Othello">
     <meta name="twitter:description"
           content="Scopri tutte le strategie e le tattiche del gioco Othello con il nostro corso interattivo. Impara dai migliori e diventa un maestro di Othello con lezioni dettagliate e pratiche.">
-    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg?t=20260220">
     <meta name="author" content="Claudio Signorini">
 
     <title>Qui Othello</title>

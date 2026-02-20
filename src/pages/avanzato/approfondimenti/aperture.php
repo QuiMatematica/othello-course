@@ -10,7 +10,7 @@
     </span>
 </div>
 
-<p>Ciao mamma, guarda! Sono grande ormai! Sono andato attraverso tutte le classiche fasi di crescita, ho fatto i miei
+<p><i>Ciao mamma, guarda! Sono grande ormai!</i> Sono andato attraverso tutte le classiche fasi di crescita, ho fatto i miei
     capricci, avuto le mie crisi adolescenziali, ma ora sento di poter sedere al tavolo degli adulti. Cosa dici? Devo
     ancora stare con i cuginetti? Ma io voglio scambiare punti di vista con gli zii, mi sento pronto. Lo giuro, ne sono
     fuori: la mia dipendenza dalle aperture è finita! Sono "pulito" da oltre tre settimane!</p>
@@ -63,8 +63,9 @@
     Recentemente c'è stata persino la possibilità di giocare partite XOT da 1 minuto su Othello Quest e, beh, non mi
     sono rimaste molte scuse per non provare. E con mia piacevole sorpresa, ho scoperto di non essere affatto male.
     Ho i miei strumenti. "Vedo cose", come in un film di Shyamalan. Metto in difficoltà giocatori esperti. Ho persino
-    vinto il torneo XOT in Italia nel 2025, contro giocatori che mi danno sempre filo da torcere nelle partite
-    regolari.</p>
+    vinto il torneo XOT in Italia nel 2025
+    <a href="https://flipthedisc.com/live/266" target="_blank" rel="noopener noreferrer"><i class="bi bi-box-arrow-right"></i></a>,
+    contro giocatori che mi danno sempre filo da torcere nelle partite regolari.</p>
 
 <p>Tutti questi segnali mi dicevano che era ora di cambiare le cose. Ho iniziato a pensarci più seriamente, trattandola
     come un'analisi da completare. La vera domanda a quel punto era: di quanto scende la mia percentuale di vittorie se,

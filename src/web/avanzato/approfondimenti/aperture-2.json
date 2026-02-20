@@ -1,4 +1,15 @@
 {
+  "match": {
+    "black": {
+      "name": "Carlo Affatigato",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Milosz Cupial",
+      "flag": "pl"
+    },
+    "tournament": "Wroclaw Championship 2024"
+  },
   "moves": [
     {
       "move": "C4",
@@ -240,5 +251,9 @@
       "move": "A2",
       "comment": ""
     }
-  ]
+  ],
+  "controls": {
+    "comment": false,
+    "match": true
+  }
 }

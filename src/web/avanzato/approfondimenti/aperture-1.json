@@ -1,4 +1,15 @@
 {
+  "match": {
+    "black": {
+      "name": "David Hand",
+      "flag": "gb"
+    },
+    "white": {
+      "name": "Carlo Affatigato",
+      "flag": "it"
+    },
+    "tournament": "EGP Cambridge 2025"
+  },
   "moves": [
     {
       "move": "C4",
@@ -240,5 +251,9 @@
       "move": "G7",
       "comment": ""
     }
-  ]
+  ],
+  "controls": {
+    "comment": false,
+    "match": true
+  }
 }

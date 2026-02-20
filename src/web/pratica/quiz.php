@@ -21,7 +21,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
           content="Othello, corso interattivo Othello, strategie Othello, tattiche Othello, gioco Othello, imparare Othello, lezioni Othello, tutorial Othello, trucchi Othello, migliorare Othello, maestro di Othello, regole Othello, regole gioco Othello">
     <meta property="og:title" content="Un quiz per te...">
     <meta property="og:url" content="https://<?= $host ?>/pratica/quiz.php">
-    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta property="og:image" content="https://<?= $host ?>/images/banner2025.jpg?t=20260220">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpg">
@@ -33,7 +33,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <meta name="twitter:url" content="https://<?= $host ?>/pratica/quiz.php">
     <meta name="twitter:title" content="${title}">
     <meta name="twitter:description" content="${description}">
-    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg">
+    <meta name="twitter:image" content="https://<?= $host ?>/images/banner2025.jpg?t=20260220">
     <meta name="author" content="Claudio Signorini">
     <title>Un quiz per te...</title>
     <link rel="canonical" href="https://<?= $host ?>/pratica/quiz.php">
@@ -41,7 +41,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <script src="<?= $root ?>js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= $root ?>css/othello.css">
-    <script type="module" src="<?= $root ?>js/tao.js"></script>
+    <script type="module" src="<?= $root ?>js/tao.js?t=20260220"></script>
     <style>
         .navbar {
             min-height: 64px;

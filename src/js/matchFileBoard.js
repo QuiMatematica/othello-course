@@ -5,6 +5,7 @@ import PositionComment from "./positionComment";
 import Square from "./square";
 import Controls from "./controls";
 import {boards} from "./page";
+import MatchData from "./matchData";
 
 export default class MatchFileBoard {
 
@@ -25,13 +26,20 @@ export default class MatchFileBoard {
         this.currentPosition = Position.getPositionFromJSON(json);
         this.board = new Board(container, counter, json.stoneShape, matchFileBoardOnClick);
         this.board.setPosition(this.currentPosition);
+
+        if (json.controls != null) {
+            if (json.controls.match) {
+                new MatchData(container, json)
+            }
+        }
+
         this.score = new Score(container, this.board);
         this.score.takeScore(this.currentPosition);
         if (json.controls != null) {
-            if (!json.controls.score) {
+            if (json.controls.score != null && !json.controls.score) {
                 this.score.scoreContainer.remove();
             }
-            if (!json.controls.turn) {
+            if (json.controls.turn != null && !json.controls.turn) {
                 this.score.turnContainer.remove();
             }
         }
@@ -122,7 +130,9 @@ export default class MatchFileBoard {
         if (nextPosition != null) {
             this.board.playPosition(nextPosition);
             this.score.takeScore(nextPosition);
-            this.comment.setPositionComment(nextPosition);
+            if (this.comment != null) {
+                this.comment.setPositionComment(nextPosition);
+            }
             //this.addInstructions();
             this.controls.update(nextPosition);
             this.currentPosition = nextPosition;
@@ -134,7 +144,9 @@ export default class MatchFileBoard {
         if (prevPosition != null) {
             this.board.setPosition(prevPosition);
             this.score.takeScore(prevPosition);
-            this.comment.setPositionComment(prevPosition);
+            if (this.comment != null) {
+                this.comment.setPositionComment(prevPosition);
+            }
             //this.addInstructions();
             this.controls.update(prevPosition);
             this.currentPosition = prevPosition;
@@ -151,7 +163,9 @@ export default class MatchFileBoard {
             }
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
-            this.comment.setPositionComment(curPosition);
+            if (this.comment != null) {
+                this.comment.setPositionComment(curPosition);
+            }
             //this.addInstructions();
             this.controls.update(curPosition);
             this.currentPosition = curPosition;
@@ -166,7 +180,9 @@ export default class MatchFileBoard {
             }
             this.board.setPosition(curPosition);
             this.score.takeScore(curPosition);
-            this.comment.setPositionComment(curPosition);
+            if (this.comment != null) {
+                this.comment.setPositionComment(curPosition);
+            }
             //this.addInstructions();
             this.controls.update(curPosition);
             this.currentPosition = curPosition;

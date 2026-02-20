@@ -500,6 +500,10 @@
             {
               "href": "contare.php",
               "title": "Quante mosse avanti devo saper calcolare per giocare bene a Othello?"
+            },
+            {
+              "href": "aperture.php",
+              "title": "Il giorno in cui sono evaso dalla prigione delle aperture"
             }
           ]
         }

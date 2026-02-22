@@ -1,5 +1,5 @@
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const GeneratePagesPlugin = require('./GeneratePagesPlugin')
 const GenerateSitemapPlugin = require('./GenerateSitemapPlugin');
@@ -10,6 +10,17 @@ module.exports = {
     output: {
         filename: 'js/tao.js',
         path: path.resolve(__dirname, 'dist')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ],
+            },
+        ],
     },
     plugins: [
         new CleanWebpackPlugin(),

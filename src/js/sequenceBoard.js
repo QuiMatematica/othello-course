@@ -292,9 +292,9 @@ export default class SequenceBoard {
             pathSegments = []; // Se ci sono meno di tre livelli, vai alla radice
         }
 
-        // Aggiungi "quiz.php.php"
+        // Aggiungi "quiz.php"
         pathSegments.push("pratica");
-        pathSegments.push("quiz.php.php");
+        pathSegments.push("quiz.php");
 
         this.quizHref = `${savedLevels.slice(0, 2).join('/')}/${this.sequenceFile}`;
 

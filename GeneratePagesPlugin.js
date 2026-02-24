@@ -133,7 +133,6 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 	<link rel="canonical" href="${url}">
 	<link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
 	<link rel="stylesheet" href="<?= $root ?>css/othello.css">
-	<script type="module" src="<?= $root ?>js/tao.js?t=20260220"></script>
     <style>
         .navbar {
             min-height: 64px;
@@ -205,6 +204,12 @@ ${pagination}
         visite.push({ pagina, ultimaVisita: ora });
         localStorage.setItem('visite', JSON.stringify(visite));
     </script>
+    
+    <?php
+    $assets = require __DIR__ . '/../../assets.php';
+    ?>
+    <script src="../../<?= $assets['main.js'] ?>"></script>
+
 </body>
 </html>`;
     }

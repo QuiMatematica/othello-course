@@ -39,7 +39,6 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <link rel="canonical" href="https://<?= $host ?>/pratica/quiz.php">
     <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
     <link rel="stylesheet" href="<?= $root ?>css/othello.css">
-    <script type="module" src="<?= $root ?>js/tao.js?t=20260220"></script>
     <style>
         .navbar {
             min-height: 64px;
@@ -104,5 +103,11 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
         document.getElementById("pageTitle").classList.remove("d-none");
     }
 </script>
+
+    <?php
+    $assets = require __DIR__ . '/../assets.php';
+    ?>
+    <script src="../<?= $assets['main.js'] ?>"></script>
+
 </body>
 </html>

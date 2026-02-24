@@ -39,7 +39,6 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <title>Qui Othello</title>
     <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
     <link href="<?= $root ?>css/othello.css" rel="stylesheet">
-    <script type="module" src="<?= $root ?>js/tao.js?t=20260220"></script>
 
     <script type="text/javascript">
         var _iub = _iub || [];
@@ -654,5 +653,11 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
             .catch(err => console.log('❌ Errore SW:', err));
     }
 </script>
+
+    <?php
+    $assets = require __DIR__ . '/assets.php';
+    ?>
+    <script src="<?= $assets['main.js'] ?>"></script>
+
 </body>
 </html>

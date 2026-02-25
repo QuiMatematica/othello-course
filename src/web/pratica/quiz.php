@@ -5,6 +5,7 @@ $isLocalhost = str_contains($host, 'localhost');
 $isTest = str_contains($host, 'test');
 $isProd = !$isTest && !$isLocalhost;
 $root = $isLocalhost ? '/othello-course/dist/' : '/';
+$assets = require __DIR__ . '/../assets.php';
 ?>
 <html lang="it">
 <head>
@@ -38,7 +39,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     <title>Un quiz per te...</title>
     <link rel="canonical" href="https://<?= $host ?>/pratica/quiz.php">
     <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="<?= $root ?>css/othello.css">
+    <link rel="stylesheet" href="../<?= $assets['main.css'] ?>">
     <style>
         .navbar {
             min-height: 64px;
@@ -104,9 +105,6 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     }
 </script>
 
-    <?php
-    $assets = require __DIR__ . '/../assets.php';
-    ?>
     <script src="../<?= $assets['main.js'] ?>"></script>
 
 </body>

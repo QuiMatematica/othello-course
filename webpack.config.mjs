@@ -1,5 +1,6 @@
 import path from 'path';
 import {CleanWebpackPlugin} from 'clean-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 import GeneratePagesPlugin from './GeneratePagesPlugin.js';
 import GenerateSitemapPlugin from './GenerateSitemapPlugin.js';
@@ -23,16 +24,16 @@ export default {
         rules: [
             {
                 test: /\.css$/i,
-                use: [
-                    'style-loader',
-                    'css-loader'
-                ],
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },
         ],
     },
 
     plugins: [
         new CleanWebpackPlugin(),
+        new MiniCssExtractPlugin({
+            filename: 'css/othello.[contenthash].css'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'src/web', to: '.' }, // Copia tutto il contenuto di src/web in dist
@@ -57,6 +58,9 @@ export default {
                 const manifest = files.reduce((acc, file) => {
                     // prendiamo solo i bundle iniziali JS
                     if (file.isInitial && file.path.endsWith('.js')) {
+                        acc[file.name] = file.path;
+                    }
+                    if (file.isInitial && file.path.endsWith('.css')) {
                         acc[file.name] = file.path;
                     }
                     return acc;

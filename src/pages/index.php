@@ -6,6 +6,7 @@ $isLocalhost = str_contains($host, 'localhost');
 $isTest = str_contains($host, 'test');
 $isProd = !$isTest && !$isLocalhost;
 $root = $isLocalhost ? '/othello-course/dist/' : '/';
+$assets = require __DIR__ . '/assets.php';
 ?>
 
 <html lang="it">
@@ -38,7 +39,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
 
     <title>Qui Othello</title>
     <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
-    <link href="<?= $root ?>css/othello.css" rel="stylesheet">
+    <link href="<?= $assets['main.css'] ?>" rel="stylesheet">
 
     <script type="text/javascript">
         var _iub = _iub || [];
@@ -654,10 +655,7 @@ $root = $isLocalhost ? '/othello-course/dist/' : '/';
     }
 </script>
 
-    <?php
-    $assets = require __DIR__ . '/assets.php';
-    ?>
-    <script src="<?= $assets['main.js'] ?>"></script>
+<script src="<?= $assets['main.js'] ?>"></script>
 
 </body>
 </html>

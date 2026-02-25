@@ -1,5 +1,5 @@
-'use strict';
-
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {boards} from "./page";
 import FreeGameBoard from "./freeGameBoard";
 import MatchFileBoard from "./matchFileBoard";

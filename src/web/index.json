@@ -494,6 +494,20 @@
           ]
         },
         {
+          "href": "swindle-catalogo/",
+          "title": "Catalogo di swindle",
+          "pages": [
+            {
+              "href": "vittoria-senza-angoli.php",
+              "title": "Classica vittoria senza angoli"
+            },
+            {
+              "href": "crawling.php",
+              "title": "Strisciare lungo i bordi"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

@@ -500,6 +500,10 @@
             {
               "href": "pattern-e-tesuji.php",
               "title": "Pattern e tesuji"
+            },
+            {
+              "href": "creare-un-muro.php",
+              "title": "Forzare l'avversario a creare un muro"
             }
           ]
         },

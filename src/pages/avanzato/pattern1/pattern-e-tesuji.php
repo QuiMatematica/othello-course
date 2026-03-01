@@ -20,7 +20,7 @@
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text"><b><i>Tesuji</i></b> (si pronuncia <i>tesugi</i>) è una parola giapponese usata in giochi
+        <p class="card-text"><b><i>Tesuji</i> (手筋)</b> (si pronuncia <i>tesugi</i>) è una parola giapponese usata in giochi
             come il Go e lo Shogi. La possiamo tradurre come <i>sequenza di mosse brillanti</i>. I <i>tesuji</i> sono le
             mosse giuste
             da giocare quando si presenta un certo <i>pattern</i>.</p>

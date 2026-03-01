@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OO#O--",
+    "OO######",
+    "O#O#OO#O",
+    "OO####OO",
+    "OOO##O##",
+    "--OOOO--",
+    "--OOOO--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "B1"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco salva il bordo ovest.<br>Ora però il nero non ha la possibilità di giocare in <b>B2</b>, che è la mossa che gli farebbe guadagnare un tempo e la parità."
+    }
+  ]
+}

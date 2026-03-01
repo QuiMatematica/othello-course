@@ -1,0 +1,80 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OOOO--",
+    "OOO##OOO",
+    "OO####OO",
+    "O#####OO",
+    "OOO##OOO",
+    "--O#OO--",
+    "--OOOO--"
+  ],
+  "turn": "black",
+  "comment": "Tocca al nero. Il primo obiettivo è cercare di ottenere la parità e lo può fare sfruttando uno swindle nell'angolo nord-est.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero cede l'angolo, ma poi potrà giocare sia in <b>G1</b> sia in <b>H2</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero ottiene di far passare il bianco così da ottenere l'ultima mossa. Adesso deve lavorare sfruttando il <i>feeding the opponent</i>."
+    },
+    {
+      "move": "H7",
+      "comment": "Il nero fornisce due mosse a sud-est."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco gioca una delle due mosse."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero chiude lo spazio dispari a nord-est."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco è costretto a giocare l'ultima mossa disponibile.<br>Tocca di nuovo al nero che deve giocare nuovamente il <i>feeding the opponent</i>."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero fornisce due mosse a nord-ovest."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco gioca una delle due mosse."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero chiude lo spazio dispari a sud-est."
+    },
+    {
+      "move": "B2",
+      "comment": "E il bianco è costretto a giocare l'ultima mossa disponibile.<br>Tocca di nuovo al nero che, per la terza volta, deve giocare nuovamente il <i>feeding the opponent</i>."
+    },
+    {
+      "move": "A7",
+      "comment": "Il nero fornisce due mosse a sud-ovest."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco gioca una delle due mosse."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero chiude lo spazio dispari a nord-ovest."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco gioca la sua ultima mossa disponibile."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero chiude la partita e vince."
+    }
+  ]
+}

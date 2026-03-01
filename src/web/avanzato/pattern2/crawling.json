@@ -1,0 +1,44 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OO#O--",
+    "OOO#####",
+    "O#O#OO#O",
+    "OO####OO",
+    "OOO##O##",
+    "--OOOO--",
+    "--OOOO--"
+  ],
+  "turn": "black",
+  "comment": "Come può il nero sfruttare l'unico controbordo controllato dall'avversario?",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Il nero cede l'angolo sud-ovest, adiacente al controbordo controllato dall'avversario.<br>Il controbordo impedisce al nero di voltare la pedina <b>C7</b> che rimane quindi di appoggio per una successiva mossa nera in <b>B8</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo.<br>Ora il nero vorrebbe giocare sia in <b>B8</b> sia in <b>A7</b>. Ma in questo momento non ha accesso ad <b>A7</b>. L'unico modo per ottenerlo è avere una pedina in <b>A2</b>. Ma se semplicemente gioca in <b>A2</b>, il bianco risponde prendendo l'angolo. Allora c'è bisogno di qualcosa un po' più complessa."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero costringe il bianco a prendere l'angolo <b>A1</b> in modo da incunearsi in <b>A2</b>."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco è costretto a prendere l'angolo."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero si incunea, minacciando di giocare in <b>A7</b>. A questo punto possono accadere due cose.<br>Il bianco potrebbe giocare in <b>B2</b>, ma allora il nero gioca prima in <b>A7</b> e dopo in <b>B8</b>.<br>Oppure..."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco salva il bordo ovest."
+    },
+    {
+      "move": "B2",
+      "comment": "Ma allora il nero gioca prima in <b>B2</b> e tiene <b>B8</b> per dopo.<br>Il nero ha ottenuto di giocare cinque mosse in due regioni da quattro, lasciandone solo tre all'avversario."
+    }
+  ]
+}

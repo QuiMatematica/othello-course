@@ -494,6 +494,34 @@
           ]
         },
         {
+          "href": "pattern1/",
+          "title": "Pattern e tesuji: minacciare un angolo",
+          "pages": [
+            {
+              "href": "pattern-e-tesuji.php",
+              "title": "Pattern e tesuji"
+            },
+            {
+              "href": "creare-un-muro.php",
+              "title": "Forzare l'avversario a creare un muro"
+            }
+          ]
+        },
+        {
+          "href": "pattern2/",
+          "title": "Pattern e tesuji: cedere un angolo",
+          "pages": [
+            {
+              "href": "vittoria-senza-angoli.php",
+              "title": "Classica vittoria senza angoli"
+            },
+            {
+              "href": "crawling.php",
+              "title": "Strisciare lungo i bordi"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

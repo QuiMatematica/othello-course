@@ -504,6 +504,14 @@
             {
               "href": "creare-un-muro.php",
               "title": "Forzare l'avversario a creare un muro"
+            },
+            {
+              "href": "pedine-avvelenate.php",
+              "title": "Forzare l'avversario a girare pedine avvelenate"
+            },
+            {
+              "href": "casella-indispensabile.php",
+              "title": "Guadagnare l'accesso a una casella indispensabile"
             }
           ]
         },

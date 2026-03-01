@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-O##OO-",
+    "##OOOOOO",
+    "###OOOOO",
+    "##OOOOOO",
+    "##O##OOO",
+    "#-O#O#--",
+    "-O-####-"
+  ],
+  "played": "G2",
+  "comment": "Il nero ha bisogno di accedere all'angolo <b>H1</b>.",
+  "moves": [
+    {
+      "move": "C8",
+      "comment": "Il nero può accedere all'angolo solo giocando in <b>C8</b>, portando un attacco in <b>A8</b>.<br>Se il bianco prova a difendersi in <b>B7</b>, il nero potrà giocare in <b>A8</b> e guadagna comunque l'accesso in <b>H1</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco può muovere in <b>H8</b> e stabilizzare a proprio favore il bordo inferiore."
+    },
+    {
+      "move": "H1",
+      "comment": "Ma il nero, dopo aver giocato <b>H1</b> potrà guadagnare gli altri tre bordi e ottenere una facile vittoria."
+    }
+  ]
+}

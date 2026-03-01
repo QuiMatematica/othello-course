@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "OO###---",
+    "O#OOOO--",
+    "O#O#OO--",
+    "OOOOOO--",
+    "O-O###--",
+    "-O-###--"
+  ],
+  "played": "B8",
+  "comment": "Il nero deve rompere il muro del bianco, giocando <b>G4</b>, <b>G5</b> o <b>G6</b>.<br>In realtà il nero avrebbe, potenzialmente, una bellissima mossa in <b>F3</b>, se non fosse per le pedine avvelenate in <b>F7</b> e <b>F8</b>. Ciò diventa possibile se il nero muove in <b>C8</b>, attaccando l'angolo.",
+  "moves": [
+    {
+      "move": "C8",
+      "comment": "Questa mossa non lascia al bianco alcuna scelta se non giocare in <b>G8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Questa mossa però elimina le pedine avvelenate e permette al nero di giocare in <b>F3</b>."
+    },
+    {
+      "move": "F3",
+      "comment": "Ora starà al bianco andare a rompere il muro del nero."
+    }
+  ]
+}

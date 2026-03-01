@@ -1,0 +1,53 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-OOOO-O",
+    "##O##OOO",
+    "#OO###OO",
+    "####OOOO",
+    "##OOOOOO",
+    "#-OOO#-O",
+    "-O-###--"
+  ],
+  "played": "H7",
+  "moves": [
+    {
+      "move": "C8",
+      "comment": "Il nero gioca <b>C8</b>, attaccando l'angolo <b>A8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Il bianco risponde in <b>G8</b>.<br>Questo semplice scambio ha permesso al nero di conquistare la pedina in <b>C6</b>, che gli permette ora di conquiestare la diagonale."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco non ha più possibilità di vittoria. Ha due mosse e sarà costretto a giocarle tutte e due."
+    },
+    {
+      "move": "B7",
+      "comment": "Penultima mossa del bianco."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo."
+    },
+    {
+      "move": "B2",
+      "comment": "Ultima mossa del bianco."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende l'angolo e gioca tutte le mosse rimanenti.."
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero vince."
+    }
+  ]
+}

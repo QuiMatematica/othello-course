@@ -494,8 +494,18 @@
           ]
         },
         {
-          "href": "swindle-catalogo/",
-          "title": "Catalogo di swindle",
+          "href": "pattern1/",
+          "title": "Pattern e tesuji: minacciare un angolo",
+          "pages": [
+            {
+              "href": "pattern-e-tesuji.php",
+              "title": "Pattern e tesuji"
+            }
+          ]
+        },
+        {
+          "href": "pattern2/",
+          "title": "Pattern e tesuji: cedere un angolo",
           "pages": [
             {
               "href": "vittoria-senza-angoli.php",

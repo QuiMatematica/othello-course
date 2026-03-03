@@ -17,7 +17,7 @@
     },
     {
       "move": "G8",
-      "comment": "Il bianco risponde in <b>G8</b>.<br>Questo semplice scambio ha permesso al nero di conquistare la pedina in <b>C6</b>, che gli permette ora di conquiestare la diagonale."
+      "comment": "Il bianco risponde in <b>G8</b>.<br>Questo semplice scambio ha permesso al nero di conquistare la pedina in <b>C6</b>, che gli permette ora di ottenere il controllo della diagonale."
     },
     {
       "move": "G2",
@@ -37,7 +37,7 @@
     },
     {
       "move": "A1",
-      "comment": "Il nero prende l'angolo e gioca tutte le mosse rimanenti.."
+      "comment": "Il nero prende l'angolo e gioca tutte le mosse rimanenti."
     },
     {
       "move": "H1"

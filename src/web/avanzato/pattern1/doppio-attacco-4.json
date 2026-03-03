@@ -1,0 +1,65 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "O-OOOO--",
+    "OOOOOO--",
+    "OO##OO--",
+    "O##O##--",
+    "OOOO#OOO",
+    "OOOO##--",
+    "-OOO-##-"
+  ],
+  "played": "B7",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "Anche se significa sacrificare il bordo sud, il nero otterrà senza sforzo un numero incredibile di pedine stabili, muovendo intorno al bordo ovest e nord."
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "G7"
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "H1"
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "G3"
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "G4"
+    },
+    {
+      "move": "H4"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "H7"
+    }
+  ]
+}

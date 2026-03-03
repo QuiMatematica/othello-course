@@ -512,6 +512,14 @@
             {
               "href": "casella-indispensabile.php",
               "title": "Guadagnare l'accesso a una casella indispensabile"
+            },
+            {
+              "href": "diagonale.php",
+              "title": "Conquistare una diagonale"
+            },
+            {
+              "href": "doppio-attacco.php",
+              "title": "Doppio attacco all'angolo"
             }
           ]
         },

@@ -17,49 +17,64 @@
       "comment": "Anche se significa sacrificare il bordo sud, il nero otterrà senza sforzo un numero incredibile di pedine stabili, muovendo intorno al bordo ovest e nord."
     },
     {
-      "move": "H8"
+      "move": "H8",
+      "comment": "Il bianco prende l'angolo per stabilizzare il bordo sud, ma di fatto sarà le uniche pedine che riuscirà a mantenere."
     },
     {
-      "move": "A8"
+      "move": "A8",
+      "comment": "Il nero prende l'angolo attaccato sfruttando la diagonale."
     },
     {
-      "move": "G7"
+      "move": "G7",
+      "comment": "Al bianco non rimane che utilizzare le ultime mosse rimaste."
     },
     {
-      "move": "A1"
+      "move": "A1",
+      "comment": "Il nero prende tutto il bordo ovest e comincia la conquista della scacchiera."
     },
     {
-      "move": "G5"
+      "move": "G5",
+      "comment": "Ultima mossa rimasta al bianco."
     },
     {
-      "move": "H1"
+      "move": "H1",
+      "comment": "Il nero prende anche il terzo angolo. Ora può dedicarsi alla pulizia interna."
     },
     {
-      "move": "B2"
+      "move": "B2",
+      "comment": "Buco nero a disposizione del nero."
     },
     {
-      "move": "G2"
+      "move": "G2",
+      "comment": "Il nero prende il controbordo nord."
     },
     {
-      "move": "G3"
+      "move": "G3",
+      "comment": "Unica mossa disponibile al bianco."
     },
     {
-      "move": "H3"
+      "move": "H3",
+      "comment": "Pulizia interna. Il bianco può incunearsi in <b>H2</b> ma il nero ha la possibilità di recuperare anche quella pedina."
     },
     {
-      "move": "H2"
+      "move": "H2",
+      "comment": "Il bianco si incunea."
     },
     {
-      "move": "G4"
+      "move": "G4",
+      "comment": "Il nero continua con la pulizia interna."
     },
     {
-      "move": "H4"
+      "move": "H4",
+      "comment": "Obbligata: il bianco perde l'incuneamento."
     },
     {
-      "move": "H5"
+      "move": "H5",
+      "comment": "Il nero porta a casa anche il bordo est."
     },
     {
-      "move": "H7"
+      "move": "H7",
+      "comment": "E il nero stra-vince."
     }
   ]
 }

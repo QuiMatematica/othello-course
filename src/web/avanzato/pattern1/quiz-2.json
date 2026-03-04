@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--OOOOO-",
+    "--O##O-O",
+    "--#OOOO-",
+    "--#OOO##",
+    "--#OOO##",
+    "---OOO##",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H3",
+      "comment": "Esatto. Minacci l'angolo <b>H1</b>: se il bianco elimina la minaccia ti toglie due pedine avvelenate."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco non ha scelta se non rispondere in <b>H7</b>, voltando le pedine nere in <b>G6</b> e in <b>H6</b>."
+    },
+    {
+      "move": "C6",
+      "comment": "Bravissimo. Ora puoi giocare questa buona mossa e lasciare al tuo avversario il compito di demolire il tuo muro."
+    }
+  ]
+}

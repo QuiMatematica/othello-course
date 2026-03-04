@@ -76,12 +76,19 @@
     </div>
 </div>
 
-<h2>Altri <i>pattern</i>? Altri <i>tesuji</i>?</h2>
+<h2><i>Tesuji</i> che minacciano un angolo</h2>
 
-<p>Oltre a quelli già presentati ci sono moltissimi altri <i>pattern</i>. Molti sono noti e condivisi nella comunità degli
-othellisti, e sono presentati in questo capitolo.</p>
+<p>Seguendo l'ottima impostazione del libro di Brian Rose
+    <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-arrow-right"></i>
+    </a>
+    ho raccolto in questo capitolo tutti i <i>tesuji</i> che prevedono mosse che vanno a minacciare un angolo.</p>
 
-<p>Sono convinto poi che molti giocatori, soprattutto quelli che hanno un approccio teorico al gioco,
-abbiano un proprio catalogo di <i>pattern</i>.</p>
+<p>I <i>pattern</i> di <i>tesuji</i>, quindi, vedono la presenza di una conformazione di bordo sbilanciata,
+alla quale l'avversario può appoggiarsi per minacciare l'angolo verso cui punta lo sbilanciamento
+    (diagramma <span data-board-ref="pattern-e-tesuji-1"></span>).</p>
 
-<!-- Se la userai, spiega qui la classificazione dei tesuji, partendo anche dal libro di Rose. -->
+<board data-type="show" data-label="pattern-e-tesuji-1" data-file="pattern-e-tesuji-1.json"></board>
+
+<p>Un attacco di questo tipo obbliga l'avversario a fare una scelta: cedere l'angolo o eliminare la minaccia. Quando
+entrambi le mosse sono svantaggiose, allora l'attacco è stato efficace: è un <i>tesuji</i> a tutti gli effetti.</p>

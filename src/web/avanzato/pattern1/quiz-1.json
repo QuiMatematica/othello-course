@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--OOO---",
+    "--OOO#--",
+    "--OO###O",
+    "--OOOOO-",
+    "--O###O-",
+    "--OO##OO",
+    "--OOOO-O",
+    "-OOOOOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H5",
+      "comment": "Esatto. Il nero attacca l'angolo <b>H8</b> con l'obiettivo di forzare il bianco a creare un muro."
+    },
+    {
+      "move": "H4",
+      "comment": "Se il bianco elimina l'attacco, volta anche le pedine <b>G3</b> e <b>F2</b>.<br>Come puoi approfittare della situazione per chiudere il gioco all'avversario?"
+    },
+    {
+      "move": "G1",
+      "comment": "Bravissimo. Ora al bianco rimangono solo mosse negative."
+    }
+  ]
+}

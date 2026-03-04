@@ -520,6 +520,18 @@
             {
               "href": "doppio-attacco.php",
               "title": "Doppio attacco all'angolo"
+            },
+            {
+              "href": "doppio-bordo.php",
+              "title": "Doppio bordo sbilanciato"
+            },
+            {
+              "href": "stoner-trap.php",
+              "title": "Stoner trap"
+            },
+            {
+              "href": "quiz.php",
+              "title": "Quiz"
             }
           ]
         },

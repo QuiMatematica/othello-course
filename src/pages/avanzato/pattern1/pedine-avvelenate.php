@@ -18,7 +18,19 @@
     </span>
 </div>
 
-<p>Il diagramma <span data-board-ref="pedine-avvelenate-1"></span> mostra un esempio tipici di questo <i>tesuji</i>.
+<p>Il diagramma <span data-board-ref="pedine-avvelenate-1"></span> mostra un esempio tipico di questo <i>tesuji</i>.
 </p>
 
 <board data-type="show" data-label="pedine-avvelenate-1" data-file="pedine-avvelenate-1.json"></board>
+
+<h2>Il <i>pattern</i></h2>
+
+<p>Il <i>pattern</i> (diagramma <span data-board-ref="pedine-avvelenate-2"></span>) che permette questo <i>tesuji</i>
+    prevede la presenza di:</p>
+<ul>
+    <li>un bordo sbilanciato sul quale giocare la minaccia (freccia rossa);</li>
+    <li>pedine avvelenate che vengono voltate con la risposta alla minaccia (frecce gialle);</li>
+    <li>una mossa che diventa vantaggiosa dopo la voltura delle pedine avvelenate (frecce viola).</li>
+</ul>
+
+<board data-type="show" data-label="pedine-avvelenate-2" data-file="pedine-avvelenate-2.json"></board>

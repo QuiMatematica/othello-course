@@ -34,9 +34,21 @@ all'angolo (diagramma <span data-board-ref="doppio-attacco-3"></span>).</p>
 
 <board data-type="show" data-label="doppio-attacco-3" data-file="doppio-attacco-3.json"></board>
 
-<p>Poiché un doppio attacco all'angolo permette quasi sempre di conquistare l'angolo, se questo è piuttosto utile
-non dovresti esitare a sacrificare un bordo. Nel diagramma <span data-board-ref="doppio-attacco-4"></span> potresti
-essere tentato a giocare <b>G7</b>, <b>H7</b> o qualche altra mossa del genere, ma muovendo in <b>E8</b>
-può ottenere una facile vittoria.</p>
+<p>Poiché un doppio attacco all'angolo permette quasi sempre di conquistare l'angolo, se tale angolo è utile,
+non devi esitare a sacrificare un bordo. Nel diagramma <span data-board-ref="doppio-attacco-4"></span> potresti
+essere tentato di giocare <b>G7</b>, <b>H7</b> o qualche altra mossa del genere, ma muovendo in <b>E8</b>
+puoi ottenere una facile vittoria.</p>
 
 <board data-type="show" data-label="doppio-attacco-4" data-file="doppio-attacco-4.json"></board>
+
+<h2>Il <i>pattern</i></h2>
+
+<p>Il <i>pattern</i> (diagramma <span data-board-ref="doppio-attacco-5"></span>) che permette questo <i>tesuji</i> prevede
+    la presenza di:</p>
+<ul>
+    <li>un bordo sbilanciato sul quale giocare la minaccia (freccia rossa);</li>
+    <li>con la stessa mossa della minaccia ci si procura la pedina (freccia gialla) che permette il secondo attacco
+        all'angolo (freccia viola).</li>
+</ul>
+
+<board data-type="show" data-label="doppio-attacco-5" data-file="doppio-attacco-5.json"></board>

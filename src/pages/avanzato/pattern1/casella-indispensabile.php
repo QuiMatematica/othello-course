@@ -30,3 +30,15 @@ alla casella <b>H1</b> e può ottenerlo giocando in <b>C8</b>, portando un attac
 <board data-type="show" data-label="casella-indispensabile-2" data-file="casella-indispensabile-2.json"></board>
 
 <p>Era il fatto che il nero stesse attaccando un angolo che garantisce l'accesso in <b>H1</b>.</p>
+
+<h2>Il <i>pattern</i></h2>
+
+<p>Il <i>pattern</i> (diagramma <span data-board-ref="casella-indispensabile-3"></span>) che permette questo
+    <i>tesuji</i> prevede la presenza di:</p>
+<ul>
+    <li>un bordo sbilanciato sul quale giocare la minaccia (freccia rossa);</li>
+    <li>con la stessa mossa della minaccia ci si procura la pedina (freccia gialla) che permette l'accesso alla casella
+    indispensabile (freccia viola).</li>
+</ul>
+
+<board data-type="show" data-label="casella-indispensabile-3" data-file="casella-indispensabile-3.json"></board>

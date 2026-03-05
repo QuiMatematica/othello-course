@@ -49,6 +49,13 @@ l'altro angolo, <b>H8</b>, per primo.</p>
 <ul>
     <li>può sempre prendere l'angolo <b>H8</b> e giocare al turno successivo in <b>B7</b>,
         sacrificando di nuovo l'angolo <b>A8</b>;</li>
-    <li>oppure può prima giocare in <b>B7</b> raddoppiando l'attacco all'angolo <b>A8</b> e ottenendo la parità
+    <li>oppure può giocare direttamente in <b>B7</b>, raddoppiando l'attacco all'angolo <b>A8</b> e ottenendo la parità
     in quella regione.</li>
 </ul>
+
+<h2>Il <i>pattern</i></h2>
+
+<p>Il <i>pattern</i> (diagramma <span data-board-ref="doppio-bordo-4"></span>) che permette questo <i>tesuji</i> prevede
+    la presenza di due &quot;cinque&quot; sui quali giocare la minaccia (riquadri rossi).</p>
+
+<board data-type="show" data-label="doppio-bordo-4" data-file="doppio-bordo-4.json"></board>

@@ -20,7 +20,7 @@
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text"><b><i>Tesuji</i> (手筋)</b> (si pronuncia <i>tesugi</i>) è una parola giapponese usata in giochi
+        <p class="card-text"><b><i>Tesuji</i></b> (手筋, si pronuncia <i>tesugi</i>) è una parola giapponese usata in giochi
             come il Go e lo Shogi. La possiamo tradurre come <i>sequenza di mosse brillanti</i>. I <i>tesuji</i> sono le
             mosse giuste
             da giocare quando si presenta un certo <i>pattern</i>.</p>
@@ -31,8 +31,8 @@
     La Stoner trap è il <i>tesuji</i>: la sequenza di mosse brillanti che va a sfruttare le proprietà del <i>pattern</i>.
 </p>
 
-<p>Uno stesso <i>pattern</i> può portare a più di un <i>tesuji</i>. Per esempio abbiamo visto come un cinque può essere
-    attaccato sia da una casella X sia da una casella C.</p>
+<p>Uno stesso <i>pattern</i> può portare a più di un <i>tesuji</i>. Per esempio abbiamo visto come un cinque possa essere
+    attaccato sia da una casella <b>X</b> sia da una casella <b>C</b>.</p>
 
 <h2><i>Pattern</i> e <i>tesuji</i> già analizzati</h2>
 
@@ -82,9 +82,9 @@
     <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-box-arrow-right"></i>
     </a>
-    ho raccolto in questo capitolo tutti i <i>tesuji</i> che prevedono mosse che vanno a minacciare un angolo.</p>
+    ho raccolto in questo capitolo i <i>tesuji</i> che prevedono minacce a un angolo.</p>
 
-<p>I <i>pattern</i> di <i>tesuji</i>, quindi, vedono la presenza di una conformazione di bordo sbilanciata,
+<p>I <i>pattern</i> di questi <i>tesuji</i>, quindi, vedono la presenza di una conformazione di bordo sbilanciata,
 alla quale l'avversario può appoggiarsi per minacciare l'angolo verso cui punta lo sbilanciamento
     (diagramma <span data-board-ref="pattern-e-tesuji-1"></span>).</p>
 

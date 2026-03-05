@@ -536,20 +536,6 @@
           ]
         },
         {
-          "href": "pattern2/",
-          "title": "Pattern e tesuji: cedere un angolo",
-          "pages": [
-            {
-              "href": "vittoria-senza-angoli.php",
-              "title": "Classica vittoria senza angoli"
-            },
-            {
-              "href": "crawling.php",
-              "title": "Strisciare lungo i bordi"
-            }
-          ]
-        },
-        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

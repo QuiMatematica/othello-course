@@ -1,0 +1,24 @@
+{
+  "position": [
+    "-#####--",
+    "#-O###--",
+    "##OOOO--",
+    "#O####--",
+    "#O####--",
+    "#OOO##--",
+    "#OOO##--",
+    "-OOO-#--"
+  ],
+  "played": "B7",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'angolo, forse per timore di perderne l'accesso."
+    },
+    {
+      "move": "E8",
+      "comment": "Il bianco si incunea.<br>Purtroppo il nero resterà a breve a corto di mosse."
+    }
+  ]
+}

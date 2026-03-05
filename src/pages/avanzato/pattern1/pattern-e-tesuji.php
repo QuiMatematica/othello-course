@@ -20,7 +20,7 @@
 <div class="card border-primary mb-3">
     <div class="card-header">Definizione</div>
     <div class="card-body">
-        <p class="card-text"><b><i>Tesuji</i> (手筋)</b> (si pronuncia <i>tesugi</i>) è una parola giapponese usata in giochi
+        <p class="card-text"><b><i>Tesuji</i></b> (手筋, si pronuncia <i>tesugi</i>) è una parola giapponese usata in giochi
             come il Go e lo Shogi. La possiamo tradurre come <i>sequenza di mosse brillanti</i>. I <i>tesuji</i> sono le
             mosse giuste
             da giocare quando si presenta un certo <i>pattern</i>.</p>
@@ -31,8 +31,8 @@
     La Stoner trap è il <i>tesuji</i>: la sequenza di mosse brillanti che va a sfruttare le proprietà del <i>pattern</i>.
 </p>
 
-<p>Uno stesso <i>pattern</i> può portare a più di un <i>tesuji</i>. Per esempio abbiamo visto come un cinque può essere
-    attaccato sia da una casella X sia da una casella C.</p>
+<p>Uno stesso <i>pattern</i> può portare a più di un <i>tesuji</i>. Per esempio abbiamo visto come un cinque possa essere
+    attaccato sia da una casella <b>X</b> sia da una casella <b>C</b>.</p>
 
 <h2><i>Pattern</i> e <i>tesuji</i> già analizzati</h2>
 
@@ -76,12 +76,19 @@
     </div>
 </div>
 
-<h2>Altri <i>pattern</i>? Altri <i>tesuji</i>?</h2>
+<h2><i>Tesuji</i> che minacciano un angolo</h2>
 
-<p>Oltre a quelli già presentati ci sono moltissimi altri <i>pattern</i>. Molti sono noti e condivisi nella comunità degli
-othellisti, e sono presentati in questo capitolo.</p>
+<p>Seguendo l'ottima impostazione del libro di Brian Rose
+    <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer">
+        <i class="bi bi-box-arrow-right"></i>
+    </a>
+    ho raccolto in questo capitolo i <i>tesuji</i> che prevedono minacce a un angolo.</p>
 
-<p>Sono convinto poi che molti giocatori, soprattutto quelli che hanno un approccio teorico al gioco,
-abbiano un proprio catalogo di <i>pattern</i>.</p>
+<p>I <i>pattern</i> di questi <i>tesuji</i>, quindi, vedono la presenza di una conformazione di bordo sbilanciata,
+alla quale l'avversario può appoggiarsi per minacciare l'angolo verso cui punta lo sbilanciamento
+    (diagramma <span data-board-ref="pattern-e-tesuji-1"></span>).</p>
 
-<!-- Se la userai, spiega qui la classificazione dei tesuji, partendo anche dal libro di Rose. -->
+<board data-type="show" data-label="pattern-e-tesuji-1" data-file="pattern-e-tesuji-1.json"></board>
+
+<p>Un attacco di questo tipo obbliga l'avversario a fare una scelta: cedere l'angolo o eliminare la minaccia. Quando
+entrambi le mosse sono svantaggiose, allora l'attacco è stato efficace: è un <i>tesuji</i> a tutti gli effetti.</p>

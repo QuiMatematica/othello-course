@@ -28,3 +28,16 @@ Nel diagramma <span data-board-ref="creare-un-muro-2"></span> il nero può muove
 minacciando di proseguire in <b>E8</b>.</p>
 
 <board data-type="show" data-label="creare-un-muro-2" data-file="creare-un-muro-2.json"></board>
+
+<h2>Il <i>pattern</i></h2>
+
+<p>Il <i>pattern</i> (diagramma <span data-board-ref="creare-un-muro-3"></span>) che permette questo <i>tesuji</i> prevede la presenza di:</p>
+<ul>
+    <li>un bordo sbilanciato, tipicamente un tre, sul quale giocare la minaccia (freccia rossa);</li>
+    <li>una linea di pedine esterne dell'attaccante che vengono girate dalla risposta alla minaccia (freccia gialla).</li>
+</ul>
+
+<board data-type="show" data-label="creare-un-muro-3" data-file="creare-un-muro-3.json"></board>
+
+<p>La formazione del muro è sempre uno svantaggio. L'alternativa per l'attaccato è quella di cedere l'angolo;
+ma se anche questo è svantaggioso il <i>tesuji</i> è stato efficace.</p>

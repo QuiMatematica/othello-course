@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-#####--",
+    "#-O###--",
+    "##OOOO--",
+    "#O####--",
+    "#O####--",
+    "#OOO##--",
+    "#OOO##--",
+    "-OOO-#--"
+  ],
+  "played": "B7",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "Il nero gioca un doppio attacco all'angolo <b>A8</b>."
+    },
+    {
+      "move": "G3",
+      "comment": "Non importa dove il bianco muove, perché in ogni caso il nero potrà accedere all'angolo al suo prossimo turno e il bianco non potrà incunearsi nel bordo inferiore."
+    },
+    {
+      "move": "A8",
+      "comment": "Inoltre il nero non deve cercare una mossa da fare, perché è ancora il turno del bianco."
+    }
+  ]
+}

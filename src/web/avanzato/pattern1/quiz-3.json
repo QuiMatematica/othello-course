@@ -1,0 +1,27 @@
+{
+  "position": [
+    "-######-",
+    "O-OOO#--",
+    "O#O#O#O#",
+    "OO#OO###",
+    "OOO###O#",
+    "OOOO#O##",
+    "O-####-#",
+    "-##--##-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "Esatto. Devi minacciare l'angolo <b>H8</b>. Ma ti è chiaro l'obiettivo finale?"
+    },
+    {
+      "move": "D8",
+      "comment": "Cosa fai se il nero elimina la minaccia?"
+    },
+    {
+      "move": "G7",
+      "comment": "Bravissimo. Prendi il controllo della diagonale."
+    }
+  ]
+}

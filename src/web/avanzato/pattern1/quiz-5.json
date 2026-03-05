@@ -1,0 +1,27 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-OOOO-#",
+    "####O##-",
+    "#OOOO#OO",
+    "#O#O#OOO",
+    "###OOOOO",
+    "--#OOO-O",
+    "--#####-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "A7",
+      "comment": "Esatto. Dovevi attaccare uno dei due bordi sbilanciati, e l'angolo <b>H8</b> è molto più importante di <b>A1</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero non può che rispondere in <b>A8</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Bravissimo. E tu ti incunei, pronto per la conquista dei bordi sud ed est."
+    }
+  ]
+}

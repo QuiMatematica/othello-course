@@ -91,4 +91,4 @@ alla quale l'avversario può appoggiarsi per minacciare l'angolo verso cui punta
 <board data-type="show" data-label="pattern-e-tesuji-1" data-file="pattern-e-tesuji-1.json"></board>
 
 <p>Un attacco di questo tipo obbliga l'avversario a fare una scelta: cedere l'angolo o eliminare la minaccia. Quando
-entrambi le mosse sono svantaggiose, allora l'attacco è stato efficace: è un <i>tesuji</i> a tutti gli effetti.</p>
+entrambe le mosse sono svantaggiose, allora l'attacco è stato efficace: è un <i>tesuji</i> a tutti gli effetti.</p>

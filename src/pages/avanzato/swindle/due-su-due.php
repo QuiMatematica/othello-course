@@ -21,7 +21,7 @@ Ho evidenziato tali elementi con delle frecce colorate nel diagramma <span data-
     <li>Verso est il nero non volta alcuna pedina perché la linea <b>2</b> è occupata solo da pedine bianche
     (freccia rossa nel diagramma <span data-board-ref="due-su-due-2"></span>).</li>
 </ul>
-<p>Questi sono quindi i due elementi da ricercare per capire se si possono giocare entrambi le mosse in una regione
+<p>Questi sono quindi i due elementi da ricercare per capire se si possono giocare entrambe le mosse in una regione
 formata da due caselle:</p>
 <ul>
     <li>la prima pedina della direzione di voltura è del colore avversario;</li>

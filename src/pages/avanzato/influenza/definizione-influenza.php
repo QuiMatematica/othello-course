@@ -34,7 +34,7 @@ mentre al punto 2 si afferma che avere tante pedine è una cosa buona. Ciò è d
         (dell'avversario) e pedine di appoggio (proprie)</b>.</p>
 
 <p>Prendiamo in esame i diagrammi 1 e 2. In entrambi deve muovere il nero. In
-entrambi le situazioni sia il nero che il bianco hanno lo stesso numero di pedine. Però nel diagramma
+entrambe le situazioni sia il nero che il bianco hanno lo stesso numero di pedine. Però nel diagramma
 1 il nero è in svantaggio, mentre nel diagramma 2 è in vantaggio. Cosa cambia tra le due posizioni?</p>
 
 <div class="row row-cols-1 row-cols-md-2 g-4">

@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--------",
+    "O-O-#O--",
+    "OOOO##--",
+    "OO#O##--",
+    "O#####--",
+    "OO#O##--",
+    "O-OOO#--",
+    "-OOO----"
+  ],
+  "played": "B8",
+  "turn": "black",
+  "comment": "Il bianco ha appena giocato in <b>B8</b>, dando al nero l'occasione di attaccare l'angolo <b>A8</b> giocando in <b>E8</b>.",
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "L'angolo in <b>A8</b> è di estremo valore per il nero perché gli permetterebbe di raggiungere anche l'angolo <b>A1</b> al turno successivo."
+    },
+    {
+      "move": "F8",
+      "comment": "Per evitare che il nero prenda l'angolo, il bianco deve rispondere in <b>F8</b> e formare un lungo muro."
+    }
+  ]
+}

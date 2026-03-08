@@ -1,0 +1,34 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "--------",
+    "-OOO#----"
+  ],
+  "turn": "white",
+  "played": "E8",
+  "comment": "Il bianco ha un tre sbilanciato sul bordo sud.<br>Il nero ha appena giocato in <b>E8</b> minacciando l'angolo <b>A8</b>.",
+  "controls": {
+    "score": false,
+    "turn": true
+  },
+  "add": {
+    "arrows": [
+      {
+        "start": [
+          550,
+          850
+        ],
+        "end": [
+          150,
+          850
+        ],
+        "color": "red"
+      }
+    ]
+  }
+}

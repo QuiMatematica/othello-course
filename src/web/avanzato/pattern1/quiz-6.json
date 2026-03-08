@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--------",
+    "O-------",
+    "O---#OO-",
+    "OOOOOOOO",
+    "O#OOOOOO",
+    "OOOOOOOO",
+    "O-OOOO-O",
+    "---OOOO-"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "H3",
+      "comment": "Mossa corretta. Ma qual è l'obiettivo finale?"
+    },
+    {
+      "move": "H2",
+      "comment": "Il bianco elimina la minaccia all'angolo."
+    },
+    {
+      "move": "B7",
+      "comment": "Molto bene: prendi la diagonale. Ma perché?"
+    },
+    {
+      "move": "E2",
+      "comment": "Il bianco taglia la diagonale."
+    },
+    {
+      "move": "C8",
+      "comment": "Bravissimo. Chiudi la Stoner trap. L'angolo <b>H8</b> e il bordo est sono già tuoi."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo."
+    },
+    {
+      "move": "B8",
+      "comment": "E tu ti incunei. Complimenti!"
+    }
+  ]
+}

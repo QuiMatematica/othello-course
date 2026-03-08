@@ -1,0 +1,31 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-OOOO-O",
+    "##O##OOO",
+    "#OO###OO",
+    "####OOOO",
+    "##OOOOOO",
+    "#-OOO#-O",
+    "-O-###--"
+  ],
+  "add": {
+    "arrows": [
+      {
+        "start": [350, 850],
+        "end": [150, 850],
+        "color": "red"
+      },
+      {
+        "start": [350, 850],
+        "end": [350, 550],
+        "color": "yellow"
+      },
+      {
+        "start": [350, 650],
+        "end": [750, 250],
+        "color": "purple"
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "OO###---",
+    "O#OOOO--",
+    "O#O#OO--",
+    "OOOOOO--",
+    "O-O###--",
+    "-O-###--"
+  ],
+  "controls": {
+    "score": false,
+    "turn": true
+  },
+  "add": {
+    "arrows": [
+      {
+        "start": [350, 850],
+        "end": [150, 850],
+        "color": "red"
+      },
+      {
+        "start": [750, 850],
+        "end": [550, 850],
+        "color": "yellow"
+      },
+      {
+        "start": [750, 850],
+        "end": [550, 650],
+        "color": "yellow"
+      },
+      {
+        "start": [650, 350],
+        "end": [450, 550],
+        "color": "purple"
+      }
+    ]
+  }
+}

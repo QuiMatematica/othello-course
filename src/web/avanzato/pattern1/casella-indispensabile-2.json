@@ -1,0 +1,24 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "#-O##OO-",
+    "##OOOOOO",
+    "###OOOOO",
+    "##OOOOOO",
+    "##O##OOO",
+    "#-O#O#-O",
+    "---####-"
+  ],
+  "played": "G2",
+  "comment": "Il nero ha bisogno di accedere all'angolo <b>H1</b>.",
+  "moves": [
+    {
+      "move": "C8",
+      "comment": "Purtroppo questa mossa non è più efficace."
+    },
+    {
+      "move": "B7",
+      "comment": "Al bianco basta rispondere in <b>B7</b> e continuare a negare l'accesso in <b>H1</b>."
+    }
+  ]
+}

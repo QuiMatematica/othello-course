@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "---#OO--",
+    "-O####--",
+    "-#O###--",
+    "-##OO#--",
+    "--OOO---",
+    "-OOO----"
+  ],
+  "played": "B8",
+  "turn": "black",
+  "comment": "Il bianco ha appena giocato in <b>B8</b>. Apparentemente il nero non ha la possibilità di forzare la creazione di un muro sulla colonna <b>F</b>.",
+  "moves": [
+    {
+      "move": "F7",
+      "comment": "Il nero muove in <b>F7</b> minacciando di giocare in <b>E8</b> alla prossima mossa.<br>Il bianco vorrebbe rispondere con <b>G8</b> ma non ne ha la possibilità. Quindi cerca la mossa migliore che limita la minaccia di <b>E8</b>."
+    },
+    {
+      "move": "G6",
+      "comment": "Se ora il nero giocasse in <b>E8</b> il bianco, rispondendo in <b>F8</b>, non volterebbe le pedine in <b>F4</b> e <b>F5</b>."
+    },
+    {
+      "move": "H6",
+      "comment": "Tuttavia il nero può proseguire in <b>H6</b>, che riconquista <b>F6</b> e ripropone la minaccia in <b>E8</b>."
+    }
+  ]
+}

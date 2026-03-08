@@ -1,0 +1,26 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "O-OO#O--",
+    "OOOO##--",
+    "OO####--",
+    "O##O##--",
+    "OOO#O#--",
+    "--OO##--",
+    "--OOOOO-"
+  ],
+  "add": {
+    "borders": [
+      {
+        "ul": "A2",
+        "dr": "A6",
+        "color": "red"
+      },
+      {
+        "ul": "C8",
+        "dr": "G8",
+        "color": "red"
+      }
+    ]
+  }
+}

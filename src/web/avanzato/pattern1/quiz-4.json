@@ -1,0 +1,27 @@
+{
+  "position": [
+    "-######-",
+    "#-####--",
+    "###O#---",
+    "######--",
+    "#OO##O--",
+    "####OO--",
+    "####OO--",
+    "-##-OOO-"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "D8",
+      "comment": "Esatto. Hai giocato una doppia minaccia all'angolo <b>A8</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero può prendere l'angolo <b>H8</b>..."
+    },
+    {
+      "move": "A8",
+      "comment": "Ma tu puoi prendere l'angolo <b>A8</b> e cominciare la conquista del bordo ovest e del bordo nord."
+    }
+  ]
+}

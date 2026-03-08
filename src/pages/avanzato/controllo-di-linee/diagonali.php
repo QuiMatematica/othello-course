@@ -91,7 +91,7 @@ esempio è tratto dal corso di Alessandro Di Mattei).</p>
 
 <board data-type="show" data-label="dimattei-2" data-file="diagonali-dimattei-2.json"></board>
 
-<p>Il bianco ha la possibilità di controllare entrambi le diagonali, ma anche il nero può fare lo stesso.
+<p>Il bianco ha la possibilità di controllare entrambe le diagonali, ma anche il nero può fare lo stesso.
 Quindi se il bianco muove per controllare una diagonale, il nero risponde controllando l'altra. Qual è, se esiste, la sequenza
 vincente per il bianco?</p>
 

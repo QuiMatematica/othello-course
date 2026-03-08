@@ -494,6 +494,48 @@
           ]
         },
         {
+          "href": "pattern1/",
+          "title": "Pattern e tesuji: minacciare un angolo",
+          "pages": [
+            {
+              "href": "pattern-e-tesuji.php",
+              "title": "Pattern e tesuji"
+            },
+            {
+              "href": "creare-un-muro.php",
+              "title": "Forzare l'avversario a creare un muro"
+            },
+            {
+              "href": "pedine-avvelenate.php",
+              "title": "Forzare l'avversario a girare pedine avvelenate"
+            },
+            {
+              "href": "casella-indispensabile.php",
+              "title": "Guadagnare l'accesso a una casella indispensabile"
+            },
+            {
+              "href": "diagonale.php",
+              "title": "Conquistare una diagonale"
+            },
+            {
+              "href": "doppio-attacco.php",
+              "title": "Doppio attacco all'angolo"
+            },
+            {
+              "href": "doppio-bordo.php",
+              "title": "Doppio bordo sbilanciato"
+            },
+            {
+              "href": "stoner-trap.php",
+              "title": "Stoner trap"
+            },
+            {
+              "href": "quiz.php",
+              "title": "Quiz"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

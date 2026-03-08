@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "-------O",
+    "OOOOO#OO",
+    "OOOOOOOO",
+    "OOOO#OOO",
+    "OOO##OOO",
+    "--#OOO-O",
+    "--#-OOO-"
+  ],
+  "played": "G8",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "L'attacco all'angolo è preceduto da questa mossa preparatoria: il nero prende il controllo della diagonale."
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco taglia la diagonale per ottenere un accesso all'angolo."
+    },
+    {
+      "move": "D8",
+      "comment": "Arriva l'attacco vero e proprio: il nero minaccia l'angolo <b>H8</b>. Se il bianco risponde in <b>B8</b>, il nero può prendere prima <b>A8</b> e dopo <b>H8</b>. Se invece il bianco prende l'angolo <b>A8</b> il nero prende l'angolo <b>H8</b>."
+    }
+  ]
+}

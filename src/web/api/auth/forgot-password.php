@@ -17,7 +17,7 @@ if (!$email || !validate_email($email)) {
     json_error(400, 'Inserisci un indirizzo email valido');
 }
 
-//$pdo  = db();
+$pdo  = db();
 $stmt = $pdo->prepare(
     'SELECT id, username, is_active FROM users WHERE email = ? LIMIT 1'
 );

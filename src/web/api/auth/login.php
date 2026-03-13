@@ -27,7 +27,7 @@ if (!$email || !$password) {
 }
 
 // --- 2. Cerca l'utente ---
-//$pdo  = db();
+$pdo  = db();
 $stmt = $pdo->prepare(
     'SELECT id, username, email, password_hash, is_verified, is_active,
             failed_attempts, locked_until

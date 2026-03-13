@@ -31,7 +31,7 @@ if ($current_password === $new_password) {
 }
 
 // --- 2. Recupera hash attuale ---
-$pdo  = db();
+//$pdo  = db();
 $stmt = $pdo->prepare('SELECT password_hash FROM users WHERE id = ? LIMIT 1');
 $stmt->execute([$user['id']]);
 $row  = $stmt->fetch();

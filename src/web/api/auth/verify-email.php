@@ -18,7 +18,7 @@ if (!$token_raw || strlen($token_raw) !== 64) {
 
 $token_hash = hash('sha256', $token_raw);
 
-$pdo  = db();
+//$pdo  = db();
 $stmt = $pdo->prepare(
     'SELECT id, is_verified FROM users WHERE verify_token = ? LIMIT 1'
 );

@@ -119,7 +119,7 @@ function check_account_lock(array $user): void {
 }
 
 function record_failed_attempt(int $user_id): void {
-    $pdo = db();
+//    $pdo = db();
 
     $stmt = $pdo->prepare('SELECT failed_attempts FROM users WHERE id = ?');
     $stmt->execute([$user_id]);

@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+$host = $_SERVER['HTTP_HOST'];
+$isLocalhost = str_contains($host, 'localhost');
+$isTest = str_contains($host, 'test');
+$isProd = !$isTest && !$isLocalhost;
+$root = $isLocalhost ? '/othello-course/dist/' : '/';
+$assets = require __DIR__ . '/../assets.php';
+?>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +14,8 @@
   <title>Registrati — Qui Othello</title>
   <link rel="icon" href="../icons/icon-192.png">
   <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../<?= $assets['main.css'] ?>">
 </head>
 <body>
 
@@ -16,7 +26,6 @@
       <img src="../icons/icon-192.png" alt="Qui Othello">
       <span class="auth-logo-name">Qui Othello</span>
     </a>
-    <p class="auth-tagline">⚫ Il corso di Othello ⚪</p>
   </header>
 
   <div class="auth-card">
@@ -63,14 +72,14 @@
     </form>
 
     <div class="auth-card-footer">
-      Hai già un account? <a href="/login.html" class="auth-link">Accedi</a>
+      Hai già un account? <a href="login.php" class="auth-link">Accedi</a>
     </div>
   </div>
 
 </div>
 
 <script type="module">
-  import { register } from '/dist/auth-api.js';
+  import { register } from 'auth-api.js';
 
   const form      = document.getElementById('register-form');
   const alertBox  = document.getElementById('alert');

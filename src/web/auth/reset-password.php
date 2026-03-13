@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+$host = $_SERVER['HTTP_HOST'];
+$isLocalhost = str_contains($host, 'localhost');
+$isTest = str_contains($host, 'test');
+$isProd = !$isTest && !$isLocalhost;
+$root = $isLocalhost ? '/othello-course/dist/' : '/';
+$assets = require __DIR__ . '/../assets.php';
+?>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +14,8 @@
   <title>Nuova password — Qui Othello</title>
   <link rel="icon" href="../icons/icon-192.png">
   <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../<?= $assets['main.css'] ?>">
 </head>
 <body>
 
@@ -16,7 +26,6 @@
       <img src="../icons/icon-192.png" alt="Qui Othello">
       <span class="auth-logo-name">Qui Othello</span>
     </a>
-    <p class="auth-tagline">⚫ Il corso di Othello ⚪</p>
   </header>
 
   <div class="auth-card">
@@ -29,7 +38,7 @@
       <p style="color:var(--text-muted); font-size:.9rem; margin-bottom:1rem;">
         Il link non è valido o è scaduto.
       </p>
-      <a href="/forgot-password.html" class="btn btn-primary"
+      <a href="forgot-password.php" class="btn btn-primary"
          style="display:inline-flex; width:auto; padding:.65rem 1.5rem;">
         Richiedi un nuovo link
       </a>
@@ -73,21 +82,21 @@
       <p style="font-size:.88rem; color:var(--text-muted); margin-bottom:1.5rem;">
         Puoi ora accedere con la tua nuova password.
       </p>
-      <a href="/login.html" class="btn btn-primary"
+      <a href="login.php" class="btn btn-primary"
          style="display:inline-flex; width:auto; padding:.65rem 1.5rem;">
         Vai al login
       </a>
     </div>
 
     <div class="auth-card-footer" id="back-link">
-      <a href="/login.html" class="auth-link">← Torna al login</a>
+      <a href="login.php" class="auth-link">← Torna al login</a>
     </div>
   </div>
 
 </div>
 
 <script type="module">
-  import { resetPassword } from '/dist/auth-api.js';
+  import { resetPassword } from 'auth-api.js';
 
   // Leggi il token dall'URL (?token=...)
   const params   = new URLSearchParams(window.location.search);

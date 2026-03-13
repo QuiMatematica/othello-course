@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<?php
+$host = $_SERVER['HTTP_HOST'];
+$isLocalhost = str_contains($host, 'localhost');
+$isTest = str_contains($host, 'test');
+$isProd = !$isTest && !$isLocalhost;
+$root = $isLocalhost ? '/othello-course/dist/' : '/';
+$assets = require __DIR__ . '/../assets.php';
+?>
 <html lang="it">
 <head>
   <meta charset="UTF-8">
@@ -6,6 +14,8 @@
   <title>Accedi — Qui Othello</title>
   <link rel="icon" href="../icons/icon-192.png">
   <link rel="stylesheet" href="auth.css">
+    <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../<?= $assets['main.css'] ?>">
 </head>
 <body>
 
@@ -16,7 +26,6 @@
       <img src="../icons/icon-192.png" alt="Qui Othello">
       <span class="auth-logo-name">Qui Othello</span>
     </a>
-    <p class="auth-tagline">⚫ Il corso di Othello ⚪</p>
   </header>
 
   <div class="auth-card">
@@ -37,7 +46,7 @@
       <div class="form-group">
         <label class="form-label" for="password">
           Password
-          <a href="/forgot-password.html" class="auth-link"
+          <a href="forgot-password.php" class="auth-link"
              style="float:right; font-size:.78rem; font-weight:400;
                     text-transform:none; letter-spacing:0;">
             Password dimenticata?
@@ -56,14 +65,14 @@
     </form>
 
     <div class="auth-card-footer">
-      Non hai un account? <a href="/register.html" class="auth-link">Registrati</a>
+      Non hai un account? <a href="register.php" class="auth-link">Registrati</a>
     </div>
   </div>
 
 </div>
 
 <script type="module">
-  import { login } from '/dist/auth-api.js';
+  import { login } from 'auth-api.js';
 
   const form      = document.getElementById('login-form');
   const alertBox  = document.getElementById('alert');

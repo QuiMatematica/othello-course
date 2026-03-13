@@ -99,7 +99,7 @@ function require_auth(): array {
     }
 
     // Verifica che l'utente esista ancora e sia attivo
-    $stmt = $pdo->prepare(
+    $stmt = db()->prepare(
         'SELECT id, username, email, is_active FROM users WHERE id = ? LIMIT 1'
     );
     $stmt->execute([$_SESSION['user_id']]);
@@ -148,7 +148,7 @@ function record_failed_attempt(int $user_id): void {
 }
 
 function reset_failed_attempts(int $user_id): void {
-    $pdo->prepare(
+    db()->prepare(
         'UPDATE users SET failed_attempts = 0, locked_until = NULL WHERE id = ?'
     )->execute([$user_id]);
 }

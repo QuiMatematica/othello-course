@@ -35,7 +35,7 @@ if (!validate_password($password)) {
 }
 
 // --- 2. Verifica unicità email e username ---
-//$pdo = db();
+$pdo = db();
 
 $stmt = $pdo->prepare(
     'SELECT id FROM users WHERE email = ? OR username = ? LIMIT 1'

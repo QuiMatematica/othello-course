@@ -23,7 +23,7 @@ if (!validate_password($new_password)) {
 }
 
 $token_hash = hash('sha256', $token_raw);
-//$pdo        = db();
+$pdo        = db();
 
 // --- Cerca il token valido (non scaduto, non usato) ---
 $stmt = $pdo->prepare(

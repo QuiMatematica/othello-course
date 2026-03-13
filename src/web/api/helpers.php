@@ -5,6 +5,14 @@
 require_once __DIR__ . '/../config/database.php';
 require_once __DIR__ . '/cors.php';
 
+function db(): PDO {
+    global $pdo;
+    if (!$pdo instanceof PDO) {
+        json_error(500, 'Errore di connessione al database');
+    }
+    return $pdo;
+}
+
 // ---------------------------------------------------------------
 // Configurazione sessione sicura — va chiamata PRIMA di session_start()
 // ---------------------------------------------------------------
@@ -119,7 +127,7 @@ function check_account_lock(array $user): void {
 }
 
 function record_failed_attempt(int $user_id): void {
-//    $pdo = db();
+    $pdo = db();
 
     $stmt = $pdo->prepare('SELECT failed_attempts FROM users WHERE id = ?');
     $stmt->execute([$user_id]);

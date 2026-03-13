@@ -13,7 +13,10 @@ const __dirname = path.dirname(__filename);
 
 export default {
 
-    entry: './src/js/othello.js',
+    entry: {
+        bundle: './src/js/othello.js',
+        'auth-api': './src/js/auth/api.js'
+    },
 
     output: {
         filename: 'js/tao.[contenthash].js',

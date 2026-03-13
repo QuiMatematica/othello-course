@@ -1,0 +1,305 @@
+/* auth.css — stile condiviso per tutte le pagine di autenticazione */
+/* Ispirato al look di quiothello.it: sfondo scuro, pedine B/N, serif elegante */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Source+Sans+3:wght@300;400;500;600&display=swap');
+
+/* ---------------------------------------------------------------
+   Variabili
+--------------------------------------------------------------- */
+:root {
+  --bg:           #1a1a1a;
+  --bg-card:      #242424;
+  --bg-input:     #2e2e2e;
+  --border:       #3a3a3a;
+  --border-focus: #888;
+  --text:         #e8e4dc;
+  --text-muted:   #888;
+  --text-hint:    #555;
+  --accent:       #e8e4dc;    /* bianco avorio — colore pedina bianca */
+  --accent-dark:  #c8c4bc;
+  --danger:       #d9534f;
+  --success:      #4caf7a;
+  --radius:       6px;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body:    'Source Sans 3', sans-serif;
+}
+
+/* ---------------------------------------------------------------
+   Base
+--------------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------------------------------------------------------------
+   Layout pagina
+--------------------------------------------------------------- */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+/* ---------------------------------------------------------------
+   Header / logo
+--------------------------------------------------------------- */
+.auth-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.auth-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: .75rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.auth-logo img {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+}
+
+.auth-logo-name {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -.01em;
+  color: var(--text);
+}
+
+.auth-tagline {
+  margin-top: .5rem;
+  font-size: .85rem;
+  color: var(--text-muted);
+  letter-spacing: .04em;
+}
+
+/* ---------------------------------------------------------------
+   Card
+--------------------------------------------------------------- */
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2.25rem 2.5rem;
+}
+
+.auth-card-title {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---------------------------------------------------------------
+   Form elements
+--------------------------------------------------------------- */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: .5rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: .7rem .9rem;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: .95rem;
+  transition: border-color .2s, box-shadow .2s;
+  outline: none;
+  appearance: none;
+}
+
+.form-control:focus {
+  border-color: var(--border-focus);
+  box-shadow: 0 0 0 3px rgba(232,228,220,.07);
+}
+
+.form-control::placeholder { color: var(--text-hint); }
+
+.form-control.is-invalid { border-color: var(--danger); }
+
+.form-hint {
+  margin-top: .35rem;
+  font-size: .78rem;
+  color: var(--text-muted);
+}
+
+/* ---------------------------------------------------------------
+   Bottoni
+--------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .75rem 1.25rem;
+  border: none;
+  border-radius: var(--radius);
+  font-family: var(--font-body);
+  font-size: .9rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: background .18s, opacity .18s, transform .1s;
+  text-decoration: none;
+}
+
+.btn:active { transform: scale(.98); }
+
+.btn-primary {
+  width: 100%;
+  background: var(--text);
+  color: var(--bg);
+  margin-top: .5rem;
+}
+
+.btn-primary:hover  { background: var(--accent-dark); }
+.btn-primary:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------------------------------------------------------------
+   Alert
+--------------------------------------------------------------- */
+.alert {
+  padding: .75rem 1rem;
+  border-radius: var(--radius);
+  font-size: .88rem;
+  margin-bottom: 1.25rem;
+  display: none;
+}
+
+.alert.show { display: block; }
+
+.alert-danger {
+  background: rgba(217,83,79,.15);
+  border: 1px solid rgba(217,83,79,.35);
+  color: #e8928f;
+}
+
+.alert-success {
+  background: rgba(76,175,122,.15);
+  border: 1px solid rgba(76,175,122,.35);
+  color: #7dd4a8;
+}
+
+/* ---------------------------------------------------------------
+   Link e footer della card
+--------------------------------------------------------------- */
+.auth-link {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .15s;
+}
+
+.auth-link:hover { color: var(--accent-dark); }
+
+.auth-card-footer {
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: .85rem;
+  color: var(--text-muted);
+}
+
+.auth-card-footer a { color: var(--text); }
+
+/* ---------------------------------------------------------------
+   Spinner nel bottone
+--------------------------------------------------------------- */
+.spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(26,26,26,.3);
+  border-top-color: var(--bg);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------------------------------------------------------------
+   Pedine decorative (accessorie, solo alcune pagine)
+--------------------------------------------------------------- */
+.disc {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.disc-black { background: #1a1a1a; border: 1px solid #555; }
+.disc-white { background: #e8e4dc; }
+
+/* ---------------------------------------------------------------
+   Requisiti password
+--------------------------------------------------------------- */
+.pwd-rules {
+  margin-top: .5rem;
+  list-style: none;
+  font-size: .78rem;
+}
+
+.pwd-rules li {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  color: var(--text-hint);
+  transition: color .2s;
+}
+
+.pwd-rules li.ok    { color: var(--success); }
+.pwd-rules li.fail  { color: var(--danger);  }
+
+.pwd-rules li::before {
+  content: '○';
+  font-size: .65rem;
+}
+
+.pwd-rules li.ok::before   { content: '●'; }
+.pwd-rules li.fail::before { content: '●'; }
+
+/* ---------------------------------------------------------------
+   Responsive
+--------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .auth-card { padding: 1.75rem 1.5rem; border-radius: 8px; }
+}

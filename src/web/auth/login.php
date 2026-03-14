@@ -72,7 +72,7 @@ $assets = require __DIR__ . '/../assets.php';
 </div>
 
 <script type="module">
-  import { login } from 'auth-api.js';
+  import { login } from './auth';
 
   const form      = document.getElementById('login-form');
   const alertBox  = document.getElementById('alert');

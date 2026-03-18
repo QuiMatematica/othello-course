@@ -346,3 +346,22 @@ svg {
     float: right;
     z-index: 1000; /* Per mantenerlo sopra gli altri elementi */
 }
+
+/* ======================
+ * Othello HR
+ * ====================== */
+
+.othello-hr {
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: 1;
+  margin: 20px 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+}
+
+.othello-hr::before {
+  content: "⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫⚪⚫";
+  font-size: 14px;
+  display: block;
+}

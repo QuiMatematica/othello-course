@@ -83,4 +83,5 @@
     tanto ormai ho sbloccato la consapevolezza di poter inventare una nuova variante praticamente ogni settimana.</p>
 
 <p>Anzi, se proprio vi ispira studiarvi due o tre aperture "folli" giocate pochissimo ma con varianti interessanti che
-    possono sorprendere l'avversario... restate lì. Ne parliamo di nuovo tra qualche giorno.</p>
+    possono sorprendere l'avversario... restate lì.
+    <a href="aperture2.php">Ne parliamo di nuovo tra qualche giorno.</a></p>

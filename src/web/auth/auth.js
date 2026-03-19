@@ -2,7 +2,7 @@
 // Modulo JS per chiamare gli endpoint di autenticazione
 // Da importare nei tuoi componenti con: import { login, logout, ... } from './auth/auth.js'
 
-const BASE_URL = 'https://quiothello.it/api/auth';
+const BASE_URL = `${window.location.protocol}//${window.location.host}/api/auth`;
 
 // Opzioni comuni a tutte le chiamate
 const defaultOptions = {

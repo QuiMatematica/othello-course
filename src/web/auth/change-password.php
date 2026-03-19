@@ -95,7 +95,7 @@ $assets = require __DIR__ . '/../assets.php';
 </div>
 
 <script type="module">
-  import { initAuth, changePassword } from 'auth-api.js';
+  import { initAuth, changePassword } from './auth.js';
 
   const splash    = document.getElementById('splash');
   const mainCard  = document.getElementById('main-card');

@@ -96,7 +96,7 @@ $assets = require __DIR__ . '/../assets.php';
 </div>
 
 <script type="module">
-  import { resetPassword } from 'auth-api.js';
+  import { resetPassword } from './auth.js';
 
   // Leggi il token dall'URL (?token=...)
   const params   = new URLSearchParams(window.location.search);

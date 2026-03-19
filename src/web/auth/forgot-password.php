@@ -75,7 +75,7 @@ $assets = require __DIR__ . '/../assets.php';
 </div>
 
 <script type="module">
-  import { forgotPassword } from 'auth-api.js';
+  import { forgotPassword } from './auth.js';
 
   const form      = document.getElementById('forgot-form');
   const alertBox  = document.getElementById('alert');

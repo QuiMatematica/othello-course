@@ -50,7 +50,7 @@ $assets = require __DIR__ . '/../assets.php';
         Email verificata!
       </h1>
       <p style="font-size:.9rem; color:var(--text-muted); margin-bottom:1.75rem;">
-        Il tuo account è attivo. Puoi ora accedere a Qui Othello.
+        Il tuo account è attivo.<br>Ora puoi accedere a Qui Othello.
       </p>
       <a href="login.php" class="btn btn-primary"
          style="display:inline-flex; width:auto; padding:.7rem 2rem;">

@@ -66,7 +66,8 @@ $stmt->execute([$username, $email, $hash, $verify_hash]);
 $user_id = (int) $pdo->lastInsertId();
 
 // --- 6. Invia email di verifica ---
-$verify_url = "https://quiothello.it/verify-email?token={$verify_token}";
+$host = $_SERVER['HTTP_HOST'];
+$verify_url = "https://{$host}/auth/verify-email.php?token={$verify_token}";
 $html = "
 <p>Ciao <strong>{$username}</strong>,</p>
 <p>Grazie per esserti registrato. Clicca il link qui sotto per verificare il tuo account:</p>

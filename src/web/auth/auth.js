@@ -1,8 +1,8 @@
-// src/auth/api.js
+// src/auth/auth.js
 // Modulo JS per chiamare gli endpoint di autenticazione
-// Da importare nei tuoi componenti con: import { login, logout, ... } from './auth/api.js'
+// Da importare nei tuoi componenti con: import { login, logout, ... } from './auth/auth.js'
 
-const BASE_URL = 'https://quiothello.it/api/auth';
+const BASE_URL = `${window.location.protocol}//${window.location.host}/api/auth`;
 
 // Opzioni comuni a tutte le chiamate
 const defaultOptions = {
@@ -116,7 +116,7 @@ export async function resetPassword({ token, newPassword }) {
 // Helper: inizializza l'app verificando la sessione
 // Uso consigliato nell'entry point della PWA:
 //
-//   import { initAuth } from './auth/api.js';
+//   import { initAuth } from './auth/auth.js';
 //   const user = await initAuth();
 //   if (user) { /* mostra app */ } else { /* mostra login */ }
 // ---------------------------------------------------------------

@@ -48,7 +48,8 @@ $pdo->prepare(
 )->execute([$user['id'], $token['hash'], $expires_at]);
 
 // --- Invia email ---
-$reset_url = "https://quiothello.it/reset-password?token={$token['raw']}";
+$host = $_SERVER['HTTP_HOST'];
+$reset_url = "https://{$host}/auth/reset-password.php?token={$token['raw']}";
 $html = "
 <p>Ciao <strong>{$user['username']}</strong>,</p>
 <p>Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account.</p>

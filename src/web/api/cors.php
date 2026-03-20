@@ -1,10 +1,23 @@
 <?php
-$allowed_origins = [
-    'https://quiothello.it',
-    'https://test.quiothello.it',
-    'https://bb.quiothello.it',
-    'https://bbtest.quiothello.it',
-];
+function get_allowed_origins(): array {
+    $host = $_SERVER['HTTP_HOST'] ?? '';
+
+    // Ambiente di test
+    if (str_contains($host, 'test.quiothello.it')) {
+        return [
+            'https://test.quiothello.it',
+            'https://bbtest.quiothello.it',
+        ];
+    }
+
+    // Produzione (default)
+    return [
+        'https://quiothello.it',
+        'https://bb.quiothello.it',
+    ];
+}
+
+$allowed_origins = get_allowed_origins();
 
 $origin = $_SERVER['HTTP_ORIGIN'] ?? '';
 

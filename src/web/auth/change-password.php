@@ -109,8 +109,8 @@ $assets = require __DIR__ . '/../assets.php';
     splash.style.display = 'none';
 
     if (!user) {
-      sessionStorage.setItem('redirect_after_login', '/change-password.html');
-      window.location.href = '/login.html';
+      sessionStorage.setItem('redirect_after_login', 'change-password.php');
+      window.location.href = 'login.php';
       return;
     }
 

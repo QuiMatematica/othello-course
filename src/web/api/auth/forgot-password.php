@@ -49,7 +49,7 @@ $pdo->prepare(
 
 // --- Invia email ---
 $host = $_SERVER['HTTP_HOST'];
-$reset_url = "https://{$host}/reset-password?token={$token['raw']}";
+$reset_url = "https://{$host}/auth/reset-password.php?token={$token['raw']}";
 $html = "
 <p>Ciao <strong>{$user['username']}</strong>,</p>
 <p>Abbiamo ricevuto una richiesta di reimpostazione della password per il tuo account.</p>

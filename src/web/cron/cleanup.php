@@ -9,9 +9,7 @@ if (!in_array($_SERVER['REMOTE_ADDR'] ?? '', $allowed_ips, true)
     exit;
 }
 
-require_once __DIR__ . '/../config/db.php';
-
-$pdo = db();
+require_once __DIR__ . '/../config/database.php';
 
 // Pulizia token reset scaduti o già usati
 $stmt = $pdo->query(

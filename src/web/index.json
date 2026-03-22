@@ -536,6 +536,16 @@
           ]
         },
         {
+          "href": "pattern2/",
+          "title": "Pattern e tesuji nelle regioni d'angolo",
+          "pages": [
+            {
+              "href": "diagonale.php",
+              "title": "Prendere una diagonale per giocare tre mosse su quattro"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

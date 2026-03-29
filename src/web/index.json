@@ -554,6 +554,22 @@
             {
               "href": "crawling.php",
               "title": "Strisciare lungo i bordi"
+            },
+            {
+              "href": "quattro-caselle-2.php",
+              "title": "Swindle con quattro caselle all'angolo (2)"
+            },
+            {
+              "href": "cinque-caselle.php",
+              "title": "Triplice tempo in regione a cinque"
+            },
+            {
+              "href": "sacrificare-la-diagonale.php",
+              "title": "Sacrificare la diagonale"
+            },
+            {
+              "href": "incastro.php",
+              "title": "Incastro tra due angoli"
             }
           ]
         },

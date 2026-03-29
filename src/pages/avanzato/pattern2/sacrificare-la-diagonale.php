@@ -1,0 +1,1 @@
+<board data-type="show" data-label="sacrificare-la-diagonale-1" data-file="sacrificare-la-diagonale-1.json"></board>

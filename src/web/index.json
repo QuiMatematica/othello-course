@@ -542,6 +542,18 @@
             {
               "href": "diagonale.php",
               "title": "Prendere una diagonale per giocare tre mosse su quattro"
+            },
+            {
+              "href": "quattro-caselle-1.php",
+              "title": "Swindle con quattro caselle all'angolo (1)"
+            },
+            {
+              "href": "vittoria-senza-angoli.php",
+              "title": "Classica vittoria senza angoli"
+            },
+            {
+              "href": "crawling.php",
+              "title": "Strisciare lungo i bordi"
             }
           ]
         },

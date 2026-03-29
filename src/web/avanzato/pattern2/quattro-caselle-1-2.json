@@ -1,0 +1,45 @@
+{
+  "position": [
+    "-OOOOO--",
+    "--OOOO--",
+    "--###OOO",
+    "--###OOO",
+    "--#O#OOO",
+    "--##OOOO",
+    "---OO#-O",
+    "--OO-#--"
+  ],
+  "turn": "black",
+  "played": "C8",
+  "comment": "Situazione del tutto simile alla precedente, ma questa volta i bordi nord ed est mostrano dei cinque pieni.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero cede l'angolo <b>H1</b> e, dal momento che i bordi nord ed est sono pieni, non ha voltato le pedine <b>F2</b> e <b>G3</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Se il bianco prende l'angolo..."
+    },
+    {
+      "move": "G1",
+      "comment": "... il nero può incunearsi in <b>G1</b> e guadagnare il primo tempo di gioco."
+    },
+    {
+      "move": "B6",
+      "comment": "Il bianco è costretto a muovere altrove."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero si incunea anche in <b>H2</b> e guadagna il suo secondo tempo di gioco."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco può cercare di incunearsi in <b>G8</b>, tanto l'angolo <b>H8</b> è già perso."
+    },
+    {
+      "move": "A1",
+      "comment": "Il nero prende tutto il bordo nord e, quando vorrà, potrà prendere anche tutto il bordo est. A questo punto non c'è più nessuna speranza per il bianco."
+    }
+  ]
+}

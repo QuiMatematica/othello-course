@@ -9,3 +9,16 @@ due quattro pieni.</p>
 succede se i due bordi sono dei cinque completi.</p>
 
 <board data-type="show" data-label="quattro-caselle-1-2" data-file="quattro-caselle-1-2.json"></board>
+
+<h2>Il <i>pattern</i></h2>
+
+<p>Il <i>pattern</i> (diagramma <span data-board-ref="quattro-caselle-1-3"></span>) che permette questo <i>tesuji</i>
+    prevede la presenza di:</p>
+<ul>
+    <li>una regione di quattro caselle (riquadro rosso);</li>
+    <li>due bordi pieni, ovvero con il controllo del controbordo da parte del colore attaccato (riquadri blu);</li>
+    <li>la possibilità di muovere nella casella <b>X</b> (freccia gialla);</li>
+    <li>la possibilità di muovere nelle due caselle <b>C</b> della stessa regione (freccia viola).</li>
+</ul>
+
+<board data-type="show" data-label="quattro-caselle-1-3" data-file="quattro-caselle-1-3.json"></board>

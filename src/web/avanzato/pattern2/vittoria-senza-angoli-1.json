@@ -2,12 +2,12 @@
   "position": [
     "--OOOO--",
     "--OOOO--",
-    "--###OOO",
-    "--###OOO",
-    "--#O#OOO",
-    "--##OOOO",
-    "---OO#--",
-    "--OO-#--"
+    "OOO##OOO",
+    "OO####OO",
+    "O#####OO",
+    "OOO##OOO",
+    "--O#OO--",
+    "--OOOO--"
   ],
   "turn": "black",
   "controls": {
@@ -19,6 +19,21 @@
       {
         "ul": "G1",
         "dr": "H2",
+        "color": "red"
+      },
+      {
+        "ul": "A1",
+        "dr": "B2",
+        "color": "red"
+      },
+      {
+        "ul": "G7",
+        "dr": "H8",
+        "color": "red"
+      },
+      {
+        "ul": "A7",
+        "dr": "B8",
         "color": "red"
       },
       {
@@ -44,7 +59,7 @@
         "color": "purple"
       },
       {
-        "start": [550, 550],
+        "start": [650, 450],
         "end": [850, 250],
         "color": "purple"
       }

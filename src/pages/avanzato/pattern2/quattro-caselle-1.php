@@ -18,7 +18,7 @@ succede se i due bordi sono dei cinque completi.</p>
     <li>una regione di quattro caselle (riquadro rosso);</li>
     <li>due bordi pieni, ovvero con il controllo del controbordo da parte del colore attaccato (riquadri blu);</li>
     <li>la possibilità di muovere nella casella <b>X</b> (freccia gialla);</li>
-    <li>la possibilità di muovere nelle due caselle <b>C</b> della stessa regione (freccia viola).</li>
+    <li>la possibilità di muovere nelle due caselle <b>C</b> della stessa regione (frecce viola).</li>
 </ul>
 
 <board data-type="show" data-label="quattro-caselle-1-3" data-file="quattro-caselle-1-3.json"></board>

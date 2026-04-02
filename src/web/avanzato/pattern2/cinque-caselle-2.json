@@ -10,27 +10,35 @@
     "--#OO#--"
   ],
   "turn": "black",
+  "comment": "Stessa posizione, sequenza simile.",
   "moves": [
     {
-      "move": "B2"
+      "move": "B2",
+      "comment": "Si comincia con il giocare nella casella <b>X</b> controllando la diagonale."
     },
     {
-      "move": "G3"
+      "move": "G3",
+      "comment": "Il bianco taglia la diagonale per poter accedere all'angolo."
     },
     {
-      "move": "A2"
+      "move": "A2",
+      "comment": "Il nero raddoppia l'attacco nella regione, giocando la sua seconda mossa."
     },
     {
-      "move": "G5"
+      "move": "G5",
+      "comment": "Il bianco decide di non prendere subito l'angolo."
     },
     {
-      "move": "A3"
+      "move": "A3",
+      "comment": "Il nero gioca la sua terza mossa nella regione creando ancora più pressione sull'angolo."
     },
     {
-      "move": "A1"
+      "move": "A1",
+      "comment": "A questo punto il bianco non ha altre possibilità che prendere l'angolo."
     },
     {
-      "move": "B1"
+      "move": "B1",
+      "comment": "Il nero gioca la quarta mossa nella regione."
     }
   ]
 }

@@ -10,27 +10,35 @@
     "--#OO#--"
   ],
   "turn": "black",
+  "comment": "Il nero ha la possibilità di giocare quattro mosse delle cinque a disposizione nella regione a nord-ovest.",
   "moves": [
     {
-      "move": "B2"
+      "move": "B2",
+      "comment": "Si comincia con il giocare nella casella <b>X</b> controllando la diagonale."
     },
     {
-      "move": "G3"
+      "move": "G3",
+      "comment": "Il bianco taglia la diagonale per poter accedere all'angolo."
     },
     {
-      "move": "A2"
+      "move": "A2",
+      "comment": "Il nero raddoppia l'attacco nella regione, giocando la sua seconda mossa."
     },
     {
-      "move": "A1"
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo. Ma nota: ora il nero può incunearsi sia in <b>A3</b> sia in <b>B1</b>."
     },
     {
-      "move": "A3"
+      "move": "A3",
+      "comment": "Terza mossa del nero nella regione."
     },
     {
-      "move": "G5"
+      "move": "G5",
+      "comment": "Il bianco è costretto a giocare altrove."
     },
     {
-      "move": "B1"
+      "move": "B1",
+      "comment": "Quarta mossa del nero nella regione."
     }
   ]
 }

@@ -1,7 +1,7 @@
 <p>In questa seconda raccolta di <i>tesuji</i> ti presento diverse situazioni che riguardano regioni d'angolo.</p>
 
-<p>Ogni regione chiusa, infatti, va analizzata per capire se se ne può sfruttare le caratteristiche, in modo da
-guadagnare tempi di giochi e parità.</p>
+<p>Ogni regione chiusa, infatti, va analizzata per capire se può essere sfruttata per ottenere dei tempi
+    di gioco e la parità.</p>
 
 <p>Il tema si intreccia fortemente con quello degli <i>swindle</i>. Ma questo non deve stupirti: di fatto ogni
 <i>swindle</i> è un <i>tesuji</i>, come giustamente sottolinea Brian Rose nel suo libro
@@ -14,7 +14,7 @@ per chi ci muove per primo... a meno che non ci sia uno <i>swindle</i> a disposi
 
 <p>Le regioni di quattro caselle che analizzeremo saranno <i>a quadrato</i> (diagramma
     <span data-board-ref="a-quadrato"></span>) oppure <i>a forma di T</i> (diagramma
-<span data-board-ref="a-t"></span></p>
+<span data-board-ref="a-t"></span>).</p>
 
 <gather>
     <board data-type="show" data-label="a-quadrato" data-file="a-quadrato.json"></board>

@@ -10,7 +10,7 @@
     "--OOOO--"
   ],
   "turn": "black",
-  "comment": "Cosa succede se la pedine <b>C3</b> è nera?",
+  "comment": "Cosa succede se la pedina <b>C3</b> è nera?",
   "moves": [
     {
       "move": "B7",

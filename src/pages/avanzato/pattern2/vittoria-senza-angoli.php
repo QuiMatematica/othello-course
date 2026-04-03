@@ -25,7 +25,7 @@ stata presentata.</p>
 
 <p>Ora questa sequenza va adattata alle situazioni concrete in cui ci si può imbattere. Cosa fare se al posto
 dei quattro ci sono dei cinque? E soprattutto, cosa fare in situazioni simili se si gioca con il bianco (che ha
-già la parità). Ma conoscendo il <i>pattern</i> principale non ti sarà facile trovare la sequenza corretta.</p>
+già la parità)? Ma conoscendo il <i>tesuji</i> principale non ti sarà facile trovare la sequenza corretta.</p>
 
 <p>Ci tengo a concludere sottolineando di nuovo come questo <i>tesuji</i> è applicabile grazie al fatto che
     il bianco controlla due controbordi adiacenti:

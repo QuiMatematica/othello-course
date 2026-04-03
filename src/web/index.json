@@ -574,6 +574,10 @@
             {
               "href": "incastro.php",
               "title": "Incastro tra due angoli"
+            },
+            {
+              "href": "quiz.php",
+              "title": "Quiz"
             }
           ]
         },

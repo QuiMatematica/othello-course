@@ -1,0 +1,41 @@
+{
+  "position": [
+    "O#OOOOO-",
+    "OOOOOO--",
+    "#OO#OOO-",
+    "##OO#OOO",
+    "#OO#O##O",
+    "#OOO##OO",
+    "OOOO##O-",
+    "O#####-O"
+  ],
+  "played": "H4",
+  "turn": "black",
+  "comment": "Qual è la mossa migliore per il nero?",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Esatto. Con questa mossa puoi giocare tre mosse nella regione a nord-est."
+    },
+    {
+      "move": "H3",
+      "comment": "E dopo questa risposta del bianco?"
+    },
+    {
+      "move": "H1",
+      "comment": "Esatto. Devi prendere l'angolo e riservare <b>G2</b> per dopo."
+    },
+    {
+      "move": "G8",
+      "comment": "Mossa obbligata per il bianco. A questo punto le due mosse sono indifferenti: gioca prima <b>H7</b> per terminare il quiz."
+    },
+    {
+      "move": "H7",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "G2",
+      "comment": "Bravissimo: hai vinto!"
+    }
+  ]
+}

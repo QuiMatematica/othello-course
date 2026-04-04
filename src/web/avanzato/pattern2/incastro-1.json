@@ -1,0 +1,36 @@
+{
+  "position": [
+    "--#OO#--",
+    "O-####-O",
+    "OOOOOOOO",
+    "OOO#OOOO",
+    "OO##OOOO",
+    "O#OO#OOO",
+    "O-O###-O",
+    "--#####-"
+  ]  ,
+  "turn": "black",
+  "comment": "Il nero mira a salvare il bordo sud, ma non può muovere in <b>B8</b>. C'è però un'altra possibilità.",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Il nero inizia con il cedere l'angolo <b>H8</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco non si fa sfuggire questa opportunità e minaccia di prendere il bordo sud."
+    },
+    {
+      "move": "B7",
+      "comment": "Ecco il <i>tesuji</i> del nero: sacrifica anche l'angolo <b>A8</b>.<br>Se ora il bianco gioca in <b>B8</b> il nero può prendere l'angolo <b>A8</b> e tutto il bordo ovest.<br>Se invece il bianco prende l'angolo..."
+    },
+    {
+      "move": "A8",
+      "comment": "..."
+    },
+    {
+      "move": "B8",
+      "comment": "... il nero si incunea e salva il bordo, guadagnando anche un tempo di gioco."
+    }
+  ]
+}

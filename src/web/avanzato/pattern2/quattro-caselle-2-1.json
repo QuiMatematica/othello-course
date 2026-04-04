@@ -1,0 +1,33 @@
+{
+  "position": [
+    "#OOOOOOO",
+    "##OOOOO#",
+    "##OOOOOO",
+    "##OOOOOO",
+    "##OOOO#O",
+    "##OOO#OO",
+    "##OOOO-O",
+    "OOOOO---"
+  ],
+  "turn": "black",
+  "played": "E8",
+  "comment": "Sembra che il nero non sia riuscito a ottenere la parità. Tuttavia le quattro caselle vuote, sommate al fatto che il nero ha accesso all'angolo, gli permettono di giocare l'ultima mossa. Per fare sì che il <i>tesuji</i> abbia successo, il nero deve iniziare con <b>G8</b>!",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Dovunque ora il bianco decida di giocare, il nero risponderà <b>H8</b> e il bianco dovrà passare."
+    },
+    {
+      "move": "F8",
+      "comment": "Se, per esempio, il bianco risponde sul bordo..."
+    },
+    {
+      "move": "H8",
+      "comment": "... il nero prima prende l'angolo..."
+    },
+    {
+      "move": "G7",
+      "comment": "... e poi prende la casella <b>X</b> rimanente. E vince."
+    }
+  ]
+}

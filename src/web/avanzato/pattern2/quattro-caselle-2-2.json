@@ -1,0 +1,36 @@
+{
+  "position": [
+    "---OOOOO",
+    "--###O##",
+    "--#OO##O",
+    "--#O#O#O",
+    "--OOOO#O",
+    "---O##OO",
+    "--###O-O",
+    "--##O---"
+  ],
+  "turn": "black",
+  "played": "H7",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il nero inizia il <i>tesuji</i>."
+    },
+    {
+      "move": "F8",
+      "comment": "Il bianco si incunea per minacciare l'angolo <b>H8</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero salva l'angolo. Ma nota che ora il bianco non può rispondere in <b>G7</b>."
+    },
+    {
+      "move": "C6",
+      "comment": "Il bianco è costretto a giocare altrove."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero chiude il <i>tesuji</i> guadagnando un tempo di gioco."
+    }
+  ]
+}

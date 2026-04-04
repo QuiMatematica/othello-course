@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OOOO--",
+    "--###OOO",
+    "--###OOO",
+    "--#O#OOO",
+    "--##OOOO",
+    "---OO#--",
+    "--OO-#--"
+  ],
+  "turn": "black",
+  "played": "C8",
+  "comment": "Il gioco del nero sembra piuttosto chiuso, eppure ha la possibilità di guadagnare dei preziosi tempi di gioco nella regione a nord-est.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero può cedere l'angolo <b>H1</b>. Dal momento che i bordi nord ed est sono pieni, il nero non ha voltato le pedine <b>F2</b> e <b>G3</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Non è probabilmente la risposta migliore, ma vediamo cosa succede se il bianco prende l'angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il nero può incunearsi in <b>G1</b> e guadagnare il primo tempo di gioco. E tiene <b>H2</b> come secondo tempo di gioco."
+    },
+    {
+      "move": "B6",
+      "comment": "Il bianco è costretto a muovere altrove."
+    },
+    {
+      "move": "H2",
+      "comment": "E il nero guadagna il suo secondo tempo di gioco."
+    }
+  ]
+}

@@ -18,7 +18,7 @@
     },
     {
       "move": "A8",
-      "comment": "Il bianco prende l'angolo.<br>Ora il nero vorrebbe giocare sia in <b>B8</b> sia in <b>A7</b>. Ma in questo momento non ha accesso ad <b>A7</b>. L'unico modo per ottenerlo è avere una pedina in <b>A2</b>. Ma se semplicemente gioca in <b>A2</b>, il bianco risponde prendendo l'angolo. Allora c'è bisogno di qualcosa un po' più complessa."
+      "comment": "Il bianco prende l'angolo.<br>Ora il nero vorrebbe giocare sia in <b>B8</b> sia in <b>A7</b>. Ma in questo momento non ha accesso ad <b>A7</b>. L'unico modo per ottenerlo è avere una pedina in <b>A2</b>. Ma se semplicemente gioca in <b>A2</b>, il bianco risponde prendendo l'angolo. Allora c'è bisogno di qualcosa un po' più complesso."
     },
     {
       "move": "B1",

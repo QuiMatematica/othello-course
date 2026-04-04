@@ -1,0 +1,21 @@
+{
+  "position": [
+    "--OOOO--",
+    "#-OOOO--",
+    "###OOOOO",
+    "#O####OO",
+    "#OO###OO",
+    "#O-##--O",
+    "---#-#--",
+    "--------"
+  ],
+  "played": "H5",
+  "turn": "black",
+  "comment": "Qual è la mossa migliore per il nero?<br>Da una partita su eOthello tra ClaudioPadova e Fraser.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Esatto: giocando questo <i>swindle</i> nella regione pari il nero può guadagnare due tempi di gioco. Tanto più che il bianco non ha subito accesso all'angolo."
+    }
+  ]
+}

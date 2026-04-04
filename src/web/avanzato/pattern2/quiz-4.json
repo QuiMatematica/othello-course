@@ -1,0 +1,33 @@
+{
+  "position": [
+    "--O####O",
+    "OOOOOOOO",
+    "OOOOOO#O",
+    "#O##OO#O",
+    "#OOO##OO",
+    "#O#OOOOO",
+    "#OO#O#-O",
+    "#######-"
+  ],
+  "played": "B2",
+  "turn": "black",
+  "comment": "Gioca la mossa vincente.<br>Dalla partita Kashiwabara - Signorini al Ferrara GPI del 2 febbraio 2025",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Mossa corretta."
+    },
+    {
+      "move": "H8",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": "Esatto, in questo modo puoi giocare uno swindle e vincere la partita."
+    },
+    {
+      "move": "B1",
+      "comment": "Bravissimo: hai vinto la partita!"
+    }
+  ]
+}

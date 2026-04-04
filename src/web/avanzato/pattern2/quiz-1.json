@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--#--#--",
+    "---###--",
+    "--#O##OO",
+    "--#O###O",
+    "--OOOO#O",
+    "--OOOO##",
+    "--------",
+    "--------"
+  ],
+  "played": "C1",
+  "turn": "white",
+  "comment": "Il bianco muove e guadagna due tempi di gioco.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Esatto. Il bianco ha la possibilità di giocare tre mosse delle quattro disponibili nella regione a nord-est."
+    },
+    {
+      "move": "B5",
+      "comment": "Il nero taglia la diagonale per poter accedere all'angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Mossa corretta. Il bianco continua nella stessa regione."
+    },
+    {
+      "move": "H1",
+      "comment": "Se il nero prende l'angolo..."
+    },
+    {
+      "move": "H2",
+      "comment": "... il bianco si incunea e guadagna il suo secondo tempo di gioco. Anche se ha concesso un angolo, i tempi guadagnati valgono di più."
+    }
+  ]
+}

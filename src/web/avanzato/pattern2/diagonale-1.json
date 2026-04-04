@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--#--#--",
+    "--####--",
+    "OO##O#OO",
+    "-O#O##OO",
+    "-OO###O#",
+    "-OOO####",
+    "---OO###",
+    "---OOO--"
+  ],
+  "turn": "white",
+  "comment": "Il bianco sembra essere sotto pressione perché sta esaurendo le mosse, anche a causa del grande muro che si è formato a sud-ovest. Potrà sicuramente giocare in <b>H8</b>, ma al nero basterà rispondere in <b>G8</b> e sarà di nuovo il turno del bianco. Il bianco ha la necessità di guadagnare almeno un tempo e capisce di poterlo fare muovendo in <b>G2</b>, prendendo la diagonale.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Naturalmente il nero da questa posizione può rompere facilmente la diagonale giocando <b>A5</b> che lo porterà a conquistare l'angolo in <b>H1</b>."
+    },
+    {
+      "move": "A5",
+      "comment": "Tuttavia questo è esattamente quello che vuole il bianco! A questo punto gli basterà muovere in <b>G1</b> e sacrificare di nuovo lo stesso angolo."
+    },
+    {
+      "move": "G1",
+      "comment": "Il bianco ha ottenuto così tre tempi su quattro nella stessa regione e guadagnandone di fatto due."
+    }
+  ]
+}

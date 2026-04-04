@@ -1,0 +1,32 @@
+{
+  "position": [
+    "--#--#--",
+    "--####--",
+    "OO##O#OO",
+    "-O#O##OO",
+    "-OO###O#",
+    "-OOO####",
+    "---OO###",
+    "---OOO--"
+  ],
+  "turn": "white",
+  "comment": "Torniamo alla stessa posizione del diagramma precedente.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il bianco inizia il <i>tesuji</i>. Però ora il nero non giocherà in <b>A5</b> bensì in <b>A4</b>."
+    },
+    {
+      "move": "A4",
+      "comment": "Vediamo ora cosa succede se il bianco, sbagliando, raddoppia il sacrificio all'angolo <b>H1</b>."
+    },
+    {
+      "move": "G1",
+      "comment": "Ora nota: il nero può andare in <b>H1</b> senza girare <b>G2</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "E il bianco non ha accesso alla casella <b>H2</b>. &Egrave; per questo motivo che il bianco deve aspettare il taglio della diagonale."
+    }
+  ]
+}

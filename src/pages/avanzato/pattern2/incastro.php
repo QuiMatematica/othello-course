@@ -9,7 +9,7 @@ Ma grazie alla regione dispari a sud-ovest c'è un'altra possibilità.</p>
 <p>Il <i>pattern</i> (diagramma <span data-board-ref="incastro-2"></span>) che permette questo <i>tesuji</i>
     prevede la presenza di:</p>
 <ul>
-    <li>una regione pari in cui cedere il primo angolo (riquadro rosso;</li>
+    <li>una regione pari in cui cedere il primo angolo (riquadro rosso);</li>
     <li>una regione dispari in cui guadagnare il tempo di gioco (riquadro giallo).</li>
 </ul>
 

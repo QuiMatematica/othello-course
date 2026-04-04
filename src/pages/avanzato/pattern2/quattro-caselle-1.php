@@ -6,7 +6,7 @@ due quattro pieni.</p>
 <board data-type="show" data-label="quattro-caselle-1-1" data-file="quattro-caselle-1-1.json"></board>
 
 <p>L'esempio mostrato sfrutta solamente la regione per ottenere tre mosse su quattro disponibili. Ma osserva cosa
-succede se i due bordi sono dei cinque completi.</p>
+succede se i due bordi sono dei cinque pieni.</p>
 
 <board data-type="show" data-label="quattro-caselle-1-2" data-file="quattro-caselle-1-2.json"></board>
 

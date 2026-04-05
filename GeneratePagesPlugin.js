@@ -152,7 +152,7 @@ $assets = require __DIR__ . '/../../assets.php';
         <div class="container-xxl d-flex align-items-center">
             <!-- Logo con icona -->
             <a class="navbar-brand d-flex align-items-center text-white fw-bold m-0" href="<?= $root ?>">
-                <img src="<?= $root ?>icons/icon-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
+                <img src="<?= $root ?>icons/quiothello2026-192.png" alt="Qui Othello" width="40" height="40" class="me-2 rounded">
                 Qui Othello
             </a>
         </div>

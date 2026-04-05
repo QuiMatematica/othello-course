@@ -52,6 +52,7 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
+          debug: true
           script: |
             mv /test.quiothello.it/public_html/icons/quiothello2026-test-192.png \
                /test.quiothello.it/public_html/icons/quiothello2026-192.png

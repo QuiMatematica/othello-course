@@ -42,3 +42,14 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
           server-dir: ${{ env.SERVER_DIR }}
+
+      - name: Rename test icon via SSH
+        if: github.ref != 'refs/heads/master'
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            mv /test.quiothello.it/public_html/icons/quiothello2026-test-192.png \
+               /test.quiothello.it/public_html/icons/quiothello2026-192.png

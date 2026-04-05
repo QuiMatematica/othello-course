@@ -42,3 +42,12 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: dist/
           server-dir: ${{ env.SERVER_DIR }}
+
+      - name: Rename test icon via FTP
+        if: github.ref != 'refs/heads/master'
+        run: |
+          curl \
+            -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
+            ftp://${{ secrets.FTP_HOST }} \
+            -Q "RNFR /test.quiothello.it/public_html/icons/quiothello2026-test-192.png" \
+            -Q "RNTO /test.quiothello.it/public_html/icons/quiothello2026-192.png"

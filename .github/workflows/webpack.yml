@@ -50,7 +50,7 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           port: 18765
           username: ${{ secrets.SSH_USERNAME }}
-          password: ${{ secrets.SSH_PASSWORD }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             mv /test.quiothello.it/public_html/icons/quiothello2026-test-192.png \
                /test.quiothello.it/public_html/icons/quiothello2026-192.png

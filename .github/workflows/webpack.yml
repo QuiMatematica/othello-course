@@ -43,14 +43,11 @@ jobs:
           local-dir: dist/
           server-dir: ${{ env.SERVER_DIR }}
 
-      - name: Rename test icon via SSH
+      - name: Rename test icon via FTP
         if: github.ref != 'refs/heads/master'
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          port: 18765
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            mv /test.quiothello.it/public_html/icons/quiothello2026-test-192.png \
-               /test.quiothello.it/public_html/icons/quiothello2026-192.png
+        run: |
+          curl --ftp-ssl \
+            -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
+            ftp://${{ secrets.FTP_HOST }} \
+            -Q "RNFR /test.quiothello.it/public_html/icons/quiothello2026-test-192.png" \
+            -Q "RNTO /test.quiothello.it/public_html/icons/quiothello2026-192.png"

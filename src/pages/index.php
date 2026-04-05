@@ -83,7 +83,8 @@ $assets = require __DIR__ . '/assets.php';
     <!-- PWA -->
     <link rel="manifest" href="<?= $root ?>manifest.json">
     <meta name="theme-color" content="#2c3e50">
-    <link rel="icon" href="<?= $root ?>icons/icon-192.png">
+    <link rel="icon" href="<?= $root ?>icons/quiothello2026-192.png">
+    <link rel="apple-touch-icon" href="<?= $root ?>icons/quiothello2026-180.png">
 
     <style>
         .navbar {

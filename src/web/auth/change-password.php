@@ -24,7 +24,7 @@ $assets = require __DIR__ . '/../assets.php';
 
     <header class="auth-header">
         <a href="/" class="auth-logo">
-            <img src="../icons/icon-192.png" alt="Qui Othello">
+            <img src="../icons/quiothello2026-192.png" alt="Qui Othello">
             <span class="auth-logo-name">Qui Othello</span>
         </a>
     </header>

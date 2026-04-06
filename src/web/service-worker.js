@@ -1,12 +1,12 @@
 // Nome della cache
-const CACHE_NAME = "pwa-cache-v2";
+const CACHE_NAME = "pwa-cache-v3";
 
 // File statici da mettere in cache all'installazione
 const FILES_TO_CACHE = [
     "/manifest.json",
     "/offline.html",
-    "/icons/icon-192.png",
-    "/icons/icon-512.png"
+    "/icons/quiothello2026-192.png",
+    "/icons/quiothello2026-512.png"
 ];
 
 // Installazione → cache iniziale dei file statici
@@ -64,7 +64,7 @@ self.addEventListener("push", event => {
   event.waitUntil(
     self.registration.showNotification(data.title, {
       body: data.body,
-      icon: "/icons/icon-192.png",
+      icon: "/icons/quiothello2026-192.png",
       data: { url: data.url }
     })
   );

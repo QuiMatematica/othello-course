@@ -1,12 +1,12 @@
 // Nome della cache
-const CACHE_NAME = "pwa-cache-v3";
+const CACHE_NAME = "pwa-cache-v3c";
 
 // File statici da mettere in cache all'installazione
 const FILES_TO_CACHE = [
     "/manifest.json",
     "/offline.html",
     "/icons/quiothello2026-192.png",
-    "/icons/quiothello2026-512.png"
+    "/icons/quiothello2026c-512.png"
 ];
 
 // Installazione → cache iniziale dei file statici

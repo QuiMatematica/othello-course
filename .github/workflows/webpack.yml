@@ -49,7 +49,7 @@ jobs:
           curl \
             -u "${{ secrets.FTP_USERNAME }}:${{ secrets.FTP_PASSWORD }}" \
             ftp://${{ secrets.FTP_HOST }}/test.quiothello.it/public_html/icons/ \
-            -Q "RNFR /test.quiothello.it/public_html/icons/quiothello2026-test-192.png" \
-            -Q "RNTO /test.quiothello.it/public_html/icons/quiothello2026-192.png" \
-            -Q "RNFR /test.quiothello.it/public_html/icons/quiothello2026-test-180.png" \
-            -Q "RNTO /test.quiothello.it/public_html/icons/quiothello2026-180.png"
+            -Q "RNFR quiothello2026-test-192.png" \
+            -Q "RNTO quiothello2026-192.png" \
+            -Q "RNFR quiothello2026-test-180.png" \
+            -Q "RNTO quiothello2026-180.png"

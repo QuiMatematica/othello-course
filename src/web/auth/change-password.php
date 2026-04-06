@@ -12,7 +12,8 @@ $assets = require __DIR__ . '/../assets.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cambia password — Qui Othello</title>
-    <link rel="icon" href="../icons/icon-192.png">
+    <link rel="icon" href="<?= $root ?>icons/quiothello2026-192.png">
+    <link rel="apple-touch-icon" href="<?= $root ?>icons/quiothello2026-180.png">
     <link rel="stylesheet" href="auth.css">
     <link rel="stylesheet" href="<?= $root ?>assets/bootstrap-icons/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../<?= $assets['main.css'] ?>">
@@ -23,7 +24,7 @@ $assets = require __DIR__ . '/../assets.php';
 
     <header class="auth-header">
         <a href="/" class="auth-logo">
-            <img src="../icons/icon-192.png" alt="Qui Othello">
+            <img src="../icons/quiothello2026-192.png" alt="Qui Othello">
             <span class="auth-logo-name">Qui Othello</span>
         </a>
     </header>

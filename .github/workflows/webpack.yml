@@ -37,7 +37,7 @@ jobs:
       - name: Duplicate icons for test environment
         if: github.ref != 'refs/heads/master'
         run: |
-          cp dist/icons/quiothello2026-test-512.png dist/icons/quiothello2026-512.png
+          cp dist/icons/quiothello2026b-test-512.png dist/icons/quiothello2026b-512.png
           cp dist/icons/quiothello2026-test-192.png dist/icons/quiothello2026-192.png
           cp dist/icons/quiothello2026-test-180.png dist/icons/quiothello2026-180.png
 

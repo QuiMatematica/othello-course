@@ -1,0 +1,32 @@
+{
+  "position": [
+    "--#--#--",
+    "--####--",
+    "OOO###OO",
+    "######OO",
+    "-OO###O#",
+    "##OO####",
+    "---OO###",
+    "---OOO--"
+  ],
+  "turn": "white",
+  "comment": "Le condizioni necessarie per giocare il <i>tesuji</i> ci sono tutte. Ma siamo sicuri che giocare in <b>G2</b> sia la mossa corretta?",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il bianco ha mosso in <b>G2</b> convinto di poter giocare il <i>tesuji</i>.<br>Però osserva: se il nero gioca in <b>A5</b> il bianco perde l'accesso in <b>G1</b>."
+    },
+    {
+      "move": "A5",
+      "comment": "Con questa mossa il nero taglia la diagonale (ottenendo l'accesso ad <b>H1</b>) e impedisce al bianco di giocare in <b>G1</b>."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco prende il cinque sul bordo ovest per non perdere un altro tempo di gioco sul bordo e per riottenere l'accesso a <b>G1</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero gioca per secondo nella regione a nord-est, mantenendo la parità in quella regione."
+    }
+  ]
+}

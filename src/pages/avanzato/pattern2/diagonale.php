@@ -43,3 +43,16 @@ il bianco non avrebbe potuto rispondere in <b>G1</b> (diagramma <span data-board
 </ul>
 
 <board data-type="show" data-label="diagonale-3" data-file="diagonale-3.json"></board>
+
+<p>Attenzione però: le condizioni elencate sopra sono <b>necessarie</b> per giocare il <i>tesuji</i> ma
+non sono <b>sufficienti</b>. Questo significa che anche se sono tutte rispettate è possibile che la posizione
+abbia altre caratteristiche che non permettono di chiudere correttamente la manovra.</p>
+
+<p>Per esempio il diagramma <span data-board-ref="diagonale-4"></span> mostra una posizione molto simile
+a quella vista sopra. Ma se il bianco gioca in <b>G2</b> il nero ha la possibilità giocare per secondo nella
+regione a nord-est.</p>
+
+<board data-type="show" data-label="diagonale-4" data-file="diagonale-4.json"></board>
+
+<p>Questo ci ricorda di verificare sempre che il <i>tesuji</i> sia giocabile con successo fino in fondo, e di non
+accontentarsi del <i>pattern</i> che ci suggerisce di applicarlo.</p>

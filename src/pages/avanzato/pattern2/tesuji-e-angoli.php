@@ -3,7 +3,7 @@
 <p>Ogni regione chiusa, infatti, va analizzata per capire se può essere sfruttata per ottenere dei tempi
     di gioco e la parità.</p>
 
-<p>Il tema si intreccia fortemente con quello degli <i>swindle</i>. Ma questo non deve stupirti: di fatto ogni
+<p>Questa tema ci riporta agli <a href="../swindle/swindle.php"><i>swindle</i></a>. Ma questo non deve stupirti: di fatto ogni
 <i>swindle</i> è un <i>tesuji</i>, come giustamente sottolinea Brian Rose nel suo libro
     <a href="https://www.fngo.it/allegati/brianrose_book(eng).pdf" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-box-arrow-right"></i>

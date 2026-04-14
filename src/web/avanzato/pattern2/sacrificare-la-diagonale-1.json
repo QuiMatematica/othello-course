@@ -1,0 +1,40 @@
+{
+  "position": [
+    "OOOOOOO-",
+    "##OOO#-#",
+    "##OOOO##",
+    "O#OO####",
+    "OOO##OO#",
+    "OOOOOOO#",
+    "OOOOOOO#",
+    "--O##O--"
+  ],
+  "turn": "black",
+  "comment": "Il nero vorrebbe ottenere la parità... e ne ha la possibilità ma solo sacrificando la diagonale e il bordo est.",
+  "moves": [
+    {
+      "move": "G2",
+      "comment": "Il nero sacrifica la diagonale."
+    },
+    {
+      "move": "H1",
+      "comment": "Il bianco prende l'angolo ma attenzione: adesso controlla tutta la diagonale."
+    },
+    {
+      "move": "A8",
+      "comment": "Ora il nero può giocare in <b>A8</b> ma senza voltare la pedina <b>B7</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco si prende il bordo est."
+    },
+    {
+      "move": "B8",
+      "comment": "Ora il nero può giocare prima in <b>B8</b>..."
+    },
+    {
+      "move": "G8",
+      "comment": "... e poi in <b>G8</b>. E vince."
+    }
+  ]
+}

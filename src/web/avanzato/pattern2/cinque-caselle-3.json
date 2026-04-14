@@ -1,0 +1,48 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OOOO--",
+    "-OO##O--",
+    "OO####--",
+    "OO####--",
+    "OOO###--",
+    "--O##O--",
+    "--#OO#--"
+  ],
+  "turn": "black",
+  "controls": {
+    "score": false,
+    "turn": true
+  },
+  "add": {
+    "borders": [
+      {
+        "ul": "A1",
+        "dr": "B3",
+        "color": "red"
+      }
+    ],
+    "arrows": [
+       {
+        "start": [650, 650],
+        "end": [250, 250],
+        "color": "yellow"
+      },
+      {
+        "start": [450, 350],
+        "end": [250, 150],
+        "color": "purple"
+      },
+      {
+        "start": [350, 450],
+        "end": [150, 250],
+        "color": "purple"
+      },
+      {
+        "start": [350, 550],
+        "end": [150, 350],
+        "color": "purple"
+      }
+    ]
+  }
+}

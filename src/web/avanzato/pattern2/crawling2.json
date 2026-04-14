@@ -10,21 +10,27 @@
     "--OOOO--"
   ],
   "turn": "black",
+  "comment": "Cosa succede se la pedina <b>C3</b> è nera?",
   "moves": [
     {
-      "move": "B7"
+      "move": "B7",
+      "comment": "Il nero inizia la manovra."
     },
     {
-      "move": "A8"
+      "move": "A8",
+      "comment": "Il bianco prende l'angolo."
     },
     {
-      "move": "B1"
+      "move": "B1",
+      "comment": "Il nero cede anche l'angolo superiore per potersi incuneare in <b>A2</b>."
     },
     {
-      "move": "A1"
+      "move": "A1",
+      "comment": "Il bianco prende l'angolo."
     },
     {
-      "move": "A2"
+      "move": "A2",
+      "comment": "Il nero si incunea. Ma nota che ora non la possibilità di giocare in <b>B2</b>."
     },
     {
       "move": "A7",

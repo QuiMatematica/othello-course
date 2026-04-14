@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OOOO--",
+    "--###OOO",
+    "--###OOO",
+    "--#O#OOO",
+    "--##OOOO",
+    "---OO#--",
+    "--OO-#--"
+  ],
+  "controls": {
+    "score": false,
+    "turn": false
+  },
+  "add": {
+    "borders": [
+      {
+        "ul": "G1",
+        "dr": "H2",
+        "color": "red"
+      }
+    ]
+  }
+}

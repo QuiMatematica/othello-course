@@ -536,6 +536,52 @@
           ]
         },
         {
+          "href": "pattern2/",
+          "title": "Pattern e tesuji nelle regioni d'angolo",
+          "pages": [
+            {
+              "href": "tesuji-e-angoli.php",
+              "title": "Pattern e tesuji nelle regioni d'angolo"
+            },
+            {
+              "href": "diagonale.php",
+              "title": "Prendere una diagonale per giocare tre mosse su quattro"
+            },
+            {
+              "href": "quattro-caselle-1.php",
+              "title": "Swindle con quattro caselle all'angolo (1)"
+            },
+            {
+              "href": "vittoria-senza-angoli.php",
+              "title": "Classica vittoria senza angoli"
+            },
+            {
+              "href": "crawling.php",
+              "title": "Strisciare lungo i bordi"
+            },
+            {
+              "href": "quattro-caselle-2.php",
+              "title": "Swindle con quattro caselle all'angolo (2)"
+            },
+            {
+              "href": "cinque-caselle.php",
+              "title": "Triplice tempo in regione a cinque"
+            },
+            {
+              "href": "sacrificare-la-diagonale.php",
+              "title": "Sacrificare la diagonale"
+            },
+            {
+              "href": "incastro.php",
+              "title": "Incastro tra due angoli"
+            },
+            {
+              "href": "quiz.php",
+              "title": "Quiz"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

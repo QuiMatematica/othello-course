@@ -23,6 +23,7 @@ class GeneratePagesPlugin {
 
             this.json.sections.forEach(section => {
                 const sectionPath = path.join(inputDir, section.href);
+                const showQuiz = section.showQuiz !== undefined ? section.showQuiz : true;
                 section.chapters.forEach(chapter => {
                     const chapterPath = path.join(sectionPath, chapter.href);
                     chapter.pages.forEach(page => {
@@ -30,16 +31,16 @@ class GeneratePagesPlugin {
                         // console.log('page: ' + pagePath);
                         let html = fs.readFileSync(pagePath, 'utf8');
 
-                        html = this.titleProcessor.process(html);
-                        html = this.gatherProcessor.process(html);
-                        html = this.boardProcessor.process(html);
-
-                        // Componi l'HTML completo
-                        html = this.composePage(html, section, chapter, page);
-
                         // Determina il percorso del file di output
                         const relativePath = path.relative(inputDir, pagePath);
                         const outputFilePath = path.join(outputDir, relativePath);
+
+                        html = this.titleProcessor.process(html);
+                        html = this.gatherProcessor.process(html);
+                        html = this.boardProcessor.process(html, relativePath, showQuiz);
+
+                        // Componi l'HTML completo
+                        html = this.composePage(html, section, chapter, page);
 
                         // Crea le directory necessarie per il file di output
                         const outputDirPath = path.dirname(outputFilePath);
@@ -52,6 +53,15 @@ class GeneratePagesPlugin {
                     })
                 })
             })
+
+            // Lista dei quiz: è ora di stampare la lista sul file json
+            console.log("Quiz trovati: " + this.boardProcessor.quizList.length);
+
+            // Salva la lista dei quiz in un file JSON
+            const quizListPath = path.join(outputDir, 'quiz-list.json');
+            const quizListJson = JSON.stringify(this.boardProcessor.quizList, null, 2);
+            fs.writeFileSync(quizListPath, quizListJson, 'utf8');
+            console.log("Quiz list salvata in: " + quizListPath);
 
             callback(); // Segnala a Webpack che il plugin ha finito
         });
@@ -82,8 +92,6 @@ class GeneratePagesPlugin {
     }
 
     composePage(htmlContent, section, chapter, page) {
-        let prepend = '../../';
-
         const h1title = page.title;
         const title = page.title + " @ Qui Othello";
         const url = "https://<?= $host ?>/" + section.href + chapter.href + page.href;

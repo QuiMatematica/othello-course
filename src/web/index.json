@@ -674,6 +674,7 @@
       "id": "othellico",
       "title": "Othellico",
       "href": "othellico/",
+      "showQuiz": false,
       "chapters": [
         {
           "href": "aperture/",

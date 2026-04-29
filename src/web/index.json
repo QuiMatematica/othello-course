@@ -596,6 +596,10 @@
             {
               "href": "aperture2.php",
               "title": "Happy Othello: dieci aperture folli per eroi senza paura"
+            },
+            {
+              "href": "mangiare.php",
+              "title": "Cosa mangiare durante un torneo di Othello?"
             }
           ]
         }

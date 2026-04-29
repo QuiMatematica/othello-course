@@ -6,9 +6,11 @@ class BoardProcessor {
         this.boardTypeMap = {};
         this.boardTypeMap['show'] = 'match-file-board';
         this.boardTypeMap['quiz'] = 'sequence-board';
+
+        this.quizList = [];
     }
 
-    process(html) {
+    process(html, relativePath, showQuiz) {
         const labelMap = {};
         let imageCounter = 1;
 
@@ -49,6 +51,16 @@ class BoardProcessor {
             `;
 
             $board.replaceWith(boardHtml);
+
+            // Board di tipo quiz: aggiungo alla lista dei quiz.
+            if (type === 'quiz' && showQuiz) {
+                const normalizedPath = relativePath.replace(/\\/g, '/');
+                const lastSlashIndex = normalizedPath.lastIndexOf('/');
+                const dirPath = lastSlashIndex >= 0 ? normalizedPath.substring(0, lastSlashIndex + 1) : '';
+                const filepath = dirPath + file;
+                const quiz = {"file": filepath, "page": normalizedPath}
+                this.quizList.push(quiz);
+            }
         })
 
         // Sostituzione riferimenti nel testo

@@ -586,6 +586,10 @@
           "title": "Pattern e tesuji sui bordi",
           "pages": [
             {
+              "href": "doppio-tempo.php",
+              "title": "Doppio tempo sul bordo"
+            },
+            {
               "href": "attacco-al-tre.php",
               "title": "Attacco al tre sbilanciato"
             }

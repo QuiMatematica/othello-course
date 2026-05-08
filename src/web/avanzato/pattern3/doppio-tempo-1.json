@@ -1,0 +1,27 @@
+{
+  "position": [
+    "---####-",
+    "--OO##--",
+    "-#####O-",
+    "-#####O-",
+    "-O###OO-",
+    "--###O--",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B1",
+      "comment": "Il nero guadagno il primo tempo di gioco sul bordo nord. Nota che il bianco non ha la possibilità di incunearsi in <b>C1</b>."
+    },
+    {
+      "move": "A4",
+      "comment": "Il bianco è costretto a giocare altrove, ma per lo meno cerca un accesso a <b>C1</b> in modo da costringere il nero a chiudere subito lo swindle."
+    },
+    {
+      "move": "C1",
+      "comment": "Il nero chiude il bordo, guadagnando il secondo tempo di gioco."
+    }
+  ]
+}

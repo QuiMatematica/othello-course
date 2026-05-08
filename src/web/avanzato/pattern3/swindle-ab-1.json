@@ -1,0 +1,27 @@
+{
+  "position": [
+    "---#-O--",
+    "---##O--",
+    "--O###O-",
+    "--OOOO#O",
+    "--O#####",
+    "--O#####",
+    "--####--",
+    "--#-----"
+  ],
+  "turn": "white",
+  "moves": [
+    {
+      "move": "C1",
+      "comment": "Ora il nero vorrebbe incunerarsi in <b>E1</b>, ma non ha l'accesso.<br>Se il nero non gioca <b>B1</b> il bianco può muovere in <b>E1</b> e guadagnare due tempi."
+    },
+    {
+      "move": "B1",
+      "comment": "Ovviamente il nero può decidere di prendere sul bordo, ma questa posizione è soggetta a moti altri tipi di <i>tesuji</i> di attacco all'angolo.<br>Per il bianco è bià un vantaggio aver costretto il nero a sbilancarsi."
+    },
+    {
+      "move": "C2",
+      "comment": "Ma in questa particolare posizione il bianco può chiudere il gioco sul bordo nord giocando in <b>C2</b> e guadagnando così un tempo di gioco."
+    }
+  ]
+}

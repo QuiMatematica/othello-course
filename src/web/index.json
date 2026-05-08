@@ -582,6 +582,16 @@
           ]
         },
         {
+          "href": "pattern3/",
+          "title": "Pattern e tesuji sui bordi",
+          "pages": [
+            {
+              "href": "attacco-al-tre.php",
+              "title": "Attacco al tre sbilanciato"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

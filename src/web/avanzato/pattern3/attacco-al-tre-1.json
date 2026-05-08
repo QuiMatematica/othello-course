@@ -12,10 +12,16 @@
   "turn": "black",
   "moves": [
     {
-      "move": "B1"
+      "move": "B1",
+      "comment": "Il nero inizia l'attacco. Nota che dopo questa mossa il bianco non può giocare nè in <b>C1</b> nè in <b>D1</b>. Il nero ha già guadagnato un tempo di gioco."
     },
     {
-      "move": ""
+      "move": "E7",
+      "comment": "Il bianco cerca una mossa poco invasiva."
+    },
+    {
+      "move": "D1",
+      "comment": "Il nero chiude l'attacco. Ha già l'accesso all'angolo <b>H1</b> ma chiaramente gli conviene aspettare che il bianco giochi in <b>C1</b>. Ha comunque guadagnato due tempi di gioco, costringendo il bianco ad aprire il gioco altrove."
     }
   ]
 }

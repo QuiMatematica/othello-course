@@ -10,15 +10,19 @@
     "-######-"
   ],
   "turn": "black",
+  "comment": "Il nero può sembrare in difficoltà, ma ha ancora una possibilità per recuperare la situazione.",
   "moves": [
     {
-      "move": "A4"
+      "move": "A4",
+      "comment": "Con questa mossa il nero offre un tempo di gioco al bianco in <b>A2</b>. Ma è voluto."
     },
     {
-      "move": "A2"
+      "move": "A2",
+      "comment": "Il bianco non si lascia sfuggire questa occasione, però..."
     },
     {
-      "move": "B7"
+      "move": "B7",
+      "comment": "Il nero ora può attaccare il cinque.<br>Ora, cerchiamo di fare il punto della situazione. Se il bianco prende l'angolo <b>A8</b> il nero perderà il bordo sud. Però si può prima incuneare in <b>A7</b> e poi prendere tutto il bordo ovest. Inoltre potrà giocare, a tempo debito, nel buco nero <b>G7</b>. Il finale perfetto è 45 a 19 per il nero."
     }
   ]
 }

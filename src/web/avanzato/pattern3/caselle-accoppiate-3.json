@@ -1,0 +1,43 @@
+{
+  "position": [
+    "-######-",
+    "--#OO#--",
+    "O-O##O#-",
+    "OOOO#O##",
+    "OOO#####",
+    "OOO#OO##",
+    "--#OOO--",
+    "--O--O--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Prima di giocare nelle caselle accoppiate il nero deve cedere l'angolo <b>A8</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Poniamo che il bianco risponda subito nell'angolo."
+    },
+    {
+      "move": "E8",
+      "comment": "Adesso il nero può giocare in <b>E8</b>.<br>Ora il bianco deve risolvere un diletta. Se gioca in <b>B8</b> il nero può prima incunearsi in <b>D8</b> e poi in <b>A7</b>. Se invece..."
+    },
+    {
+      "move": "D8",
+      "comment": "Se invece il bianco gioca nella casella accoppiata <b>D8</b> gira la pedina <b>C7</b> e questo permetterà al nero di guadagnare due tempi di gioco."
+    },
+    {
+      "move": "B8",
+      "comment": "Prima il nero si incunea in <b>B8</b>."
+    },
+    {
+      "move": "G2",
+      "comment": "Il bianco nel frattempo può allungare la diagonale nera."
+    },
+    {
+      "move": "A7",
+      "comment": "Poi il nero si incunea anche in <b>A7</b> guadagnando così due tempi di gioco."
+    }
+  ]
+}

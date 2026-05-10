@@ -1,0 +1,23 @@
+{
+  "position": [
+    "--------",
+    "---##O-O",
+    "--###OOO",
+    "O-###O#O",
+    "-O#####O",
+    "-OO###OO",
+    "--#OOO-O",
+    "--O--O--"
+  ],
+  "turn": "black",
+  "moves": [
+    {
+      "move": "E8",
+      "comment": "Il nero muove in una delle caselle accoppiate, invitando il bianco a rispondere in <b>D8</b>."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco risponde nella casella accoppiata. Tuttavia con questa mossa perde l'accesso alla casella <b>B8</b> che poteva essere un utile tempo di gioco. Inoltre perde accesso alla regione a sud-est. Ora il nero otterrà una facile vittoria muovendo, per esempio, in <b>F1</b>."
+    }
+  ]
+}

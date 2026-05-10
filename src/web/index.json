@@ -600,6 +600,10 @@
             {
               "href": "tempo-offerto.php",
               "title": "La trappola del tempo offerto"
+            },
+            {
+              "href": "caselle-accoppiate.php",
+              "title": "Le trappole delle caselle accoppiate"
             }
           ]
         },

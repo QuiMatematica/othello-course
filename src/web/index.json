@@ -600,6 +600,10 @@
             {
               "href": "mangiare.php",
               "title": "Cosa mangiare durante un torneo di Othello?"
+            },
+            {
+              "href": "tilt.php",
+              "title": "Tilt Queuing: perché quando giochiamo male non riusciamo a smettere?"
             }
           ]
         }

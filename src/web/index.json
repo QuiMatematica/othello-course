@@ -604,6 +604,10 @@
             {
               "href": "caselle-accoppiate.php",
               "title": "Le trappole delle caselle accoppiate"
+            },
+            {
+              "href": "suekuni-trap.php",
+              "title": "Suekuni trap"
             }
           ]
         },

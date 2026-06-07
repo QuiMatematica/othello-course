@@ -1,0 +1,50 @@
+{
+  "position": [
+    "--##O---",
+    "--##OO--",
+    "OOO##OO#",
+    "-O####OO",
+    "OOOOOOOO",
+    "########",
+    "--##O---",
+    "--#-----"
+  ],
+  "turn": "black",
+  "played": "H4",
+  "add": {
+    "rects": [
+      {
+        "ul": "F1",
+        "dr": "F1",
+        "color": "red"
+      },
+      {
+        "ul": "G1",
+        "dr": "G1",
+        "color": "red"
+      },
+      {
+        "ul": "H1",
+        "dr": "H1",
+        "color": "red"
+      },
+      {
+        "ul": "G2",
+        "dr": "G2",
+        "color": "red"
+      },
+      {
+        "ul": "H2",
+        "dr": "H2",
+        "color": "red"
+      }
+    ],
+    "arrows": [
+      {
+        "start": [850, 450],
+        "end": [850, 250],
+        "color": "red"
+      }
+    ]
+  }
+}

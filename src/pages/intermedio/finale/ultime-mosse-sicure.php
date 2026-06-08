@@ -17,7 +17,7 @@ essenzialmente per due ragioni:</p>
   <li>il giocatore con meno mosse sicure non ha nessun interesse a lanciarsi in una
   battaglia fino "all'ultima mossa sicura": egli spesso cercherà di sacrificare subito
   un angolo per recuperare un
-  <a href="../tempi-di-gioco/chapter.php">tempo di gioco</a>, grazie alla
+  <a href="../tempi-di-gioco/un-tempo.php">tempo di gioco</a>, grazie alla
   <a href="../parita/chapter.php">parità</a>.</li>
 </ul>
 

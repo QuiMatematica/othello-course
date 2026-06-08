@@ -92,7 +92,7 @@ seguito senza che l'avversario abbia nessuna possibilità di replica nella stess
 <h2>Una definizione più completa</h2>
 
 <p>Per tentare di dare una definizione di <i>swindle</i> che consideri tutti i casi possiamo basarci
-    sul concetto di <a href="../../intermedio/tempi-di-gioco/chapter.php">tempo di gioco</a>.</p>
+    sul concetto di <a href="../../intermedio/tempi-di-gioco/un-tempo.php">tempo di gioco</a>.</p>
 
 <p>Prova a ripercorrere gli esempi di questa pagina. Vedrai che dove c'è stato uno <i>swindle</i> il giocatore
 truffatore ha sempre guadagnato due tempi di gioco nella zona dove ha giocato.</p>

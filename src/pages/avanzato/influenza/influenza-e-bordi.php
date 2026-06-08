@@ -5,7 +5,7 @@
 
 <ul>
   <li>conquistare dei
-      <a href="../../intermedio/tempi-di-gioco/chapter.php" title="I tempi di gioco"><b>tempi di gioco</b></a>
+      <a href="../../intermedio/tempi-di-gioco/un-tempo.php" title="I tempi di gioco"><b>tempi di gioco</b></a>
       e non consentire all'avversario di farlo;</li>
   <li>preparare gli spazi adeguati per giocare la
       <a href="../../intermedio/parita/chapter.php" title="La parità"><b>parità</b></a>;</li>

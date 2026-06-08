@@ -48,7 +48,7 @@
 
 	<p>Il giocatore attaccato non è costretto a prendere subito l'angolo. Se non lo fa, l'attaccante ha
         comunque già ottenuto un vantaggio: il guadagno di un
-        <a href="../tempi-di-gioco/chapter.php">tempo di gioco</a>.</p>
+        <a href="../tempi-di-gioco/un-tempo.php">tempo di gioco</a>.</p>
 
 	<h2>Tocca a te</h2>
 

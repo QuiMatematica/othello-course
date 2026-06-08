@@ -586,6 +586,10 @@
           "title": "Pattern e tesuji sui bordi",
           "pages": [
             {
+              "href": "tesuji-e-bordi.php",
+              "title": "Pattern e tesuji sui bordi"
+            },
+            {
               "href": "doppio-tempo.php",
               "title": "Doppio tempo sul bordo"
             },

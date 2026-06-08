@@ -20,7 +20,7 @@ Prova a individuare la sequenza corretta prima di osservarla sul diagramma.</p>
 <h2>Falso swindle</h2>
 
 <p>Attenzione. Il fatto che il tuo avversario non abbia la possibilità di replicare alla prima mossa non vuol dire
-che hai giocato uno swindle. L'avversario potrebbe, infatti, replicare dopo la seconda mossa, e questo sarebbe un problema
+    che hai giocato uno <i>swindle</i>. L'avversario potrebbe, infatti, replicare dopo la seconda mossa, e questo sarebbe un problema
 perché significa che si è preso la parità.</p>
 
 <p>&Egrave; quanto accade nel diagramma <span data-board-ref="swindle-in-tre-2"></span>. Il bianco gioca

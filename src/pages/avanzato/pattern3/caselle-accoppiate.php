@@ -27,7 +27,7 @@ svantaggio o non rispondere e perdere così due tempi di gioco?</p>
     <board data-type="show" data-label="caselle-accoppiate-2" data-file="caselle-accoppiate-2.json"></board>
 </gather>
 
-<p>La posizione del diagramma <spam data-board-ref="caselle-accoppiate-3"></spam>, invece, è più complesso.
+<p>La posizione del diagramma <spam data-board-ref="caselle-accoppiate-3"></spam>, invece, è più complessa.
 Il nero non ha vantaggio a giocare né in <b>D8</b> né in <b>E8</b>: il bianco non solo può rispondere serenamente
 nella corrispondente casella accoppiata, ma ottiene anche accesso alle caselle <b>C</b> adiacenti. Tuttavia
 un modo c'è per approfittare della posizione.</p>

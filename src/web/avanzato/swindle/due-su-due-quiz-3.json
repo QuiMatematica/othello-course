@@ -10,7 +10,7 @@
     "#OOOO##-"
   ],
   "turn": "black",
-  "comment": "Vinci grazie a uno swindle.",
+  "comment": "Vinci grazie a uno <i>swindle</i>.",
   "moves": [
     {
       "move": "G7",
@@ -32,7 +32,7 @@
     },
     {
       "move": "A1",
-      "comment": "Ora puoi giocare lo swindle. Primo tempo. Il bianco passa"
+      "comment": "Ora puoi giocare lo <i>swindle</i>. Primo tempo. Il bianco passa"
     },
     {
       "move": "B1",

@@ -11,7 +11,7 @@
   ],
   "played": "H8",
   "turn": "white",
-  "comment": "Per l'alternanza dei colori tocca al bianco giocare per prima nella regione rimasta. La Suekuni trap non è efficace e il bianco vince o perde solo in base alle pedine e alle posizioni che ho ottenuto altrove.<br>Il diagramma mostra il finale perfetto, in questo caso vincente per il nero.",
+  "comment": "Per l'alternanza dei colori tocca al bianco giocare per primo nella regione rimasta. La Suekuni trap non è efficace e il bianco vince o perde solo in base alle pedine e alle posizioni che ho ottenuto altrove.<br>Il diagramma mostra il finale perfetto, in questo caso vincente per il nero.",
   "moves": [
     {
       "move": "H2"

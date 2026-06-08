@@ -1,6 +1,12 @@
 <p>Stoccolma, Campionato Mondiale del 2003. Al decimo turno di gioco si incontrano i due giocatori più forti
 del momento: il giapponese Makoto Suekuni con il nero e lo statunitense Ben Seeley con il bianco.</p>
 
+<div class="card mx-auto my-3" style="width: fit-content; max-width: 100%;">
+	<div class="card-body">
+		<img src="seeley-suekuni.jpg" alt="Ben Seeley e Makoto Suekuni" class="card-img-top img-fluid">
+	</div>
+</div>
+
 <p>Spoiler: Suekuni e Seeley saranno i finalisti di quel mondiale, vinto dall'americano.</p>
 
 <p>Il diagramma <span data-board-ref="suekuni-trap-1"></span> mostra la partita dalla mossa 35 alla mossa 38.</p>

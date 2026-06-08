@@ -1,0 +1,43 @@
+{
+  "position": [
+    "--##O---",
+    "--##OO--",
+    "OOO##O##",
+    "-O####O-",
+    "OOOO###-",
+    "########",
+    "--#OO---",
+    "--------"
+  ],
+  "match": {
+    "black": {
+      "name": "Makoto Suekuni",
+      "flag": "jp"
+    },
+    "white": {
+      "name": "Ben Seeley",
+      "flag": "us"
+    },
+    "tournament": "World Championship 2003, Stockholm"
+  },
+  "controls": {
+    "match": true
+  },
+  "turn": "white",
+  "played": "G6",
+  "comment": "Suekuni ha appena giocato in <b>G6</b> rafforzando la posizione sul bordo est. La posizione è piuttosto equilibrata: tre bordi (ovest, nord ed est) sono in via di definizione mentre il quarto (sud) è ancora del tutto aperto.",
+  "moves": [
+    {
+      "move": "H5",
+      "comment": "Seeley decide di riempire il bordo est.<br>La risposta più spontanea del nero, in questo caso, sarebbe di rispondere in <b>H4</b> completando il bordo. Tuttavia Suekuni ha un'idea diversa."
+    },
+    {
+      "move": "C8",
+      "comment": "Suekuni rinuncia alla risposta in <b>H4</b>. Così facendo perde due tempi di gioco sul bordo est, visto che Seeley potrà rispondere lui in <b>H4</b>. Il giapponese può permettersi di perdere questi due tempi perché, oltre a questa mossa in <b>C8</b>, ha la possibilità di giocare anche in <b>F8</b> ottenendo una posizione molto solida sul bordo sud."
+    },
+    {
+      "move": "H4",
+      "comment": "Seeley non perde l'occasione di guadagnare il secondo tempo di gioco ad est. Ma in verità era proprio quello che Suekuni voleva."
+    }
+  ]
+}

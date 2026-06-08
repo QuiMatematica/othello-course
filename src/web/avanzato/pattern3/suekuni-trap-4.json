@@ -1,0 +1,117 @@
+{
+  "position": [
+    "--##O---",
+    "--##OO--",
+    "OOO##OO#",
+    "-O####OO",
+    "OOOOOOOO",
+    "########",
+    "--##O---",
+    "--#-----"
+  ],
+  "match": {
+    "black": {
+      "name": "Makoto Suekuni",
+      "flag": "jp"
+    },
+    "white": {
+      "name": "Ben Seeley",
+      "flag": "us"
+    },
+    "tournament": "World Championship 2003, Stockholm"
+  },
+  "controls": {
+    "match": true
+  },
+  "turn": "black",
+  "played": "H4",
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "Come atteso, il nero consolida la posizione sul bordo sud."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco preferisce giocare nella regione dispari che gli è rimasta, ovvero quella a sud-est. Ma <b>F7</b> non andava bene per la semplice risposta in <b>G8</b>. Preferisce questa <b>G7</b> con l'obiettivo di incunearsi in <b>H7</b>."
+    },
+    {
+      "move": "F7",
+      "comment": "Semplice risposta del nero, che va semplicemente a riempire gli spazi.<br>Ti faccio notare che si è formata una regione di iper-parità sul bordo sud: <b>D8</b> ed <b>E8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Seeley offre nuovamente l'angolo <b>H8</b> per incunearsi in <b>H7</b> e giocare l'ultima mossa della regione.<br>Malgrado questa mossa, le due caselle centrali formano ancora una regione di iper-parità."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero accetta l'angolo."
+    },
+    {
+      "move": "H7",
+      "comment": "E il bianco chiude la regione.<br>Ora tocca al nero, che a disposizione una regione dispari dove giocare."
+    },
+    {
+      "move": "A4",
+      "comment": "Il nero gioca nella regione dispari, offre un cinque sul bordo ovest, pronto ad attaccarlo subito in <b>B2</b>."
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco accetta il cinque."
+    },
+    {
+      "move": "B2",
+      "comment": "Il nero attacca il cinque."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco accetta subito l'angolo, anche perché sta giocando in una regione dispari.<br>Ora, proprio per questioni di parità, il nero non ha vantaggio a giocare subito in <b>A2</b>."
+    },
+    {
+      "move": "B7",
+      "comment": "Suekuni torna a giocare in una regione dispari. &Egrave; disposto anche a rinunciare al bordo ovest pur di ottenere il massimo guadagno possibile dalla parità."
+    },
+    {
+      "move": "A8",
+      "comment": "Seeley accetta l'angolo."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero chiude la regione a sud-ovest.<br>Ora è molto evidente il gioco della parità. Al bianco rimangono due regione pari e la regione a nord-est.<br>Il nero, da parte sua, deve semplicemente rispondere in parità, e aspettare che il bianco giochi in <b>H2</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco decide di giocare a nord."
+    },
+    {
+      "move": "A2",
+      "comment": "E il nero chiude."
+    },
+    {
+      "move": "D8",
+      "comment": "Il bianco gioca a sud."
+    },
+    {
+      "move": "E8",
+      "comment": "E il nero chiude.<br>Al bianco rimane una sola mossa..."
+    },
+    {
+      "move": "H2",
+      "comment": "Ed eccolo qui, l'effetto di una mossa giocata 17 turni prima. Ora il bianco ha il pieno controllo della partita."
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero prende l'angolo e il bianco passa."
+    },
+    {
+      "move": "F1",
+      "comment": "Due conti... e questa risulta la mossa più conveniente."
+    },
+    {
+      "move": "G1"
+    },
+    {
+      "move": "G2",
+      "comment": "Suekuni vince."
+    }
+  ]
+}

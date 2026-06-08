@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--##O---",
+    "--##OO--",
+    "OOO#OOO#",
+    "-O####OO",
+    "OOOOOOOO",
+    "########",
+    "--####--",
+    "-#####--"
+  ],
+  "played": "F8",
+  "turn": "white",
+  "comment": "Il bianco ha la possibilità di disinnescare la Suekuni trap, andando a cedere l'angolo <b>H8</b>.",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Il bianco cede l'angolo <b>H8</b>."
+    },
+    {
+      "move": "H8",
+      "comment": "Per quanto negativa, al nero conviene giocare la mossa in <b>H8</b>. Ma ora, sul bordo est, non è più presente la struttura a incastro. La Suekuni trap è stata disinnescata."
+    },
+    {
+      "move": "G7",
+      "comment": "Questo disinnesco non è sempre conveniente. Nella posizione proposta, per esempio, il bianco ha potuto giocarlo anche perché aveva questo meraviglioso <i>swindle</i> che gli permette di guadagnare due tempi di gioco a sud-est."
+    }
+  ]
+}

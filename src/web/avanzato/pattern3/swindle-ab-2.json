@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "-O###---",
+    "-O##OO--",
+    "-##OO#--",
+    "###OO---",
+    "--------",
+    "--------"
+  ],
+  "played": "A6",
+  "turn": "white",
+  "comment": "Il nero ha appena giocato <b>A6</b>, invitando il bianco a muovere in <b>A5</b>.",
+  "moves": [
+    {
+      "move": "A5",
+      "comment": "Il bianco non esita, anche perché <b>A5</b> è una mossa calma. Ma gira la pedina in <b>C5</b> e permette al nero di rispondere in <b>A3</b> senza voltare la pedina <b>B4</b>."
+    },
+    {
+      "move": "A3",
+      "comment": "Questa situazione lascia il bianco con la dura scelta di prendere un bordo sbilanciato o lasciare un tempo in più all'avversario in <b>A4</b>."
+    }
+  ]
+}

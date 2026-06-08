@@ -1,0 +1,29 @@
+{
+  "position": [
+    "--#-----",
+    "--#-----",
+    "-##OOO-#",
+    "OOOOOOO#",
+    "-O####O#",
+    "##OOO###",
+    "--#O#O-#",
+    "-OOOOOO-"
+  ],
+  "played": "A4",
+  "turn": "black",
+  "comment": "Un altro esempio di Suekuni trap.",
+  "moves": [
+    {
+      "move": "A3",
+      "comment": "Il nero predispone la trappola."
+    },
+    {
+      "move": "A5",
+      "comment": "Il bianco preferisce rispondere sul bordo per non perdere due tempi di gioco. Non vuole nemmeno sbilanciarsi per non rischiare qualche attacco. Ma allora non rimane che questa <b>A5</b> che completa la Suekuni trap.<br>Nota come in questo caso la regione dispari è formata solo da tre caselle, non cinque come nell'esempio precedente."
+    },
+    {
+      "move": "F2",
+      "comment": "A questo punto il nero deve solo aspettare che vengano esaurite tutte le mosse e il bianco sia così costretto a giocare in <b>A7</b> a cui il nero risponderà prima in <b>A8</b> e poi in <b>B7</b>."
+    }
+  ]
+}

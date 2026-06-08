@@ -47,7 +47,7 @@ Ma in una sola di queste puoi giocare uno swindle con il nero. Quale? E dove dev
 
 <h2>Difendersi dagli swindle</h2>
 
-<p>Questo <b>esercizio comparativo</b> vuole insegnare a difenderti dagli swindle.
+<p>Questo <b>esercizio comparativo</b> vuole insegnare a difenderti dagli <i>swindle</i>.
     I diagrammi <span data-board-ref="due-su-due-quiz-2a"></span>
 e <span data-board-ref="due-su-due-quiz-2b"></span> presentano la stessa identica posizione.
 Nel diagramma <span data-board-ref="due-su-due-quiz-2a"></span> devi giocare la mossa

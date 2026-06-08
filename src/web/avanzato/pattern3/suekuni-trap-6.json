@@ -1,0 +1,32 @@
+{
+  "position": [
+    "O####O--",
+    "O#O###--",
+    "OOO#####",
+    "OO#OO###",
+    "OO##O###",
+    "OO#O#O##",
+    "OO######",
+    "O#######"
+  ],
+  "played": "H8",
+  "turn": "black",
+  "comment": "Per l'alternanza dei colori tocca al nero giocare per primo nella regione rimasta.",
+  "moves": [
+    {
+      "move": "G1",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "H1",
+      "comment": "Malgrado tutto, questa è ancora la mossa migliore del bianco. Ma ora il nero passa e ottiene la parità."
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "G2",
+      "comment": "Il nero vince."
+    }
+  ]
+}

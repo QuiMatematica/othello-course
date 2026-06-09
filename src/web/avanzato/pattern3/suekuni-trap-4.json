@@ -64,7 +64,7 @@
     },
     {
       "move": "A1",
-      "comment": "Il bianco accetta subito l'angolo, anche perché sta giocando in una regione dispari.<br>Ora, proprio per questioni di parità, il nero non ha vantaggio a giocare subito in <b>A2</b>."
+      "comment": "Il bianco accetta subito l'angolo, anche perché sta giocando in una regione dispari.<br>Ora, per non perdere la parità conquistata, il nero non può giocare in <b>A2</b>."
     },
     {
       "move": "B7",

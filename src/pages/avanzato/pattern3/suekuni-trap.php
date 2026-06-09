@@ -27,7 +27,7 @@ mossa a disposizione del bianco è <b>H2</b>, che ovviamente offre la scontata r
 
 <p>Ora... facciamo un po' di conti per quanto riguarda la <a href="../../intermedio/parita/chapter.php">parità</a>.
 &Egrave; il turno del nero. Nessuno dei due giocatori ha passato. Quindi c'è un numero <i>pari</i> di caselle vuote.
-Per la precisione, visto che è appena stata giocata la mosa 38, ci sono 22 caselle vuote.</p>
+Per la precisione, visto che è appena stata giocata la mossa 38, ci sono 22 caselle vuote.</p>
 
 <p>Il bianco ha un enorme svantaggio a giocare nella regione a nord-est. Quindi farà di tutto per giocare altrove.</p>
 

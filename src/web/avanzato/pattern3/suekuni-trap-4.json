@@ -36,7 +36,7 @@
     },
     {
       "move": "F7",
-      "comment": "Semplice risposta del nero, che va semplicemente a riempire gli spazi.<br>Ti faccio notare che si è formata una regione di iper-parità sul bordo sud: <b>D8</b> ed <b>E8</b>."
+      "comment": "Semplice risposta del nero, che va a riempire gli spazi.<br>Ti faccio notare che si è formata una regione di iper-parità sul bordo sud: <b>D8</b> ed <b>E8</b>."
     },
     {
       "move": "G8",
@@ -48,7 +48,7 @@
     },
     {
       "move": "H7",
-      "comment": "E il bianco chiude la regione.<br>Ora tocca al nero, che a disposizione una regione dispari dove giocare."
+      "comment": "E il bianco chiude la regione.<br>Ora tocca al nero, che ha disposizione una regione dispari dove giocare."
     },
     {
       "move": "A4",
@@ -96,7 +96,7 @@
     },
     {
       "move": "H2",
-      "comment": "Ed eccolo qui, l'effetto di una mossa giocata 17 turni prima. Ora il bianco ha il pieno controllo della partita."
+      "comment": "Ed eccolo qui, l'effetto di una mossa giocata 17 turni prima. Ora il nero ha il pieno controllo della partita."
     },
     {
       "move": "H1",

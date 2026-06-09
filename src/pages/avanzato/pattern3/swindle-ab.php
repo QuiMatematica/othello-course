@@ -24,8 +24,8 @@ a creare nel bordo superiore per giocare <b>C1</b>!</p>
 <board data-type="show" data-label="swindle-ab-1" data-file="swindle-ab-1.json"></board>
 
 <p>Il diagramma <span data-board-ref="swindle-ab-2"></span> mostra una variante su questo tema; questa posizione in
-particolare è tratta da un'apertura molto giocata tra i più esperti, e anche per questo, modelli del genere,
-capitano spesso.</p>
+    particolare è tratta da un'apertura molto giocata tra i più esperti. Si tratta quindi di un <i>pattern</i>
+che capita spesso.</p>
 
 <board data-type="show" data-label="swindle-ab-2" data-file="swindle-ab-2.json"></board>
 

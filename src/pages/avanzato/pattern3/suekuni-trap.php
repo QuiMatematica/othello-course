@@ -19,7 +19,7 @@ del momento: il giapponese Makoto Suekuni con il nero e lo statunitense Ben Seel
 
 <board data-type="show" data-label="suekuni-trap-2" data-file="suekuni-trap-2.json"></board>
 
-<p>Girando la pedina <b>G3</b>, si forma una regione formata da cinque caselle. L'elemento interessante è che l'unica
+<p>Si forma una regione formata da cinque caselle. L'elemento interessante è che, avendo girato la pedina <b>G3</b>, l'unica
 mossa a disposizione del bianco è <b>H2</b>, che ovviamente offre la scontata risposta in <b>H1</b>
     (diagramma <span data-board-ref="suekuni-trap-3"></span>).</p>
 
@@ -52,15 +52,15 @@ non ha mai desiderato questa paternità, ma ormai il nome è assegnato.</p>
     prevede la presenza di:</p>
 <ul>
     <li>il caratteristico bordo con struttura a incastro (riquadro giallo);</li>
-    <li>una regione adiacente dispari in cui l'ultima mossa del bianco risulta essere la casella <b>C</b> che andrà a
-    cedere l'angolo e far perdere una mossa (caselle rosse);</li>
+    <li>una regione adiacente dispari in cui l'unica mossa del bianco risulta essere la casella <b>C</b> che andrà a
+    cedere l'angolo e far perdere un turno (caselle rosse);</li>
     <li>affinché l'unica mossa del bianco sia la casella <b>C</b>, è importante anche il controbordo, in particolare
-        la pedine affacciata sulla regione deve essere bianca (riquadro blu).</li>
+        la pedina affacciata sulla regione deve essere bianca (riquadro blu).</li>
 </ul>
 
 <board data-type="show" data-label="suekuni-trap-pattern" data-file="suekuni-trap-pattern.json"></board>
 
-<p>Ovviamente la struttura <i>a incastro</i> potrebbe anche essere diversa. Ma soprattutto deve rimanere fino alla
+<p>Ovviamente la struttura <i>a incastro</i> potrebbe anche essere diversa. E deve rimanere fino alla
 fine della partita, quando finalmente si sfrutteranno le caratteristiche dalla posizione. Per esempio, rimanendo
 sempre nella partita analizzata, anche alla mossa 55 è presente la struttura, sebbene sia stata modificata dalla mosse
 giocate (riquadro giallo nel diagramma <span data-board-ref="suekuni-trap-pattern-finale"></span>).</p>
@@ -105,9 +105,8 @@ la struttura del bordo sud del diagramma <span data-board-ref="suekuni-trap-1"><
 
 <p>Il diagramma <span data-board-ref="suekuni-trap-8"></span> è presentato da Tetsuya Nakajima in un video
 proprio sulle Suekuni trap <a href="https://www.youtube.com/watch?v=wUN4jbnUqDY" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-box-arrow-right"></i>
-    </a>. Il video ha l'audio in giapponese, ma con i sottotitoli automatici si riesce comunque
-a seguire la spiegazione. Interessante che chiami <i>bomba</i> la struttura a incastro sul bordo.</p>
+        <i class="bi bi-box-arrow-right"></i></a>. Il video ha l'audio in giapponese, ma con i sottotitoli automatici si riesce comunque
+a seguire la spiegazione. &Egrave; interessante che chiami <i>bomba</i> la struttura a incastro sul bordo.</p>
 
 <board data-type="show" data-label="suekuni-trap-8" data-file="suekuni-trap-8.json"></board>
 

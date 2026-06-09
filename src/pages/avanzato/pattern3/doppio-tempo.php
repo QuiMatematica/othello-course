@@ -1,6 +1,6 @@
 <p>La situazione presentata nel diagramma <span data-board-ref="doppio-tempo-1"></span> è piuttosto rara.
 Ma se l'opportunità si presenta, va sicuramente colta. Il guadagno di due tempi di gioco e la trasformazione di
-    un quattro sul bordo in un sei è sicuramente un vantaggio molto forte.</p>
+    un quattro sbilanciato sul bordo in un sei è sicuramente un vantaggio molto forte.</p>
 
 <board data-type="show" data-label="doppio-tempo-1" data-file="doppio-tempo-1.json"></board>
 

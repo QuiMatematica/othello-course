@@ -358,4 +358,45 @@ export default class Position {
         }
     }
 
+    toJSON() {
+        let blackBits = 0n;
+        let whiteBits = 0n;
+
+        for (let x = 0; x < 8; x++) {
+            for (let y = 0; y < 8; y++) {
+
+                const pos = BigInt(x * 8 + y);
+
+                if (this.grid[x][y] === BLACK) {
+                    blackBits |= (1n << pos);
+                }
+                else if (this.grid[x][y] === WHITE) {
+                    whiteBits |= (1n << pos);
+                }
+            }
+        }
+
+        let turn = 0;
+        if (this.turn === BLACK) {
+            turn = 1;
+        }
+        else if (this.turn === WHITE) {
+            turn = 2;
+        }
+
+        let sequence = "";
+        let curPosition = this;
+        while (curPosition.nextPosition != null) {
+            curPosition = curPosition.nextPosition;
+            sequence += curPosition.played.toString();
+        }
+
+        return {
+            black: blackBits,
+            white: whiteBits,
+            turn: turn,
+            sequence: sequence,
+        };
+    }
+
 }

@@ -8,6 +8,7 @@ export default class Controls {
     prev;
     next;
     last;
+    study;
 
     constructor(container, counter) {
         this.counter = counter;
@@ -68,6 +69,11 @@ export default class Controls {
         return this;
     }
 
+    addStudyButton() {
+        this.study = this.createIconButton("bi-search", onStudyClick);
+        return this;
+    }
+
     update(position) {
         if (this.first != null) {
             this.first.disabled = (position.prevPosition == null);
@@ -101,3 +107,8 @@ function onLastClick(event) {
     getBoard(event).goToLastPosition();
 }
 
+function onStudyClick(event) {
+    const board = getBoard(event);
+    const json = board.getJSON();
+    console.log(json);
+}

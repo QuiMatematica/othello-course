@@ -92,7 +92,7 @@ seguito senza che l'avversario abbia nessuna possibilità di replica nella stess
 <h2>Una definizione più completa</h2>
 
 <p>Per tentare di dare una definizione di <i>swindle</i> che consideri tutti i casi possiamo basarci
-    sul concetto di <a href="../../intermedio/tempi-di-gioco/chapter.php">tempo di gioco</a>.</p>
+    sul concetto di <a href="../../intermedio/tempi-di-gioco/un-tempo.php">tempo di gioco</a>.</p>
 
 <p>Prova a ripercorrere gli esempi di questa pagina. Vedrai che dove c'è stato uno <i>swindle</i> il giocatore
 truffatore ha sempre guadagnato due tempi di gioco nella zona dove ha giocato.</p>
@@ -119,7 +119,7 @@ e capire se saremmo in grado di giocarle in partita.</p>
     <li>giocare due mosse in una regione a due;</li>
     <li>giocare tre mosse in una regione a quattro;</li>
     <li>giocare swindle in una regione a tre;</li>
-    <li>segue una pagina con una raccolta di quiz su queste forme base di swindle.</li>
+    <li>segue una pagina con una raccolta di quiz su queste forme base di <i>swindle</i>.</li>
 </ul>
 
 <p>Nel prossimo capitolo invece ti presento gli <i>swindle</i> più importanti e famosi, quelli che hanno meritato

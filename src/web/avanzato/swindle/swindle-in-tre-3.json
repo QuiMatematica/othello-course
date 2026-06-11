@@ -10,7 +10,7 @@
     "######--"
   ],
   "turn": "white",
-  "comment": "Il bianco crede di giocare uno swindle... ma sbaglia e perde.",
+  "comment": "Il bianco crede di giocare uno <i>swindle</i>... ma sbaglia e perde.",
   "moves": [
     {
       "move": "G8",

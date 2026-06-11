@@ -18,7 +18,7 @@
     },
     {
       "move": "B1",
-      "comment": "Il bianco inizia lo swindle. Ma attenzione. Non potrà giocare in <b>G1</b> altrimenti il nero potrà incunearsi in <b>E1</b>. E <b>E1</b> causa il formarsi di un cinque completo che è facilmente attaccabile."
+      "comment": "Il bianco inizia lo <i>swindle</i>. Ma attenzione. Non potrà giocare in <b>G1</b> altrimenti il nero potrà incunearsi in <b>E1</b>. E <b>E1</b> causa il formarsi di un cinque completo che è facilmente attaccabile."
     },
     {
       "move": "H5",

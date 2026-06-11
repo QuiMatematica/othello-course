@@ -33,7 +33,7 @@ momento, senza fretta.</p>
 <b>D2</b>, <b>E2</b> e <b>F2</b>. Però osserva: ognuna di queste mosse gira almeno due delle
 pedine esterne del nero. Quindi, se il nero non offre altre
 mosse a nord, il bianco può giocare solo tre di quelle quattro mosse. Quindi ha a disposizione
-    solo <b>tre <a href="../../intermedio/tempi-di-gioco/chapter.php">tempi di gioco</a></b>.</p>
+    solo <b>tre <a href="../../intermedio/tempi-di-gioco/un-tempo.php">tempi di gioco</a></b>.</p>
 
 <p>La mossa di riserva del nero, la <b>B8</b>, fa perdere un tempo all'avversario.
     Lo vediamo nel diagramma 2.</p>

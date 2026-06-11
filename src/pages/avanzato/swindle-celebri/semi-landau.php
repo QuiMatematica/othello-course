@@ -95,7 +95,7 @@ giocarla fino in fondo.</p>
     l'attaccante cede un angolo e gioca uno swindle nella regione dell'angolo opposto.</p>
 
 <p>Anche queste manovre hanno in comune con le altre il controllo del
-    controbordo come strumento per realizzare lo swindle.</p>
+    controbordo come strumento per realizzare lo <i>swindle</i>.</p>
 
 <p>Nella posizione del diagramma <span data-board-ref="landau-2"></span> il nero cede il
     bordo nord e l'angolo a nord-ovest, ma in cambio gioca uno swindle nella regione a nord-est.</p>

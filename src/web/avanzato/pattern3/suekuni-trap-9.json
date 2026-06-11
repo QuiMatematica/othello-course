@@ -1,0 +1,27 @@
+{
+  "position": [
+    "-######-",
+    "O-OO##--",
+    "O#O##O##",
+    "OOOOOOOO",
+    "O#O###O-",
+    "O#O##O##",
+    "O-#OOO--",
+    "-######-"
+  ],
+  "played": "G1",
+  "turn": "white",
+  "comment": "Il bianco muove e vince.",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Esatto: la mossa corretta è proprio <b>H2</b>.<br><b>H5</b> avrebbe portato a una Suekuni trap. Tutte le altre mosse erano perdenti.",
+      "errors": [
+        {
+          "move": "H5",
+          "comment": "Apparentemente hai guadagnato un tempo di gioco incastrandoti in questa posizione. Ma ti sei appena infilato in una Suekuni trap, che ti costerà molto cara. Il finale perfetto è 44 a 20 per il nero."
+        }
+      ]
+    }
+  ]
+}

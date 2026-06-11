@@ -43,7 +43,7 @@ Probabilmente la sua mossa migliore è <b>E2</b>, che costringe il bianco a gioc
 
 <p>Se invece le caselle <b>G6</b> e <b>H5</b> sono occupate da pedine di colori diversi,
     non è più possibile
-ottenere tutti e tre i tempi dello swindle. Infatti se il bianco gioca in <b>G8</b> il nero
+    ottenere tutti e tre i tempi dello <i>swindle</i>. Infatti se il bianco gioca in <b>G8</b> il nero
 si può incuneare in <b>E8</b>. Se invece il bianco gioca in <b>E8</b> gira anche <b>F7</b> e non
 potrà più giocare in <b>G8</b>. Tra le due opzioni è chiaramente preferibile la seconda.
 Vedi il diagramma <span data-board-ref="boscov-base-misto"></span>.</p>

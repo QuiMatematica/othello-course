@@ -1,0 +1,38 @@
+{
+  "position": [
+    "---####-",
+    "--OO##--",
+    "-#####O-",
+    "-#####O-",
+    "-O###OO-",
+    "--###O--",
+    "--------",
+    "--------"
+  ],
+  "turn": "black",
+    "controls": {
+    "score": false,
+    "turn": true
+  },
+  "add": {
+    "borders": [
+      {
+        "ul": "D1",
+        "dr": "G1",
+        "color": "red"
+      }
+    ],
+    "arrows": [
+       {
+        "start": [450, 350],
+        "end": [250, 150],
+        "color": "yellow"
+      },
+      {
+        "start": [350, 650],
+        "end": [350, 150],
+        "color": "purple"
+      }
+    ]
+  }
+}

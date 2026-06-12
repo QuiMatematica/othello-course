@@ -384,11 +384,14 @@ export default class Position {
             turn = 2;
         }
 
+        const BASE64 =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
         let sequence = "";
         let curPosition = this;
         while (curPosition.nextPosition != null) {
             curPosition = curPosition.nextPosition;
-            sequence += curPosition.played.toString();
+            sequence += BASE64[curPosition.played.x * 8 + curPosition.played.y];
         }
 
         return {

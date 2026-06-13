@@ -21,7 +21,7 @@ export default class Controls {
 
         let buttonsContainer = document.createElement("div");
         buttonsContainer.classList.add("text-center");
-        buttonsContainer.appendChild(this. buttonGroup);
+        buttonsContainer.appendChild(this.buttonGroup);
 
         container.appendChild(buttonsContainer);
     }
@@ -110,6 +110,9 @@ function onLastClick(event) {
 function onStudyClick(event) {
     const board = getBoard(event);
     const json = board.getJSON();
+    const sequence = json.sequence
+        .replace(/\+/g, "-")
+        .replace(/\//g, "_");
     console.log(json);
-    window.location.href = `https://bbtest.quiothello.it?b=${json.black.toString(16)}&w=${json.white.toString(16)}&t=${json.turn}&s=${json.sequence}`;
+    window.location.href = `https://bbtest.quiothello.it?b=${json.black.toString(16)}&w=${json.white.toString(16)}&t=${json.turn}&s=${sequence}`;
 }

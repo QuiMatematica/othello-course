@@ -110,9 +110,13 @@ function onLastClick(event) {
 function onStudyClick(event) {
     const board = getBoard(event);
     const json = board.getJSON();
-    const sequence = json.sequence
-        .replace(/\+/g, "-")
-        .replace(/\//g, "_");
     console.log(json);
-    window.location.href = `https://bbtest.quiothello.it?b=${json.black.toString(16)}&w=${json.white.toString(16)}&t=${json.turn}&s=${sequence}`;
+    let href = `https://bbtest.quiothello.it?b=${json.black}&w=${json.white}&t=${json.turn}`;
+    if (json.sequence != null) {
+        href += `&s=${json.sequence}`;
+    }
+    if (json.played != null) {
+        href += `&p=${json.played}`;
+    }
+    window.location.href = href;
 }

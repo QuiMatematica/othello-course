@@ -384,21 +384,29 @@ export default class Position {
             turn = 2;
         }
 
-        const BASE64 =
-            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+        const BASE64MOD =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789-_";
 
-        let sequence = "";
-        let curPosition = this;
-        while (curPosition.nextPosition != null) {
-            curPosition = curPosition.nextPosition;
-            sequence += BASE64[curPosition.played.x * 8 + curPosition.played.y];
+        let sequence = null;
+        if (this.nextPosition != null) {
+            sequence = "";
+            let curPosition = this;
+            while (curPosition.nextPosition != null) {
+                curPosition = curPosition.nextPosition;
+                sequence += BASE64MOD[curPosition.played.x * 8 + curPosition.played.y];
+            }
+        }
+        let played = null;
+        if (this.played != null) {
+            played = BASE64MOD[this.played.x * 8 + this.played.y];
         }
 
         return {
-            black: blackBits,
-            white: whiteBits,
+            black: blackBits.toString(16),
+            white: whiteBits.toString(16),
             turn: turn,
             sequence: sequence,
+            played: played,
         };
     }
 

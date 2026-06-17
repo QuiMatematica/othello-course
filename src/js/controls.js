@@ -109,9 +109,13 @@ function onLastClick(event) {
 
 function onStudyClick(event) {
     const board = getBoard(event);
-    const json = board.getJSON();
+    let position = board.currentPosition;
+    while (position.prevPosition != null) {
+        position = position.prevPosition;
+    }
+    const json = position.toJSON();
     console.log(json);
-    let href = `https://bbtest.quiothello.it?b=${json.black}&w=${json.white}&t=${json.turn}`;
+    let href = `https://bb.quiothello.it?b=${json.black}&w=${json.white}&t=${json.turn}`;
     if (json.sequence != null) {
         href += `&s=${json.sequence}`;
     }

@@ -196,13 +196,6 @@ export default class MatchFileBoard {
     //     this.comment.addComment(comment);
     // }
 
-    getJSON() {
-        let position = this.currentPosition;
-        while (position.prevPosition != null) {
-            position = position.prevPosition;
-        }
-        return position.toJSON();
-    }
 }
 
 function matchFileBoardOnClick(event) {

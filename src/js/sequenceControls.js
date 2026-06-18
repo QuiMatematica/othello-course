@@ -9,7 +9,7 @@ export default class SequenceControls extends Controls {
 
     constructor(container, counter, sourceFile) {
         super(container, counter);
-        this.addFirstButton().addComputerButton().addShareButton();
+        this.addFirstButton().addComputerButton().addShareButton().addStudyButton();
         if (sourceFile != null) {
             this.addGoToSourceButton();
         }

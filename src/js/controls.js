@@ -8,6 +8,7 @@ export default class Controls {
     prev;
     next;
     last;
+    study;
 
     constructor(container, counter) {
         this.counter = counter;
@@ -20,7 +21,7 @@ export default class Controls {
 
         let buttonsContainer = document.createElement("div");
         buttonsContainer.classList.add("text-center");
-        buttonsContainer.appendChild(this. buttonGroup);
+        buttonsContainer.appendChild(this.buttonGroup);
 
         container.appendChild(buttonsContainer);
     }
@@ -68,6 +69,11 @@ export default class Controls {
         return this;
     }
 
+    addStudyButton() {
+        this.study = this.createIconButton("bi-search", onStudyClick);
+        return this;
+    }
+
     update(position) {
         if (this.first != null) {
             this.first.disabled = (position.prevPosition == null);
@@ -101,3 +107,20 @@ function onLastClick(event) {
     getBoard(event).goToLastPosition();
 }
 
+function onStudyClick(event) {
+    const board = getBoard(event);
+    let position = board.currentPosition;
+    while (position.prevPosition != null) {
+        position = position.prevPosition;
+    }
+    const json = position.toJSON();
+    console.log(json);
+    let href = `https://bb.quiothello.it?b=${json.black}&w=${json.white}&t=${json.turn}`;
+    if (json.sequence != null) {
+        href += `&s=${json.sequence}`;
+    }
+    if (json.played != null) {
+        href += `&p=${json.played}`;
+    }
+    window.location.href = href;
+}

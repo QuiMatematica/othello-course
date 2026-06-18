@@ -1,4 +1,4 @@
-import Position from "./position";
+import Position, {EMPTY} from "./position";
 import Board from "./board";
 import Score from "./score";
 import PositionComment from "./positionComment";
@@ -54,6 +54,7 @@ export default class MatchFileBoard {
             if (this.currentPosition.nextPosition.nextPosition != null) {
                 this.controls.addLastButton();
             }
+            this.controls.addStudyButton();
             this.controls.update(this.currentPosition);
         }
 
@@ -194,6 +195,7 @@ export default class MatchFileBoard {
     //     comment += 'Clicca sulle frecce per seguire la sequenza.';
     //     this.comment.addComment(comment);
     // }
+
 }
 
 function matchFileBoardOnClick(event) {

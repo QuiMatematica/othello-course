@@ -616,6 +616,16 @@
           ]
         },
         {
+          "href": "gioco-chiuso/",
+          "title": "Avversario con gioco chiuso",
+          "pages": [
+            {
+              "href": "camminare-sui-bordi.php",
+              "title": "Camminare sui bordi"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

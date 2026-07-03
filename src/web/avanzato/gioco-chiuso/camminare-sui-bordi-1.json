@@ -1,0 +1,88 @@
+{
+  "position": [
+    "--O-----",
+    "--OOOO--",
+    "-OOOOOO#",
+    "OOOO#OO#",
+    "OO####O#",
+    "OOOOOO##",
+    "--OOOO-#",
+    "--OO-O--"
+  ],
+  "turn": "black",
+  "played": "C1",
+  "moves": [
+    {
+      "move": "H2"
+    },
+    {
+      "move": "G2"
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero conquista <b>H1</b>, e il bianco può solo giocare mosse praticamente obbligate.<br>Sta al nero avere l'accortezza di non aprire il gioco in posti diversi dalla zona limitrofa all'angolo appena conquistato."
+    },
+    {
+      "move": "G1",
+      "comment": "In questo caso al nero basta muoversi dall'angolo verso la casella libera più vicina nel bordo nord..."
+    },
+    {
+      "move": "F1",
+      "comment": "... che ovviamente è <b>F1</b>.<br>Di nuovo il bianco risponderà con una mossa obbligata: <b>E1</b> (che poi è l'unica mossa sicura, ovvero che non cede angoli)."
+    },
+    {
+      "move": "E1",
+      "comment": "Il nero deve continuare imperterrito a ricercare la prima casella libera sul bordo su cui sta <i>camminando</i>."
+    },
+    {
+      "move": "D1",
+      "comment": "Il bianco ha finito le mosse sicure e ora deve giocare nella casella <b>X</b> in <b>G7</b>."
+    },
+    {
+      "move": "G7",
+      "comment": "Il nero può scegliere se continuare a camminare sull'angolo <b>B1</b> o conquistare subito l'angolo <b>H8</b>.<br><b>H8</b> può essere giocata anche in un secondo momento; <b>B1</b> lascia di nuovo il bianco senza mosse sicure."
+    },
+    {
+      "move": "B1",
+      "comment": "Il nero sceglie <b>B1</b> che lascia il bianco con la sola risposta in <b>B2</b> disponibile."
+    },
+    {
+      "move": "B2",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1"
+    },
+    {
+      "move": "A2",
+      "comment": "Di nuovo una mossa obbligata."
+    },
+    {
+      "move": "A3",
+      "comment": "Il bianco passa.<br>Ancora una volta è indifferente la scelta se continuare a giocare sul bordo ovest o ricominciare dall'angolo <b>H8</b>."
+    },
+    {
+      "move": "A7",
+      "comment": "Per coerenza con la strategia finora utilizzata il nero gioca in <b>A7</b>."
+    },
+    {
+      "move": "B7",
+      "comment": "Il bianco deve cedere anche l'ultimo angolo.<br>Mancano poche mosse alla fine e il nero può intuire la sequenza migliore per questo finale di partita. Decide così che inizierà da <b>H8</b>. Inutile dire che, sebbene con qualche pedina di differenza, anche <b>A8</b> avrebbe portato a una facile vittoria."
+    },
+    {
+      "move": "H8",
+      "comment": "Solo <b>G8</b> a disposizione per il bianco."
+    },
+    {
+      "move": "G8"
+    },
+    {
+      "move": "E8",
+      "comment": "Il bianco passa e il nero potrà giocare anche l'ultima mossa in <b>B8</b>."
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero vince 54 a 10."
+    }
+  ]
+}

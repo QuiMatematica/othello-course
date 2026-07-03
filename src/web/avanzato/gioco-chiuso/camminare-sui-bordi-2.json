@@ -1,0 +1,52 @@
+{
+  "position": [
+    "--O-----",
+    "--OOOO--",
+    "-OOOOOO#",
+    "OOOO#OO#",
+    "OO####O#",
+    "OOOOOO##",
+    "--OOOO-#",
+    "--OO-O--"
+  ],
+  "comment": "La sequenza delle frecce ci dà proprio l'idea del <b>camminare sui bordi</b>.",
+  "add": {
+    "arrows": [
+      {
+        "start": [850, 340],
+        "end": [850, 160],
+        "color": "red"
+      },
+      {
+        "start": [840, 150],
+        "end": [660, 150],
+        "color": "red"
+      },
+      {
+        "start": [640, 150],
+        "end": [460, 150],
+        "color": "red"
+      },
+      {
+        "start": [440, 150],
+        "end": [260, 150],
+        "color": "red"
+      },
+      {
+        "start": [240, 150],
+        "end": [160, 150],
+        "color": "red"
+      },
+      {
+        "start": [150, 160],
+        "end": [150, 340],
+        "color": "blue"
+      },
+      {
+        "start": [150, 360],
+        "end": [150, 740],
+        "color": "blue"
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "position": [
+    "-#######",
+    "-OOOOOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OO##",
+    "-OOO#OOO",
+    "-OOOOOOO"
+  ],
+  "turn": "black",
+  "played": "B2",
+  "comment": "Come comportarti quando il nostro avversario ha conquiestao un angolo e vuole costruirci attorno molte pedine stabili? Se sei fortunato e intorno a quell'angolo non ci sono ancora molte pedine, soprattutto sui bordi, puoi provare a <i>scappare</i>.",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Il nero ha preso l'angolo e si prepara a camminare lungo il bordo ovest.<br>Per il bianco, qual è la casella vuota più lontana dall'angolo in cui può giocare?"
+    },
+    {
+      "move": "B4",
+      "comment": "La casella più lontana è <b>B4</b>.<br>Se lo scopo del nero è quello di compattare le sue pedine attorno al suo angolo, lo scopo del bianco è quello di creare dei <i>buchi</i> con la speranza di riuscire a incunearsi nelle mosse finali della partita."
+    },
+    {
+      "move": "A4",
+      "comment": "Ora di nuovo il bianco cercherà la casella libera più lontana da <b>A1</b>."
+    },
+    {
+      "move": "B5",
+      "comment": "Il nero invece cercherà di riempire le caselle più vicine con l'obiettivo di massimizzare le pedine stabili."
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "A5"
+    },
+    {
+      "move": "A3"
+    },
+    {
+      "move": "B6"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "A6"
+    },
+    {
+      "move": "A2",
+      "comment": "Nonostante il bianco abbia conquistato un solo angolo su quattro, è riuscito a vincere limitando l'influenza degli angoli del nero, tenendosi il più lontano possibile dagli stessi."
+    }
+  ]
+}

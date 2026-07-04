@@ -9,33 +9,33 @@
     "--OOOO-#",
     "--OO-O--"
   ],
-  "comment": "La sequenza delle frecce ci dà proprio l'idea del <b>camminare sui bordi</b>.",
+  "comment": "Ogni freccia congiunge ogni mossa con la successiva. La sequenza ci dà l'idea del <b>camminare sui bordi</b>.",
   "add": {
     "arrows": [
       {
         "start": [850, 340],
         "end": [850, 160],
-        "color": "red"
+        "color": "blue"
       },
       {
         "start": [840, 150],
         "end": [660, 150],
-        "color": "red"
+        "color": "blue"
       },
       {
         "start": [640, 150],
         "end": [460, 150],
-        "color": "red"
+        "color": "blue"
       },
       {
         "start": [440, 150],
         "end": [260, 150],
-        "color": "red"
+        "color": "blue"
       },
       {
         "start": [240, 150],
         "end": [160, 150],
-        "color": "red"
+        "color": "blue"
       },
       {
         "start": [150, 160],

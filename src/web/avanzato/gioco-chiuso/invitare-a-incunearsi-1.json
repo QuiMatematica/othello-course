@@ -1,0 +1,37 @@
+{
+  "position": [
+    "OOOOOOOO",
+    "#-OOOOO-",
+    "#OOOOOO-",
+    "##OO#O--",
+    "##O##O--",
+    "##OOOO--",
+    "#OOOO---",
+    "####----"
+  ],
+  "turn": "black",
+  "played": "H1",
+  "comment": "Non solo il bianco è privo di mosse, ma il nero ha anche a disposizione una mossa libera in <b>B2</b>. Il nero può trarre il massimo vantaggio da questa situazione giocando <b>F8</b>!",
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "A prima vista questa può sembrare una brutta mossa, perché il bianco può incunearsi con facilità in <b>E8</b>."
+    },
+    {
+      "move": "E8",
+      "comment": "Tuttavia il nero gioca ora la sua mossa libera..."
+    },
+    {
+      "move": "B2",
+      "comment": "... e il bianco è costretto a muovere sul bordo, concedendo l'angolo <b>H8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero conquista l'angolo e tutto il bordo sud."
+    }
+  ]
+}

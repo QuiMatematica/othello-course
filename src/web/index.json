@@ -622,6 +622,22 @@
             {
               "href": "camminare-sui-bordi.php",
               "title": "Camminare sui bordi"
+            },
+            {
+              "href": "pulizia-interna.php",
+              "title": "Pulizia interna"
+            },
+            {
+              "href": "quiz-1.php",
+              "title": "Quiz"
+            },
+            {
+              "href": "alimentare-un-incastro.php",
+              "title": "Alimentare un incastro"
+            },
+            {
+              "href": "invitare-a-incunearsi.php",
+              "title": "Invitare l'avversario a incunearsi"
             }
           ]
         },

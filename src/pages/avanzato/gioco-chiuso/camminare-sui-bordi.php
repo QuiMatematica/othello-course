@@ -1,3 +1,14 @@
+<div class="d-flex align-items-center text-muted small mt-3">
+    <span>
+        esempi e spiegazioni tratti dal corso di <strong class="text-dark">Alessandro Di Mattei</strong>
+    </span>
+</div>
+<div class="d-flex align-items-center text-muted small mb-3">
+    <span>
+        adattati da <strong class="text-dark">Claudio Signorini</strong>
+    </span>
+</div>
+
 <p>Se sei stato bravo ad accumulare un discreto vantaggio in apertura, giocare il finale potrebbe risultare molto
     facile.</p>
 

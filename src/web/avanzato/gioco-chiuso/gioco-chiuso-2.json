@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--O#O---",
+    "---OOOO#",
+    "--OOOOO#",
+    "--O#O#O#",
+    "#-OO##O#",
+    "-#-O##O#",
+    "O-#OOOO#",
+    "--####O#"
+  ],
+  "played": "G2",
+  "turn": "black",
+  "comment": "Il gioco del bianco è chiuso. Come tagliare la diagonale nera?<br>Ve la devo raccontare qui. Ho mosso in in <b>F1</b>; ho girato le pedine <b>E1</b>, <b>F2</b> e <b>F3</b>. E ho premuto l'orologio. Ma l'avversario giustamente ha preteso che voltassi anche <b>G2</b>.",
+  "moves": [
+    {
+      "move": "F1",
+      "comment": "Ed ecco l'effetto corretto della mia mossa. Pensando a <b>F1</b> non avevo visto che avrei girato anche <b>G2</b>."
+    },
+    {
+      "move": "H1",
+      "comment": "Non solo ho ceduto l'angolo, ma a causa della colonna <b>G</b> il bianco non può incunearsi in <b>G1</b>."
+    }
+  ]
+}

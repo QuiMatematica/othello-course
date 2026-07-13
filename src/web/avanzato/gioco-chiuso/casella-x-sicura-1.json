@@ -1,0 +1,21 @@
+{
+  "position": [
+    "--------",
+    "--------",
+    "##OOOO--",
+    "#####O--",
+    "#OOOOO--",
+    "###OO---",
+    "#-##OO--",
+    "-#####--"
+  ],
+  "played": "F7",
+  "turn": "black",
+  "comment": "Il gioco del bianco è chiuso: gli rimangono solo mosse pericolo in caselle <b>X</b> o <b>C</b>. Tocca però al nero che non vuole certo aprire il giorno all'avversario.",
+  "moves": [
+    {
+      "move": "G7",
+      "comment": "Questa casella <b>X</b> è sicura: l'avversario non ha accesso all'angolo <b>H8</b>. E ora il bianco deve scegliere tra <b>A2</b>, <b>B2</b>, <b>B7</b> e <b>G8</b>. Tutte mosse disastrose."
+    }
+  ]
+}

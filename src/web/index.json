@@ -620,6 +620,10 @@
           "title": "Avversario con gioco chiuso",
           "pages": [
             {
+              "href": "gioco-chiuso.php",
+              "title": "Avversario con gioco chiuso"
+            },
+            {
               "href": "camminare-sui-bordi.php",
               "title": "Camminare sui bordi"
             },
@@ -638,6 +642,14 @@
             {
               "href": "invitare-a-incunearsi.php",
               "title": "Invitare l'avversario a incunearsi"
+            },
+            {
+              "href": "casella-x-sicura.php",
+              "title": "Casella X sicura"
+            },
+            {
+              "href": "diagonale-sicura.php",
+              "title": "Diagonale aperta ma sicura"
             }
           ]
         },

@@ -1,0 +1,19 @@
+{
+  "position": [
+    "-OOOOOO-",
+    "--O##O-O",
+    "--OO#OOO",
+    "-OOO###O",
+    "-OO#OO#O",
+    "-OOOO#OO",
+    "--#OO#-O",
+    "--#####-"
+  ],
+  "played": "H7",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B2"
+    }
+  ]
+}

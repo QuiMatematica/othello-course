@@ -1,0 +1,25 @@
+{
+  "position": [
+    "--------",
+    "#-------",
+    "#O#OOO--",
+    "#OO#OO--",
+    "#####OO-",
+    "##OOO#O-",
+    "#-OOOO--",
+    "-OOOOOOO"
+  ],
+  "played": "H8",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B2"
+    },
+    {
+      "move": "C2"
+    },
+    {
+      "move": "C1"
+    }
+  ]
+}

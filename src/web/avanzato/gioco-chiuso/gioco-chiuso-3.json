@@ -1,0 +1,39 @@
+{
+  "position": [
+    "#O###---",
+    "OOOOO---",
+    "OO#OOO-#",
+    "OO##OOO#",
+    "OO#O#OO#",
+    "OOO#O#O-",
+    "OO#####O",
+    "O#######"
+  ],
+  "played": "B1",
+  "turn": "black",
+  "comment": "Il nero ha chiuso il gioco del bianco. Ma ora come deve proseguire?",
+  "moves": [
+    {
+      "move": "F1",
+      "comment": "Esatto. Il modo migliore per evitare di aprire il gioco del bianco è questa mossa in <b>F1</b>. Ora il bianco ha2 mosse: <b>G1</b> che è pericolosa e <b>F2</b> che è sicura.",
+      "errors": [
+        {
+          "move": "H6",
+          "comment": "<b>H3</b> non è la mossa corretta perché concede una mossa sicura in <b>F2</b>. Sei ancora in una situazione vincente, ma potevi fare di meglio."
+        },
+        {
+          "move": "F2",
+          "comment": "Hai concesso troppe mosse all'avversario. Puoi fare di meglio."
+        }
+      ]
+    },
+    {
+      "move": "F2",
+      "comment": "Il bianco risponde con la mossa sicura, ovviamente. E adesso?"
+    },
+    {
+      "move": "H6",
+      "comment": "Esatto. Con questa mossa non hai concesso nuove mosse sicure al bianco. Ora sarà costretto a giocare in <b>G1</b>."
+    }
+  ]
+}

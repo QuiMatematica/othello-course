@@ -2,7 +2,7 @@
     <a href="../../intermedio/mobilita/togliere-mosse.php">mobilità</a>.</p>
 
 <div class="card border-primary mb-3">
-	<div class="card-header">Definizione</div>
+	<div class="card-header">Definizioni</div>
 	<div class="card-body">
 		<p class="card-text"><b>Mosse pericolose:</b> mosse che cedono un angolo all'avversario.</p>
 		<p class="card-text"><b>Mosse di attacco:</b> mosse che cedono un angolo all'avversario ma consentono di
@@ -18,17 +18,17 @@ che ha chiuso il gioco dell'avversario.</p>
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
         <p class="card-text">Il <b>gioco</b> di un giocatore è <b>chiuso</b> quando tale giocatore
-            ha solo mosse pericolose a disposizione.</p>
+            ha a disposizione solo mosse pericolose.</p>
 	</div>
 </div>
 
 <p>Trovarsi con il gioco chiuso è il peggior incubo di ogni giocatore di Othello. Significa aver giocato male l'apertura,
 significa che qualcosa è sfuggito. E ora ci si ritrova solo con mosse perdenti, che vanno a cedere un angolo
-all'avversario e da cui inizierà la serie di volture finali.</p>
+e l'avversario, da quell'angolo, inizierà la serie di volture finali.</p>
 
 <p>Se invece sei tu il fortunato giocatore che è riusciti a chiudere il gioco all'avversario, allora è fatta!</p>
 
-<p>O meglio, è quasi fatta. La partita va terminata. E va massimizzato il punteggio finale. Come?</p>
+<p>O meglio, è quasi fatta. La partita va portata a termine. E va massimizzato il punteggio finale. Come?</p>
 
 <p>Questo capitolo si concentra proprio su questa delicata situazione di gioco.</p>
 
@@ -39,12 +39,12 @@ all'avversario e da cui inizierà la serie di volture finali.</p>
 <p>Facciamo una mossa indietro. Possono esserci due situazioni che portano al gioco chiuso.</p>
 
 <ol>
-    <li>Il tuo avversario ha un'unica mossa sicura e la gioca. Ora il suo gioco è chiuso.</li>
-    <li>Il tuo avversario ha diverse mosse sicure ma compie un grosso errore e con una sola mossa si chiude il gioco
-        da solo.</li>
+    <li>Il tuo avversario ha un'unica mossa sicura e la gioca. Ora il suo gioco è chiuso. Ora però tocca a te.</li>
+    <li>Il tuo avversario ha diverse mosse sicure ma compie un errore e con una sola mossa si chiude il gioco
+        da solo. E ora però tocca a te.</li>
 </ol>
 
-<p>Ora però tocca a te. Ebbene: la prima cosa da fare e cercare di non dare nuove mosse sicure all'avversario.
+<p>In entrambi i casi, adesso tocca a te. Ebbene: la prima cosa da fare e cercare di non dare nuove mosse sicure all'avversario.
 Considera, per esempio, la posizione del diagramma <span data-board-ref="gioco-chiuso-1"></span></p>
 
 <board data-type="show" data-label="gioco-chiuso-1" data-file="gioco-chiuso-1.json"
@@ -75,7 +75,10 @@ e ricordo di averla considerata. Ma lì per lì ne ho vista un'altra. Peccato ch
        data-caption="Il gioco del bianco è chiuso. Dove NON deve muovere il nero?"></board>
 
 <p>Perché si fanno errori del genere? Chiaramente per distrazione. E vanno indagate quali siano le cause di simili
-distrazioni. Ma questo è un altro discorso.</p>
+    distrazioni.</p>
+
+<p>Ma la prima causa della distrazione è il sentirsi troppo confidenti in una situazione di vantaggio.
+&Egrave; </p>
 
 <h2>Tocca a te</h2>
 

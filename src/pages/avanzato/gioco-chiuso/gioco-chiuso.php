@@ -60,7 +60,7 @@ buttare via una partita già vinta solo per la fretta di muovere. Quindi...</p>
 <p>Controlla soprattutto che le tue mosse non abbiano delle direzioni di voltura che non stavi considerando e che
 vanno a ribaltare la situazione.</p>
 
-<p>E qui devo essere sincero, anche perché la lezione così durante appresa possa essere più fermamente trasmessa.</p>
+<p>E qui devo essere sincero, anche perché la lezione così duramente appresa possa essere più fermamente trasmessa.</p>
 
 <p>Mi è capitato in una partita di torneo di trovarmi in una situazione simile a quella del diagramma
     <span data-board-ref="gioco-chiuso-2"></span>.</p>

@@ -5,20 +5,18 @@
 	<div class="card-header">Definizioni</div>
 	<div class="card-body">
 		<p class="card-text"><b>Mosse pericolose:</b> mosse che cedono un angolo all'avversario.</p>
-		<p class="card-text"><b>Mosse di attacco:</b> mosse che cedono un angolo all'avversario ma consentono di
-            ottenere un vantaggio maggiore (per esempio un bordo intero).</p>
-		<p class="card-text"><b>Mosse sicure:</b> tutte le altre mosse.</p>
+		<p class="card-text"><b>Mosse sicure:</b> mosse che non cedono un angolo all'avversario.</p>
 	</div>
 </div>
 
-<p>Se uno dei due giocatori riesce a togliere tutte le mosse sicure e tutte le mosse d'attacco all'altro, si dice
+<p>Se uno dei due giocatori riesce a togliere tutte le mosse sicure all'altro, si dice
 che ha chiuso il gioco dell'avversario.</p>
 
 <div class="card border-primary mb-3">
 	<div class="card-header">Definizione</div>
 	<div class="card-body">
         <p class="card-text">Il <b>gioco</b> di un giocatore è <b>chiuso</b> quando tale giocatore
-            ha a disposizione solo mosse pericolose.</p>
+            non ha a disposizione mosse sicure.</p>
 	</div>
 </div>
 
@@ -60,7 +58,7 @@ buttare via una partita già vinta solo per la fretta di muovere. Quindi...</p>
 <p>Controlla soprattutto che le tue mosse non abbiano delle direzioni di voltura che non stavi considerando e che
 vanno a ribaltare la situazione.</p>
 
-<p>E qui devo essere sincero, anche perché la lezione così durante appresa possa essere più fermamente trasmessa.</p>
+<p>E qui devo essere sincero, anche perché la lezione così duramente appresa possa essere più fermamente trasmessa.</p>
 
 <p>Mi è capitato in una partita di torneo di trovarmi in una situazione simile a quella del diagramma
     <span data-board-ref="gioco-chiuso-2"></span>.</p>

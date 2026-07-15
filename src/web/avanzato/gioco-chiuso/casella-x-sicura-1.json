@@ -15,7 +15,7 @@
   "moves": [
     {
       "move": "G7",
-      "comment": "Questa casella <b>X</b> è sicura: l'avversario non ha accesso all'angolo <b>H8</b>. E ora il bianco deve scegliere tra <b>A2</b>, <b>B2</b>, <b>B7</b> e <b>G8</b>. Tutte mosse disastrose."
+      "comment": "Questa casella <b>X</b> è sicura: l'avversario non ha accesso all'angolo <b>H8</b>. E ora il bianco deve scegliere tra <b>A2</b>, <b>B2</b>, <b>B7</b> e <b>G8</b>. Tutte mosse disastrose.<br>E per quanto sforzi possa fare, il bianco non riuscirà mai a prendere l'angolo <b>H8</b>. Prova a cliccare sulla lente di ingrandimento per testare le diverse possibilità."
     }
   ]
 }

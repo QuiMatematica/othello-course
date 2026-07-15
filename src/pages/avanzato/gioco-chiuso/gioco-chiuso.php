@@ -23,12 +23,12 @@ che ha chiuso il gioco dell'avversario.</p>
 </div>
 
 <p>Trovarsi con il gioco chiuso è il peggior incubo di ogni giocatore di Othello. Significa aver giocato male l'apertura,
-significa che qualcosa è sfuggito. E ora ci si ritrova solo con mosse perdenti, che vanno a cedere un angolo
+significa che qualcosa è sfuggito. E ora ci si ritrova solo con mosse perdenti, che vanno a cedere un angolo,
 e l'avversario, da quell'angolo, inizierà la serie di volture finali.</p>
 
-<p>Se invece sei tu il fortunato giocatore che è riusciti a chiudere il gioco all'avversario, allora è fatta!</p>
+<p>Se invece sei tu il fortunato giocatore che è riuscito a chiudere il gioco all'avversario, allora è fatta!</p>
 
-<p>O meglio, è quasi fatta. La partita va portata a termine. E va massimizzato il punteggio finale. Come?</p>
+<p>O meglio: è quasi fatta. La partita va portata a termine, e va massimizzato il punteggio finale. Come?</p>
 
 <p>Questo capitolo si concentra proprio su questa delicata situazione di gioco.</p>
 
@@ -39,13 +39,13 @@ e l'avversario, da quell'angolo, inizierà la serie di volture finali.</p>
 <p>Facciamo una mossa indietro. Possono esserci due situazioni che portano al gioco chiuso.</p>
 
 <ol>
-    <li>Il tuo avversario ha un'unica mossa sicura e la gioca. Ora il suo gioco è chiuso. Ora però tocca a te.</li>
+    <li>Il tuo avversario ha un'unica mossa sicura e la gioca. Ora il suo gioco è chiuso. Ora tocca a te.</li>
     <li>Il tuo avversario ha diverse mosse sicure ma compie un errore e con una sola mossa si chiude il gioco
-        da solo. E ora però tocca a te.</li>
+        da solo. E ora tocca a te.</li>
 </ol>
 
-<p>In entrambi i casi, adesso tocca a te. Ebbene: la prima cosa da fare e cercare di non dare nuove mosse sicure all'avversario.
-Considera, per esempio, la posizione del diagramma <span data-board-ref="gioco-chiuso-1"></span></p>
+<p>In entrambi i casi, adesso tocca a te. Ebbene: la prima cosa da fare è cercare di non dare nuove mosse sicure all'avversario.
+Considera, per esempio, la posizione del diagramma <span data-board-ref="gioco-chiuso-1"></span>.</p>
 
 <board data-type="show" data-label="gioco-chiuso-1" data-file="gioco-chiuso-1.json"
        data-caption="Il gioco del bianco è chiuso. Dove deve muovere il nero?"></board>
@@ -78,7 +78,7 @@ e ricordo di averla considerata. Ma lì per lì ne ho vista un'altra. Peccato ch
     distrazioni.</p>
 
 <p>Ma la prima causa della distrazione è il sentirsi troppo confidenti in una situazione di vantaggio.
-&Egrave; </p>
+&Egrave; la sindrome dell'ultimo chilometro, applicata all'Othello.</p>
 
 <h2>Tocca a te</h2>
 

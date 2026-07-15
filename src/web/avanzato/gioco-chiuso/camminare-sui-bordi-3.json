@@ -11,7 +11,7 @@
   ],
   "turn": "black",
   "played": "B2",
-  "comment": "Come comportarti quando il nostro avversario ha conquiestao un angolo e vuole costruirci attorno molte pedine stabili? Se sei fortunato e intorno a quell'angolo non ci sono ancora molte pedine, soprattutto sui bordi, puoi provare a <i>scappare</i>.",
+  "comment": "Come comportarci quando il nostro avversario ha conquistato un angolo e vuole costruirci attorno molte pedine stabili? Se sei fortunato e intorno a quell'angolo non ci sono ancora molte pedine, soprattutto sui bordi, puoi provare a <i>scappare</i>.",
   "moves": [
     {
       "move": "A1",

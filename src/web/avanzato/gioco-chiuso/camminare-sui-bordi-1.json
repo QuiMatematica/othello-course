@@ -11,16 +11,19 @@
   ],
   "turn": "black",
   "played": "C1",
+  "comment": "Il gioco del bianco è chiuso. Obiettivo del nero, a questo punto, è ottenere un angolo e da lì camminare sui bordi.",
   "moves": [
     {
-      "move": "H2"
+      "move": "H2",
+      "comment": "Il nero comincia con una mossa che non apra il gioco all'avversario e che anzi lo costringa a cedere un angolo."
     },
     {
-      "move": "G2"
+      "move": "G2",
+      "comment": "Non c'erano molte alternative: o giocare questa <b>G2</b> e cedere l'angolo <b>H1</b> o giocare <b>G7</b> e cedere l'angolo <b>H8</b>."
     },
     {
       "move": "H1",
-      "comment": "Il nero conquista <b>H1</b>, e il bianco può solo giocare mosse praticamente obbligate.<br>Sta al nero avere l'accortezza di non aprire il gioco in posti diversi dalla zona limitrofa all'angolo appena conquistato."
+      "comment": "Il nero conquista <b>H1</b>, e il bianco può solo giocare mosse obbligate.<br>Sta al nero avere l'accortezza di non aprire il gioco in posti diversi dalla zona limitrofa all'angolo appena conquistato."
     },
     {
       "move": "G1",

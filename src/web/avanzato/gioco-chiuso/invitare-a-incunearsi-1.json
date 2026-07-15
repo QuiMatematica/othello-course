@@ -31,7 +31,51 @@
     },
     {
       "move": "H8",
-      "comment": "Il nero conquista l'angolo e tutto il bordo sud."
+      "comment": "Il nero conquista l'angolo e tutto il bordo sud.<br>Proviamo a vedere come dovrebbe continuare la partita."
+    },
+    {
+      "move": "F7",
+      "comment": "Cominciamo con il conquistare tutta la linea <b>7</b>.<br>Il bianco passa."
+    },
+    {
+      "move": "G7",
+      "comment": "Allunghiamo la linea <b>7</b>."
+    },
+    {
+      "move": "G6",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "H6",
+      "comment": "Pulizia interna e di nuovo un invito (obbligato) a incunearsi."
+    },
+    {
+      "move": "H7",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "H5",
+      "comment": "E adesso costringiamo il bianco a uscire dal cuneo."
+    },
+    {
+      "move": "H4",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "G5",
+      "comment": "Riprendiamo con la pulizia interna.<br>Il bianco passa."
+    },
+    {
+      "move": "G4",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "H3",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero vince 55 a 9."
     }
   ]
 }

@@ -10,7 +10,7 @@
 </div>
 
 <p>Riprendiamo (diagramma <span data-board-ref="pulizia-interna-1"></span>) la posizione della pagina precedente e
-    domandiamo: il nero poteva vincere quella partita impedendo al bianco di scappare?</p>
+    domandiamoci: il nero poteva vincere quella partita impedendo al bianco di scappare?</p>
 
 <board data-type="show" data-label="pulizia-interna-1" data-file="pulizia-interna-1.json"></board>
 
@@ -18,10 +18,10 @@
 
 <p>Per applicare questa tecnica è necessario riscontrare alcuni elementi chiave nella configurazione di gioco.</p>
 <ul>
-    <li>Il proprio avversario ha finito le mosse sicure. Addirittura nella posizione che stiamo analizzando il bianco
+    <li>L'avversario ha finito le mosse sicure. Addirittura nella posizione che stiamo analizzando il bianco
     non ha alcuna mossa a disposizione e questo è un aspetto ancora più favorevole.</li>
     <li>Si gioca su una grande area aperta, generalmente composta da due colonne (o righe) vuote o quasi.</li>
-    <li>Il giocatore che fare <i>pulizia interna</i> (nel nostro caso il nero) dispone di una configurazione come
+    <li>Noi (nell'esempio il nero) disponiamo di una configurazione come
     quella evidenziata con il riquadro arancione nel diagramma <span data-board-ref="pulizia-interna-2"></span>,
         ovvero sette pedine sul bordo.</li>
     <li>L'avversario (il bianco) ha una pedina nella casella <b>X</b> adiacente al nostro bordo

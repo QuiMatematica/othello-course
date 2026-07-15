@@ -9,12 +9,12 @@
     </span>
 </div>
 
-<p>Se sei stato bravo ad accumulare un discreto vantaggio in apertura, giocare il finale potrebbe risultare molto
+<p>Se sei riuscito a chiudere il gioco del tuo avversario, giocare il finale potrebbe risultare molto
     facile.</p>
 
-<p>Se il tuo avversario ha finito le mosse sicure, ti basterà, una volta conquistato un angolo,
+<p>Ti basterà, una volta conquistato un angolo,
     <b>camminare lungo i bordi</b> adiacenti all'angolo appena conquistato, come mostrato nel diagramma
-<span data-board-ref="camminare-sui-bordi-1"></span></p>
+<span data-board-ref="camminare-sui-bordi-1"></span>.</p>
 
 <board data-type="show" data-label="camminare-sui-bordi-1" data-file="camminare-sui-bordi-1.json"></board>
 

@@ -11,7 +11,7 @@
   ],
   "played": "C1",
   "turn": "black",
-  "comment": "Il gioco del bianco è chiuso. Come deve muovere il nero?",
+  "comment": "Il gioco del bianco è chiuso. Come deve muovere il nero?<br>Nota che <b>B7</b> non può essere considerata una mossa d'attacco, perché l'attacco al cinque non funziona: il nero può muovere prima in <b>B8</b> e poi in <b>A8</b>.",
   "moves": [
     {
       "move": "G8",

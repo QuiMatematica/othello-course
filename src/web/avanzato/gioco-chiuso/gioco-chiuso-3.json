@@ -15,7 +15,7 @@
   "moves": [
     {
       "move": "F1",
-      "comment": "Esatto. Il modo migliore per evitare di aprire il gioco del bianco è questa mossa in <b>F1</b>. Ora il bianco ha2 mosse: <b>G1</b> che è pericolosa e <b>F2</b> che è sicura.",
+      "comment": "Esatto. Il modo migliore per evitare di aprire il gioco del bianco è questa mossa in <b>F1</b>. Ora il bianco ha due mosse: <b>G1</b> che è pericolosa e <b>F2</b> che è sicura.",
       "errors": [
         {
           "move": "H6",

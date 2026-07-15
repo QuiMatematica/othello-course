@@ -11,9 +11,11 @@
   ],
   "played": "H7",
   "turn": "black",
+  "comment": "Il gioco del bianco è chiuso. Il nero deve cercare di muovere senza aprire il gioco all'avversario. Ma come?",
   "moves": [
     {
-      "move": "B2"
+      "move": "B2",
+      "comment": "Il nero può giocare in questa casella <b>X</b> e prendere la diagonale bianca. Ora guarda quali mosse rimangono al bianco. Può giocare in <b>B7</b> ma il nero può rispondere prima in <b>B8</b> e poi in <b>A8</b>. Può giocare in <b>G7</b> ma poi il nero prende l'angolo <b>H8</b>. Oppure il bianco può giocare a nord-ovest: <b>A2</b>, <b>A3</b> o <b>B3</b>, ma tutte e tre queste mosse girano la pedina <b>B2</b> e il nero può prendere l'angolo <b>A1</b>."
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "position": [
+    "--OOOO--",
+    "--OO#O--",
+    "OOO#OO--",
+    "-OO##O--",
+    "--O##OO-",
+    "OOO#OOOO",
+    "--###O--",
+    "--####--"
+  ],
+  "played": "C1",
+  "turn": "black",
+  "comment": "Il gioco del bianco è chiuso. Come deve muovere il nero?<br>Nota che <b>B7</b> non può essere considerata una mossa d'attacco, perché l'attacco al cinque non funziona: il nero può muovere prima in <b>B8</b> e poi in <b>A8</b>.",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Il nero deve giocare in modo da non aprire il gioco all'avversario. E questa casella <b>C</b> è un'ottima soluzione. Ora il bianco ha un'unica mossa a disposizione, ed è una mossa pericolosa."
+    },
+    {
+      "move": "B8",
+      "comment": "Questa è l'ultima mossa rimasta al bianco."
+    },
+    {
+      "move": "A8",
+      "comment": "Ovviamente il nero risponde prendendo l'angolo. Di nuovo il bianco ha un'unica mossa a disposizione, ed è una mossa pericolosa."
+    },
+    {
+      "move": "G7",
+      "comment": "Obbligata.<br>Ora, con un po' di attenzione e di furbizia, sarà facile per il nero portare a casa la vittoria."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "position": [
+    "#####OOO",
+    "-##OO###",
+    "--###O#O",
+    "--O#O##O",
+    "--OO#O#O",
+    "-OOOOOOO",
+    "--O###OO",
+    "-OOOOOOO"
+  ],
+  "turn": "white",
+  "played": "A1",
+  "comment": "Dove deve giocare il bianco per limitare l'influenza dell'angolo appena conquistato dal nero?",
+  "moves": [
+    {
+      "move": "B4",
+      "comment": "Il bianco deve <i>scappare</i> lontano dall'angolo."
+    },
+    {
+      "move": "A4",
+      "comment": "Prova a completare la sequenza che ti porterà alla vittoria."
+    },
+    {
+      "move": "B5",
+      "errors": [
+        {
+          "move": "B3",
+          "comment": "Anche questa mossa è vincente, ma prova ad applicare lo <i>scappare</i> lontano dall'angolo."
+        }
+      ]
+    },
+    {
+      "move": "B3"
+    },
+    {
+      "move": "A5"
+    },
+    {
+      "move": "A6"
+    },
+    {
+      "move": "B7",
+      "comment": "Per giocare la parità nella regione dispari e incunearsi sul bordo.",
+      "errors": [
+        {
+          "move": "A2",
+          "comment": "Anche questa mossa è vincente, ma prova ad applicare lo <i>scappare</i> lontano dall'angolo."
+        }
+      ]
+    },
+    {
+      "move": "A3"
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A8"
+    },
+    {
+      "move": "A7",
+      "comment": "Il bianco vince 36 a 28."
+    }
+  ]
+}

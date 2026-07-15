@@ -1,0 +1,73 @@
+{
+  "position": [
+    "OOOOOOOO",
+    "#-OOOOO-",
+    "#OOOOOO-",
+    "##OO#O--",
+    "##O##O--",
+    "##OOOO--",
+    "#OOOO---",
+    "####----"
+  ],
+  "turn": "black",
+  "played": "H1",
+  "comment": "Vediamo cosa succede se, dopo la <b>F8</b> del nero, il bianco si rifiuta di incunearsi.",
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "Il nero invita l'avversario a incunearsi"
+    },
+    {
+      "move": "F7",
+      "comment": "Ma il bianco rifiuta l'offerta."
+    },
+    {
+      "move": "E8",
+      "comment": "Il nero guadagna questa mossa libera e la gioca subita."
+    },
+    {
+      "move": "G8",
+      "comment": "Il nero allunga il bordo."
+    },
+    {
+      "move": "G7",
+      "comment": "Il bianco è costretto a giocare in questa casella <b>X</b>. Ora il nero può cominciare a fare <i>pulizia interna</i>."
+    },
+    {
+      "move": "H7"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "H6"
+    },
+    {
+      "move": "H5",
+      "comment": "Ora il nero deve fare una manovra strana. <b>G6</b> è vincente, ma <b>G5</b> permette di fare una migliore pulizia interna."
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "G6"
+    },
+    {
+      "move": "G4",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "H4"
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero vince 50 a 14."
+    }
+  ]
+}

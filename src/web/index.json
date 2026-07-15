@@ -616,6 +616,44 @@
           ]
         },
         {
+          "href": "gioco-chiuso/",
+          "title": "Avversario con gioco chiuso",
+          "pages": [
+            {
+              "href": "gioco-chiuso.php",
+              "title": "Avversario con gioco chiuso"
+            },
+            {
+              "href": "camminare-sui-bordi.php",
+              "title": "Camminare sui bordi"
+            },
+            {
+              "href": "pulizia-interna.php",
+              "title": "Pulizia interna"
+            },
+            {
+              "href": "quiz-1.php",
+              "title": "Quiz"
+            },
+            {
+              "href": "alimentare-un-incastro.php",
+              "title": "Alimentare un incastro"
+            },
+            {
+              "href": "invitare-a-incunearsi.php",
+              "title": "Invitare l'avversario a incunearsi"
+            },
+            {
+              "href": "casella-x-sicura.php",
+              "title": "Casella X sicura"
+            },
+            {
+              "href": "diagonale-sicura.php",
+              "title": "Diagonale aperta ma sicura"
+            }
+          ]
+        },
+        {
           "href": "approfondimenti/",
           "title": "Approfondimenti",
           "pages": [

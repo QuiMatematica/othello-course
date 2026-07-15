@@ -1,0 +1,64 @@
+{
+  "position": [
+    "-#######",
+    "-OOOOOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OO##",
+    "-OOO#OOO",
+    "-OOOOOOO"
+  ],
+  "turn": "black",
+  "played": "B2",
+  "moves": [
+    {
+      "move": "A2",
+      "comment": "Il nero può iniziare la sua prima mossa giocando parallelo al bordo del proprio colore, decidendo deliberatamente di sacrificare l'angolo."
+    },
+    {
+      "move": "A1",
+      "comment": "Il bianco ha una sola mossa da giocare e questo rende il finale semplice e prevedibile.<br>Può sembrare un <i>tesuji</i> complicato da memorizzare. In realtà le caratteristiche di questa conformazione sono più semplici di quanto si pensi e la situazione di gioco è piuttosto comune."
+    },
+    {
+      "move": "A3",
+      "comment": "Lo scopo del nero è lasciare che il bianco catturi le pedine sul bordo mentre lui ribalta molte pedine interne (da cui il nome della tecnica)."
+    },
+    {
+      "move": "A4",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B3",
+      "comment": "Il nero gioca sempre nella casella interposta tra il bordo che sta costruendo il bianco e il centro della scacchiera."
+    },
+    {
+      "move": "B4",
+      "comment": "Di nuovo il bianco deve giocare nell'unica mossa a disposizione."
+    },
+    {
+      "move": "A5",
+      "comment": "A te il bordo, a me il centro."
+    },
+    {
+      "move": "A6",
+      "comment": "Di nuovo obbligata.<br>Prova a indovinare: dove giocherà il nero?"
+    },
+    {
+      "move": "B5",
+      "comment": "Ovviamente in <b>B5</b>."
+    },
+    {
+      "move": "B6",
+      "comment": "Obbligata.<br>La <i>pulizia interna</i> è una strategia tanto semplice quando efficace. Bisogna solo essere bravi a capire quanto è il momento giusto per giocarla."
+    },
+    {
+      "move": "A7",
+      "comment": "Ultima mossa per il nero."
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero vince 34 a 30."
+    }
+  ]
+}

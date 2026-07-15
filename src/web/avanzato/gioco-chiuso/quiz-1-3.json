@@ -1,0 +1,55 @@
+{
+  "position": [
+    "OOOOOOO-",
+    "OOOO#OO-",
+    "OOOOOO--",
+    "OOO##O--",
+    "O###OO--",
+    "#OOOOO--",
+    "#OOOOOO-",
+    "#######-"
+  ],
+  "turn": "black",
+  "played": "G7",
+  "comment": "Camminare sui bordi (H8) oppure pulizia interna (H7)?",
+  "moves": [
+    {
+      "move": "H7",
+      "comment": "Pulizia interna!"
+    },
+    {
+      "move": "H8"
+    },
+    {
+      "move": "H6"
+    },
+    {
+      "move": "H5"
+    },
+    {
+      "move": "G6"
+    },
+    {
+      "move": "G5"
+    },
+    {
+      "move": "H4"
+    },
+    {
+      "move": "H3"
+    },
+    {
+      "move": "G4"
+    },
+    {
+      "move": "G3"
+    },
+    {
+      "move": "H2"
+    },
+    {
+      "move": "H1",
+      "comment": "Il nero vince 34 a 30."
+    }
+  ]
+}

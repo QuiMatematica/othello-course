@@ -44,7 +44,7 @@
     },
     {
       "move": "H5",
-      "comment": "Ora il nero deve fare una manovra strana. <b>G6</b> è vincente, ma <b>G5</b> permette di fare una migliore pulizia interna."
+      "comment": "Ora il nero deve fare una manovra strana. <b>G6</b> è vincente, ma <b>G5</b> permette di fare una migliore pulizia interna.<br>Infatti dopo <b>G5-G6</b> le pedine bianche della riga <b>4</b> si compattano e potranno essere girate tutte dal nero muovendo in <b>G4</b>."
     },
     {
       "move": "G5"

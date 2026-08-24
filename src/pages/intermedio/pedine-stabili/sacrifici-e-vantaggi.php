@@ -1,30 +1,22 @@
-		<h1>Sacrifici e vantaggi</h1>
+<p>Riassumo gli ultimi punti cui siamo arrivati.</p>
 
-		<p>Riassumo gli ultimi punti cui siamo arrivati.</p>
+<ul>
+    <li>Gli angoli e le pedine adiacenti a essi sono stabili.</li>
+    <li>Quindi, conquistare un angolo è strategicamente importante.</li>
+    <li>Quindi, può essere pericoloso giocare nelle caselle <b>X</b> e nelle caselle <b>C</b>.</li>
+</ul>
 
-		<ul>
-			<li>Gli angoli e le pedine adiacenti a essi sono stabili.</li>
-			<li>Quindi, conquistare un angolo è strategicamente importante.</li>
-			<li>Quindi, può essere pericoloso giocare nelle caselle X e nelle caselle C.</li>
-		</ul>
+<p>Attenzione però: non è vero in assoluto che conquistare un angolo porti alla vittoria,
+    come non è vero in assoluto che giocare in una casella <b>X</b> porti alla sconfitta.</p>
 
-		<p>Attenzione però: non è vero in assoluto che conquistare un angolo porti alla vittoria,
-		come non è vero in assoluto che giocare in una casella X porti alla sconfitta.</p>
+<p>Spesso può essere estremamente vantaggioso sacrificare un angolo per ottenere dei vantaggi
+maggiori, soprattutto se in termini di pedine stabili.</p>
 
-		<p>Spesso può essere estremamente vantaggioso sacrificare un angolo per ottenere dei vantaggi
-		maggiori, soprattutto se in termini di pedine stabili.</p>
+<p>Guarda, per esempio, la partita di diagramma <span data-board-ref="pedine-stabili-diagramma-9"></span>.</p>
 
-		<p>Guarda, per esempio, la partita di diagramma 1.</p>
+<board data-type="show" data-label="pedine-stabili-diagramma-9" data-file="pedine-stabili-diagramma-9.json"
+       data-caption="Sacrificio di un angolo in cambio di pedine stabili."></board>
 
-		<div class="card mx-auto board-card my-3">
-			<div class="card-body">
-				<div class="match-file-board" data-file="pedine-stabili-diagramma-9.json"></div>
-			</div>
-			<div class="card-footer text-body-secondary text-center">
-    			Diagramma 1: sacrificio di un angolo in cambio di pedine stabili.
-			</div>
-		</div>
-
-		<p>La mossa che il nero ha giocato è un attacco alle cinque pedine bianche
-		del lato sud. Nell'Othello, quasi tutti gli attacchi prevedono il sacrificio di un angolo
-		in cambio di un considerevole numero di pedine stabili (o di una posizione migliore).</p>
+<p>La mossa che il nero ha giocato è un attacco alle cinque pedine bianche
+del lato sud. Nell'Othello, quasi tutti gli attacchi prevedono il sacrificio di un angolo
+in cambio di un considerevole numero di pedine stabili (o di una posizione migliore).</p>

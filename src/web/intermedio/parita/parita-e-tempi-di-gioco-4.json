@@ -17,7 +17,7 @@
     },
     {
       "move": "H8",
-      "comment": "Il nero prende l'angolo e stabilizza le pedine sul bordo est.<br>Ora però il bianco non può entrare in G8: la sequenza non ha avuto successo."
+      "comment": "Il nero prende l'angolo e stabilizza le pedine sul bordo est.<br>Ora però il bianco non può entrare in <b>G8</b>: la sequenza non ha avuto successo."
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "position": [
+    "-#######",
+    "-OOOOOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OO##",
+    "-OOO#OOO",
+    "-OOOOOOO"
+  ],
+  "turn": "black",
+  "played": "B2"
+}

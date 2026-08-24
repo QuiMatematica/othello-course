@@ -1,0 +1,66 @@
+{
+  "position": [
+    "-#######",
+    "-OOOOOO#",
+    "-OO#OOO#",
+    "-OO#OOO#",
+    "OO#O#OO#",
+    "OO##O###",
+    "--O#OOOO",
+    "--OOOOOO"
+  ],
+  "turn": "black",
+  "comment": "Camminare sui bordi (A1) oppure pulizia interna (A2)?",
+  "moves": [
+    {
+      "move": "A1",
+      "comment": "Camminare sui bordi!<br>Mancano alcuni punti chiave necessari per la pulizia interna. Il primo è senz'altro il fatto di non avere un'area completamente sgombra sul bordo.<br>Il secondo, più importante, è che la pulizia interna funziona meglio quando si hanno due linee libere, in modo da catturare internamente mentre si lascia il bordo all'avversario.",
+      "errors": [
+        {
+          "move": "A2",
+          "comment": "In questo caso la pulizia interna non avrebbe funzionato.<br>Mancano alcuni punti chiave necessari per la pulizia interna. Il primo è senz'altro il fatto di non avere un'area completamente sgombra sul bordo.<br>Il secondo, più importante, è che la pulizia interna funziona meglio quando si hanno due linee libere, in modo da catturare internamente mentre si lascia il bordo all'avversario."
+        },
+        {
+          "move": "A4",
+          "comment": "Anche questa mossa è vincente. Tuttavia stiamo confrontando il <i>camminare sui bordi</i> con la <i>pulizia interna</i>. Per favore attieniti alle due alternative proposte."
+        }
+      ]
+    },
+    {
+      "move": "A2"
+    },
+    {
+      "move": "A3",
+      "comment": "Esatto. Basta continuare a camminare.",
+      "errors": [
+        {
+          "move": "A4",
+          "comment": "Anche questa mossa è vincente, ma non è la migliore. Se cammini sui bordi otterrai un risultato migliore."
+        }
+      ]
+    },
+    {
+      "move": "A4"
+    },
+    {
+      "move": "A7"
+    },
+    {
+      "move": "B7"
+    },
+    {
+      "move": "A8",
+      "comment": "Bravissimo!",
+      "errors": [
+        {
+          "move": "B8",
+          "comment": "Eh no. Prova a contare: l'altra mossa era migliore!"
+        }
+      ]
+    },
+    {
+      "move": "B8",
+      "comment": "Il nero vince 35 a 29."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "position": [
+    "O#OOOOOO",
+    "-OOOO##O",
+    "OOO####O",
+    "O####O#O",
+    "OOOO###O",
+    "-OOOOOOO",
+    "-----O#O",
+    "----OOOO"
+  ],
+  "turn": "black",
+  "played": "B2",
+  "comment": "Il nero ha la possibilità di incunearsi in <b>A2</b>, ma gli conviene, prima, allungare il bordo avversario.",
+  "moves": [
+    {
+      "move": "A6",
+      "comment": "Il nero alimenta l'incastro."
+    },
+    {
+      "move": "A7",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "A2",
+      "comment": "Il nero si incunea.<br>Il bianco passa."
+    },
+    {
+      "move": "A8",
+      "comment": "Grazie al fatto che ha alimentato l'incastro, il nero riesce a prendere l'angolo e tutto il bordo ovest.<br>Da qui in poi sarà piuttosto facile vincere."
+    }
+  ]
+}

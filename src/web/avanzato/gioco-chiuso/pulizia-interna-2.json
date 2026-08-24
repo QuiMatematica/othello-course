@@ -1,0 +1,28 @@
+{
+  "position": [
+    "-#######",
+    "-OOOOOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OOO#",
+    "--O#OO##",
+    "-OOO#OOO",
+    "-OOOOOOO"
+  ],
+  "turn": "black",
+  "played": "B2",
+  "add": {
+    "borders": [
+      {
+        "ul": "B1",
+        "dr": "H1",
+        "color": "orange"
+      },
+      {
+        "ul": "B2",
+        "dr": "B2",
+        "color": "yellow"
+      }
+    ]
+  }
+}

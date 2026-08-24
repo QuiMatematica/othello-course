@@ -1,0 +1,81 @@
+{
+  "position": [
+    "OOOOOOOO",
+    "#-OOOOO-",
+    "#OOOOOO-",
+    "##OO#O--",
+    "##O##O--",
+    "##OOOO--",
+    "#OOOO---",
+    "####----"
+  ],
+  "turn": "black",
+  "played": "H1",
+  "comment": "Non solo il bianco è privo di mosse, ma il nero ha anche a disposizione una mossa libera in <b>B2</b>. Il nero può trarre il massimo vantaggio da questa situazione giocando <b>F8</b>!",
+  "moves": [
+    {
+      "move": "F8",
+      "comment": "A prima vista questa può sembrare una brutta mossa, perché il bianco può incunearsi con facilità in <b>E8</b>."
+    },
+    {
+      "move": "E8",
+      "comment": "Tuttavia il nero gioca ora la sua mossa libera..."
+    },
+    {
+      "move": "B2",
+      "comment": "... e il bianco è costretto a muovere sul bordo, concedendo l'angolo <b>H8</b>."
+    },
+    {
+      "move": "G8",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero conquista l'angolo e tutto il bordo sud.<br>Proviamo a vedere come dovrebbe continuare la partita."
+    },
+    {
+      "move": "F7",
+      "comment": "Cominciamo con il conquistare tutta la linea <b>7</b>.<br>Il bianco passa."
+    },
+    {
+      "move": "G7",
+      "comment": "Allunghiamo la linea <b>7</b>."
+    },
+    {
+      "move": "G6",
+      "comment": "Mossa obbligata."
+    },
+    {
+      "move": "H6",
+      "comment": "Pulizia interna e di nuovo un invito (obbligato) a incunearsi."
+    },
+    {
+      "move": "H7",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "H5",
+      "comment": "E adesso costringiamo il bianco a uscire dal cuneo."
+    },
+    {
+      "move": "H4",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "G5",
+      "comment": "Riprendiamo con la pulizia interna.<br>Il bianco passa."
+    },
+    {
+      "move": "G4",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "H3",
+      "comment": "Il bianco passa."
+    },
+    {
+      "move": "H2",
+      "comment": "Il nero vince 55 a 9."
+    }
+  ]
+}

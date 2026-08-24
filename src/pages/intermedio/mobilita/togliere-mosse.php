@@ -11,13 +11,17 @@
 		<h2>Non tutte le mosse sono uguali</h2>
 
 		<p>In una qualunque posizione possiamo dividere le mosse di un colore
-		in tre categorie:</p>
-		<ul>
-			<li><b>mosse pericolose</b>: cedono un angolo all'avversario;</li>
-			<li><b>mosse di attacco</b>: cedono un angolo all'avversario ma consentono di
-			ottenere un vantaggio maggiore (per esempio un bordo intero);</li>
-			<li><b>mosse sicure</b>: tutte le altre mosse.</li>
-		</ul>
+		in tre categorie.</p>
+
+<div class="card border-primary mb-3">
+	<div class="card-header">Definizioni</div>
+	<div class="card-body">
+		<p class="card-text"><b>Mosse pericolose:</b> mosse che cedono un angolo all'avversario.</p>
+		<p class="card-text"><b>Mosse di attacco:</b> mosse che cedono un angolo all'avversario ma consentono di
+            ottenere un vantaggio maggiore (per esempio un bordo intero).</p>
+		<p class="card-text"><b>Mosse sicure:</b> tutte le altre mosse.</p>
+	</div>
+</div>
 
 		<p>Il rischio di avere una bassa mobilità è di ritrovarsi con poche
 		mosse sicure o di attacco a disposizione, fino al punto di essere costretti

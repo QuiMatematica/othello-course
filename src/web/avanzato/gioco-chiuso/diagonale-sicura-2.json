@@ -1,0 +1,28 @@
+{
+  "position": [
+    "--------",
+    "#-------",
+    "#O#OOO--",
+    "#OO#OO--",
+    "#####OO-",
+    "##OOO#O-",
+    "#-OOOO--",
+    "-OOOOOOO"
+  ],
+  "played": "H8",
+  "turn": "black",
+  "moves": [
+    {
+      "move": "B2",
+      "comment": "Il nero prende la diagonale. Ma attenzione: il bianco può tagliarla."
+    },
+    {
+      "move": "C2",
+      "comment": "Il bianco volta la pedina <b>C3</b> ottenendo un accesso all'angolo."
+    },
+    {
+      "move": "C1",
+      "comment": "Ma il nero l'aveva previsto e ha anche trovato la contromossa. Ora la diagonale è sicura e, per di più, il bianco è costretto a giocare in <b>B1</b> perdendo così l'angolo <b>A1</b>."
+    }
+  ]
+}

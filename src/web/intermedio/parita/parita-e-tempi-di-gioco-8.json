@@ -12,7 +12,7 @@
   "moves": [
     {
       "move": "B7",
-      "comment": "Il nero gioca nello spazio dispari a sud-ovest. Il bianco non può accedere all'angolo A8, quindi è costretto ad aprire il gioco a nord."
+      "comment": "Il nero gioca nello spazio dispari a sud-ovest. Il bianco non può accedere all'angolo <b>A8</b>, quindi è costretto ad aprire il gioco a nord."
     },
     {
       "move": "F2"
@@ -58,7 +58,7 @@
     },
     {
       "move": "G2",
-      "comment": "Con questa mossa il nero vuole costringere il bianco a prendere l'angolo H1 prima di riempire lo spazio a sud-est."
+      "comment": "Con questa mossa il nero vuole costringere il bianco a prendere l'angolo <b>H1</b> prima di riempire lo spazio a sud-est."
     },
     {
       "move": "H1"

@@ -7,17 +7,17 @@ che non ci sia troppa differenza tra i due giocatori in termini di valutazione a
 inizia come sempre, col nero che ha la prima mossa.</p>
 
 <board data-type="show" data-label="xot1" data-file="xot1.json"
-       data-caption="Una apertura XOT, tra quelle emerse campionato europeo 2026."></board>
+       data-caption="Una apertura XOT, tra quelle emerse al campionato europeo 2026."></board>
 
 <p>Si tratta di un modo per rendere il gioco più dinamico e imprevedibile. Non si può fare affidamento sul
-nostro book delle aperture, non si può più contare sul fatto che giocheremo le prime mosse a memoria,
+    nostro <i>book</i> delle aperture, non si può più contare sul fatto che giocheremo le prime mosse a memoria,
 senza bisogno di riflettere. Si ragiona pesantemente fin dalla prima mossa, spesso anche più che con
 l’Othello standard. Questo perché le posizioni hanno molto spesso una certa follia latente, e si finisce per
 giocare in direzioni che normalmente non considereremmo naturali. Con l’Othello normale le eviteremmo
 scegliendo aperture e sequenze differenti, ma nello XOT spesso è la posizione iniziale che ti costringe in
 giocate più scomode del solito.</p>
-<p>Da un lato, quindi, Othello diventa più eccitante. Niente più lunghe draw sequences note, niente più
-partite giocate per gran parte a memoria. Dall’altro, si perde più facilmente, anche se sei un top player. In
+<p>Da un lato, quindi, Othello diventa più eccitante. Niente più lunghe <i>draw sequences</i> note, niente più
+    partite giocate per gran parte a memoria. Dall’altro, si perde più facilmente, anche se sei un <i>top player</i>. In
 un torneo XOT (vedi
     <a href="https://www.worldothello.org/about/tournaments/confederate-championships/european-othello-tournaments/european-xot-championship" target="_blank" rel="noopener noreferrer">il
         primo campionato Europeo di settembre 2026</a>), la classifica è più dinamica, c’è un
@@ -35,7 +35,7 @@ meglio.</p>
     <a href="https://www.worldothello.org/news/445/the-catch-22-perfect-storm" target="_blank" rel="noopener noreferrer">la
         memorizzazione di lunghe sequenze perfette</a> è solo una
 di quelle armi. Usare la memoria per ridurre la necessità di ragionamento, per risparmiare tempo, e per
-reggere le dinamiche di gioco a cui alcuni top players ti costringono, è una delle componenti che si
+    reggere le dinamiche di gioco a cui alcuni <i>top players</i> ti costringono, è una delle componenti che si
 possono preparare con ore di studio prima di un torneo importante. Non richiede abilità Othello in senso
 stretto, ma soprattutto memoria, e può darti un vantaggio oggettivo, ovviamente. Per alcuni fa parte del
 gioco, per altri può renderlo noioso da vedere dall’esterno, qui non affronteremo la questione.</p>

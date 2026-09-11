@@ -1,3 +1,15 @@
+<div class="d-flex align-items-center text-muted small my-3">
+  <i class="bi bi-person-circle me-2"></i>
+  <span>
+    di <strong class="text-dark">Carlo Affatigato</strong>
+  </span>
+    &nbsp; - &nbsp;
+  <i class="bi bi-calendar3 me-1"></i>
+    <span>
+        <time datetime="2026-09-12">12 settembre 2026</time>
+    </span>
+</div>
+
 <p>C’è una nuova moda che sta prendendo piede nella nostra comunità. L’Othello XOT, la versione
 alternativa del gioco con le aperture casuali.</p>
 <p>Per chi non ci avesse ancora avuto a che fare: invece di sederti davanti all’Othelliera, far partire il gioco e

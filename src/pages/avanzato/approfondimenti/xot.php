@@ -90,7 +90,6 @@ non volerla perché porta a posizioni troppo assurde, si rischia che la partita 
 
 <board data-type="show" data-label="xot2" data-file="xot2.json"
        data-caption="Morte a mossa 28."></board>
-Morte a mossa 28: da Christian Sommer vs. Carlo Affatigato, XOT EOC 2026
 
 <p><b>Questo caos bisogna navigarlo</b>, insomma. E in quanto caos, l’entropia è maggiore, e la possibilità di
 errore più alta. È come se avessimo improvvisamente introdotto una maggiore componente casuale,

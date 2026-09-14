@@ -655,7 +655,7 @@
         },
         {
           "href": "approfondimenti/",
-          "title": "Approfondimenti",
+          "title": "Gli approfondimenti di Carlo Affatigato",
           "pages": [
             {
               "href": "contare.php",
@@ -676,6 +676,10 @@
             {
               "href": "tilt.php",
               "title": "Tilt Queuing: perché quando giochiamo male non riusciamo a smettere?"
+            },
+            {
+              "href": "xot.php",
+              "title": "Caos e divertimento: XOT, la nuova frontiera dei tornei di Othello"
             }
           ]
         }

@@ -1,0 +1,28 @@
+{
+  "position": [
+    "---#-O--",
+    "--##OO--",
+    "#OOOO#--",
+    "#OO#O###",
+    "#O#OO#--",
+    "--##-#--",
+    "--##-#--",
+    "--------"
+  ],
+  "turn": "black",
+  "played": "B3",
+  "match": {
+    "black": {
+      "name": "Christian Sommer",
+      "flag": "de"
+    },
+    "white": {
+      "name": "Carlo Affatigato",
+      "flag": "es"
+    },
+    "tournament": "XOT European Championship 2026"
+  },
+  "controls": {
+    "match": true
+  }
+}

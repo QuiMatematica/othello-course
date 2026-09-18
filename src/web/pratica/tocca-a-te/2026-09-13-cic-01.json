@@ -1,0 +1,37 @@
+{
+  "position": [
+    "--------",
+    "----O#--",
+    "--OOOOO-",
+    "--OOO#-O",
+    "-#####O-",
+    "--##OOO-",
+    "--##----",
+    "---#----"
+  ],
+  "turn": "black",
+  "played": "G3",
+  "comment": "Tocca al nero e il suo punto debole sembra essere la casella <b>G4</b> in cui il bianco può giocare guadagnando un tempo di gioco. Ci serve quindi una mossa che possa in qualche modo ribattere a questo vantaggio.<br>Un suggerimento: la chiave è nella diagonale <b>C4-E6</b>.",
+  "moves": [
+    {
+      "move": "B4",
+      "comment": "Esattamente: questa è la mossa giusta.<br>Ora, se il bianco gioca in <b>G4</b>, il nero può ribattere con <b>E7</b>, controllare la diagonale <b>C4-E6</b> e tenere <b>F7</b> come futura mossa franca.<br>Ma la risposta migliore per il bianco è un'altra."
+    },
+    {
+      "move": "B3",
+      "comment": "Il bianco gioca questa mossa ideale, tenendo <b>G4</b> per dopo. Ma tu, che sei il nero, hai una possibilità per ridurre la portata di tale mossa."
+    },
+    {
+      "move": "H5",
+      "comment": "Bravissimo: questa è la risposta corretta.<br>Se ora il bianco gioca in <b>H6</b>, ti darà la possibilità di occupare tu la casella <b>G4</b>."
+    },
+    {
+      "move": "G4",
+      "comment": "Se invece il bianco occupa <b>G4</b>... come chiudi la sequenza?"
+    },
+    {
+      "move": "H3",
+      "comment": "Corretto: prendi il bordo est senza volta la pedina <b>G3</b>, e ti prepari un tempo di gioco in <b>H2</b>."
+    }
+  ]
+}

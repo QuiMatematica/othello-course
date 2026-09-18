@@ -691,6 +691,16 @@
       "href": "pratica/",
       "chapters": [
         {
+          "href": "tocca-a-te/",
+          "title": "Tocca a te!",
+          "pages": [
+            {
+              "href": "2026-09-13-cic.php",
+              "title": "38° Campionato Italiano di Categoria (2026)"
+            }
+          ]
+        },
+        {
           "href": "woc2025-signorini/",
           "title": "C. Signorini @ WOC 2025",
           "pages": [

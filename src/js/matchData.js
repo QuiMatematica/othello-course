@@ -1,5 +1,3 @@
-import {createStone} from "./page";
-
 export default class MatchData {
 
     scoreContainer;

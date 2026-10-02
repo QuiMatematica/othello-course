@@ -5,6 +5,7 @@ import {boards, isAnimatingFlip} from "./page";
 import Square from "./square";
 import SequenceControls from "./sequenceControls";
 import PositionComment from "./positionComment";
+import MatchData from "./matchData";
 
 export default class SequenceBoard {
 
@@ -25,8 +26,6 @@ export default class SequenceBoard {
         this.currentPosition = Position.getEmptyPosition();
         this.board = new Board(container, counter, null, sequenceBoardOnClick);
         this.board.setPosition(this.currentPosition);
-        this.score = new Score(container, this.board);
-        this.score.takeScore(this.currentPosition);
 
         this.sequenceFile = container.dataset['file'];
 
@@ -38,15 +37,12 @@ export default class SequenceBoard {
             console.log("Source file: " + this.sourcePage);
         }
 
-        this.controls = new SequenceControls(container, counter, this.sourcePage);
-        this.comment = new PositionComment(container);
-
         fetch(this.sequenceFile)
             .then((response) => response.json())
-            .then((json) => this.readMatch(json));
+            .then((json) => this.readMatch(json, container, counter));
     }
 
-    readMatch(json) {
+    readMatch(json, container, counter) {
         this.currentPosition = Position.getPositionFromJSON(json);
 
         if (json.user == null) {
@@ -63,10 +59,22 @@ export default class SequenceBoard {
         this.errorState = false;
 
         if (json.controls != null) {
+            if (json.controls.match) {
+                new MatchData(container, json)
+            }
+        }
+
+        this.score = new Score(container, this.board);
+
+        this.comment = new PositionComment(container);
+        this.controls = new SequenceControls(container, counter, this.sourcePage);
+
+        if (json.controls != null) {
             if (json.controls.help) {
                 this.controls.addHelpButton();
             }
         }
+
         if (this.currentPosition.nextPosition.nextPosition == null) {
             this.controls.computer.remove();
         }

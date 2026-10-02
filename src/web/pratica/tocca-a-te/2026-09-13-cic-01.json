@@ -9,9 +9,23 @@
     "--##----",
     "---#----"
   ],
+  "match": {
+    "black": {
+      "name": "Fabrizio Lai",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Carlo Landini",
+      "flag": "it"
+    },
+    "tournament": "38° Campionato Italiano di Categoria (2026)"
+  },
+  "controls": {
+    "match": true
+  },
   "turn": "black",
   "played": "G3",
-  "comment": "Tocca al nero e il suo punto debole sembra essere la casella <b>G4</b> in cui il bianco può giocare guadagnando un tempo di gioco. Ci serve quindi una mossa che possa in qualche modo ribattere a questo vantaggio.<br>Un suggerimento: la chiave è nella diagonale <b>C4-E6</b>.",
+  "comment": "DIFFICILE.<br>Tocca al nero e il suo punto debole sembra essere la casella <b>G4</b> in cui il bianco può giocare guadagnando un tempo di gioco. Ci serve quindi una mossa che possa in qualche modo ribattere a questo vantaggio.<br>Un suggerimento: la chiave è nella diagonale <b>C4-E6</b>.",
   "moves": [
     {
       "move": "B4",

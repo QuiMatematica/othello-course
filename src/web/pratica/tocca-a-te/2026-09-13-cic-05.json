@@ -9,11 +9,27 @@
     "--###O--",
     "--#O-#--"
   ],
+  "match": {
+    "black": {
+      "name": "Paolo Barsotti",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Fabrizio Lai",
+      "flag": "it"
+    },
+    "tournament": "38° Campionato Italiano di Categoria (2026)"
+  },
+  "controls": {
+    "match": true
+  },
   "played": "F7",
   "turn": "black",
+  "comment": "Meglio un tempo di gioco oggi che una sicurezza in più domani.",
   "moves": [
     {
-      "move": "E8"
+      "move": "E8",
+      "comment": "Mossa corretta. Non puoi perdere questo tempo di gioco, anche a costo di formare quel quattro completo che potrebbe essere fastidioso più avanti."
     }
   ]
 }

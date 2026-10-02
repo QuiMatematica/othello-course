@@ -9,17 +9,35 @@
     "--O####-",
     "-OOOOO--"
   ],
+  "match": {
+    "black": {
+      "name": "Sandra Pistolesi",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Carlo Landini",
+      "flag": "it"
+    },
+    "tournament": "38° Campionato Italiano di Categoria (2026)"
+  },
+  "controls": {
+    "match": true
+  },
   "played": "G7",
   "turn": "white",
+  "comment": "Il nero ha appena attaccato il tuo cinque a sud, forte del fatto che non hai accesso all'angolo <b>H8</b>. Ma tu hai la sequenza giusta per salvare tutto il bordo sud e l'intera partita.",
   "moves": [
     {
-      "move": "E1"
+      "move": "E1",
+      "comment": "Esatto. Bisogna sacrificare qualcosa, ma nota che dopo aver preso l'angolo <b>A1</b> il nero non ha nessuna mossa a ovest."
     },
     {
-      "move": "A1"
+      "move": "A1",
+      "comment": "Necessario."
     },
     {
-      "move": "H8"
+      "move": "H8",
+      "comment": "Bravissimo. Prendi l'angolo, ma grazie al controllo del contro-bordo est il nero non può giocare in <b>G8</b>, dove invece potrai giocare tu, guadagnando così due tempi di gioco. La partita è tua."
     }
   ]
 }

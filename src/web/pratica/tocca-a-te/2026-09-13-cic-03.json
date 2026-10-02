@@ -9,11 +9,47 @@
     "--#OO---",
     "--------"
   ],
+  "match": {
+    "black": {
+      "name": "Fabrizio Lai",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Leonardo Turato",
+      "flag": "it"
+    },
+    "tournament": "38° Campionato Italiano di Categoria (2026)"
+  },
+  "controls": {
+    "match": true
+  },
   "played": "H5",
   "turn": "white",
+  "comment": "Il nero ha appena giocato una mossa-provocazione sul bordo est.<br>Il bianco muove e vince.",
   "moves": [
     {
-      "move": "G2"
+      "move": "G2",
+      "comment": "Esatto! La mossa corretta è questa: giocare la parità nella regione nord-est. Ora, la risposta perfetta del nero porta a un finale piuttosto complicato. Ma analizziamo insieme come giocare se il nero prende l'angolo.",
+      "errors": [
+        {
+          "move": "H7",
+          "comment": "Questa è sicuramente la mossa più spontanea, ed è quella che Leonardo ha giocato. Tuttavia porta al pareggio. Infatti dopo la risposta in <b>G6</b> il nero controlla la diagonale bianca. Inoltre il bianco ha accumulato tanta influenza. Riprova..."
+        }
+      ]
+    },
+    {
+      "move": "H1",
+      "comment": "Come rispondi se il nero prende subito l'angolo?"
+    },
+    {
+      "move": "B2",
+      "comment": "Mossa corretta! Giochi la parità anche a nord-ovest, tanto a nord-est hai a disposizione una regione chiusa in cui solo tu puoi giocare. Inoltre la diagonale è tutta bianca e il nero è costretto ad aprirti il gioco a sud.",
+      "errors": [
+        {
+          "move": "G1",
+          "comment": "&Egrave; una mossa molto spontanea, ma non è la migliore. Il nero ora può giocare la parità a nord-ovest impedendoti, di fatto, di prendere tutto il bordo nord."
+        }
+      ]
     }
   ]
 }

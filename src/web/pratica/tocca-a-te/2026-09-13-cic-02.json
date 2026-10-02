@@ -1,0 +1,47 @@
+{
+  "position": [
+    "-#-OOOO-",
+    "###OOO--",
+    "##OOOOOO",
+    "##O###OO",
+    "##O##OOO",
+    "O#OOOO-O",
+    "--OOO---",
+    "--O-----"
+  ],
+  "match": {
+    "black": {
+      "name": "Leonardo Turato",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Paolo Barsotti",
+      "flag": "it"
+    },
+    "tournament": "38° Campionato Italiano di Categoria (2026)"
+  },
+  "controls": {
+    "match": true
+  },
+  "played": "H3",
+  "turn": "black",
+  "comment": "Se il gioco del tuo avversario è chiuso, non aprirglielo. E per non offrire mosse, devi essere anche disposto a sacrificare qualcosa.",
+  "moves": [
+    {
+      "move": "A7",
+      "comment": "Mossa esatta. Adesso il bianco ha solo due mosse: <b>A1</b> e <b>C1</b>."
+    },
+    {
+      "move": "A1",
+      "comment": "Chiaramente il bianco preferirà prendere l'angolo, visto che poi può prendere anche <b>A8</b>."
+    },
+    {
+      "move": "C1",
+      "comment": "Esatto: tu ti devi incuneare, così non offri altre mosse all'avversario. E nota: hai girato la pedina <b>B2</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Il bianco prende l'altro angolo ma adesso è senza mosse."
+    }
+  ]
+}

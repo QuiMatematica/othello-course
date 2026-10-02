@@ -1,0 +1,95 @@
+{
+  "position": [
+    "-###-O-O",
+    "--OOOOO#",
+    "##OOOO##",
+    "##OOO###",
+    "###O####",
+    "#####O##",
+    "--##OOO-",
+    "--#OOOO-"
+  ],
+  "match": {
+    "black": {
+      "name": "Carlo Landini",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Fabrizio Lai",
+      "flag": "it"
+    },
+    "tournament": "38° Campionato Italiano di Categoria (2026)"
+  },
+  "controls": {
+    "match": true
+  },
+  "played": "C8",
+  "turn": "white",
+  "comment": "In questa posizione il bianco ha due mosse vincenti. Qual è la migliore?",
+  "moves": [
+    {
+      "move": "B8",
+      "comment": "Mossa corretta. Ma ti è chiaro perché? Proviamo a proseguire con la sequenza...",
+      "errors": [
+        {
+          "move": "B7",
+          "comment": "Anche questa mossa è vincente, ma non è la migliore. Riprova."
+        }
+      ]
+    },
+    {
+      "move": "H8",
+      "comment": "Il nero prende l'angolo.<br>A questo punto il bianco ha due mosse di pari valore. Il quiz prosegue con la più semplice delle due."
+    },
+    {
+      "move": "H7",
+      "comment": "Corretta! Ti sei accorto, vero, cosa sta per succedere?",
+      "errors": [
+        {
+          "move": "B7",
+          "comment": "Questa mossa ha lo stesso valore di quella giusta, ma è meno semplice. Ti invito pertanto di riprovare il quiz cercando di individuare la mossa attesa."
+        }
+      ]
+    },
+    {
+      "move": "A8",
+      "comment": "Il nero prende l'altro angolo."
+    },
+    {
+      "move": "B7",
+      "comment": "Bravissimo. C'è lo <i>swindle</i>! Il bianco non può giocare in <b>A7</b>."
+    },
+    {
+      "move": "B2"
+    },
+    {
+      "move": "A1",
+      "comment": "Molto bene. Altro <i>swindle</i>, che compensa le pedine che perderai sul bordo nord."
+    },
+    {
+      "move": "E1"
+    },
+    {
+      "move": "G1",
+      "comment": "Certo: prima di approfittare delle mosse sicure, chiudiamo questo spazio a nord-est.",
+      "errors": [
+        {
+          "move": "A2",
+          "comment": "E no: riparti e prova a contare il finale!"
+        },
+        {
+          "move": "A7",
+          "comment": "Buuuu... questa mossa è perdente!"
+        }
+      ]
+    },
+    {
+      "move": "A2",
+      "comment": "Obbligata"
+    },
+    {
+      "move": "A7",
+      "comment": "Bravissimo! Hai vinto."
+    }
+  ]
+}

@@ -46,7 +46,7 @@ alle Stoner trap: l'uno per capire se può utilizzarla, l'altro per fare di tutt
 scegliere: incunearsi in <b>E8</b> o sbilanciarsi in <b>B8</b>.</p>
 
 <p>Giocando in <b>E8</b> si forma una posizione che è nota come <i>Suekuni trap</i>, che studieremo più avanti nel corso.
-E' una posizione svantaggiosa per il bianco, in particolare se si dovesse trovare ad avere poche mosse: rischia di essere costretto
+&Egrave; una posizione svantaggiosa per il bianco, in particolare se si dovesse trovare ad avere poche mosse: rischia di essere costretto
     a giocare in <b>B8</b> o in <b>G8</b>, lasciando l'intero bordo all'avversario. In questo momento la mobilità del bianco
 è buona, anche se ha un'influenza piuttosto alta. Il rischio però rimane nel finale, quando ci saranno poche caselle libere
     e quindi poche mosse a disposizione. Per riassumere, diciamo che è una posizione

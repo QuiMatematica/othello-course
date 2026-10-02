@@ -5,7 +5,7 @@ che un vantaggio: si può giocare solo nelle caselle più vicine agli angoli e p
 molto pericoloso farlo. Ma anche tra le ultime mosse ce ne possono essere alcune
 <a href="../mobilita/togliere-mosse.php">mosse sicure</a>
 che permettono di giocare senza che l'avversario possa occupare immediatamente un angolo.
-E' evidente che il giocatore che raggiunge questa fase con il maggior numero di mosse
+&Egrave; evidente che il giocatore che raggiunge questa fase con il maggior numero di mosse
 sicure è avvantaggiato rispetto all'avversario: può giocare più mosse senza correre
 pericoli.</p>
 

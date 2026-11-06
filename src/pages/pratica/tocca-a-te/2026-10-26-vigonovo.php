@@ -11,7 +11,7 @@
     4 punti, mentre il gradino più basso del podio s'affolla con un trio a quota 3:
     Gianluca Ilacqua, Claudio Signorini e Raimondo Lunari.</p>
 
-<p>Niente podio per Leonardo Turato, che però si porta a casa la soddisfazione di aver pareggiato contro il maestro
+<p>Anche questa volta niente podio per Leonardo Turato, che però si porta a casa la soddisfazione di aver pareggiato contro il maestro
 Damiano Foschi.</p>
 
 <h2>A te la mossa!</h2>

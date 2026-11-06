@@ -1,0 +1,43 @@
+{
+  "position": [
+    "---##---",
+    "--####--",
+    "#-O###O-",
+    "######OO",
+    "#O##O#OO",
+    "##OO##-O",
+    "--OO##--",
+    "--####--"
+  ],
+  "match": {
+    "black": {
+      "name": "Damiano Foschi",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Tommaso Foschi",
+      "flag": "it"
+    },
+    "tournament": "5° Torneo di Vigonovo"
+  },
+  "controls": {
+    "match": true
+  },
+  "turn": "white",
+  "played": "F2",
+  "comment": "Qual è la mossa migliore per il bianco?",
+  "moves": [
+    {
+      "move": "C1",
+      "comment": "Esatto! Tra la tante mosse buone per il bianco, questa è sicuramente la migliore perché permette di ottenere il controllo della diagonale-C <b>C7-G3</b>, cosa da togliere al nero la mossa in <b>B8</b>."
+    },
+    {
+      "move": "H3",
+      "comment": "Il nero può anche provare a riprendere l'accesso a <b>B8</b>. Ma tu come rispondi?"
+    },
+    {
+      "move": "H2",
+      "comment": "Bravissimo. Ora per ottenere l'accesso a <b>B8</b> il nero dovrà cedere posizioni molti importanti."
+    }
+  ]
+}

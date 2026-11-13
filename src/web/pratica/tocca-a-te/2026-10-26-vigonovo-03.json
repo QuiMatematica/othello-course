@@ -1,0 +1,55 @@
+{
+  "position": [
+    "#-OOOOOO",
+    "##OOO#O-",
+    "#O#O#O##",
+    "#OO#O##O",
+    "#O#O#O#O",
+    "##OOO##O",
+    "#--#OO#O",
+    "--######"
+  ],
+  "match": {
+    "black": {
+      "name": "Turato Leonardo",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Damiano Foschi",
+      "flag": "it"
+    },
+    "tournament": "5° Torneo di Vigonovo"
+  },
+  "controls": {
+    "match": true
+  },
+  "turn": "black",
+  "played": "H1",
+  "comment": "Il nero muove e vince grazie a uno <i>swindle</i>.",
+  "moves": [
+    {
+      "move": "H2",
+      "comment": "Esatto. La mossa corretta è questa. Stai prendendo il controllo della diagonale-C <b>C7-H2</b> in modo da impedire al bianco di giocare in <b>B8</b>."
+    },
+    {
+      "move": "B1",
+      "comment": "Il bianco chiude la casella libera in modo da non perdere dei tempi di gioco. Nota che così facendo, però, il bianco sta prendendo il controllo del controbordo <b>B</b e questo gli farà perdere l'ultima mossa."
+    },
+    {
+      "move": "C7",
+      "comment": "Corretto. Completi il controllo della diagonale-C e così obblighi il bianco a giocare in <b>B7</b>."
+    },
+    {
+      "move": "B7",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "B8",
+      "comment": "Esatto! Grazie al controllo del bianco del controbordo <b>B</b> puoi giocare lo <i>swindle</i>."
+    },
+    {
+      "move": "A8",
+      "comment": "Bravissimo: hai vinto."
+    }
+  ]
+}

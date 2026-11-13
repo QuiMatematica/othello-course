@@ -1,0 +1,69 @@
+{
+  "position": [
+    "-#######",
+    "O-OOOOOO",
+    "OOOO##OO",
+    "O#O#O#O#",
+    "OOOOOOO#",
+    "OOOOOOO#",
+    "--#O#OOO",
+    "--##O#--"
+  ],
+  "match": {
+    "black": {
+      "name": "Claudio Signorini",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Damiano Foschi",
+      "flag": "it"
+    },
+    "tournament": "5° Torneo di Vigonovo"
+  },
+  "controls": {
+    "match": true
+  },
+  "turn": "black",
+  "played": "A2",
+  "comment": "Gioca il finale perfetto.",
+  "moves": [
+    {
+      "move": "G8",
+      "comment": "Esatto! Ma hai colto perché questa mossa è quella giusta? Lo vedremo tra poco..."
+    },
+    {
+      "move": "H8",
+      "comment": "Il bianco non si lascia sfuggire l'angolo."
+    },
+    {
+      "move": "B7",
+      "comment": "Bravissimo. E hai notato che il bianco non ha accesso all'angolo <b>A8</b>? Ecco perché era così importante giocare in <b>G8</b>!"
+    },
+    {
+      "move": "B8",
+      "comment": "Il bianco cerca di ottenere più pedine possibili, salvando almeno il controbordo <b>B</b>."
+    },
+    {
+      "move": "A8",
+      "comment": "Giusta! Ma adesso è più facile.",
+      "errors": [
+        {
+          "move": "A7",
+          "comment": "Anche questa mossa è vincente, ma puoi fare di meglio."
+        }
+      ]
+    },
+    {
+      "move": "A7",
+      "comment": "Obbligata."
+    },
+    {
+      "move": "A1",
+      "comment": "Certo. Prima questa."
+    },
+    {
+      "move": "B2",
+      "comment": "E poi chiudi vincendo! Bravissimo."
+    }
+  ]
+}

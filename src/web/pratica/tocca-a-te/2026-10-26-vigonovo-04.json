@@ -1,0 +1,79 @@
+{
+  "position": [
+    "-O-#-#--",
+    "O-#####O",
+    "O#####OO",
+    "O##O##OO",
+    "O#O#OOOO",
+    "OO#OO#OO",
+    "O-OOOO--",
+    "-OOOOO--"
+  ],
+  "match": {
+    "black": {
+      "name": "Claudio Signorini",
+      "flag": "it"
+    },
+    "white": {
+      "name": "Tommaso Foschi",
+      "flag": "it"
+    },
+    "tournament": "5° Torneo di Vigonovo"
+  },
+  "controls": {
+    "match": true
+  },
+  "turn": "black",
+  "played": "F8",
+  "comment": "Gioca il finale perfetto.",
+  "moves": [
+    {
+      "move": "B7",
+      "comment": "Esatto. L'elemento chiave di questa finale è la diagonale nera. Nota che il bianco potrebbe tagliare la diagonale giocando in <b>E1</b> ma il nero può rispondere in <b>H7</b> riprendendo il controllo della diagonale."
+    },
+    {
+      "move": "G7",
+      "comment": "Questa è la mossa migliore per il bianco, che chiaramente ti offre una possibilità molto interessante..."
+    },
+    {
+      "move": "H8",
+      "comment": "Corretto. Prendi l'angolo e minacci i due bordi."
+    },
+    {
+      "move": "H7",
+      "comment": "Attento adesso..."
+    },
+    {
+      "move": "G8",
+      "comment": "Esatto!"
+    },
+    {
+      "move": "E1",
+      "comment": "Solo adesso il bianco può tagliare la diagonale, minacciando di prendere uno dei due angoli. Tu quale scegli?"
+    },
+    {
+      "move": "A8",
+      "comment": "Bravissimo. Se andavi in <b>H1</b> avresti pareggiato."
+    },
+    {
+      "move": "H1",
+      "comment": "Adesso è più facile. Non hai l'ultima mossa ma hai abbastanza pedine per vincere."
+    },
+    {
+      "move": "G1",
+      "comment": "Corretta."
+    },
+    {
+      "move": "C1",
+      "comment": "Siamo alla fine..."
+    },
+    {
+      "move": "A1",
+      "comment": "Giusta anche questa."
+    },
+    {
+      "move": "B2",
+      "comment": "Hai vinto! Bravissimo."
+    }
+  ]
+}

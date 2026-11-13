@@ -682,24 +682,6 @@
               "title": "Caos e divertimento: XOT, la nuova frontiera dei tornei di Othello"
             }
           ]
-        },
-        {
-          "href": "64-00",
-          "title": "Vincere 64 a 0",
-          "pages": [
-            {
-              "href": "64-00.php",
-              "title": "Vincere 64 a 0"
-            },
-            {
-              "href": "nero.php",
-              "title": "Il nero vince 64 a 0"
-            },
-            {
-              "href": "bianco.php",
-              "title": "Il bianco vince 64 a 0"
-            }
-          ]
         }
       ]
     },

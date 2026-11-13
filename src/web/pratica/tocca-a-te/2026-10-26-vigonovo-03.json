@@ -24,7 +24,7 @@
     "match": true
   },
   "turn": "black",
-  "played": "A1",
+  "played": "H1",
   "comment": "Il nero muove e vince grazie a uno <i>swindle</i>.",
   "moves": [
     {
